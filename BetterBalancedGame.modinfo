@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="ffa75ffb-28c8-4b21-adb5-0b84f8f44e57" version="4">
+	<Properties>
+		<Name>Better Balanced Game</Name>
+		<Description>
+			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd[NEWLINE][NEWLINE]Exploits:[NEWLINE]    - Can immediately re-declare war on a city-state when an enemy suzerian[NEWLINE]       removes Amani (instead of having to wait 10 turns)[NEWLINE][NEWLINE]Great People:[NEWLINE]    - Classical Great Generals get no movement bonus[NEWLINE][NEWLINE]Wonders:[NEWLINE]    - Wonders only provide 10 Points towards Score instead of 15[NEWLINE]    - Apadana gives only +1 envoy for wonders built instead of +2[NEWLINE]    - Venetian Arsenal gives +50% Production to all naval units in all cities[NEWLINE]       instead of an extra naval unit for each built in 1 city[NEWLINE]    - Mausoleum at Halicarnassus allows Great Admirals and Generals to[NEWLINE]       retire twice instead of Admirals and Engineers[NEWLINE][NEWLINE]Pantheons:[NEWLINE]    - God of the Forge is +15% (instead of +25%) to production towards[NEWLINE]       Ancient/Classical Era combat units[NEWLINE][NEWLINE]    - Goddess of the Harvest now 75% Faith chops instead fo 100%[NEWLINE][NEWLINE]Religions:[NEWLINE]    - Defender of the Faith combat bonus reduced to +4 (was +10)[NEWLINE]    - Crusader combat bonus reduced to +7 (was +10)[NEWLINE][NEWLINE]Civs:[NEWLINE]    - Rome no longer gets a free monument in new cities[NEWLINE]    - Scythia gets no extra light cavalry units when they build/purchase one[NEWLINE]    - Sumerian War Carts have a maintenance cost of 1 (no longer free) so you[NEWLINE]       cannot have unlimited[NEWLINE]    - Sumerian War Cart cambat strength reduced to 28 instead of 30[NEWLINE]    - Russia gets 4 additional tiles when founding a city instead of 8[NEWLINE]    - Russian Cossask base strength reduced to 62 (same as cavalry) instead[NEWLINE]       of 67[NEWLINE]    - German Hansas require 2 adjacent resources (instead of 1) to get +1[NEWLINE]       Production adjacency[NEWLINE]    - Germany's combat bonus against city-states reduced to +3 (from +7)[NEWLINE]    - Persia surprise war movement bonus reduced to +0 (from +2)[NEWLINE]       (becuz it could be exploited in FFA)[NEWLINE]    - Nubia Pitati Archer base ranged strength reduced to 25 (from 30)[NEWLINE]    - Nubia ranged unit production and experience bonuses reduced to +25%[NEWLINE]       (from +50%)[NEWLINE]    - Australia gets +0% production (instead of +100%) for 10 turns after a[NEWLINE]       war is declared on them[NEWLINE]       (becuz it can be exploited in FFA)[NEWLINE]    - Australia gets +50% production (instead of +100%) for 10 turns after[NEWLINE]       liberating a city (instead of 20 turns)[NEWLINE]    - Australian Campus/Commercial/Theater/Holy districts receive +2[NEWLINE]       (instead of +3) when built on breathtaking appeal[NEWLINE]    - Mapuche combat bonus against Golden Age Civs set to 5 instead of 10[NEWLINE]    - Zulu gets +3 Corps/Army combat bonus (instead of +5)[NEWLINE]    - Zulu gets Corps at Diplomatic Service instead of Mercenaries[NEWLINE]    - Zulu gets Armies at Urbanization instead of Mobilization[NEWLINE]    - Korea's Campus (Seowon) has a base yield bonus of +2 (instead of +4)[NEWLINE]    - Korea's Seowon gains +1 Science for every 2 adjacent mines[NEWLINE]
+		</Description>
+		<Teaser>Mods to balance Civ Players' League multiplayer games</Teaser>
+		<Authors>codenaugh</Authors>
+		<SpecialThanks>wazabaza, abstr</SpecialThanks>
+	</Properties>
+	
+	<!-- defines file dependencies -->
+	<Files>
+		<File>text.xml</File>
+		<File>mods.sql</File>
+		<File>WorldRankings.lua</File>
+	</Files>
+	
+	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
+	<Settings>
+		<LocalizedText>
+			<Items>
+				<File>text.xml</File>
+			</Items>
+		</LocalizedText>
+	</Settings>
+
+	<!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
+	<Components>
+		<ImportFiles>
+			<File>WorldRankings.lua</File>
+		</ImportFiles>
+		<LocalizedText>
+			<Items>
+				<File>text.xml</File>
+			</Items>
+		</LocalizedText>
+		<UpdateDatabase>
+			<Items>
+				<File>mods.sql</File>
+			</Items>
+		</UpdateDatabase>
+	</Components>
+</Mod>

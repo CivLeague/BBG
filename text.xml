@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+		<!-- Defender of the Faith Religion -->
+		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="en_US">
+			<Text>Combat units gain +4 [ICON_Strength] Combat Strength when within the borders of friendly cities that follow this Religion.</Text>
+		</Replace>
+		<!-- Crusader Religion -->
+		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="en_US">
+			<Text>Combat units gain +7 [ICON_Strength] Combat Strength near foreign cities that follow this Religion.</Text>
+		</Replace>
+		<!-- God of the Forge Pantheon -->
+		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="en_US">
+			<Text>+15% [ICON_Production] Production toward Ancient and Classical military units.</Text>
+		</Replace>
+		<!-- Goddess of the Harvest Pantheon -->
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HARVEST_DESCRIPTION" Language="en_US">
+			<Text>Harvesting a resource or removing a feature receives [ICON_Faith] Faith equal to 75% of the other yield's quantity.</Text>
+		</Replace>
+		<!-- Apadana Wonder -->
+		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_ENVOY] Envoy when you build a wonder, including Apadana, in this city.[NEWLINE][NEWLINE]Must be built adjacent to your [ICON_CAPITAL] Capital.</Text>
+		</Replace>
+		<!-- Classical Great General -->
+		<Replace Tag="LOC_GREATPERSON_COMBAT_STRENGTH_AOE_CLASSICAL_LAND" Language="en_US">
+			<Text>+5 [ICON_Strength] Combat Strength to Classical and Medieval era land units within 2 tiles.</Text>
+		</Replace>
+		<!-- Mapuche -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="en_US">
+			<Text>All units trained in cities with an established [ICON_Governor] Governor gain 25% more experience in combat. +5 [ICON_Strength] Combat Strength bonus against civilizations that are in a Golden Age.</Text>
+		</Replace>
+		<!-- Scythia -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="en_US">
+			<Text>Horsies!</Text>
+		</Replace>
+		<!-- Zulu -->
+		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="en_US">
+			<Text>May form Corps (Diplomatic Service Civic) and Armies (Urbanization Civic) earlier. An additional +3 [ICON_STRENGTH] Base Combat Strength to both Corps and Armies.</Text>
+		</Replace>
+		<!-- Persia -->
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="en_US">
+			<Text>+5 Loyalty per turn in occupied cities with a garrisoned unit. Declaring a Surprise War counts as a Formal War for the purpose of warmongering and war weariness.</Text>
+		</Replace>
+		<!-- Russia -->
+		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="en_US">
+			<Text>Russian unique Industrial era unit that replaces Cavalry. +5 [ICON_Strength] Combat Strength when fighting in or adjacent to its home territory. Can move after attacking if [ICON_Movement] Movement points remain.</Text>
+		</Replace>
+		<!-- Nubia -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="en_US">
+			<Text>+25% [ICON_Production] Production toward Ranged units. All Ranged units gain +25% combat experience. Mines over strategic resources provide +1 [ICON_Production] Production. Mines over bonus and luxury resources provide +2 [ICON_Gold] Gold.</Text>
+		</Replace>
+		<!-- Australia -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION" Language="en_US">
+			<Text>+3 [ICON_Housing] Housing in coastal cities without access to fresh water. Pastures trigger a Culture Bomb. Yields from Campuses, Commercial Hubs, Holy Sites and Theater Squares are +1 in tiles with Charming Appeal and +2 in tiles with Breathtaking Appeal.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION" Language="en_US">
+			<Text>+50% [ICON_Production] Production for 10 turns after liberating a city.</Text>
+		</Replace>
+		<!-- Germany -->
+		<Replace Tag="LOC_PROMOTION_COMBAT_VS_CITY_STATES_DESCRIPTION" Language="en_US">
+			<Text>+3 Combat vs. city-states.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION" Language="en_US">
+			<Text>Additional Military policy slot. +3 [ICON_Strength] Combat Strength when attacking city-states.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION" Language="en_US">
+			<Text>A district unique to Germany for industrial activity. Replaces the Industrial Zone district and cheaper to build.[NEWLINE][NEWLINE]+ 2[ICON_Production] Production bonus if adjacent to a Commercial Hub district. +1 [ICON_Production] Production bonus for every two adjacent resources. +1 [ICON_Production] Production bonus for every two adjacent district tiles.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="en_US">
+			<Text>Adjacency: Major [ICON_Production] Production bonus if adjacent to a Commercial Hub district. Standard [ICON_Production] Production bonus for every 2 adjacent resources. Minor [ICON_Production] Production bonus for adjacent district tiles.</Text>
+		</Replace>
+		<!-- Korea -->
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="en_US">
+			<Text>A district unique to Korea that replaces the Campus district and must be built on hills. +2 [ICON_SCIENCE] Science base adjacency.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="en_US">
+			<Text>Adjacency: +1 [ICON_SCIENCE] Science for every 2 adjacent mines. -1 [ICON_SCIENCE] Science for each adjacent District.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="en_US">
+			<Text>+{1_num} [ICON_SCIENCE] Science base adjacency.</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_MINE_SCIENCE" Language="en_US">
+			<Text>+{1_num} [ICON_SCIENCE] Science adjacency from the adjacent {1_Num : plural 1?Mines; other?Mines;}.</Text>
+		</Row>
+		<!-- Rome -->
+		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="en_US">
+			<Text>Purple is the favored color of the Gods.</Text>
+		</Replace>
+		<!-- Venetial Arsenal -->
+		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="en_US">
+			<Text>+50% [ICON_Production] Production towards naval units in all cities. Must be built on a Coast tile that is adjacent to an Industrial Zone district.</Text>
+		</Replace>
+		<!-- Mausoleum at Halicarnassus -->
+		<Replace Tag="LOC_BUILDING_HALICARNASSUS_MAUSOLEUM_DESCRIPTION" Language="en_US">
+			<Text>Grants a free [ICON_GREATADMIRAL] Great Admiral when the wonder is constructed.[NEWLINE][NEWLINE]All [ICON_GREATADMIRAL] Great Admirals and all [ICON_GREATGENERAL] Great Generals can use their retirement ability an additional time. Must be built adjacent to a Harbor district.</Text>
+		</Replace>
+		
+		<!-- KR TRANSLATIONS -->
+		<!-- Defender of the Faith Religion -->
+		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="ko_KR">
+			<Text>전투 유닛은 이 종교를 믿는 우호적인 도시 영토 내에서 [ICON_Strength] 전투력 +4를 획득합니다.</Text>
+		</Replace>
+		<!-- Crusader Religion -->
+		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ko_KR">
+			<Text>전투 유닛은 이 종교를 믿는 외국 도시 근처에서 [ICON_Strength] 전투력 +7을 획득합니다.</Text>
+		</Replace>
+		<!-- God of the Forge Pantheon -->
+		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="ko_KR">
+			<Text>고대 및 고전 시대 군사 유닛 생성에 대한 [ICON_Production] 생산력 +15%를 제공합니다.</Text>
+		</Replace>
+		<!-- Goddess of the Harvest Pantheon -->
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HARVEST_DESCRIPTION" Language="ko_KR">
+			<Text>자원 수확 또는 지형 제거를 통해 획득하는 수확량의 75% 만큼의 [ICON_Faith] 신앙을 획득합니다.</Text>
+		</Replace>
+		<!-- Apadana Wonder -->
+		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에 아파다나를 포함한 불가사의를 건설하면 [ICON_ENVOY] 사절 +1.[NEWLINE][NEWLINE]플레이어 [ICON_CAPITAL] 수도 옆에 지어야 합니다.</Text>
+		</Replace>
+		<!-- Classical Great General -->
+		<Replace Tag="LOC_GREATPERSON_COMBAT_STRENGTH_AOE_CLASSICAL_LAND" Language="ko_KR">
+			<Text>2타일 이내에 있는 고전 및 중세 시대 지상 유닛에게 [ICON_Strength] 전투력 +5를 부여합니다.</Text>
+		</Replace>
+		<!-- Mapuche -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_Governor] 총독이 정착한 도시에서 훈련된 모든 유닛은 전투에서 25% 추가 경험치를 획득합니다. 황금기에 진입한 다른 문명 상대 시 [ICON_Strength] 전투력 보너스 +5를 제공합니다.</Text>
+		</Replace>
+		<!-- Scythia -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="ko_KR">
+			<Text>특성 제거됨</Text>
+		</Replace>
+		<!-- Zulu -->
+		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="ko_KR">
+			<Text>보다 빠르게 군단(외교부 사회 제도)과 군대(도시화 사회 제도)를 구성할 수 있습니다. 군단 및 군대에 [ICON_STRENGTH] 기본 전투력 +3을 제공합니다.</Text>
+		</Replace>
+		<!-- Persia -->
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="ko_KR">
+			<Text>주둔 유닛이 있는 점령 도시에 턴당 충성심 +5가 부여됩니다. 기습 전쟁의 선포는 전쟁 도발과 전쟁 피로도 유발의 목적으로만 공식 전쟁으로 인정됩니다.</Text>
+		</Replace>
+		<!-- Russia -->
+		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="ko_KR">
+			<Text>기병대를 대체하는 러시아 특유의 산업 시대 유닛입니다. 고향 영토 내 또는 인근에서 전투할 경우 전투력 +5를 획득합니다. [ICON_Movement] 이동력이 남아있다면 공격 후 이동이 가능합니다.</Text>
+		</Replace>
+		<!-- Nubia -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ko_KR">
+			<Text>원거리 유닛 생성 시 +25%의 [ICON_Production] 생산력을 받습니다. 모든 원거리 유닛이 +25%의 전투 경험치를 획득합니다. 전략 자원 위에 있는 광산에서 [ICON_Production] 생산력 +1을 제공합니다. 보너스 자원과 사치 자원 위에 있는 광산에서 [ICON_Gold] 금 +2를 제공합니다.</Text>
+		</Replace>
+		<!-- Australia -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION" Language="ko_KR">
+			<Text>해안가에 위치한 도시에 [ICON_Housing] 주거공간 +3을 제공합니다. 목장은 문화 폭탄을 촉발합니다. 캠퍼스, 상업 중심지, 성지 및 극장가가 멋진 매력도 타일에 위치한 경우 관련 생산량 +1, 놀라운 매력도에 위치한 경우 관련 생산량 +2를 제공합니다. </Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION" Language="ko_KR">
+			<Text>이전 10턴 중 도시를 해방했다면 [ICON_Production] 생산력 +50%를 제공합니다.</Text>
+		</Replace>
+		<!-- Germany -->
+		<Replace Tag="LOC_PROMOTION_COMBAT_VS_CITY_STATES_DESCRIPTION" Language="ko_KR">
+			<Text>도시 국가 대항 시 전투력 +3.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION" Language="ko_KR">
+			<Text>군사 정책 슬롯이 추가됩니다. 도시 국가 공격 시 [ICON_Strength] 전투력 +3을 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION" Language="ko_KR">
+			<Text>산업 활동이 진행되는 독일 특유의 특수지구입니다. 산업구역 특수지구를 대체하며 건설 비용이 더 낮습니다.[NEWLINE][NEWLINE]상업 중심지에 인접한 경우 보너스 [ICON_Production] 생산력 +2를 획득합니다. 인접한 자원 2개당 보너스 [ICON_Production] 생산력 +1을 획득합니다. 인접한 특수지구 타일 2개당 보너스 [ICON_Production] 생산력 +1을 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="ko_KR">
+			<Text>인접효과: 인접 상업 중심지 특수지구는 상당한 [ICON_Production] 생산 보너스를 부여합니다. 인접 자원 2개마다 일반적인 [ICON_Production] 생산 보너스를 부여합니다. 인접 특수지구 타일은 약소한 [ICON_Production] 생산 보너스를 부여합니다.</Text>
+		</Replace>
+		<!-- Korea -->
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ko_KR">
+			<Text>한국 특유의 과학 발전을 위한 특수지구로 캠퍼스 특수지구를 대체합니다. [ICON_SCIENCE] 과학 +2를 제공합니다. 언덕에 지어야 합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="ko_KR">
+			<Text>인접효과: 인접한 광산 2개당 [ICON_SCIENCE] 과학이 +1 증가합니다. 인접한 특수지구 하나당 [ICON_SCIENCE] 과학이 -1 감소합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="ko_KR">
+			<Text>[ICON_Science] 과학 +{1_num}.</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_MINE_SCIENCE" Language="ko_KR">
+			<Text>인접한 광산에서 [ICON_Science] 과학 {1_num: number +#,###;-#,###}.</Text>
+		</Row>
+		<!-- Rome -->
+		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="ko_KR">
+			<Text>능력 제거됨</Text>
+		</Replace>
+		<!-- Venetial Arsenal -->
+		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="ko_KR">
+			<Text>모든 도시에서 해군 유닛을 생산할 때 [ICON_Production] 생산력 +50%. 산업구역 특수지구 옆 해안 타일에 지어야 합니다.</Text>
+		</Replace>
+		<!-- Mausoleum at Halicarnassus -->
+		<Replace Tag="LOC_BUILDING_HALICARNASSUS_MAUSOLEUM_DESCRIPTION" Language="ko_KR">
+			<Text>불가사의 건설이 완료되면 무료 [ICON_GREATADMIRAL] 위대한 제독을 제공합니다.[NEWLINE][NEWLINE][ICON_GREATADMIRAL] 위대한 제독은 퇴장 능력을 한 번 더 쓸 수 있으며 [ICON_GREATGENERAL] 위대한 장군 또한 능력을 한 번 더 쓸 수 있습니다. 항만 특수지구 옆에 지어야 합니다.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

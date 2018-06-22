@@ -1,0 +1,53 @@
+Exploits:
+    - Can immediately re-declare war on a city-state when an enemy suzerian removes Amani (instead
+       of having to wait 10 turns)
+
+Great People:
+    - Classical Great Generals give no movement bonus, so that they will be allowed outside of
+       borders
+
+Wonders:
+    - Wonders only provide 10 Points towards Score instead of 15
+    - Apadana gives only +1 envoy for wonders built instead of +2
+    - Venetian Arsenal Gives +50% production bonus to all naval units in all cities instead of an extra
+       naval unit for each built in 1 city
+    - Mausoleum At Halicarnassus allows Great Admirals and Generals to retire twice instead of
+       Admirals and Engineers
+
+Pantheons:
+    - God of the Forge is +15% (instead of +25%) to production towards Ancient/Classical Era combat
+       units
+    - Goddess of the Harvest Faith chop bonus reduced to 75% from 100%
+
+Religions:
+    - Defender of the Faith combat bonus reduced to +4 (was +10)
+    - Crusader combat bonus reduced to +7 (was +10)
+
+Civs:
+    - Rome no longer gets a free monument
+    - Scythia gets no extra light cavalry units
+    - Sumerian War Carts have a maintenance cost of 1 (no longer free) so you cannot have unlimited
+    - Sumerian War Cart combat strength reduced to 28 from 30
+    - Russia gets 4 additional tiles when founding a city instead of 8
+    - Russian Cossask base strength reduced to 62 (same as cavalry) instead of 67 (still have
+       movement after attacking and +5 near home turf)
+    - German Hansas require 2 adjacent resources (instead of 1) to get +1 production
+    - Germany's combat bonus against city-states reduced to +3 (from +7)
+    - Persia surprise war movement bonus reduced to +0 (from +2) (can be exploited in FFA)
+    - Nubia Pitati Archer ranged strength reduced to 25 (from 30) (they are like an archer with 3
+       movement now)
+    - Nubia ranged unit production reduced to +25% (from +50%)
+    - Nubia ranged unit experience reduced to +25% (from +50%)
+    - Australia gets +0% production (instead of +100%) when a war is declared on them (can be
+       exploited in FFA)
+    - Australia gets +50% production (instead of +100%) for 10 turns (instead of 20) after liberating a
+       city
+    - Australian Campus/Commercial/Theater/Holy districts receive +2 when built on breathtaking
+       appeal (instead of +3)
+    - Mapuche combat bonus against Golden Age Civs set to +5 instead of +10
+    - Zulu Corps/Army combat bonus reduced to +3 (from +5)
+    - Zulu gets Corps at Diplomatic Service instead of Mercenaries
+    - Zulu gets Armies at Urbanization instead of Mobilization
+    - Korea's Campus (Seowon) has a base yield adjacency of +2 (instead of +4)
+    - Korea's Seowon gains +1 Science adjacency for every 2 adjacent mines (mines still give +1
+       Science themselves)
