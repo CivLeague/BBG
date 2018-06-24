@@ -178,14 +178,14 @@
 		</Replace>
 		
 		
-		<!-- KR TRANSLATIONS -->
-		<!-- Defender of the Faith Religion -->
-		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="ko_KR">
-			<Text>전투 유닛은 이 종교를 믿는 우호적인 도시 영토 내에서 [ICON_Strength] 전투력 +4를 획득합니다.</Text>
-		</Replace>
+		<!-- KOREAN TRANSLATIONS -->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ko_KR">
 			<Text>전투 유닛은 이 종교를 믿는 외국 도시 근처에서 [ICON_Strength] 전투력 +7을 획득합니다.</Text>
+		</Replace>
+		<!-- Defender of the Faith Religion -->
+		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="ko_KR">
+			<Text>전투 유닛은 이 종교를 믿는 우호적인 도시 영토 내에서 [ICON_Strength] 전투력 +4를 획득합니다.</Text>
 		</Replace>
 		<!-- God of the Forge Pantheon -->
 		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="ko_KR">
@@ -195,33 +195,9 @@
 		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HARVEST_DESCRIPTION" Language="ko_KR">
 			<Text>자원 수확 또는 지형 제거를 통해 획득하는 수확량의 75% 만큼의 [ICON_Faith] 신앙을 획득합니다.</Text>
 		</Replace>
-		<!-- Apadana Wonder -->
-		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="ko_KR">
-			<Text>이 도시에 아파다나를 포함한 불가사의를 건설하면 [ICON_ENVOY] 사절 +1.[NEWLINE][NEWLINE]플레이어 [ICON_CAPITAL] 수도 옆에 지어야 합니다.</Text>
-		</Replace>
 		<!-- Classical Great General -->
 		<Replace Tag="LOC_GREATPERSON_COMBAT_STRENGTH_AOE_CLASSICAL_LAND" Language="ko_KR">
 			<Text>2타일 이내에 있는 고전 및 중세 시대 지상 유닛에게 [ICON_Strength] 전투력 +5를 부여합니다.</Text>
-		</Replace>
-		<!-- Mapuche -->
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="ko_KR">
-			<Text>[ICON_Governor] 총독이 정착한 도시에서 훈련된 모든 유닛은 전투에서 25% 추가 경험치를 획득합니다. 황금기에 진입한 다른 문명 상대 시 [ICON_Strength] 전투력 보너스 +5를 제공합니다.</Text>
-		</Replace>
-		<!-- Scythia -->
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="ko_KR">
-			<Text>특성 제거됨</Text>
-		</Replace>
-		<!-- Persia -->
-		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="ko_KR">
-			<Text>주둔 유닛이 있는 점령 도시에 턴당 충성심 +5가 부여됩니다. 기습 전쟁의 선포는 전쟁 도발과 전쟁 피로도 유발의 목적으로만 공식 전쟁으로 인정됩니다.</Text>
-		</Replace>
-		<!-- Russia -->
-		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="ko_KR">
-			<Text>기병대를 대체하는 러시아 특유의 산업 시대 유닛입니다. 고향 영토 내 또는 인근에서 전투할 경우 전투력 +5를 획득합니다. [ICON_Movement] 이동력이 남아있다면 공격 후 이동이 가능합니다.</Text>
-		</Replace>
-		<!-- Nubia -->
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ko_KR">
-			<Text>원거리 유닛 생성 시 +25%의 [ICON_Production] 생산력을 받습니다. 모든 원거리 유닛이 +25%의 전투 경험치를 획득합니다. 전략 자원 위에 있는 광산에서 [ICON_Production] 생산력 +1을 제공합니다. 보너스 자원과 사치 자원 위에 있는 광산에서 [ICON_Gold] 금 +2를 제공합니다.</Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION" Language="ko_KR">
@@ -251,19 +227,132 @@
 			<Text>[ICON_Science] 과학 +{1_num}.</Text>
 		</Replace>
 		<Row Tag="LOC_DISTRICT_MINE_SCIENCE" Language="ko_KR">
-			<Text>인접한 광산에서 [ICON_Science] 과학 {1_num: number +#,###;-#,###}.</Text>
+			<Text>인접한 {1_Num : plural 1?광산; other?광산;}에서 [ICON_Science] 과학 +{1_num}.</Text>
 		</Row>
+		<!-- Mapuche -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_Governor] 총독이 정착한 도시에서 훈련된 모든 유닛은 전투에서 25% 추가 경험치를 획득합니다. 황금기에 진입한 다른 문명 상대 시 [ICON_Strength] 전투력 보너스 +5를 제공합니다.</Text>
+		</Replace>
+		<!-- Nubia -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ko_KR">
+			<Text>원거리 유닛 생성 시 +25%의 [ICON_Production] 생산력을 받습니다. 모든 원거리 유닛이 +25%의 전투 경험치를 획득합니다. 전략 자원 위에 있는 광산에서 [ICON_Production] 생산력 +1을 제공합니다. 보너스 자원과 사치 자원 위에 있는 광산에서 [ICON_Gold] 금 +2를 제공합니다.</Text>
+		</Replace>
+		<!-- Persia -->
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="ko_KR">
+			<Text>주둔 유닛이 있는 점령 도시에 턴당 충성심 +5가 부여됩니다. 기습 전쟁의 선포는 전쟁 도발과 전쟁 피로도 유발의 목적으로만 공식 전쟁으로 인정됩니다.</Text>
+		</Replace>
 		<!-- Rome -->
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="ko_KR">
-			<Text>능력 제거됨</Text>
+			<Text>특성 제거됨</Text>
+		</Replace>
+		<!-- Russia -->
+		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="ko_KR">
+			<Text>기병대를 대체하는 러시아 특유의 산업 시대 유닛입니다. 고향 영토 내 또는 인근에서 전투할 경우 전투력 +5를 획득합니다. [ICON_Movement] 이동력이 남아있다면 공격 후 이동이 가능합니다.</Text>
+		</Replace>
+		<!-- Scythia -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="ko_KR">
+			<Text>특성 제거됨</Text>
+		</Replace>
+		<!-- Zulu -->
+		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="ko_KR">
+			<Text>보다 빠르게 군단(용병 사회 제도)과 군대(민족주의 사회 제도)를 구성할 수 있습니다. 동원령 사회 제도를 획득하면 군단 및 군대에 [ICON_STRENGTH] 기본 전투력 +5를 제공합니다.</Text>
+		</Replace>
+		<!-- Apadana Wonder -->
+		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에 아파다나를 포함한 불가사의를 건설하면 [ICON_ENVOY] 사절 +1.[NEWLINE][NEWLINE]플레이어 [ICON_CAPITAL] 수도 옆에 지어야 합니다.</Text>
+		</Replace>
+		<!-- Mausoleum at Halicarnassus -->
+		<Replace Tag="LOC_BUILDING_HALICARNASSUS_MAUSOLEUM_DESCRIPTION" Language="ko_KR">
+			<Text>불가사의 건설이 완료되면 무료 [ICON_GREATADMIRAL] 위대한 제독을 제공합니다.[NEWLINE][NEWLINE][ICON_GREATADMIRAL] 위대한 제독은 퇴장 능력을 한 번 더 쓸 수 있으며 [ICON_GREATGENERAL] 위대한 장군 또한 능력을 한 번 더 쓸 수 있습니다. 항만 특수지구 옆에 지어야 합니다.</Text>
 		</Replace>
 		<!-- Venetial Arsenal -->
 		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="ko_KR">
 			<Text>모든 도시에서 해군 유닛을 생산할 때 [ICON_Production] 생산력 +50%. 산업구역 특수지구 옆 해안 타일에 지어야 합니다.</Text>
 		</Replace>
-		<!-- Mausoleum at Halicarnassus -->
-		<Replace Tag="LOC_BUILDING_HALICARNASSUS_MAUSOLEUM_DESCRIPTION" Language="ko_KR">
-			<Text>불가사의 건설이 완료되면 무료 [ICON_GREATADMIRAL] 위대한 제독을 제공합니다.[NEWLINE][NEWLINE][ICON_GREATADMIRAL] 위대한 제독은 퇴장 능력을 한 번 더 쓸 수 있으며 [ICON_GREATGENERAL] 위대한 장군 또한 능력을 한 번 더 쓸 수 있습니다. 항만 특수지구 옆에 지어야 합니다.</Text>
+		<!-- NEW -->
+		<Replace Tag="LOC_UNIT_WARRIOR_MONK_DESCRIPTION" Language="ko_KR">
+			<Text>빠르게 이동하는 고전 시대 지상 전투 유닛으로 특유의 진급 발전표를 지닙니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_WARRIOR_MONKS_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_Faith] 신앙을 소비하여 전투승을 훈련할 수 있습니다. 이 고전 시대의 지상 전투 유닛은 특유의 진급 발전표를 지닙니다. 성지에 사원이 있는 도시에서만 구매할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_2" Language="ko_KR">
+			<Text>펜, 붓과 목소리: [ICON_CivicBoosted] 영감을 발동할 때마다 시대 점수 +1을 얻습니다. 걸작 슬롯이 있는 건물을 건설하면 시대 점수 +1을 얻습니다. 황금기 시작 시점에서 선택하면 [ICON_CivicBoosted] 영감이 사회 제도 비용의 10%를 추가로 제공합니다. 각 도시는 전문 특수지구마다 [ICON_Culture] 문화 +1과 [ICON_Gold] 금 +1을 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MOMENT_CATEGORY_CULTURAL_BONUS_GOLDEN_AGE" Language="ko_KR">
+			<Text>펜, 붓과 목소리 황금기:[NEWLINE][ICON_CivicBoosted] 영감이 사회 제도 상승효과 10%를 추가로 제공합니다. 각 도시에는 전문 특수지구당 [ICON_Culture] 문화 +1과 [ICON_Gold] 금 +1이 제공됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="ko_KR">
+			<Text>이 종교를 믿는 도시의 각 성지 또는 극장가 특수지구에서 [ICON_Faith] 신앙 +2 또는[ICON_Culture] 문화 +2를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="ko_KR">
+			<Text>종교의 전파 거리가 40% 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION" Language="ko_KR">
+			<Text>다른 문명에서 이 종교를 믿는 신자 3명마다 [ICON_Science] 과학 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="ko_KR">
+			<Text>전문 특수지구를 보유한 도시에 [ICON_Amenities] 쾌적도 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_COMMUNITY_DESCRIPTION" Language="ko_KR">
+			<Text>성지 특수지구 및 성소와 사원에서 [ICON_Housing] 주거공간 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_TITHE_DESCRIPTION" Language="ko_KR">
+			<Text>이 종교의 신자 3명마다 [ICON_Gold] 금 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_WORLD_CHURCH_DESCRIPTION" Language="ko_KR">
+			<Text>다른 문명에서 이 종교를 믿는 신자 3명마다 [ICON_Culture] 문화 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="ko_KR">
+			<Text>불가사의 건설에 대한 [ICON_Production] 생산력 +15%를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_NAME" Language="ko_KR">
+			<Text>진정으로 믿는 자</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="ko_KR">
+			<Text>매 턴 [ICON_GreatProphet] 위대한 선지자 점수 +1을 얻습니다. 아라비아의 종교를 믿는 타 문명 도시마다 [ICON_Science] 과학 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="ko_KR">
+			<Text>해당 종교의 예배 건물은 일반적인 [ICON_Faith] 신앙 비용의 10%만 소진하여 구매할 수 있습니다. 이 예배 건물을 개선하면 아라비아 도시에서 생산되는 [ICON_Science] 과학, [ICON_Faith] 신앙 및 [ICON_Culture] 문화가 20% 추가됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION" Language="ko_KR">
+			<Text>중세 성벽을 대체하는 조지아 특유의 건물입니다. 중세 성벽보다 [ICON_Production] 생산 비용이 더 낮습니다. 외곽 방어 시설의 체력이 최대치로 증가합니다. 보존 사회 제도로 발전 후 [ICON_TOURISM] 관광 +3을 제공합니다. [ICON_Faith] 신앙 +3을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="ko_KR">
+			<Text>검사를 대체하는 조지아 특유의 고전 시대 유닛입니다. 전투에서 승리를 거두면 패배한 유닛의 [ICON_Strength] 전투력 25%에 준하는 [ICON_Faith] 신앙이 제공됩니다. 언덕 지형에서 전투 시 [ICON_Strength] 전투력 +5를 획득합니다. 언덕 지형에서 [ICON_Movement] 이동력 페널티가 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="ko_KR">
+			<Text>고향 영토 안에 있는 모든 지상 전투 유닛 및 종교 유닛의 [ICON_Movement] 이동력 +1. 고향 영토 바깥이면서 고향 영토에서 6타일 이내에 있으면 [ICON_Strength] 전투력 +3을 대신 획득합니다.</Text>
+		</Replace>
+		<Row Tag="LOC_EXPANSION_COMBAT_BONUS_MODIFIER_CPLMOD" Language="ko_KR">
+			<Text>국경에서 1~6타일 이내에서 전투 시 [ICON_Strength] 전투력 보너스 +3.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ko_KR">
+			<Text>종교를 창시할 때 교리를 한 개 더 고를 수 있습니다. 종교를 창시했고 현재 전쟁에 참여하지 않는 각 문명(인도 포함)을 접할 때마다 [ICON_Faith] 신앙 +5를 제공합니다. 상대 문명은 간디와 전투 시 전쟁 피로도가 2배 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ko_KR">
+			<Text>크메르 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하는 데 필요합니다. 지어질 때 무료 선교사 1명을 제공합니다. 이 도시에서 구매한 선교사는 신학 전투에서 처치되었을 때 [ICON_GreatWork_Relic] 성유물을 부여하는 순교자 능력을 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="ko_KR">
+			<Text>캐터펄트를 대체하는 크메르 특유의 고전 시대 공성 유닛입니다. 캐터펄트보다 공격력 및 방어력이 모두 강합니다. 같은 턴에 이동 및 발포 가능하며 통제 지역 영향력을 행사합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="ko_KR">
+			<Text>외국 도시와 연결된 모든 [ICON_TradeRoute] 교역로에서 양 문명 모두 [ICON_FAITH] 신앙 +2를 획득합니다. 송수로를 보유한 각 도시는 유흥에 의한 [ICON_FAITH] 신앙 +3 및 [ICON_AMENITIES] 쾌적도 +1을 제공합니다. 농장은 송수로에 인접한 경우 [ICON_FOOD] 식량 +2를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="ko_KR">
+			<Text>노르웨이 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하기 위해 요구됩니다. 도시 내 각 자원에 [ICON_FAITH] 신앙 +1을 제공합니다. 도시 내 각 해안 자원에 [ICON_PRODUCTION] 생산력 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION" Language="ko_KR">
+			<Text>스키타이 특유의 고전 시대 유닛입니다. [ICON_Movement] 이동력 4와 [ICON_Range] 사정거리 1을 보유한 원거리 유닛입니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_KURGAN_DESCRIPTION" Language="ko_KR">
+			<Text>스키타이 특유의 쿠르간을 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +1, [ICON_Gold] 금 +1을 제공합니다. 인접한 목장마다 [ICON_Faith] 신앙 +1과 [ICON_Gold] 금 +1을 추가 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="ko_KR">
+			<Text>스페인 특유의 전도관을 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2를 제공합니다. [ICON_Capital] 수도와 다른 대륙에 있으면 추가 [ICON_Faith] 신앙 +2를 제공합니다. 캠퍼스 특수지구 옆에 지으면 [ICON_Science] 과학 +2를 제공합니다. 탐험 사회 제도를 획득하면 [ICON_HOUSING] 주거공간 +1을 추가 제공하며, 문화 유산 사회 제도를 획득하면 [ICON_Science] 과학 +2를 추가 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="ko_KR"> 
+			<Text>습지로 보이는 타일 네 개의 자연경관입니다. [ICON_Food] 식량 +2,[ICON_Culture] 문화 +2,[ICON_Science] 과학 +1을 제공합니다.</Text>
 		</Replace>
 		
 		
