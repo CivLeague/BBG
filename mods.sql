@@ -1,6 +1,7 @@
 -- Amani Abuse Fix... can immediately re-declare war when an enemy suzerian removes Amani
 UPDATE GlobalParameters SET Value='1' WHERE Name='DIPLOMACY_PEACE_MIN_TURNS';
 
+
 -- DEDICATIONS --
 INSERT INTO Modifiers (ModifierId , ModifierType , OwnerRequirementSetId)
     VALUES ('COMMEMORATION_CULTURAL_DISTRICTGOLD' , 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_DISTRICT' , 'PLAYER_HAS_GOLDEN_AGE');
@@ -47,8 +48,9 @@ INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
     VALUES ('CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE' , 'REQUIRES_CITY_FOLLOWS_RELIGION');
 INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE' , 'REQUIRES_CITY_HAS_HOLY_SITE');
--- Warrior Monks +5 Combat Strength
+-- Warrior Monks +5 Combat Strength and work with CGG
 UPDATE Units SET Combat=40, PrereqCivic='CIVIC_THEOLOGY' WHERE UnitType='UNIT_WARRIOR_MONK';
+
 
 -- PANTHEONS --
 -- God of the Forge is +15% production to ancient and classical units instead of +25
@@ -62,7 +64,7 @@ UPDATE ModifierArguments SET Value='ERA_INFORMATION' WHERE ModifierId='MONUMENT_
 
 -- GREAT PEOPLE --
 -- Remove movement bonus from Classical Great Generals
-UPDATE ModifierArguments SET Value='NULL' WHERE ModifierId='GREATPERSON_MOVEMENT_AOE_CLASSICAL_LAND';
+--UPDATE ModifierArguments SET Value='NULL' WHERE ModifierId='GREATPERSON_MOVEMENT_AOE_CLASSICAL_LAND';
 
 
 -- CIVILIZATIONS --
@@ -70,47 +72,76 @@ UPDATE ModifierArguments SET Value='NULL' WHERE ModifierId='GREATPERSON_MOVEMENT
 UPDATE ModifierArguments SET Value='20' WHERE ModifierId='TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_CULTURE' AND Name='Multiplier';
 UPDATE ModifierArguments SET Value='20' WHERE ModifierId='TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_FAITH' AND Name='Multiplier';
 UPDATE ModifierArguments SET Value='20' WHERE ModifierId='TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_SCIENCE' AND Name='Multiplier';
--- Arabia gets +1 Great Prophet point per turn
-INSERT INTO Modifiers (ModifierId , ModifierType)
-    VALUES ('TRAIT_BONUS_GREAT_PROPHET_POINT_CPLMOD' , 'MODIFIER_PLAYER_ADJUST_GREAT_PERSON_POINTS');
+-- Arabia gets +1 Great Prophet point per turn after getting a pantheon
+INSERT INTO Modifiers (ModifierId , ModifierType, SubjectRequirementSetId)
+    VALUES ('TRAIT_BONUS_GREAT_PROPHET_POINT_CPLMOD' , 'MODIFIER_PLAYER_ADJUST_GREAT_PERSON_POINTS' , 'PLAYER_HAS_ASTROLOGY_REQUIREMENTS_CPLMOD');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('TRAIT_BONUS_GREAT_PROPHET_POINT_CPLMOD' , 'GreatPersonClassType' , 'GREAT_PERSON_CLASS_PROPHET');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('TRAIT_BONUS_GREAT_PROPHET_POINT_CPLMOD' , 'Amount' , '1');
-INSERT INTO TraitModifiers (TraitType , ModifierId)
-    VALUES ('TRAIT_CIVILIZATION_LAST_PROPHET' , 'TRAIT_BONUS_GREAT_PROPHET_POINT_CPLMOD');
+UPDATE TraitModifiers SET ModifierId='TRAIT_BONUS_GREAT_PROPHET_POINT_CPLMOD' WHERE ModifierId='TRAIT_GUARANTEE_ONE_PROPHET';
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('PLAYER_HAS_ASTROLOGY_REQUIREMENTS_CPLMOD' , 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('PLAYER_HAS_ASTROLOGY_REQUIREMENTS_CPLMOD' , 'REQUIRES_PLAYER_HAS_ASTROLOGY_CPLMOD');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_PLAYER_HAS_ASTROLOGY_CPLMOD' , 'REQUIREMENT_PLAYER_HAS_TECHNOLOGY');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_PLAYER_HAS_ASTROLOGY_CPLMOD' , 'TechnologyType' , 'TECH_ASTROLOGY');
 
 -- Australia's war production bonus reduced to 0% from 100%, liberation bonus reduced to +50% (from +100%) for 10 turns (from 20 turns)
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='TRAIT_CITADELCIVILIZATION_LIBERATION_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='TRAIT_CITADELCIVILIZATION_LIBERATION_PRODUCTION' and Name='TurnsActive';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_CITADELCIVILIZATION_DEFENSIVE_PRODUCTION' and Name='Amount';
 
--- Georgia Tsikhe changed to half cost Medieval Wall replacement instead of Renaissance Wall replacement
-UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_CASTLE' WHERE CivUniqueBuildingType='BUILDING_TSIKHE';
-UPDATE BuildingPrereqs SET PrereqBuilding='BUILDING_WALLS' WHERE Building='BUILDING_TSIKHE';
-UPDATE Buildings SET Cost=110, PrereqTech='TECH_CASTLES' WHERE BuildingType='BUILDING_TSIKHE';
--- Georgian Khevsur unit becomes sword replacement that gets Faith equal to 25% of the enemy base combat strength 
+-- Georgia Tsikhe changed to a stronger Ancient Wall replacement instead of a Renaissance Wall replacement
+DELETE FROM BuildingPrereqs WHERE Building='BUILDING_TSIKHE';
+UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_WALLS' WHERE CivUniqueBuildingType='BUILDING_TSIKHE';
+UPDATE Buildings SET Cost=80 , PrereqTech='TECH_MASONRY' , OuterDefenseHitPoints=75 WHERE BuildingType='BUILDING_TSIKHE';
+-- Georgian Khevsur unit becomes sword replacement
 UPDATE Units SET Combat=35, Cost=100, Maintenance=2, PrereqTech='TECH_IRON_WORKING' WHERE UnitType='UNIT_GEORGIAN_KHEVSURETI';
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='KHEVSURETI_HILLS_BUFF' AND Name='Amount';
 INSERT INTO UnitReplaces (CivUniqueUnitType , ReplacesUnitType)
 	VALUES ('UNIT_GEORGIAN_KHEVSURETI', 'UNIT_SWORDSMAN');
-INSERT INTO Modifiers (ModifierId, ModifierType)
-	VALUES ('KHEVSURETI_FAITH_KILLS' , 'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD');
-INSERT INTO ModifierArguments (ModifierId, Name, Value)
-	VALUES ('KHEVSURETI_FAITH_KILLS' , 'PercentDefeatedStrength' , '25');
-INSERT INTO ModifierArguments (ModifierId, Name, Value)
-	VALUES ('KHEVSURETI_FAITH_KILLS' , 'YieldType' , 'YIELD_FAITH');
-INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
-	VALUES ('ABILITY_GEORGIAN_KHEVSURETI' , 'KHEVSURETI_FAITH_KILLS');
 -- Georgia gets Tier 3 Hills bias
 INSERT INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
 	VALUES ('CIVILIZATION_GEORGIA' , 'TERRAIN_PLAINS_HILLS' , 3);
 INSERT INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
 	VALUES ('CIVILIZATION_GEORGIA' , 'TERRAIN_GRASS_HILLS' , 3);
+-- Georgia gets 50% faith kills instead of Protectorate War Bonus
+INSERT INTO Modifiers (ModifierId, ModifierType)
+	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD');
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'PercentDefeatedStrength' , '50');
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'YieldType' , 'YIELD_FAITH');
+UPDATE TraitModifiers SET ModifierId='TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' WHERE ModifierId='TRAIT_PROTECTORATE_WAR_FAITH';
 
 -- German Hansas need 2 adjacent resources for +1 production instead of 1 to 1 and combat bonus against city-states nerfed to +3 from +7
 UPDATE Adjacency_YieldChanges SET TilesRequired=2 WHERE ID='Resource_Production';
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='COMBAT_BONUS_VS_CITY_STATES_MODIFIER' and Name='Amount'; 
+
+-- Greece gets their extra envoy at amphitheater instead of acropolis
+DELETE FROM DistrictModifiers WHERE DistrictType='DISTRICT_ACROPOLIS';
+INSERT INTO TraitModifiers
+	VALUES ('TRAIT_CIVILIZATION_PLATOS_REPUBLIC' , 'AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
+    VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN' , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'BUILDING_IS_AMPHITHEATER');
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+    VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN' , 'ModifierId' , 'AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN_MOD');
+INSERT INTO Modifiers (ModifierId, ModifierType)
+    VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN_MOD' , 'MODIFIER_PLAYER_GRANT_INFLUENCE_TOKEN');
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+    VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN_MOD' , 'Amount' , '1');
+
+-- Greece (Gorgo) gets 25% culture from kills instead of 50%
+UPDATE ModifierArguments SET Value='25' WHERE ModifierId='UNIQUE_LEADER_CULTURE_KILLS' AND Name='PercentDefeatedStrength';
+
+-- India Stepwell Unique Improvement gets +1 base Faith and +1 Food moved from Professional Sports to Feudalism
+UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_STEPWELL' AND YieldType='YIELD_FAITH'; 
+UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_FEUDALISM' WHERE Id='20';
+-- India Varu maintenance too high
+UPDATE Units SET Maintenance=2 WHERE UnitType='UNIT_INDIAN_VARU';
 
 -- India (Chadragupta) gets +1 movement in territory and +3 combat strength when within 8 tiles of their territory
 -- Remove Territorial Expansion Declaration Bonus
@@ -179,6 +210,11 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
     VALUES ('HAS_A_RELIGION', 'REQUIRES_PLAYER_HAS_FOUNDED_A_RELIGION');
 
+-- Japan no longer gets half cost encampment, holy site, and theater districts
+DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_BOOST_ENCAMPMENT_PRODUCTION';
+DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_BOOST_HOLY_SITE_PRODUCTION';
+DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_BOOST_THEATER_DISTRICT_PRODUCTION';
+
 -- Khmer's Prasat gives a free Missionary when built
 INSERT INTO Modifiers (ModifierId , ModifierType , RunOnce , Permanent)
     VALUES ('PRASAT_GRANT_MISSIONARY_CPLMOD' , 'MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY' , 1 , 1);
@@ -231,6 +267,23 @@ INSERT INTO District_Adjacencies
 -- Mapuche combat bonus against Golden Age Civs set to 5 instead of 10
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='TRAIT_TOQUI_COMBAT_BONUS_VS_GOLDEN_AGE_CIV';
 
+-- Norway's Berserker unit now 45 strength instead of 40, gets unlocked at Fuedalism instead of Military Tactics, and can be purchased with faith
+UPDATE Units SET Combat=45 , PrereqTech=NULL , PrereqCivic='CIVIC_FEUDALISM' WHERE UnitType='UNIT_NORWEGIAN_BERSERKER';
+INSERT INTO TraitModifiers (TraitType , ModifierId)
+	VALUES ('TRAIT_CIVILIZATION_UNIT_NORWEGIAN_BERSERKER' , 'BERSERKER_FAITH_PURCHASE_CPLMOD');
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('BERSERKER_FAITH_PURCHASE_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ENABLE_UNIT_FAITH_PURCHASE');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('BERSERKER_FAITH_PURCHASE_CPLMOD' , 'Tag' , 'CLASS_MELEE_BERSERKER'); 
+-- Norway Melee Naval production reduced to 25% from 50%
+UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_ANCIENT_NAVAL_MELEE_PRODUCTION' AND Name='Amount';
+UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_CLASSICAL_NAVAL_MELEE_PRODUCTION' AND Name='Amount';
+UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_MEDIEVAL_NAVAL_MELEE_PRODUCTION' AND Name='Amount';
+UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RENAISSANCE_NAVAL_MELEE_PRODUCTION' AND Name='Amount';
+UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_INDUSTRIAL_NAVAL_MELEE_PRODUCTION' AND Name='Amount';
+UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_MODERN_NAVAL_MELEE_PRODUCTION' AND Name='Amount';
+UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_ATOMIC_NAVAL_MELEE_PRODUCTION' AND Name='Amount';
+UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_INFORMATION_NAVAL_MELEE_PRODUCTION' AND Name='Amount';
 -- Norwegian Stave Church now gives +1 Faith to resource tiles in the city instead of standard adjacency bonus for woods
 INSERT INTO Modifiers (ModifierID , ModifierType , SubjectRequirementSetId)
 	VALUES ('STAVECHURCH_RESOURCE_FAITH' , 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD' , 'STAVE_CHURCH_RESOURCE_REQUIREMENTS');
@@ -266,8 +319,16 @@ UPDATE Units SET Combat=35 WHERE UnitType='UNIT_PERSIAN_IMMORTAL';
 UPDATE ModifierArguments SET Value='4' WHERE ModifierId='TRAIT_INCREASED_TILES';
 UPDATE Units SET Combat=62 WHERE UnitType='UNIT_RUSSIAN_COSSACK';
 
--- Rome no longer gets free monuments when they found a city and Legions have same strength as Swordsmen (36 instead of 40)
-UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_ADJUST_NON_CAPITAL_FREE_CHEAPEST_BUILDING';
+-- Rome now gets free monuments in new cities after getting the Political Philosophy Civic
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('PLAYER_HAS_POLITICAL_PHILOSOPHY_REQUIREMENTS_CPLMOD' , 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('PLAYER_HAS_POLITICAL_PHILOSOPHY_REQUIREMENTS_CPLMOD' , 'PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD' , 'REQUIREMENT_PLAYER_HAS_CIVIC');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD' , 'CivicType' , 'CIVIC_POLITICAL_PHILOSOPHY');
+UPDATE Modifiers SET NewOnly='1' , OwnerRequirementSetId='PLAYER_HAS_POLITICAL_PHILOSOPHY_REQUIREMENTS_CPLMOD' WHERE ModifierId='TRAIT_ADJUST_NON_CAPITAL_FREE_CHEAPEST_BUILDING';
 
 -- Scythia no longer gets an extra light cavalry unit when building/buying one
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_EXTRASAKAHORSEARCHER' and NAME='Amount';
@@ -275,21 +336,32 @@ UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_EXTRALIGHTCAVALRY
 -- Scythian Horse Archer gets a little more offense and defense, less maintenance, and can upgrade to Crossbowman before Field Cannon now
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_CROSSBOWMAN' WHERE Unit='UNIT_SCYTHIAN_HORSE_ARCHER';
 UPDATE Units SET Combat=20, RangedCombat=30, Maintenance=1 WHERE UnitType='UNIT_SCYTHIAN_HORSE_ARCHER';
--- Scythia's Kurgan improvement gets +1 gold per adjacent pasture and can be built on hills
+-- Adjacent Pastures now give +1 production in addition to faith
 INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
-    VALUES ('IMPROVEMENT_KURGAN' , 'KURGAN_PASTURE_GOLD_CPLMOD');
+	VALUES ('IMPROVEMENT_KURGAN' , 'KURGAN_PASTURE_PRODUCTION');
 INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentImprovement)
-    VALUES ('KURGAN_PASTURE_GOLD_CPLMOD' , 'LOC_PLACEHOLDER' , 'YIELD_GOLD' , 1 , 1 , 'IMPROVEMENT_PASTURE');
-INSERT INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
-	VALUES ('IMPROVEMENT_KURGAN', 'TERRAIN_DESERT_HILLS');
-INSERT INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
-	VALUES ('IMPROVEMENT_KURGAN', 'TERRAIN_GRASS_HILLS');
-INSERT INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
-	VALUES ('IMPROVEMENT_KURGAN', 'TERRAIN_PLAINS_HILLS');
-INSERT INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
-	VALUES ('IMPROVEMENT_KURGAN', 'TERRAIN_SNOW_HILLS');
-INSERT INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
-	VALUES ('IMPROVEMENT_KURGAN', 'TERRAIN_TUNDRA_HILLS');
+	VALUES ('KURGAN_PASTURE_PRODUCTION' , 'Placeholder' , 'YIELD_PRODUCTION' , 1 , 1 , 'IMPROVEMENT_PASTURE');
+INSERT INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
+	VALUES ('IMPROVEMENT_KURGAN' , 'YIELD_PRODUCTION' , 0);
+-- Can now purchase cavalry units with faith
+INSERT INTO TraitModifiers (TraitType , ModifierId)
+	VALUES ('TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY' , 'SCYTHIA_FAITH_PURCHASE_LCAVALRY_CPLMOD');
+INSERT INTO TraitModifiers (TraitType , ModifierId)
+	VALUES ('TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY' , 'SCYTHIA_FAITH_PURCHASE_HCAVALRY_CPLMOD');
+INSERT INTO TraitModifiers (TraitType , ModifierId)
+	VALUES ('TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY' , 'SCYTHIA_FAITH_PURCHASE_RCAVALRY_CPLMOD');
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('SCYTHIA_FAITH_PURCHASE_LCAVALRY_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ENABLE_UNIT_FAITH_PURCHASE');
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('SCYTHIA_FAITH_PURCHASE_HCAVALRY_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ENABLE_UNIT_FAITH_PURCHASE');
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('SCYTHIA_FAITH_PURCHASE_RCAVALRY_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ENABLE_UNIT_FAITH_PURCHASE');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('SCYTHIA_FAITH_PURCHASE_LCAVALRY_CPLMOD' , 'Tag' , 'CLASS_LIGHT_CAVALRY'); 
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('SCYTHIA_FAITH_PURCHASE_HCAVALRY_CPLMOD' , 'Tag' , 'CLASS_HEAVY_CAVALRY');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('SCYTHIA_FAITH_PURCHASE_RCAVALRY_CPLMOD' , 'Tag' , 'CLASS_RANGED_CAVALRY'); 
 
 -- Spanish Mission moved to Theology and gets +1 housing at Exploration
 UPDATE Improvements SET PrereqCivic='CIVIC_THEOLOGY' WHERE ImprovementType='IMPROVEMENT_MISSION';
@@ -327,8 +399,6 @@ UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_MOBILIZATION_REQUIREMEN
 
 
 -- NATURAL WONDERS --
--- Cliffs of Dover make settleable
-UPDATE Features SET Settlement=1 WHERE FeatureType='FEATURE_CLIFFS_DOVER';
 -- Pantanal gets +1 Science to tiles
 INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_PANTANAL', 'YIELD_SCIENCE', 1);
@@ -671,3 +741,96 @@ INSERT INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'MODERN_NAVAL_CARRIER_PRODUCTION');
 INSERT INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'RENAISSANCE_NAVAL_CARRIER_PRODUCTION');
+
+
+-- POLICY CARDS --
+-- Adds +50% Siege Unit Production to Limes Policy Card (the +100% to walls card)
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_ANCIENT_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_CLASSICAL_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_MEDIEVAL_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_RENAISSANCE_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_INDUSTRIAL_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_MODERN_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_ATOMIC_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('LIMES_SIEGE_INFORMATION_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+--
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_ANCIENT_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_ANCIENT_ERA_CPLMOD' , 'EraType' , 'ERA_ANCIENT' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_ANCIENT_ERA_CPLMOD' , 'Amount' , '50' , '-1');
+	
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_CLASSICAL_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_CLASSICAL_ERA_CPLMOD' , 'EraType' , 'ERA_CLASSICAL' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_CLASSICAL_ERA_CPLMOD' , 'Amount' , '50' , '-1');
+	
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_MEDIEVAL_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_MEDIEVAL_ERA_CPLMOD' , 'EraType' , 'ERA_MEDIEVAL' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_MEDIEVAL_ERA_CPLMOD' , 'Amount' , '50' , '-1');
+	
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_RENAISSANCE_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_RENAISSANCE_ERA_CPLMOD' , 'EraType' , 'ERA_RENAISSANCE' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_RENAISSANCE_ERA_CPLMOD' , 'Amount' , '50' , '-1');
+	
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_INDUSTRIAL_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_INDUSTRIAL_ERA_CPLMOD' , 'EraType' , 'ERA_INDUSTRIAL' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_INDUSTRIAL_ERA_CPLMOD' , 'Amount' , '50' , '-1');
+	
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_MODERN_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_MODERN_ERA_CPLMOD' , 'EraType' , 'ERA_MODERN' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_MODERN_ERA_CPLMOD' , 'Amount' , '50' , '-1');
+	
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_ATOMIC_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_ATOMIC_ERA_CPLMOD' , 'EraType' , 'ERA_ATOMIC' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_ATOMIC_ERA_CPLMOD' , 'Amount' , '50' , '-1');
+	
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_INFORMATION_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_INFORMATION_ERA_CPLMOD' , 'EraType' , 'ERA_INFORMATION' , '-1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES ('LIMES_SIEGE_INFORMATION_ERA_CPLMOD' , 'Amount' , '50' , '-1');
+--
+INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_ANCIENT_ERA_CPLMOD');
+INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_CLASSICAL_ERA_CPLMOD');
+INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_MEDIEVAL_ERA_CPLMOD');
+INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_RENAISSANCE_ERA_CPLMOD');
+INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_INDUSTRIAL_ERA_CPLMOD');
+INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_MODERN_ERA_CPLMOD');
+INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_ATOMIC_ERA_CPLMOD');
+INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_INFORMATION_ERA_CPLMOD');
