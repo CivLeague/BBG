@@ -79,17 +79,11 @@
 		<Replace Tag="LOC_BUILDING_HALICARNASSUS_MAUSOLEUM_DESCRIPTION" Language="en_US">
 			<Text>Grants a free [ICON_GREATADMIRAL] Great Admiral when the wonder is constructed.[NEWLINE][NEWLINE]All [ICON_GREATADMIRAL] Great Admirals and all [ICON_GREATGENERAL] Great Generals can use their retirement ability an additional time. Must be built adjacent to a Harbor district.</Text>
 		</Replace>
-		<!-- Venetial Arsenal -->
+		<!-- Venetian Arsenal -->
 		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="en_US">
 			<Text>+50% [ICON_Production] Production towards naval units in all cities. Must be built on a Coast tile that is adjacent to an Industrial Zone district.</Text>
 		</Replace>
 		<!-- NEW -->
-		<Replace Tag="LOC_UNIT_WARRIOR_MONK_DESCRIPTION" Language="en_US">
-			<Text>Fast-moving classical era land combat unit with a unique promotion tree.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_WARRIOR_MONKS_DESCRIPTION" Language="en_US">
-			<Text>Allows spending [ICON_Faith] Faith to train Warrior Monks, classical era land combat units with a unique promotion tree. May only be purchased in a city with a Temple in its Holy Site.</Text>
-		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_2" Language="en_US">
 			<Text>Pen, Brush, and Voice: Gain +1 Era Score each time you trigger an [ICON_CivicBoosted] Inspiration. +1 Era Score for constructing a building with a Great Work Slot. If chosen at the start of a Golden Age, [ICON_CivicBoosted] Inspirations provide an additional 10% of civic costs. Each city receives +1 [ICON_Culture] Culture and +1 [ICON_Gold] Gold for each specialty district.</Text>
 		</Replace>
@@ -125,9 +119,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="en_US">
 			<Text>The worship building for their Religion can be purchased by any player for just one-tenth of the usual [ICON_Faith] Faith cost. It adds 20% to the [ICON_Science] Science, [ICON_Faith] Faith, and [ICON_Culture] Culture to the city's output.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="en_US">
-			<Text>All land combat and religious units receive +1 [ICON_Movement] within home territory. Outside of, but within 6 tiles of home territory, they receive +3 [ICON_Strength] Combat Strength instead.</Text>
 		</Replace>
 		<Row Tag="LOC_EXPANSION_COMBAT_BONUS_MODIFIER_CPLMOD" Language="en_US">
 			<Text>+3 [ICON_Strength] Combat Bonus within 1 to 6 tiles of borders</Text>
@@ -204,6 +195,34 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="en_US">
 			<Text>One extra Wildcard policy slot in any government.[NEWLINE][NEWLINE]Receive an envoy each time an Amphitheater is completed.</Text>
+		</Replace>
+		<!-- Newest -->
+		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="en_US">
+			<Text>All land combat and religious units receive +1 [ICON_Movement] Movement within and near home territory.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION" Language="en_US">
+			<Text>All districts receive an additional standard adjacency bonus for being adjacent to another district. Commercial Hubs no longer receive bonuses from adjacent rivers.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="en_US">
+			<Text>The Religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb.[NEWLINE][NEWLINE]Holy Sites gain standard Faith adjacency bonus from adjacent districts.[NEWLINE][NEWLINE]All Relics provide bonus Faith (+2), Culture (+2) and Gold (+4). Recieve a Relic upon founding and completing a Religion.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="en_US">
+			<Text>A building unique to the Aztecs. Provides an [ICON_Amenities] Amenity, +3 [ICON_CULTURE] Culture, and a [ICON_GreatGeneral] Great General Point.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct the Great Wall, unique to China.[NEWLINE][NEWLINE]Provides an increase to [ICON_Strength] Defense and +1 [ICON_PRODUCTION] Production. Bonus to [ICON_Gold] Gold if adjacent to other segments. Additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology Tree for adjacent segments. Must be built in a line along the borders of your empire.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct a Sphinx, unique to Egypt.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith, +1 [ICON_Culture] Culture, and +1 Appeal. +1 [ICON_Faith] Faith and +1 [ICON_CULTURE] Culture if next to a wonder. +1 [ICON_FAITH] Faith per adjacent Holy Site. +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production if built on Desert</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="en_US">
+			<Text>Improvement that unlocks with Masonry and must be built on Desert, Desert Hills, Floodplains, or Plains. +1 [ICON_Faith] Faith. Receives additional yields from adjacent districts. +2 [ICON_Food] Food if adjacent to a city center. For all other districts that award adjacency bonuses: +2 of the appropriate yield if that district is adjacent.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="en_US">
+			<Text>Three tile natural wonder. Provides +1 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, and +2 [ICON_SCIENCE] Science.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_PILGRIMAGE_DESCRIPTION" Language="en_US">
+			<Text>+3 [ICON_Faith] Faith for every foreign city following this Religion.</Text>
 		</Replace>
 		
 		
@@ -291,12 +310,6 @@
 			<Text>모든 도시에서 해군 유닛을 생산할 때 [ICON_Production] 생산력 +50%. 산업구역 특수지구 옆 해안 타일에 지어야 합니다.</Text>
 		</Replace>
 		<!-- NEW -->
-		<Replace Tag="LOC_UNIT_WARRIOR_MONK_DESCRIPTION" Language="ko_KR">
-			<Text>빠르게 이동하는 고전 시대 지상 전투 유닛으로 특유의 진급 발전표를 지닙니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_WARRIOR_MONKS_DESCRIPTION" Language="ko_KR">
-			<Text>[ICON_Faith] 신앙을 소비하여 전투승을 훈련할 수 있습니다. 이 고전 시대의 지상 전투 유닛은 특유의 진급 발전표를 지닙니다. 성지에 사원이 있는 도시에서만 구매할 수 있습니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_2" Language="ko_KR">
 			<Text>펜, 붓과 목소리: [ICON_CivicBoosted] 영감을 발동할 때마다 시대 점수 +1을 얻습니다. 걸작 슬롯이 있는 건물을 건설하면 시대 점수 +1을 얻습니다. 황금기 시작 시점에서 선택하면 [ICON_CivicBoosted] 영감이 사회 제도 비용의 10%를 추가로 제공합니다. 각 도시는 전문 특수지구마다 [ICON_Culture] 문화 +1과 [ICON_Gold] 금 +1을 얻습니다.</Text>
 		</Replace>
@@ -332,12 +345,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="ko_KR">
 			<Text>해당 종교의 예배 건물은 일반적인 [ICON_Faith] 신앙 비용의 10%만 소진하여 구매할 수 있습니다. 이 예배 건물을 개선하면 아라비아 도시에서 생산되는 [ICON_Science] 과학, [ICON_Faith] 신앙 및 [ICON_Culture] 문화가 20% 추가됩니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="ko_KR">
-			<Text>고향 영토 안에 있는 모든 지상 전투 유닛 및 종교 유닛의 [ICON_Movement] 이동력 +1. 고향 영토 바깥이면서 고향 영토에서 6타일 이내에 있으면 [ICON_Strength] 전투력 +3을 대신 획득합니다.</Text>
-		</Replace>
-		<Row Tag="LOC_EXPANSION_COMBAT_BONUS_MODIFIER_CPLMOD" Language="ko_KR">
-			<Text>국경에서 1~6타일 이내에서 전투 시 [ICON_Strength] 전투력 보너스 +3.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ko_KR">
 			<Text>종교를 창시할 때 교리를 한 개 더 고를 수 있습니다. 종교를 창시했고 현재 전쟁에 참여하지 않는 각 문명(인도 포함)을 접할 때마다 [ICON_Faith] 신앙 +5를 제공합니다. 상대 문명은 간디와 전투 시 전쟁 피로도가 2배 증가합니다.</Text>
@@ -412,6 +419,34 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="ko_KR">
 			<Text>모든 정부에 와일드카드 정책 슬롯이 1개 더 추가됩니다.[NEWLINE][NEWLINE]원형 극장 건물을 건설시 [ICON_Envoy] 사절 1명을 획득합니다.</Text>
 		</Replace>
+		<!-- Newest -->
+		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="ko_KR">
+            <Text>고향 영토 안 또는 근처에 있는 모든 지상 전투 유닛 및 종교 유닛의 [ICON_Movement] 이동력 +1.</Text>
+        </Replace>
+        <Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION" Language="ko_KR">
+            <Text>모든 특수지구는 옆에 있는 다른 특수지구에서 기본 인접 보너스를 추가로 받습니다. 상업 중심지 특수지구는 더 이상 강으로부터 인접 보너스를 얻을 수 없습니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="ko_KR">
+            <Text>폴란드 창시 종교는 폴란드의 문화 폭탄으로 타일을 잃은 인접 도시의 대중 종교가 됩니다. 성지는 인접 특수지구로부터 일반적인 신앙 인접 보너스를 획득합니다.[NEWLINE][NEWLINE]모든 성유물은 신앙(+2), 문화(+2) 및 금(+4) 보너스를 제공합니다. 종교를 창시하거나 완성할 때 무료로 성유물을 하나 받습니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="ko_KR">
+            <Text>아즈텍 특유의 건물입니다. [ICON_Amenities] 쾌적도 +1, [ICON_Culture] 문화 +3, [ICON_GreatGeneral] 위대한 장군 점수 +1을 제공합니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="ko_KR">
+            <Text>중국 특유의 만리장성을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Strength] 방어력과 [ICON_PRODUCTION] 생산력 +1이 증가합니다. 서로 연결된 만리장성 타일에는 [ICON_Gold] 금 보너스를 제공합니다. 기술 발전표의 진전에 따라, 연결된 만리장성 타일에  [ICON_Culture] 문화 및 [ICON_Tourism] 관광이 추가로 부여됩니다. 제국 국경을 따라 일렬로 지어야 합니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ko_KR">
+            <Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +1을 제공합니다. 불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다. 성지 특수지구에 인접한 경우 [ICON_Faith] 신앙 +1, 사막에 건설한 경우 [ICON_Food] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="ko_KR">
+            <Text>석조기술과 함께 잠금 해제되며 사막, 사막 언덕, 범람원 또는 평원에 지어야 하는 시설입니다. [ICON_Faith] 신앙 +1을 제공합니다. 인근 특수지구에서 추가 생산량을 획득합니다. 도심부에 인접하는 경우 [ICON_Food] 식량 +2를 제공합니다. 인접 보너스를 제공하는 다른 모든 특수지구의 경우 해당 특수지구가 인접했다면 해당 산출물 +2를 제공합니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="ko_KR">
+            <Text>타일 세 개의 자연경관입니다. [ICON_Food] 식량 +1,[ICON_PRODUCTION] 생산력 +2,[ICON_Science] 과학 +2를 제공합니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_BELIEF_PILGRIMAGE_DESCRIPTION" Language="ko_KR">
+            <Text>다른 문명 및 도시 국가에서 이 종교를 믿는 도시마다 [ICON_Faith] 신앙 +3을 획득합니다.</Text>
+        </Replace>
 		
 		
 		<!-- FRENCH TRANSLATIONS -->

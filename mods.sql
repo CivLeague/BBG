@@ -2,6 +2,25 @@
 UPDATE GlobalParameters SET Value='1' WHERE Name='DIPLOMACY_PEACE_MIN_TURNS';
 
 
+-- Reduce amount of tourism needed for foreign tourist from 200 to 135
+UPDATE GlobalParameters SET Value='135' WHERE Name='TOURISM_TOURISM_TO_MOVE_CITIZEN';
+
+
+-- Citizen specialists give +1 main yield
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType="DISTRICT_ACROPOLIS";
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' 		AND DistrictType="DISTRICT_CAMPUS";
+UPDATE District_CitizenYieldChanges SET YieldChange=5 WHERE YieldType='YIELD_GOLD' 			AND DistrictType="DISTRICT_COMMERCIAL_HUB";
+UPDATE District_CitizenYieldChanges SET YieldChange=2 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType="DISTRICT_ENCAMPMENT";
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType="DISTRICT_HANSA";
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' 			AND DistrictType="DISTRICT_HARBOR";
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_FAITH' 		AND DistrictType="DISTRICT_HOLY_SITE";
+UPDATE District_CitizenYieldChanges SET YieldChange=2 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType="DISTRICT_IKANDA";
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType="DISTRICT_INDUSTRIAL_ZONE";
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_FAITH' 		AND DistrictType="DISTRICT_LAVRA";
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' 			AND DistrictType="DISTRICT_ROYAL_NAVY_DOCKYARD";
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' 		AND DistrictType="DISTRICT_SEOWON";
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType="DISTRICT_THEATER";
+
 -- DEDICATIONS --
 INSERT INTO Modifiers (ModifierId , ModifierType , OwnerRequirementSetId)
     VALUES ('COMMEMORATION_CULTURAL_DISTRICTGOLD' , 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_DISTRICT' , 'PLAYER_HAS_GOLDEN_AGE');
@@ -25,6 +44,8 @@ UPDATE ModifierArguments SET Value='2' WHERE ModifierId='LAY_MINISTRY_FAITH_DIST
 UPDATE ModifierArguments SET Value='4' WHERE ModifierId='ITINERANT_PREACHERS_SPREAD_DISTANCE';
 -- Cross-Cultural Dialogue is now +1 Science for every 3 foreign followers
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='CROSS_CULTURAL_DIALOGUE_SCIENCE_FOREIGN_FOLLOWER_MODIFIER' AND Name='PerXItems';
+-- Pilgrimmage now gives 3 Faith instead of 2 for each foreign city converted
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='PILGRIMAGE_FAITH_FOREIGN_CITY_MODIFIER' AND Name='Amount';
 -- Tithe is now +1 Gold for every 3 followers
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='TITHE_GOLD_FOLLOWER_MODIFIER' AND Name='PerXItems';
 -- World Church is now +1 Culture for every 3 foreign followers
@@ -48,8 +69,8 @@ INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
     VALUES ('CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE' , 'REQUIRES_CITY_FOLLOWS_RELIGION');
 INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE' , 'REQUIRES_CITY_HAS_HOLY_SITE');
--- Warrior Monks +5 Combat Strength and work with CGG
-UPDATE Units SET Combat=40, PrereqCivic='CIVIC_THEOLOGY' WHERE UnitType='UNIT_WARRIOR_MONK';
+-- Warrior Monks +3 Combat Strength
+UPDATE Units SET Combat=38 WHERE UnitType='UNIT_WARRIOR_MONK';
 
 
 -- PANTHEONS --
@@ -94,6 +115,97 @@ UPDATE ModifierArguments SET Value='50' WHERE ModifierId='TRAIT_CITADELCIVILIZAT
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='TRAIT_CITADELCIVILIZATION_LIBERATION_PRODUCTION' and Name='TurnsActive';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_CITADELCIVILIZATION_DEFENSIVE_PRODUCTION' and Name='Amount';
 
+-- Aztec Tlachtli Unique Building is now slightly cheaper and is +3 Culture instead of +2 Faith/+1 Culture
+DELETE FROM Building_YieldChanges WHERE BuildingType='BUILDING_TLACHTLI' AND YieldType='YIELD_FAITH';
+UPDATE Building_YieldChanges SET YieldChange=3 WHERE BuildingType='BUILDING_TLACHTLI';
+UPDATE Buildings SET Cost=100 WHERE BuildingType='BUILDING_TLACHTLI';
+
+-- China's Great Wall provides +1 Production
+INSERT INTO Improvement_YieldChanges
+	VALUES ('IMPROVEMENT_GREAT_WALL' , 'YIELD_PRODUCTION' , 1);
+
+-- Egypt Sphinx heavily modified
+-- Now allowed to be adjacent to another Sphinx. This is primarily used for improvements that grant housing.
+UPDATE Improvements SET SameAdjacentValid='1' WHERE ImprovementType='IMPROVEMENT_SPHINX';
+-- Base Faith Increased to 2 (from 1)
+UPDATE Improvement_YieldChanges SET YieldChange=2 WHERE ImprovementType='IMPROVEMENT_SPHINX' AND YieldType='YIELD_FAITH';
+-- +1 Faith and +1 Culture if adjacent to a wonder, insteaf of 2 Faith.
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId='SPHINX_WONDERADJACENCY_FAITH' AND Name='Amount';
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('SPHINX_WONDERADJACENCY_CULTURE_CPLMOD' , 'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS' , 'PLOT_ADJACENT_TO_WONDER_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('SPHINX_WONDERADJACENCY_CULTURE_CPLMOD' , 'YieldType' , 'YIELD_CULTURE');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('SPHINX_WONDERADJACENCY_CULTURE_CPLMOD' , 'Amount' , 1);
+INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
+	VALUES ('IMPROVEMENT_SPHINX' , 'SPHINX_WONDERADJACENCY_CULTURE_CPLMOD');
+-- Add +1 faith per adjacent holy site
+INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
+	VALUES ( 'Sphinx_HolySiteAdjacency' , 'Placeholder' , 'YIELD_FAITH' , 1 , 1 , 'DISTRICT_HOLY_SITE');
+INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
+	VALUES ('IMPROVEMENT_SPHINX' , 'Sphinx_HolySiteAdjacency');
+-- Increased +1 Culture moved to Diplomatic Service (Was Natural History)
+UPDATE Improvement_BonusYieldChanges SET PrereqCivic = 'CIVIC_DIPLOMATIC_SERVICE' WHERE Id = 18;
+-- Now grants 1 food and 1 production on desert tiles without floodplains. Go Go Gadget bad-start fixer.
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('SPHINX_DESERT_FOOD_MODIFIER' , 'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS', 'SPHINX_FOOD_PLOT_HAS_DESERT_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('SPHINX_DESERT_HILLS_FOOD_MODIFIER' , 'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS', 'SPHINX_FOOD_PLOT_HAS_DESERT_HILLS_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('SPHINX_DESERT_PRODUCTION_MODIFIER' , 'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS' ,'SPHINX_PRODUCTION_PLOT_HAS_DESERT_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('SPHINX_DESERT_HILLS_PRODUCTION_MODIFIER' , 'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS' ,'SPHINX_PRODUCTION_PLOT_HAS_DESERT_HILLS_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('SPHINX_DESERT_FOOD_MODIFIER' , 'YieldType' , 'YIELD_FOOD');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('SPHINX_DESERT_FOOD_MODIFIER' , 'Amount' , '1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('SPHINX_DESERT_HILLS_FOOD_MODIFIER' , 'YieldType' , 'YIELD_FOOD');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('SPHINX_DESERT_HILLS_FOOD_MODIFIER' , 'Amount' , '1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('SPHINX_DESERT_PRODUCTION_MODIFIER' , 'YieldType' , 'YIELD_PRODUCTION');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('SPHINX_DESERT_PRODUCTION_MODIFIER' , 'Amount' , '1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('SPHINX_DESERT_HILLS_PRODUCTION_MODIFIER' , 'YieldType' , 'YIELD_PRODUCTION');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('SPHINX_DESERT_HILLS_PRODUCTION_MODIFIER' , 'Amount' , '1');
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('SPHINX_FOOD_PLOT_HAS_DESERT_HILLS_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('SPHINX_FOOD_PLOT_HAS_DESERT_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('SPHINX_PRODUCTION_PLOT_HAS_DESERT_HILLS_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('SPHINX_PRODUCTION_PLOT_HAS_DESERT_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
+	VALUES ('IMPROVEMENT_SPHINX' , 'SPHINX_DESERT_FOOD_MODIFIER');
+INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
+	VALUES ('IMPROVEMENT_SPHINX' , 'SPHINX_DESERT_HILLS_FOOD_MODIFIER');
+INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
+	VALUES ('IMPROVEMENT_SPHINX' , 'SPHINX_DESERT_PRODUCTION_MODIFIER');
+INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
+	VALUES ('IMPROVEMENT_SPHINX' , 'SPHINX_DESERT_HILLS_PRODUCTION_MODIFIER');
+-- No bonus on Floodplains
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('SPHINX_FOOD_PLOT_HAS_DESERT_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_NO_FLOODPLAINS');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('SPHINX_FOOD_PLOT_HAS_DESERT_HILLS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_NO_FLOODPLAINS');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('SPHINX_PRODUCTION_PLOT_HAS_DESERT_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_NO_FLOODPLAINS');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('SPHINX_PRODUCTION_PLOT_HAS_DESERT_HILLS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_NO_FLOODPLAINS');
+-- Requires Desert or Desert Hills
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('SPHINX_FOOD_PLOT_HAS_DESERT_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_DESERT');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('SPHINX_FOOD_PLOT_HAS_DESERT_HILLS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_DESERT_HILLS');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('SPHINX_PRODUCTION_PLOT_HAS_DESERT_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_DESERT');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('SPHINX_PRODUCTION_PLOT_HAS_DESERT_HILLS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_DESERT_HILLS');
+	
 -- Georgia Tsikhe changed to a stronger Ancient Wall replacement instead of a Renaissance Wall replacement
 DELETE FROM BuildingPrereqs WHERE Building='BUILDING_TSIKHE';
 UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_WALLS' WHERE CivUniqueBuildingType='BUILDING_TSIKHE';
@@ -156,13 +268,13 @@ INSERT INTO Modifiers (ModifierId , ModifierType)
 INSERT INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('TRAIT_EXPANSION_MOVEMENT_BONUS_CPLMOD' , 'MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER');
 INSERT INTO Modifiers (ModifierId , ModifierType , OwnerRequirementSetId, SubjectRequirementSetId)
-	VALUES ('EXPANSION_COMBAT_BONUS_MODIFIER_CPLMOD' , 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH' , 'REQUIREMENTSET_LAND_MILITARY_CPLMOD', 'PLAYER_UNITS_NEARBY_TERRITORY_REQUIREMENTS_CPLMOD');
+	VALUES ('EXPANSION_COMBAT_BONUS_MODIFIER_CPLMOD' , 'MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT' , 'REQUIREMENTSET_LAND_MILITARY_CPLMOD', 'PLAYER_UNITS_NEARBY_TERRITORY_REQUIREMENTS_CPLMOD');
 INSERT INTO Modifiers (ModifierId , ModifierType , OwnerRequirementSetId, SubjectRequirementSetId)
 	VALUES ('EXPANSION_MOVEMENT_BONUS_MODIFIER_CPLMOD' , 'MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT' , 'REQUIREMENTSET_LAND_MILITARY_CPLMOD', 'PLAYER_UNITS_WITHIN_TERRITORY_REQUIREMENTS_CPLMOD');
 INSERT INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('CHANDRAGUPTA_NEARBY_TERRITORY_REQUIREMENTS_CPLMOD' , 'MinRange' , '0');
 INSERT INTO RequirementArguments (RequirementId , Name , Value)
-	VALUES ('CHANDRAGUPTA_NEARBY_TERRITORY_REQUIREMENTS_CPLMOD' , 'MaxRange' , '8');
+	VALUES ('CHANDRAGUPTA_NEARBY_TERRITORY_REQUIREMENTS_CPLMOD' , 'MaxRange' , '3');
 INSERT INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('REQUIREMENTS_LAND_MILITARY_CPLMOD' , 'UnitFormationClass' , 'FORMATION_CLASS_LAND_COMBAT');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
@@ -170,7 +282,7 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('TRAIT_EXPANSION_MOVEMENT_BONUS_CPLMOD' , 'ModifierId', 'EXPANSION_MOVEMENT_BONUS_MODIFIER_CPLMOD');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES ('EXPANSION_COMBAT_BONUS_MODIFIER_CPLMOD' , 'Amount' , '3');
+	VALUES ('EXPANSION_COMBAT_BONUS_MODIFIER_CPLMOD' , 'Amount' , '1');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('EXPANSION_MOVEMENT_BONUS_MODIFIER_CPLMOD' , 'Amount' , '1');
 INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
@@ -214,6 +326,17 @@ INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_BOOST_ENCAMPMENT_PRODUCTION';
 DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_BOOST_HOLY_SITE_PRODUCTION';
 DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_BOOST_THEATER_DISTRICT_PRODUCTION';
+-- Japan no longer gets adjacency from rivers
+INSERT INTO TraitModifiers (TraitType , ModifierId)
+	VALUES ('TRAIT_CIVILIZATION_ADJACENT_DISTRICTS' , 'TRAIT_COMMERCIAL_NO_RIVER_BONUS_CPLMOD');
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('TRAIT_COMMERCIAL_NO_RIVER_BONUS_CPLMOD' , 'MODIFIER_PLAYER_CITIES_RIVER_ADJACENCY');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES('TRAIT_COMMERCIAL_NO_RIVER_BONUS_CPLMOD' , 'Amount' , '-2');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES('TRAIT_COMMERCIAL_NO_RIVER_BONUS_CPLMOD' , 'DistrictType' , 'DISTRICT_COMMERCIAL_HUB');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES('TRAIT_COMMERCIAL_NO_RIVER_BONUS_CPLMOD' , 'YieldType' , 'YIELD_GOLD');
 
 -- Khmer's Prasat gives a free Missionary when built
 INSERT INTO Modifiers (ModifierId , ModifierType , RunOnce , Permanent)
@@ -225,7 +348,7 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 INSERT INTO BuildingModifiers (BuildingType , ModifierId)
     VALUES ('BUILDING_PRASAT' , 'PRASAT_GRANT_MISSIONARY_CPLMOD');
 -- Khmer's Domrey Unique Unit will now be a Catapult replacement that has a higher melee strength and bombard strength
-UPDATE Units SET Combat=30, Bombard=40, Cost=130, Maintenance=2, PrereqTech='TECH_ENGINEERING', MandatoryObsoleteTech='TECH_STEEL' WHERE UnitType='UNIT_KHMER_DOMREY';
+UPDATE Units SET Combat=33, Bombard=45, Cost=130, Maintenance=2, PrereqTech='TECH_ENGINEERING', MandatoryObsoleteTech='TECH_STEEL' WHERE UnitType='UNIT_KHMER_DOMREY';
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_BOMBARD' WHERE Unit='UNIT_KHMER_DOMREY';
 INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType)
 	VALUES ('UNIT_KHMER_DOMREY', 'UNIT_CATAPULT');
@@ -267,14 +390,16 @@ INSERT INTO District_Adjacencies
 -- Mapuche combat bonus against Golden Age Civs set to 5 instead of 10
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='TRAIT_TOQUI_COMBAT_BONUS_VS_GOLDEN_AGE_CIV';
 
--- Norway's Berserker unit now 45 strength instead of 40, gets unlocked at Fuedalism instead of Military Tactics, and can be purchased with faith
-UPDATE Units SET Combat=45 , PrereqTech=NULL , PrereqCivic='CIVIC_FEUDALISM' WHERE UnitType='UNIT_NORWEGIAN_BERSERKER';
+-- Norway's Berserker unit now gets unlocked at Feudalism instead of Military Tactics, and can be purchased with Faith
+UPDATE Units SET Combat=40 WHERE UnitType='UNIT_NORWEGIAN_BERSERKER';
 INSERT INTO TraitModifiers (TraitType , ModifierId)
 	VALUES ('TRAIT_CIVILIZATION_UNIT_NORWEGIAN_BERSERKER' , 'BERSERKER_FAITH_PURCHASE_CPLMOD');
 INSERT INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('BERSERKER_FAITH_PURCHASE_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ENABLE_UNIT_FAITH_PURCHASE');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES ('BERSERKER_FAITH_PURCHASE_CPLMOD' , 'Tag' , 'CLASS_MELEE_BERSERKER'); 
+	VALUES ('BERSERKER_FAITH_PURCHASE_CPLMOD' , 'Tag' , 'CLASS_MELEE_BERSERKER');
+-- Norway's Longship unit now 25 combat strength
+UPDATE Units SET Combat=25 WHERE UnitType='UNIT_NORWEGIAN_LONGSHIP';
 -- Norway Melee Naval production reduced to 25% from 50%
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_ANCIENT_NAVAL_MELEE_PRODUCTION' AND Name='Amount';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_CLASSICAL_NAVAL_MELEE_PRODUCTION' AND Name='Amount';
@@ -310,10 +435,252 @@ UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_MODERN_RANGED_UN
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_ATOMIC_RANGED_UNIT_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_INFORMATION_RANGED_UNIT_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RANGED_EXPERIENCE_MODIFIER' and Name='Amount';
+-- Nubian Pyramid can also be built on flat plains
+INSERT INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
+	VALUES ('IMPROVEMENT_PYRAMID' , 'TERRAIN_PLAINS');
+-- Nubian Pyramid gets double adjacency yields
+UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_CityCenterAdjacency";
+UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_CampusAdjacency";
+UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_CommercialHubAdjacency";
+UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_HarborAdjacency";
+UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_HolySiteAdjacency";
+UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_IndustrialZoneAdjacency";
+UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_TheaterAdjacency";
 
 -- Persia surprise war bonuses of domestic trade gold and unit movement set to +1 instead of +2
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_FALLBABYLON_SURPRISE_MOVEMENT' and Name='Amount';
 UPDATE Units SET Combat=35 WHERE UnitType='UNIT_PERSIAN_IMMORTAL';
+
+-- Poland's Winged Hussar moved to Divine Right
+UPDATE Units SET PrereqCivic='CIVIC_DIVINE_RIGHT' WHERE UnitType='UNIT_POLISH_HUSSAR';
+-- Poland gets a Relic when founding a religion
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('TRAIT_LITHUANIANUNION_FOUND_RELIGION_RELIC_CPLMOD' , 'MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER' , 'PLAYER_FOUNDED_RELIGION_RELIC_CPLMOD');	
+INSERT INTO Modifiers (ModifierId , ModifierType , Permanent , RunOnce)
+	VALUES ('FOUND_RELIGION_RELIC_MODIFIER_CPLMOD' , 'MODIFIER_PLAYER_GRANT_RELIC' , 1 , 1);	
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('TRAIT_LITHUANIANUNION_FOUND_RELIGION_RELIC_CPLMOD' , 'ModifierId' , 'FOUND_RELIGION_RELIC_MODIFIER_CPLMOD');	
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('FOUND_RELIGION_RELIC_MODIFIER_CPLMOD' , 'Amount' , '1');	
+INSERT INTO TraitModifiers (TraitType , ModifierId)
+	VALUES ('TRAIT_LEADER_LITHUANIAN_UNION' , 'TRAIT_LITHUANIANUNION_FOUND_RELIGION_RELIC_CPLMOD');
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('PLAYER_FOUNDED_RELIGION_RELIC_CPLMOD' , 'REQUIREMENTSET_TEST_ALL');	
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('PLAYER_FOUNDED_RELIGION_RELIC_CPLMOD' , 'REQUIRES_PLAYER_HAS_FOUNDED_A_RELIGION');
+-- Poland gets a Relic when completing a religion
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('TRAIT_LITHUANIANUNION_COMPLETE_RELIGION_RELIC_CPLMOD' , 'MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER' , 'REQUIRES_PLAYER_COMPLETED_RELIGION_RELIC_CPLMOD');
+INSERT INTO Modifiers (ModifierId , ModifierType , Permanent , RunOnce)
+	VALUES ('COMPLETE_RELIGION_RELIC_MODIFIER_CPLMOD' , 'MODIFIER_PLAYER_GRANT_RELIC' , 1 , 1);
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('TRAIT_LITHUANIANUNION_COMPLETE_RELIGION_RELIC_CPLMOD' , 'ModifierId' , 'COMPLETE_RELIGION_RELIC_MODIFIER_CPLMOD');	
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('COMPLETE_RELIGION_RELIC_MODIFIER_CPLMOD' , 'Amount' , '1');
+INSERT INTO TraitModifiers (TraitType , ModifierId)
+	VALUES ('TRAIT_LEADER_LITHUANIAN_UNION' , 'TRAIT_LITHUANIANUNION_COMPLETE_RELIGION_RELIC_CPLMOD');
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('REQUIRES_PLAYER_COMPLETED_RELIGION_RELIC_CPLMOD' , 'REQUIREMENTSET_TEST_ALL');
+--Checks Requirement Set for each belief type
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('REQUIRES_PLAYER_COMPLETED_RELIGION_RELIC_CPLMOD' , 'RELIGION_HAS_FOUNDER_BELIEF_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('REQUIRES_PLAYER_COMPLETED_RELIGION_RELIC_CPLMOD' , 'RELIGION_HAS_WORSHIP_BELIEF_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('REQUIRES_PLAYER_COMPLETED_RELIGION_RELIC_CPLMOD' , 'RELIGION_HAS_ENHANCER_BELIEF_CPLMOD');
+--Creates Belief Requirement Sets
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIREMENTSET_TEST_ANY');
+--Attaches Requirement Sets
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_CPLMOD' , 'REQUIREMENT_REQUIREMENTSET_IS_MET');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_CPLMOD' , 'REQUIREMENT_REQUIREMENTSET_IS_MET');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_CPLMOD' , 'REQUIREMENT_REQUIREMENTSET_IS_MET');
+--RequirementSet For FOUNDER Belief
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_CHURCH_PROPERTY_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_LAY_MINISTRY_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_PAPAL_PRIMACY_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_PILGRIMAGE_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_STEWARDSHIP_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_TITHE_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_WORLD_CHURCH_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_CROSS_CULTURAL_DIALOGUE_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_RELIGIOUS_UNITY_CPLMOD');
+--RequirementSet For WORSHIP Belief
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_CATHEDRAL_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_GURDWARA_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_MEETING_HOUSE_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_MOSQUE_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_PAGODA_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_SYNAGOGUE_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_WAT_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_STUPA_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_DAR_E_MEHR_CPLMOD');
+--RequirementSet For ENHANCER Belief
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_DEFENDER_OF_FAITH_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_HOLY_ORDER_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_ITINERANT_PREACHERS_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_JUST_WAR_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_MISSIONARY_ZEAL_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_MONASTIC_ISOLATION_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_SCRIPTURE_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_BURIAL_GROUNDS_CPLMOD');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_RELIGIOUS_COLONIZATION_CPLMOD');
+--Checks for FOUNDER Belief
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_CHURCH_PROPERTY_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_LAY_MINISTRY_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_PAPAL_PRIMACY_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_PILGRIMAGE_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_STEWARDSHIP_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_TITHE_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_WORLD_CHURCH_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_CROSS_CULTURAL_DIALOGUE_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_RELIGIOUS_UNITY_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+--Checks for WORSHIP Belief
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_CATHEDRAL_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_GURDWARA_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_MEETING_HOUSE_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_MOSQUE_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_PAGODA_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_SYNAGOGUE_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_WAT_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_STUPA_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_DAR_E_MEHR_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+--Checks for ENHANCER Belief
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_DEFENDER_OF_FAITH_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_HOLY_ORDER_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_ITINERANT_PREACHERS_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_JUST_WAR_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_MISSIONARY_ZEAL_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_MONASTIC_ISOLATION_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_SCRIPTURE_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_BURIAL_GROUNDS_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_BELIEF_RELIGIOUS_COLONIZATION_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+--RequirementArguments
+--Checks RequirementSets
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_CPLMOD' , 'RequirementSetId' , 'RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_CPLMOD' , 'RequirementSetId' , 'RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_CPLMOD' , 'RequirementSetId' , 'RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD');
+--FOUNDER	
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES('REQUIRES_BELIEF_CHURCH_PROPERTY_CPLMOD' , 'BeliefType' , 'BELIEF_CHURCH_PROPERTY');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES('REQUIRES_BELIEF_LAY_MINISTRY_CPLMOD' , 'BeliefType' , 'BELIEF_LAY_MINISTRY');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES('REQUIRES_BELIEF_PAPAL_PRIMACY_CPLMOD' , 'BeliefType' , 'BELIEF_PAPAL_PRIMACY');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES('REQUIRES_BELIEF_PILGRIMAGE_CPLMOD' , 'BeliefType' , 'BELIEF_PILGRIMAGE');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES('REQUIRES_BELIEF_STEWARDSHIP_CPLMOD' , 'BeliefType' , 'BELIEF_STEWARDSHIP');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES('REQUIRES_BELIEF_TITHE_CPLMOD' , 'BeliefType' , 'BELIEF_TITHE');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES('REQUIRES_BELIEF_WORLD_CHURCH_CPLMOD' , 'BeliefType' , 'BELIEF_WORLD_CHURCH');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES('REQUIRES_BELIEF_CROSS_CULTURAL_DIALOGUE_CPLMOD' , 'BeliefType' , 'BELIEF_CROSS_CULTURAL_DIALOGUE');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES('REQUIRES_BELIEF_RELIGIOUS_UNITY_CPLMOD' , 'BeliefType' , 'BELIEF_RELIGIOUS_UNITY');
+--WORSHIP	
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_CATHEDRAL_CPLMOD' , 'BeliefType' , 'BELIEF_CATHEDRAL');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_GURDWARA_CPLMOD' , 'BeliefType' , 'BELIEF_GURDWARA');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_MEETING_HOUSE_CPLMOD' , 'BeliefType' , 'BELIEF_MEETING_HOUSE');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_MOSQUE_CPLMOD' , 'BeliefType' , 'BELIEF_MOSQUE');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_PAGODA_CPLMOD' , 'BeliefType' , 'BELIEF_PAGODA');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_SYNAGOGUE_CPLMOD' , 'BeliefType' , 'BELIEF_SYNAGOGUE');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_WAT_CPLMOD' , 'BeliefType' , 'BELIEF_WAT');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_STUPA_CPLMOD' , 'BeliefType' , 'BELIEF_STUPA');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_DAR_E_MEHR_CPLMOD' , 'BeliefType' , 'BELIEF_DAR_E_MEHR');
+--ENHANCER
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_DEFENDER_OF_FAITH_CPLMOD' , 'BeliefType' , 'BELIEF_DEFENDER_OF_FAITH');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_HOLY_ORDER_CPLMOD' , 'BeliefType' , 'BELIEF_HOLY_ORDER');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_ITINERANT_PREACHERS_CPLMOD' , 'BeliefType' , 'BELIEF_ITINERANT_PREACHERS');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_JUST_WAR_CPLMOD' , 'BeliefType' , 'BELIEF_JUST_WAR');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_MISSIONARY_ZEAL_CPLMOD' , 'BeliefType' , 'BELIEF_MISSIONARY_ZEAL');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_MONASTIC_ISOLATION_CPLMOD' , 'BeliefType' , 'BELIEF_MONASTIC_ISOLATION');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_SCRIPTURE_CPLMOD' , 'BeliefType' , 'BELIEF_SCRIPTURE');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_BURIAL_GROUNDS_CPLMOD' , 'BeliefType' , 'BELIEF_BURIAL_GROUNDS');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_BELIEF_RELIGIOUS_COLONIZATION_CPLMOD' , 'BeliefType' , 'BELIEF_RELIGIOUS_COLONIZATION');
 
 -- Russia gets 4 tiles when founding a new city instead of 8 and Cossacks have same base strength as cavalry instead of +5
 UPDATE ModifierArguments SET Value='4' WHERE ModifierId='TRAIT_INCREASED_TILES';
@@ -330,12 +697,16 @@ INSERT INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD' , 'CivicType' , 'CIVIC_POLITICAL_PHILOSOPHY');
 UPDATE Modifiers SET NewOnly='1' , OwnerRequirementSetId='PLAYER_HAS_POLITICAL_PHILOSOPHY_REQUIREMENTS_CPLMOD' WHERE ModifierId='TRAIT_ADJUST_NON_CAPITAL_FREE_CHEAPEST_BUILDING';
 
+-- Scotland's Golf Course moved to Games and Recreation... also, the extra housing for it moved to Urbanization
+UPDATE Improvements SET PrereqCivic='CIVIC_GAMES_RECREATION' WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE';
+UPDATE RequirementArguments SET Value='CIVIC_URBANIZATION' WHERE RequirementId='REQUIRES_PLAYER_HAS_GLOBALIZATION' AND Name='CivicType';
+
 -- Scythia no longer gets an extra light cavalry unit when building/buying one
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_EXTRASAKAHORSEARCHER' and NAME='Amount';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_EXTRALIGHTCAVALRY' and NAME='Amount';
 -- Scythian Horse Archer gets a little more offense and defense, less maintenance, and can upgrade to Crossbowman before Field Cannon now
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_CROSSBOWMAN' WHERE Unit='UNIT_SCYTHIAN_HORSE_ARCHER';
-UPDATE Units SET Combat=20, RangedCombat=30, Maintenance=1 WHERE UnitType='UNIT_SCYTHIAN_HORSE_ARCHER';
+UPDATE Units SET Range=2, Cost=70 WHERE UnitType='UNIT_SCYTHIAN_HORSE_ARCHER';
 -- Adjacent Pastures now give +1 production in addition to faith
 INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
 	VALUES ('IMPROVEMENT_KURGAN' , 'KURGAN_PASTURE_PRODUCTION');
@@ -383,6 +754,8 @@ INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 -- Sumerian War Carts are no longer free to maintain so that you cannot have unlimited and have 28 combat strength instead of 30
 UPDATE Units SET Maintenance=1 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
 UPDATE Units SET Combat=28 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
+-- Sumeria's Ziggurat gets +1 Culture at Diplomatic Service instead of Natural History
+UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_DIPLOMATIC_SERVICE' WHERE ImprovementType='IMPROVEMENT_ZIGGURAT';
 
 -- Zulu get corps/armies bonus at mobilization
 INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
@@ -397,18 +770,26 @@ UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_MOBILIZATION_REQUIREMEN
 UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_MOBILIZATION_REQUIREMENTS' WHERE ModifierId='TRAIT_LAND_ARMIES_COMBAT_STRENGTH';
 
 
-
 -- NATURAL WONDERS --
 -- Pantanal gets +1 Science to tiles
 INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_PANTANAL', 'YIELD_SCIENCE', 1);
+-- Eye of the Sahara gets 1 Food, 2 Production, and 2 Science
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='EYESAHARA_PRODUCTION_ATOMIC' AND Name='Amount';
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='EYESAHARA_SCIENCE_ATOMIC' AND Name='Amount';
+INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
+	VALUES ('FEATURE_EYE_OF_THE_SAHARA', 'YIELD_FOOD', 1);
+UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_EYE_OF_THE_SAHARA' AND YieldType='YIELD_PRODUCTION';
+UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_EYE_OF_THE_SAHARA' AND YieldType='YIELD_SCIENCE';
 
-	
+
 -- MAN-MADE WONDERS --
--- Wonders Provide +10 score instead of +15
-UPDATE ScoringLineItems SET Multiplier=10 WHERE LineItemType='LINE_ITEM_WONDERS';
+-- Wonders Provide +5 score instead of +15
+UPDATE ScoringLineItems SET Multiplier=5 WHERE LineItemType='LINE_ITEM_WONDERS';
 -- Apadana +1 envoy instead of 2
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='APADANA_AWARD_TWO_INFLUENCE_TOKEN_MODIFIER';
+-- Great Library unlocks at Drama & Poetry instead of Recorded History
+UPDATE Buildings SET PrereqCivic='CIVIC_DRAMA_POETRY' WHERE BuildingType='BUILDING_GREAT_LIBRARY';
 -- Mausoleum at Halicarnassus gives 1 extra retirement Admirals and Generals instead of Admirals and Engineers
 UPDATE RequirementArguments SET Value='GREAT_PERSON_CLASS_GENERAL' WHERE RequirementId='REQUIREMENT_UNIT_IS_ENGINEER';
 -- Venetian Arsenal gives 50% production boost to all naval units in all cities instead of an extra naval unit in its city each time you build one
