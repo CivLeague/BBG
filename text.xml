@@ -26,17 +26,11 @@
 			<Text>+50% [ICON_Production] Production for 10 turns after liberating a city.</Text>
 		</Replace>
 		<!-- Germany -->
-		<Replace Tag="LOC_PROMOTION_COMBAT_VS_CITY_STATES_DESCRIPTION" Language="en_US">
-			<Text>+3 Combat vs. city-states.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION" Language="en_US">
-			<Text>Additional Military policy slot. +3 [ICON_Strength] Combat Strength when attacking city-states.</Text>
-		</Replace>
 		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION" Language="en_US">
 			<Text>A district unique to Germany for industrial activity. Replaces the Industrial Zone district and cheaper to build.[NEWLINE][NEWLINE]+ 2[ICON_Production] Production bonus if adjacent to a Commercial Hub district. +1 [ICON_Production] Production bonus for every two adjacent resources. +1 [ICON_Production] Production bonus for every two adjacent district tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="en_US">
-			<Text>Adjacency: Major [ICON_Production] Production bonus if adjacent to a Commercial Hub district. Standard [ICON_Production] Production bonus for every 2 adjacent resources. Minor [ICON_Production] Production bonus for adjacent district tiles.</Text>
+			<Text>Adjacency: Major [ICON_Production] Production bonus if adjacent to a Commercial Hub district. Minor [ICON_Production] Production bonus for adjacent resources and district tiles.</Text>
 		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="en_US">
@@ -120,9 +114,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="en_US">
 			<Text>The worship building for their Religion can be purchased by any player for just one-tenth of the usual [ICON_Faith] Faith cost. It adds 20% to the [ICON_Science] Science, [ICON_Faith] Faith, and [ICON_Culture] Culture to the city's output.</Text>
 		</Replace>
-		<Row Tag="LOC_EXPANSION_COMBAT_BONUS_MODIFIER_CPLMOD" Language="en_US">
-			<Text>+3 [ICON_Strength] Combat Bonus within 1 to 6 tiles of borders</Text>
-		</Row>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="en_US">
 			<Text>Grants an extra belief when founding a Religion. +5 [ICON_Faith] Faith for each civilization (including India) they have met that has founded a Religion and is not currently at war. Opposing civilizations receive double the war weariness for fighting against Gandhi.</Text>
 		</Replace>
@@ -138,14 +129,11 @@
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="en_US">
 			<Text>A building unique to Norway that replaces the Temple. +1 [ICON_FAITH] to each resource tile in this city.  +1 [ICON_PRODUCTION] Production to each coastal resource tile in this city. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith.</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION" Language="en_US">
-			<Text>Scythian unique Classical Era ranged unit with 4 [ICON_Movement] Movement and a [ICON_Range] Range of 1.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. Additional +2 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital. +2 [ICON_Science] Science if built next to a Campus district. +1 [ICON_HOUSING] Housing at Exploration and +2 [ICON_SCIENCE] Science at Cultural Heritage.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="en_US"> 
-			<Text>Four tile natural wonder. It appears as Marsh and provides +2 [ICON_Food] Food, +2 [ICON_Culture] Culture, and +1 [ICON_Science] Science.</Text>
+			<Text>Four tile natural wonder. It appears as Marsh and provides +2 [ICON_Food] Food, +2 [ICON_Culture] Culture, and +2 [ICON_Science] Science.</Text>
 		</Replace>
 		<!-- Modified from "New" section -->
 		<!-- Rome -->
@@ -219,11 +207,46 @@
 			<Text>Improvement that unlocks with Masonry and must be built on Desert, Desert Hills, Floodplains, or Plains. +1 [ICON_Faith] Faith. Receives additional yields from adjacent districts. +2 [ICON_Food] Food if adjacent to a city center. For all other districts that award adjacency bonuses: +2 of the appropriate yield if that district is adjacent.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="en_US">
-			<Text>Three tile natural wonder. Provides +1 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, and +2 [ICON_SCIENCE] Science.</Text>
+			<Text>Three tile natural wonder. Provides +2 [ICON_FOOD] Food, +2 [ICON_PRODUCTION] Production, and +2 [ICON_SCIENCE] Science.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_PILGRIMAGE_DESCRIPTION" Language="en_US">
 			<Text>+3 [ICON_Faith] Faith for every foreign city following this Religion.</Text>
 		</Replace>
+		<Replace Tag="LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION" Language="en_US">
+			<Text>Scythian unique Classical Era ranged unit with 4 [ICON_Movement] Movement and a [ICON_Range] Range of 2.</Text>
+		</Replace>
+		<!-- Last Updates -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="en_US">
+			<Text>After unlocking the Guilds civic, each city can build one more district than usual (exceeding the normal limit based on [ICON_Citizen] Population).</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="en_US">
+			<Text>Adjacency: Major [ICON_Production] Production bonus if adjacent to a Commercial Hub district. Minor [ICON_Production] Production bonus for adjacent resources and district tiles.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_AMERICAN_ROUGH_RIDER_DESCRIPTION" Language="en_US">
+			<Text>American unique Industrial era unit that replaces Cavalry. [ICON_Culture] Culture is earned from kills on their [ICON_Capital] Capital`s continent. +5 [ICON_Strength] Combat Strength when fighting on Hills. Lower maintenance cost.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="en_US">
+			<Text>Units receive a +5 [ICON_Strength] Combat Strength on their home continent. +1 Appeal to all tiles in a city with a National Park. Gain the Rough Rider unique unit when they research the Military Science technology.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION" Language="en_US">
+			<Text>All units receive +3 [ICON_Strength] Combat Strength when attacking wounded units. When they eliminate a unit, they heal up to 30 hit points.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_CLIFFS_DOVER_DESCRIPTION" Language="en_US">
+			<Text>Two tile natural wonder. It appears with Cliffs adjacent to water and provides +2 [ICON_FOOD] Food, +3 [ICON_Culture] Culture, and +2 [ICON_Gold] Gold.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="en_US">
+			<Text>Two tile natural wonder. It appears as a Lake and provides +2 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production, +2 [ICON_CULTURE] Culture, +2 [ICON_GOLD] Gold, and Fresh Water.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="en_US">
+			<Text>Two tile natural wonder. It appears as a Lake and provides +2 [ICON_FOOD] Food, +2 [ICON_Faith] Faith, +2 [ICON_Culture] Culture, and Fresh Water. Units heal completely if they heal for one turn adjacent to the Dead Sea.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_CRATER_LAKE_DESCRIPTION" Language="en_US">
+			<Text>One tile natural wonder. It appears as a Lake and provides +2 [ICON_FOOD] Food, +2 [ICON_Science] Science, +4 [ICON_Faith] Faith, and Fresh Water.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_UBSUNUR_HOLLOW_DESCRIPTION" Language="en_US">
+			<Text>Four tile natural wonder. It appears as Marsh and provides +2 [ICON_FAITH] Faith, +2 [ICON_FOOD] Food, and +2 [ICON_PRODUCTION] Production.</Text>
+		</Replace>
+		
 		
 		
 		<!-- KOREAN TRANSLATIONS -->
@@ -252,17 +275,8 @@
 			<Text>이전 10턴 중 도시를 해방했다면 [ICON_Production] 생산력 +50%를 제공합니다.</Text>
 		</Replace>
 		<!-- Germany -->
-		<Replace Tag="LOC_PROMOTION_COMBAT_VS_CITY_STATES_DESCRIPTION" Language="ko_KR">
-			<Text>도시 국가 대항 시 전투력 +3.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION" Language="ko_KR">
-			<Text>군사 정책 슬롯이 추가됩니다. 도시 국가 공격 시 [ICON_Strength] 전투력 +3을 획득합니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION" Language="ko_KR">
 			<Text>산업 활동이 진행되는 독일 특유의 특수지구입니다. 산업구역 특수지구를 대체하며 건설 비용이 더 낮습니다.[NEWLINE][NEWLINE]상업 중심지에 인접한 경우 보너스 [ICON_Production] 생산력 +2를 획득합니다. 인접한 자원 2개당 보너스 [ICON_Production] 생산력 +1을 획득합니다. 인접한 특수지구 타일 2개당 보너스 [ICON_Production] 생산력 +1을 획득합니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="ko_KR">
-			<Text>인접효과: 인접 상업 중심지 특수지구는 상당한 [ICON_Production] 생산 보너스를 부여합니다. 인접 자원 2개마다 일반적인 [ICON_Production] 생산 보너스를 부여합니다. 인접 특수지구 타일은 약소한 [ICON_Production] 생산 보너스를 부여합니다.</Text>
 		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ko_KR">
@@ -361,14 +375,11 @@
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="ko_KR">
 			<Text>노르웨이 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하기 위해 요구됩니다. 도시 내 각 자원에 [ICON_FAITH] 신앙 +1을 제공합니다. 도시 내 각 해안 자원에 [ICON_PRODUCTION] 생산력 +1을 제공합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION" Language="ko_KR">
-			<Text>스키타이 특유의 고전 시대 유닛입니다. [ICON_Movement] 이동력 4와 [ICON_Range] 사정거리 1을 보유한 원거리 유닛입니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="ko_KR">
 			<Text>스페인 특유의 전도관을 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2를 제공합니다. [ICON_Capital] 수도와 다른 대륙에 있으면 추가 [ICON_Faith] 신앙 +2를 제공합니다. 캠퍼스 특수지구 옆에 지으면 [ICON_Science] 과학 +2를 제공합니다. 탐험 사회 제도를 획득하면 [ICON_HOUSING] 주거공간 +1을 추가 제공하며, 문화 유산 사회 제도를 획득하면 [ICON_Science] 과학 +2를 추가 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="ko_KR"> 
-			<Text>습지로 보이는 타일 네 개의 자연경관입니다. [ICON_Food] 식량 +2,[ICON_Culture] 문화 +2,[ICON_Science] 과학 +1을 제공합니다.</Text>
+			<Text>습지로 보이는 타일 네 개의 자연경관입니다. [ICON_Food] 식량 +2,[ICON_Culture] 문화 +2,[ICON_Science] 과학 +2을 제공합니다.</Text>
 		</Replace>
 		<!-- Modified from "New" section -->
         <!-- Rome -->
@@ -442,11 +453,293 @@
             <Text>석조기술과 함께 잠금 해제되며 사막, 사막 언덕, 범람원 또는 평원에 지어야 하는 시설입니다. [ICON_Faith] 신앙 +1을 제공합니다. 인근 특수지구에서 추가 생산량을 획득합니다. 도심부에 인접하는 경우 [ICON_Food] 식량 +2를 제공합니다. 인접 보너스를 제공하는 다른 모든 특수지구의 경우 해당 특수지구가 인접했다면 해당 산출물 +2를 제공합니다.</Text>
         </Replace>
         <Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="ko_KR">
-            <Text>타일 세 개의 자연경관입니다. [ICON_Food] 식량 +1,[ICON_PRODUCTION] 생산력 +2,[ICON_Science] 과학 +2를 제공합니다.</Text>
+            <Text>타일 세 개의 자연경관입니다. [ICON_Food] 식량 +2,[ICON_PRODUCTION] 생산력 +2,[ICON_Science] 과학 +2를 제공합니다.</Text>
         </Replace>
         <Replace Tag="LOC_BELIEF_PILGRIMAGE_DESCRIPTION" Language="ko_KR">
             <Text>다른 문명 및 도시 국가에서 이 종교를 믿는 도시마다 [ICON_Faith] 신앙 +3을 획득합니다.</Text>
         </Replace>
+		<Replace Tag="LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION" Language="ko_KR">
+			<Text>스키타이 특유의 고전 시대 유닛입니다. [ICON_Movement] 이동력 4와 [ICON_Range] 사정거리 2를 보유한 원거리 유닛입니다.</Text>
+		</Replace>
+		<!-- Last Updates -->
+        <Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="ko_KR">
+            <Text>길드 사회 제도를 획득하면, 각 도시는 일반적( [ICON_Citizen] 인구 기반 보통 허용치 이상) 허용치보다 1개 더 많은 특수지구를 지을 수 있습니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="ko_KR">
+            <Text>인접효과: 인접 상업 중심지 특수지구는 상당한 [ICON_Production] 생산 보너스를 부여합니다. 인접 자원 및 특수지구 타일은 약소한 [ICON_Production] 생산 보너스를 부여합니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_UNIT_AMERICAN_ROUGH_RIDER_DESCRIPTION" Language="ko_KR">
+            <Text>기병대를 대체하는 미국 특유의 산업 시대 유닛입니다. [ICON_Capital] 수도가 있는 대륙에서 적 처치 시 [ICON_Culture] 문화를 획득합니다. 언덕에서 전투 시, [ICON_Strength] 전투력 +5를 획득합니다. 유지비가 낮습니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="ko_KR">
+            <Text>본 대륙에 있는 유닛은 [ICON_Strength] 전투력 +5를 획득합니다. 국립공원을 보유한 도시의 모든 타일에 매력도 +1을 제공합니다. 군사 과학 기술을 연구하면 특유 유닛인 의용 기병대를 얻습니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION" Language="ko_KR">
+            <Text>부상당한 유닛을 공격할 때 모든 유닛은 [ICON_Strength] 전투력 +3을 획득합니다. 적 유닛을 제거하면 체력이 30 회복됩니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_FEATURE_CLIFFS_DOVER_DESCRIPTION" Language="ko_KR">
+            <Text>해안에 인접한 절벽에서 발견할 수 있는 타일 두 개의 자연경관입니다. [ICON_Food] 식량 +2, [ICON_Culture] 문화 +3, [ICON_Gold] 금 +2를 제공합니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="ko_KR">
+            <Text>호수로 보이는 타일 두 개의 자연경관입니다. [ICON_Food] 식량 +2, [ICON_PRODUCTION] 생산력 +1, [ICON_CULTURE] 문화 +2, [ICON_GOLD] 금 +2 및 담수를 제공합니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="ko_KR">
+            <Text>호수로 보이는 타일 두 개의 자연경관입니다. [ICON_Food] 식량 +2, [ICON_Faith] 신앙 +2, [ICON_Culture] 문화 +2 및 담수를 제공합니다. 유닛이 사해에 인접하여 체력을 회복하는 경우 1턴 내에 체력이 완전히 회복됩니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_FEATURE_CRATER_LAKE_DESCRIPTION" Language="ko_KR">
+            <Text>호수로 보이는 타일 한 개의 자연경관입니다. [ICON_Food] 식량 +2, [ICON_Science] 과학 +2, [ICON_Faith] 신앙 +4 및 담수를 제공합니다.</Text>
+        </Replace>
+		<Replace Tag="LOC_FEATURE_UBSUNUR_HOLLOW_DESCRIPTION" Language="ko_KR">
+			<Text>습지로 보이는 타일 네 개의 자연경관입니다. [ICON_FAITH] 신앙 +2, [ICON_FOOD] 식량 +2, [ICON_PRODUCTION] 생산력 +2을 제공합니다.</Text>
+		</Replace>
+		
+		
+		<!-- RUSSIAN TRANSLATIONS -->
+		<!-- Crusader Religion -->
+		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ru_RU">
+			<Text>Военные юниты получают +7 [ICON_Strength] боевой мощи на территории иностранных городов, исповедующими эту религию.</Text>
+		</Replace>
+		<!-- Defender of the Faith Religion -->
+		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="ru_RU">
+			<Text>Военные юниты получают +4 [ICON_Strength] боевой мощи на территории дружественных городов, исповедующих эту религию.</Text>
+		</Replace>
+		<!-- God of the Forge Pantheon -->
+		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="ru_RU">
+			<Text>+15% [ICON_Production] производства к боевым юнитам Древнего мира и Античности.</Text>
+		</Replace>
+		<!-- Goddess of the Harvest Pantheon -->
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HARVEST_DESCRIPTION" Language="ru_RU">
+			<Text>Удаление бонусных ресурсов и элементов ландшафта дает также очки [ICON_Faith] веры в таком же количестве.</Text>
+		</Replace>
+		<!-- Classical Great General --
+		<Replace Tag="LOC_GREATPERSON_COMBAT_STRENGTH_AOE_CLASSICAL_LAND" Language="ru_RU">
+			<Text>+5 [ICON_Strength] боевой мощи наземным юнитам Античности и Средневековья в пределах 2 клеток.</Text>
+		</Replace>
+		<!-- Australia -->
+		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION" Language="ru_RU">
+			<Text>+50% [ICON_Production] производства в течение 10 ходов после освобождения города.</Text>
+		</Replace>
+		<!-- Germany -->
+		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный район Германии в промышленной сфере деятельности. Заменяет промышленный район, дешевле в строительстве.[NEWLINE][NEWLINE]+ 2[ICON_Production] производства за соседство с коммерческим центром. +1 [ICON_Production] к производству за каждые 2 ресурса либо района рядом.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="ru_RU">
+			<Text>Соседство: +2 к [ICON_Production] производству рядом с центром коммерции. +1 [ICON_Production] к производству за каждые 2 ресурса либо района рядом.</Text>
+		</Replace>
+		<!-- Korea -->
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный район Кореи для научных исследований. Заменяет кампус. +2 [ICON_SCIENCE] к науке (учитывается как бонус соседства).</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="ru_RU">
+			<Text>Соседство: +1 [ICON_SCIENCE] к науке за каждые 2 рудники рядом. -1 [ICON_SCIENCE] к науке за каждый район рядом.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="ru_RU">
+			<Text>+{1_num} [ICON_SCIENCE] к науке (учитывается как бонус соседства).</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_MINE_SCIENCE" Language="ru_RU">
+			<Text>+{1_num} [ICON_SCIENCE] к науке за {1_Num : plural 1?рудники; other?рудники;} рядом.</Text>
+		</Row>
+		<!-- Mapuche -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="ru_RU">
+			<Text>Все боевые юниты, произведенные в городах с действующим [ICON_Governor] губернатором, получают на 25% больше опыта в бою. +10 [ICON_Strength] боевой мощи против цивилизаций, находящихся в золотом веке.</Text>
+		</Replace>
+		<!-- Nubia -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ru_RU">
+			<Text>+25% [ICON_Production] производства при создании юнитов дальнего боя. Все дальнобойные получают  на 25% больше боевого опыта. Рудники на стратегических ресурсах дают +1 [ICON_Production] производства. Рудники на бонусных ресурсах и ресурсах роскоши дают +2 [ICON_Gold] золота.</Text>
+		</Replace>
+		<!-- Persia -->
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="ru_RU">
+			<Text>+5 лояльности за ход в захваченных городах с гарнизоном. Объявление внезапной войны считается официальной войной при расчете штрафов на счастье за военные действия и усталость от войны.</Text>
+		</Replace>
+		<!-- Russia -->
+		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный русский юнит Промышленной эры, заменяющий кавалерию. +5 [ICON_Strength] боевой мощи при сражении на своей территории или рядом с ней. Если остались [ICON_Movement] ОП, может продолжать движение после атаки.</Text>
+		</Replace>
+		<!-- Zulu -->
+		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="ru_RU">
+			<Text>Можно раньше формировать корпуса (социальный институт «Наемники») и армии (социальный институт «Национализм»). +5 базовой [ICON_STRENGTH] боевой мощи корпусов и армий (социальный институт "Мобилизация").</Text>
+		</Replace>
+		<!-- Apadana Wonder -->
+		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="ru_RU">
+			<Text>+1 [ICON_ENVOY] посол после постройки чуда света – в том числе Ападаны – в этом городе.[NEWLINE][NEWLINE]Можно построить только рядом с Вашей [ICON_CAPITAL] столицей.</Text>
+		</Replace>
+		<!-- Mausoleum at Halicarnassus -->
+		<Replace Tag="LOC_BUILDING_HALICARNASSUS_MAUSOLEUM_DESCRIPTION" Language="ru_RU">
+			<Text>После постройки дает бесплатного [ICON_GREATADMIRAL] великого флотоводца.[NEWLINE][NEWLINE]Все [ICON_GREATADMIRAL] великие флотоводцы и [ICON_GREATGENERAL] великие генералы могут использовать способность ухода в отставку дважды. Можно построить только рядом с гаванью.</Text>
+		</Replace>
+		<!-- Venetian Arsenal -->
+		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="ru_RU">
+			<Text>+50% [ICON_Production] производства при создании морских юнитов. Можно построить только на клетке побережья рядом с промышленной зоной.</Text>
+		</Replace>
+		<!-- NEW -->
+		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_2" Language="ru_RU">
+			<Text>«Перо, кисть, голос»: каждое вызванное [ICON_CivicBoosted] вдохновение прибавляет +1 очко к счету эпохи. +1 очко к счету эпохи за постройку здания с ячейкой для шедевра. При выборе в начале золотого века [ICON_CivicBoosted] вдохновение дает дополнительно 10% стоимости социальных институтов. Каждый город получает +1 [ICON_Culture] культуры и +1 [ICON_Gold] золота за каждый специализированный район.</Text>
+		</Replace>
+		<Replace Tag="LOC_MOMENT_CATEGORY_CULTURAL_BONUS_GOLDEN_AGE" Language="ru_RU">
+			<Text>Перо, кисть и голос – золотой век:[NEWLINE][ICON_CivicBoosted] Вдохновение дает дополнительно 10% стоимости социальных институтов. Каждый город получает +1 [ICON_Culture] культуры и +1 [ICON_Gold] золота за каждый специализированный район. </Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="ru_RU">
+			<Text>Каждое священное место и театральная площадь в городе с этой религией дают +2 [ICON_Faith] веры или +2 [ICON_Culture] культуры соответственно.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="ru_RU">
+			<Text>Религия распространяется на 40% дальше от городов.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION" Language="ru_RU">
+			<Text>+1 [ICON_Science] науки за каждые 3 последователя этой религии в других державах.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="ru_RU">
+			<Text>+1 [ICON_Amenities] довольства в городах с хотя бы одним специализированным районом.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_COMMUNITY_DESCRIPTION" Language="ru_RU">
+			<Text>Священные места, а также святилища и храмы в них дают по +1 [ICON_Housing] жилья каждый.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_TITHE_DESCRIPTION" Language="ru_RU">
+			<Text>+1 [ICON_Gold] золота за каждые 3 последователя этой религии.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_WORLD_CHURCH_DESCRIPTION" Language="ru_RU">
+			<Text>+1 [ICON_Culture] культуры за каждые 3 последователя этой религии в других державах./Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="ru_RU">
+			<Text>+15% [ICON_Production] производства при создании чудес.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_NAME" Language="ru_RU">
+			<Text>Воистину уверовавший</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="ru_RU">
+			<Text>Стоимость Вашего религиозного здания в единицах [ICON_Faith] веры уменьшена в десять раз (в том числе если его приобретает другой игрок). Это религиозное здание увеличивает очки  [ICON_Science] науки, [ICON_Faith] веры и [ICON_Culture] культуры на 20% в каждом городе, где оно построено.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ru_RU">
+			<Text>При основании религии дается одно дополнительное верование. +5 [ICON_Faith] веры за каждую известную им цивилизацию (включая Индию), которая основала религию и в настоящее время не воюет. Враждебные цивилизации, воюющие с Ганди, получают в два раза больше усталости от войны.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальное здание кхмеров, которое заменяет храм. Необходимо для найма апостолов и инквизиторов за [ICON_Faith] веру. При постройке здания дает бесплатно одного миссионера. Миссионеры, нанятые в этом городе, сразу получают способность «Мученик», которая дает [ICON_GreatWork_Relic] реликвию, если юнит погибает в теологической баталии.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный кхмерский осадный юнит Античности. Заменяет катапульту и сильнее ее. Может перемещаться и стрелять в тот же ход, имеет зону контроля.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="ru_RU">
+			<Text>Кхмеры получают +2 [ICON_FAITH] за международные торговые пути к своим городам и от них. Цивилизация-отправитель такого торгового пути также имеет с него +2 [ICON_FAITH] веры. +3 [ICON_FAITH] веры и +1 [ICON_AMENITIES] довольства от развлечений в каждом городе с акведуком. Фермы рядом с акведуком дают +2 [ICON_FOOD] еды.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальное здание Норвегии, которое заменяет храм. Необходимо для покупки апостолов и инквизиторов за [ICON_Faith] веру. +1 [ICON_PRODUCTION] производства с каждого ресурса в этом городе и еще +1 с каждого морского ресурса.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строителям строить миссию (только для Испании).[NEWLINE][NEWLINE]+2 [ICON_Faith] веры. +2 [ICON_Faith] веры, если построено не на том же континенте, что и ваша [ICON_Capital] столица. +2 [ICON_Science] науки, если построена рядом с кампусом. +1 [ICON_HOUSING] жилья при получении социального института "Исследование". +2 [ICON_SCIENCE] науки после получения социального института "Культурное наследие".</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="ru_RU"> 
+			<Text>Чудо природы на четыре клетки. Представляет собой болото и дает +2 [ICON_Food] пищи, +2 [ICON_Culture] культуры и +2 [ICON_Science] науки.</Text>
+		</Replace>
+		<!-- Modified from "New" section -->
+		<!-- Rome -->
+		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="ru_RU">
+			<Text>Все города, основанные после получении социального института "Политическая философия", получают при основании дополнительное здание в городском центре. (В Древнем мире это монумент).</Text>
+		</Replace>
+		<!-- Scythia -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="ru_RU">
+			<Text>Можно покупать легкую, тяжелую и дальнобойную кавалерию за [ICON_FAITH] веру</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_KURGAN_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строителям создавать курганы (Уникально для Скифии).[NEWLINE][NEWLINE]+1 [ICON_Faith] веры. +1 [ICON_Gold] золота. [NEWLINE]+1 [ICON_Faith] веры за каждое соседнее пастбище.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="ru_RU">
+			<Text>+1 очко [ICON_GreatProphet] великого пророка в ход после изучения Астрологии. +1 [ICON_Science] науки за каждый иностранный город, следующий религии Аравии.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальное здание Грузии, которое заменяет первые стены и защищает сильнее их. Дает 3 [ICON_TOURISM] ед. туризма после исследования социального института «Охрана природы». Дает 3 [ICON_Faith] ед. веры.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный античный юнит Грузии, который заменяет мечника. +5 [ICON_Strength] к боевой мощи в сражениях на холмах. Перемещение по холмам стоит 1 [ICON_Movement] ОП.</Text>
+		</Replace>
+		<!-- Newer -->
+		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="ru_RU">
+			<Text>Каждый поверженный Вами юнит противника дает [ICON_FAITH] веру в количестве 50% от базовой [ICON_STRENGTH] боевой мощи поверженного юнита. Каждый ваш [ICON_ENVOY] посол в городе-государстве с вашей доминирующей религией считается за двух [ICON_ENVOY] послов. (Должна быть доминирующая религия).</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="ru_RU">
+			<Text>Каждый поверженный Вами юнит противника дает [ICON_CULTURE] культуру в количестве 25% от базовой [ICON_STRENGTH] боевой мощи поверженного юнита.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строителям строить ступенчатые колодцы (уникально для Индии).[NEWLINE][NEWLINE]1 [ICON_Food] пищи, +1 [ICON_Faith] веры и +1 [ICON_Housing] жилья. +1 [ICON_Faith] веры, если построен рядом со священным местом. +1 [ICON_Food] пищи, если находится рядом с фермой. Нельзя строить на холмах или рядом с другим ступенчатым колодцем.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_DIVINE_WIND_DESCRIPTION" Language="ru_RU">
+			<Text>Сухопутные юниты получают +5 к [ICON_Strength] боевой мощи на прибрежных клетках; морские юниты получают +5 к [ICON_Strength] боевой мощи на мелководье.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="ru_RU">
+			<Text>Все морские юниты ближнего боя получают способность осуществлять рейды на прибрежные территории. +25% [ICON_PRODUCTION] производства при создании всех морских юнитов ближнего боя.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный норвежский юнит Средневековья, который можно приобрести за [ICON_Faith] веру. +2 [ICON_Movement] ОП, если движение начинать на вражеской территории. +10 [ICON_Strength] боевой мощи при атаке, -5 [ICON_Strength] боевой мощи в обороне.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="ru_RU">
+			<Text>+100% [ICON_Production] производства при строительстве оборонительных зданий и +50% [ICON_Production] производства при строительстве осадных боевых юнитов.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный район Греции для развития культуры. Заменяет театральную площадь, дешевле в строительстве. По завершении строительства дает 1 [ICON_Envoy] посла.[NEWLINE][NEWLINE]Бонус +2 к [ICON_Culture] культуре за соседство с центром города. Бонус +1 к [ICON_Culture] культуре за каждый соседний специализированный район и чудо света. Можно построить только на холмах.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="ru_RU">
+			<Text>Дополнительная универсальная ячейка политического курса при любом правительстве.[NEWLINE][NEWLINE]При постройке амфитеатра получите 1 посла.</Text>
+		</Replace>
+		<!-- Newest -->
+		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="ru_RU">
+			<Text>Все боевые и религиозные юниты получают +1 [ICON_Movement] ОП в пределах своей территории и рядом с ее границей.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION" Language="ru_RU">
+			<Text>Все районы получают дополнительный стандартный бонус за соседство с другим районом. Однако центры коммерции не получают бонусы соседства от рек.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="ru_RU">
+			<Text>Религия, основанная Польшей, начинает преобладать в соседнем городе, который теряет клетку в результате культурного захвата. Священные места получают стандартный бонус веры от соседства с районами. Все реликвии дают бонус к вере (+2), культуре (+2) и золоту (+4). Получите [ICON_GreatWork_Relic] реликвию при основании религии и еще одну при получении всех возможных верований.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальное здание ацтеков. Дает [ICON_Amenities] довольство, +3 очка [ICON_Culture] культуры и 1 очко [ICON_GreatGeneral] великого полководца.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строителям создавать Великую стену (Уникально для Китая).[NEWLINE][NEWLINE]Дает +1 к [ICON_Production] производству и увеличивает [ICON_Strength] боевую силу войск при защите. Бонус к [ICON_Gold] золоту при соседстве с другими сегментами. Бонусы к [ICON_Culture] культуре и [ICON_Tourism] туризму за соседние сегменты по мере вашего продвижения по дереву технологий. Можно построить только вдоль границы империи.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строителям строить сфинкса (Уникально для Египта).[NEWLINE][NEWLINE]+2 [ICON_Faith] веры и +1 [ICON_Culture] культуры. +1 престижа. +1 [ICON_Faith] веры и +1 [ICON_Culture] культуры, если построен рядом с чудом света. +1 [ICON_Faith] веры рядом со священным местом.  +1 [ICON_FOOD] еды и +1 [ICON_PRODUCTION] производства, если клетка - пустыня. Можно строить в пойме реки.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="ru_RU">
+			<Text>Улучшение, доступное после изучения каменной кладки. Можно построить только в пустыне, на холмах в пустыне, на равнине или в пойме реки. +1 [ICON_Faith] веры. Дополнительные бонусы от соседних районов. +2 [ICON_Food] пищи, если граничит с центром города. Для остальных районов с бонусами за соседство: +2 ед. соответствующего ресурса при соседстве с районом.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="ru_RU">
+			<Text>Чудо природы. Занимает три клетки. Дает +2 [ICON_FOOD] еды, +2 [ICON_PRODUCTION] производства и +2 [ICON_SCIENCE] науки.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_PILGRIMAGE_DESCRIPTION" Language="ru_RU">
+			<Text>+3 к [ICON_Faith] вере от каждого города другой цивилизации и города-государства, исповедующих вашу религию.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный скифский юнит Античности. Дальнобойный юнит с 4 [ICON_Movement] ОП и [ICON_Range] дальностью 2.</Text>
+		</Replace>
+		<!-- Last Updates -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="ru_RU">
+			<Text>После получения социального института "Гильдии" в каждом город можно будет построить на один район больше, чем обычно (сверх предела, определяемого численностью [ICON_Citizen] населения).</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="ru_RU">
+			<Text>Соседство: большой бонус к [ICON_Production] производству за соседство с центром коммерции. Небольшой бонус к [ICON_Production] производству за соседство с ресурсами и другими районами.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_AMERICAN_ROUGH_RIDER_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный американский юнит Промышленной эры, если лидером является Тедди Рузвельт. Заменяет кавалерию. Каждый поверженный им боевой юнит дает [ICON_Culture] культуру на континенте с Вашей [ICON_Capital] столицей. +5 к [ICON_Strength] боевой мощи при сражении на холмах. Дешевле содержать, чем кавалерию.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="ru_RU">
+			<Text>Юниты получают +5 к [ICON_Strength] боевой мощи на родном континенте. +1 престижа для всех клеток города с национальным парком. Получает уникальный юнит «Мужественный всадник» после исследования технологии «Военная наука».</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION" Language="ru_RU">
+			<Text>Все боевые юниты получают +3 [ICON_Strength] боевой мощи, атакуя раненых, и излечиваются на 30 очков здоровья при победе над любым вражеским боевым юнитом.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_CLIFFS_DOVER_DESCRIPTION" Language="ru_RU">
+			<Text>Чудо природы на две клетки. Встречается вместе со скалами рядом с водой, дает +2 [ICON_FOOD] еды, +3 [ICON_Culture] культуры и +2 [ICON_Gold] золота.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="ru_RU">
+			<Text>Чудо природы. Занимает две клетки. Является озером и дает +2 [ICON_FOOD] еды, +1 [ICON_PRODUCTION] производства, +2 [ICON_CULTURE] культуры и +2 [ICON_GOLD] золота. Источник пресной воды.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="ru_RU">
+			<Text>Чудо природы на две клетки. Является озером и дает +2 [ICON_FOOD] еды, +2 [ICON_Faith] веры и +2 [ICON_Culture] науки. Источник пресной воды. Юниты, которые проводят один ход рядом с Мертвым морем, полностью исцеляются.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_CRATER_LAKE_DESCRIPTION" Language="ru_RU">
+			<Text>Чудо природы на одну клетку. Является озером и дает +2 [ICON_FOOD] еды, +2 [ICON_Science] науки и +4 [ICON_Faith] веры. Источник пресной воды.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_UBSUNUR_HOLLOW_DESCRIPTION" Language="ru_RU">
+			<Text>Чудо природы. Занимает четыре клетки. Представляет собой болото и дает +2 [ICON_FAITH] веры, +2 [ICON_FOOD] пищи, и +2 [ICON_PRODUCTION] производства.</Text>
+		</Replace>
 		
 		
 		<!-- FRENCH TRANSLATIONS -->
@@ -499,17 +792,8 @@
 			<Text>+50% [ICON_Production] production pour 10 tours après avoir libéré une ville.</Text>
 		</Replace>
 		<!-- Germany -->
-		<Replace Tag="LOC_PROMOTION_COMBAT_VS_CITY_STATES_DESCRIPTION" Language="fr_FR">
-			<Text>+3 force de combat contre les cité-états.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION" Language="fr_FR">
-			<Text>+1 emplacement de carte militaire pour le gouvernement. +3 [ICON_Strength] force de combat contre les cité-états.</Text>
-		</Replace>
 		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION" Language="fr_FR">
 			<Text> Leur district spécial remplacant la zone industrielle. Son coût en production est plus faible. [NEWLINE][NEWLINE]+ 2[ICON_Production] production en bonus s'il est adjacent à un district commercial. +1 [ICON_Production] production en bonus pour chaque paire de ressource adjacente. +1 [ICON_Production] production en bonus pour chaque paire de cases adjacentes occupées par des districts.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="fr_FR">
-			<Text>Le bonus de proximité est majeur (+1) pour la [ICON_Production] pour les districts commerciaux adjacents. Le bonus de proximité standard de deux ressources adjacentes procure un bonus de [ICON_Production] production (+1). Le bonus de proximité régulier des quartier adjacents reste le même avec +1 [ICON_Production] production bonus par quartier adjacent.</Text>
 		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="fr_FR">
@@ -588,17 +872,8 @@
 			<Text>解放城市在十回合内+50% [ICON_Production]生产力 .</Text>
 		</Replace>
 		<!-- Germany -->
-		<Replace Tag="LOC_PROMOTION_COMBAT_VS_CITY_STATES_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>对抗城邦+3力.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>额外的军事槽. 对抗城邦额外+3 [ICON_Strength] 力.</Text>
-		</Replace>
 		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>德国特色工业区. 代替工业区，而且更便宜.[NEWLINE][NEWLINE]相邻商业+ 2[ICON_Production] 生产力. 每相邻两个资源+1 [ICON_Production] 生产力. 每相邻两个区域+1 [ICON_Production]生产力.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="zh_Hant_HK">
-			<Text>Adjacency: 相邻商业获得 [ICON_Production]生产力. 每相邻两个资源+获得标准[ICON_Production]生产力加成 . 相邻两个区域获得标准 [ICON_Production] 生产力加成.</Text>
 		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="zh_Hant_HK">
@@ -677,17 +952,8 @@
 			<Text>+50% a la Producción [ICON_Production] si han liberado una ciudad en los últimos 10 turnos.</Text>
 		</Replace>
 		<!-- Germany -->
-		<Replace Tag="LOC_PROMOTION_COMBAT_VS_CITY_STATES_DESCRIPTION" Language="es_ES">
-			<Text>+3 a la Fuerza de combate al atacar ciudades-estado.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION" Language="es_ES">
-			<Text>Espacio adicional para política militar. +3 ala Fuerza de combate [ICON_Strength] al atacar ciudades-estado.</Text>
-		</Replace>
 		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION" Language="es_ES">
 			<Text>Un distrito exclusivo de Alemania para actividades industriales. Sustituye al distrito de Zona Industrial y es más barato de construir. [NEWLINE][NEWLINE] +2 de bonificación a la Producción [ICON_Production] si está adyacente a un distrito de Centro comercial. +1 de bonificación a la Producción [ICON_Production] por cada dos recursos adyacentes. +1 de bonificación a la Producción [ICON_Production] por cada dos casillas de distrito adyacentes.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="es_ES">
-			<Text>Adyacencia: Bonificación Mayor a la Producción [ICON_Production] si está adyacente a un distrito de Centro comercial. Bonificación Estándar a la Producción [ICON_Production] por cada dos recursos adyacentes. Bonificación Menor a la Producción [ICON_Production] por casillas de distrito adyacentes.</Text>
 		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="es_ES">

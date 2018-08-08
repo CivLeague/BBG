@@ -89,6 +89,12 @@ UPDATE ModifierArguments SET Value='ERA_INFORMATION' WHERE ModifierId='MONUMENT_
 
 
 -- CIVILIZATIONS --
+-- American Rough Riders will now be a cav replacement
+UPDATE Units SET Combat=62, Cost=340, PromotionClass='PROMOTION_CLASS_LIGHT_CAVALRY', PrereqTech='TECH_MILITARY_SCIENCE' WHERE UnitType='UNIT_AMERICAN_ROUGH_RIDER';
+UPDATE UnitUpgrades SET UpgradeUnit='UNIT_HELICOPTER' WHERE Unit='UNIT_AMERICAN_ROUGH_RIDER';
+INSERT INTO UnitReplaces VALUES ('UNIT_AMERICAN_ROUGH_RIDER' , 'UNIT_CAVALRY');
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='ROUGH_RIDER_BONUS_ON_HILLS';
+
 -- Arabia's Worship Building Bonus increased from 10% to 20%
 UPDATE ModifierArguments SET Value='20' WHERE ModifierId='TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_CULTURE' AND Name='Multiplier';
 UPDATE ModifierArguments SET Value='20' WHERE ModifierId='TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_FAITH' AND Name='Multiplier';
@@ -126,7 +132,7 @@ INSERT INTO Improvement_YieldChanges
 
 -- Egypt Sphinx heavily modified
 -- Now allowed to be adjacent to another Sphinx. This is primarily used for improvements that grant housing.
-UPDATE Improvements SET SameAdjacentValid='1' WHERE ImprovementType='IMPROVEMENT_SPHINX';
+UPDATE Improvements SET SameAdjacentValid=1 WHERE ImprovementType='IMPROVEMENT_SPHINX';
 -- Base Faith Increased to 2 (from 1)
 UPDATE Improvement_YieldChanges SET YieldChange=2 WHERE ImprovementType='IMPROVEMENT_SPHINX' AND YieldType='YIELD_FAITH';
 -- +1 Faith and +1 Culture if adjacent to a wonder, insteaf of 2 Faith.
@@ -229,9 +235,18 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value)
 	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'YieldType' , 'YIELD_FAITH');
 UPDATE TraitModifiers SET ModifierId='TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' WHERE ModifierId='TRAIT_PROTECTORATE_WAR_FAITH';
 
--- German Hansas need 2 adjacent resources for +1 production instead of 1 to 1 and combat bonus against city-states nerfed to +3 from +7
+-- German Hansas need 2 adjacent resources for +1 production instead of 1 to 1
 UPDATE Adjacency_YieldChanges SET TilesRequired=2 WHERE ID='Resource_Production';
-UPDATE ModifierArguments SET Value='3' WHERE ModifierId='COMBAT_BONUS_VS_CITY_STATES_MODIFIER' and Name='Amount'; 
+-- Extra district comes at Guilds
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+    VALUES ('PLAYER_HAS_GUILDS_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO Requirements (RequirementId, RequirementType)
+    VALUES ('REQUIRES_PLAYER_HAS_GUILDS' , 'REQUIREMENT_PLAYER_HAS_CIVIC');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+    VALUES ('REQUIRES_PLAYER_HAS_GUILDS' , 'CivicType' , 'CIVIC_GUILDS');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+    VALUES ('PLAYER_HAS_GUILDS_REQUIREMENTS' , 'REQUIRES_PLAYER_HAS_GUILDS');
+UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_GUILDS_REQUIREMENTS' WHERE ModifierId='TRAIT_EXTRA_DISTRICT_EACH_CITY';
 
 -- Greece gets their extra envoy at amphitheater instead of acropolis
 DELETE FROM DistrictModifiers WHERE DistrictType='DISTRICT_ACROPOLIS';
@@ -309,8 +324,6 @@ INSERT INTO Requirements (RequirementId , RequirementType , Inverse)
 	VALUES ('CHANDRAGUPTA_FOREIGN_TERRITORY_REQUIREMENTS_CPLMOD' , 'REQUIREMENT_UNIT_IN_OWNER_TERRITORY' , 1);
 INSERT INTO Requirements (RequirementId , RequirementType)
 	VALUES ('REQUIREMENTS_LAND_MILITARY_CPLMOD', 'REQUIREMENT_UNIT_FORMATION_CLASS_MATCHES');
-INSERT INTO ModifierStrings (ModifierId, Context, Text)
-	VALUES ('EXPANSION_COMBAT_BONUS_MODIFIER_CPLMOD' , 'Preview' , 'LOC_EXPANSION_COMBAT_BONUS_MODIFIER_CPLMOD');
 	
 -- India (Gandi) gets an extra belief when he founds a Religion
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
@@ -435,9 +448,10 @@ UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_MODERN_RANGED_UN
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_ATOMIC_RANGED_UNIT_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_INFORMATION_RANGED_UNIT_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RANGED_EXPERIENCE_MODIFIER' and Name='Amount';
--- Nubian Pyramid can also be built on flat plains
+-- Nubian Pyramid can also be built on flat plains, but not adjacent to each other
 INSERT INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
 	VALUES ('IMPROVEMENT_PYRAMID' , 'TERRAIN_PLAINS');
+UPDATE Improvements SET SameAdjacentValid=0 WHERE ImprovementType='IMPROVEMENT_PYRAMID';
 -- Nubian Pyramid gets double adjacency yields
 UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_CityCenterAdjacency";
 UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_CampusAdjacency";
@@ -453,30 +467,23 @@ UPDATE Units SET Combat=35 WHERE UnitType='UNIT_PERSIAN_IMMORTAL';
 
 -- Poland's Winged Hussar moved to Divine Right
 UPDATE Units SET PrereqCivic='CIVIC_DIVINE_RIGHT' WHERE UnitType='UNIT_POLISH_HUSSAR';
--- Poland gets a Relic when founding a religion
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
-	VALUES ('TRAIT_LITHUANIANUNION_FOUND_RELIGION_RELIC_CPLMOD' , 'MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER' , 'PLAYER_FOUNDED_RELIGION_RELIC_CPLMOD');	
-INSERT INTO Modifiers (ModifierId , ModifierType , Permanent , RunOnce)
-	VALUES ('FOUND_RELIGION_RELIC_MODIFIER_CPLMOD' , 'MODIFIER_PLAYER_GRANT_RELIC' , 1 , 1);	
+-- Poland gets a relic when founding and completeing a religion
+--Grants Relic Upon Founding Religion
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId , RunOnce , Permanent)
+	VALUES ('TRAIT_LITHUANIANUNION_FOUND_RELIGION_RELIC_CPLMOD' , 'MODIFIER_PLAYER_GRANT_RELIC' , 'PLAYER_FOUNDED_RELIGION_RELIC_CPLMOD' , 1 , 1);	
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES ('TRAIT_LITHUANIANUNION_FOUND_RELIGION_RELIC_CPLMOD' , 'ModifierId' , 'FOUND_RELIGION_RELIC_MODIFIER_CPLMOD');	
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES ('FOUND_RELIGION_RELIC_MODIFIER_CPLMOD' , 'Amount' , '1');	
+	VALUES ('TRAIT_LITHUANIANUNION_FOUND_RELIGION_RELIC_CPLMOD' , 'Amount' , '1');	
 INSERT INTO TraitModifiers (TraitType , ModifierId)
 	VALUES ('TRAIT_LEADER_LITHUANIAN_UNION' , 'TRAIT_LITHUANIANUNION_FOUND_RELIGION_RELIC_CPLMOD');
 INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
 	VALUES ('PLAYER_FOUNDED_RELIGION_RELIC_CPLMOD' , 'REQUIREMENTSET_TEST_ALL');	
 INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('PLAYER_FOUNDED_RELIGION_RELIC_CPLMOD' , 'REQUIRES_PLAYER_HAS_FOUNDED_A_RELIGION');
--- Poland gets a Relic when completing a religion
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
-	VALUES ('TRAIT_LITHUANIANUNION_COMPLETE_RELIGION_RELIC_CPLMOD' , 'MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER' , 'REQUIRES_PLAYER_COMPLETED_RELIGION_RELIC_CPLMOD');
-INSERT INTO Modifiers (ModifierId , ModifierType , Permanent , RunOnce)
-	VALUES ('COMPLETE_RELIGION_RELIC_MODIFIER_CPLMOD' , 'MODIFIER_PLAYER_GRANT_RELIC' , 1 , 1);
+--Grants Relic Upon completing Religion
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId , RunOnce , Permanent)
+	VALUES ('TRAIT_LITHUANIANUNION_COMPLETE_RELIGION_RELIC_CPLMOD' , 'MODIFIER_PLAYER_GRANT_RELIC' , 'REQUIRES_PLAYER_COMPLETED_RELIGION_RELIC_CPLMOD' , 1 , 1);
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES ('TRAIT_LITHUANIANUNION_COMPLETE_RELIGION_RELIC_CPLMOD' , 'ModifierId' , 'COMPLETE_RELIGION_RELIC_MODIFIER_CPLMOD');	
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES ('COMPLETE_RELIGION_RELIC_MODIFIER_CPLMOD' , 'Amount' , '1');
+	VALUES ('TRAIT_LITHUANIANUNION_COMPLETE_RELIGION_RELIC_CPLMOD' , 'Amount' , '1');
 INSERT INTO TraitModifiers (TraitType , ModifierId)
 	VALUES ('TRAIT_LEADER_LITHUANIAN_UNION' , 'TRAIT_LITHUANIANUNION_COMPLETE_RELIGION_RELIC_CPLMOD');
 INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
@@ -701,6 +708,8 @@ UPDATE Modifiers SET NewOnly='1' , OwnerRequirementSetId='PLAYER_HAS_POLITICAL_P
 UPDATE Improvements SET PrereqCivic='CIVIC_GAMES_RECREATION' WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE';
 UPDATE RequirementArguments SET Value='CIVIC_URBANIZATION' WHERE RequirementId='REQUIRES_PLAYER_HAS_GLOBALIZATION' AND Name='CivicType';
 
+-- Scythia leader trait only gives +3 (insteadf of +5) against wounded units
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='BONUS_VS_WOUNDED_UNITS';
 -- Scythia no longer gets an extra light cavalry unit when building/buying one
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_EXTRASAKAHORSEARCHER' and NAME='Amount';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_EXTRALIGHTCAVALRY' and NAME='Amount';
@@ -771,16 +780,30 @@ UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_MOBILIZATION_REQUIREMEN
 
 
 -- NATURAL WONDERS --
--- Pantanal gets +1 Science to tiles
+-- Several lack-luster wonders improved
 INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
-	VALUES ('FEATURE_PANTANAL', 'YIELD_SCIENCE', 1);
--- Eye of the Sahara gets 1 Food, 2 Production, and 2 Science
+	VALUES ('FEATURE_PANTANAL', 'YIELD_SCIENCE', 2);
+-- Eye of the Sahara gets 2 Food, 2 Production, and 2 Science
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='EYESAHARA_PRODUCTION_ATOMIC' AND Name='Amount';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='EYESAHARA_SCIENCE_ATOMIC' AND Name='Amount';
 INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
-	VALUES ('FEATURE_EYE_OF_THE_SAHARA', 'YIELD_FOOD', 1);
+	VALUES ('FEATURE_EYE_OF_THE_SAHARA', 'YIELD_FOOD', 2);
 UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_EYE_OF_THE_SAHARA' AND YieldType='YIELD_PRODUCTION';
-UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_EYE_OF_THE_SAHARA' AND YieldType='YIELD_SCIENCE';
+INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
+	VALUES ('FEATURE_EYE_OF_THE_SAHARA', 'YIELD_SCIENCE', 2);
+INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
+	VALUES ('FEATURE_CLIFFS_DOVER', 'YIELD_FOOD', 2);
+INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
+	VALUES ('FEATURE_LAKE_RETBA', 'YIELD_FOOD', 2);
+INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
+	VALUES ('FEATURE_DEAD_SEA', 'YIELD_FOOD', 2);
+INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
+	VALUES ('FEATURE_CRATER_LAKE', 'YIELD_FOOD', 2);
+UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_CRATER_LAKE' AND YieldType='YIELD_SCIENCE'; 
+UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_UBSUNUR_HOLLOW' AND YieldType='YIELD_PRODUCTION';
+UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_UBSUNUR_HOLLOW' AND YieldType='YIELD_FOOD';
+INSERT INTO Feature_AdjacentYields (FeatureType, YieldType, YieldChange)
+	VALUES ('FEATURE_GALAPAGOS', 'YIELD_FOOD', 1);
 
 
 -- MAN-MADE WONDERS --
