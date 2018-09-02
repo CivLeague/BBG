@@ -6,6 +6,30 @@ UPDATE GlobalParameters SET Value='1' WHERE Name='DIPLOMACY_PEACE_MIN_TURNS';
 UPDATE GlobalParameters SET Value='135' WHERE Name='TOURISM_TOURISM_TO_MOVE_CITIZEN';
 
 
+-- Offshore Oil can be improved at Combustion (tanks)
+UPDATE Improvements SET PrereqTech='TECH_COMBUSTION' WHERE ImprovementType='IMPROVEMENT_OFFSHORE_OIL_RIG';
+
+
+-- Research Labs give +8 Science instead of +5
+UPDATE Building_YieldChanges SET YieldChange=8 WHERE BuildingType='BUILDING_RESEARCH_LAB';
+
+
+-- 1st Tier Government Buildings
+-- Warlord's Throne gets more production and lasts longer
+UPDATE ModifierArguments SET Value='25' WHERE ModifierId='GOV_PRODUCTION_BOOST_FROM_CAPTURE' AND Name='Amount';
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='GOV_PRODUCTION_BOOST_FROM_CAPTURE' AND Name='TurnsActive';
+-- Audience Hall gets +3 Food and +3 Housing instead of +4 Housing
+INSERT INTO BuildingModifiers (BuildingType , ModifierId)
+	VALUES ('BUILDING_GOV_TALL' , 'GOV_TALL_FOOD_BUFF');
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='GOV_TALL_HOUSING_BUFF';
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('GOV_TALL_FOOD_BUFF' , 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_CHANGE' , 'CITY_HAS_GOVERNOR_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('GOV_TALL_FOOD_BUFF' , 'YieldType' , 'YIELD_FOOD');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('GOV_TALL_FOOD_BUFF' , 'Amount' , '3');
+
+
 -- Citizen specialists give +1 main yield
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType="DISTRICT_ACROPOLIS";
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' 		AND DistrictType="DISTRICT_CAMPUS";
@@ -20,6 +44,7 @@ UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_FAI
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' 			AND DistrictType="DISTRICT_ROYAL_NAVY_DOCKYARD";
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' 		AND DistrictType="DISTRICT_SEOWON";
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType="DISTRICT_THEATER";
+
 
 -- DEDICATIONS --
 INSERT INTO Modifiers (ModifierId , ModifierType , OwnerRequirementSetId)
@@ -253,7 +278,7 @@ DELETE FROM DistrictModifiers WHERE DistrictType='DISTRICT_ACROPOLIS';
 INSERT INTO TraitModifiers
 	VALUES ('TRAIT_CIVILIZATION_PLATOS_REPUBLIC' , 'AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN');
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
-    VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN' , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'BUILDING_IS_AMPHITHEATER');
+    VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN' , 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER', 'BUILDING_IS_AMPHITHEATER');
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
     VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN' , 'ModifierId' , 'AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN_MOD');
 INSERT INTO Modifiers (ModifierId, ModifierType)
@@ -270,7 +295,7 @@ UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_FEUDALISM' WHERE Id=
 -- India Varu maintenance too high
 UPDATE Units SET Maintenance=2 WHERE UnitType='UNIT_INDIAN_VARU';
 
--- India (Chadragupta) gets +1 movement in territory and +3 combat strength when within 8 tiles of their territory
+-- India (Chadragupta) gets +1 movement in territory or within 3 tiles of borders
 -- Remove Territorial Expansion Declaration Bonus
 UPDATE ModifierArguments SET Value='0' WHERE Name='Amount' AND ModifierId='TRAIT_TERRITORIAL_WAR_MOVEMENT';
 UPDATE ModifierArguments SET Value='0' WHERE Name='Amount' AND ModifierId='TRAIT_TERRITORIAL_WAR_COMBAT';
@@ -335,10 +360,6 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
     VALUES ('HAS_A_RELIGION', 'REQUIRES_PLAYER_HAS_FOUNDED_A_RELIGION');
 
--- Japan no longer gets half cost encampment, holy site, and theater districts
-DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_BOOST_ENCAMPMENT_PRODUCTION';
-DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_BOOST_HOLY_SITE_PRODUCTION';
-DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_BOOST_THEATER_DISTRICT_PRODUCTION';
 -- Japan no longer gets adjacency from rivers
 INSERT INTO TraitModifiers (TraitType , ModifierId)
 	VALUES ('TRAIT_CIVILIZATION_ADJACENT_DISTRICTS' , 'TRAIT_COMMERCIAL_NO_RIVER_BONUS_CPLMOD');
@@ -361,7 +382,7 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 INSERT INTO BuildingModifiers (BuildingType , ModifierId)
     VALUES ('BUILDING_PRASAT' , 'PRASAT_GRANT_MISSIONARY_CPLMOD');
 -- Khmer's Domrey Unique Unit will now be a Catapult replacement that has a higher melee strength and bombard strength
-UPDATE Units SET Combat=33, Bombard=45, Cost=130, Maintenance=2, PrereqTech='TECH_ENGINEERING', MandatoryObsoleteTech='TECH_STEEL' WHERE UnitType='UNIT_KHMER_DOMREY';
+UPDATE Units SET Combat=33, Bombard=45, Cost=150, Maintenance=2, PrereqTech='TECH_ENGINEERING', MandatoryObsoleteTech='TECH_STEEL' WHERE UnitType='UNIT_KHMER_DOMREY';
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_BOMBARD' WHERE Unit='UNIT_KHMER_DOMREY';
 INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType)
 	VALUES ('UNIT_KHMER_DOMREY', 'UNIT_CATAPULT');
@@ -402,6 +423,15 @@ INSERT INTO District_Adjacencies
 
 -- Mapuche combat bonus against Golden Age Civs set to 5 instead of 10
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='TRAIT_TOQUI_COMBAT_BONUS_VS_GOLDEN_AGE_CIV';
+-- Malon Raiders become Horseman replacement
+UPDATE Units SET Combat=36 , Cost=90 , Maintenance=2 , PrereqTech='TECH_HORSEBACK_RIDING' , MandatoryObsoleteTech='TECH_SYNTHETIC_MATERIALS' WHERE UnitType='UNIT_MAPUCHE_MALON_RAIDER';
+INSERT INTO UnitReplaces (CivUniqueUnitType , ReplacesUnitType)
+	VALUES ('UNIT_MAPUCHE_MALON_RAIDER' , 'UNIT_HORSEMAN');
+UPDATE UnitUpgrades SET UpgradeUnit='UNIT_CAVALRY' WHERE Unit='UNIT_MAPUCHE_MALON_RAIDER';
+-- Chemamull Unique Improvement gets +2 Production
+INSERT INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
+	VALUES ('IMPROVEMENT_CHEMAMULL' , 'YIELD_PRODUCTION' , 2);
+
 
 -- Norway's Berserker unit now gets unlocked at Feudalism instead of Military Tactics, and can be purchased with Faith
 UPDATE Units SET Combat=40 WHERE UnitType='UNIT_NORWEGIAN_BERSERKER';
@@ -461,9 +491,10 @@ UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_HolySiteAdjace
 UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_IndustrialZoneAdjacency";
 UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_TheaterAdjacency";
 
--- Persia surprise war bonuses of domestic trade gold and unit movement set to +1 instead of +2
+-- Persia surprise war movement bonus nullified
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_FALLBABYLON_SURPRISE_MOVEMENT' and Name='Amount';
-UPDATE Units SET Combat=35 WHERE UnitType='UNIT_PERSIAN_IMMORTAL';
+-- Immortals defense buffed and ranged nerfed (since it is affected by double oligarchy)
+UPDATE Units SET Combat=35 , RangedCombat=20 WHERE UnitType='UNIT_PERSIAN_IMMORTAL';
 
 -- Poland's Winged Hussar moved to Divine Right
 UPDATE Units SET PrereqCivic='CIVIC_DIVINE_RIGHT' WHERE UnitType='UNIT_POLISH_HUSSAR';
@@ -704,9 +735,36 @@ INSERT INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD' , 'CivicType' , 'CIVIC_POLITICAL_PHILOSOPHY');
 UPDATE Modifiers SET NewOnly='1' , OwnerRequirementSetId='PLAYER_HAS_POLITICAL_PHILOSOPHY_REQUIREMENTS_CPLMOD' WHERE ModifierId='TRAIT_ADJUST_NON_CAPITAL_FREE_CHEAPEST_BUILDING';
 
--- Scotland's Golf Course moved to Games and Recreation... also, the extra housing for it moved to Urbanization
+-- Scotland Happy and Ecstatic citizen bonuses to Science and Production doubled
+UPDATE ModifierArguments SET Value='10' WHERE Name='Amount' AND ModifierId='TRAIT_SCIENCE_HAPPY';
+UPDATE ModifierArguments SET Value='20' WHERE Name='Amount' AND ModifierId='TRAIT_SCIENCE_ECSTATIC';
+UPDATE ModifierArguments SET Value='10' WHERE Name='Amount' AND ModifierId='TRAIT_PRODUCTION_HAPPY';
+UPDATE ModifierArguments SET Value='20' WHERE Name='Amount' AND ModifierId='TRAIT_PRODUCTION_ECSTATIC';
+-- Scotland's Golf Course moved to Games and Recreation
 UPDATE Improvements SET PrereqCivic='CIVIC_GAMES_RECREATION' WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE';
+-- Scotland's Golf Course base yields are 2 Culture and 3 Gold... +1 to each if next to City Center
+UPDATE Improvement_YieldChanges SET YieldChange=2 WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE' AND YieldType='YIELD_CULTURE';
+UPDATE Improvement_YieldChanges SET YieldChange=3 WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE' AND YieldType='YIELD_GOLD';
+-- Scotland's Golf Course extra housing moved to Urbanization and an extra Amentity at Diplomatic Service
 UPDATE RequirementArguments SET Value='CIVIC_URBANIZATION' WHERE RequirementId='REQUIRES_PLAYER_HAS_GLOBALIZATION' AND Name='CivicType';
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_PLAYER_HAS_DIPLOSERVICE' , 'REQUIREMENT_PLAYER_HAS_CIVIC');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_PLAYER_HAS_DIPLOSERVICE' , 'CivicType' , 'CIVIC_DIPLOMATIC_SERVICE');
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('PLAYER_HAS_DIPLOSERVICE_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('PLAYER_HAS_DIPLOSERVICE_REQUIREMENTS' , 'REQUIRES_PLAYER_HAS_DIPLOSERVICE');
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('GOLFCOURSE_AMENITY_WITHDIPLOSERVICE' , 'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_AMENITY' , 'PLAYER_HAS_DIPLOSERVICE_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('GOLFCOURSE_AMENITY_WITHDIPLOSERVICE' , 'Amount' , '1');
+INSERT INTO ImprovementModifiers (ImprovementType, ModifierId)
+	VALUES ('IMPROVEMENT_GOLF_COURSE' , 'GOLFCOURSE_AMENITY_WITHDIPLOSERVICE');
+INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
+	VALUES ('GOLFCOURSE_CITYCENTERADJACENCY_GOLD' , 'Placeholder' , 'YIELD_GOLD' , 1 , 1 , 'DISTRICT_CITY_CENTER');
+INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
+	VALUES ('IMPROVEMENT_GOLF_COURSE' , 'GOLFCOURSE_CITYCENTERADJACENCY_GOLD');
 
 -- Scythia leader trait only gives +3 (insteadf of +5) against wounded units
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='BONUS_VS_WOUNDED_UNITS';
