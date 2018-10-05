@@ -1,3 +1,218 @@
+-- VERSION 7 --
+-- Australia UU (Digger)
+
+UPDATE Units SET Combat='77' , BaseMoves='3' WHERE UnitType='UNIT_DIGGER';
+
+-- China UI (Great Wall)
+
+UPDATE Improvement_YieldChanges SET YieldChange='1' WHERE ImprovementType='IMPROVEMENT_GREAT_WALL' AND YieldType='YIELD_GOLD';
+INSERT INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqTech)
+	VALUES ('202' , 'IMPROVEMENT_GREAT_WALL' , 'YIELD_CULTURE' , '1' , 'TECH_CASTLES');
+	
+DELETE FROM Adjacency_YieldChanges WHERE ID='GreatWall_Gold';
+DELETE FROM Adjacency_YieldChanges WHERE ID='GreatWall_Culture';
+
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('GREATWALL_SELFADJACENCY_CULTURE_CPLMOD' , 'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS' , 'PLOT_ADJACENT_GREATWALL_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('GREATWALL_SELFADJACENCY_CULTURE_CPLMOD' , 'YieldType' , 'YIELD_CULTURE');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('GREATWALL_SELFADJACENCY_CULTURE_CPLMOD' , 'Amount' , '1');
+INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
+	VALUES ('IMPROVEMENT_GREAT_WALL' , 'GREATWALL_SELFADJACENCY_CULTURE_CPLMOD');
+	
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('GREATWALL_SELFADJACENCY_GOLD_CPLMOD' , 'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS' , 'PLOT_ADJACENT_GREATWALL_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('GREATWALL_SELFADJACENCY_GOLD_CPLMOD' , 'YieldType' , 'YIELD_GOLD');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('GREATWALL_SELFADJACENCY_GOLD_CPLMOD' , 'Amount' , '1');
+INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
+	VALUES ('IMPROVEMENT_GREAT_WALL' , 'GREATWALL_SELFADJACENCY_GOLD_CPLMOD');
+
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('PLOT_ADJACENT_GREATWALL_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');	
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('PLOT_ADJACENT_GREATWALL_REQUIREMENTS' , 'REQUIRES_PLOT_ADJACENT_GREATWALL');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_PLOT_ADJACENT_GREATWALL' , 'REQUIREMENT_PLOT_ADJACENT_IMPROVEMENT_TYPE_MATCHES');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_PLOT_ADJACENT_GREATWALL' , 'ImprovementType' , 'IMPROVEMENT_GREAT_WALL');
+
+	
+-- China UU (Crouching Tiger)
+INSERT INTO UnitReplaces (CivUniqueUnitType , ReplacesUnitType)
+	VALUES ('UNIT_CHINESE_CROUCHING_TIGER' , 'UNIT_CROSSBOWMAN');
+UPDATE Units SET Cost='190' , RangedCombat='40' , Range='2' WHERE UnitType='UNIT_CHINESE_CROUCHING_TIGER';
+
+INSERT INTO Tags (Tag , Vocabulary)
+	VALUES ('CLASS_CROUCHING_TIGER' , 'ABILITY_CLASS');
+INSERT INTO TypeTags (Type , Tag)
+	VALUES ('UNIT_CHINESE_CROUCHING_TIGER' , 'CLASS_CROUCHING_TIGER');
+INSERT INTO Types (Type , Kind)
+	VALUES ('ABILITY_TIGER_ADJACENCY_DAMAGE_CPLMOD' , 'KIND_ABILITY');
+INSERT INTO TypeTags (Type , Tag)
+	VALUES ('ABILITY_TIGER_ADJACENCY_DAMAGE_CPLMOD' , 'CLASS_CROUCHING_TIGER');
+INSERT INTO UnitAbilities (UnitAbilityType , Name , Description)
+	VALUES ('ABILITY_TIGER_ADJACENCY_DAMAGE_CPLMOD' , 'LOC_ABILITY_TIGER_ADJACENCY_NAME' , 'LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType , ModifierId)
+	VALUES ('ABILITY_TIGER_ADJACENCY_DAMAGE_CPLMOD' , 'TIGER_ADJACENCY_DAMAGE');
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('TIGER_ADJACENCY_DAMAGE' , 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH' , 'TIGER_ADJACENCY_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('TIGER_ADJACENCY_DAMAGE', 'Amount' , '7'); 
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('TIGER_ADJACENCY_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('TIGER_ADJACENCY_REQUIREMENTS' , 'PLAYER_IS_ATTACKER_REQUIREMENTS');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('TIGER_ADJACENCY_REQUIREMENTS' , 'ADJACENT_UNIT_REQUIREMENT');
+INSERT INTO ModifierStrings (ModifierId , Context , Text)
+    VALUES ('TIGER_ADJACENCY_DAMAGE' , 'Preview' , 'LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION');
+	
+--England UU (Sea Dog)
+UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_ENGLISH_SEADOG';
+
+-- France UI (Chateau)
+DELETE FROM Modifiers WHERE ModifierId='CHATEAU_WONDERADJACENCY_CULTURE';
+DELETE FROM Modifiers WHERE ModifierId='CHATEAU_LUXURYADJACENCY_GOLD';
+DELETE FROM ImprovementModifiers WHERE ModifierId='CHATEAU_WONDERADJACENCY_CULTURE';
+DELETE FROM ImprovementModifiers WHERE ModifierId='CHATEAU_LUXURYADJACENCY_GOLD';
+
+INSERT INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
+	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_FOOD' , '0');
+INSERT INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
+	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_GOLD' , '0');
+
+INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
+	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Wonder_Culture');
+INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
+	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Food');
+INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
+	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Gold');
+
+INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentWonder)
+	VALUES ('Chateau_Wonder_Culture' , 'Placeholder' , 'YIELD_CULTURE' , '1' , '1' , '1');
+INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
+	VALUES ('Chateau_Luxury_Food' , 'Placeholder' , 'YIELD_FOOD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
+INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
+	VALUES ('Chateau_Luxury_Gold' , 'Placeholder' , 'YIELD_GOLD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
+	
+UPDATE Improvements SET Housing='1' , PreReqCivic='CIVIC_FEUDALISM' WHERE ImprovementType='IMPROVEMENT_CHATEAU';
+
+--Khmer Holy Sites +2 faith for river adjacency
+INSERT INTO TraitModifiers (TraitType , ModifierId)
+	VALUES ('TRAIT_LEADER_MONASTERIES_KING' , 'TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD');
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD' , 'MODIFIER_PLAYER_CITIES_RIVER_ADJACENCY');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD' , 'Amount' , '2');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD' , 'DistrictType' , 'DISTRICT_HOLY_SITE');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD' , 'YieldType' , 'YIELD_FAITH');
+	
+--Mapuche UI (Chemamull)
+INSERT INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqCivic)
+	VALUES ('203' , 'IMPROVEMENT_CHEMAMULL' , 'YIELD_PRODUCTION' , '1' , 'CIVIC_CIVIL_SERVICE');
+	
+--Norway UU (Berserker)
+UPDATE ModifierArguments SET Value='15' WHERE ModifierId='UNIT_STRONG_WHEN_ATTACKING';
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='UNIT_WEAK_WHEN_DEFENDING';
+
+--Japan UU (Samurai)
+UPDATE Units SET Combat=45 , PrereqCivic='CIVIC_FEUDALISM' , PrereqTech=NULL WHERE UnitType='UNIT_JAPANESE_SAMURAI';
+
+--Scotland UI (GolfCourse)
+INSERT INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqCivic)
+	VALUES ('204' , 'IMPROVEMENT_GOLF_COURSE' , 'YIELD_GOLD' , '1' , 'CIVIC_GUILDS');
+INSERT INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqCivic)
+	VALUES ('205' , 'IMPROVEMENT_GOLF_COURSE' , 'YIELD_CULTURE' , '1' , 'CIVIC_DIPLOMATIC_SERVICE');
+	
+--Spain UI (Mission)
+UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_THE_ENLIGHTENMENT' WHERE Id='17';
+
+--Pantheons
+UPDATE ModifierArguments SET Value=3 WHERE ModifierId='STONE_CIRCLES_QUARRY_FAITH_MODIFIER' and Name='Amount';
+UPDATE ModifierArguments SET Value=3 WHERE ModifierId='RELIGIOUS_IDOLS_BONUS_MINE_FAITH_MODIFIER' and Name='Amount';
+UPDATE ModifierArguments SET Value=3 WHERE ModifierId='RELIGIOUS_IDOLS_LUXURY_MINE_FAITH_MODIFIER' and Name='Amount';
+UPDATE ModifierArguments SET Value=2 WHERE ModifierId='GOD_OF_CRAFTSMEN_STRATEGIC_MINE_PRODUCTION_MODIFIER' and Name='Amount';
+
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('GODDESS_OF_THE_HUNT_CAMP_FAITH_CPLMOD' , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER' , 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('GODDESS_OF_THE_HUNT_CAMP_FAITH_MODIFIER_CPLMOD' , 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD' , 'PLOT_HAS_CAMP_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('GODDESS_OF_THE_HUNT_CAMP_FAITH_CPLMOD' , 'ModifierId' , 'GODDESS_OF_THE_HUNT_CAMP_FAITH_MODIFIER_CPLMOD');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('GODDESS_OF_THE_HUNT_CAMP_FAITH_MODIFIER_CPLMOD' , 'YieldType' , 'YIELD_FAITH');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('GODDESS_OF_THE_HUNT_CAMP_FAITH_MODIFIER_CPLMOD' , 'Amount' , '2');
+INSERT INTO BeliefModifiers (BeliefType , ModifierId)
+	VALUES ('BELIEF_GODDESS_OF_THE_HUNT' , 'GODDESS_OF_THE_HUNT_CAMP_FAITH_CPLMOD');
+	
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('GODDESS_OF_FESTIVALS_PLANTATION_TAG_FAITH_CPLMOD' , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER' , 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('GODDESS_OF_FESTIVALS_PLANTATION_TAG_FAITH_MODIFIER_CPLMOD' , 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD' , 'PLOT_HAS_PLANTATION_TAG_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('GODDESS_OF_FESTIVALS_PLANTATION_TAG_FAITH_CPLMOD' , 'ModifierId' , 'GODDESS_OF_FESTIVALS_PLANTATION_TAG_FAITH_MODIFIER_CPLMOD');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('GODDESS_OF_FESTIVALS_PLANTATION_TAG_FAITH_MODIFIER_CPLMOD' , 'YieldType' , 'YIELD_FAITH');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('GODDESS_OF_FESTIVALS_PLANTATION_TAG_FAITH_MODIFIER_CPLMOD' , 'Amount' , '1');
+INSERT INTO BeliefModifiers (BeliefType , ModifierId)
+	VALUES ('BELIEF_GODDESS_OF_FESTIVALS' , 'GODDESS_OF_FESTIVALS_PLANTATION_TAG_FAITH_CPLMOD');
+	
+--Generic Units
+UPDATE Units SET Combat='75' , BaseMoves='3' WHERE UnitType='UNIT_INFANTRY';
+UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_PRIVATEER';
+UPDATE Units SET Range='2' WHERE UnitType='UNIT_MACHINE_GUN';
+
+--Gandhi
+INSERT INTO TraitModifiers (TraitType , ModifierId)
+	VALUES ('TRAIT_LEADER_SATYAGRAHA' , 'GANDHI_FAST_BUILDERS');
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('GANDHI_FAST_BUILDERS' , 'MODIFIER_PLAYER_UNITS_ADJUST_MOVEMENT' , 'UNIT_IS_BUILDER');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('GANDHI_FAST_BUILDERS' , 'Amount' , '1');
+	
+INSERT INTO TraitModifiers (TraitType , ModifierId)
+	VALUES ('TRAIT_LEADER_SATYAGRAHA' , 'GANDHI_FAITH_PURCHASE_BUILDERS');
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('GANDHI_FAITH_PURCHASE_BUILDERS' , 'MODIFIER_PLAYER_CITIES_ENABLE_UNIT_FAITH_PURCHASE');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('GANDHI_FAITH_PURCHASE_BUILDERS' , 'Tag' , 'CLASS_BUILDER');
+	
+--Hanging Gardens
+UPDATE Buildings SET Housing='1' WHERE BuildingType='BUILDING_HANGING_GARDENS';
+INSERT INTO BuildingModifiers (BuildingType , ModifierId)
+	VALUES ('BUILDING_HANGING_GARDENS' , 'HANGING_GARDENS_REGIONAL_HOUSING');
+INSERT INTO Modifiers (ModifierId , ModifierType, SubjectRequirementSetId)
+	VALUES ('HANGING_GARDENS_REGIONAL_HOUSING' , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_HOUSING' , 'HANGING_GARDENS_REGIONAL_HOUSING_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('HANGING_GARDENS_REGIONAL_HOUSING' , 'Amount' , '1');
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('HANGING_GARDENS_REGIONAL_HOUSING_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('HANGING_GARDENS_REGIONAL_HOUSING_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_HANGING_GARDENS_WITHIN_6');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIRES_PLOT_HAS_HANGING_GARDENS_WITHIN_6' , 'REQUIREMENT_PLOT_ADJACENT_BUILDING_TYPE_MATCHES');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_PLOT_HAS_HANGING_GARDENS_WITHIN_6' , 'BuildingType' ,'BUILDING_HANGING_GARDENS');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_PLOT_HAS_HANGING_GARDENS_WITHIN_6' , 'MaxRange' ,'6');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIRES_PLOT_HAS_HANGING_GARDENS_WITHIN_6' , 'MinRange' ,'0');
+
+--OTHER
+UPDATE GlobalParameters SET Value='0' WHERE Name='GREATWORK_ART_LOCK_TIME';
+
+DELETE FROM UnitAbilityModifiers WHERE ModifierId='MALON_RAIDER_TERRITORY_COMBAT_BONUS';
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='TRAIT_ADJUST_CITY_CULTURE_PER_GOVERNOR_TITLE_MODIFIER' AND Name='Amount';
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='TRAIT_ADJUST_CITY_SCIENCE_PER_GOVERNOR_TITLE_MODIFIER' AND Name='Amount';
+
+-- VERSIONS 1 to 6 --
 -- Amani Abuse Fix... can immediately re-declare war when an enemy suzerian removes Amani
 UPDATE GlobalParameters SET Value='1' WHERE Name='DIPLOMACY_PEACE_MIN_TURNS';
 
@@ -52,9 +267,10 @@ INSERT INTO Modifiers (ModifierId , ModifierType , OwnerRequirementSetId)
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('COMMEMORATION_CULTURAL_DISTRICTGOLD' , 'YieldType' , 'YIELD_GOLD');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
-    VALUES ('COMMEMORATION_CULTURAL_DISTRICTGOLD' , 'Amount' , '1');
+    VALUES ('COMMEMORATION_CULTURAL_DISTRICTGOLD' , 'Amount' , '2');
 INSERT INTO CommemorationModifiers (CommemorationType, ModifierId)
 	VALUES ('COMMEMORATION_CULTURAL', 'COMMEMORATION_CULTURAL_DISTRICTGOLD');
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId='COMMEMORATION_CULTURAL_DISTRICTCULTURE' and Name='Amount';
 
 
 -- RELIGIONS --
@@ -106,11 +322,6 @@ UPDATE ModifierArguments SET Value='75' WHERE ModifierId='GODDESS_OF_THE_HARVEST
 UPDATE ModifierArguments SET Value='75' WHERE ModifierId='GODDESS_OF_THE_HARVEST_REMOVE_FEATURE_MODIFIER' and Name='Amount';
 -- Monument to the Gods affects all wonders... not just Ancient and Classical Era
 UPDATE ModifierArguments SET Value='ERA_INFORMATION' WHERE ModifierId='MONUMENT_TO_THE_GODS_ANCIENTCLASSICALWONDER_MODIFIER' AND Name='EndEra';
-
-
--- GREAT PEOPLE --
--- Remove movement bonus from Classical Great Generals
---UPDATE ModifierArguments SET Value='NULL' WHERE ModifierId='GREATPERSON_MOVEMENT_AOE_CLASSICAL_LAND';
 
 
 -- CIVILIZATIONS --
@@ -424,25 +635,25 @@ INSERT INTO District_Adjacencies
 -- Mapuche combat bonus against Golden Age Civs set to 5 instead of 10
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='TRAIT_TOQUI_COMBAT_BONUS_VS_GOLDEN_AGE_CIV';
 -- Malon Raiders become Horseman replacement
-UPDATE Units SET Combat=36 , Cost=90 , Maintenance=2 , PrereqTech='TECH_HORSEBACK_RIDING' , MandatoryObsoleteTech='TECH_SYNTHETIC_MATERIALS' WHERE UnitType='UNIT_MAPUCHE_MALON_RAIDER';
+UPDATE Units SET Combat=36 , Cost=90 , Maintenance=2 , BaseMoves=5 , PrereqTech='TECH_HORSEBACK_RIDING' , MandatoryObsoleteTech='TECH_SYNTHETIC_MATERIALS' WHERE UnitType='UNIT_MAPUCHE_MALON_RAIDER';
 INSERT INTO UnitReplaces (CivUniqueUnitType , ReplacesUnitType)
 	VALUES ('UNIT_MAPUCHE_MALON_RAIDER' , 'UNIT_HORSEMAN');
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_CAVALRY' WHERE Unit='UNIT_MAPUCHE_MALON_RAIDER';
--- Chemamull Unique Improvement gets +2 Production
+-- Chemamull Unique Improvement gets +1 Production (another at Civil Service Civic)
 INSERT INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
-	VALUES ('IMPROVEMENT_CHEMAMULL' , 'YIELD_PRODUCTION' , 2);
+	VALUES ('IMPROVEMENT_CHEMAMULL' , 'YIELD_PRODUCTION' , 1);
 
 
 -- Norway's Berserker unit now gets unlocked at Feudalism instead of Military Tactics, and can be purchased with Faith
-UPDATE Units SET Combat=40 WHERE UnitType='UNIT_NORWEGIAN_BERSERKER';
+UPDATE Units SET Combat=35 , PrereqTech=NULL , PrereqCivic='CIVIC_FEUDALISM' WHERE UnitType='UNIT_NORWEGIAN_BERSERKER';
 INSERT INTO TraitModifiers (TraitType , ModifierId)
 	VALUES ('TRAIT_CIVILIZATION_UNIT_NORWEGIAN_BERSERKER' , 'BERSERKER_FAITH_PURCHASE_CPLMOD');
 INSERT INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('BERSERKER_FAITH_PURCHASE_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ENABLE_UNIT_FAITH_PURCHASE');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('BERSERKER_FAITH_PURCHASE_CPLMOD' , 'Tag' , 'CLASS_MELEE_BERSERKER');
--- Norway's Longship unit now 25 combat strength
-UPDATE Units SET Combat=25 WHERE UnitType='UNIT_NORWEGIAN_LONGSHIP';
+-- Norway's Longship unit now 28 combat strength
+UPDATE Units SET Combat=28 WHERE UnitType='UNIT_NORWEGIAN_LONGSHIP';
 -- Norway Melee Naval production reduced to 25% from 50%
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_ANCIENT_NAVAL_MELEE_PRODUCTION' AND Name='Amount';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_CLASSICAL_NAVAL_MELEE_PRODUCTION' AND Name='Amount';
@@ -737,37 +948,20 @@ UPDATE Modifiers SET NewOnly='1' , OwnerRequirementSetId='PLAYER_HAS_POLITICAL_P
 
 -- Scotland Happy and Ecstatic citizen bonuses to Science and Production doubled
 UPDATE ModifierArguments SET Value='10' WHERE Name='Amount' AND ModifierId='TRAIT_SCIENCE_HAPPY';
-UPDATE ModifierArguments SET Value='20' WHERE Name='Amount' AND ModifierId='TRAIT_SCIENCE_ECSTATIC';
+UPDATE ModifierArguments SET Value='15' WHERE Name='Amount' AND ModifierId='TRAIT_SCIENCE_ECSTATIC';
 UPDATE ModifierArguments SET Value='10' WHERE Name='Amount' AND ModifierId='TRAIT_PRODUCTION_HAPPY';
-UPDATE ModifierArguments SET Value='20' WHERE Name='Amount' AND ModifierId='TRAIT_PRODUCTION_ECSTATIC';
+UPDATE ModifierArguments SET Value='15' WHERE Name='Amount' AND ModifierId='TRAIT_PRODUCTION_ECSTATIC';
 -- Scotland's Golf Course moved to Games and Recreation
 UPDATE Improvements SET PrereqCivic='CIVIC_GAMES_RECREATION' WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE';
--- Scotland's Golf Course base yields are 2 Culture and 3 Gold... +1 to each if next to City Center
-UPDATE Improvement_YieldChanges SET YieldChange=2 WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE' AND YieldType='YIELD_CULTURE';
-UPDATE Improvement_YieldChanges SET YieldChange=3 WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE' AND YieldType='YIELD_GOLD';
--- Scotland's Golf Course extra housing moved to Urbanization and an extra Amentity at Diplomatic Service
+-- Scotland's Golf Course base yields are 1 Culture and 2 Gold... +1 to each if next to City Center (+1 Culture at Civil Service and +1 Gold at Guilds)
+UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE' AND YieldType='YIELD_CULTURE';
+-- Scotland's Golf Course extra housing moved to Urbanization
 UPDATE RequirementArguments SET Value='CIVIC_URBANIZATION' WHERE RequirementId='REQUIRES_PLAYER_HAS_GLOBALIZATION' AND Name='CivicType';
-INSERT INTO Requirements (RequirementId , RequirementType)
-	VALUES ('REQUIRES_PLAYER_HAS_DIPLOSERVICE' , 'REQUIREMENT_PLAYER_HAS_CIVIC');
-INSERT INTO RequirementArguments (RequirementId , Name , Value)
-	VALUES ('REQUIRES_PLAYER_HAS_DIPLOSERVICE' , 'CivicType' , 'CIVIC_DIPLOMATIC_SERVICE');
-INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
-	VALUES ('PLAYER_HAS_DIPLOSERVICE_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
-	VALUES ('PLAYER_HAS_DIPLOSERVICE_REQUIREMENTS' , 'REQUIRES_PLAYER_HAS_DIPLOSERVICE');
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
-	VALUES ('GOLFCOURSE_AMENITY_WITHDIPLOSERVICE' , 'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_AMENITY' , 'PLAYER_HAS_DIPLOSERVICE_REQUIREMENTS');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES ('GOLFCOURSE_AMENITY_WITHDIPLOSERVICE' , 'Amount' , '1');
-INSERT INTO ImprovementModifiers (ImprovementType, ModifierId)
-	VALUES ('IMPROVEMENT_GOLF_COURSE' , 'GOLFCOURSE_AMENITY_WITHDIPLOSERVICE');
 INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
 	VALUES ('GOLFCOURSE_CITYCENTERADJACENCY_GOLD' , 'Placeholder' , 'YIELD_GOLD' , 1 , 1 , 'DISTRICT_CITY_CENTER');
 INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
 	VALUES ('IMPROVEMENT_GOLF_COURSE' , 'GOLFCOURSE_CITYCENTERADJACENCY_GOLD');
 
--- Scythia leader trait only gives +3 (insteadf of +5) against wounded units
-UPDATE ModifierArguments SET Value='3' WHERE ModifierId='BONUS_VS_WOUNDED_UNITS';
 -- Scythia no longer gets an extra light cavalry unit when building/buying one
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_EXTRASAKAHORSEARCHER' and NAME='Amount';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_EXTRALIGHTCAVALRY' and NAME='Amount';
@@ -804,19 +998,11 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 -- Spanish Mission moved to Theology and gets +1 housing at Exploration
 UPDATE Improvements SET PrereqCivic='CIVIC_THEOLOGY' WHERE ImprovementType='IMPROVEMENT_MISSION';
 INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
-	VALUES ('MISSION_HOUSING_WITH_EXPLORATION' , 'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_HOUSING', 'PLAYER_HAS_EXPLORATION_REQUIREMENTS');
+	VALUES ('MISSION_HOUSING_WITH_CIVIL_SERVICE' , 'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_HOUSING', 'PLAYER_HAS_CIVIL_SERVICE_REQUIREMENTS');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES ('MISSION_HOUSING_WITH_EXPLORATION' , 'Amount' , 1);
+	VALUES ('MISSION_HOUSING_WITH_CIVIL_SERVICE' , 'Amount' , 1);
 INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
-	VALUES ('IMPROVEMENT_MISSION' , 'MISSION_HOUSING_WITH_EXPLORATION');
-INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
-	VALUES ('PLAYER_HAS_EXPLORATION_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO Requirements (RequirementId, RequirementType)
-	VALUES ('REQUIRES_PLAYER_HAS_EXPLORATION' , 'REQUIREMENT_PLAYER_HAS_CIVIC');
-INSERT INTO RequirementArguments (RequirementId , Name , Value)
-	VALUES ('REQUIRES_PLAYER_HAS_EXPLORATION' , 'CivicType' , 'CIVIC_EXPLORATION');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
-	VALUES ('PLAYER_HAS_EXPLORATION_REQUIREMENTS' , 'REQUIRES_PLAYER_HAS_EXPLORATION');
+	VALUES ('IMPROVEMENT_MISSION' , 'MISSION_HOUSING_WITH_CIVIL_SERVICE');
 
 -- Sumerian War Carts are no longer free to maintain so that you cannot have unlimited and have 28 combat strength instead of 30
 UPDATE Units SET Maintenance=1 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
