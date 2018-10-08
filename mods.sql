@@ -176,13 +176,22 @@ INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES ('GANDHI_FAST_BUILDERS' , 'MODIFIER_PLAYER_UNITS_ADJUST_MOVEMENT' , 'UNIT_IS_BUILDER');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('GANDHI_FAST_BUILDERS' , 'Amount' , '1');
-	
+
 INSERT INTO TraitModifiers (TraitType , ModifierId)
-	VALUES ('TRAIT_LEADER_SATYAGRAHA' , 'GANDHI_FAITH_PURCHASE_BUILDERS');
-INSERT INTO Modifiers (ModifierId , ModifierType)
-	VALUES ('GANDHI_FAITH_PURCHASE_BUILDERS' , 'MODIFIER_PLAYER_CITIES_ENABLE_UNIT_FAITH_PURCHASE');
+	VALUES ('TRAIT_LEADER_SATYAGRAHA' , 'GANDHI_FAST_SETTLERS');
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('GANDHI_FAST_SETTLERS' , 'MODIFIER_PLAYER_UNITS_ADJUST_MOVEMENT' , 'UNIT_IS_SETTLER');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES ('GANDHI_FAITH_PURCHASE_BUILDERS' , 'Tag' , 'CLASS_BUILDER');
+	VALUES ('GANDHI_FAST_SETTLERS' , 'Amount' , '1');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+	VALUES ('UNIT_IS_SETTLER' , 'REQUIREMENT_UNIT_IS_SETTLER');
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+	VALUES ('UNIT_IS_SETTLER' , 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO Requirements (RequirementId , RequirementType)
+	VALUES ('REQUIREMENT_UNIT_IS_SETTLER' , 'REQUIREMENT_UNIT_TYPE_MATCHES');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+	VALUES ('REQUIREMENT_UNIT_IS_SETTLER' , 'UnitType' , 'UNIT_SETTLER');
+
 	
 --Hanging Gardens
 UPDATE Buildings SET Housing='1' WHERE BuildingType='BUILDING_HANGING_GARDENS';

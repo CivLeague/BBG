@@ -15,6 +15,15 @@
 		<File>text.xml</File>
 		<File>mods.sql</File>
 		<File>WorldRankings.lua</File>
+		<File>MinimapPanel.lua</File>
+		<File>mappinlistpanel.lua</File>
+		<File>mappinlistpanel.xml</File>
+		<File>mappinmanager.lua</File>
+		<File>mappinmanager.xml</File>
+		<File>mappinpopup.lua</File>
+		<File>mappinpopup.xml</File>
+		<File>maptacks.lua</File>
+		<File>maptacks-text.xml</File>
 	</Files>
 	
 	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
@@ -30,10 +39,19 @@
 	<Components>
 		<ImportFiles>
 			<File>WorldRankings.lua</File>
+			<File>MinimapPanel.lua</File>
+			<File>mappinlistpanel.lua</File>
+			<File>mappinlistpanel.xml</File>
+			<File>mappinmanager.lua</File>
+			<File>mappinmanager.xml</File>
+			<File>mappinpopup.lua</File>
+			<File>mappinpopup.xml</File>
+			<File>maptacks.lua</File>
 		</ImportFiles>
 		<LocalizedText>
 			<Items>
 				<File>text.xml</File>
+				<File>maptacks-text.xml</File>
 			</Items>
 		</LocalizedText>
 		<UpdateDatabase>
