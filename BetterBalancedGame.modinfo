@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="7">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="8">
 	<Properties>
 		<Name>Better Balanced Game</Name>
 		<Description>
@@ -7,7 +7,7 @@
 		</Description>
 		<Teaser>Mods to balance Civ Players' League multiplayer games</Teaser>
 		<Authors>codenaugh, S1AL</Authors>
-		<SpecialThanks>wazabaza, abstr, auguthy, dexter, ApolloMaster07, WhySoHate, Fulesa, ReQuiiieM</SpecialThanks>
+		<SpecialThanks>wazabaza, abstr, priz, ApolloMaster07, WhySoHate, Fulesa, ReQuiiieM, Auguthy, dexxter</SpecialThanks>
 	</Properties>
 	
 	<!-- defines file dependencies -->

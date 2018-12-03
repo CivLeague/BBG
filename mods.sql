@@ -1,10 +1,65 @@
+-- V8 --
+-- fix valetta's bonus to work on Georgian walls
+INSERT INTO TraitModifiers (TraitType , ModifierId)
+    VALUES ('MINOR_CIV_VALLETTA_TRAIT' , 'MINOR_CIV_VALLETTA_UNIQUE_INFLUENCE_PURCHASE_CHEAPER_TSIKHE_BONUS');
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+    VALUES ('MINOR_CIV_VALLETTA_UNIQUE_INFLUENCE_PURCHASE_CHEAPER_TSIKHE_BONUS' , 'MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER' , 'PLAYER_IS_SUZERAIN');
+INSERT INTO Modifiers (ModifierId , ModifierType)
+    VALUES ('MINOR_CIV_VALLETTA_PURCHASE_CHEAPER_TSIKHE_BONUS' , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PURCHASE_COST');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+    VALUES ('MINOR_CIV_VALLETTA_UNIQUE_INFLUENCE_PURCHASE_CHEAPER_TSIKHE_BONUS' , 'ModifierId' , 'MINOR_CIV_VALLETTA_PURCHASE_CHEAPER_TSIKHE_BONUS');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+    VALUES ('MINOR_CIV_VALLETTA_PURCHASE_CHEAPER_TSIKHE_BONUS' , 'BuildingType' , 'BUILDING_TSIKHE');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+    VALUES ('MINOR_CIV_VALLETTA_PURCHASE_CHEAPER_TSIKHE_BONUS' , 'Amount' , '50');
+
+-- add 1 production to fishing boat improvement
+INSERT INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
+	VALUES ('IMPROVEMENT_FISHING_BOATS' , 'YIELD_PRODUCTION' , '1');
+
+-- relics give 6 tourism instead of 8
+UPDATE GreatWorks SET Tourism=6 WHERE GreatWorkObjectType='GREATWORKOBJECT_RELIC';
+
+-- music gives 8 culture and 12 tourism instead of 4 and 4
+UPDATE GreatWorks SET Tourism=12 WHERE GreatWorkObjectType='GREATWORKOBJECT_MUSIC';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_BEETHOVEN_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_BEETHOVEN_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_BACH_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_BACH_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_MOZART_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_MOZART_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_VIVALDI_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_VIVALDI_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_KENGYO_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_KENGYO_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_GOMEZ_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_GOMEZ_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_LISZT_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_LISZT_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_CHOPIN_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_CHOPIN_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_TCHAIKOVSKY_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_TCHAIKOVSKY_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_TIANHUA_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_TIANHUA_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_DVORAK_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_DVORAK_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_SCHUMANN_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_SCHUMANN_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_ROSAS_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_ROSAS_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_LILIUOKALANI_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_LILIUOKALANI_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_JAAN_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_JAAN_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_LEONTOVYCH_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_LEONTOVYCH_2';
+
 -- VERSION 7 --
 -- Australia UU (Digger)
-
 UPDATE Units SET Combat='77' , BaseMoves='3' WHERE UnitType='UNIT_DIGGER';
 
 -- China UI (Great Wall)
-
 UPDATE Improvement_YieldChanges SET YieldChange='1' WHERE ImprovementType='IMPROVEMENT_GREAT_WALL' AND YieldType='YIELD_GOLD';
 INSERT INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqTech)
 	VALUES ('202' , 'IMPROVEMENT_GREAT_WALL' , 'YIELD_CULTURE' , '1' , 'TECH_CASTLES');
@@ -333,9 +388,9 @@ UPDATE Units SET Combat=38 WHERE UnitType='UNIT_WARRIOR_MONK';
 -- PANTHEONS --
 -- God of the Forge is +15% production to ancient and classical units instead of +25
 UPDATE ModifierArguments SET Value='15' WHERE ModifierId='GOD_OF_THE_FORGE_UNIT_ANCIENT_CLASSICAL_PRODUCTION_MODIFIER' and Name='Amount';
--- Goddess of the Harvest is +75% faith from chops instead of +100%
-UPDATE ModifierArguments SET Value='75' WHERE ModifierId='GODDESS_OF_THE_HARVEST_HARVEST_MODIFIER' and Name='Amount';
-UPDATE ModifierArguments SET Value='75' WHERE ModifierId='GODDESS_OF_THE_HARVEST_REMOVE_FEATURE_MODIFIER' and Name='Amount';
+-- Goddess of the Harvest is +50% faith from chops instead of +100%
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='GODDESS_OF_THE_HARVEST_HARVEST_MODIFIER' and Name='Amount';
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='GODDESS_OF_THE_HARVEST_REMOVE_FEATURE_MODIFIER' and Name='Amount';
 -- Monument to the Gods affects all wonders... not just Ancient and Classical Era
 UPDATE ModifierArguments SET Value='ERA_INFORMATION' WHERE ModifierId='MONUMENT_TO_THE_GODS_ANCIENTCLASSICALWONDER_MODIFIER' AND Name='EndEra';
 
@@ -679,7 +734,7 @@ UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_INDUSTRIAL_NAVAL
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_MODERN_NAVAL_MELEE_PRODUCTION' AND Name='Amount';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_ATOMIC_NAVAL_MELEE_PRODUCTION' AND Name='Amount';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_INFORMATION_NAVAL_MELEE_PRODUCTION' AND Name='Amount';
--- Norwegian Stave Church now gives +1 Faith to resource tiles in the city instead of standard adjacency bonus for woods
+-- Norwegian Stave Church now gives +1 Faith to resource tiles in the city, instead of standard adjacency bonus for woods
 INSERT INTO Modifiers (ModifierID , ModifierType , SubjectRequirementSetId)
 	VALUES ('STAVECHURCH_RESOURCE_FAITH' , 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD' , 'STAVE_CHURCH_RESOURCE_REQUIREMENTS');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
