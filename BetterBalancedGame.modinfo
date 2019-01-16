@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="8">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="9">
 	<Properties>
-		<Name>Better Balanced Game</Name>
+		<Name>Better Balanced Game v9</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
 		<Teaser>Mods to balance Civ Players' League multiplayer games</Teaser>
 		<Authors>codenaugh, S1AL</Authors>
-		<SpecialThanks>wazabaza, abstr, priz, ApolloMaster07, WhySoHate, Fulesa, ReQuiiieM, Auguthy, dexxter</SpecialThanks>
+		<SpecialThanks>wazabaza, abstr, priz, ApolloMaster07, WhySoHate, Fulesa, ReQuiiieM, Auguthy, bszonye, dexxter</SpecialThanks>
 	</Properties>
 	
 	<!-- defines file dependencies -->
@@ -28,7 +28,10 @@
 	
 	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
 	<Settings>
-		<LocalizedText>
+		<LocalizedText id="bbg_pregame_text_updates">
+			<Properties>
+				<LoadOrder>1609</LoadOrder>
+			</Properties>
 			<Items>
 				<File>text.xml</File>
 			</Items>
@@ -37,7 +40,7 @@
 
 	<!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
 	<Components>
-		<ImportFiles>
+		<ImportFiles id="bbg_import_files">
 			<File>WorldRankings.lua</File>
 			<File>MinimapPanel.lua</File>
 			<!-- <File>mappinlistpanel.lua</File>
@@ -48,15 +51,18 @@
 			<File>mappinpopup.xml</File>
 			<File>maptacks.lua</File> -->
 		</ImportFiles>
-		<LocalizedText id="text_updates">
+		<LocalizedText id="bbg_text_updates">
+			<Properties>
+				<LoadOrder>1611</LoadOrder>
+			</Properties>
 			<Items>
 				<File>text.xml</File>
 				<!-- <File>maptacks-text.xml</File> -->
 			</Items>
 		</LocalizedText>
-		<UpdateDatabase id="db_updates">
+		<UpdateDatabase id="bbg_db_updates">
 			<Properties>
-				<LoadOrder>1001</LoadOrder>
+				<LoadOrder>1614</LoadOrder>
 			</Properties>
 			<Items>
 				<File>mods.sql</File>

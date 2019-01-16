@@ -114,7 +114,7 @@
 			<Text>+2 [ICON_FAITH] Faith to Khmer from incoming and outgoing international trade routes. The sending Civilization also receives +2 [ICON_FAITH] Faith. +3 [ICON_FAITH] Faith and +1 [ICON_AMENITIES] Amenity from entertainment to each city with an Aqueduct. Farms provide +2 [ICON_FOOD] Food if adjacent to an Aqueduct.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="en_US">
-			<Text>A building unique to Norway that replaces the Temple. +1 [ICON_FAITH] to each resource tile in this city.  +1 [ICON_PRODUCTION] Production to each coastal resource tile in this city. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith.</Text>
+			<Text>A building unique to Norway that replaces the Temple. +1 [ICON_FAITH] to each resource tile in this city. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="en_US"> 
 			<Text>Four tile natural wonder. It appears as Marsh and provides +2 [ICON_Food] Food, +2 [ICON_Culture] Culture, and +2 [ICON_Science] Science.</Text>
@@ -306,7 +306,10 @@
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct Fishing Boats.[NEWLINE][NEWLINE]+1 [ICON_Food] Food and +1 [ICON_PRODUCTION] Production. Can only be built on valid resources.[NEWLINE][NEWLINE]If built on Luxury resources, the city will gain use of that resource.</Text>
 		</Replace>
-				
+		<Replace Tag="LOC_DISTRICT_LAVRA_DESCRIPTION" Language="en_US">
+			<Text>A district unique to Russia for religious activity. Replaces the Holy Site district and is cheaper to build.[NEWLINE][NEWLINE]Accrues [ICON_GREATWRITER] Great Writer, [ICON_GREATArtist] Great Artist, and [ICON_GREATMusician] Great Musician Points at the Drama and Poetry Civic. Your city border grows by one tile each time a Great Person is expended in this city.</Text>
+		</Replace>
+		
 		
 		
 		<!-- KOREAN TRANSLATIONS -->
@@ -420,7 +423,7 @@
 			<Text>외국 도시와 연결된 모든 [ICON_TradeRoute] 교역로에서 양 문명 모두 [ICON_FAITH] 신앙 +2를 획득합니다. 송수로를 보유한 각 도시는 유흥에 의한 [ICON_FAITH] 신앙 +3 및 [ICON_AMENITIES] 쾌적도 +1을 제공합니다. 농장은 송수로에 인접한 경우 [ICON_FOOD] 식량 +2를 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="ko_KR">
-			<Text>노르웨이 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하기 위해 요구됩니다. 도시 내 각 자원에 [ICON_FAITH] 신앙 +1을 제공합니다. 도시 내 각 해안 자원에 [ICON_PRODUCTION] 생산력 +1을 제공합니다.</Text>
+			<Text>노르웨이 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하기 위해 요구됩니다. 도시 내 각 자원에 [ICON_FAITH] 신앙 +1을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="ko_KR"> 
 			<Text>습지로 보이는 타일 네 개의 자연경관입니다. [ICON_Food] 식량 +2,[ICON_Culture] 문화 +2,[ICON_Science] 과학 +2을 제공합니다.</Text>
@@ -738,7 +741,7 @@
 			<Text>Las Rutas comerciales Internacionales proporcionan +2 a Fe [ICON_FAITH] para Jémer. Las Rutas comerciales de otras civilizaciones con Jémer también les proporcionan +2 a Fe [ICON_FAITH] . +3 a Fe [ICON_FAITH] y +1 a Servicios [ICON_AMENITIES] por entretenimiento para todas las ciudades con un Acueducto. Las Granjas adyacentes a un Acueducto proporcional +2 Alimento [ICON_FOOD].</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="es_ES">
-			<Text>Un edificio exclusivo de Noruega que sustituye al Templo. Necesario para comprar Apóstoles e Inquisidores con Fe [ICON_FAITH] . +1 a Fe [ICON_FAITH] por cada casilla de recursos en esta ciudad. +1 a la Producción [ICON_PRODUCTION] a cada casilla de recursos costeros de esta ciudad.</Text>
+			<Text>Un edificio exclusivo de Noruega que sustituye al Templo. Necesario para comprar Apóstoles e Inquisidores con Fe [ICON_FAITH]. +1 a Fe [ICON_FAITH] por cada casilla de recursos en esta ciudad.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="es_ES">
 			<Text>Desbloquea la habilidad de Constructor para crear una Misión, exclusiva de España.[NEWLINE][NEWLINE]+2 a Fe [ICON_Faith] . +2 a Fe si está en un continente diferente a tu capital [ICON_Capital] . +2 a Ciencia [ICON_Science] si se construye junto a un distrito de Campus. +1 a Alojamiento [ICON_HOUSING] después de alcanzar el principio de Exploracion y +2 Ciencia [ICON_SCIENCE] después de alcanzar el principio de Herencia Cultural.</Text>
@@ -862,7 +865,7 @@
             <Text>Desbloquea la habilidad del constructor para construir Chemamull, única para Mapuche.[NEWLINE][NEWLINE] Otorga +2 [ICON_PRODUCTION] Producción y [ICON_CULTURE] cultura equivalente al 75% del atractivo de la casilla. Turismo [ICON_TOURISM] adicional tras investigar la tecnología Vuelo. Atractivo mínimo de Impresionante.</Text>
         </Replace>
         <Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="es_ES">
-            <Text>Desbloquea la hablidad para construir un campo de golf con el constructor, único de Escocia.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Servicios, +3 [ICON_GOLD] Oro, y +2 [ICON_CULTURE] Cultura. +1  [ICON_GOLD] Oro y +1 [ICON_CULTURE] Cultura si se encuentra junto al distrito del centro urbano. +1 [ICON_CULTURE] Cultura si se encuentra junto a un Complejo de Ocio. Servicios [ICON_AMENITIES] adicionales, [ICON_TOURISM] Turismo, y [ICON_HOUSING] Alojamiento conforme avances en el arbol tecnológico y en el arbol de principios. No se puede construir en Desierto o colinas en desierto. Uno por ciudad. Las casillas con campos de Golf no se pueden intercambiar. +1 Atractivo.</Text>
+            <Text>Desbloquea la hablidad para construir un campo de golf con el constructor, único de Escocia.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Servicios, +3 [ICON_GOLD] Oro, y +2 [ICON_CULTURE] Cultura. +1 [ICON_GOLD] Oro y +1 [ICON_CULTURE] Cultura si se encuentra junto al distrito del centro urbano. +1 [ICON_CULTURE] Cultura si se encuentra junto a un Complejo de Ocio. Servicios [ICON_AMENITIES] adicionales, [ICON_TOURISM] Turismo, y [ICON_HOUSING] Alojamiento conforme avances en el arbol tecnológico y en el arbol de principios. No se puede construir en Desierto o colinas en desierto. Uno por ciudad. Las casillas con campos de Golf no se pueden intercambiar. +1 Atractivo.</Text>
         </Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="es_ES">
             <Text>Las ciudades felíces reciben +10% [ICON_SCIENCE] Ciencia y +10% [ICON_PRODUCTION] Producción. Las ciudades felíces generan +1 punto [ICON_GreatScientist] de Gran Científico por Campus y +1 [ICON_GreatEngineer] punto de Gran Ingeniero por Zona Industrial. Las ciudades eufóricas reciben el doble de bonificación.</Text>
@@ -990,7 +993,7 @@
 			<Text>Кхмеры получают +2 [ICON_FAITH] за международные торговые пути к своим городам и от них. Цивилизация-отправитель такого торгового пути также имеет с него +2 [ICON_FAITH] веры. +3 [ICON_FAITH] веры и +1 [ICON_AMENITIES] довольства от развлечений в каждом городе с акведуком. Фермы рядом с акведуком дают +2 [ICON_FOOD] еды.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальное здание Норвегии, которое заменяет храм. Необходимо для покупки апостолов и инквизиторов за [ICON_Faith] веру. +1 [ICON_PRODUCTION] производства с каждого ресурса в этом городе и еще +1 с каждого морского ресурса.</Text>
+			<Text>Уникальное здание Норвегии, которое заменяет храм. Необходимо для покупки апостолов и инквизиторов за [ICON_Faith] веру. Дает +1 [ICON_FAITH] веры для каждого ресурса в этом городе.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="ru_RU"> 
 			<Text>Чудо природы на четыре клетки. Представляет собой болото и дает +2 [ICON_Food] пищи, +2 [ICON_Culture] культуры и +2 [ICON_Science] науки.</Text>
@@ -1166,10 +1169,10 @@
 			<Text>Позволяет строителям строить чемамюль – уникальную постройку мапуче.[NEWLINE][NEWLINE]Производит [ICON_CULTURE] культуру в количестве, равном 75% престижа клетки, а также +1 [ICON_PRODUCTION]. Ещё +1 [ICON_PRODUCTION] производства при изучении Гражданской Службы. Дополнительный [ICON_TOURISM] туризм после исследования авиации. Необходим потрясающий престиж.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет строителям строить поле для гольфа - уникальную постройку Шотландии.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] довольства и +2 [ICON_GOLD] золота и +1 ICON_CULTURE] культуры. Еще +1 [ICON_CULTURE] культуры и +1 [ICON_GOLD] золота при соседстве с центром города и +1 [ICON_CULTURE] культуры при соседстве с развлекательным комплексом. Дополнительные [ICON_CULTURE] культура, [ICON_GOLD] золото, [ICON_TOURISM] туризм и [ICON_HOUSING] жилье по мере продвижения по дереву технологий и социальных институтов. Нельзя построить в пустыне и на холмах в пустыне. Одна постройка на город. Клетки с полем для гольфа нельзя изменить. +1 престижа.</Text>
+			<Text>Позволяет строителям строить поле для гольфа - уникальную постройку Шотландии.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] довольства и +2 [ICON_GOLD] золота и +1 [ICON_CULTURE] культуры. Еще +1 [ICON_CULTURE] культуры и +1 [ICON_GOLD] золота при соседстве с центром города и +1 [ICON_CULTURE] культуры при соседстве с развлекательным комплексом. Дополнительные [ICON_CULTURE] культура, [ICON_GOLD] золото, [ICON_TOURISM] туризм и [ICON_HOUSING] жилье по мере продвижения по дереву технологий и социальных институтов. Нельзя построить в пустыне и на холмах в пустыне. Одна постройка на город. Клетки с полем для гольфа нельзя изменить. +1 престижа.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ru_RU">
-			<Text>Счастливые города получают +10% [ICON_SCIENCE] науки и +10% [ICON_PRODUCTION] производства. Города в экстазе получают ещё по 5% бонуса к [ICON_SCIENCE] науке и ICON_PRODUCTION] производству. Счастливые города производят +1 [ICON_GreatScientist] оч. великого ученого в кампусах и +1 [ICON_GreatEngineer] оч. великого инженера в промышленных зонах. Бонус очков великих людей удваивается для городов в состоянии экстаза.</Text>
+			<Text>Счастливые города получают +10% [ICON_SCIENCE] науки и +10% [ICON_PRODUCTION] производства. Города в экстазе получают ещё по 5% бонуса к [ICON_SCIENCE] науке и [ICON_PRODUCTION] производству. Счастливые города производят +1 [ICON_GreatScientist] оч. великого ученого в кампусах и +1 [ICON_GreatEngineer] оч. великого инженера в промышленных зонах. Бонус очков великих людей удваивается для городов в состоянии экстаза.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный юнит классической эры у Мапуче, который заменяет всадников. +1 [ICON_Movement] перемещения. Разграбление стоит 1 [ICON_Movement] ОП.</Text>
@@ -1294,7 +1297,7 @@
 			<Text>+2 [ICON_FAITH] Glauben für die Khmer von internationalen Handelsrouten zu und von den Khmer. Die sendende Zivilisation erhält +2 [ICON_FAITH] Glauben. +3 [ICON_FAITH] Glauben und +1 [ICON_AMENITIES] Annehmlichkeit durch Unterhaltung für jede Stadt mit einem Aquädukt. Bauernhöfe bieten +2 [ICON_FOOD] Nahrung, wenn diese an ein Aquädukt grenzen.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="de_DE">
-			<Text>Einzigartiges Gebäude von Norwegen. +1 [ICON_FAITH] Glauben für jede Ressource in dieser Stadt.  +1 [ICON_PRODUCTION] Produktion für jede Meeres-Ressource in dieser Stadt. Erforderlich für den Erwerb von Aposteln und Inquisitoren mit [ICON_Faith] Glauben.</Text>
+			<Text>Einzigartiges Gebäude von Norwegen. +1 [ICON_FAITH] Glauben für jede Ressource in dieser Stadt. Erforderlich für den Erwerb von Aposteln und Inquisitoren mit [ICON_Faith] Glauben.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="de_DE"> 
 			<Text>Naturwunder über vier Geländefelder. Es erscheint als Sumpf und bietet +2 [ICON_Food] Nahrung, +2 [ICON_Culture] Kultur, und +2 [ICON_Science] Wissenschaft.</Text>
@@ -1603,7 +1606,7 @@
 			<Text>[ICON_FAITH] Foi +2 pour chaque route commerciale internationale envoyée ou reçue. La civilisation émetrice reçoit également 2 [ICON_FAITH] foi. [ICON_FAITH] Foi +3 et [ICON_AMENITIES] activités de loisirs +1 pour chaque ville dotée d'un aqueduc. [ICON_FOOD] Nourriture +2 pour les fermes adjacentes à un aqueduc.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="fr_FR">
-			<Text>Bâtiment exclusif à la Norvège qui remplace le temple, sans lequel vous ne pourrez pas acheter d'apôtres ou d'inquisiteurs contre de la [ICON_Faith] foi. [ICON_PRODUCTION] Production +1 pour chaque ressource côtière de la ville. [ICON_FAITH] Foi +1 pour chaque ressource dans la ville.</Text>
+			<Text>Bâtiment exclusif à la Norvège qui remplace le temple, sans lequel vous ne pourrez pas acheter d'apôtres ou d'inquisiteurs contre de la [ICON_Faith] foi. [ICON_FAITH] Foi +1 pour chaque ressource dans la ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="fr_FR"> 
 			<Text>Merveille naturelle de quatre cases prenant la forme d'un marais. [ICON_Food] Nourriture +2, [ICON_Science] science +2 et [ICON_Culture] culture +2.</Text>
@@ -1917,7 +1920,7 @@
 			<Text>他文明や都市国家との交易路1つにつき、交易路の受け手と送り手の文明それぞれに[ICON_FAITH] 信仰力+2をもたらす。用水路のある各都市に[ICON_FAITH] 信仰力+3、娯楽による快適性+1。用水路に隣接している場合、農場から[ICON_FOOD] 食料+2。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="ja_JP">
-			<Text>神殿に取ってかわるノルウェー固有の建造物。この都市の各資源タイルに[ICON_FAITH]信仰力+1。この都市の各沿岸資源タイルへの[ICON_PRODUCTION]生産+1。[ICON_Faith]信仰力を使って使徒と審問官を購入するのに必要。</Text>
+			<Text>神殿に取ってかわるノルウェー固有の建造物。この都市の各資源タイルに[ICON_FAITH]信仰力+1。[ICON_Faith]信仰力を使って使徒と審問官を購入するのに必要。</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="ja_JP"> 
 			<Text>4タイルの自然遺産。食料[ICON_Food]+2、文化力[ICON_Culture] +2、科学力[ICON_Science]+2。</Text>

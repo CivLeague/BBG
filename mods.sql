@@ -1,4 +1,188 @@
+-- V9 --
+-- nan-modal culture per district no longer applies to city center or wonders
+UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_DISTRICT' WHERE ModifierId='MINOR_CIV_NAN_MADOL_DISTRICTS_CULTURE_BONUS';
+
+-- Russian Lavra district does not acrue Great Person Points until Drama & Poetry
+UPDATE District_GreatPersonPoints SET PointsPerTurn='0' WHERE DistrictType='DISTRICT_LAVRA' AND GreatPersonClassType='GREAT_PERSON_CLASS_ARTIST';
+UPDATE District_GreatPersonPoints SET PointsPerTurn='0' WHERE DistrictType='DISTRICT_LAVRA' AND GreatPersonClassType='GREAT_PERSON_CLASS_MUSICIAN';
+UPDATE District_GreatPersonPoints SET PointsPerTurn='0' WHERE DistrictType='DISTRICT_LAVRA' AND GreatPersonClassType='GREAT_PERSON_CLASS_WRITER';
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+    VALUES ('DELAY_LAVRA_GPP_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO Requirements (RequirementId, RequirementType)
+    VALUES ('REQUIRES_PLAYER_HAS_DRAMA_POETRY' , 'REQUIREMENT_PLAYER_HAS_CIVIC');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+    VALUES ('REQUIRES_PLAYER_HAS_DRAMA_POETRY' , 'CivicType' , 'CIVIC_DRAMA_POETRY');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+    VALUES ('DELAY_LAVRA_GPP_REQUIREMENTS' , 'REQUIRES_PLAYER_HAS_DRAMA_POETRY');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+    VALUES ('DELAY_LAVRA_GPP_REQUIREMENTS' , 'REQUIRES_DISTRICT_IS_HOLY_SITE');
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+    VALUES ('DELAY_LAVRA_ARTIST_GPP_MODIFIER' , 'MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS' , 'DELAY_LAVRA_GPP_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+    VALUES ('DELAY_LAVRA_ARTIST_GPP_MODIFIER' , 'GreatPersonClassType' , 'GREAT_PERSON_CLASS_ARTIST');
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+    VALUES ('DELAY_LAVRA_MUSICIAN_GPP_MODIFIER' , 'MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS' , 'DELAY_LAVRA_GPP_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+    VALUES ('DELAY_LAVRA_MUSICIAN_GPP_MODIFIER' , 'GreatPersonClassType' , 'GREAT_PERSON_CLASS_MUSICIAN');
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+    VALUES ('DELAY_LAVRA_WRITER_GPP_MODIFIER' , 'MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS' , 'DELAY_LAVRA_GPP_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+    VALUES ('DELAY_LAVRA_WRITER_GPP_MODIFIER' , 'GreatPersonClassType' , 'GREAT_PERSON_CLASS_WRITER');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+    VALUES ('DELAY_LAVRA_ARTIST_GPP_MODIFIER' , 'Amount' , '1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+    VALUES ('DELAY_LAVRA_MUSICIAN_GPP_MODIFIER' , 'Amount' , '1');
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+    VALUES ('DELAY_LAVRA_WRITER_GPP_MODIFIER' , 'Amount' , '1');
+INSERT INTO DistrictModifiers ( DistrictType , ModifierId )
+	VALUES ( 'DISTRICT_LAVRA' , 'DELAY_LAVRA_ARTIST_GPP_MODIFIER' );
+INSERT INTO DistrictModifiers ( DistrictType , ModifierId )
+	VALUES ( 'DISTRICT_LAVRA' , 'DELAY_LAVRA_MUSICIAN_GPP_MODIFIER' );
+INSERT INTO DistrictModifiers ( DistrictType , ModifierId )
+	VALUES ( 'DISTRICT_LAVRA' , 'DELAY_LAVRA_WRITER_GPP_MODIFIER' );
+
+-- fix same artist, same archelogist culture and tourism from bing 1 and 1 to being default numbers
+UPDATE Building_GreatWorks SET NonUniquePersonYield=4 WHERE BuildingType='BUILDING_HERMITAGE';
+UPDATE Building_GreatWorks SET NonUniquePersonTourism=4 WHERE BuildingType='BUILDING_HERMITAGE';
+UPDATE Building_GreatWorks SET NonUniquePersonYield=4 WHERE BuildingType='BUILDING_MUSEUM_ART';
+UPDATE Building_GreatWorks SET NonUniquePersonTourism=4 WHERE BuildingType='BUILDING_MUSEUM_ART';
+UPDATE Building_GreatWorks SET NonUniquePersonYield=6 WHERE BuildingType='BUILDING_MUSEUM_ARTIFACT';
+UPDATE Building_GreatWorks SET NonUniquePersonTourism=6 WHERE BuildingType='BUILDING_MUSEUM_ARTIFACT';
+	
+-- fyi: books give 4 culture and 4 tourism each (8 and 8 for each great person)
+-- artworks give 4 culture and 4 tourism instead of 3 and 2 ( 12/12 for each GP)
+-- artifacts give 6 culture and 6 tourism instead of 3 and 3 ( 18/18 for each GP)
+UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_RELIGIOUS';
+UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_SCULPTURE';
+UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_LANDSCAPE';
+UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_PORTRAIT';
+UPDATE GreatWorks SET Tourism=6 WHERE GreatWorkObjectType='GREATWORKOBJECT_ARTIFACT';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_RUBLEV_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_RUBLEV_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_RUBLEV_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_BOSCH_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_BOSCH_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_BOSCH_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_DONATELLO_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_DONATELLO_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_DONATELLO_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_MICHELANGELO_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_MICHELANGELO_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_MICHELANGELO_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_YING_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_YING_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_YING_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_TITIAN_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_TITIAN_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_TITIAN_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_GRECO_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_GRECO_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_GRECO_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_REMBRANDT_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_REMBRANDT_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_REMBRANDT_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_ANGUISSOLA_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_ANGUISSOLA_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_ANGUISSOLA_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_KAUFFMAN_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_KAUFFMAN_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_KAUFFMAN_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_HOKUSAI_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_HOKUSAI_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_HOKUSAI_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_EOP_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_EOP_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_EOP_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_GOGH_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_GOGH_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_GOGH_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_LEWIS_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_LEWIS_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_LEWIS_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_COLLOT_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_COLLOT_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_COLLOT_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_MONET_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_MONET_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_MONET_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_ORLOVSKY_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_ORLOVSKY_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_ORLOVSKY_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_KLIMT_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_KLIMT_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_KLIMT_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_GIL_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_GIL_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_GIL_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_CASSATT_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_CASSATT_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='4' WHERE GreatWorkType='GREATWORK_CASSATT_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_3';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_4';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_5';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_6';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_7';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_8';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_9';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_10';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_11';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_12';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_13';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_14';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_15';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_16';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_17';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_18';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_19';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_20';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_21';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_22';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_23';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_24';
+UPDATE GreatWork_YieldChanges SET YieldChange='6' WHERE GreatWorkType='GREATWORK_ARTIFACT_25';
+
+-- music gives 12 culture and 8 tourism instead of 4 and 4 (16/16 per GP)
+UPDATE GreatWorks SET Tourism=8 WHERE GreatWorkObjectType='GREATWORKOBJECT_MUSIC';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_BEETHOVEN_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_BEETHOVEN_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_BACH_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_BACH_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_MOZART_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_MOZART_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_VIVALDI_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_VIVALDI_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_KENGYO_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_KENGYO_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_GOMEZ_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_GOMEZ_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_LISZT_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_LISZT_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_CHOPIN_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_CHOPIN_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_TCHAIKOVSKY_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_TCHAIKOVSKY_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_TIANHUA_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_TIANHUA_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_DVORAK_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_DVORAK_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_SCHUMANN_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_SCHUMANN_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_ROSAS_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_ROSAS_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_LILIUOKALANI_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_LILIUOKALANI_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_JAAN_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_JAAN_2';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_LEONTOVYCH_1';
+UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWORK_LEONTOVYCH_2';
+
+
 -- V8 --
+-- relics give 6 tourism instead of 8
+UPDATE GreatWorks SET Tourism=6 WHERE GreatWorkObjectType='GREATWORKOBJECT_RELIC';
+
 -- fix valetta's bonus to work on Georgian walls
 INSERT INTO TraitModifiers (TraitType , ModifierId)
     VALUES ('MINOR_CIV_VALLETTA_TRAIT' , 'MINOR_CIV_VALLETTA_UNIQUE_INFLUENCE_PURCHASE_CHEAPER_TSIKHE_BONUS');
@@ -17,43 +201,6 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 INSERT INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
 	VALUES ('IMPROVEMENT_FISHING_BOATS' , 'YIELD_PRODUCTION' , '1');
 
--- relics give 6 tourism instead of 8
-UPDATE GreatWorks SET Tourism=6 WHERE GreatWorkObjectType='GREATWORKOBJECT_RELIC';
-
--- music gives 8 culture and 12 tourism instead of 4 and 4
-UPDATE GreatWorks SET Tourism=12 WHERE GreatWorkObjectType='GREATWORKOBJECT_MUSIC';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_BEETHOVEN_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_BEETHOVEN_2';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_BACH_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_BACH_2';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_MOZART_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_MOZART_2';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_VIVALDI_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_VIVALDI_2';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_KENGYO_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_KENGYO_2';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_GOMEZ_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_GOMEZ_2';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_LISZT_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_LISZT_2';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_CHOPIN_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_CHOPIN_2';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_TCHAIKOVSKY_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_TCHAIKOVSKY_2';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_TIANHUA_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_TIANHUA_2';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_DVORAK_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_DVORAK_2';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_SCHUMANN_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_SCHUMANN_2';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_ROSAS_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_ROSAS_2';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_LILIUOKALANI_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_LILIUOKALANI_2';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_JAAN_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_JAAN_2';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_LEONTOVYCH_1';
-UPDATE GreatWork_YieldChanges SET YieldChange='8' WHERE GreatWorkType='GREATWORK_LEONTOVYCH_2';
 
 -- VERSION 7 --
 -- Australia UU (Digger)
@@ -939,7 +1086,7 @@ INSERT INTO Requirements (RequirementId , RequirementType)
 --RequirementArguments
 --Checks RequirementSets
 INSERT INTO RequirementArguments (RequirementId , Name , Value)
-	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_CPLMOD' , 'RequirementSetId' , 'RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD');
+	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_CPLMOD' , 'RequirementSetId' , 'RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD');
 INSERT INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_CPLMOD' , 'RequirementSetId' , 'RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD');
 INSERT INTO RequirementArguments (RequirementId , Name , Value)
