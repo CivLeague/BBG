@@ -310,7 +310,8 @@ INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange ,
 UPDATE Improvements SET Housing='1' , PreReqCivic='CIVIC_FEUDALISM' WHERE ImprovementType='IMPROVEMENT_CHATEAU';
 
 --Khmer Holy Sites +2 faith for river adjacency
-INSERT INTO TraitModifiers (TraitType , ModifierId)
+IF EXISTS (SELECT 1 FROM TraitModifiers WHERE TraitType ='TRAIT_LEADER_MONASTERIES_KING')
+    INSERT INTO TraitModifiers (TraitType , ModifierId)
 	VALUES ('TRAIT_LEADER_MONASTERIES_KING' , 'TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD');
 INSERT INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD' , 'MODIFIER_PLAYER_CITIES_RIVER_ADJACENCY');
@@ -808,8 +809,10 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('PRASAT_GRANT_MISSIONARY_CPLMOD' , 'UnitType' , 'UNIT_MISSIONARY');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('PRASAT_GRANT_MISSIONARY_CPLMOD' , 'Amount' , '1');
-INSERT INTO BuildingModifiers (BuildingType , ModifierId)
-    VALUES ('BUILDING_PRASAT' , 'PRASAT_GRANT_MISSIONARY_CPLMOD');
+IF EXISTS (SELECT 1 FROM Buildings WHERE BuildingType ='BUILDING_PRASAT')
+    INSERT INTO BuildingModifiers (BuildingType , ModifierId)
+	VALUES ('BUILDING_PRASAT' , 'PRASAT_GRANT_MISSIONARY_CPLMOD');
+
 -- Khmer's Domrey Unique Unit will now be a Catapult replacement that has a higher melee strength and bombard strength
 UPDATE Units SET Combat=33, Bombard=45, Cost=150, Maintenance=2, PrereqTech='TECH_ENGINEERING', MandatoryObsoleteTech='TECH_STEEL' WHERE UnitType='UNIT_KHMER_DOMREY';
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_BOMBARD' WHERE Unit='UNIT_KHMER_DOMREY';
@@ -834,11 +837,14 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('TRAIT_FAITH_FROM_INTERNATIONAL_TRADE_ROUTES' , 'YieldType' , 'YIELD_FAITH');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('TRAIT_FAITH_FROM_INTERNATIONAL_TRADE_ROUTES' , 'Amount' , '2');
-INSERT INTO TraitModifiers (TraitType, ModifierId)
+IF EXISTS (SELECT 1 FROM TraitModifiers WHERE TraitType ='TRAIT_CIVILIZATION_KHMER_BARAYS')
+    INSERT INTO TraitModifiers (TraitType, ModifierId)
 	VALUES ('TRAIT_CIVILIZATION_KHMER_BARAYS', 'TRAIT_INCOMING_TRADE_FAITH_FOR_SENDER');
-INSERT INTO TraitModifiers (TraitType, ModifierId)
+IF EXISTS (SELECT 1 FROM TraitModifiers WHERE TraitType ='TRAIT_CIVILIZATION_KHMER_BARAYS')
+    INSERT INTO TraitModifiers (TraitType, ModifierId)
 	VALUES ('TRAIT_CIVILIZATION_KHMER_BARAYS', 'TRAIT_FAITH_FROM_INCOMING_TRADE_ROUTES');
-INSERT INTO TraitModifiers (TraitType, ModifierId)
+IF EXISTS (SELECT 1 FROM TraitModifiers WHERE TraitType ='TRAIT_CIVILIZATION_KHMER_BARAYS')
+    INSERT INTO TraitModifiers (TraitType, ModifierId)
 	VALUES ('TRAIT_CIVILIZATION_KHMER_BARAYS', 'TRAIT_FAITH_FROM_INTERNATIONAL_TRADE_ROUTES');
 
 -- Korea Campus gets +2 science base yield instead of 4, +1 for every 2 mines adjacent instead of 1 to 1
