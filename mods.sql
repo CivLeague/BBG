@@ -310,9 +310,8 @@ INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange ,
 UPDATE Improvements SET Housing='1' , PreReqCivic='CIVIC_FEUDALISM' WHERE ImprovementType='IMPROVEMENT_CHATEAU';
 
 --Khmer Holy Sites +2 faith for river adjacency
-IF EXISTS (SELECT 1 FROM TraitModifiers WHERE TraitType ='TRAIT_LEADER_MONASTERIES_KING')
-    INSERT INTO TraitModifiers (TraitType , ModifierId)
-	VALUES ('TRAIT_LEADER_MONASTERIES_KING' , 'TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD');
+INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
+    SELECT 'TRAIT_LEADER_MONASTERIES_KING' , 'TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD';
 INSERT INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD' , 'MODIFIER_PLAYER_CITIES_RIVER_ADJACENCY');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
@@ -809,15 +808,16 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('PRASAT_GRANT_MISSIONARY_CPLMOD' , 'UnitType' , 'UNIT_MISSIONARY');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('PRASAT_GRANT_MISSIONARY_CPLMOD' , 'Amount' , '1');
-IF EXISTS (SELECT 1 FROM Buildings WHERE BuildingType ='BUILDING_PRASAT')
-    INSERT INTO BuildingModifiers (BuildingType , ModifierId)
-	VALUES ('BUILDING_PRASAT' , 'PRASAT_GRANT_MISSIONARY_CPLMOD');
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType , ModifierId)
+    SELECT 'BUILDING_PRASAT' , 'PRASAT_GRANT_MISSIONARY_CPLMOD';
 
 -- Khmer's Domrey Unique Unit will now be a Catapult replacement that has a higher melee strength and bombard strength
-UPDATE Units SET Combat=33, Bombard=45, Cost=150, Maintenance=2, PrereqTech='TECH_ENGINEERING', MandatoryObsoleteTech='TECH_STEEL' WHERE UnitType='UNIT_KHMER_DOMREY';
-UPDATE UnitUpgrades SET UpgradeUnit='UNIT_BOMBARD' WHERE Unit='UNIT_KHMER_DOMREY';
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType)
-	VALUES ('UNIT_KHMER_DOMREY', 'UNIT_CATAPULT');
+UPDATE OR IGNORE Units
+    SET Combat=33, Bombard=45, Cost=150, Maintenance=2, PrereqTech='TECH_ENGINEERING', MandatoryObsoleteTech='TECH_STEEL';
+UPDATE OR IGNORE UnitUpgrades
+    SET UpgradeUnit='UNIT_BOMBARD';
+INSERT OR IGNORE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType)
+    SELECT 'UNIT_KHMER_DOMREY', 'UNIT_CATAPULT';
 -- Khmer's trade routes to or from other civilizations give +2 Faith to both parties
 INSERT INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('TRAIT_INCOMING_TRADE_FAITH_FOR_SENDER', 'MODIFIER_PLAYER_CITIES_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS');
@@ -837,15 +837,12 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('TRAIT_FAITH_FROM_INTERNATIONAL_TRADE_ROUTES' , 'YieldType' , 'YIELD_FAITH');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('TRAIT_FAITH_FROM_INTERNATIONAL_TRADE_ROUTES' , 'Amount' , '2');
-IF EXISTS (SELECT 1 FROM TraitModifiers WHERE TraitType ='TRAIT_CIVILIZATION_KHMER_BARAYS')
-    INSERT INTO TraitModifiers (TraitType, ModifierId)
-	VALUES ('TRAIT_CIVILIZATION_KHMER_BARAYS', 'TRAIT_INCOMING_TRADE_FAITH_FOR_SENDER');
-IF EXISTS (SELECT 1 FROM TraitModifiers WHERE TraitType ='TRAIT_CIVILIZATION_KHMER_BARAYS')
-    INSERT INTO TraitModifiers (TraitType, ModifierId)
-	VALUES ('TRAIT_CIVILIZATION_KHMER_BARAYS', 'TRAIT_FAITH_FROM_INCOMING_TRADE_ROUTES');
-IF EXISTS (SELECT 1 FROM TraitModifiers WHERE TraitType ='TRAIT_CIVILIZATION_KHMER_BARAYS')
-    INSERT INTO TraitModifiers (TraitType, ModifierId)
-	VALUES ('TRAIT_CIVILIZATION_KHMER_BARAYS', 'TRAIT_FAITH_FROM_INTERNATIONAL_TRADE_ROUTES');
+INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId)
+    SELECT 'TRAIT_CIVILIZATION_KHMER_BARAYS', 'TRAIT_INCOMING_TRADE_FAITH_FOR_SENDER';
+INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId)
+    SELECT 'TRAIT_CIVILIZATION_KHMER_BARAYS', 'TRAIT_FAITH_FROM_INCOMING_TRADE_ROUTES';
+INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId)
+    SELECT 'TRAIT_CIVILIZATION_KHMER_BARAYS', 'TRAIT_FAITH_FROM_INTERNATIONAL_TRADE_ROUTES';
 
 -- Korea Campus gets +2 science base yield instead of 4, +1 for every 2 mines adjacent instead of 1 to 1
 UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID='BaseDistrict_Science';
@@ -914,8 +911,8 @@ UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_ATOMIC_RANGED_UN
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_INFORMATION_RANGED_UNIT_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RANGED_EXPERIENCE_MODIFIER' and Name='Amount';
 -- Nubian Pyramid can also be built on flat plains, but not adjacent to each other
-INSERT INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
-	VALUES ('IMPROVEMENT_PYRAMID' , 'TERRAIN_PLAINS');
+INSERT OR IGNORE INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
+    SELECT 'IMPROVEMENT_PYRAMID' , 'TERRAIN_PLAINS';
 UPDATE Improvements SET SameAdjacentValid=0 WHERE ImprovementType='IMPROVEMENT_PYRAMID';
 -- Nubian Pyramid gets double adjacency yields
 UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_CityCenterAdjacency";
@@ -939,8 +936,8 @@ INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId , Run
 	VALUES ('TRAIT_LITHUANIANUNION_FOUND_RELIGION_RELIC_CPLMOD' , 'MODIFIER_PLAYER_GRANT_RELIC' , 'PLAYER_FOUNDED_RELIGION_RELIC_CPLMOD' , 1 , 1);	
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('TRAIT_LITHUANIANUNION_FOUND_RELIGION_RELIC_CPLMOD' , 'Amount' , '1');	
-INSERT INTO TraitModifiers (TraitType , ModifierId)
-	VALUES ('TRAIT_LEADER_LITHUANIAN_UNION' , 'TRAIT_LITHUANIANUNION_FOUND_RELIGION_RELIC_CPLMOD');
+INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
+	SELECT 'TRAIT_LEADER_LITHUANIAN_UNION' , 'TRAIT_LITHUANIANUNION_FOUND_RELIGION_RELIC_CPLMOD';
 INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
 	VALUES ('PLAYER_FOUNDED_RELIGION_RELIC_CPLMOD' , 'REQUIREMENTSET_TEST_ALL');	
 INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
@@ -950,8 +947,8 @@ INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId , Run
 	VALUES ('TRAIT_LITHUANIANUNION_COMPLETE_RELIGION_RELIC_CPLMOD' , 'MODIFIER_PLAYER_GRANT_RELIC' , 'REQUIRES_PLAYER_COMPLETED_RELIGION_RELIC_CPLMOD' , 1 , 1);
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('TRAIT_LITHUANIANUNION_COMPLETE_RELIGION_RELIC_CPLMOD' , 'Amount' , '1');
-INSERT INTO TraitModifiers (TraitType , ModifierId)
-	VALUES ('TRAIT_LEADER_LITHUANIAN_UNION' , 'TRAIT_LITHUANIANUNION_COMPLETE_RELIGION_RELIC_CPLMOD');
+INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
+	VALUES 'TRAIT_LEADER_LITHUANIAN_UNION' , 'TRAIT_LITHUANIANUNION_COMPLETE_RELIGION_RELIC_CPLMOD';
 INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
 	VALUES ('REQUIRES_PLAYER_COMPLETED_RELIGION_RELIC_CPLMOD' , 'REQUIREMENTSET_TEST_ALL');
 --Checks Requirement Set for each belief type
