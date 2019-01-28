@@ -1,3 +1,6 @@
+-- Turn off foreign key checking
+PRAGMA foreign_keys = OFF; 
+
 -- V9 --
 -- nan-modal culture per district no longer applies to city center or wonders
 UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_DISTRICT' WHERE ModifierId='MINOR_CIV_NAN_MADOL_DISTRICTS_CULTURE_BONUS';
@@ -1700,3 +1703,6 @@ INSERT INTO PolicyModifiers (PolicyType , ModifierId)
 	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_ATOMIC_ERA_CPLMOD');
 INSERT INTO PolicyModifiers (PolicyType , ModifierId)
 	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_INFORMATION_ERA_CPLMOD');
+	
+-- Turn foriegn key checking back on
+PRAGMA foreign_keys = ON;
