@@ -9,7 +9,9 @@ PRAGMA foreign_keys = OFF;
 --Greece
 --=========
 --Wildcard delayed to Political Philosophy
-UPDATE Modifiers SET OwnerRequirementSetId='PLAYER_HAS_POLITICAL_PHILOSOPHY' WHERE ModifierId='TRAIT_WILDCARD_GOVERNMENT_SLOT';
+UPDATE Modifiers SET OwnerRequirementSetId='PLAYER_HAS_POLITICAL_PHILOSOPHY'
+    WHERE (SELECT 1 FROM RequirementSets WHERE SubjectRequirementSetId='PLAYER_HAS_POLITICAL_PHILOSOPHY')
+    AND ModifierId='TRAIT_WILDCARD_GOVERNMENT_SLOT';
 -- remove additional +1 when adjacent to city center
 DELETE FROM District_Adjacencies WHERE YieldChangeId='DISTRICT_CULTURE_CITY_CENTER';
 DELETE FROM Adjacency_YieldChanges WHERE ID='District_Culture_City_Center';
@@ -91,8 +93,8 @@ INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 --==========
 -- +20% Production for 10 turns after conquering a city
 INSERT INTO TraitModifiers (TraitType , ModifierId)
-	VALUES
-	('TRAIT_CIVILIZATION_HELLENISTIC_FUSION' , 'TRAIT_CIVILIZATION_HELLENISTIC_FUSION_PRODUCTION_MODIFIER');
+	SELECT 'TRAIT_CIVILIZATION_HELLENISTIC_FUSION' , 'TRAIT_CIVILIZATION_HELLENISTIC_FUSION_PRODUCTION_MODIFIER'
+	WHERE (SELECT 1 FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_HELLENISTIC_FUSION');
 INSERT INTO Modifiers (ModifierId , ModifierType)
 	VALUES
 	('TRAIT_CIVILIZATION_HELLENISTIC_FUSION_PRODUCTION_MODIFIER' , 'MODIFIER_PLAYER_ADD_DIPLOMATIC_YIELD_MODIFIER');
@@ -1470,12 +1472,14 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('PRASAT_GRANT_MISSIONARY_CPLMOD' , 'Amount' , '1');
 INSERT INTO BuildingModifiers (BuildingType , ModifierId)
-    VALUES ('BUILDING_PRASAT' , 'PRASAT_GRANT_MISSIONARY_CPLMOD');
+    SELECT 'BUILDING_PRASAT' , 'PRASAT_GRANT_MISSIONARY_CPLMOD'
+    WHERE (SELECT 1 from Buildings where BuildingType = 'BUILDING_PRASAT');
 -- Domrey Unique Unit will now be a Catapult replacement that has a higher melee strength and bombard strength
 UPDATE Units SET Combat=33, Bombard=45, Cost=150, Maintenance=2, PrereqTech='TECH_ENGINEERING', MandatoryObsoleteTech='TECH_STEEL' WHERE UnitType='UNIT_KHMER_DOMREY';
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_BOMBARD' WHERE Unit='UNIT_KHMER_DOMREY';
 INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType)
-	VALUES ('UNIT_KHMER_DOMREY', 'UNIT_CATAPULT');
+	SELECT 'UNIT_KHMER_DOMREY', 'UNIT_CATAPULT'
+	WHERE (SELECT 1 FROM Units WHERE UnitType = 'UNIT_KHMER_DOMREY');
 -- Trade routes to or from other civilizations give +2 Faith to both parties
 INSERT INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('TRAIT_INCOMING_TRADE_FAITH_FOR_SENDER', 'MODIFIER_PLAYER_CITIES_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS');
@@ -1496,14 +1500,18 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('TRAIT_FAITH_FROM_INTERNATIONAL_TRADE_ROUTES' , 'Amount' , '2');
 INSERT INTO TraitModifiers (TraitType, ModifierId)
-	VALUES ('TRAIT_CIVILIZATION_KHMER_BARAYS', 'TRAIT_INCOMING_TRADE_FAITH_FOR_SENDER');
+	SELECT 'TRAIT_CIVILIZATION_KHMER_BARAYS', 'TRAIT_INCOMING_TRADE_FAITH_FOR_SENDER'
+	WHERE (SELECT 1 FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_KHMER_BARAYS');
 INSERT INTO TraitModifiers (TraitType, ModifierId)
-	VALUES ('TRAIT_CIVILIZATION_KHMER_BARAYS', 'TRAIT_FAITH_FROM_INCOMING_TRADE_ROUTES');
+	SELECT 'TRAIT_CIVILIZATION_KHMER_BARAYS', 'TRAIT_FAITH_FROM_INCOMING_TRADE_ROUTES'
+	WHERE (SELECT 1 FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_KHMER_BARAYS');
 INSERT INTO TraitModifiers (TraitType, ModifierId)
-	VALUES ('TRAIT_CIVILIZATION_KHMER_BARAYS', 'TRAIT_FAITH_FROM_INTERNATIONAL_TRADE_ROUTES');
+	SELECT 'TRAIT_CIVILIZATION_KHMER_BARAYS', 'TRAIT_FAITH_FROM_INTERNATIONAL_TRADE_ROUTES'
+	WHERE (SELECT 1 FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_KHMER_BARAYS');
 -- Holy Sites +2 faith for an adjacent river
 INSERT INTO TraitModifiers (TraitType , ModifierId)
-	VALUES ('TRAIT_LEADER_MONASTERIES_KING' , 'TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD');
+	SELECT 'TRAIT_LEADER_MONASTERIES_KING' , 'TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD'
+	WHERE (SELECT 1 FROM Traits WHERE TraitType = 'TRAIT_LEADER_MONASTERIES_KING');
 INSERT INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD' , 'MODIFIER_PLAYER_CITIES_RIVER_ADJACENCY');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
@@ -1601,7 +1609,8 @@ UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_INFORMATION_RANG
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RANGED_EXPERIENCE_MODIFIER' and Name='Amount';
 -- Nubian Pyramid can also be built on flat plains, but not adjacent to each other
 INSERT INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
-	VALUES ('IMPROVEMENT_PYRAMID' , 'TERRAIN_PLAINS');
+	SELECT 'IMPROVEMENT_PYRAMID' , 'TERRAIN_PLAINS'
+	WHERE (SELECT 1 FROM Improvements WHERE ImprovementType = 'IMPROVEMENT_PYRAMID');
 UPDATE Improvements SET SameAdjacentValid=0 WHERE ImprovementType='IMPROVEMENT_PYRAMID';
 -- Nubian Pyramid gets double adjacency yields
 UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_CityCenterAdjacency";
@@ -1632,7 +1641,8 @@ INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId , Run
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('TRAIT_LITHUANIANUNION_FOUND_RELIGION_RELIC_CPLMOD' , 'Amount' , '1');	
 INSERT INTO TraitModifiers (TraitType , ModifierId)
-	VALUES ('TRAIT_LEADER_LITHUANIAN_UNION' , 'TRAIT_LITHUANIANUNION_FOUND_RELIGION_RELIC_CPLMOD');
+	SELECT 'TRAIT_LEADER_LITHUANIAN_UNION' , 'TRAIT_LITHUANIANUNION_FOUND_RELIGION_RELIC_CPLMOD'
+	WHERE (SELECT 1 FROM Traits WHERE TraitType = 'TRAIT_LEADER_LITHUANIAN_UNION');
 INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
 	VALUES ('PLAYER_FOUNDED_RELIGION_RELIC_CPLMOD' , 'REQUIREMENTSET_TEST_ALL');	
 INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
@@ -1643,7 +1653,8 @@ INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId , Run
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('TRAIT_LITHUANIANUNION_COMPLETE_RELIGION_RELIC_CPLMOD' , 'Amount' , '1');
 INSERT INTO TraitModifiers (TraitType , ModifierId)
-	VALUES ('TRAIT_LEADER_LITHUANIAN_UNION' , 'TRAIT_LITHUANIANUNION_COMPLETE_RELIGION_RELIC_CPLMOD');
+	SELECT 'TRAIT_LEADER_LITHUANIAN_UNION' , 'TRAIT_LITHUANIANUNION_COMPLETE_RELIGION_RELIC_CPLMOD'
+	WHERE (SELECT 1 FROM Traits WHERE TraitType = 'TRAIT_LEADER_LITHUANIAN_UNION');
 INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
 	VALUES ('REQUIRES_PLAYER_COMPLETED_RELIGION_RELIC_CPLMOD' , 'REQUIREMENTSET_TEST_ALL');
 --Checks Requirement Set for each belief type
