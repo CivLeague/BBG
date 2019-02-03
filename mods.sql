@@ -1,5 +1,5 @@
 -- Turn off foreign key checking
---PRAGMA foreign_keys = OFF; 
+PRAGMA foreign_keys = OFF; 
 
 --
 -- LATEST VERSION --
@@ -1995,4 +1995,4 @@ UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_MOBILIZATION_REQUIREMEN
 
 
 -- Turn foriegn key checking back on
---PRAGMA foreign_keys = ON;
+PRAGMA foreign_keys = ON;
