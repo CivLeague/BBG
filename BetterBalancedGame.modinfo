@@ -7,12 +7,17 @@
 		</Description>
 		<Teaser>Mods to balance Civ Players' League multiplayer games</Teaser>
 		<Authors>codenaugh, S1AL</Authors>
-		<SpecialThanks>wazabaza, abstr, priz, ApolloMaster07, WhySoHate, Fulesa, ReQuiiieM, Auguthy, bszonye, dexxter</SpecialThanks>
+		<SpecialThanks>wazabaza, abstr, priz, kishiko, WhySoHate, Fulesa, ApolloMaster07, ReQuiiieM, Auguthy, bszonye, dexxter</SpecialThanks>
 	</Properties>
 	
 	<!-- defines file dependencies -->
 	<Files>
-		<File>text.xml</File>
+		<File>lang/english.xml</File>
+		<File>lang/korean.xml</File>
+		<File>lang/russian.xml</File>
+		<File>lang/french.xml</File>
+		<File>lang/german.xml</File>
+		<File>lang/spanish.xml</File>
 		<File>mods.sql</File>
 		<File>WorldRankings.lua</File>
 		<File>MinimapPanel.lua</File>
@@ -33,7 +38,13 @@
 				<LoadOrder>1609</LoadOrder>
 			</Properties>
 			<Items>
-				<File>text.xml</File>
+				<File>lang/english.xml</File>
+				<File>lang/korean.xml</File>
+				<File>lang/russian.xml</File>
+				<File>lang/french.xml</File>
+				<File>lang/german.xml</File>
+				<File>lang/spanish.xml</File>
+				<File>lang/japanese.xml</File>
 			</Items>
 		</LocalizedText>
 	</Settings>
@@ -56,7 +67,13 @@
 				<LoadOrder>1611</LoadOrder>
 			</Properties>
 			<Items>
-				<File>text.xml</File>
+				<File>lang/english.xml</File>
+				<File>lang/korean.xml</File>
+				<File>lang/russian.xml</File>
+				<File>lang/french.xml</File>
+				<File>lang/german.xml</File>
+				<File>lang/spanish.xml</File>
+				<File>lang/japanese.xml</File>
 				<!-- <File>maptacks-text.xml</File> -->
 			</Items>
 		</LocalizedText>
