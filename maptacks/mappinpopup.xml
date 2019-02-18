@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\..\..\..\CivTech\Libs\ForgeUI\ForgeUI_Assets\Controls.xsd"
+				 ColorSet="Beige_Black" FontStyle="Shadow">
+
+
+  <Box Color="0,0,0,150" Size="parent,parent" ConsumeMouse="1">
+    <AlphaAnim        ID="PopupAlphaIn" AlphaBegin="0" AlphaEnd="1" Speed="3" Function="Root" Cycle="Once" Size="parent,parent">
+      <SlideAnim      ID="PopupSlideIn" Start="0,-20" End="0,0" Speed="3" Function="Root" Cycle="Once" Size="parent,parent">
+
+        <Grid           ID="WindowContainer" Size="auto,auto" Anchor="C,C" Offset="0,0" Style="DropShadow2"     Color="255,255,255,200" AutoSizePadding="25,25" ConsumeMouse="1">
+          <Grid         ID="Window"      Size="690,auto" Anchor="C,C" Offset="0,0" Style="WindowFrameTitle" AutoSizePadding="0,12">
+            <Stack      ID="WindowStack" StackGrowth="Down" Padding="10" Anchor="C,T">
+              <Container                 Size="330,42" Anchor="C,T">
+                <Label  ID="TitleText"   Style="WindowHeader"        Anchor="C,C" String="{LOC_MAP_PIN_POPUP_TITLE:upper}" />
+              </Container>
+              <Container Size="auto,auto" Anchor="C,T">
+                <Stack		ID="WindowContentsStack"  Anchor="L,T" StackGrowth="Bottom" Padding="12">
+                  <!-- Name -->
+                  <Grid ID="PinFrame" Style="EditTextButton" Anchor="C,T" Size="310,26">
+                    <EditBox ID="PinName" Style="EditTextArea" Size="parent-34,22" Anchor="R,C" Offset="4,0" MaxLength="20" EditMode="0" KeepFocus="1"/>
+                  </Grid>
+                  <!-- Icons -->
+                  <Stack ID="IconOptionStack" Anchor="C,T" StackGrowth="Right" Padding="4" WrapWidth="660" WrapGrowth="Down"/>
+                  <!-- Visible to.. -->
+									<Container ID="VisibilityContainer" Anchor="C,T" Size="1,26" Hidden="1">
+										<PullDown ID="VisibilityPull" Anchor="C,T" Size="166,26" Offset="0,-30" Style="MainPullDown"/>
+									</Container>
+
+                  <!-- Buttons -->
+                  <Stack        ID="OptionsStack" StackGrowth="Right" Padding="10" Anchor="C,T"  WrapWidth="480">
+                    <GridButton ID="DeleteButton"		  Anchor="L,T" Size="150,41"		Style="ButtonRed" FontStyle="Shadow" String="LOC_DELETE_BUTTON" />
+                    <GridButton ID="OkButton"			    Anchor="L,T" Size="150,41"		Style="MainButton" FontStyle="Shadow" String="LOC_OK_BUTTON" />
+                    <GridButton ID="SendToChatButton"	Anchor="L,T" Size="150,41"		Style="MainButton" FontStyle="Shadow" String="LOC_MAP_PIN_SEND_TO_CHAT" ToolTip="LOC_MAP_PIN_SEND_TO_CHAT_TT"/>
+                  </Stack>
+                </Stack>
+              </Container>
+            </Stack>
+
+          </Grid>
+        </Grid>
+
+      </SlideAnim>
+    </AlphaAnim>
+  </Box>
+
+
+  
+  <Instance Name="IconOptionInstance">
+    <Container ID="IconOptionRoot" Anchor="L,T" Size="40,36">
+      <GridButton ID="IconOptionButton" Anchor="C,C" Size="parent,parent" Style="ButtonControl">
+        <Image ID="Icon"  Texture="MapPins24" Size="32,32" Anchor="C,C" Color="255,255,255"/>
+      </GridButton>
+    </Container>
+  </Instance>
+  
+</Context>
+<!-- vim: set sw=2 ts=2: -->

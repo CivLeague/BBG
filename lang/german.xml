@@ -9,6 +9,98 @@
 		<!--===============   G E R M A N   ===============-->
 		<!--===============   G E R M A N   ===============-->
 		<!--===============   G E R M A N   ===============-->
+		<!-- Khmer -->
+		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="de_DE">
+			<Text>+{1_num} [ICON_Faith] Glaube von Flüssen.</Text>
+		</Row>
+		<!-- Greece -->
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="de_DE">
+			<Text>Ein ausschließlich Griechenland zur Verfügung stehender Bezirk für Kulturstätten. Ersetzt den Theaterplatz-Bezirk und ist günstiger im Bau.[NEWLINE][NEWLINE]+2 [ICON_Culture] Kulturbonus für jedes angrenzende Wunder. +1 [ICON_Culture] Kultur für jeden angrenzenden Bezirk. Kann nur auf Hügeln errichtet werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="de_DE">
+			<Text>Nachbarschaftsbonus: +2 [ICON_Culture] Kultur für jedes angrenzende Wunder. +1 [ICON_Culture] Kultur für jeden angrenzenden Bezirk. Kann nur auf Hügeln errichtet werden	.</Text>
+		</Replace>
+		<!-- Norway -->
+		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="de_DE">
+			<Text>+{1_num} [ICON_Faith] Glauben von Küsten.</Text>
+		</Row>
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="de_DE">
+			<Text>Ermöglicht allen Marine-Nahkampfeinheiten Küstenraub und bietet ihnen +25% [ICON_PRODUCTION] Produktion.[NEWLINE][NEWLINE]Alle Heilge-Stätte-Bezirke und deren Gebäude erhalten +50% [ICON_PRODUCTION] Production. Heilige Stätten erhalten +1 [ICON_PRODUCTION] Produktionsbonus für angrenzende Küsten-Geländefelder.[NEWLINE][NEWLINE] Hafen-Bezirke erhalten neben Heiligen-Stätten einen zusätzlichen +2 [ICON_GOLD] Goldbonus.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="de_DE">
+			<Text>Einheiten können Ozean-Geländefelder befahren, nachdem der Schiffsbau erforscht wurde. Marine-Nahkampfeinheiten heilen auf neutralem Gebiet. Einheiten ignorieren zusätzliche [ICON_Movement] Fortbewegungskosten durch Wassern und Ausschiffen.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold für Internationale Handelsrouten, die von einer Küstenstadt ausgehen.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="de_DE">
+			<Text>Norwegische Spezialeinheit des Mittelalters. +2 [ICON_Movement] Fortbewegungspunkte bei Start in feindlichem Gebiet oder wenn die Einheit gewassert ist. +15 [ICON_Strength] Kampfstärke beim Angreifen.</Text>
+		</Replace>
+		<Row Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="de_DE">
+			<Text>+{1_num} [ICON_Gold] Goldbonus für angrenzende Heilige-Stätten.</Text>
+		</Row>
+		<!-- Macedon -->
+		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION" Language="de_DE">
+			<Text>Erhaltet Bonusse bei Stadt-Eroberungen: +20% [ICON_PRODUCTION] in alle Städten für 10 Rundens, sowie ein[ICON_TechBoosted] Heureka für jedes Lager oder jeden Campusin der eroberten Stadt und eine [ICON_CivicBoosted] Eingebung für jede Heilige Stätte oder jeden Theaterplatz.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="de_DE">
+			<Text>Spezielle Schwere Kavallerie der Makedonier, die den Reiter ersetzt. Zusätzliche +5 [ICON_Strength] Kampfstärke, wenn angrenzend an einen [ICON_GREATGENERAL] Großen General jedes Zeitalters. +5 [ICON_GREATGENERAL] Große General-Punkte für das Vernichten von einer feindlichen Einheit. Startet mit einer kostenlosen Beförderung.</Text>
+		</Replace>
+		<!--<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="en_US">
+			<Text>Spezielle Schwere Kavallerie der Makedonier, die den Reiter ersetzt. Zusätzliche +5 [ICON_Strength] Kampfstärke, wenn innerhalb von zwei Feldern Abstand zu einem [ICON_GREATGENERAL] Großen General jedes Zeitalters. +5 [ICON_GREATGENERAL] Große General-Punkte für das Vernichten von einer feindlichen Einheit. Startet mit einer kostenlosen Beförderung.</Text>
+		</Replace>-->
+		<!--<Replace Tag="LOC_HETAIROI_GREAT_GENERAL_COMBAT_BONUS_DESCRIPTION" Language="en_US">
+			<Text>+5 Kampfstärke von nahem Großen General</Text>
+		</Replace>-->
+		<!-- Mongolia -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MONGOLIAN_ORTOO_DESCRIPTION" Language="de_DE">
+			<Text>Alle mongolischen Einheiten erhalten das Doppelte des üblichen Bonus auf die [ICON_Strength] Kampfstärke für eine höhere Stufe von [ICON_VisLimited] diplomatischer Sichtbarkeit gegenüber ihrem Gegner. Der Beginn eines [ICON_TradeRoute] Handelswegs erzeugt sofort einen [ICON_TradingPost] Handelsposten in der Zielstadt.</Text>
+		</Replace>
+		<!-- Egypt -->
+		<Replace Tag="LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_DESCRIPTION" Language="de_DE">
+			<Text>Spezielle Fernkampfeinheit der Ägypter der Antike. 4 [ICON_Movement] Fortbewegung bei Start in offenem Gelände.</Text>
+		</Replace>
+		<!-- Rome -->
+		<Replace Tag="LOC_DISTRICT_BATH_DESCRIPTION" Language="de_DE">
+			<Text>Ein nur Rom zur Verfügung stehender Bezirk, der das Wachstum der Stadt fördert. Ersetzt das Aquädukt und ist günstiger im Bau. +1 [ICON_Culture] Kultur für jeden angrenzenden Bezirk.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzenden Fluss,See,Berg oder einer angrenzenden Oase. Städte ohne Süßwasserquelle erhalten bis zu 6 [ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben, erhalten stattdessen +2 [ICON_Housing] Wohnraum. In allen Fällen bietet ein Bad einen zusätzlichen Bonus von +2 [ICON_Housing] Wohnraum und +1 [ICON_Amenities] Annehmlichkeit. Muss ans Stadtzentrum angrenzen.</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="de_DE">
+			<Text>Nachbarschaftsbonus: +1 [ICON_Culture] Kultur für jeden angrenzenden Bezirk.</Text>
+		</Row>
+		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="de_DE">
+			<Text>Nach dem Freischalten von Frühes Reich, starten alle Städte mit einem kostenlosen Monument.</Text>
+		</Replace>
+		<!-- Spain -->
+		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION" Language="de_DE">
+			<Text>Missionare kosten 30% [ICON_FAITH] Glauben weniger. Inquisitoren können ein zusätzliches Mal Ketzerei entfernen. Kampfeinheiten haben einen Bonus von +4 [ICON_Strength] Kampfstärke gegen Spieler, die anderen Religionen folgen.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION" Language="de_DE">
+			<Text>Erstellt Flotten und Armadas aus Marineeinheiten früher als normal (Söldner und Merkantilismus). Kontinente verbindende [ICON_TradeRoute] Handelswege zu anderen Zivilisationen erhalten einen [ICON_Gold] Gold-Bonus und zu Euren eigenen Städten [ICON_Food] Nahrungs- und [ICON_Production] Produktionsbonusse.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION1_DESCRIPTION" Language="de_DE">
+			<Text>Erstellt Flotten und Armadas aus Marineeinheiten früher als normal (Söldner und Merkantilismus). Kontinente verbindende [ICON_TradeRoute] Handelswege zu anderen Zivilisationen erhalten einen [ICON_Gold] Gold-Bonus und zu Euren eigenen Städten [ICON_Food] Nahrungs- und [ICON_Production] Produktionsbonusse. +2 Loyaltität pro Runde für Städte mit einer ans Stadtzentrum angrenzenden Missionsmodernisierung, die nicht auf dem Kontinent Eurer ursprünglichen [ICON_Capital] Hauptstadt liegen.</Text>
+		</Replace>
+		<!-- Gov -->
+		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="de_DE">
+			<Text>+25% [ICON_Production] Produktion für alle Marine- und Landeinheiten. Verringert die Unterhaltskosten der Einheiten um 1 [ICON_GOLD] Gold.[NEWLINE] Verleiht +1 [Icon_Governor] Gouverneur-Titel.</Text>
+		</Replace>
+		<!-- Pantheons -->
+		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_NAME" Language="de_DE">
+			<Text>Gott des Krieges und Plünderns</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_GreatPerson] Große-Persönlichkeit-Punkte von Lager- (General), Hafen- (Admiral) und Handelszentrum- (Merchant) Bezirken.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="de_DE">
+			<Text>+2 [ICON_Food] Nahrung und +2 [ICON_GOLD] Gold von Jagdlagern.</Text>
+		</Replace>	
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_FESTIVALS_DESCRIPTION" Language="de_DE">
+			<Text>+2 [ICON_Food] Nahrung von [ICON_RESOURCE_WINE] Wein-, [ICON_RESOURCE_INCENSE] Räucherwerk-, [ICON_RESOURCE_COCOA] Kakao-, [ICON_RESOURCE_TOBACCO] Tabak-, [ICON_RESOURCE_OLIVES] Oliven-, [ICON_RESOURCE_COFFEE] Kaffee- und [ICON_RESOURCE_TEA] Tee-Plantagen.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="de_DE">
+			<Text>Ein ausschließlich Norwegen zur Verfügung stehendes Gebäude, welches den Tempel ersetzt. +1 [ICON_FAITH] Glauben für jedes Feld mit einer Ressource in dieser Stadt und +1 [ICON_PRODUCTION] Produktion für alle Küstenfelder mit einer Ressource in dieser Stadt. Erforderlich für den Erwerb von Aposteln und Inquisitoren mit [ICON_Faith] Glauben.</Text>
+		</Replace>
+		<!-- -->
+		<!-- -->
+		<!-- -->
+		<!-- -->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="de_DE">
 			<Text>Kampfeinheiten erhalten +7 [ICON_Strength] bei fremden Städten mit dieser Religion.</Text>

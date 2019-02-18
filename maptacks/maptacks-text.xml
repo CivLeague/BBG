@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <LocalizedText>
+    <Replace Tag="LOC_MAP_PIN_POPUP_TITLE" Language="en_US">
+      <Text>Edit Map Tack</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_PIN_SEND_TO_CHAT_TT" Language="en_US">
+      <Text>Add this map tack to your chat text.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_PIN_SEND_TO_CHAT_NOT_VISIBLE_TT" Language="en_US">
+      <Text>The map tack is not visible to the current chat target.</Text>
+    </Replace>
+    <Replace Tag="LOC_HUD_MAP_PIN_LIST" Language="en_US">
+      <Text>Map Tacks</Text>
+    </Replace>
+    <Replace Tag="LOC_HUD_MAP_TOGGLE_MAP_PIN_LIST" Language="en_US">
+      <Text>Map Tacks</Text>
+    </Replace>
+    <Replace Tag="LOC_HUD_MAP_PLACE_MAP_PIN" Language="en_US">
+      <Text>Add Tack</Text>
+    </Replace>
+    <Replace Tag="LOC_HUD_MAP_PLACE_MAP_PIN_TT" Language="en_US">
+      <Text>Click on a hex to place a map tack at that location.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_PIN_DEFAULT_NAME" Language="en_US">
+      <Text>Unnamed Location {1_number}</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_PIN_LIST_PLAYER_PIN_TOOLTIP" Language="en_US">
+      <Text>Left click to find the tack on the map.  Right click to edit.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_PIN_LIST_REMOTE_PIN_TOOLTIP" Language="en_US">
+      <Text>Left click to find the tack on the map.</Text>
+    </Replace>
+  </LocalizedText>
+</GameData>

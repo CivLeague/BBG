@@ -7,7 +7,8 @@
 		</Description>
 		<Teaser>Mods to balance Civ Players' League multiplayer games</Teaser>
 		<Authors>codenaugh, S1AL</Authors>
-		<SpecialThanks>wazabaza, abstr, priz, kishiko, WhySoHate, Fulesa, ApolloMaster07, ReQuiiieM, Auguthy, bszonye, dexxter</SpecialThanks>
+		<SpecialThanks>wazabaza, abstr, priz, kishiko, WhySoHate, Fulesa, cots5, ApolloMaster07, ReQuiiieM, Auguthy, bszonye, dexxter</SpecialThanks>
+		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
 	
 	<!-- defines file dependencies -->
@@ -18,24 +19,23 @@
 		<File>lang/french.xml</File>
 		<File>lang/german.xml</File>
 		<File>lang/spanish.xml</File>
+		<File>lang/japanese.xml</File>
 		<File>mods.sql</File>
-		<File>WorldRankings.lua</File>
-		<File>MinimapPanel.lua</File>
-		<!-- <File>mappinlistpanel.lua</File>
-		<File>mappinlistpanel.xml</File>
-		<File>mappinmanager.lua</File>
-		<File>mappinmanager.xml</File>
-		<File>mappinpopup.lua</File>
-		<File>mappinpopup.xml</File>
-		<File>maptacks.lua</File>
-		<File>maptacks-text.xml</File> -->
+		<File>maptacks/mappinlistpanel.lua</File>
+		<File>maptacks/mappinlistpanel.xml</File>
+		<File>maptacks/mappinmanager.lua</File>
+		<File>maptacks/mappinmanager.xml</File>
+		<File>maptacks/mappinpopup.lua</File>
+		<File>maptacks/mappinpopup.xml</File>
+		<File>maptacks/maptacks.lua</File>
+		<File>maptacks/maptacks-text.xml</File>
 	</Files>
 	
 	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
 	<Settings>
 		<LocalizedText id="bbg_pregame_text_updates">
 			<Properties>
-				<LoadOrder>1609</LoadOrder>
+				<LoadOrder>11609</LoadOrder>
 			</Properties>
 			<Items>
 				<File>lang/english.xml</File>
@@ -52,19 +52,17 @@
 	<!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
 	<Components>
 		<ImportFiles id="bbg_import_files">
-			<File>WorldRankings.lua</File>
-			<File>MinimapPanel.lua</File>
-			<!-- <File>mappinlistpanel.lua</File>
-			<File>mappinlistpanel.xml</File>
-			<File>mappinmanager.lua</File>
-			<File>mappinmanager.xml</File>
-			<File>mappinpopup.lua</File>
-			<File>mappinpopup.xml</File>
-			<File>maptacks.lua</File> -->
+			<File>maptacks/mappinlistpanel.lua</File>
+			<File>maptacks/mappinlistpanel.xml</File>
+			<File>maptacks/mappinmanager.lua</File>
+			<File>maptacks/mappinmanager.xml</File>
+			<File>maptacks/mappinpopup.lua</File>
+			<File>maptacks/mappinpopup.xml</File>
+			<File>maptacks/maptacks.lua</File>
 		</ImportFiles>
 		<LocalizedText id="bbg_text_updates">
 			<Properties>
-				<LoadOrder>1611</LoadOrder>
+				<LoadOrder>11611</LoadOrder>
 			</Properties>
 			<Items>
 				<File>lang/english.xml</File>
@@ -74,7 +72,7 @@
 				<File>lang/german.xml</File>
 				<File>lang/spanish.xml</File>
 				<File>lang/japanese.xml</File>
-				<!-- <File>maptacks-text.xml</File> -->
+				<File>maptacks-text.xml</File>
 			</Items>
 		</LocalizedText>
 		<UpdateDatabase id="bbg_db_updates">

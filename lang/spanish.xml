@@ -9,6 +9,98 @@
 		<!--===============   S P A N I S H   ===============-->
 		<!--===============   S P A N I S H   ===============-->
 		<!--===============   S P A N I S H   ===============-->
+		<!-- Khmer -->
+		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="es_ES">
+			<Text>+{1_num} [ICON_Faith] Fe por el río.</Text>
+		</Row>
+		<!-- Greece -->
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="es_ES">
+			<Text>Un distrito único de Grecia para sitios culturales. Reemplaza el distrito de teatro y es más barato de construir.[NEWLINE][NEWLINE]+2 [ICON_Culture] Cultura por cada maravilla adyacente. +1 [ICON_Culture] Cultura por cada distrito adyacente. Solo se puede construir en colinas.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="es_ES">
+			<Text>Adjacency: +2 [ICON_Culture] Cultura por cada maravilla adyacente. +1 [ICON_Culture] Cultura por cada distrito adyacente. Solo puede construirse en colinas.</Text>
+		</Replace>
+		<!-- Norway -->
+		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="es_ES">
+			<Text>+{1_num} [ICON_Faith] Fe por costa.</Text>
+		</Row>
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="es_ES">
+			<Text>Todas las unidades navales cuerpo a cuerpo obtienen +25% [ICON_PRODUCTION] Produccion y pueden saquear la costa.[NEWLINE][NEWLINE] Todos los distritos de lugar sagrado y sus edificios obtienen +50% [ICON_PRODUCTION] Produccion. Los distritos sagrados obtienen un bonus de adyacencia standar de casillas de costa.[NEWLINE][NEWLINE]Los puertos adyacentes a un lugar sagrado obtienen un bonus de +2 [ICON_GOLD] Oro.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="es_ES">
+			<Text>Las Unidades ganan la abilidad de entrar en casillas de oceano despues de investigar la tecnología de construcción naval. Las unidades navales cuerpo a cuerpo se curan en territorio neutral. Las unidades ignoran costos adicionales de [ICON_Movement] Movimiento por embarcar y desembarcar.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Oro por rutas comerciales iternacionales originadas en una ciudad costera.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="es_ES">
+			<Text>Unidad única noruega de la edad media. +2 [ICON_Movement] Movimiento si esta unidad empieza en territorio enemigo o es embarcada. +15 [ICON_Strength] Fuerza de combate al atacar.</Text>
+		</Replace>
+		<Row Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="es_ES">
+			<Text>+{1_num} [ICON_Gold] Oro por adyacencia a lugar sagrado.</Text>
+		</Row>
+		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="es_ES">
+            <Text>Un edificio unico de Noruega que reemplaza el templo. +1 [ICON_FAITH] a cada casilla con un recurso en esta ciudad y +1 [ICON_PRODUCTION] Producción  por cada recurso costero en esta ciudad. Requerido para comprar apóstoles e inquisidores con [ICON_Faith] Fe.</Text>
+        </Replace>
+		<!-- Macedon -->
+		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION" Language="es_ES">
+			<Text>Recibe bonuses tras conquistar una ciudad: +20% [ICON_PRODUCTION] en todas las ciuudades por 10 turnos, así como un [ICON_TechBoosted] Eureka por cada campamento o campus en la ciudad conquistada y una [ICON_CivicBoosted] Inspiracion por cada lugar sagrado o distrito de teatro.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="es_ES">
+			<Text>Unidad única macedonia de caballería pesada. +5 [ICON_Strength] Fuerza de combate adicional cuando se encuentra adyacente a un [ICON_GREATGENERAL] Gran General de cualquier era. +5 [ICON_GREATGENERAL] Puntos de gran general cuando derrota una unidad enemiga. Empieza con un ascenso gratis.</Text>
+		</Replace>
+		<!--<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="en_US">
+			<Text>Unidad única macedonia de caballería pesada. +5 [ICON_Strength] Fuerza de combate adicional cuando se encuentra a una distancia máxima de 2 casillas de un [ICON_GREATGENERAL] Gran General de cualquier era. +5 [ICON_GREATGENERAL] Puntos de gran general cuando derrota una unidad enemiga. Empieza con un ascenso gratis.</Text>
+		</Replace>-->
+		<!--<Replace Tag="LOC_HETAIROI_GREAT_GENERAL_COMBAT_BONUS_DESCRIPTION" Language="en_US">
+			<Text>+5 Bonus de combate por Gran General cercano</Text>
+		</Replace>-->
+		<!-- Mongolia -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MONGOLIAN_ORTOO_DESCRIPTION" Language="es_ES">
+			<Text>Todas las unidades mongolas duplican el usual bonus a la [ICON_Strength] Fuerza de combate por tener un nivel mayor de [ICON_VisLimited] Visibilidad Diplomatica que su oponente. Empezar una [ICON_TradeRoute] Ruta de comercio inmediatamente crea un [ICON_TradingPost] Puesto de comercio en la ciudad de destino.</Text>
+		</Replace>
+		<!-- Egypt -->
+		<Replace Tag="LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_DESCRIPTION" Language="es_ES">
+			<Text> Unidad a distancia única de Egipto de la edad Antigua. 4 [ICON_Movement] Movimiento cuando empieza en terreno abierto.</Text>
+		</Replace>
+		<!-- Rome -->
+		<Replace Tag="LOC_DISTRICT_BATH_DESCRIPTION" Language="es_ES">
+			<Text>Un distrito único de Roma para el crecimiento poblacional. Reemplaza el acueducto y es más barato de construir. +1 [ICON_Culture] Cultura pr cada distrito adyacente.[NEWLINE][NEWLINE]Provee a esta ciudad con una fuente de agua fresca de un río, lago, oasis o montaña adyacente. Las ciudades que no cuentan ya con una fuente de agua fresca reciben hasta 6 [ICON_Housing] Alojamiento. Las ciudades que ya cuentan con agua fresca consiguen en cambio +2 [ICON_Housing] Alojamiento. En cualquier caso, las Termas proveen un bonus adicional de +2 [ICON_Housing] Alojamiento y +1 [ICON_Amenities] Amenidades. Debe construirse adyacente al Centro Urbano.</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="es_ES">
+			<Text>Adjacency: +1 [ICON_Culture] Cultura por cada distrito adyacente.</Text>
+		</Row>
+		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="es_ES">
+			<Text>Despues de desbloquear el principio Imperio Inicial, las cuidades fundadas desde ese momento empiezan con un monumento gratis.</Text>
+		</Replace>
+		<!-- Spain -->
+		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION" Language="es_ES">
+			<Text>30% al comprar misionarios con [ICON_FAITH] Fe. Los inquisidores pueden remover la herejía una vez más. Las unidades de combate tienen un bonus de +4 [ICON_Strength] Fuerza de combate contra jugadores siguiendo otras religiones.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION" Language="es_ES">
+			<Text>Puede formar Flotas y Armadas antes  de lo normal (Mercenaries and Mercantilism). Las [ICON_TradeRoute] Rutas comerciales entre diferentes continentes reciben extra [ICON_Gold] Oro por rutas a otras civilizaciones, y un bonus de [ICON_Food] comida y [ICON_Production] Producción en rutas entre tus propias ciudades.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION1_DESCRIPTION" Language="es_ES">
+			<Text>Puede formar Flotas y Armadas antes  de lo normal (Mercenaries and Mercantilism). Las [ICON_TradeRoute] Rutas comerciales entre diferentes continentes reciben extra [ICON_Gold] Oro por rutas a otras civilizaciones, y un bonus de [ICON_Food] comida y [ICON_Production] Producción en rutas entre tus propias ciudades. +2 de Lealtad por turno en ciudades con una mejora de casilla de misión adyacente al Centro Urbano y no en el continente de tu [ICON_Capital] Capital original.</Text>
+		</Replace>
+		<!-- Gov -->
+		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="es_ES">
+			<Text>+25% [ICON_Production] Producción hacia todas las unidades militares navales y terrestres. Reduce el costo de mantenimiento en 1 [ICON_GOLD] Oro.[NEWLINE]Entrega +1 [Icon_Governor] Título de Gobernador.</Text>
+		</Replace>
+		<!-- Pantheons -->
+		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_NAME" Language="es_ES">
+			<Text>Dios de la Guerra y el Saqueo</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="es_ES">
+			<Text>+1 [ICON_GreatPerson] Puntos de Gran Personaje por los distritos de Campamento(General), Puerto(Almirante) y Centro Comercial(Mercader).</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="es_ES">
+			<Text>+2 [ICON_Food] Comida y +2 [ICON_GOLD] Oro de campamentos (mejora de casilla).</Text>
+		</Replace>	
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_FESTIVALS_DESCRIPTION" Language="es_ES">
+			<Text>+2 [ICON_Food] Comida por [ICON_RESOURCE_WINE] Vino, [ICON_RESOURCE_INCENSE] Incienso, [ICON_RESOURCE_COCOA] Chocolate, [ICON_RESOURCE_TOBACCO] Tabaco, [ICON_RESOURCE_OLIVES] Olivas, [ICON_RESOURCE_COFFEE] Café, y [ICON_RESOURCE_TEA] Té.</Text>
+		</Replace>
+		<!-- -->
+		<!-- -->
+		<!-- -->
+		<!-- -->
 		<!-- Defender of the Faith Religion -->
 		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="es_ES">
 			<Text>Las unidades de combate obtienen +4 a la Fuerza de combate [ICON_Strength] cuando están dentro de las fronteras de las ciudades amistosas que sigan esta religión.</Text>
@@ -130,19 +222,11 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="es_ES">
 			<Text>Las Rutas comerciales Internacionales proporcionan +2 a Fe [ICON_FAITH] para Jémer. Las Rutas comerciales de otras civilizaciones con Jémer también les proporcionan +2 a Fe [ICON_FAITH] . +3 a Fe [ICON_FAITH] y +1 a Servicios [ICON_AMENITIES] por entretenimiento para todas las ciudades con un Acueducto. Las Granjas adyacentes a un Acueducto proporcional +2 Alimento [ICON_FOOD].</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="es_ES">
-			<Text>Un edificio exclusivo de Noruega que sustituye al Templo. Necesario para comprar Apóstoles e Inquisidores con Fe [ICON_FAITH]. +1 a Fe [ICON_FAITH] por cada casilla de recursos en esta ciudad.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="es_ES">
 			<Text>Desbloquea la habilidad de Constructor para crear una Misión, exclusiva de España.[NEWLINE][NEWLINE]+2 a Fe [ICON_Faith] . +2 a Fe si está en un continente diferente a tu capital [ICON_Capital] . +2 a Ciencia [ICON_Science] si se construye junto a un distrito de Campus. +1 a Alojamiento [ICON_HOUSING] después de alcanzar el principio de Exploracion y +2 Ciencia [ICON_SCIENCE] después de alcanzar el principio de Herencia Cultural.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="es_ES"> 
 			<Text>Maravilla de la naturaleza de cuatro casillas. Aparece como pantano y proporciona +2 a Alimentos [ICON_Food] , +2 a Cultura [ICON_Culture] y +2 a Ciencia [ICON_Science] .</Text>
-		</Replace>
-		<!-- Modified from "New" section -->
-		<!-- Rome -->
-		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="es_ES">
-			<Text>Después de alcanzar el principio de Filosofía Política, las ciudades recién fundadas comienzan con un monumento gratis.</Text>
 		</Replace>
 		<!-- Scythia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="es_ES">
@@ -170,17 +254,8 @@
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="es_ES">
 			<Text>Desbloquea la habilidad de Constructor para crear un Pozo escalonado, exclusivo de la India. [NEWLINE][NEWLINE]+1 a Alimentos [ICON_Food], +1 a Fe [ICON_FAITH] y +1 a Alojamiento [ICON_Housing]. +1 a Fe [ICON_FAITH] si está adyacente a un distrito de Lugar sagrado. +1 a Alimentos [ICON_Food] si está adyacente a una Granja. No puede construirse sobre Colinas ni adyacente a otro Pozo escalonado.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="es_ES">
-			<Text>Permite realizar incursiones costeras a todas las unidades navales cuerpo a cuerpo y otorga un +25% a la Producción [ICON_PRODUCTION] para todas las unidades navales cuerpo a cuerpo.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="es_ES">
-			<Text>Unidad de la Época Medieval exclusiva de Noruega que puede ser comprada con Fe [ICON_FAITH]. +2 de Movimiento [ICON_Movement] si esta unidad empieza en territorio enemigo. +10 a la Fuerza de combate [ICON_Strength] al atacar y -5 a la Fuerza de combate [ICON_Strength] al defender.</Text>
-		</Replace>
 		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="es_ES">
 			<Text>+100% a la Producción [ICON_Production] de edificios defensivos y +50% a la Producción [ICON_Production] para las unidades de apoyo.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="es_ES">
-			<Text>Un distrito exclusivo de Grecia para emplazamientos culturales. Sustituye al distrito de Teatro y es mas barato de construir.[NEWLINE][NEWLINE]+1 de bonificación a cultura [ICON_Culture] por cada maravilla y distrito adyacente. Solo se puede construir en Colinas.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="es_ES">
 			<Text>Un espacio de política comodín adicional en cualquier gobierno.[NEWLINE][NEWLINE]Otorga 1 Enviado [ICON_ENVOY] al completar un Anfiteatro.</Text>
@@ -247,9 +322,6 @@
 		<!-- Version 6 -->
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="es_ES">
             <Text>+1 [ICON_Amenities] Servicios, +3 [ICON_FOOD] Alimentos, y +3 [ICON_Housing] Alojamiento en ciudades [ICON_Governor]con Gobernador [NEWLINE]-2 Lealtad en ciudades sin [ICON_Governor] Gobernador.[NEWLINE] Otorga +1 [Icon_Governor] titulo de Gobernador.</Text>
-        </Replace>
-        <Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="es_ES">
-            <Text>Capturar una ciudad enemiga otorga 25% de bonificación [ICON_Production] Producion en todas las ciudades durante 10 turnos.[NEWLINE] Otorga +1 [Icon_Governor] titulo de Gobernador.</Text>
         </Replace>
         <Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="es_ES">
             <Text>Desbloquea la habilidad del constructor para construir Chemamull, única para Mapuche.[NEWLINE][NEWLINE] Otorga +2 [ICON_PRODUCTION] Producción y [ICON_CULTURE] cultura equivalente al 75% del atractivo de la casilla. Turismo [ICON_TOURISM] adicional tras investigar la tecnología Vuelo. Atractivo mínimo de Impresionante.</Text>

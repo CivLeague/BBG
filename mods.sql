@@ -5,6 +5,8 @@ PRAGMA foreign_keys = OFF;
 -- LATEST VERSION --
 --
 --
+-- GATHERING STORM WAR GOSSIP --
+DELETE FROM Gossips WHERE GossipType='GOSSIP_MAKE_DOW';
 --=========
 --Greece
 --=========
@@ -1001,8 +1003,7 @@ INSERT INTO Feature_AdjacentYields (FeatureType, YieldType, YieldChange)
 --******				    O T H E R					  ******
 --==============================================================
 -- add 1 production to fishing boat improvement
-INSERT INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
-	VALUES ('IMPROVEMENT_FISHING_BOATS' , 'YIELD_PRODUCTION' , '1');
+UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_FISHING_BOATS' AND YieldType='YIELD_PRODUCTION';
 -- Amani Abuse Fix... can immediately re-declare war when an enemy suzerian removes Amani
 UPDATE GlobalParameters SET Value='1' WHERE Name='DIPLOMACY_PEACE_MIN_TURNS';
 -- Offshore Oil can be improved at Combustion (tanks)
