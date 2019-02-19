@@ -37,7 +37,7 @@
 			<Text> [ICON_Gold] Or +{1_num} (lieux saints).</Text>
 		</Row>
 		<!-- Macedon -->
-		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION" Language="fr_FR">
+		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="fr_FR">
 			<Text>Vous recevez une amélioration pour chaque ville capturée : [ICON_PRODUCTION] Production +20 % dans toutes vos villes pendant 10 tours, un [ICON_TechBoosted] Eurêka ! pour chaque campement ou campus de la ville conquise, et une [ICON_CivicBoosted] inspiration pour chaque lieu saint ou place du théâtre.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="fr_FR">
@@ -70,9 +70,6 @@
 		<!-- Spain -->
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION" Language="fr_FR">
 			<Text>Le côut en [ICON_FAITH] Foi des missionnaires est réduit de 30 %. Les inquisiteurs peuvent supprimer les hérétiques une fois de plus. [ICON_Strength] Puissance de combat +4 pour les unités militaires affrontant des joueurs d'une autre religion.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION" Language="fr_FR">
-			<Text>Possibilité de constituer des flottes et des armadas d'unités navales plus tôt que la normale (mercenaires et mercantilisme). Les [ICON_TradeRoute] routes commerciales entre plusieurs continents produisent davantage : plus d'[ICON_Gold] or pour les routes extérieures, plus de [ICON_Food] nourriture ou de [ICON_Production] production si elles sont intérieures.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION1_DESCRIPTION" Language="fr_FR">
 			<Text>Possibilité de constituer des flottes et des armadas d'unités navales plus tôt que la normale (mercenaires et mercantilisme). Les [ICON_TradeRoute] routes commerciales entre plusieurs continents produisent davantage : plus d'[ICON_Gold] or pour les routes extérieures, plus de [ICON_Food] nourriture ou de [ICON_Production] production si elles sont intérieures. Loyauté +2 par tour pour les villes dotées d'une mission adjacente au centre-ville et situées sur un continent différent de celui de votre [ICON_Capital] capitale de départ.</Text>
@@ -114,7 +111,7 @@
 			<Text>Récolter une ressource ou supprimer des caractéristiques de terrain fournit 50% du montant de la récolte en [ICON_Faith] foi.</Text>
 		</Replace>
 		<!-- Australia -->
-		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION" Language="fr_FR">
+		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +50% pour 10 tours après avoir libéré une ville.</Text>
 		</Replace>
 		<!-- Germany -->

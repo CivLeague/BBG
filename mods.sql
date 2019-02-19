@@ -929,9 +929,8 @@ INSERT INTO PolicyModifiers (PolicyType , ModifierId)
 --==============================================================
 --******			  U N I T S  (NON-UNIQUE)			  ******
 --==============================================================
-UPDATE Units SET Combat='75' , BaseMoves='3' WHERE UnitType='UNIT_INFANTRY';
+UPDATE Units SET Combat=75 , BaseMoves=3 WHERE UnitType='UNIT_INFANTRY';
 UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_PRIVATEER';
-UPDATE Units SET Range='2' WHERE UnitType='UNIT_MACHINE_GUN';
 
 
 
@@ -1067,7 +1066,7 @@ INSERT INTO RequirementArguments (RequirementId , Name , Value)
 -- Australia
 --==================
 -- Digger gets +5 combat strength
-UPDATE Units SET Combat='77' , BaseMoves='3' WHERE UnitType='UNIT_DIGGER';
+UPDATE Units SET Combat=77 , BaseMoves=3 WHERE UnitType='UNIT_DIGGER';
 -- war production bonus reduced to 0% from 100%, liberation bonus reduced to +50% (from +100%) for 10 turns (from 20 turns)
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='TRAIT_CITADELCIVILIZATION_LIBERATION_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='TRAIT_CITADELCIVILIZATION_LIBERATION_PRODUCTION' and Name='TurnsActive';
@@ -1131,7 +1130,7 @@ INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 -- Crouching Tiger now a crossbowman replacement that gets +7 when adjacent to an enemy unit
 INSERT INTO UnitReplaces (CivUniqueUnitType , ReplacesUnitType)
 	VALUES ('UNIT_CHINESE_CROUCHING_TIGER' , 'UNIT_CROSSBOWMAN');
-UPDATE Units SET Cost='190' , RangedCombat='40' , Range='2' WHERE UnitType='UNIT_CHINESE_CROUCHING_TIGER';
+UPDATE Units SET Cost=190 , RangedCombat=40 , Range=2 WHERE UnitType='UNIT_CHINESE_CROUCHING_TIGER';
 
 INSERT INTO Tags (Tag , Vocabulary)
 	VALUES ('CLASS_CROUCHING_TIGER' , 'ABILITY_CLASS');
@@ -1284,7 +1283,7 @@ UPDATE Improvements SET Housing='1' , PreReqCivic='CIVIC_FEUDALISM' WHERE Improv
 -- Georgia Tsikhe changed to a stronger Ancient Wall replacement instead of a Renaissance Wall replacement
 DELETE FROM BuildingPrereqs WHERE Building='BUILDING_TSIKHE';
 UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_WALLS' WHERE CivUniqueBuildingType='BUILDING_TSIKHE';
-UPDATE Buildings SET Cost=80 , PrereqTech='TECH_MASONRY' , OuterDefenseHitPoints=75 WHERE BuildingType='BUILDING_TSIKHE';
+UPDATE Buildings SET Cost=80 , PrereqTech='TECH_MASONRY' , OuterDefenseHitPoints=150 WHERE BuildingType='BUILDING_TSIKHE';
 -- Georgian Khevsur unit becomes sword replacement
 UPDATE Units SET Combat=35, Cost=100, Maintenance=2, PrereqTech='TECH_IRON_WORKING' WHERE UnitType='UNIT_GEORGIAN_KHEVSURETI';
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='KHEVSURETI_HILLS_BUFF' AND Name='Amount';
@@ -1447,16 +1446,9 @@ INSERT INTO RequirementArguments (RequirementId , Name , Value)
 -- Japan
 --==================
 -- Commercial Hubs no longer get adjacency from rivers
-INSERT INTO TraitModifiers (TraitType , ModifierId)
-	VALUES ('TRAIT_CIVILIZATION_ADJACENT_DISTRICTS' , 'TRAIT_COMMERCIAL_NO_RIVER_BONUS_CPLMOD');
-INSERT INTO Modifiers (ModifierId , ModifierType)
-	VALUES ('TRAIT_COMMERCIAL_NO_RIVER_BONUS_CPLMOD' , 'MODIFIER_PLAYER_CITIES_RIVER_ADJACENCY');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES('TRAIT_COMMERCIAL_NO_RIVER_BONUS_CPLMOD' , 'Amount' , '-2');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES('TRAIT_COMMERCIAL_NO_RIVER_BONUS_CPLMOD' , 'DistrictType' , 'DISTRICT_COMMERCIAL_HUB');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES('TRAIT_COMMERCIAL_NO_RIVER_BONUS_CPLMOD' , 'YieldType' , 'YIELD_GOLD');
+INSERT INTO ExcludedAdjacencies (TraitType , YieldChangeId)
+    VALUES
+    ('TRAIT_CIVILIZATION_ADJACENT_DISTRICTS' , 'River_Gold');
 -- Samurai come at Feudalism now
 UPDATE Units SET Combat=45 , PrereqCivic='CIVIC_FEUDALISM' , PrereqTech=NULL WHERE UnitType='UNIT_JAPANESE_SAMURAI';
 

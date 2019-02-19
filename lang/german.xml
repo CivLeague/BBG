@@ -37,7 +37,7 @@
 			<Text>+{1_num} [ICON_Gold] Goldbonus für angrenzende Heilige-Stätten.</Text>
 		</Row>
 		<!-- Macedon -->
-		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION" Language="de_DE">
+		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="de_DE">
 			<Text>Erhaltet Bonusse bei Stadt-Eroberungen: +20% [ICON_PRODUCTION] in alle Städten für 10 Rundens, sowie ein[ICON_TechBoosted] Heureka für jedes Lager oder jeden Campusin der eroberten Stadt und eine [ICON_CivicBoosted] Eingebung für jede Heilige Stätte oder jeden Theaterplatz.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="de_DE">
@@ -70,9 +70,6 @@
 		<!-- Spain -->
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION" Language="de_DE">
 			<Text>Missionare kosten 30% [ICON_FAITH] Glauben weniger. Inquisitoren können ein zusätzliches Mal Ketzerei entfernen. Kampfeinheiten haben einen Bonus von +4 [ICON_Strength] Kampfstärke gegen Spieler, die anderen Religionen folgen.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION" Language="de_DE">
-			<Text>Erstellt Flotten und Armadas aus Marineeinheiten früher als normal (Söldner und Merkantilismus). Kontinente verbindende [ICON_TradeRoute] Handelswege zu anderen Zivilisationen erhalten einen [ICON_Gold] Gold-Bonus und zu Euren eigenen Städten [ICON_Food] Nahrungs- und [ICON_Production] Produktionsbonusse.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION1_DESCRIPTION" Language="de_DE">
 			<Text>Erstellt Flotten und Armadas aus Marineeinheiten früher als normal (Söldner und Merkantilismus). Kontinente verbindende [ICON_TradeRoute] Handelswege zu anderen Zivilisationen erhalten einen [ICON_Gold] Gold-Bonus und zu Euren eigenen Städten [ICON_Food] Nahrungs- und [ICON_Production] Produktionsbonusse. +2 Loyaltität pro Runde für Städte mit einer ans Stadtzentrum angrenzenden Missionsmodernisierung, die nicht auf dem Kontinent Eurer ursprünglichen [ICON_Capital] Hauptstadt liegen.</Text>
@@ -118,7 +115,7 @@
 			<Text>Der Abbau einer Ressource und das Entfernen einer Geländeart bringen [ICON_Faith] Glauben in 50% der Höhe der Ertragsmenge.</Text>
 		</Replace>
 		<!-- Australia -->
-		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION" Language="de_DE">
+		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>+50% [ICON_Production] Produktion, wenn Ihr in den letzten 10 Runden eine Stadt befreit habt.</Text>
 		</Replace>
 		<!-- Germany -->

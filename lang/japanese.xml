@@ -9,6 +9,95 @@
 		<!--===============   J A P A N E S E   ===============-->
 		<!--===============   J A P A N E S E   ===============-->
 		<!--===============   J A P A N E S E   ===============-->
+		<!-- Khmer -->
+		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="ja_JP">
+			<Text>川タイルが隣接していることにより{1_num}[ICON_Faith]</Text>
+		</Row>
+		<!-- Greece -->
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="ja_JP">
+			<Text>ギリシャの固有の文化活動をつかさどる区域。劇場広場の区域に取ってかわり、より安価に建設できる。[NEWLINE][NEWLINE]隣接する遺産につき[ICON_Culture]文化力+2のボーナス。区域に隣接している場合、[ICON_Culture]文化力+1。丘陵にのみ建設可能。</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="ja_JP">
+			<Text>隣接する遺産につき[ICON_Culture] 文化+2。 区域に隣接している場合[ICON_Culture]文化力+1。丘陵にのみ建設可能。</Text>
+		</Replace>
+		<!-- Norway -->
+		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="ja_JP">
+			<Text>隣接する沿岸/湖タイルに１つにつき{1_num} [ICON_Faith]信仰力+1。</Text>
+		</Row>
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="ja_JP">
+			<Text>海洋近接戦闘ユニットが沿岸を略奪できるようになる。さらに海洋近接戦闘ユニットの[ICON_PRODUCTION]生産力+25%。[NEWLINE][NEWLINE]聖地区域とその建造物に対する[ICON_PRODUCTION]生産力+50%。聖地は沿岸/湖タイルから[ICON_Faith]信仰力+1の隣接ボーナスを得る。[NEWLINE][NEWLINE]港は隣接する聖地１つにつき[ICON_GOLD]ゴールドボーナス+2。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="ja_JP">
+			<Text>造船」を研究するとユニットが外洋航行能力を得る。海洋近接戦闘ユニットが中立地帯で回復するようになる。乗船時と下船時に追加の[ICON_Movement]移動コストがかからなくなる。[NEWLINE][NEWLINE]沿岸都市起点とする国外交易は[ICON_GOLD]ゴールドボーナス+2。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="ja_JP">
+			<Text>ノルウェー固有の中世の近接戦闘ユニット。敵の領土で移動を開始した場合は[ICON_Movement]移動力4。攻撃時は[ICON_Strength]戦闘力+15。</Text>
+		</Replace>
+		<Row Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="ja_JP">
+			<Text>隣接する聖地タイル1つごとに+{1_num} [ICON_Gold]</Text>
+		</Row>
+		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="ja_JP">
+            <Text>ノルウェー固有の建造物。[ICON_FAITH]信仰力を使って使徒と審問官を購入するのに必要。この都市の資源タイルに[ICON_FAITH]信仰力+1。この都市内の沿岸資源タイルごとに[ICON_PRODUCTION]生産力+1。</Text>
+        </Replace>
+		<!-- Macedon -->
+		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="ja_JP">
+			<Text>敵の都市を占領すると、10ターンの間、すべての都市の[ICON_PRODUCTION]生産力に20%のボーナスが発生する。兵営かキャンパスを有する都市を占領すると[ICON_TechBoosted]ひらめきが発生する。また、聖地か劇場広場を有する都市を占領すると[ICON_CivicBoosted]天啓が発生する。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="ja_JP">
+			<Text>マケドニア固有の重騎兵ユニット。[ICON_GREATGENERAL] 大将軍に隣接していると[ICON_Strength]戦闘力+5。敵ユニットを倒すと[ICON_GREATGENERAL] 大将軍ポイント+5。最初から無料でレベルアップを1つ有する。</Text>
+		</Replace>
+		<!--<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="ja_JP">
+			<Text>マケドニア固有の重騎兵ユニット。2タイル以内の[ICON_GREATGENERAL] 大将軍に隣接していると[ICON_Strength]戦闘力+5。敵ユニットを倒すと[ICON_GREATGENERAL] 大将軍ポイント+5。最初から無料でレベルアップを1つ有する。</Text>
+		</Replace>-->
+		<!--<Replace Tag="LOC_HETAIROI_GREAT_GENERAL_COMBAT_BONUS_DESCRIPTION" Language="ja_JP">
+			<Text>近くにいる大将軍から+5の戦闘力ボーナス</Text>
+		</Replace>-->
+		<!-- Mongolia -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MONGOLIAN_ORTOO_DESCRIPTION" Language="ja_JP">
+			<Text>敵よりも[ICON_VisLimited]外交的視野が広い場合は、モンゴルの全ユニットの[ICON_Strength]戦闘ボーナスが通常の倍になる。[ICON_TradeRoute]交易路を作ると、目的地の都市に[ICON_TradingPost]交易施設が即座に設置される。</Text>
+		</Replace>
+		<!-- Egypt -->
+		<Replace Tag="LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_DESCRIPTION" Language="ja_JP">
+			<Text>エジプト固有の太古の長距離戦闘ユニット。開けた地形から移動をはじめると[ICON_Movement]移動力4。</Text>
+		</Replace>
+		<!-- Rome -->
+		<Replace Tag="LOC_DISTRICT_BATH_DESCRIPTION" Language="ja_JP">
+			<Text>都市を発展させるローマ固有の区域。用水路に取ってかわり、より安価に建設できる。隣接する区域から[ICON_Culture]文化力+1。[NEWLINE][NEWLINE]隣接する川、湖、オアシス、山岳から真水を都市にもたらす。都市に真水がまだ供給されていなかった場合は最大で [ICON_Housing] 住宅6を獲得。真水がすでに引かれている都市は [ICON_Housing] 住宅+2。いずれの場合も浴場の特別ボーナスとして [ICON_Housing] 住宅+2、 [ICON_Amenities] 快適性+1。都心に隣接している必要がある。</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="ja_JP">
+			<Text>隣接する区域タイル1つごとに、[ICON_Culture]文化力+1。</Text>
+		</Row>
+		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="ja_JP">
+			<Text>古代の帝国解禁後新たに建設されたすべての都市に最初から都心に都心建造物（太古の場合はモニュメント）が1つ追加されている。</Text>
+		</Replace>
+		<!-- Spain -->
+		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION" Language="ja_JP">
+			<Text>宣教師の購入に必要な [ICON_FAITH] 信仰力-30%。審問官が異端の排除を1回多くおこなえる。異なる宗教を信奉するプレイヤーとの戦闘時に、ユニットが [ICON_Strength] 戦闘力+4のボーナスを得る。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION1_DESCRIPTION" Language="ja_JP">
+			<Text>通常より早い段階で艦隊や大艦隊を編成できる (傭兵、重商主義)。大陸と大陸にまたがる [ICON_TradeRoute] 交易路が存在する場合、他文明と結ばれた交易路には [ICON_Gold] ゴールドのボーナス、自国の都市同士を結ぶ交易路には [ICON_Food] 食料と [ICON_Production] 生産力のボーナスが発生する。最初の [ICON_Capital] 首都があるのと違う大陸の都市は、都心に伝道所が隣接しているとターン毎の忠誠心+2。</Text>
+		</Replace>
+		<!-- Gov -->
+		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="ja_JP">
+			<Text>すべての海軍および陸軍のユニットに対する [ICON_Production] 生産力+25%。ユニットの維持に必要な [ICON_GOLD] ゴールドが1減る。[NEWLINE][Icon_Governor] 総督の称号+1。</Text>
+		</Replace>
+		<!-- Pantheons -->
+		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_NAME" Language="ja_JP">
+			<Text>ヴァニッシュメント・ディス・ワールド！</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="ja_JP">
+			<Text>兵営(大将軍)、港(大提督)、商業ハブ(大商人)の各区域から [ICON_GreatPerson] 偉人ポイント+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="ja_JP">
+			<Text>キャンプによって [ICON_Food] 食料+2と [ICON_GOLD] ゴールド+2。</Text>
+		</Replace>	
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_FESTIVALS_DESCRIPTION" Language="ja_JP">
+			<Text>[ICON_RESOURCE_WINE] 酒、[ICON_RESOURCE_INCENSE] 香料、[ICON_RESOURCE_COCOA] カカオ、[ICON_RESOURCE_TOBACCO] タバコ、[ICON_RESOURCE_OLIVES] オリーブ、[ICON_RESOURCE_COFFEE] コーヒー, [ICON_RESOURCE_TEA] 茶のプランテーションから [ICON_Food] 食料+2。</Text>
+		</Replace>
+		<!-- -->
+		<!-- -->
+		<!-- -->
+		<!-- -->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ja_JP">
 			<Text>軍事ユニットはこの宗教を信仰している他文明の近くで戦闘力[ICON_Strength]+7 を得る。</Text>
@@ -26,7 +115,7 @@
 			<Text>資源を収穫するかその特徴を取り除くと、ほかの収穫と同じ量の信仰力[ICON_Faith] の50％を得る。</Text>
 		</Replace>
 		<!-- Australia -->
-		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION" Language="ja_JP">
+		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>都市を解放した後の10ターンの生産力に[ICON_Production]+50％。</Text>
 		</Replace>
 		<!-- Germany -->
@@ -113,7 +202,7 @@
 			<Text>すべてのプレイヤーは自分が創始する宗教の崇拝の建物を通常の10分の1の信仰力[ICON_Faith] で購入できる。またこの建物のあるアラブの都市が生み出す科学力[ICON_Science]、信仰力[ICON_Faith] 、文化力[ICON_Culture]が+20%される。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ja_JP">
-			<Text>神殿にとって代わるノルウェー固有の建造物。使徒、審問官の訓練に必要。この都市の各資源から信仰力[ICON_FAITH]+1。都市圏内の海産資源から生産力[ICON_PRODUCTION]+1。</Text>
+			<Text>クメール固有の建造物。神殿に取ってかわる。 [ICON_Faith] 信仰力を使って使徒と審問官を購入するのに必要。プラサートが完成すると無料の伝道師を得る。この都市で購入された伝道師は殉教者の能力を得る。神学戦争でこの伝道師が命を落とすと [ICON_GreatWork_Relic] 遺物が生まれる。</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="ja_JP">
 			<Text>カタパルトの取ってかわるクメール固有の太古の攻囲ユニット。カタパルトより強く、同じターンに移動と攻撃を実行し、支配領域を行使できる。</Text>
@@ -286,7 +375,7 @@
 			<Text>ペン・筆・声(黄金時代):[NEWLINE][ICON_CivicBoosted] 天啓によるボーナスが10%増加し、各都市は専門区域ごとに[ICON_Culture] 文化力+2と[ICON_Science] 科学力+2を得る。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_2" Language="ja_JP">
-			<Text>ペン・筆・声: 天啓を得るたびに時代スコア+1。 傑作スロットがある建造物を建てるごとに時代スコア+1。黄金時代の公約として選択された場合、[ICON_CivicBoosted] 天啓によるボーナスが10%増加し、各都市は専門区域ごとに[ICON_Culture] 文化力+2と[ICON_Science] 科学力+2を得る。</Text>
+			<Text>ペン・筆・声: 天啓を得るたびに時代スコア+1。 傑作スロットがある建造物を建てるごとに時代スコア+1。黄金時代の公約として選択された場合、[ICON_CivicBoosted] 天啓によるボーナスが10%増加し、各都市は専門区域ごとに[ICON_Culture] 文化力+2と[ICON_Gold] ゴールド+2を得る。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ja_JP">
 			<Text>労働者と開拓者の移動力[ICON_Movement]+1。宗教を創始しており、戦争状態ではない文明インドを含む)と遭遇すると、そのつど[ICON_Faith]信仰力+5。ガンジーを相手に戦う文明は、戦争による疲労が2倍になる。</Text>

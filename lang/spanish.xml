@@ -40,7 +40,7 @@
             <Text>Un edificio unico de Noruega que reemplaza el templo. +1 [ICON_FAITH] a cada casilla con un recurso en esta ciudad y +1 [ICON_PRODUCTION] Producción  por cada recurso costero en esta ciudad. Requerido para comprar apóstoles e inquisidores con [ICON_Faith] Fe.</Text>
         </Replace>
 		<!-- Macedon -->
-		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION" Language="es_ES">
+		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="es_ES">
 			<Text>Recibe bonuses tras conquistar una ciudad: +20% [ICON_PRODUCTION] en todas las ciuudades por 10 turnos, así como un [ICON_TechBoosted] Eureka por cada campamento o campus en la ciudad conquistada y una [ICON_CivicBoosted] Inspiracion por cada lugar sagrado o distrito de teatro.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="es_ES">
@@ -73,9 +73,6 @@
 		<!-- Spain -->
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION" Language="es_ES">
 			<Text>30% al comprar misionarios con [ICON_FAITH] Fe. Los inquisidores pueden remover la herejía una vez más. Las unidades de combate tienen un bonus de +4 [ICON_Strength] Fuerza de combate contra jugadores siguiendo otras religiones.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION" Language="es_ES">
-			<Text>Puede formar Flotas y Armadas antes  de lo normal (Mercenaries and Mercantilism). Las [ICON_TradeRoute] Rutas comerciales entre diferentes continentes reciben extra [ICON_Gold] Oro por rutas a otras civilizaciones, y un bonus de [ICON_Food] comida y [ICON_Production] Producción en rutas entre tus propias ciudades.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION1_DESCRIPTION" Language="es_ES">
 			<Text>Puede formar Flotas y Armadas antes  de lo normal (Mercenaries and Mercantilism). Las [ICON_TradeRoute] Rutas comerciales entre diferentes continentes reciben extra [ICON_Gold] Oro por rutas a otras civilizaciones, y un bonus de [ICON_Food] comida y [ICON_Production] Producción en rutas entre tus propias ciudades. +2 de Lealtad por turno en ciudades con una mejora de casilla de misión adyacente al Centro Urbano y no en el continente de tu [ICON_Capital] Capital original.</Text>
@@ -118,7 +115,7 @@
 			<Text>Al cosechar un recurso o eliminar un accidente recibes una cantidade de Fe [ICON_Faith] equivalente al 50% de su rendimiento.</Text>
 		</Replace>
 		<!-- Australia -->
-		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION" Language="es_ES">
+		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="es_ES">
 			<Text>+50% a la Producción [ICON_Production] si han liberado una ciudad en los últimos 10 turnos.</Text>
 		</Replace>
 		<!-- Germany -->

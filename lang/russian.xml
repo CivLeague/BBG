@@ -37,7 +37,7 @@
 			<Text>+{1_num} [ICON_Gold] золота от священного места рядом.</Text>
 		</Row>
 		<!-- Macedon -->
-		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION" Language="ru_RU">
+		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="ru_RU">
 			<Text>При захвате города: +20% [ICON_PRODUCTION] производства во всех городах на 10 ходов, а также [ICON_TechBoosted] эврика за каждый военный лагерь и кампус в захваченном городе и [ICON_CivicBoosted] вдохновение за каждое священное место и театральную площадь.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="ru_RU">
@@ -70,9 +70,6 @@
 		<!-- Spain -->
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION" Language="ru_RU">
 			<Text>Скидка 30% при покупке миссионеров за [ICON_FAITH] веру. Инквизиторы имеют дополнительный заряд на изгнание ереси. Боевые юнит получают +4 к [ICON_Strength] боевой мощи при войне с игроками с другой доминирующей религией.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION" Language="ru_RU">
-			<Text>Получает возможность строить флотильи и армады раньше (при изучении наёмников и меркантилизма соответственно). [ICON_TradeRoute] торговые пути между континентами получают дополнительное [ICON_Gold] золото, если направлены в чужие цивилизации, а если в свои - дополнительные [ICON_Food] пищу и [ICON_Production] производство.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION1_DESCRIPTION" Language="ru_RU">
 			<Text>Получает возможность строить флотильи и армады раньше (при изучении наёмников и меркантилизма соответственно). ICON_TradeRoute] торговые пути между континентами получают дополнительное [ICON_Gold] золото, если направлены в чужие цивилизации, а если в свои - дополнительные [ICON_Food] пищу и [ICON_Production] производство. +2 лояльности в ход в городах с построенной миссией рядом с центром города, если город не на континенте вашей [ICON_Capital] столицы.</Text>
@@ -114,7 +111,7 @@
 			<Text>Удаление бонусных ресурсов и элементов ландшафта дает также очки [ICON_FAITH] веры в количестве 50%</Text>
 		</Replace>
 		<!-- Australia -->
-		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION" Language="ru_RU">
+		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>+50% [ICON_Production] производства в течение 10 ходов после освобождения города.</Text>
 		</Replace>
 		<!-- Germany -->
