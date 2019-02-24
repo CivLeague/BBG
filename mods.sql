@@ -12,10 +12,36 @@ DELETE FROM Gossips WHERE GossipType='GOSSIP_MAKE_DOW';
 --=========
 --Wildcard delayed to Political Philosophy
 UPDATE Modifiers SET OwnerRequirementSetId='PLAYER_HAS_POLITICAL_PHILOSOPHY' WHERE ModifierId='TRAIT_WILDCARD_GOVERNMENT_SLOT';
--- remove additional +1 when adjacent to city center
-DELETE FROM District_Adjacencies WHERE YieldChangeId='DISTRICT_CULTURE_CITY_CENTER';
-DELETE FROM Adjacency_YieldChanges WHERE ID='District_Culture_City_Center';
+--==========
+-- Miscellaneous Fixes
+--==========
+--Give production for Medieval Naval Units for all applicable policies
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	VALUES
+	('MEDIEVAL_NAVAL_MELEE_PRODUCTION_CPLMOD'  , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION'),
+	('MEDIEVAL_NAVAL_RAIDER_PRODUCTION_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION'),
+	('MEDIEVAL_NAVAL_RANGED_PRODUCTION_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
 
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+	VALUES
+	('MEDIEVAL_NAVAL_MELEE_PRODUCTION_CPLMOD'  , 'UnitPromotionClass' , 'PROMOTION_CLASS_NAVAL_MELEE'  , '-1'),
+	('MEDIEVAL_NAVAL_MELEE_PRODUCTION_CPLMOD'  , 'EraType'            , 'ERA_MEDIEVAL'                 , '-1'),
+	('MEDIEVAL_NAVAL_MELEE_PRODUCTION_CPLMOD'  , 'Amount'             , '100'                          , '-1'),
+	('MEDIEVAL_NAVAL_RAIDER_PRODUCTION_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_NAVAL_RAIDER' , '-1'),
+	('MEDIEVAL_NAVAL_RAIDER_PRODUCTION_CPLMOD' , 'EraType'            , 'ERA_MEDIEVAL'                 , '-1'),
+	('MEDIEVAL_NAVAL_RAIDER_PRODUCTION_CPLMOD' , 'Amount'             , '100'                          , '-1'),
+	('MEDIEVAL_NAVAL_RANGED_PRODUCTION_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_NAVAL_RANGED' , '-1'),
+	('MEDIEVAL_NAVAL_RANGED_PRODUCTION_CPLMOD' , 'EraType'            , 'ERA_MEDIEVAL'                 , '-1'),
+	('MEDIEVAL_NAVAL_RANGED_PRODUCTION_CPLMOD' , 'Amount'             , '100'                          , '-1');
+	
+INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+	VALUES
+	('POLICY_INTERNATIONAL_WATERS' , 'MEDIEVAL_NAVAL_MELEE_PRODUCTION_CPLMOD' ),
+	('POLICY_INTERNATIONAL_WATERS' , 'MEDIEVAL_NAVAL_RAIDER_PRODUCTION_CPLMOD'),
+	('POLICY_INTERNATIONAL_WATERS' , 'MEDIEVAL_NAVAL_RANGED_PRODUCTION_CPLMOD'),
+	('POLICY_PRESS_GANGS'          , 'MEDIEVAL_NAVAL_MELEE_PRODUCTION_CPLMOD' ),
+	('POLICY_PRESS_GANGS'          , 'MEDIEVAL_NAVAL_RAIDER_PRODUCTION_CPLMOD'),
+	('POLICY_PRESS_GANGS'          , 'MEDIEVAL_NAVAL_RANGED_PRODUCTION_CPLMOD');
 
 --==========
 --NORWAY
@@ -210,20 +236,8 @@ INSERT INTO BeliefModifiers ( BeliefType , ModifierId )
 	( 'BELIEF_GOD_OF_WAR' , 'GOD_OF_WAR_AND_PLUNDER_COMHUB' ),
 	( 'BELIEF_GOD_OF_WAR' , 'GOD_OF_WAR_AND_PLUNDER_HARBOR' ),
 	( 'BELIEF_GOD_OF_WAR' , 'GOD_OF_WAR_AND_PLUNDER_ENCAMP' );
--- Goddess of the Hunt gives +2 Food and +2 Gold per camp
+-- Goddess of the Hunt gives +2 Food
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='GODDESS_OF_THE_HUNT_CAMP_FOOD_MODIFIER' AND Name='Amount';
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
-	VALUES ('GODDESS_OF_THE_HUNT_CAMP_GOLD' , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER' , 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
-	VALUES ('GODDESS_OF_THE_HUNT_CAMP_GOLD_MODIFIER' , 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD' , 'PLOT_HAS_CAMP_REQUIREMENTS');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES ('GODDESS_OF_THE_HUNT_CAMP_GOLD' , 'ModifierId' , 'GODDESS_OF_THE_HUNT_CAMP_GOLD_MODIFIER');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES ('GODDESS_OF_THE_HUNT_CAMP_GOLD_MODIFIER' , 'YieldType' , 'YIELD_GOLD');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES ('GODDESS_OF_THE_HUNT_CAMP_GOLD_MODIFIER' , 'Amount' , '2');
-INSERT INTO BeliefModifiers (BeliefType , ModifierId)
-	VALUES ('BELIEF_GODDESS_OF_THE_HUNT' , 'GODDESS_OF_THE_HUNT_CAMP_GOLD');
 -- Goddess of Festivals gives +2 Food per plantation
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='GODDESS_OF_FESTIVALS_PLANTATION_TAG_FOOD_MODIFIER' AND Name='Amount';
 
@@ -1013,6 +1027,7 @@ UPDATE Building_YieldChanges SET YieldChange=8 WHERE BuildingType='BUILDING_RESE
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType="DISTRICT_ACROPOLIS";
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' 		AND DistrictType="DISTRICT_CAMPUS";
 UPDATE District_CitizenYieldChanges SET YieldChange=5 WHERE YieldType='YIELD_GOLD' 			AND DistrictType="DISTRICT_COMMERCIAL_HUB";
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' 			AND DistrictType="DISTRICT_COTHON";
 UPDATE District_CitizenYieldChanges SET YieldChange=2 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType="DISTRICT_ENCAMPMENT";
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType="DISTRICT_HANSA";
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' 			AND DistrictType="DISTRICT_HARBOR";
@@ -1022,6 +1037,7 @@ UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_PRO
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_FAITH' 		AND DistrictType="DISTRICT_LAVRA";
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' 			AND DistrictType="DISTRICT_ROYAL_NAVY_DOCKYARD";
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' 		AND DistrictType="DISTRICT_SEOWON";
+UPDATE District_CitizenYieldChanges SET YieldChange=5 WHERE YieldType='YIELD_GOLD' 			AND DistrictType="DISTRICT_SUGUBA";
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType="DISTRICT_THEATER";
 
 

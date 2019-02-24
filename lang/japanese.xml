@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<!---->
-		<!---->		
-		<!---->
-		<!---->
-		<!--===============   J A P A N E S E   ===============-->
-		<!--===============   J A P A N E S E   ===============-->
-		<!--===============   J A P A N E S E   ===============-->
-		<!--===============   J A P A N E S E   ===============-->
+		<!---------------======== GATHERING STORM ========------------------->
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>占領下の都心に、守備隊がいると1ターンにつき+5の忠誠値。奇襲戦争を宣言しても戦争による[ICON_STAT_GRIEVANCE]不平と好戦性ペナルティが増加しない（正式な宣戦布告と同じ。）。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>宗教を設立するときに追加の信仰を獲得できる。開拓者と労働者は移動力[ICON_Movement]+1。宗教を創始しており、インドと戦争状態ではない文明（インドを含む）と遭遇すると、そのつど+5[ICON_Faith]信仰力と+1[ICON_Favor]外交支持。ガンジーを相手に戦う文明は、戦争による疲労が2倍になる。</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>都市を発展させるローマ固有の区域。用水路に取ってかわり、より安価に建設できる。隣接している異なる区域1つにつき[ICON_Culture]文化+1。[NEWLINE][NEWLINE]隣接する川、湖、オアシス、山岳から真水を都市にもたらす。都市に真水がまだ供給されていなかった場合は最大で[ICON_Housing]住宅+6を獲得。真水がすでに引かれている都市は[ICON_Housing]住宅+2。地熱孔に隣接していると[ICON_Afix]快適性+1。いずれの場合も浴場の特別ボーナスとして[ICON_Housing] 住宅+2、[ICON_Afix]快適性+1。干ばつ中に[ICON_Food]食糧が失われない。都心に隣接している必要がある。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>通常より早い段階で艦隊と大艦隊を編成できる（傭兵と重商主義）。大陸間にまたがる[ICON_TradeRoute]交易路が存在する場合、他文明と結ばれた交易路には[ICON_Gold]ゴールドのボーナス、自分の都市同士を結ぶ交易路には[ICON_Food]食糧と[ICON_Production]生産力のボーナスが発生する。最初の[ICON_Capital]首都と異なる大陸に位置する都市の都心に隣接していると、その都市でのターン毎の忠誠心+2。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>伝道者に対するコスト-30％。審問官は一回多く審問を行うことができ、完全にほかの宗教を排除できる。全てのユニットは、異なる宗教を信奉する文明のユニットと戦闘する時に戦闘力[ICON_Strength]+4。</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="ja_JP">
+			<Text>キャンプから食糧[ICON_Food]+2。</Text>
+		</Replace>
+		<!----------------======  LATEST VERSION  ======---------------->
 		<!-- Khmer -->
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="ja_JP">
 			<Text>川タイルが隣接していることにより{1_num}[ICON_Faith]</Text>
 		</Row>
-		<!-- Greece -->
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="ja_JP">
-			<Text>ギリシャの固有の文化活動をつかさどる区域。劇場広場の区域に取ってかわり、より安価に建設できる。[NEWLINE][NEWLINE]隣接する遺産につき[ICON_Culture]文化力+2のボーナス。区域に隣接している場合、[ICON_Culture]文化力+1。丘陵にのみ建設可能。</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="ja_JP">
-			<Text>隣接する遺産につき[ICON_Culture] 文化+2。 区域に隣接している場合[ICON_Culture]文化力+1。丘陵にのみ建設可能。</Text>
-		</Replace>
 		<!-- Norway -->
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="ja_JP">
 			<Text>隣接する沿岸/湖タイルに１つにつき{1_num} [ICON_Faith]信仰力+1。</Text>
@@ -61,21 +66,8 @@
 			<Text>エジプト固有の太古の長距離戦闘ユニット。開けた地形から移動をはじめると[ICON_Movement]移動力4。</Text>
 		</Replace>
 		<!-- Rome -->
-		<Replace Tag="LOC_DISTRICT_BATH_DESCRIPTION" Language="ja_JP">
-			<Text>都市を発展させるローマ固有の区域。用水路に取ってかわり、より安価に建設できる。隣接する区域から[ICON_Culture]文化力+1。[NEWLINE][NEWLINE]隣接する川、湖、オアシス、山岳から真水を都市にもたらす。都市に真水がまだ供給されていなかった場合は最大で [ICON_Housing] 住宅6を獲得。真水がすでに引かれている都市は [ICON_Housing] 住宅+2。いずれの場合も浴場の特別ボーナスとして [ICON_Housing] 住宅+2、 [ICON_Amenities] 快適性+1。都心に隣接している必要がある。</Text>
-		</Replace>
-		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="ja_JP">
-			<Text>隣接する区域タイル1つごとに、[ICON_Culture]文化力+1。</Text>
-		</Row>
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="ja_JP">
 			<Text>古代の帝国解禁後新たに建設されたすべての都市に最初から都心に都心建造物（太古の場合はモニュメント）が1つ追加されている。</Text>
-		</Replace>
-		<!-- Spain -->
-		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION" Language="ja_JP">
-			<Text>宣教師の購入に必要な [ICON_FAITH] 信仰力-30%。審問官が異端の排除を1回多くおこなえる。異なる宗教を信奉するプレイヤーとの戦闘時に、ユニットが [ICON_Strength] 戦闘力+4のボーナスを得る。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION1_DESCRIPTION" Language="ja_JP">
-			<Text>通常より早い段階で艦隊や大艦隊を編成できる (傭兵、重商主義)。大陸と大陸にまたがる [ICON_TradeRoute] 交易路が存在する場合、他文明と結ばれた交易路には [ICON_Gold] ゴールドのボーナス、自国の都市同士を結ぶ交易路には [ICON_Food] 食料と [ICON_Production] 生産力のボーナスが発生する。最初の [ICON_Capital] 首都があるのと違う大陸の都市は、都心に伝道所が隣接しているとターン毎の忠誠心+2。</Text>
 		</Replace>
 		<!-- Gov -->
 		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="ja_JP">
@@ -101,10 +93,6 @@
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ja_JP">
 			<Text>軍事ユニットはこの宗教を信仰している他文明の近くで戦闘力[ICON_Strength]+7 を得る。</Text>
-		</Replace>
-		<!-- Defender of the Faith Religion -->
-		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="ja_JP">
-			<Text>戦闘ユニットはこの宗教を信仰している自文明の国境内で+4 [ICON_Strength]戦闘力を得る。</Text>
 		</Replace>
 		<!-- God of the Forge Pantheon -->
 		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="ja_JP">

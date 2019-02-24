@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<!---->
-		<!---->		
-		<!---->
-		<!---->
-		<!--===============   R U S S I A N   ===============-->
-		<!--===============   R U S S I A N   ===============-->
-		<!--===============   R U S S I A N   ===============-->
-		<!--===============   R U S S I A N   ===============-->
+		<!---------------======== GATHERING STORM ========------------------->
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>+5 лояльность за ход в захваченных городах с гарнизоном. Объявленная внезапная война считается официальной войной при расчете [ICON_STAT_GRIEVANCE] претензий  и милитаризма.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Дополнительное верование при основании Религии. Поселенцы и Строители получают +1 [ICON_Movement] ОП. + 5 [ICON_Faith] Веры и +1 [ICON_Favor] ед. мирового влияния в ход за каждую известную им цивилизацию (включая Индию), которая основала Религию и в настоящее время не воюет. Враждебные цивилизации , воюющие с Ганди, получают в два раза больше усталости от войны.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный римский район, который заменяет Акведук и дешевле в строительстве. +1 [ICON_Culture] культура за каждый соседний район. [NEWLINE] Поставляет в город пресную воду из соседней реки, озера, оазиса или с гор. Города без начального доступа к пресной воде получают до 6 [ICON_Housing] ед. жилья. Города с изначальным доступом к пресной воде получают +2 [ICON_Housing] ед. жилья. Если построено по соседству с геотермальным полем, то получает + 1 [ICON_Amenities] к довольству. бани всегда дают дополнительный бонус +2 [ICON_Housing] к жилью и + 1 [ICON_Amenities] к довольству. Предотвращает потери [ICON_Food]  пищи во время засухи. Можно построить только рядом с центром города.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Можно создавать флоты и армады раньше обычного (Наемники и Меркантилизм). Бонусы от межконтинентальных [ICON_TradeRoute] торговых путей ( в [ICON_Gold] золоте, если к другим цивилизациям; в [ICON_Food] пище и [ICON_Production] производстве, если внутри страны. +2 лояльности за ход, если рядом с центром города построена миссия, а сам город не находится на континенте, где расположена [ICON_Capital] столица.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Стоимость миссионеров снижена на 30%. Инквизиторы могут очищать от ереси на 1 раз больше. Инквизиторы ликвидируют присутствие других религий на 100%. боевые юниты получают + 4 [ICON_Strength] боевой мощи против игроков с другой религией.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="ru_RU">
+			<Text>+2 [ICON_Food] от лагерей.</Text>
+		</Replace>
+		<!----------------======  LATEST VERSION  ======---------------->
 		<!-- Khmer -->
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="ru_RU">
 			<Text>+{1_num} [ICON_Faith] веры от речки.</Text>
 		</Row>
-		<!-- Greece -->
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный район Греции для развития культуры. Заменяет театральную площадь, дешевле в строительстве. [NEWLINE][NEWLINE]Бонус +2 к [ICON_Culture] культуре за каждое чудо света рядом. Бонус +1 к [ICON_Culture] культуре за каждый соседний район и центр города. Можно построить только на холмах.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="ru_RU">
-			<Text>Соседство: +2 [ICON_Culture] культуры за каждое соседнее чудо. +1 [ICON_Culture] культуры за каждый соседний район и центр города. Можно построить только на холмах.</Text>
-		</Replace>
 		<!-- Norway -->
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="ru_RU">
 			<Text>+{1_num} [ICON_Faith] веры от берега.</Text>
@@ -58,21 +63,11 @@
 			<Text>Египетская уникальная тяжёлая кавалерия древней эпохи. 4 [ICON_Movement] ОП, если ход начат в открытой местности.</Text>
 		</Replace>
 		<!-- Rome -->
-		<Replace Tag="LOC_DISTRICT_BATH_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный район Рима, способствующий росту города. Заменяет акведук и быстрее строится. +1 [ICON_Culture] культуры за каждый соседний район.[NEWLINE][NEWLINE]Обеспечивает город питьевой водой от соседних реки, озера, оазиса или горы. Города без питьевой воды увеличивают соответствующий бонус к [ICON_Housing] жилью до 6. Города с питьевой водой получат +2 [ICON_Housing] жилья. В дополнение к вышеперечисленному, купальня предоставляет +2 [ICON_Housing] жилья и +1 [ICON_Amenities] довольства. Можно построить только рядом с центром города.</Text>
-		</Replace>
 		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="ru_RU">
 			<Text>Соседство: +1 [ICON_Culture] культуры за каждый соседний район.</Text>
 		</Row>
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="ru_RU">
 			<Text>После открытия ранней империи при основании новых городов в них сразу появляется монумент.</Text>
-		</Replace>
-		<!-- Spain -->
-		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION" Language="ru_RU">
-			<Text>Скидка 30% при покупке миссионеров за [ICON_FAITH] веру. Инквизиторы имеют дополнительный заряд на изгнание ереси. Боевые юнит получают +4 к [ICON_Strength] боевой мощи при войне с игроками с другой доминирующей религией.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION1_DESCRIPTION" Language="ru_RU">
-			<Text>Получает возможность строить флотильи и армады раньше (при изучении наёмников и меркантилизма соответственно). ICON_TradeRoute] торговые пути между континентами получают дополнительное [ICON_Gold] золото, если направлены в чужие цивилизации, а если в свои - дополнительные [ICON_Food] пищу и [ICON_Production] производство. +2 лояльности в ход в городах с построенной миссией рядом с центром города, если город не на континенте вашей [ICON_Capital] столицы.</Text>
 		</Replace>
 		<!-- Gov -->
 		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="ru_RU">
@@ -97,10 +92,6 @@
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ru_RU">
 			<Text>Военные юниты получают +7 [ICON_Strength] боевой мощи на территории иностранных городов, исповедующими эту религию.</Text>
-		</Replace>
-		<!-- Defender of the Faith Religion -->
-		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="ru_RU">
-			<Text>Военные юниты получают +4 [ICON_Strength] боевой мощи на территории дружественных городов, исповедующих эту религию.</Text>
 		</Replace>
 		<!-- God of the Forge Pantheon -->
 		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="ru_RU">

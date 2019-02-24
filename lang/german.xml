@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<!---->
-		<!---->		
-		<!---->
-		<!---->
-		<!--===============   G E R M A N   ===============-->
-		<!--===============   G E R M A N   ===============-->
-		<!--===============   G E R M A N   ===============-->
-		<!--===============   G E R M A N   ===============-->
+		<!---------------======== GATHERING STORM ========------------------->
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>+5 Loyalität pro Runde in besetzten Städten mit Garnisionseinheit. Das Erklären eines Überraschungskrieges zählt nur bezüglich [ICON_STAT_GRIEVANCE] Groll und Kriegstreiberei als formeller Krieg.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Gewährt einen zusätzlichen Glaubenssatz, beim Gründen der Religion. Siedler und Handwerker erhalten +1 [ICON_Movement] Fortbewegungspunkt. +5 [ICON_Faith] Glauben und +1 [ICON_Favor] Diplomatische Gunst pro Runde für jede getroffene Zivilisation(einschließlich Indien), die eine Religion gegründet hat und sich nicht im Krieg befindet. Feindliche Zivilisationen erhalten die doppelte Kriegsmüdigkeit beim Kampf gegen Gandhi.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Ein Bezirk, der das Wachstum der Stadt fördert. Steht nur Rom zur Verfügung. Ersetzt das Aquädukt und ist günstiger im Bau. +1 [ICON_Culture] Kultur für jeden angrenzenden Bezirk.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzenden Fluss, See, Berg oder einer angrenzenden Oase. Städte ohne Süßwasserwuelle erhalten bis zu 6 [ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben, erhalten stattdessen +2 [ICON_Housing] Wohnraum. +1 [ICON_Amenities] Annehmlichkeit beim Bau neben einem geothermischen Riss. In allen Fällen bietet ein Bad einen zusätzlichen Bonus von +2 [ICON_Housing] Wohnraum +1 [ICON_Amenities] Annehmlichkeit. Verhindert [ICON_Food] Nahrungsverlust während einer Dürre. Muss ans Stadtzentrum angrenzen.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Erstellt Flotten und Armadas früher als normal (Söldner und Merkantilismus). Kontinente verbindende [ICON_TradeRoute] Handelswege zu anderen Zivilisationen erhalten einen [ICON_Gold] Gold-Bonus und zu Euren eigenen Städten [ICON_Food] Nahrungs- und [ICON_Production] Produktions-Bonusse. +2 Loyalität pro Runde für Städte mit einer ans Stadtzentrum angrenzenden Missionsmodernisierung, die nicht auf dem Kontinent Eurer ursprünglichen [ICON_Capital] Hauptstadt liegen.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Missionare kosten 30% [ICON_FAITH] Glauben weniger. Inquisitoren können ein zusätzliches Mal Ketzerei entfernen. Inquisitoren eliminieren 100% der Anwesenheit anderer Religionen. +4 [ICON_Strength] Kampfstärke gegen Spieler, die anderen Religionen folgen.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="de_DE">
+			<Text>+2 [ICON_Food] Nahrung von Jagdlagern.</Text>
+		</Replace>
+		<!----------------======  LATEST VERSION  ======---------------->
 		<!-- Khmer -->
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="de_DE">
 			<Text>+{1_num} [ICON_Faith] Glaube von Flüssen.</Text>
 		</Row>
-		<!-- Greece -->
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="de_DE">
-			<Text>Ein ausschließlich Griechenland zur Verfügung stehender Bezirk für Kulturstätten. Ersetzt den Theaterplatz-Bezirk und ist günstiger im Bau.[NEWLINE][NEWLINE]+2 [ICON_Culture] Kulturbonus für jedes angrenzende Wunder. +1 [ICON_Culture] Kultur für jeden angrenzenden Bezirk. Kann nur auf Hügeln errichtet werden.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="de_DE">
-			<Text>Nachbarschaftsbonus: +2 [ICON_Culture] Kultur für jedes angrenzende Wunder. +1 [ICON_Culture] Kultur für jeden angrenzenden Bezirk. Kann nur auf Hügeln errichtet werden	.</Text>
-		</Replace>
 		<!-- Norway -->
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="de_DE">
 			<Text>+{1_num} [ICON_Faith] Glauben von Küsten.</Text>
@@ -58,21 +63,11 @@
 			<Text>Spezielle Fernkampfeinheit der Ägypter der Antike. 4 [ICON_Movement] Fortbewegung bei Start in offenem Gelände.</Text>
 		</Replace>
 		<!-- Rome -->
-		<Replace Tag="LOC_DISTRICT_BATH_DESCRIPTION" Language="de_DE">
-			<Text>Ein nur Rom zur Verfügung stehender Bezirk, der das Wachstum der Stadt fördert. Ersetzt das Aquädukt und ist günstiger im Bau. +1 [ICON_Culture] Kultur für jeden angrenzenden Bezirk.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzenden Fluss,See,Berg oder einer angrenzenden Oase. Städte ohne Süßwasserquelle erhalten bis zu 6 [ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben, erhalten stattdessen +2 [ICON_Housing] Wohnraum. In allen Fällen bietet ein Bad einen zusätzlichen Bonus von +2 [ICON_Housing] Wohnraum und +1 [ICON_Amenities] Annehmlichkeit. Muss ans Stadtzentrum angrenzen.</Text>
-		</Replace>
 		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="de_DE">
 			<Text>Nachbarschaftsbonus: +1 [ICON_Culture] Kultur für jeden angrenzenden Bezirk.</Text>
 		</Row>
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="de_DE">
 			<Text>Nach dem Freischalten von Frühes Reich, starten alle Städte mit einem kostenlosen Monument.</Text>
-		</Replace>
-		<!-- Spain -->
-		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION" Language="de_DE">
-			<Text>Missionare kosten 30% [ICON_FAITH] Glauben weniger. Inquisitoren können ein zusätzliches Mal Ketzerei entfernen. Kampfeinheiten haben einen Bonus von +4 [ICON_Strength] Kampfstärke gegen Spieler, die anderen Religionen folgen.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION1_DESCRIPTION" Language="de_DE">
-			<Text>Erstellt Flotten und Armadas aus Marineeinheiten früher als normal (Söldner und Merkantilismus). Kontinente verbindende [ICON_TradeRoute] Handelswege zu anderen Zivilisationen erhalten einen [ICON_Gold] Gold-Bonus und zu Euren eigenen Städten [ICON_Food] Nahrungs- und [ICON_Production] Produktionsbonusse. +2 Loyaltität pro Runde für Städte mit einer ans Stadtzentrum angrenzenden Missionsmodernisierung, die nicht auf dem Kontinent Eurer ursprünglichen [ICON_Capital] Hauptstadt liegen.</Text>
 		</Replace>
 		<!-- Gov -->
 		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="de_DE">
@@ -85,9 +80,6 @@
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_GreatPerson] Große-Persönlichkeit-Punkte von Lager- (General), Hafen- (Admiral) und Handelszentrum- (Merchant) Bezirken.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="de_DE">
-			<Text>+2 [ICON_Food] Nahrung und +2 [ICON_GOLD] Gold von Jagdlagern.</Text>
-		</Replace>	
 		<Replace Tag="LOC_BELIEF_GODDESS_OF_FESTIVALS_DESCRIPTION" Language="de_DE">
 			<Text>+2 [ICON_Food] Nahrung von [ICON_RESOURCE_WINE] Wein-, [ICON_RESOURCE_INCENSE] Räucherwerk-, [ICON_RESOURCE_COCOA] Kakao-, [ICON_RESOURCE_TOBACCO] Tabak-, [ICON_RESOURCE_OLIVES] Oliven-, [ICON_RESOURCE_COFFEE] Kaffee- und [ICON_RESOURCE_TEA] Tee-Plantagen.</Text>
 		</Replace>
@@ -101,10 +93,6 @@
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="de_DE">
 			<Text>Kampfeinheiten erhalten +7 [ICON_Strength] bei fremden Städten mit dieser Religion.</Text>
-		</Replace>
-		<!-- Defender of the Faith Religion -->
-		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="de_DE">
-			<Text>Kampfeinheiten erhalten +4 [ICON_Strength] Kampfstärke innerhalb der Grenzen von freundlich gesinnten Städten mit dieser Religion.</Text>
 		</Replace>
 		<!-- God of the Forge Pantheon -->
 		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="de_DE">

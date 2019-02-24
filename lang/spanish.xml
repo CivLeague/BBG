@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<!---->
-		<!---->		
-		<!---->
-		<!---->
-		<!--===============   S P A N I S H   ===============-->
-		<!--===============   S P A N I S H   ===============-->
-		<!--===============   S P A N I S H   ===============-->
-		<!--===============   S P A N I S H   ===============-->
+		<!---------------======== GATHERING STORM ========------------------->
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>+5 Lealtad por turno en las ciudades ocupadas con una unidad en la guarnición. Declarar una guerra por sorpresa cuenta como guerra formal con el fin de  [ICON_STAT_GRIEVANCE] Quejas y hastío bélico.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>Otorga una creencia extra cuando se funda una religión. Colonos y Constructores reciben +1 [ICON_Movement] Movimiento. +5 [ICON_Faith] Fé y +1 [ICON_Favor] Favor Diplomático por turno por cada civilización (incluyendo India) que haya conocido y haya fundado una religión y no esté en guerra. Otras civilizaciones reciben el doble de hastío bélico al luchar contra Gandhi.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>Un distrito único de Roma que reemplaza el Acueducto y es mas barato de construir. +1 [ICON_Culture] Cultura por cada distrito adyacente. [NEWLINE][NEWLINE]It proporciona agua dulce a esta ciudad de un rio, lago, oasis o montaña. Las ciudades que no dispongan de agua dulce reciben hasta 6[ICON_Housing] Alojamiento. Las ciudades que ya dispongan de agua dulce solamente recibirán +2 [ICON_Housing] alojamiento. Si se construye adyacente a una fisura geotérmica, +1 [ICON_Amenities] Servicios. En todos los casos el Bath otorga +2 [ICON_Housing] Alojamientos adicionales y  +1 [ICON_Amenities] Servicios. Previene perdidas de [ICON_Food] Alimentos durante una sequía. Debe construirse adyacente al centro urbano.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>Puede formar Flotas y Armadas antesde lo normal (Mercenarios y Mercantilismo).[ICON_TradeRoute] Las rutas comerciales entre diferentes continentes reciben bonus en [ICON_Gold] Oro al mantener rutas con otras civilizaciones, y bonus en [ICON_Food] Alimentos y [ICON_Production] Producción a las rutas entre tus propias ciudades.+2 de lealtad por turno a las ciudades con la mejora de Misiones adyacentes al centro urbano y que no sea el continente de tu [ICON_Capital] capital.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>30% [ICON_FAITH] Descuento de fé al reclutar misioneros. Los inquisidores pueden remover Herejía una vez más y eliminar el 100% de presencia de otras religiones. Las unidades de combate obtienen un bonus de +4 [ICON_Strength] Fuerza contra civilizaciones que sigan otra religión.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="es_ES">
+			<Text>+2 [ICON_Food] Alimentos de campamentos.</Text>
+		</Replace>
+		<!----------------======  LATEST VERSION  ======---------------->
 		<!-- Khmer -->
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="es_ES">
 			<Text>+{1_num} [ICON_Faith] Fe por el río.</Text>
 		</Row>
-		<!-- Greece -->
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="es_ES">
-			<Text>Un distrito único de Grecia para sitios culturales. Reemplaza el distrito de teatro y es más barato de construir.[NEWLINE][NEWLINE]+2 [ICON_Culture] Cultura por cada maravilla adyacente. +1 [ICON_Culture] Cultura por cada distrito adyacente. Solo se puede construir en colinas.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="es_ES">
-			<Text>Adjacency: +2 [ICON_Culture] Cultura por cada maravilla adyacente. +1 [ICON_Culture] Cultura por cada distrito adyacente. Solo puede construirse en colinas.</Text>
-		</Replace>
 		<!-- Norway -->
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="es_ES">
 			<Text>+{1_num} [ICON_Faith] Fe por costa.</Text>
@@ -61,21 +66,11 @@
 			<Text> Unidad a distancia única de Egipto de la edad Antigua. 4 [ICON_Movement] Movimiento cuando empieza en terreno abierto.</Text>
 		</Replace>
 		<!-- Rome -->
-		<Replace Tag="LOC_DISTRICT_BATH_DESCRIPTION" Language="es_ES">
-			<Text>Un distrito único de Roma para el crecimiento poblacional. Reemplaza el acueducto y es más barato de construir. +1 [ICON_Culture] Cultura pr cada distrito adyacente.[NEWLINE][NEWLINE]Provee a esta ciudad con una fuente de agua fresca de un río, lago, oasis o montaña adyacente. Las ciudades que no cuentan ya con una fuente de agua fresca reciben hasta 6 [ICON_Housing] Alojamiento. Las ciudades que ya cuentan con agua fresca consiguen en cambio +2 [ICON_Housing] Alojamiento. En cualquier caso, las Termas proveen un bonus adicional de +2 [ICON_Housing] Alojamiento y +1 [ICON_Amenities] Amenidades. Debe construirse adyacente al Centro Urbano.</Text>
-		</Replace>
 		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="es_ES">
 			<Text>Adjacency: +1 [ICON_Culture] Cultura por cada distrito adyacente.</Text>
 		</Row>
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="es_ES">
 			<Text>Despues de desbloquear el principio Imperio Inicial, las cuidades fundadas desde ese momento empiezan con un monumento gratis.</Text>
-		</Replace>
-		<!-- Spain -->
-		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION" Language="es_ES">
-			<Text>30% al comprar misionarios con [ICON_FAITH] Fe. Los inquisidores pueden remover la herejía una vez más. Las unidades de combate tienen un bonus de +4 [ICON_Strength] Fuerza de combate contra jugadores siguiendo otras religiones.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION1_DESCRIPTION" Language="es_ES">
-			<Text>Puede formar Flotas y Armadas antes  de lo normal (Mercenaries and Mercantilism). Las [ICON_TradeRoute] Rutas comerciales entre diferentes continentes reciben extra [ICON_Gold] Oro por rutas a otras civilizaciones, y un bonus de [ICON_Food] comida y [ICON_Production] Producción en rutas entre tus propias ciudades. +2 de Lealtad por turno en ciudades con una mejora de casilla de misión adyacente al Centro Urbano y no en el continente de tu [ICON_Capital] Capital original.</Text>
 		</Replace>
 		<!-- Gov -->
 		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="es_ES">
@@ -98,10 +93,6 @@
 		<!-- -->
 		<!-- -->
 		<!-- -->
-		<!-- Defender of the Faith Religion -->
-		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="es_ES">
-			<Text>Las unidades de combate obtienen +4 a la Fuerza de combate [ICON_Strength] cuando están dentro de las fronteras de las ciudades amistosas que sigan esta religión.</Text>
-		</Replace>
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="es_ES">
 			<Text>Las unidades de combate obtienen +7 a la Fuerza de combate [ICON_Strength] cerca de las ciudades extranjeras que sigan esta religión.</Text>
