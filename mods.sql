@@ -70,7 +70,7 @@ UPDATE Buildings SET Cost=100 WHERE BuildingType='BUILDING_TLACHTLI';
 --==================
 -- Brazil
 --==================
-UPDATE Units SET AntiAirCombat=95 WHERE UnitType='UNIT_BRAZILIAN_MINAS_GERAES';
+UPDATE Units SET AntiAirCombat=90 WHERE UnitType='UNIT_BRAZILIAN_MINAS_GERAES';
 
 --==================
 -- Canada
@@ -1584,9 +1584,9 @@ UPDATE Units_XP2 SET ResourceMaintenanceAmount=0 , ResourceCost=40 , ResourceMai
 UPDATE Units SET StrategicResource ='RESOURCE_NITER'  WHERE UnitType='UNIT_INFANTRY';
 UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_PRIVATEER';
 UPDATE Units SET PrereqTech='TECH_STEEL' WHERE UnitType='UNIT_ANTIAIR_GUN';
-UPDATE Units SET AntiAirCombat=90 WHERE UnitType='UNIT_BATTLESHIP';
-UPDATE Units SET AntiAirCombat=90 WHERE UnitType='UNIT_DESTROYER';
-UPDATE Units SET AntiAirCombat=110 WHERE UnitType='UNIT_MISSILE_CRUISER';
+UPDATE Units SET AntiAirCombat=85 WHERE UnitType='UNIT_BATTLESHIP';
+UPDATE Units SET AntiAirCombat=85 WHERE UnitType='UNIT_DESTROYER';
+UPDATE Units SET AntiAirCombat=105 WHERE UnitType='UNIT_MISSILE_CRUISER';
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
 	VALUES ('SIEGE_DEFENSE_BONUS_VS_RANGED_COMBAT', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'SIEGE_DEFENSE_REQUIREMENTS');
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
