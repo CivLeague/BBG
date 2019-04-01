@@ -1180,8 +1180,6 @@ UPDATE ModifierArguments SET Value='50' WHERE ModifierId='COMPUTERS_BOOST_ALL_TO
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='ENVIRONMENTALISM_BOOST_ALL_TOURISM'; 
 -- base wonder tourism adjusted to 5
 UPDATE GlobalParameters SET Value='5' WHERE Name='TOURISM_BASE_FROM_WONDER';
--- double tourism from improvements
-UPDATE Improvement_Tourism SET ScalingFactor=200;
 -- Reduce amount of tourism needed for foreign tourist from 200 to 150
 UPDATE GlobalParameters SET Value='150' WHERE Name='TOURISM_TOURISM_TO_MOVE_CITIZEN';
 -- no longer have to wait any number of turns to move greatworks between cities

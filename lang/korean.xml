@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="ko_KR">
+            <Text>호수로 보이는 타일 두 개의 자연경관입니다. [ICON_Food] 식량 +2, [ICON_PRODUCTION] 생산력 +1, [ICON_CULTURE] 문화 +2, [ICON_GOLD] 금 +2을 제공합니다. 담수를 제공하지 않습니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="ko_KR">
+            <Text>호수로 보이는 타일 두 개의 자연경관입니다. [ICON_Food] 식량 +2, [ICON_Faith] 신앙 +2, [ICON_Culture] 문화 +2 만큼 제공합니다. 유닛이 사해에 인접하여 체력을 회복하는 경우 1턴 내에 체력이 완전히 회복됩니다. 담수를 제공하지 않습니다.</Text>
+        </Replace>
+		<Replace Tag="LOC_ALL_PARK_COMBAT_BONUS_DESCRIPTION" Language="ko_KR">
+			<Text>국립공원에서 4타일 이내에 있는 경우 전투력 +{1_Amount}</Text>
+		</Replace>
+		<Replace Tag="LOC_OWNER_PARK_COMBAT_BONUS_DESCRIPTION" Language="ko_KR">
+			<Text>플레이어가 소유한 국립공원에서 4타일 이내에 있는 경우 전투력 +{1_Amount}</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="ko_KR">
+			<Text>고대 성벽을 대체하는 조지아 특유의 건물입니다. 고대 성벽보다 외곽 방어 능력이 높습니다. 보존 사회 제도로 발전 후 [ICON_TOURISM] 관광 +3이 제공됩니다. [ICON_Faith] 신앙 +4를 제공합니다. 황금기의 경우 [ICON_TOURISM] 관광 및 [ICON_FAITH] 신앙 +100%입니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="ko_KR">
+			<Text>모든 해군 유닛 및 지상 군사 유닛 생산 시 [ICON_Production] 생산력 25%를 제공합니다. 유닛별로 매 턴당 소모되는 관리 비용의 [ICON_Gold] 금 -1.[NEWLINE]보상으로 [Icon_Governor] 총독 타이틀 +1 및 전략 자원 비축력이 +15 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GOBUSTAN_DESCRIPTION" Language="ko_KR">
+			<Text>타일 3개의 자연경관입니다. [ICON_CULTURE] 문화 +4와 [ICON_Production] 생산력 +4를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_WHITEDESERT_DESCRIPTION" Language="ko_KR">
+			<Text>타일 4개의 자연경관입니다. [ICON_SCIENCE] 과학 +2, [ICON_Culture] 문화 +2, [ICON_GOLD] 금 +6을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_CHOCOLATEHILLS_DESCRIPTION" Language="ko_KR">
+			<Text>타일 4개의 자연경관입니다. [ICON_Food] 식량 +3, [ICON_Production] 생산력 +3, [ICON_Science] 과학 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_DEVILSTOWER_DESCRIPTION" Language="ko_KR">
+			<Text>통과할 수 없는 타일 1개의 자연경관입니다. 인접 타일에 [ICON_FAITH] 신앙 +2와 [ICON_Production] 생산력 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ko_KR">
+			<Text>성지 및 송수로 특수지구의 건설 시간이 반으로 감소합니다. 성지를 강에 배치할 경우 [ICON_FOOD] 식량 +2, [ICON_FAITH] 신앙 +2 및 [ICON_HOUSING] 주거공간 +1을 제공합니다. 성지는 문화 폭탄을 유발합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="ko_KR">
+            <Text>모든 지상 전투 유닛 및 종교 유닛의 [ICON_Movement] 이동력 +1.</Text>
+        </Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="ko_KR">
+			<Text>도시의 극장가 건물 건설에 대한 [ICON_Production] 생산력 +100%를 제공합니다. 엘레오노르의 도시에 있는 각 걸작 때문에 9타일 내의 외국 타일에서 턴당 충성심 -1이 발생합니다. 충성심을 잃어 다른 문명을 떠났고 현재 엘레오노르의 문명에서 가장 많은 턴당 충성심을 얻고 있는 문명은 자유 도시 단계를 생략하고 이 문명에 합류할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="ko_KR">
+            <Text>공성 유닛 생성 및 방어 건물 건설에 대한 [ICON_Production] 생산력 +100%.</Text>
+        </Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="ko_KR">
+			<Text>인접한 모든 사막 및 언덕 타일마다 도심부가 [ICON_FAITH] 신앙 +1과 [ICON_FOOD] 식량 +1을 얻습니다. 광산이 [ICON_PRODUCTION] 생산력 -1과 [ICON_GOLD] 금 +4를 적용받습니다. [ICON_Faith] 신앙으로 상업 중심지 특수지구 건물을 구매할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ko_KR">
+            <Text>한국 특유의 과학 발전을 위한 특수지구로 캠퍼스 특수지구를 대체합니다. [ICON_SCIENCE] 과학 +2를 제공합니다. 인접한 극장가 특수지구에서 [ICON_CULTURE] 문화 +1의 인접 보너스를 획득합니다. 언덕에 지어야 합니다.</Text>
+        </Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="ko_KR">
+			<Text>인접효과: 인접한 광산 2개당 [ICON_SCIENCE] 과학이 +1 증가합니다. 극장가를 제외한 인접 특수지구 하나당 [ICON_SCIENCE] 과학이 -1 감소합니다. 인접한 극장가 하나당 [ICON_SCIENCE] 과학이 +1 증가합니다. 또한 인접한 극장가에 [ICON_CULTURE] 문화 +1의 인접 보너스를 제공합니다.</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="ko_KR">
+			<Text>인접한 {1_Num : plural 1?극장가; other?극장가;}에서 [ICON_Science] 과학 +{1_num}.</Text>
+		</Row>
+		<Row Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="ko_KR">
+			<Text>인접한 {1_Num : plural 1?서원; other?서원;}에서 [ICON_CULTURE] 문화 +{1_num}.</Text>
+		</Row>		
+		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="ko_KR">
+			<Text>군마를 대체하는 마푸체 특유의 중세 시대 유닛입니다. [ICON_Movement] 이동력이 1 증가하며 약탈에 [ICON_Movement] 이동력 1을 소모합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ANTIAIR_GUN_DESCRIPTION" Language="ko_KR">
+			<Text>현대 시대의 대공 지원 유닛입니다. 무기에서 1타일 범위까지 공중 공격에 대한 방어를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ko_KR">
+			<Text>기병대를 대체하는 헝가리 특유의 산업 시대 유닛입니다. 각 활성 동맹에서 [ICON_Strength] 전투력 +1을 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ko_KR">
+			<Text>도시 국가 동원(징병) 유닛이 능력을 획득하여 [ICON_Strength] 전투력 +5를 얻습니다. 동원 유닛 업그레이드 시 [ICON_GOLD] 금이나 자원이 소비되지 않습니다. 도시 국가의 군대를 동원하면 해당 도시 국가를 통해 [ICON_ENVOY] 사절 2명을 얻습니다. 성 기술을 완료하면 특유 유닛인 검은 군대를 생산할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="ko_KR">
+			<Text>툰드라에서 [ICON_FOOD] 식량 +1을 제공합니다. 툰드라 지형에 농장을 건설할 수 있게 허용합니다. 토목 공학이 잠금 해제된 후에는 툰드라 언덕에 농장을 건설할 수 있습니다. 설원, 설원 언덕, 툰드라 언덕 및 툰드라 타일의 구매 비용이 50% 감소합니다. 축적 자원이 설원, 설원 언덕, 툰드라 언덕과 툰드라 타일에 있는 경우 추출률 +100%를 지닙니다.[NEWLINE][NEWLINE]국립공원을 소유한 도시는 [ICON_FOOD] 식량 +8과 [ICON_PRODUCTION] 생산력 +8을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="ko_KR">
+			<Text>캐나다 특유의 현대 시대 유닛입니다. 국립공원을 조성할 수 있습니다. 국립공원 4타일 이내에서 전투 시 [ICON_Strength] 전투력 +5를 획득합니다. 본인이 소유한 국립공원 4타일 이내에서 전투 시 추가 [ICON_Strength] 전투력 +5를 획득합니다.</Text>
+		</Replace>
 		<!---------------======== GATHERING STORM ========------------------->
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>주둔 유닛이 있는 점령 도시에 턴당 충성심 +5가 부여됩니다. 기습 전쟁의 선포는 [ICON_STAT_GRIEVANCE] 적대감과 전쟁 피로도 유발의 목적으로만 공식 전쟁으로 인정됩니다.</Text>
