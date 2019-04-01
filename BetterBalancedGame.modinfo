@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.0">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.1">
 	<Properties>
-		<Name>Better Balanced Game v3.0</Name>
+		<Name>Better Balanced Game v3.1</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
-		<Teaser>Mods to balance Civ Players' League multiplayer games</Teaser>
+		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
 		<Authors>codenaugh, S1AL</Authors>
 		<SpecialThanks>wazabaza, abstr, priz, kishiko, WhySoHate, Fulesa, cots5, Ignasiuz, ApolloMaster07, ReQuiiieM, Auguthy, bszonye, dexxter</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
@@ -13,6 +13,7 @@
 	
 	<!-- defines file dependencies -->
 	<Files>
+		<File>lang/v3.1.xml</File>
 		<File>lang/english.xml</File>
 		<File>lang/korean.xml</File>
 		<File>lang/russian.xml</File>
@@ -38,6 +39,7 @@
 				<LoadOrder>11609</LoadOrder>
 			</Properties>
 			<Items>
+				<File>lang/v3.1.xml</File>
 				<File>lang/english.xml</File>
 				<File>lang/korean.xml</File>
 				<File>lang/russian.xml</File>
@@ -65,6 +67,7 @@
 				<LoadOrder>11611</LoadOrder>
 			</Properties>
 			<Items>
+				<File>lang/v3.1.xml</File>
 				<File>lang/english.xml</File>
 				<File>lang/korean.xml</File>
 				<File>lang/russian.xml</File>

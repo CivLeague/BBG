@@ -33,7 +33,7 @@
 			<Text>Ermöglicht allen Marine-Nahkampfeinheiten Küstenraub und bietet ihnen +25% [ICON_PRODUCTION] Produktion.[NEWLINE][NEWLINE]Alle Heilge-Stätte-Bezirke und deren Gebäude erhalten +50% [ICON_PRODUCTION] Production. Heilige Stätten erhalten +1 [ICON_PRODUCTION] Produktionsbonus für angrenzende Küsten-Geländefelder.[NEWLINE][NEWLINE] Hafen-Bezirke erhalten neben Heiligen-Stätten einen zusätzlichen +2 [ICON_GOLD] Goldbonus.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="de_DE">
-			<Text>Einheiten können Ozean-Geländefelder befahren, nachdem der Schiffsbau erforscht wurde. Marine-Nahkampfeinheiten heilen auf neutralem Gebiet. Einheiten ignorieren zusätzliche [ICON_Movement] Fortbewegungskosten durch Wassern und Ausschiffen.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold für Internationale Handelsrouten, die von einer Küstenstadt ausgehen.</Text>
+			<Text>Einheiten können Ozean-Geländefelder befahren, nachdem der Schiffsbau erforscht wurde. Marine-Nahkampfeinheiten heilen auf neutralem Gebiet. Einheiten ignorieren zusätzliche [ICON_Movement] Fortbewegungskosten durch Wassern und Ausschiffen.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="de_DE">
 			<Text>Norwegische Spezialeinheit des Mittelalters. +2 [ICON_Movement] Fortbewegungspunkte bei Start in feindlichem Gebiet oder wenn die Einheit gewassert ist. +15 [ICON_Strength] Kampfstärke beim Angreifen.</Text>
@@ -66,13 +66,7 @@
 		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="de_DE">
 			<Text>Nachbarschaftsbonus: +1 [ICON_Culture] Kultur für jeden angrenzenden Bezirk.</Text>
 		</Row>
-		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="de_DE">
-			<Text>Nach dem Freischalten von Frühes Reich, starten alle Städte mit einem kostenlosen Monument.</Text>
-		</Replace>
 		<!-- Gov -->
-		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="de_DE">
-			<Text>+25% [ICON_Production] Produktion für alle Marine- und Landeinheiten. Verringert die Unterhaltskosten der Einheiten um 1 [ICON_GOLD] Gold.[NEWLINE] Verleiht +1 [Icon_Governor] Gouverneur-Titel.</Text>
-		</Replace>
 		<!-- Pantheons -->
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_NAME" Language="de_DE">
 			<Text>Gott des Krieges und Plünderns</Text>
@@ -94,10 +88,6 @@
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="de_DE">
 			<Text>Kampfeinheiten erhalten +7 [ICON_Strength] bei fremden Städten mit dieser Religion.</Text>
 		</Replace>
-		<!-- God of the Forge Pantheon -->
-		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="de_DE">
-			<Text>+15% [ICON_Production] Produktion Für Militäreinheiten der Antike und Klassik.</Text>
-		</Replace>
 		<!-- Goddess of the Harvest Pantheon -->
 		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HARVEST_DESCRIPTION" Language="de_DE">
 			<Text>Der Abbau einer Ressource und das Entfernen einer Geländeart bringen [ICON_Faith] Glauben in 50% der Höhe der Ertragsmenge.</Text>
@@ -105,13 +95,6 @@
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>+50% [ICON_Production] Produktion, wenn Ihr in den letzten 10 Runden eine Stadt befreit habt.</Text>
-		</Replace>
-		<!-- Germany -->
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION" Language="de_DE">
-			<Text>Ein ausschließlich Deutschland zur Verfügung stehender Bezirk für industrielle Aktivitäten. Ersetzt den Industriegebiet-Bezirk und ist günstiger im Bau.[NEWLINE][NEWLINE]+ 2[ICON_Production] Produktionsbonus für ein angrenzendes Handelszentrum. +1 [ICON_Production] Productionbonus für jeweils zwei angrenzende Ressourcen. +1 [ICON_Production] Produktionsbonus für jeweils 2 angrenzende Bezirke.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="de_DE">
-			<Text>Adjacency: +2 [ICON_Production] Produktionsbonus für ein angrenzendes Handelszentrum. +1 [ICON_Production] Produktionsbonus für jeweils 2 angrenzende Ressourcen und Bezirke.</Text>
 		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="de_DE">
@@ -156,7 +139,7 @@
 		</Replace>
 		<!-- Venetian Arsenal -->
 		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="de_DE">
-			<Text>+50% [ICON_Production] Produktion für alle Marineeinheiten in allen Städten. Muss an der Küste und neben einem Industriegebiet-Bezirk gebaut werden.</Text>
+			<Text>+100% [ICON_Production] Produktion für alle Marineeinheiten in allen Städten. Muss an der Küste und neben einem Industriegebiet-Bezirk gebaut werden.</Text>
 		</Replace>
 		<!-- NEW -->
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="de_DE">
@@ -204,11 +187,6 @@
 		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="de_DE"> 
 			<Text>Naturwunder über vier Geländefelder. Es erscheint als Sumpf und bietet +2 [ICON_Food] Nahrung, +2 [ICON_Culture] Kultur, und +2 [ICON_Science] Wissenschaft.</Text>
 		</Replace>
-		<!-- Modified from "New" section -->
-		<!-- Rome -->
-		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="de_DE">
-			<Text>Nach dem Erforschen von "Politische Philosophie" starten alle Städte mit einem kostenlosen Monument.</Text>
-		</Replace>
 		<!-- Scythia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="de_DE">
 			<Text>Leichte, Schwere, und Fernkampf Kavallerie-Einheiten können mit [ICON_FAITH] Glauben gekauft werden</Text>
@@ -241,9 +219,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="de_DE">
 			<Text>Ermöglicht allen Marine-Nahkampfeinheiten Küstenraub und bietet ihnen +25% [ICON_PRODUCTION] Produktion.</Text>
 		</Replace>
-		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="de_DE">
-			<Text>+100% [ICON_Production] Produktion für defensive Gebäude und +50% [ICON_Production] Produktion für Belagerungseinheiten.</Text>
-		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="de_DE">
 			<Text>Ein ausschließlich Griechenland zur Verfügung stehender Bezirk für Kulturstätten. Ersetzt den Theaterplatz-Bezirk und ist günstiger im Bau.[NEWLINE][NEWLINE]+1 [ICON_Culture] Kulturbonus für alle angrenzenden Wunder und Bezirke. Kann nur auf Hügeln errichtet werden.</Text>
 		</Replace>
@@ -251,9 +226,6 @@
 			<Text>Ein zusätzlicher Joker-Politikplatz in jeder Regierung.[NEWLINE][NEWLINE]Jedes Amphitheater gewährt bei Fertigstellung einen Gesandten.</Text>
 		</Replace>
 		<!-- Newest -->
-		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="de_DE">
-			<Text>Alle Landeinheiten und alle religiösen Einheiten erhalten +1 [ICON_Movement] Bewegungspunkt an und auf Heimatterritorium.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION" Language="de_DE">
 			<Text>Alle Bezirke erhalten einen zusätzlichen Standard-Nachbarschaftsbonus für das Angrenzen an einen anderen Bezirk. Handelszentren erhalten nicht länger den Nachbarschaftsbonus durch Flüsse.</Text>
 		</Replace>
@@ -282,9 +254,6 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="de_DE">
 			<Text>Nach dem Erreichen von der Ausrichtung 'Gilden' kann jede Stadt einen Bezirk mehr als normal bauen (und dabei das normale Limit auf [ICON_Citizen] Bevölkerungsbasis überschreiten).</Text>
 		</Replace>
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="de_DE">
-			<Text>Adjacency: +2 [ICON_Production] Produktionsbonus für ein angrenzendes Handelszentrum. +1 [ICON_Production] Produktionsbonus für jeweils 2 angrenzende Ressourcen und Bezirke.</Text>
-		</Replace>
 		<Replace Tag="LOC_UNIT_AMERICAN_ROUGH_RIDER_DESCRIPTION" Language="de_DE">
 			<Text>Amerikanische Spezialeinheit des Industriezeitalters, mit Teddy Roosevelt als Anführer. Verdient [ICON_Culture] Kultur aus Eliminierungen auf dem [ICON_Capital] Hauptstadt-Kontinent. +5 [ICON_Strength] Kampfstärke bei Kämpfen auf Hügeln. Niedrigere Unterhaltskosten.</Text>
 		</Replace>
@@ -293,12 +262,6 @@
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CLIFFS_DOVER_DESCRIPTION" Language="de_DE">
 			<Text>Naturwunder über zwei Geländefelder. Es erscheint mit an Wasser angrenzenden Klippen und bietet +2 [ICON_FOOD] Nahrung, +3 [ICON_Culture] Kultur und +2 [ICON_Gold] Gold.</Text>
-		</Replace>
-		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="de_DE">
-			<Text>Naturwunder über zwei Geländefelder. Es erscheint als ein See und bietet +2 [ICON_FOOD] Nahrung, +1 [ICON_PRODUCTION] Produktion, +2 [ICON_CULTURE] Kultur, +2 [ICON_GOLD] Gold und Süßwasser.</Text>
-		</Replace>
-		<Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="de_DE">
-			<Text>Naturwunder über zwei Geländefelder. Es erscheint als See und bietet +2 [ICON_FOOD] Nahrung, +2 [ICON_Faith] Glauben, +2 [ICON_Culture] Kultur und Süßwasser für diese Geländefelder. Einheiten werden vollständig geheilt, wenn sie für eine Runde angrenzend ans Tote Meer heilen.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CRATER_LAKE_DESCRIPTION" Language="de_DE">
 			<Text>Naturwunder über ein Geländefeld. Es erscheint als ein See und bietet +2 [ICON_FOOD] Nahrung, +2 [ICON_Science] Wissenschaft, +4 [ICON_Faith] Glauben und Süßwasser.</Text>
@@ -312,9 +275,6 @@
 		<!-- Version 6 -->
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_Amenities] Annehmlichkeit, +3 [ICON_FOOD] Nahrung und +3 [ICON_Housing] Wohnraum in Städten mit [ICON_Governor] Gouverneur[NEWLINE]-2 Loyaltität in Städten ohne [ICON_Governor] Gouverneur.[NEWLINE]Verleiht +1 [Icon_Governor] Gouverneur Titel.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="de_DE">
-			<Text>Die Eroberung einer feindlichen Stadt gewährt 25% [ICON_Production] Produktionsbonus in allen Städten für 10 Runden.[NEWLINE]Verleiht +1 [Icon_Governor] Gouverneur Titel.</Text>
 		</Replace>
 		<!-- Version 7 -->
 		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="de_DE"> 
@@ -371,20 +331,11 @@
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="de_DE">
 			<Text>Gewährt einen zusätzlichen Glaubenssatz, beim Gründen der Religion. Siedler und Handwerker erhalten +1 [ICON_Movement] Fortbewegungspunkt. +5 [ICON_Faith] Glauben für jede Zivilisation (einschließlich Indien), die eine Religion gegründet hat und sich nicht im Krieg befindet. Feindliche Zivilisationen erhalten die doppelte Kriegsmündigkeit beim Kampf gegen Gandhi.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="de_DE">
-			<Text>Heilige Stätten bieten +2 [ICON_FOOD] Nahrung, +2 [ICON_FAITH] Glauben und +1 [ICON_HOUSING] Wohnraum, wenn sie an einem Fluss platziert werden. Heilige Stätten lösen einen Kulturschock aus.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei ein Chemamüll, die einzigartige Modernisierung der Mapuche, zu bauen.[NEWLINE][NEWLINE]Gewährt [ICON_CULTURE] Kultur in Höhe von 75% der Anziehungskraft des Geländefeldes und +1 [ICON_PRODUCTION] Produktion. Bietet zusätzlich +1 [ICON_PRODUCTION] Produktion beim Errichen der 'Öffentliche Verwaltung'-Ausrichtung. Zusätzlicher [ICON_TOURISM] Tourismus nach Erforschen der 'Luftfahrt'. Kann nur auf Geländefeldern errichtet werden mit einer Anziehungskraft von mindestens Atemberaubend.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +2 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur. +1 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur, wenn er an ein Stadtzentrum angrenzt. +1 [ICON_CULTURE] Kultur, wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Wüste- und Wüstenhügel-Geländefeldern platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="de_DE">
-			<Text>Glückliche Städte erhalten zusätzliche +10% [ICON_SCIENCE] Wissenschaft und +10% [ICON_PRODUCTION] Produktion, während begeisterte Städte weitere +5% erhalten. Glückliche Städte generieren +1 [ICON_GreatScientist] Großer-Wissenschaftler-Punkt pro Campus und +1 [ICON_GreatEngineer] Großer-Ingenieur-Punkt pro Industriegebiet. Begeisterte Städte verdoppeln diese zusätzlichen Große-Persönlichkeiten-Punkte.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="de_DE">
-			<Text>Mapuche Spezialeinheit der Klassik, welche den Reiter ersetzt. +1 [ICON_Movement] Fortbewegungspunkt und Plündern kostet nur 1 [ICON_Movement] Fortbewegungspunkt.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, Fischerboote zu bauen.[NEWLINE][NEWLINE]+1 [ICON_Food] Nahrung und +1 [ICON_Production] Produktion. Kann nur auf gültigen Ressourcen gebaut werden.[NEWLINE][NEWLINE]Wenn sie auf Luxusgütern gebaut werden, kann die Stadt diese Ressourcen benutzen.</Text>

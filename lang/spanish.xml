@@ -33,7 +33,7 @@
 			<Text>Todas las unidades navales cuerpo a cuerpo obtienen +25% [ICON_PRODUCTION] Produccion y pueden saquear la costa.[NEWLINE][NEWLINE] Todos los distritos de lugar sagrado y sus edificios obtienen +50% [ICON_PRODUCTION] Produccion. Los distritos sagrados obtienen un bonus de adyacencia standar de casillas de costa.[NEWLINE][NEWLINE]Los puertos adyacentes a un lugar sagrado obtienen un bonus de +2 [ICON_GOLD] Oro.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="es_ES">
-			<Text>Las Unidades ganan la abilidad de entrar en casillas de oceano despues de investigar la tecnología de construcción naval. Las unidades navales cuerpo a cuerpo se curan en territorio neutral. Las unidades ignoran costos adicionales de [ICON_Movement] Movimiento por embarcar y desembarcar.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Oro por rutas comerciales iternacionales originadas en una ciudad costera.</Text>
+			<Text>Las Unidades ganan la abilidad de entrar en casillas de oceano despues de investigar la tecnología de construcción naval. Las unidades navales cuerpo a cuerpo se curan en territorio neutral. Las unidades ignoran costos adicionales de [ICON_Movement] Movimiento por embarcar y desembarcar.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="es_ES">
 			<Text>Unidad única noruega de la edad media. +2 [ICON_Movement] Movimiento si esta unidad empieza en territorio enemigo o es embarcada. +15 [ICON_Strength] Fuerza de combate al atacar.</Text>
@@ -69,13 +69,7 @@
 		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="es_ES">
 			<Text>Adjacency: +1 [ICON_Culture] Cultura por cada distrito adyacente.</Text>
 		</Row>
-		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="es_ES">
-			<Text>Despues de desbloquear el principio Imperio Inicial, las cuidades fundadas desde ese momento empiezan con un monumento gratis.</Text>
-		</Replace>
 		<!-- Gov -->
-		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="es_ES">
-			<Text>+25% [ICON_Production] Producción hacia todas las unidades militares navales y terrestres. Reduce el costo de mantenimiento en 1 [ICON_GOLD] Oro.[NEWLINE]Entrega +1 [Icon_Governor] Título de Gobernador.</Text>
-		</Replace>
 		<!-- Pantheons -->
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_NAME" Language="es_ES">
 			<Text>Dios de la Guerra y el Saqueo</Text>
@@ -97,10 +91,6 @@
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="es_ES">
 			<Text>Las unidades de combate obtienen +7 a la Fuerza de combate [ICON_Strength] cerca de las ciudades extranjeras que sigan esta religión.</Text>
 		</Replace>
-		<!-- God of the Forge Pantheon -->
-		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="es_ES">
-			<Text>+15% a la Producción [ICON_Production] de unidades militares antiguas y clásicas.</Text>
-		</Replace>
 		<!-- Goddess of the Harvest Pantheon -->
 		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HARVEST_DESCRIPTION" Language="es_ES">
 			<Text>Al cosechar un recurso o eliminar un accidente recibes una cantidade de Fe [ICON_Faith] equivalente al 50% de su rendimiento.</Text>
@@ -108,13 +98,6 @@
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="es_ES">
 			<Text>+50% a la Producción [ICON_Production] si han liberado una ciudad en los últimos 10 turnos.</Text>
-		</Replace>
-		<!-- Germany -->
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION" Language="es_ES">
-			<Text>Un distrito exclusivo de Alemania para actividades industriales. Sustituye al distrito de Zona Industrial y es más barato de construir. [NEWLINE][NEWLINE] +2 de bonificación a la Producción [ICON_Production] si está adyacente a un distrito de Centro comercial. +1 de bonificación a la Producción [ICON_Production] por cada dos recursos adyacentes. +1 de bonificación a la Producción [ICON_Production] por cada dos casillas de distrito adyacentes.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="es_ES">
-			<Text>Adyacencia: Bonificación Mayor a la Producción [ICON_Production] si está adyacente a un distrito de Centro comercial. Bonificación Menor a la Producción [ICON_Production] por casillas de distrito adyacentes.</Text>
 		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="es_ES">
@@ -159,7 +142,7 @@
 		</Replace>
 		<!-- Venetian Arsenal -->
 		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="es_ES">
-			<Text>+50% a la Producción [ICON_Production] para unidades navales en todas las ciudades. Debe construirse en una casilla de Costa que se encuentre adyacente a un distrito de Zona industrial.</Text>
+			<Text>+100% a la Producción [ICON_Production] para unidades navales en todas las ciudades. Debe construirse en una casilla de Costa que se encuentre adyacente a un distrito de Zona industrial.</Text>
 		</Replace>
 		<!-- NEW -->
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_2" Language="es_ES">
@@ -242,16 +225,10 @@
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="es_ES">
 			<Text>Desbloquea la habilidad de Constructor para crear un Pozo escalonado, exclusivo de la India. [NEWLINE][NEWLINE]+1 a Alimentos [ICON_Food], +1 a Fe [ICON_FAITH] y +1 a Alojamiento [ICON_Housing]. +1 a Fe [ICON_FAITH] si está adyacente a un distrito de Lugar sagrado. +1 a Alimentos [ICON_Food] si está adyacente a una Granja. No puede construirse sobre Colinas ni adyacente a otro Pozo escalonado.</Text>
 		</Replace>
-		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="es_ES">
-			<Text>+100% a la Producción [ICON_Production] de edificios defensivos y +50% a la Producción [ICON_Production] para las unidades de apoyo.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="es_ES">
 			<Text>Un espacio de política comodín adicional en cualquier gobierno.[NEWLINE][NEWLINE]Otorga 1 Enviado [ICON_ENVOY] al completar un Anfiteatro.</Text>
 		</Replace>
 		<!-- Newest -->
-		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="es_ES">
-			<Text>Todas las unidades de combate y religiosas reciben +1 de Movimiento [ICON_Movement] en su territorio de origen o estando próximo a el.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION" Language="es_ES">
 			<Text>Todos los distritos reciben una bonificación por adyacencia adicional por estar adyacentes a otros distritos. Los Centros comerciales ya no reciben bonificaciones por adyacencia de rios.</Text>
 		</Replace>
@@ -283,9 +260,6 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="es_ES">
 			<Text>Después de alcanzar el principio de Gremios, cada ciudad puede construir un distrito más de lo habitual (excediendo el límite normal, basado en la población [ICON_Citizen] ).</Text>
 		</Replace>
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="es_ES">
-			<Text>Adyacencia: Bonificación Mayor a la Producción [ICON_Production] si está adyacente a un distrito de Centro comercial. Bonificación Menor a la Producción [ICON_Production] por casillas de distrito y de recursos adyacentes.</Text>
-		</Replace>
 		<Replace Tag="LOC_UNIT_AMERICAN_ROUGH_RIDER_DESCRIPTION" Language="es_ES">
 			<Text>Unidad exclusiva de Estados Unidos de la Revolción Industrial que sustituye a la Caballería. Recibe Cultura [ICON_Culture] por bajas en el continente de su capital [ICON_Capital]. +5 a la Fuerza de combate [ICON_Strength] al luchar en colinas. Coste de manenimiento menor.</Text>
 		</Replace>
@@ -294,12 +268,6 @@
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CLIFFS_DOVER_DESCRIPTION" Language="es_ES">
 			<Text>Maravilla de la naturaleza de dos casillas. Aparece con Colinas adyacentes al agua y proporciona +2 a Alimentos [ICON_FOOD], +3 a Cultura [ICON_Culture] y +2 de Oro [ICON_Gold].</Text>
-		</Replace>
-		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="es_ES">
-			<Text>Maravilla natural de dos casillas. Aparece como Lago y proporciona +2 a Alimentos [ICON_FOOD], +1 a la Producción [ICON_PRODUCTION], +2 a Cultura [ICON_CULTURE], +2 de Oro [ICON_GOLD] y Agua dulce.</Text>
-		</Replace>
-		<Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="es_ES">
-			<Text>Maravilla de la naturaleza de dos casillas. Aparece como Lago y proporciona +2 a Alimentos [ICON_FOOD], +2 a Fe [ICON_Faith], +2 a Cultura [ICON_Culture] y Agua dulce. Las unidades se curan por completo si se quedan durante un turno adyacentes al Mar Muerto.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CRATER_LAKE_DESCRIPTION" Language="es_ES">
 			<Text>Maravilla de la naturaleza de una casilla. Aparece como Lago y proporciona +2 a Alimentos [ICON_FOOD], +2 a Ciencia [ICON_Science] +4 a Fe [ICON_Faith] y Agua dulce.</Text>
@@ -316,12 +284,6 @@
         </Replace>
         <Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="es_ES">
             <Text>Desbloquea la hablidad para construir un campo de golf con el constructor, único de Escocia.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Servicios, +3 [ICON_GOLD] Oro, y +2 [ICON_CULTURE] Cultura. +1 [ICON_GOLD] Oro y +1 [ICON_CULTURE] Cultura si se encuentra junto al distrito del centro urbano. +1 [ICON_CULTURE] Cultura si se encuentra junto a un Complejo de Ocio. Servicios [ICON_AMENITIES] adicionales, [ICON_TOURISM] Turismo, y [ICON_HOUSING] Alojamiento conforme avances en el arbol tecnológico y en el arbol de principios. No se puede construir en Desierto o colinas en desierto. Uno por ciudad. Las casillas con campos de Golf no se pueden intercambiar. +1 Atractivo.</Text>
-        </Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="es_ES">
-            <Text>Las ciudades felíces reciben +10% [ICON_SCIENCE] Ciencia y +10% [ICON_PRODUCTION] Producción. Las ciudades felíces generan +1 punto [ICON_GreatScientist] de Gran Científico por Campus y +1 [ICON_GreatEngineer] punto de Gran Ingeniero por Zona Industrial. Las ciudades eufóricas reciben el doble de bonificación.</Text>
-        </Replace>
-        <Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="es_ES">
-            <Text> La unidad exclusiva de Mapuche reemplaza al Jinete. +5 [ICON_Strength] bonificación a la Fuerza de Combate si se encuentra a 4 casillas o menos de una ciudad amistosa . Saquear cuesta 1 [ICON_Movement] Movimiento.</Text>
         </Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="es_ES">
 			<Text>Desbloquea la habilidad Constructor para crear Barcos pesqueros.[NEWLINE][NEWLINE]+1 a Alimentos [ICON_Food] y +1 a la Producción [ICON_PRODUCTION]. Solo puede construirse en recursos válidos.[NEWLINE][NEWLINE]Si se construye con un recurso de lujo, la ciudad podrá usar dicho recurso.</Text>

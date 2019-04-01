@@ -33,7 +33,7 @@
 			<Text>[ICON_PRODUCTION] Production +25 % pour toutes les unités navales de combat rapproché, qui peuvent attaquer les côtes. [NEWLINE][NEWLINE] [ICON_PRODUCTION] Production +50% Pour les lieux saints et leurs bâtiments. Les lieux saints recoivent un bonus de proximité standard pour les cases d'eau côtière. Les ports recoivent un bonus de proximité de +2 [ICON_GOLD] Or pour chaque lieu saint adjacent.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="fr_FR">
-			<Text>Les unités peuvent traverser les cases d'océan une fois la technologie de construction navale découverte. Les unités navales de combat rapproché se soignent lorsqu'elles se situent en territoire neutre. L'embarquement et le débarquement des unités ne consomment pas de [ICON_Movement] PM. [NEWLINE][NEWLINE] [ICON_GOLD] Or +2 pour les routes commerciales internationales originaires d'une ville côtière.</Text>
+			<Text>Les unités peuvent traverser les cases d'océan une fois la technologie de construction navale découverte. Les unités navales de combat rapproché se soignent lorsqu'elles se situent en territoire neutre. L'embarquement et le débarquement des unités ne consomment pas de [ICON_Movement] PM.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive à la Norvège, cette unité de l'ère médiévale reçoit +2 [ICON_Movement] PM lorsqu'elle commence en territoire ennemi ou lorsqu'elle est embarquée. [ICON_Strength] Puissance de combat +15 en attaque..</Text>
@@ -65,13 +65,7 @@
 		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="fr_FR">
 			<Text>Proximité: [ICON_Culture] Culture +1 pour chaque quartier adjacent.</Text>
 		</Row>
-		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="fr_FR">
-			<Text>Après avoir débloqué le dogme Premier Empire, les villes nouvellement fondées commencent avec un monument gratuit.</Text>
-		</Replace>
 		<!-- Gov -->
-		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="fr_FR">
-			<Text> [ICON_Production] Production +25 % pour toutes les unités militaires navales et terrestres. Côut de maintenance des unités militaires -1 [ICON_GOLD] Or. [NEWLINE] Ocroi 1 [Icon_Governor] Titre de Gouverneur.</Text>
-		</Replace>
 		<!-- Pantheons -->
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_NAME" Language="fr_FR">
 			<Text>Dieu de la guerre et du pillage</Text>
@@ -92,10 +86,6 @@
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +7 pour les unités militaires proches des villes étrangères converties à cette religion.</Text>
 		</Replace>
-		<!-- God of the Forge Pantheon -->
-		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Production] Production +15 % pour les unités militaires antiques et de l'ère classique.</Text>
-		</Replace>
 		<!-- Goddess of the Harvest Pantheon -->
 		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HARVEST_DESCRIPTION" Language="fr_FR">
 			<Text>Récolter une ressource ou supprimer des caractéristiques de terrain fournit 50% du montant de la récolte en [ICON_Faith] foi.</Text>
@@ -103,13 +93,6 @@
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +50% pour 10 tours après avoir libéré une ville.</Text>
-		</Replace>
-		<!-- Germany -->
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION" Language="fr_FR">
-			<Text>Quartier exclusif à l'Allemagne remplaçant la zone industrielle à moindres coûts, destiné à accueillir les activités de même type. [NEWLINE][NEWLINE][ICON_Production] Production bonus +2 si adjacente à une plateforme commerciale. [ICON_Production] Production +1 toutes les 2 ressources adjacentes. [ICON_Production] Production +1 toutes les 2 cases de quartier adjacentes.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="fr_FR">
-			<Text>Proximité : bonus de [ICON_Production] production majeur si adjacente à une plateforme commerciale. Bonus de [ICON_Production] production mineur pour chaque ressource ou quartier adjacent.</Text>
 		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="fr_FR">
@@ -151,7 +134,7 @@
 		</Replace>
 		<!-- Venetian Arsenal -->
 		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Production] Production +50% pour les unités navales dans toutes vos villes. Doit être construit sur côte adjacente à une zone industrielle.</Text>
+			<Text>[ICON_Production] Production +100% pour les unités navales dans toutes vos villes. Doit être construit sur côte adjacente à une zone industrielle.</Text>
 		</Replace>
 		<!-- NEW -->
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="fr_FR">
@@ -224,19 +207,10 @@
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire un puits à degrés, exclusif à l'Inde. [NEWLINE][NEWLINE][ICON_Food] Nourriture +1, [ICON_FAITH] foi +1 et [ICON_Housing] habitations +1. [ICON_Faith] Foi +1 si adjacent à un lieu saint. [ICON_Food] Nourriture +1 si adjacent à une ferme. Construction impossible sur une colline ou adjacent à un autre puits à degrés.</Text>
 		</Replace>
-		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Production] Production +100 % pour les bâtiments de défense et [ICON_Production] production +50 pour les unités de siège.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="fr_FR">
 			<Text>Un emplacement de doctrine Joker supplémentaire pour tous les types de gouvernement. [NEWLINE][NEWLINE]Reçoit un émissaire à chaque fois q'un amphithéâtre est achevé.</Text>
 		</Replace>
 		<!-- Newest -->
-		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Movement] PM +1 pour toutes les unités militaires terrestres et toutes les unités religieuses à l'intérieur et à proximité de votre territoire.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION" Language="fr_FR">
-			<Text>Tous les quartiers bénéficient d'un bonus de proximité supplémentaire s'ils sont adjacents à un autre quartier. Les plateformes commerciales ne recoivent pas de bonus de proximité si elles sont placées sur une rivière.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="fr_FR">
 			<Text>La religion fondée par la Pologne devient majoritaire dans une ville adjacente qui perd une case suite à la bombe culturelle polonaise. Les lieux saints reçoivent un bonus de foi standard pour les quartiers adjacents. Toutes les reliques offrent des bonus : [ICON_Faith] foi +2, [ICON_Culture] culture +2 et [ICON_Gold] or +4. Reçoit une Relique à la création et à la complétion d'une Religion.</Text>
 		</Replace>
@@ -262,9 +236,6 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="fr_FR">
 			<Text>Après le dogme des Guildes, chaque ville peut construire un quartier de plus, au-delà du seuil imposé par la [ICON_Citizen] population.</Text>
 		</Replace>
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="fr_FR">
-			<Text>Proximité : bonus de [ICON_Production] production majeur si adjacente à une plateforme commerciale. Bonus de [ICON_Production] production mineur pour chaque ressource et quartier adjacent.</Text>
-		</Replace>
 		<Replace Tag="LOC_UNIT_AMERICAN_ROUGH_RIDER_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive à l'Amérique de Theodore Roosevelt, cette unité de l'ère industrielle remplace la Cavalerie, a un coût d'entretien réduit et génère de la [ICON_Culture] culture lorsqu'elle élimine des unités sur le continent de sa [ICON_Capital] capitale. [ICON_Strength] Puissance de combat +5 en cas de combat sur une colline.</Text>
 		</Replace>
@@ -273,12 +244,6 @@
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CLIFFS_DOVER_DESCRIPTION" Language="fr_FR">
 			<Text>Merveille naturelle de deux cases pouvant apparaître sur des falaises adjacentes à de l'eau. [ICON_FOOD] Nourriture +2, [ICON_Culture] culture +3 et [ICON_Gold] or +2.</Text>
-		</Replace>
-		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="fr_FR">
-			<Text>Merveille naturelle de deux cases prenant la forme d'un lac. [ICON_FOOD] Nourriture +2, [ICON_PRODUCTION] production +1, [ICON_CULTURE] Culture +2, [ICON_GOLD] or +2 et source d'eau douce.</Text>
-		</Replace>
-		<Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="fr_FR">
-			<Text>Merveille naturelle de deux cases prenant la forme d'un lac. [ICON_FOOD] Nourriture +2, [ICON_Culture] culture +2, [ICON_Faith] foi +2 et source d'eau douce. Les unités qui se soignent sur une case adjacente à la mer Morte récupèrent tous leurs PV.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CRATER_LAKE_DESCRIPTION" Language="fr_FR">
 			<Text>Merveille naturelle d'une case prenant la forme d'un lac. [ICON_FOOD] Nourriture +2, [ICON_Science] science +2, [ICON_Faith] foi +4 et source d'eau douce.</Text>
@@ -342,20 +307,11 @@
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="fr_FR">
 			<Text>Octroit une croyance supplémentaire à la fondation d'une religion. [ICON_Movement] PM +1 pour les bâtisseurs et les colons. [ICON_Faith] Foi +5 pour chaque civilisation rencontrée (y compris l'Inde) ayant fondé une religion et n'étant pas en guerre. L'usure de la guerre est doublée pour les civilisations qui combattent Gandhi.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_FOOD] nourriture +2, [ICON_FAITH] foi +2 et [ICON_HOUSING] habitations +1 pour les lieux saints placés sur une rivière. Les lieux saints déclenchent une bombe culturelle.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire un chemamull, exclusif aux Mapuches.[NEWLINE][NEWLINE]Fournit une quantité de [ICON_CULTURE] culture correspondant à 75% de l'attrait de la case. [ICON_PRODUCTION] Production +1. [ICON_PRODUCTION] production +1 au dogme Service Civil. [ICON_TOURISM] Tourisme bonus après avoir découvert l'Aviation. Attrait minimum : époustouflant.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire un terrain de golf, exclusif à l'Écosse.[NEWLINE][NEWLINE][ICON_AMENITIES] Activités +1, [ICON_GOLD] or +2 et [ICON_CULTURE] culture +1. [ICON_GOLD] Or +1 et [ICON_CULTURE] culture +1 si adjacent à un centre-ville. [ICON_CULTURE] culture +1 si adjacent à un complexe de loisirs. Bonus de [ICON_CULTURE] culture, d' [ICON_GOLD] or, de [ICON_TOURISM] tourisme et d' [ICON_HOUSING] habitations à mesure que vous progressez dans l'arbre des technologies et celui des dogmes. Ne peut pas être construit sur un désert ou sur une colline désertique. Limité à un par ville. Les cases contenant un terrain de golf ne peuvent pas être attribuées à une autre ville. Attrait +1.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="fr_FR">
-			<Text>Les villes heureuses bénificient d'un bonus de [ICON_SCIENCE] science et de [ICON_PRODUCTION] production de 10%. Ce bonus est porté à 15% pour les villes en liesse. Les villes heureuses génèrent 1 [ICON_GreatScientist] point de savant illustre par campus et 1 [ICON_GreatEngineer] point d'ingénieur illustre par zone industrielle. Ces points sont doublés pour les villes en liesse.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="fr_FR">
-			<Text>Unité de l'ère Classique exclusive aux Mapuches, qui remplace le Cavalier. [ICON_Movement] PM +1. Le pillage ne coûte que 1 [ICON_Movement] PM.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire des bateaux de pêche. [NEWLINE][NEWLINE][ICON_Food] Nourriture +1 et +1 [ICON_PRODUCTION] production. Ne peut être construit que sur une ressource valide. [NEWLINE][NEWLINE]Construit sur une ressource de luxe, permet à la ville d'exploiter cette ressource.</Text>

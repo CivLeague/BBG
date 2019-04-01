@@ -33,7 +33,7 @@
 			<Text>Все морские юниты ближнего боя получают прибавку +25% к [ICON_PRODUCTION] производству и могут грабить береговые клетки.[NEWLINE][NEWLINE]Священные районы и постройки в них получают прибавку +50% к [ICON_PRODUCTION] производству. Священные места получают стандартный бонус соседства с прибрежными клетками.[NEWLINE][NEWLINE]Гавани рядом со священными местами получают +2 к [ICON_GOLD] золоту (считается бонусом соседства).</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="ru_RU">
-			<Text>Юниты могут пересекать океан после изучения кораблестроения. Морские юниты ближнего боя могут восстанавливать здоровье на нейтральной территории. Юниты не требуют затрат [ICON_Movement] очков передвижения на высадку на море и с моря.[NEWLINE][NEWLINE]+2 [ICON_GOLD] золота от каждого торгового пути в чужие города из своих прибрежных городов.</Text>
+			<Text>Юниты могут пересекать океан после изучения кораблестроения. Морские юниты ближнего боя могут восстанавливать здоровье на нейтральной территории. Юниты не требуют затрат [ICON_Movement] очков передвижения на высадку на море и с моря.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный норвежский юнит Средневековья. +2 [ICON_Movement] ОП, если движение начинать на вражеской территории или на воде. +15 [ICON_Strength] к боевой мощи при атаке.</Text>
@@ -66,13 +66,7 @@
 		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="ru_RU">
 			<Text>Соседство: +1 [ICON_Culture] культуры за каждый соседний район.</Text>
 		</Row>
-		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="ru_RU">
-			<Text>После открытия ранней империи при основании новых городов в них сразу появляется монумент.</Text>
-		</Replace>
 		<!-- Gov -->
-		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="ru_RU">
-			<Text>+25% [ICON_Production] производства при постройке наземных и морских военных юнитов. Уменьшает стоимость содержания юнитов на 1 [ICON_GOLD] золота.[NEWLINE]Даёт +1 [Icon_Governor] губернаторский титул.</Text>
-		</Replace>
 		<!-- Pantheons -->
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_NAME" Language="ru_RU">
 			<Text>Бог войны|Бога войны|Богу войны|Бога войны|Богом войны|Боге войны</Text>
@@ -93,10 +87,6 @@
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ru_RU">
 			<Text>Военные юниты получают +7 [ICON_Strength] боевой мощи на территории иностранных городов, исповедующими эту религию.</Text>
 		</Replace>
-		<!-- God of the Forge Pantheon -->
-		<Replace Tag="LOC_BELIEF_GOD_OF_THE_FORGE_DESCRIPTION" Language="ru_RU">
-			<Text>+15% [ICON_Production] производства к боевым юнитам Древнего мира и Античности.</Text>
-		</Replace>
 		<!-- Goddess of the Harvest Pantheon -->
 		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HARVEST_DESCRIPTION" Language="ru_RU">
 			<Text>Удаление бонусных ресурсов и элементов ландшафта дает также очки [ICON_FAITH] веры в количестве 50%</Text>
@@ -104,13 +94,6 @@
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>+50% [ICON_Production] производства в течение 10 ходов после освобождения города.</Text>
-		</Replace>
-		<!-- Germany -->
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный район Германии в промышленной сфере деятельности. Заменяет промышленный район, дешевле в строительстве.[NEWLINE][NEWLINE]+ 2[ICON_Production] производства за соседство с коммерческим центром. +1 [ICON_Production] к производству за каждые 2 ресурса либо района рядом.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="ru_RU">
-			<Text>Соседство: +2 к [ICON_Production] производству рядом с центром коммерции. +1 [ICON_Production] к производству за каждые 2 ресурса либо района рядом.</Text>
 		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ru_RU">
@@ -155,7 +138,7 @@
 		</Replace>
 		<!-- Venetian Arsenal -->
 		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="ru_RU">
-			<Text>+50% [ICON_Production] производства при создании морских юнитов. Можно построить только на клетке побережья рядом с промышленной зоной.</Text>
+			<Text>+100% [ICON_Production] производства при создании морских юнитов. Можно построить только на клетке побережья рядом с промышленной зоной.</Text>
 		</Replace>
 		<!-- NEW -->
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="ru_RU">
@@ -229,16 +212,10 @@
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям строить ступенчатые колодцы (уникально для Индии).[NEWLINE][NEWLINE]1 [ICON_Food] пищи, +1 [ICON_Faith] веры и +1 [ICON_Housing] жилья. +1 [ICON_Faith] веры, если построен рядом со священным местом. +1 [ICON_Food] пищи, если находится рядом с фермой. Нельзя строить на холмах или рядом с другим ступенчатым колодцем.</Text>
 		</Replace>
-		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="ru_RU">
-			<Text>+100% [ICON_Production] производства при строительстве оборонительных зданий и +50% [ICON_Production] производства при строительстве осадных боевых юнитов.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="ru_RU">
 			<Text>Дополнительная универсальная ячейка политического курса при любом правительстве.[NEWLINE][NEWLINE]При постройке амфитеатра получите 1 посла.</Text>
 		</Replace>
 		<!-- Newest -->
-		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="ru_RU">
-			<Text>Все боевые и религиозные юниты получают +1 [ICON_Movement] ОП в пределах своей территории и рядом с ее границей.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION" Language="ru_RU">
 			<Text>Все районы получают дополнительный стандартный бонус за соседство с другим районом. Однако центры коммерции не получают бонусы соседства от рек.</Text>
 		</Replace>
@@ -267,9 +244,6 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="ru_RU">
 			<Text>После получения социального института "Гильдии" в каждом город можно будет построить на один район больше, чем обычно (сверх предела, определяемого численностью [ICON_Citizen] населения).</Text>
 		</Replace>
-		<Replace Tag="LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY" Language="ru_RU">
-			<Text>Соседство: большой бонус к [ICON_Production] производству за соседство с центром коммерции. Небольшой бонус к [ICON_Production] производству за соседство с ресурсами и другими районами.</Text>
-		</Replace>
 		<Replace Tag="LOC_UNIT_AMERICAN_ROUGH_RIDER_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный американский юнит Промышленной эры, если лидером является Тедди Рузвельт. Заменяет кавалерию. Каждый поверженный им боевой юнит дает [ICON_Culture] культуру на континенте с Вашей [ICON_Capital] столицей. +5 к [ICON_Strength] боевой мощи при сражении на холмах. Дешевле содержать, чем кавалерию.</Text>
 		</Replace>
@@ -278,12 +252,6 @@
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CLIFFS_DOVER_DESCRIPTION" Language="ru_RU">
 			<Text>Чудо природы на две клетки. Встречается вместе со скалами рядом с водой, дает +2 [ICON_FOOD] еды, +3 [ICON_Culture] культуры и +2 [ICON_Gold] золота.</Text>
-		</Replace>
-		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="ru_RU">
-			<Text>Чудо природы. Занимает две клетки. Является озером и дает +2 [ICON_FOOD] еды, +1 [ICON_PRODUCTION] производства, +2 [ICON_CULTURE] культуры и +2 [ICON_GOLD] золота. Источник пресной воды.</Text>
-		</Replace>
-		<Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="ru_RU">
-			<Text>Чудо природы на две клетки. Является озером и дает +2 [ICON_FOOD] еды, +2 [ICON_Faith] веры и +2 [ICON_Culture] науки. Источник пресной воды. Юниты, которые проводят один ход рядом с Мертвым морем, полностью исцеляются.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CRATER_LAKE_DESCRIPTION" Language="ru_RU">
 			<Text>Чудо природы на одну клетку. Является озером и дает +2 [ICON_FOOD] еды, +2 [ICON_Science] науки и +4 [ICON_Faith] веры. Источник пресной воды.</Text>
@@ -344,20 +312,11 @@
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ru_RU">
 			<Text>Дополнительное верование при основании религии. +1 [ICON_Movement] ОП поселенцам и строителям. +5 [ICON_Faith] веры за каждую известную им цивилизацию (включая Индию), которая основала религию и в настоящее время не воюет. Враждебные цивилизации, воюющие с Ганди, получают в два раза больше усталости от войны.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ru_RU">
-			<Text>Священные места дают +2 [ICON_FOOD] пищи, +2 [ICON_Faith] веры и +1 [ICON_HOUSING] жилья, если находятся на реке. Священные места активируют культурный захват.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям строить чемамюль – уникальную постройку мапуче.[NEWLINE][NEWLINE]Производит [ICON_CULTURE] культуру в количестве, равном 75% престижа клетки, а также +1 [ICON_PRODUCTION]. Ещё +1 [ICON_PRODUCTION] производства при изучении Гражданской Службы. Дополнительный [ICON_TOURISM] туризм после исследования авиации. Необходим потрясающий престиж.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям строить поле для гольфа - уникальную постройку Шотландии.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] довольства и +2 [ICON_GOLD] золота и +1 [ICON_CULTURE] культуры. Еще +1 [ICON_CULTURE] культуры и +1 [ICON_GOLD] золота при соседстве с центром города и +1 [ICON_CULTURE] культуры при соседстве с развлекательным комплексом. Дополнительные [ICON_CULTURE] культура, [ICON_GOLD] золото, [ICON_TOURISM] туризм и [ICON_HOUSING] жилье по мере продвижения по дереву технологий и социальных институтов. Нельзя построить в пустыне и на холмах в пустыне. Одна постройка на город. Клетки с полем для гольфа нельзя изменить. +1 престижа.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ru_RU">
-			<Text>Счастливые города получают +10% [ICON_SCIENCE] науки и +10% [ICON_PRODUCTION] производства. Города в экстазе получают ещё по 5% бонуса к [ICON_SCIENCE] науке и [ICON_PRODUCTION] производству. Счастливые города производят +1 [ICON_GreatScientist] оч. великого ученого в кампусах и +1 [ICON_GreatEngineer] оч. великого инженера в промышленных зонах. Бонус очков великих людей удваивается для городов в состоянии экстаза.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный юнит классической эры у Мапуче, который заменяет всадников. +1 [ICON_Movement] перемещения. Разграбление стоит 1 [ICON_Movement] ОП.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям создавать рыбацкие суда.[NEWLINE][NEWLINE]+1 [ICON_Food] пищи и +1 [ICON_PRODUCTION] производства. Можно строить только на определенных ресурсах.[NEWLINE][NEWLINE]При постройке на редких ресурсах город получит эти ресурсы.</Text>
