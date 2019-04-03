@@ -32,7 +32,7 @@
 			<Text>One tile impassable natural wonder. Provides +2 [ICON_FAITH] Faith and +1 [ICON_Production] Production to adjacent tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="en_US">
-			<Text>+100% [ICON_PRODUCTION] Production to Holy Sites and Aquaducts. Holy Sites provide +2 [ICON_FOOD] Food, +2 [ICON_FAITH] Faith, and +1 [ICON_HOUSING] Housing if placed on a river. Holy Sites trigger a Culture Bomb.</Text>
+			<Text>+100% [ICON_PRODUCTION] Production to Holy Sites and Aqueducts. Holy Sites provide +2 [ICON_FOOD] Food, +2 [ICON_FAITH] Faith, and +1 [ICON_HOUSING] Housing if placed on a river. Holy Sites trigger a Culture Bomb.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="en_US">
 			<Text>All land combat and religious units receive +1 [ICON_Movement] Movement.</Text>
@@ -67,9 +67,6 @@
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="en_US">
 			<Text>Hungarian unique Industrial era unit that replaces Cavalry. +1 [ICON_Strength] Combat Strength for every active Alliance.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="en_US">
-			<Text>Levied units gain an ability giving them +5 [ICON_Strength] Combat Strength. It costs no [ICON_GOLD] Gold or Resources to upgrade Levied units. If you Levy troops from a City-State receive 2 [ICON_ENVOY] Envoys with that City-State. Gain the Black Army unique unit when the Castles technology is researched.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_FOOD] Food from Tundra and Tundra Hills tiles. Allows Farms to be built on Tundra terrain, and after Civil Engineering is unlocked, Farms can be built on Tundra Hills as well. The cost of purchasing Snow, Snow Hills, Tundra Hills and Tundra tiles is reduced by 50%. +100% extraction rate of accumulated resources on Snow, Snow Hills, Tundra Hills and Tundra tiles.[NEWLINE][NEWLINE]Cities with National Parks generate an extra +8 [ICON_FOOD] Food and +8 [ICON_PRODUCTION] Production per turn.</Text>
 		</Replace>
@@ -84,6 +81,32 @@
 		</Replace>
 		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_DESCRIPTION" Language="en_US">
 			<Text>Space Race project which launches a large rocket to land a human on the moon. Grants a one time [ICON_Culture] Culture bonus equal to 5 times your [ICON_Science] Science per turn, and marks the second step towards the Science Victory.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>All naval melee units get +25% [ICON_PRODUCTION] Production and can raid the coast. Receive [ICON_SCIENCE] Science from pillaging and coastal raiding Mines in addition to [ICON_GOLD] Gold. Pillaging or coastal raiding Quarries, Pastures, Plantations, and Camps provide [ICON_CULTURE] Culture in addition to [ICON_FAITH] Faith.[NEWLINE][NEWLINE]All Holy Site districts and their buildings get +50% [ICON_PRODUCTION] Production. Holy Sites get standard adjacency bonus from coastal water tiles.[NEWLINE][NEWLINE]Harbors next to a Holy Site get an additional +2 [ICON_GOLD] Gold adjacency bonus.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct the Great Wall, unique to China.[NEWLINE][NEWLINE]Provides an increase to [ICON_Strength] Defense and +2 [ICON_GOLD] Gold. +1 [ICON_Culture] Culture after researching Castles. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if there is an adjacent Great Wall Improvement. Provides [ICON_Tourism] Tourism after researching Flight. Must be built in a line along the borders of your empire. Can only be pillaged (never destroyed) by natural disasters.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. +2 [ICON_Faith] Faith, +1 [ICON_PRODUCTION] Production, and +1 [ICON_FOOD] Food if on a different continent than your [ICON_Capital] Capital.[NEWLINE][NEWLINE]+1 [ICON_Science] Science for every adjacent Campus and Holy Site district. +1 Housing at Civil Service and +2 Science at The Enlightenment.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct a Chateau, unique to France.[NEWLINE][NEWLINE]+2 [ICON_Culture] Culture and +1 Appeal. +1 [ICON_Culture] Culture for each adjacent wonder. +1 [ICON_Gold] Gold and +1 [ICON_Food] Food for each adjacent Luxury resource. Provides +1 [ICON_HOUSING] Housing at Feudalism and [ICON_TOURISM] Tourism after researching Flight. Can only be built adjacent to Rivers.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION">
+			<Text>Unlocks the Builder ability to construct a Sphinx, unique to Egypt.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith, +1 [ICON_Culture] Culture, and +2 Appeal.[NEWLINE][NEWLINE]+1 [ICON_Faith] Faith and +1 [ICON_CULTURE] Culture if next to a wonder. +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production if built on Desert or +1 [ICON_CULTURE] Culture if built on Floodplains.[NEWLINE][NEWLINE]Additional [ICON_CULTURE] Culture once Diplomatic Service is discovered. Provides [ICON_TOURISM] Tourism after researching Flight. Cannot be built on Snow or Snow Hills.</Text>
+		</Replace>		
+		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="en_US">
+			<Text>Levied units gain an ability giving them +5 [ICON_Strength] Combat Strength. It cost 75% less [ICON_GOLD] Gold and resources to upgrade Levied units. If you Levy troops from a City-State receive 2 [ICON_ENVOY] Envoys with that City-State. Gain the Black Army unique unit when the Castles technology is researched.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct a Sphinx, unique to Egypt.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith, +1 [ICON_Culture] Culture, and +1 Appeal. +1 [ICON_Faith] Faith and +1 [ICON_CULTURE] Culture if next to a wonder.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct a Chateau, unique to France.[NEWLINE][NEWLINE]+2 [ICON_Culture] Culture and +1 Appeal. +1 [ICON_Culture] Culture for each adjacent Wonder. +1 [ICON_Gold] Gold and +1 [ICON_Food] Food for each adjacent Luxury resource. Provides +1 [ICON_HOUSING] Housing at Feudalism and [ICON_TOURISM] Tourism after researching Flight. Can only be built adjacent to Rivers.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

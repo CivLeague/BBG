@@ -22,14 +22,6 @@
 		<File>lang/spanish.xml</File>
 		<File>lang/japanese.xml</File>
 		<File>mods.sql</File>
-		<File>maptacks/mappinlistpanel.lua</File>
-		<File>maptacks/mappinlistpanel.xml</File>
-		<File>maptacks/mappinmanager.lua</File>
-		<File>maptacks/mappinmanager.xml</File>
-		<File>maptacks/mappinpopup.lua</File>
-		<File>maptacks/mappinpopup.xml</File>
-		<File>maptacks/maptacks.lua</File>
-		<File>maptacks/maptacks-text.xml</File>
 	</Files>
 	
 	<!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
@@ -54,13 +46,6 @@
 	<!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
 	<Components>
 		<ImportFiles id="bbg_import_files">
-			<File>maptacks/mappinlistpanel.lua</File>
-			<File>maptacks/mappinlistpanel.xml</File>
-			<File>maptacks/mappinmanager.lua</File>
-			<File>maptacks/mappinmanager.xml</File>
-			<File>maptacks/mappinpopup.lua</File>
-			<File>maptacks/mappinpopup.xml</File>
-			<File>maptacks/maptacks.lua</File>
 		</ImportFiles>
 		<LocalizedText id="bbg_text_updates">
 			<Properties>
@@ -75,7 +60,6 @@
 				<File>lang/german.xml</File>
 				<File>lang/spanish.xml</File>
 				<File>lang/japanese.xml</File>
-				<File>maptacks-text.xml</File>
 			</Items>
 		</LocalizedText>
 		<UpdateDatabase id="bbg_db_updates">

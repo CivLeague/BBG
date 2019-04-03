@@ -44,13 +44,9 @@ INSERT INTO RequirementArguments (RequirementId , Name , Value)
 -- Australia
 --==================
 -- Digger gets +5 combat strength and requires niter
-UPDATE Units SET Combat=77 , BaseMoves=3 WHERE UnitType='UNIT_DIGGER';
---INSERT INTO Units_XP2 (UnitType , ResourceCost  , ResourceMaintenanceAmount , ResourceMaintenanceType)
---	VALUES ('UNIT_DIGGER' , 1 , 1, 'RESOURCE_OIL');
--- Diggers cost Niter
-INSERT INTO Units_XP2 (UnitType , ResourceCost)
-	VALUES ('UNIT_DIGGER' , 40);
-UPDATE Units SET StrategicResource ='RESOURCE_NITER'  WHERE UnitType='UNIT_DIGGER';
+UPDATE Units SET Combat=77 , BaseMoves=3 , StrategicResource='RESOURCE_NITER' WHERE UnitType='UNIT_DIGGER';
+INSERT INTO Units_XP2 (UnitType , ResourceCost  , ResourceMaintenanceAmount , ResourceMaintenanceType)
+	VALUES ('UNIT_DIGGER' , 1 , 1 , 'RESOURCE_NITER');
 -- war production bonus reduced to 0% from 100%, liberation bonus reduced to +50% (from +100%)
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='TRAIT_CITADELCIVILIZATION_LIBERATION_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_CITADELCIVILIZATION_DEFENSIVE_PRODUCTION' and Name='Amount';
@@ -107,9 +103,7 @@ UPDATE RequirementArguments SET Value='4' WHERE RequirementId='UNIT_OWNER_PARK_R
 --==================
 -- China
 --==================
--- Great Wall gets +1 Production, and gets it's adjacency gold and culture a little easier
-INSERT INTO Improvement_YieldChanges
-	VALUES ('IMPROVEMENT_GREAT_WALL' , 'YIELD_PRODUCTION' , 1);
+-- Great Wall gets it's adjacency gold and culture a little easier
 UPDATE Improvement_YieldChanges SET YieldChange='1' WHERE ImprovementType='IMPROVEMENT_GREAT_WALL' AND YieldType='YIELD_GOLD';
 INSERT INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqTech)
 	VALUES ('202' , 'IMPROVEMENT_GREAT_WALL' , 'YIELD_CULTURE' , '1' , 'TECH_CASTLES');
@@ -184,13 +178,11 @@ INSERT INTO ModifierStrings (ModifierId , Context , Text)
 --==================
 -- Egypt
 --==================
--- Maryannu Chariot Archer no longer a Heavy Chariot replacement
-DELETE FROM UnitReplaces WHERE CivUniqueUnitType='UNIT_EGYPTIAN_CHARIOT_ARCHER';
 -- Sphinx now allowed to be adjacent to each other, along with yield improvements
 UPDATE Improvements SET SameAdjacentValid=1 WHERE ImprovementType='IMPROVEMENT_SPHINX';
 -- Base Faith Increased to 2 (from 1)
 UPDATE Improvement_YieldChanges SET YieldChange=2 WHERE ImprovementType='IMPROVEMENT_SPHINX' AND YieldType='YIELD_FAITH';
--- +1 Faith and +1 Culture if adjacent to a wonder, insteaf of 2 Faith.
+-- +1 Faith and +1 Culture if adjacent to a wonder, instead of 2 Faith.
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='SPHINX_WONDERADJACENCY_FAITH' AND Name='Amount';
 INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES ('SPHINX_WONDERADJACENCY_CULTURE_CPLMOD' , 'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS' , 'PLOT_ADJACENT_TO_WONDER_REQUIREMENTS');
@@ -200,11 +192,6 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('SPHINX_WONDERADJACENCY_CULTURE_CPLMOD' , 'Amount' , 1);
 INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
 	VALUES ('IMPROVEMENT_SPHINX' , 'SPHINX_WONDERADJACENCY_CULTURE_CPLMOD');
--- Add +1 faith per adjacent holy site
-INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
-	VALUES ( 'Sphinx_HolySiteAdjacency' , 'Placeholder' , 'YIELD_FAITH' , 1 , 1 , 'DISTRICT_HOLY_SITE');
-INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
-	VALUES ('IMPROVEMENT_SPHINX' , 'Sphinx_HolySiteAdjacency');
 -- Increased +1 Culture moved to Diplomatic Service (Was Natural History)
 UPDATE Improvement_BonusYieldChanges SET PrereqCivic = 'CIVIC_DIPLOMATIC_SERVICE' WHERE Id = 18;
 -- Now grants 1 food and 1 production on desert tiles without floodplains. Go Go Gadget bad-start fixer.
@@ -248,7 +235,7 @@ INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
 	VALUES ('IMPROVEMENT_SPHINX' , 'SPHINX_DESERT_PRODUCTION_MODIFIER');
 INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
 	VALUES ('IMPROVEMENT_SPHINX' , 'SPHINX_DESERT_HILLS_PRODUCTION_MODIFIER');
--- No bonus on Floodplains
+-- No prod nor food bonus on Floodplains
 INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('SPHINX_FOOD_PLOT_HAS_DESERT_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_NO_FLOODPLAINS');
 INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
@@ -290,30 +277,15 @@ UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_ENGLISH_SE
 --==================
 -- France
 --==================
--- Chateau now gives 1 housing, only +1 culture from adjacent wonders (but now stacks), and ajacent luxes now give stacking food and gold instead of non-stacking gold 
-DELETE FROM Modifiers WHERE ModifierId='CHATEAU_WONDERADJACENCY_CULTURE';
-DELETE FROM Modifiers WHERE ModifierId='CHATEAU_LUXURYADJACENCY_GOLD';
-DELETE FROM ImprovementModifiers WHERE ModifierId='CHATEAU_WONDERADJACENCY_CULTURE';
-DELETE FROM ImprovementModifiers WHERE ModifierId='CHATEAU_LUXURYADJACENCY_GOLD';
-
+-- Chateau now gives 1 housing at Feudalism, and ajacent luxes now give stacking food in addition to stacking gold 
 INSERT INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
 	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_FOOD' , '0');
-INSERT INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
-	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_GOLD' , '0');
 
-INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
-	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Wonder_Culture');
 INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
 	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Food');
-INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
-	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Gold');
 
-INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentWonder)
-	VALUES ('Chateau_Wonder_Culture' , 'Placeholder' , 'YIELD_CULTURE' , '1' , '1' , '1');
 INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
 	VALUES ('Chateau_Luxury_Food' , 'Placeholder' , 'YIELD_FOOD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
-INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
-	VALUES ('Chateau_Luxury_Gold' , 'Placeholder' , 'YIELD_GOLD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
 
 UPDATE Improvements SET Housing='1' , PreReqCivic='CIVIC_FEUDALISM' WHERE ImprovementType='IMPROVEMENT_CHATEAU';
 
@@ -390,8 +362,6 @@ DELETE FROM UnitAbilityModifiers WHERE ModifierId='RAVEN_LEVY_MOVEMENT';
 -- India Stepwell Unique Improvement gets +1 base Faith and +1 Food moved from Professional Sports to Feudalism
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_STEPWELL' AND YieldType='YIELD_FAITH'; 
 UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_FEUDALISM' WHERE Id='20';
--- India Varu maintenance too high
-UPDATE Units SET Maintenance=2 WHERE UnitType='UNIT_INDIAN_VARU';
 
 --==================
 -- India (Chandra)
@@ -606,7 +576,7 @@ DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_LESS_UNIT_PRODUCTION'    ;
 --==================
 -- Maori
 --==================
-UPDATE Units SET Maintenance=2 WHERE UnitType='UNIT_MAORI_TOA';
+UPDATE Units SET Maintenance=2, Combat=40 WHERE UnitType='UNIT_MAORI_TOA';
 
 --==================
 -- Mapuche
@@ -1577,9 +1547,8 @@ UPDATE GlobalParameters SET Value='3.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_
 --==============================================================
 --******			  U N I T S  (NON-UNIQUE)			  ******
 --==============================================================
-UPDATE Units SET Combat=75 , BaseMoves=3 WHERE UnitType='UNIT_INFANTRY';
-UPDATE Units_XP2 SET ResourceMaintenanceAmount=0 , ResourceCost=40 , ResourceMaintenanceType=NULL WHERE UnitType='UNIT_INFANTRY';
-UPDATE Units SET StrategicResource ='RESOURCE_NITER'  WHERE UnitType='UNIT_INFANTRY';
+UPDATE Units SET Combat=72 , BaseMoves=3 , StrategicResource='RESOURCE_NITER' WHERE UnitType='UNIT_INFANTRY';
+UPDATE Units_XP2 SET ResourceMaintenanceType='RESOURCE_NITER' WHERE UnitType='UNIT_INFANTRY';
 UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_PRIVATEER';
 UPDATE Units SET PrereqTech='TECH_STEEL' WHERE UnitType='UNIT_ANTIAIR_GUN';
 UPDATE Units SET AntiAirCombat=85 WHERE UnitType='UNIT_BATTLESHIP';
@@ -2018,6 +1987,15 @@ UPDATE Feature_AdjacentYields SET YieldChange='2' WHERE FeatureType='FEATURE_DEV
 --==============================================================
 --******				    O T H E R					  ******
 --==============================================================
+-- additional niter spawn locations
+INSERT INTO Resource_ValidFeatures (ResourceType , FeatureType)
+VALUES
+	('RESOURCE_NITER' , 'FEATURE_FOREST'),
+	('RESOURCE_NITER' , 'FEATURE_FLOODPLAINS');
+-- additional aluminum spawn locations
+INSERT INTO Resource_ValidFeatures (ResourceType , FeatureType)
+VALUES
+	('RESOURCE_ALUMINUM' , 'FEATURE_JUNGLE');
 -- add 1 production to fishing boat improvement
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_FISHING_BOATS' AND YieldType='YIELD_PRODUCTION';
 -- Amani Abuse Fix... can immediately re-declare war when an enemy suzerian removes Amani
