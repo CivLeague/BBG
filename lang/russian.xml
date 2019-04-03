@@ -1,6 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="ru_RU">
+			<Text>Чудо природы. Занимает две клетки. Является озером и дает +2 [ICON_FOOD] пищи, +1 [ICON_PRODUCTION] производства, +2 [ICON_CULTURE] культуры и +2 [ICON_GOLD] золота.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="ru_RU">
+			<Text>Чудо природы. Занимает две клетки. Является озером, дает +2 [ICON_FOOD] пищи, +2 [ICON_Faith] веры и +2 [ICON_Culture] культуры. Юниты, которые проводят один ход рядом с Мертвым морем, полностью исцеляются.</Text>
+		</Replace>
+		<Replace Tag="LOC_ALL_PARK_COMBAT_BONUS_DESCRIPTION" Language="ru_RU">
+			<Text>+{1_Amount} к боевой мощи в 4 клетках от Национального Парка</Text>
+		</Replace>
+		<Replace Tag="LOC_OWNER_PARK_COMBAT_BONUS_DESCRIPTION" Language="ru_RU">
+			<Text>+{1_Amount} к боевой мощи в 4 клетках от своего Национального Парка</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="ru_RU">
+			<Text>Уникальное здание Грузии. Заменяет стены Классической эпохи и обеспечивает лучшую защиту города. Дает +3 [ICON_TOURISM] к туризму после исследования социального института «Охрана природы». Дает +4 [ICON_Faith] ед. веры. В золотом веке +100% к [ICON_TOURISM] туризму и [ICON_FAITH] вере.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="ru_RU">
+			<Text>+25% [ICON_Production] Производства наземных и морских военных юнитов.[NEWLINE] Стоимость содержания юнитов уменьшена на 1 [ICON_GOLD]. Дает +1 [Icon_Governor] губернаторский титул. +15 к ёмкости склада стратегических ресурсов.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GOBUSTAN_DESCRIPTION" Language="ru_RU">
+			<Text>Чудо природы. Занимает три клетки. Дает +4 [ICON_CULTURE] к культуре и +4 [ICON_Production] к производству.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_WHITEDESERT_DESCRIPTION" Language="ru_RU">
+			<Text>Чудо природы. Занимает четыре клетки. Дает +2 [ICON_SCIENCE] к науке, +2 [ICON_Culture] к культуре и +6 [ICON_GOLD] золота.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_CHOCOLATEHILLS_DESCRIPTION" Language="ru_RU">
+			<Text>Чудо природы. Занимает четыре клетки. Дает +3 [ICON_Food] к пище, +3 [ICON_Production] к производству и +1 [ICON_Science] к науке.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_DEVILSTOWER_DESCRIPTION" Language="ru_RU">
+			<Text>Чудо природы. Занимает одну непроходимую клетку. Дает +2 [ICON_FAITH] к вере и +1 [ICON_Production] к производству на соседних клетках.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ru_RU">
+			<Text>+100% [ICON_PRODUCTION] к производству священных мест и акведуков. Священные места дают +2 [ICON_FOOD] пищи, +2 [ICON_FAITH] веры и +1 [ICON_HOUSING] жилья, если построены рядом с рекой. Священные места производят культурный захват клеток.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="ru_RU">
+			<Text>Все наземные боевые и религиозные юниты имеют +1 [ICON_Movement] к перемещению.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="ru_RU">
+			<Text>+100% к [ICON_PRODUCTION] производству театральных площадей. Каждый из шедевров в городах Алиеноры отнимает у иностранных городов в пределах 9 клеток 1 ед. лояльности за ход. Город, отделившийся от другой цивилизации по причине потери лояльности, сразу присоединяется к державе Алиеноры, если ее влияние за ход в этом городе сильнее влияния остальных держав.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="ru_RU">
+			<Text>+100% к [ICON_Production] производству осадных юнитов и стен.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="ru_RU">
+			<Text>Центры городов получают +1 [ICON_FAITH] к вере и +1 [ICON_FOOD] к пище за каждую соседнюю клетку пустыни и пустынных холмов. Рудники получают -1 [ICON_PRODUCTION] производства и +4 [ICON_GOLD] золота. Здания центра коммерции можно покупать за [ICON_Faith] веру.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный район Кореи для научных исследований. Заменяет кампус. +2 [ICON_SCIENCE] науки. Соседние театральные площади получают +1 к [ICON_CULTURE] культуре. Можно строить только на холмах.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="ru_RU">
+			<Text>Соседство: +1 к [ICON_SCIENCE] науке за каждые две соседние шахты. -1 [ICON_SCIENCE] науки за каждый соседний район, кроме театральных площадей, которые дают +1 к [ICON_SCIENCE] науке. Соседние театральные площади получают +1 к [ICON_CULTURE] культуре.</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="ru_RU">
+			<Text>+{1_num} к [ICON_Science] науке за каждую соседнюю театральную площадь.</Text>
+		</Row>
+		<Row Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="ru_RU">
+			<Text>+{1_num} к [ICON_CULTURE] культуре за каждый соседний совон.</Text>
+		</Row>		
+		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный средневековый юнит Мапуче, который заменяет летучего всадника. +1 к [ICON_Movement] перемещению и разграбление клеток стоит 1 [ICON_Movement] ОП.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ANTIAIR_GUN_DESCRIPTION" Language="ru_RU">
+			<Text>Юнит противовоздушной обороны эпохи Современности. Защищает от атак с воздуха в пределах 1 клетки от своего местоположения.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ru_RU">
+			<Text>Венгерский уникальный юнит Индустриальной эпохи, который заменяет кавалерию. +1 к [ICON_Strength] боевой мощи за каждый заключенный в настоящий момент союз.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="ru_RU">
+			<Text>+1 к [ICON_FOOD] пище с клеток тундры, включая холмы. Позволяет строить фермы в тундре. После открытия строительной инженерии можно строить фермы на холмах в тундре. Уменьшает стоимость приобретения клеток снега и тундры (в том числе с холмами) на 50%. +100% к добыче расходуемых ресурсов на таких клетках.[NEWLINE][NEWLINE]Города с национальным парком имеют +8 к [ICON_FOOD] Пище и +8 к [ICON_PRODUCTION] производству.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="ru_RU">
+			<Text>Канадский уникальный юнит эпохи Современности. Может создавать национальный парк. +5 к [ICON_Strength] боевой мощи в 4 клетках от нац. парка. Ещё +5 к [ICON_Strength] боевой мощи рядом с дружественным национальным парком.</Text>
+		</Replace>
+		<Replace Tag="LOC_TECH_COMPUTERS_DESCRIPTION" Language="ru_RU">
+			<Text>Можно строить ещё 1 шпиона. +50% к [ICON_Tourism] туризму от любых источников.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVIC_ENVIRONMENTALISM_DESCRIPTION" Language="ru_RU">
+			<Text>+50% к [ICON_Tourism] туризму от любых источников.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_DESCRIPTION" Language="ru_RU">
+			<Text>Проект «Космическая гонка» отправляет лунную экспедицию. Дает разовый бонус к [ICON_Culture] культуре, равный 5-кратному размеру вашей [ICON_Science] науки за ход. Означает второй шаг к научной победе.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Все морские юниты ближнего боя получают способность осуществлять рейды на прибрежные территории. +50% [ICON_PRODUCTION] производства при создании всех морских юнитов ближнего боя. Мародерство и рейды на побережье против рудников приносят не только [ICON_GOLD] золото, но и [ICON_SCIENCE] науку. Мародерство и рейды на побережье против каменоломен, пастбищ, плантаций и лагерей приносят не только [ICON_FAITH] веру, но и [ICON_CULTURE] культуру.[NEWLINE][NEWLINE] +50% к [ICON_PRODUCTION] производству священных мест. Священные места получают стандартный бонус соседства от клеток побережья.[NEWLINE][NEWLINE]Гавани рядом со священными местами имеют +2 к [ICON_GOLD] золоту (считается как бонус соседства).</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строителям создавать Великую стену (уникально для Китая).[NEWLINE][NEWLINE]+ 2 [ICON_GOLD] золота. Дает улучшение к [ICON_Strength] обороне и бонус +1 к [ICON_Gold] золоту и [ICON_Culture] культуре при соседстве с другими сегментами. +1 к [ICON_Culture] культуре после исследования замков. Бонусы к [ICON_Tourism] туризму по мере вашего продвижения по дереву технологий. Можно построить только вдоль границы империи. Великая стена может быть разорена (но не уничтожена) только стихийным бедствием.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строителям строить миссию (уникально для Испании).[NEWLINE][NEWLINE]+2 [ICON_Faith] веры. +2 [ICON_Faith] веры, +1 [ICON_PRODUCTION] производства и +1 [ICON_FOOD] пищи, если построено не на том же континенте, что и ваша [ICON_Capital] столица. +1 [ICON_Science] науки за каждый соседний кампус и священное место. +1 к жилью после открытия «Гражданской службы» и +2 к [ICON_SCIENCE] науке после открытия «Просвещения».</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строителям строить шато (уникально для Франции).[NEWLINE][NEWLINE]+2 [ICON_Culture] культуры. +1 престижа. +1 [ICON_Culture] культуры за каждое соседнее чудо. +1 к [ICON_Gold] золоту и [ICON_FOOD] пище за каждый соседний редкий ресурс роскоши. +1 к [ICON_HOUSING] жилью после открытия феодализма. Дает [ICON_TOURISM] туризм после исследования «Авиации». Можно строить только возле рек.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строителям строить сфинкса (уникально для Египта).[NEWLINE][NEWLINE]+2 [ICON_Faith] веры и +1 [ICON_Culture] культуры. +2 престижа. +1 к [ICON_Faith] вере и [ICON_CULTURE] культуре, если построен рядом с чудом света. +1 к [ICON_FOOD] пище и [ICON_PRODUCTION] производству в пустыне либо +1 [ICON_CULTURE] культуры в пойме реки. Дополнительная [ICON_CULTURE] культура после открытия «Дипломатической службы». Дает [ICON_TOURISM] туризм после открытия «Авиации». Нельзя построить рядом с другим сфинксом. Нельзя построить на снегу и заснеженных холмах.</Text>
+		</Replace>		
+		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ru_RU">
+			<Text>Мобилизованные юниты получают +5 к [ICON_Strength] боевой мощи. На повышение нанятых юнитов тратится на 75% меньше [ICON_GOLD] золота и ресурсов. При найме армии города-государства вы получаете 2 [ICON_ENVOY] послов в этом городе. После исследования технологии «Замки» дается уникальный юнит «Черная армия».</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строителям строить сфинкса (уникально для Египта).[NEWLINE][NEWLINE]+2 [ICON_Faith] веры и +1 [ICON_Culture] культуры. +1 престижа. +1 к [ICON_Faith] вере и [ICON_Culture] культуре, если построен рядом с чудом света. Нельзя построить рядом с другим сфинксом. Можно строить в пойме реки.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строителям строить шато (уникально для Франции).[NEWLINE][NEWLINE]+2 [ICON_Culture] культуры. +1 престижа. +1 [ICON_Culture] культуры за каждое соседнее чудо. +1 к [ICON_Gold] золоту и [ICON_FOOD] пище за каждый соседний редкий ресурс роскоши. +1 к [ICON_HOUSING] жилью после открытия феодализма. Дает [ICON_TOURISM] туризм после исследования «Авиации». Можно строить только возле рек.</Text>
+		</Replace>
 		<!---------------======== GATHERING STORM ========------------------->
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>+5 лояльность за ход в захваченных городах с гарнизоном. Объявленная внезапная война считается официальной войной при расчете [ICON_STAT_GRIEVANCE] претензий  и милитаризма.</Text>

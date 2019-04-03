@@ -1,6 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="ja_JP">
+			<Text>2タイルにわたる湖の自然遺産。各タイルから[ICON_FOOD]食料+2、[ICON_PRODUCTION]生産力+1、[ICON_CULTURE]文化力+2、[ICON_GOLD]ゴールド+2。淡水は供給しない。</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="ja_JP">
+			<Text>2タイルにわたる湖の自然遺産。各タイルから[ICON_FOOD]食料+2、[ICON_FAITH]信仰+2、[ICON_CULTURE]文化力+2。[NEWLINE]隣接するユニットの体力が1ターンで全回復する。淡水は供給しない。</Text>
+		</Replace>
+		<Replace Tag="LOC_ALL_PARK_COMBAT_BONUS_DESCRIPTION" Language="ja_JP">
+			<Text>国立公園から4タイル以内で戦闘を行う際の戦闘力+{1_Amount}</Text>
+		</Replace>
+		<Replace Tag="LOC_OWNER_PARK_COMBAT_BONUS_DESCRIPTION" Language="ja_JP">
+			<Text>国立公園から4タイル以内で戦闘を行う際の戦闘力+{1_Amount}</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="ja_JP">
+			<Text>太古の防壁に取ってかわるグルジア固有の建造物。[ICON_FAITH]信仰+4。[NEWLINE]自然保護の社会制度を解禁後、[ICON_TOURISM]観光力+3。[NEWLINE]黄金時代中はこれらの出力は+100%される。</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="ja_JP">
+			<Text>陸上および海上戦闘ユニットに対する[ICON_PRODUCTION]生産力+25%。[NEWLINE]ユニットにかかる[ICON_GOLD]維持費-1。[NEWLINE][ICON_GOVERNOR]総督の称号+1。戦略資源の備蓄上限が15増加する。</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GOBUSTAN_DESCRIPTION" Language="ja_JP">
+			<Text>3タイルにわたる自然遺産。各タイルから[ICON_CULTURE]文化力+4、[ICON_PRODUCTION]生産力+4。</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_WHITEDESERT_DESCRIPTION" Language="ja_JP">
+			<Text>4タイルにわたる自然遺産。各タイルから[ICON_SCIENCE]科学力+2、[ICON_CULTURE]文化力+2、[ICON_GOLD]ゴールド+6。</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_CHOCOLATEHILLS_DESCRIPTION" Language="ja_JP">
+			<Text>4タイルにわたる自然遺産。各タイルから[ICON_FOOD]食料+3、[ICON_PRODUCTION]生産力+3、[ICON_SCIENCE]科学力+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_DEVILSTOWER_DESCRIPTION" Language="ja_JP">
+			<Text>1タイルの通行不能な自然遺産。隣接する各タイルに[ICON_FAITH]信仰+2、[ICON_PRODUCTION]生産力+1を与える。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ja_JP">
+			<Text>聖地と用水路に対する[ICON_PRODUCTION]生産力+100%。[NEWLINE]河川に隣接する場合のみ、聖地が[ICON_FOOD]食料+2、[ICON_FAITH]信仰+2、[ICON_HOUSING]住宅+1を供給する。[NEWLINE]聖地が文化爆弾を発動させる。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="ja_JP">
+			<Text>すべての陸上ユニットおよび宗教ユニットの[ICON_MOVEMENT]移動力+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="ja_JP">
+			<Text>劇場区域の建造物に対する[ICON_PRODUCTION]生産力+100%。[NEWLINE]自文明の都市にある傑作が、1つにつきその都市から9タイル以内にある他文明の都市に対して毎ターン忠誠心-1を与える。[NEWLINE]他文明の都市で反乱が起きた際、自文明が最もその都市に対する忠誠心圧力を与えていたならば、その都市は自由都市になる過程を経ずに直接自文明のものとなる。</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="ja_JP">
+			<Text>防御施設と攻城ユニットに対する[ICON_PRODUCTION]生産力+100%。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="ja_JP">
+			<Text>隣接する砂漠や砂漠の丘陵タイル1つにつき、都心の[ICON_FAITH]信仰力+1、[ICON_FOOD]食料+1。[NEWLINE]鉱山の[ICON_PRODUCTION]生産力-1、[ICON_GOLD]ゴールド+4。[NEWLINE]商業ハブ区域の建造物を[ICON_FAITH]信仰力で購入できる。</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ja_JP">
+			<Text>キャンパスに取ってかわる韓国固有の区域。丘陵にのみ建設できる。[NEWLINE]基本隣接ボーナスとして[ICON_SCIENCE]科学力+2をもち、劇場区域に隣接すると[ICON_CULTURE]文化力+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="ja_JP">
+			<Text>隣接ボーナス: 鉱山2つにつき[ICON_SCIENCE]科学力+1。劇場以外の区域1つにつき[ICON_SCIENCE]科学力-1。劇場区域1つにつき[ICON_SCIENCE]科学力+1。[NEWLINE]隣接する劇場区域に[ICON_CULTURE]文化力+1を与える。</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="ja_JP">
+			<Text>隣接する劇場区域1つにつき[ICON_SCIENCE]科学力+{1_num}。</Text>
+		</Row>
+		<Row Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="ja_JP">
+			<Text>隣接する書院1つにつき[ICON_CULTURE]文化力+{1_num}。</Text>
+		</Row>		
+		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="ja_JP">
+			<Text>コーサーに取ってかわるマプチェ固有のユニット。[NEWLINE][ICON_MOVEMENT]移動力が通常より1多く、略奪に[ICON_MOVEMENT]移動力を1しか消費しない。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ANTIAIR_GUN_DESCRIPTION" Language="ja_JP">
+			<Text>近代の対空支援ユニット。このユニットから1マス以内に行われた航空攻撃に対して自動的に迎撃を行う。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ja_JP">
+			<Text>騎兵に取ってかわるハンガリー固有のユニット。[NEWLINE]有効な同盟1つにつき[ICON_STRENGTH]戦闘力+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ja_JP">
+			<Text>徴用されたユニットの[ICON_STRENGTH]戦闘力+5。[NEWLINE]徴用されたユニットのアップグレードに[ICON_GOLD]ゴールドや資源が不要になる。[NEWLINE]部隊を徴用すると、その都市国家の[ICON_ENVOY]代表団+2。「城」技術を研究すると、固有ユニット「黒軍」を得る。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="ja_JP">
+			<Text>ツンドラおよびツンドラの丘陵から[ICON_FOOD]食料+1。[NEWLINE]ツンドラに農場を建設することができる（土木工学の解禁後はツンドラの丘陵にも建設できるようになる）。[NEWLINE]雪原、雪原の丘陵、ツンドラ、ツンドラの丘陵タイルに対して、購入する際の必要[ICON_GOLD]ゴールドが-50%され、そこから得られる戦略資源の産出量は+100%となる。[NEWLINE]国立公園をもつ都市は追加で[ICON_FOOD]食料+8と[ICON_PRODUCTION]生産力+8を毎ターン得る。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="ja_JP">
+			<Text>カナダ固有の近代陸上ユニット。国立公園を建設できる。[NEWLINE]国立公園から4タイル以内での戦闘において[ICON_STRENGTH]戦闘力+5。[NEWLINE]その国立公園がカナダのものである場合には[ICON_STRENGTH]戦闘力さらに+5。</Text>
+		</Replace>
+		<Replace Tag="LOC_TECH_COMPUTERS_DESCRIPTION" Language="ja_JP">
+			<Text>スパイ保有数の上限が1増加する。[NEWLINE]自文明の[ICON_TOURISM]観光力産出+50%。</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVIC_ENVIRONMENTALISM_DESCRIPTION" Language="ja_JP">
+			<Text>自文明の[ICON_TOURISM]観光力産出+50%。</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_DESCRIPTION" Language="ja_JP">
+			<Text>月面に人類を着陸させる宇宙開発競争のプロジェクト。[NEWLINE]完了させることで自文明が産出する[ICON_SCIENCE]科学力の5倍にあたる[ICON_CULTURE]文化力を一度だけボーナスとして獲得し、科学勝利に対する2番目の段階が完了する。</Text>
+		</Replace>
 		<!---------------======== GATHERING STORM ========------------------->
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>占領下の都心に、守備隊がいると1ターンにつき+5の忠誠値。奇襲戦争を宣言しても戦争による[ICON_STAT_GRIEVANCE]不平と好戦性ペナルティが増加しない（正式な宣戦布告と同じ。）。</Text>

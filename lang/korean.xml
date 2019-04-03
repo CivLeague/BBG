@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="ko_KR">
+				<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="ko_KR">
             <Text>호수로 보이는 타일 두 개의 자연경관입니다. [ICON_Food] 식량 +2, [ICON_PRODUCTION] 생산력 +1, [ICON_CULTURE] 문화 +2, [ICON_GOLD] 금 +2을 제공합니다. 담수를 제공하지 않습니다.</Text>
         </Replace>
         <Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="ko_KR">
@@ -17,7 +17,7 @@
 			<Text>고대 성벽을 대체하는 조지아 특유의 건물입니다. 고대 성벽보다 외곽 방어 능력이 높습니다. 보존 사회 제도로 발전 후 [ICON_TOURISM] 관광 +3이 제공됩니다. [ICON_Faith] 신앙 +4를 제공합니다. 황금기의 경우 [ICON_TOURISM] 관광 및 [ICON_FAITH] 신앙 +100%입니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="ko_KR">
-			<Text>모든 해군 유닛 및 지상 군사 유닛 생산 시 [ICON_Production] 생산력 25%를 제공합니다. 유닛별로 매 턴당 소모되는 관리 비용의 [ICON_Gold] 금 -1.[NEWLINE]보상으로 [Icon_Governor] 총독 타이틀 +1 및 전략 자원 비축력이 +15 증가합니다.</Text>
+			<Text>모든 해군 유닛 및 지상 군사 유닛 생산 시 [ICON_Production] 생산력 25%를 제공합니다. 유닛별로 매 턴당 소모되는 관리 비용의 [ICON_Gold] 금 -1.[NEWLINE]보상으로 [Icon_Governor] 총독 타이틀 +1 및 전략 자원 비축력이 +15 증가합니다(온라인 속도 기준).</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_GOBUSTAN_DESCRIPTION" Language="ko_KR">
 			<Text>타일 3개의 자연경관입니다. [ICON_CULTURE] 문화 +4와 [ICON_Production] 생산력 +4를 제공합니다.</Text>
@@ -67,14 +67,46 @@
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ko_KR">
 			<Text>기병대를 대체하는 헝가리 특유의 산업 시대 유닛입니다. 각 활성 동맹에서 [ICON_Strength] 전투력 +1을 획득합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ko_KR">
-			<Text>도시 국가 동원(징병) 유닛이 능력을 획득하여 [ICON_Strength] 전투력 +5를 얻습니다. 동원 유닛 업그레이드 시 [ICON_GOLD] 금이나 자원이 소비되지 않습니다. 도시 국가의 군대를 동원하면 해당 도시 국가를 통해 [ICON_ENVOY] 사절 2명을 얻습니다. 성 기술을 완료하면 특유 유닛인 검은 군대를 생산할 수 있습니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="ko_KR">
-			<Text>툰드라에서 [ICON_FOOD] 식량 +1을 제공합니다. 툰드라 지형에 농장을 건설할 수 있게 허용합니다. 토목 공학이 잠금 해제된 후에는 툰드라 언덕에 농장을 건설할 수 있습니다. 설원, 설원 언덕, 툰드라 언덕 및 툰드라 타일의 구매 비용이 50% 감소합니다. 축적 자원이 설원, 설원 언덕, 툰드라 언덕과 툰드라 타일에 있는 경우 추출률 +100%를 지닙니다.[NEWLINE][NEWLINE]국립공원을 소유한 도시는 [ICON_FOOD] 식량 +8과 [ICON_PRODUCTION] 생산력 +8을 제공합니다.</Text>
+			<Text>툰드라에서 [ICON_FOOD] 식량 +1을 제공합니다. 툰드라 지형에 농장을 건설할 수 있게 허용합니다. 토목 공학이 잠금 해제된 후에는 툰드라 언덕에 농장을 건설할 수 있습니다. 설원, 툰드라, 설원 언덕 및 툰드라 언덕에서 모든 광산은 [ICON_PRODUCTION] 생산력 +1을 제공하며, 전략 자원 누적률은 +100% 증가합니다. 해당 지형 유형 타일의 구매 비용이 50% 감소합니다.[NEWLINE][NEWLINE]국립공원을 소유한 도시는 [ICON_FOOD] 식량 +8과 [ICON_PRODUCTION] 생산력 +8을 획득합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="ko_KR">
 			<Text>캐나다 특유의 현대 시대 유닛입니다. 국립공원을 조성할 수 있습니다. 국립공원 4타일 이내에서 전투 시 [ICON_Strength] 전투력 +5를 획득합니다. 본인이 소유한 국립공원 4타일 이내에서 전투 시 추가 [ICON_Strength] 전투력 +5를 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TECH_COMPUTERS_DESCRIPTION" Language="ko_KR">
+			<Text>스파이 유닛 1개를 추가로 생성할 수 있는 능력을 제공합니다. 제국 전체에 [ICON_Tourism] 관광이 +50% 증가합니다.</Text>
+		</Replace>
+	    <Replace Tag="LOC_CIVIC_ENVIRONMENTALISM_DESCRIPTION" Language="ko_KR">
+			<Text>제국 전체에 [ICON_Tourism] 관광이 +50% 증가합니다.</Text>
+		</Replace>
+	    <Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_DESCRIPTION" Language="ko_KR">
+			<Text>우주 경쟁 프로젝트의 하나로, 달에 인간을 상륙시키기 위해 대형 로켓을 발사합니다. 플레이어의 턴당 [ICON_Science] 과학 생산량의 5배인 [ICON_Culture] 문화 보너스를 일회성으로 부여하며, 과학 승리로의 두 번째 단계를 표시합니다.</Text>
+		</Replace>
+		<!---------------======== Antarctic Late Summer Update ========------------------->		
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>모든 해상 근접 유닛이 해안 강습을 감행할 수 있게 되며, 이 유닛 생성에 대한 [ICON_PRODUCTION] 생산력 +25%를 제공합니다. 광산을 약탈 또는 해안 강습하면 [ICON_GOLD] 금뿐만 아니라 [ICON_SCIENCE] 과학도 얻습니다. 채석장, 목장, 재배지, 야영지를 약탈 또는 해안 강습하면 [ICON_FAITH] 신앙뿐만 아니라 [ICON_CULTURE] 문화도 얻습니다. 항해를 통해 특유 유닛인 바이킹 롱십을 훈련할 수 있습니다.[NEWLINE][NEWLINE]성지 특수지구와 성지 특수지구 내 건물을 생산할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 성지는 인접한 해안 타일에서 일반적인 신앙 인접 보너스를 획득합니다.[NEWLINE][NEWLINE]성지 특수지구와 인접한 항만 특수지구에서 [ICON_GOLD] 금 +2의 인접 보너스를 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>중국 특유의 만리장성을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_GOLD] 금 +2를 제공합니다. [ICON_Strength] 방어력이 증가합니다. 성 기술을 연구하면 [ICON_Culture] 문화 +1을 추가 제공합니다. 다른 만리장성 타일과 인접한 경우 [ICON_Gold] 금과 [ICON_Culture] 문화 보너스 효과가 +1만큼 추가로 제공됩니다. 기술 발전표의 진전에 따라, 연결된 만리장성 타일에 [ICON_Tourism] 관광이 추가로 부여됩니다. 제국 국경을 따라 일렬로 지어야 합니다. 자연재해로 인해 약탈당할 수 있지만, 파괴되지는 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>스페인 특유의 전도관을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2를 제공합니다. [ICON_Capital] 수도와 다른 대륙에 있으면 [ICON_Faith] 신앙 +2, [ICON_PRODUCTION] 생산력 +1 및 [ICON_FOod] 식량 +1을 제공합니다. 모든 인접한 캠퍼스 및 성지 특수지구에 대해 [ICON_Science] 과학 +1을 제공합니다.  공공 행정 사회 제도를 획득하면 [ICON_HOUSING] 주거공간 +1을 추가 제공하며, 계몽주의 사회 제도를 획득하면 [ICON_Science] 과학 +2를 추가 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>프랑스 특유의 샤토를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Culture] 문화 +2를 제공합니다. 매력도 +1을 제공합니다. 인접한 모든 불가사의마다 [ICON_Culture] 문화 +1을 제공합니다. 인접한 모든 사치 자원마다 [ICON_Food] 식량 +1과 [ICON_Gold] 금 +1을 제공합니다. 봉건제 사회 제도를 획득하면 [ICON_HOUSING] 주거공간 +1을 추가 제공하며, 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 강 근처에만 지을 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +2를 제공합니다. 불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다. 범람원이 아닌 사막에 지으면 [ICON_Food] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다. 범람원에 지으면 [ICON_CULTURE] 문화 +1을 제공합니다. 외교부 사회 제도를 발견하면 문화를 추가로 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 다른 스핑크스 옆에 지을 수 없습니다. 설원 또는 설원 언덕에 지을 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ko_KR">
+			<Text>도시 국가 동원 유닛이 능력을 획득하여 [ICON_Strength] 전투력 +5를 얻습니다. 동원 유닛 업그레이드 시 [ICON_GOLD] 금 및 자원 소비량이 75% 감소합니다. 도시 국가의 군대를 동원하면 해당 도시 국가를 통해 [ICON_ENVOY] 사절 2명을 얻습니다. 성 기술을 연구하면 특유 유닛인 검은 군대를 생산할 수 있습니다.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ko_KR">
+			<Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +1을 제공합니다. 불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="ko_KR">
+			<Text>프랑스 특유의 샤토를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Culture] 문화 +2를 제공합니다. 매력도 +1을 제공합니다. 인접한 모든 불가사의마다 [ICON_Culture] 문화 +1을 제공합니다. 인접한 모든 사치 자원마다 [ICON_Food] 식량 +1과 [ICON_Gold] 금 +1을 제공합니다. 봉건제 사회 제도를 획득하면 [ICON_HOUSING] 주거공간 +1을 추가 제공하며, 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 강 근처에만 지을 수 있습니다.</Text>
 		</Replace>
 		<!---------------======== GATHERING STORM ========------------------->
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="ko_KR">

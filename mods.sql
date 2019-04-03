@@ -43,8 +43,8 @@ INSERT INTO RequirementArguments (RequirementId , Name , Value)
 --==================
 -- Australia
 --==================
--- Digger gets +5 combat strength and requires niter
-UPDATE Units SET Combat=77 , BaseMoves=3 , StrategicResource='RESOURCE_NITER' WHERE UnitType='UNIT_DIGGER';
+-- Digger gets additional combat strength and requires niter
+UPDATE Units SET Combat=74 , BaseMoves=3 , StrategicResource='RESOURCE_NITER' WHERE UnitType='UNIT_DIGGER';
 INSERT INTO Units_XP2 (UnitType , ResourceCost  , ResourceMaintenanceAmount , ResourceMaintenanceType)
 	VALUES ('UNIT_DIGGER' , 1 , 1 , 'RESOURCE_NITER');
 -- war production bonus reduced to 0% from 100%, liberation bonus reduced to +50% (from +100%)
