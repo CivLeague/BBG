@@ -97,12 +97,6 @@
 			<Text>+50% [ICON_Production] Produktion, wenn Ihr in den letzten 10 Runden eine Stadt befreit habt.</Text>
 		</Replace>
 		<!-- Korea -->
-		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="de_DE">
-			<Text>Ein ausschließlich Korea zur Verfügung stehender Bezirk für wissenschaftliche Bestrebungen. Ersetzt den Campus-Bezirk. +2 [ICON_SCIENCE] Wissenschaft. Muss auf Hügeln gebaut werden.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="de_DE">
-			<Text>Adjacency: +1 [ICON_SCIENCE] Wissenschaft durch jedes 2. Minen-Geländefeld. -1 [ICON_SCIENCE] Wissenschaft durch jedes angrenzende Bezirk-Geländefeld.</Text>
-		</Replace>
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="de_DE">
 			<Text>+{1_num} [ICON_SCIENCE] Wissenschaft.</Text>
 		</Replace>
@@ -235,9 +229,6 @@
 		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="de_DE">
 			<Text>Einzigartiges Gebäude von den Atzteken. Bietet eine [ICON_Amenities] Annehmlichkeit, +3 [ICON_CULTURE] Kultur, und einen [ICON_GreatGeneral] "Großer General"-Punkt.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Sphinx, die einzigartige Modernisierung Ägyptens, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben, +1 [ICON_Culture] Kultur. +1 Anziehungskraft. +1 [ICON_Faith] Glauben und +1 [ICON_CULTURE] Kultur, wenn neben einem Wunder. +1 [ICON_FAITH] Glauben für jede benachbarte Heilige Stätte. +1 [ICON_FOOD] Nahrung und +1 [ICON_PRODUCTION] Produktion, wenn die Sphinx auf einem Wüste-Geländefeld errichtet wurde</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="de_DE">
 			<Text>Modernisierung, die durch Steinmetzkunst freigeschaltet wird und auf Wüste, Wüstenhügeln, Schwemmland oder Ebene gebaut werden muss. +1 [ICON_Faith] Glauben. Erhält zusätzliche Erträge durch angrenzende Bezirke. +2 [ICON_Food] Nahrung, wenn angrenzend an ein Stadtzentrum. Für alle anderen Bezirke, die Nachbarschaftsbonusse gewähren: +2 für den entsprechenden Ertrag, wenn der Bezirk angrenzt.</Text>
 		</Replace>
@@ -286,12 +277,6 @@
 		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION" Language="de_DE">
 			<Text>+7 [ICON_Ranged] Fernkampfstärke beim Angriff auf benachbarte Einheiten.</Text>
 		</Row>
-		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker-Fähigkeit frei, die Große Mauer zu bauen, einzigartig für China.[NEWLINE][NEWLINE]Steigert die [ICON_Strength] Verteidigung, +1 [ICON_PRODUCTION] Produktion und +1 [ICON_Gold] Gold. +1 [ICON_Culture] Kultur durch das Erforschen von 'Burgen'. Gold- und Kulturerträge verdoppeln sich, wenn eine weitere Große-Mauer-Modernisierung angrenzend ist. Zusätzlicher [ICON_Tourism] Tourismus, wenn Ihr Fortschritte beim Technologiebaum erzielt. Muss in einer Linie entlang der Grenzen eures Reichs gebaut werden.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker-Fähigkeit frei, ein Chateau, die einzigartige Modernisierung Frankreichs zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Culture] Kultur und +1 Anziehungskraft. +1 [ICON_Culture] Kultur für jedes benachbarte Wunder. +1 [ICON_Gold] Gold und +1 [ICON_Food] Nahrung für jedes benachbarte Luxusgut. Kann nur an Flüssen angrenzend gebaut werden.</Text>
-		</Replace>
 		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="de_DE">
 			<Text>Norwegische Spezialeinheit des Mittelalters. +2 [ICON_Movement] Fortbewegungspunkte bei Start in feindlichem Gebiet. +15 [ICON_Strength] Kampfstärke beim Angreifen.</Text>
 		</Replace>		

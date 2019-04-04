@@ -1,6 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="es_ES">
+			<Text>Maravilla Natural de dos espacios. Se mira como un lago y da +2 [ICON_FOOD] Comida, +1 [ICON_PRODUCTION] Producción, +2 [ICON_CULTURE] Cultura, +2 [ICON_GOLD] Oro.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="es_ES">
+			<Text>Maravilla Natural de dos espacios. Se mira como un lago y da +2 [ICON_FOOD] Comida, +2 [ICON_Faith] Fe, +2 [ICON_Culture] Cultura. Unidades se curan completamente si esperan por un turno si moverse.</Text>
+		</Replace>
+		<Replace Tag="LOC_ALL_PARK_COMBAT_BONUS_DESCRIPTION" Language="es_ES">
+			<Text>+{1_Amount} Fuerza de combate al estar 4 spacios cerca de un Parque Nacional</Text>
+		</Replace>
+		<Replace Tag="LOC_OWNER_PARK_COMBAT_BONUS_DESCRIPTION" Language="es_ES">
+			<Text>+{1_Amount} Fuerza de combate al estar 4 spacios cerca de un Parque Nacional tuyo.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="es_ES">
+			<Text>Una structura unica a Georgia, esta estructura reemplaza a las paredes de la era antigua y es mas fuerte. Te da +3 [ICON_TOURISM] Turismo despues de avanzar al Cívico de Conservation . Da +4 [ICON_Faith] Fe. Cuando estas en una era de Oro [ICON_TOURISM] Turismo Y [ICON_FAITH] Fe son +100% mas.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="es_ES">
+			<Text>+25% [ICON_Production] de producción para todas las unidades militarias que son Terrestres o Navales . Reduce el costo de mantenimiento de unidades por 1 [ICON_GOLD] Oro.[NEWLINE]Premia +1 [Icon_Governor] un Governador o promocion de Governador y sube el limite de almanezamiento de recursos strategicos por 15.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GOBUSTAN_DESCRIPTION" Language="es_ES">
+			<Text>Maravilla Natural de tres espacios. Da +4 [ICON_CULTURE] Cultura and +4 [ICON_Production] Producción.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_WHITEDESERT_DESCRIPTION" Language="es_ES">
+			<Text>Maravilla Natural de cuatro espacios. Da +2 [ICON_SCIENCE] Ciencia, +2 [ICON_Culture] Cultura,  and +6 [ICON_GOLD] Oro.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_CHOCOLATEHILLS_DESCRIPTION" Language="es_ES">
+			<Text>Maravilla Natural de cuatro espacios. Da +3 [ICON_Food] Comida, +3 [ICON_Production] Producción,  and +1 [ICON_Science] Ciencia.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_DEVILSTOWER_DESCRIPTION" Language="es_ES">
+			<Text>Maravilla Natural de un espacio por cual no se puede pasar. Da +2 [ICON_FAITH] Fe y +1 [ICON_Production] de Producción a los espacios que estan alrededor.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="es_ES">
+			<Text>+100% [ICON_PRODUCTION] de Producción para Sitios Santos Y Acueducto. Sitios Santos dan +2 [ICON_FOOD] Comida, +2 [ICON_FAITH] Fe, and +1 [ICON_HOUSING] de alojamiento si está al lado de un río. Sitios Santos causan una bomba Cultural que toma espacios que están alrededor aunque sean de alguien.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="es_ES">
+			<Text>Todas las unidades de combate terrestres y religiosas reciben +1 [ICON_Movement] movimiento.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="es_ES">
+			<Text>+100% [ICON_PRODUCTION] de Producción a los edificios en Plazas de Teatro. Cada una de las Grandes Obras en las ciudades de Eleanor causan -1 de Lealtad por turno en ciudades extranjeras que están a 9 espacios de la ciudad. Una ciudad que deja a una civilización por causa de perdida de Lealtad; Y que recibe la mayoría de lealtad por turno de parte de la civilización de Eleanor no ocupa pasar por los turnos de ciudad libre para unirse a esta civilización.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="es_ES">
+			<Text>+100% [ICON_Production] de Producción para paredes y unidades que se usan para atacar paredes en las ciudades.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="es_ES">
+			<Text>Los Centros de Ciudades ganan +1 [ICON_FAITH] Fe and +1 [ICON_FOOD] Comida por cada espacio de desierto y colina de desierto. Minas reciben -1 [ICON_PRODUCTION] de Producción and +4 [ICON_GOLD] Oro. Se puede comprar edificios de Centros comerciales con [ICON_Faith] Fe.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="es_ES">
+			<Text>Un distrito exclusivo de Corea que reemplaza al distrito del Campus y solo se puede plantar en una colina. +2 [ICON_SCIENCE] Ciencia es la base al construirse. Da +1 [ICON_CULTURE] Cultura a las Plazas de Teatro que estén alrededor.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="es_ES">
+			<Text>Adjacency: +1 [ICON_SCIENCE] Ciencia por cada 2 minas que esten alrededor. -1 [ICON_SCIENCE] Ciencia por casa Centro que este alrededor, pero no por la Plaza de Teatro, ya que esta da +1 [ICON_SCIENCE] de Ciencia. Tambien da +1 [ICON_CULTURE] Cultura por cada Plaza de Teatro que este alrededor.</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="es_ES">
+			<Text>+{1_num} [ICON_Science] Ciencia de cada Plaza de Teatro que este alrededor.</Text>
+		</Row>
+		<Row Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="es_ES">
+			<Text>+{1_num} [ICON_CULTURE] Cultura por cada Seowon que este alrededor.</Text>
+		</Row>		
+		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="es_ES">
+			<Text>Unidad única de Mapuche de la Era Medieval, reemplaza al Corcel. +1 [ICON_Movement] Movimiento y solo cuesta un [ICON_Movement] Movimiento para saquear espacios.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ANTIAIR_GUN_DESCRIPTION" Language="es_ES">
+			<Text>Unidad de soporte contra-aire de la Era Moderna. Da cubrimiento de ataques de aire a las unidades que esten alrededor, limitada a los 6 espacios que están a su alrededor.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="es_ES">
+			<Text>Unida única de Hungría que reemplaza a la Caballería. +1 [ICON_Strength] Fuerza de combate por cada alianza activa.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="es_ES">
+			<Text>+1 [ICON_FOOD] Comida en la Tundra y colinas de Tundra. Todas las Minas dan +1 [ICON_PRODUCTION producción en nieve, en Tundra, en colinas de nieve, y en colinas de Tundra. La producción y acumulación de recursos estrategicos es +100% (Doble de rapido).[NEWLINE][NEWLINE]Permite que granjas sean puestas en espacios de Tundra, después de que Ingeniería Civil es completada, granjas se pueden poner en colinas de Tundra también.[NEWLINE][NEWLINE]El precio de comprar espacios de nieve, de colinas de nieve, de colinas de Tundra y de Tundra es reducido por 50%.[NEWLINE][NEWLINE]Ciudades con Parques Nacionales generan extra +8 [ICON_FOOD] Comida y +8 [ICON_PRODUCTION] Producción por turno.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="es_ES">
+			<Text>Unida única Canadiencie de la Era Moderna. Puede crear un Parque Nacional. +5 [ICON_Strength] Fuerza de Combate cuando esta a 4 espacios de un Parque Nacional. Un adicional +5 [ICON_Strength] de fuerza de combate cuando esta a 4 espacios de un Parque Nacional Canadiencie.</Text>
+		</Replace>
+		<Replace Tag="LOC_TECH_COMPUTERS_DESCRIPTION" Language="es_ES">
+			<Text>Otorga la abilidad de construir un Espía adicional. +50% [ICON_Tourism] Turismo a través de tu imperio.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVIC_ENVIRONMENTALISM_DESCRIPTION" Language="es_ES">
+			<Text>+50% [ICON_Tourism] Turismo a través de tu imperio.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_DESCRIPTION" Language="es_ES">
+			<Text>Proyecto de la Carrera Espacial, lanza un gran cohete para mandar a un humano a la Luna. Otorga un bonus de  [ICON_Culture] Cultura equivalente a 5 veces la [ICON_Science] Ciencia por turno, pero solo una vez. Marca el segundo paso para la Victoria Científica.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>Todas la unidades Navales de combate cuerpo a cuerpo reciben +25% [ICON_PRODUCTION] Producción y pueden asaltar la costa. Recibe [ICON_SCIENCE] Ciencia en adicion de [ICON_GOLD] Oro cuando saques o asaltes minas costales. Saqueos y Asaltos de Canteras, Pastos, Plantaciones, y Campos dan [ICON_CULTURE] Cultura en adicion a [ICON_FAITH] Fe.[NEWLINE][NEWLINE]Todos los distritos de Sitios Santos y sus edificios reciben +50% [ICON_PRODUCTION] de Producción. Sitios Santos obtienen +1 [ICON_FAITH] Fe de estándar de los espacios de agua costeras.[NEWLINE][NEWLINE]Puertos que estan junto a un Sito Santo recibe un adicional +2 [ICON_GOLD] Oro al posicionarse.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>Desbloquea la habilidad del Constructor para construir la Gran Muralla, única a China.[NEWLINE][NEWLINE]Proporciona un aumento a [ICON_Strength] la Defensa y +2 [ICON_GOLD] Oro. +1 [ICON_Culture] Cultura después de completar la tecnología de Castillos. +1 [ICON_GOLD] Oro y +1 [ICON_CULTURE] Cultura si ahí otro pedazo de la gran muralla en el espacio a lado. Da [ICON_Tourism] Turismo después de completar la tecnología de Vuelo. Tiene que ser construida en una línea a borde de tu imperio. Solo puede ser saqueada, jamás será destruida por un Desastre Natural.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>Desbloquea la habilidad del Constructor para construir una Misión, única a España.[NEWLINE][NEWLINE]+2 [ICON_Faith] Fe. En adicion da +2 [ICON_Faith] Fe, +1 [ICON_PRODUCTION] producción, y +1 [ICON_FOOD] Comida si está en un continente diferente de la [ICON_Capital] Capital.[NEWLINE][NEWLINE]+1 [ICON_Science] Ciencia por cada distrito de Campus y Sitio Santo que están alrededor. +1 Alojamiento en Servicio Civil y +2 Ciencia en La Iluminación.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>Desbloquea la capacidad del constructor para construir un Castillo, único a Francia..[NEWLINE][NEWLINE]+2 [ICON_Culture] Cultura and +1 Apelación. +1 [ICON_Culture] Culture por cada Maravilla que esté al lado de sí mismo +1 [ICON_Gold] Oro y +1 [ICON_Food] Comida por cada recurso de lujo que tambien esté al lado sí mismo. Da +1 [ICON_HOUSING] Alojamineto en el Feudalismo y [ICON_TOURISM] Turismo después de completar la tecnología de Vuelo. Solo puede ser creado junto a un río.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>Desbloquea la habilidad del Constructor para construir una Esfinge, única a Egipto.[NEWLINE][NEWLINE]+2 [ICON_Faith] Fe, +1 [ICON_Culture] Cultura, and +2 Apelación.[NEWLINE][NEWLINE]+1 [ICON_Faith] Fe and +1 [ICON_CULTURE] Cultura si está al lado de una Maravilla. +1 [ICON_FOOD] Comida y +1 [ICON_PRODUCTION] Producción si se construye en el Desierto o +1 [ICON_CULTURE] Cultura si se construye en Llanuras Inundables.[NEWLINE][NEWLINE]Adiciona [ICON_CULTURE] Cultura cuando se descubre Servicio Diplomático. Da[ICON_TOURISM]Turismo después de completar la tecnología de Vuelo. No se puede construir en nieve o colina de nieve.</Text>
+		</Replace>		
+		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="es_ES">
+			<Text>Unidades reclutadas reciben una habilidad que les da +5 [ICON_Strength] Fuerza de combate. Cuesta 75% menos [ICON_GOLD] Oro y recursos para mejorar unidades reclutadas. Si reclutas unidades de un ciudad-estado, recibe 2 [ICON_ENVOY] Enviados con esa ciudad-estado. Adquiere la Unidad única llamada El Ejército Negro cuando completes la tecnología de Castillos.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="es_ES">
+			<Text>Desbloquea la habilidad del Constructor para construir una Esfinge, única a Egipto.[NEWLINE][NEWLINE]+2 [ICON_Faith] Fe, +1 [ICON_Culture] Cultura, and +1 Apelación. +1 [ICON_Faith] Fe y +1 [ICON_CULTURE] Cultura si esta al lado de una Maravilla.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="es_ES">
+			<Text>Desbloquea la capacidad del constructor para construir un Castillo, único a Francia.[NEWLINE][NEWLINE]+2 [ICON_Culture] Cultura and +1 Apelación. +1 [ICON_Culture] Cultura por cada Maravilla al lado de si mismo. +1 [ICON_Gold] Oro y +1 [ICON_Food] Comida por cada recurso de lujo que este a su lado. Da +1 [ICON_HOUSING] Alojamiento en Feudalismo y [ICON_TOURISM] Turismo después de completar la tecnología de Vuelo. Solo puede ser creado junto a un río.</Text>
+		</Replace>
 		<!---------------======== GATHERING STORM ========------------------->
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="es_ES">
 			<Text>+5 Lealtad por turno en las ciudades ocupadas con una unidad en la guarnición. Declarar una guerra por sorpresa cuenta como guerra formal con el fin de  [ICON_STAT_GRIEVANCE] Quejas y hastío bélico.</Text>
@@ -100,12 +207,6 @@
 			<Text>+50% a la Producción [ICON_Production] si han liberado una ciudad en los últimos 10 turnos.</Text>
 		</Replace>
 		<!-- Korea -->
-		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="es_ES">
-			<Text>Un distrito exclusivo de Corea para fines científicos. Sustituye al distrito del Campus. +2 a Ciencia [ICON_SCIENCE] . Debe construirse en colinas.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="es_ES">
-			<Text>Bonificación por adyacencia: +1 a Ciencia [ICON_SCIENCE] por cada 2 minas adyacentes. -1 a Ciencia [ICON_SCIENCE] por cada distrito adyacente.</Text>
-		</Replace>
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="es_ES">
 			<Text>+{1_num} a Ciencia base [ICON_SCIENCE] .</Text>
 		</Replace>
@@ -237,12 +338,6 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="es_ES">
 			<Text>Un edificio exclusivo de los Aztecas. Proporciona Servicios [ICON_Amenities], +3 de Cultura [ICON_Culture] y un punto de Gran general [ICON_GreatGeneral] .</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="es_ES">
-			<Text>Desbloquea la habilidad de Constructor para crear la Gran Muralla, exclusiva de China.[NEWLINE][NEWLINE]Proporciona un aumento en la Defensa [ICON_Strength] y +1 a la Producción [ICON_PRODUCTION]. Proporciona una bonificación de Oro si está adyacente a oros segmentos. Cultura [ICON_Culture] y Turismo [ICON_Tourism] según avances en el árbol tecnológico por segmentos adyacentes. Debe construirse en una línea, a lo largo de las fronteras del imperio.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="es_ES">
-			<Text>Desbloquea la habilidad de Constructor para crear una Esfinge, exclusiva de Egipto.[NEWLINE][NEWLINE]+2 a Fe [ICON_Faith], +1 a Cultura [ICON_Culture] y +1 de Atractivo. +1 a Fe [ICON_Faith] y +1 a Cultura [ICON_CULTURE] si está junto a una maravilla. +1 a Fe [ICON_FAITH] por adyacencia de Lugar sagrado. +1 a Alimentos [ICON_FOOD] y +1 a la Producción [ICON_PRODUCTION] si se construye en un Desierto.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="es_ES">
 			<Text>Mejora que se desbloquea con la Mampostería y que debe construirse en un Desierto, Colinas del desierto, Terreno de aluvión o en Llanuras. +1 a la Fe [ICON_Faith]. Recibe rendimientos adicionales de distritos adyacentes. +2 a Alimentos [ICON_Food] si está adyacente a un Centro urbano. Para el resto de distritos que ofrecen bonificaciones por adyacencia: +2 del rendimiento correspondiente si ese distrito está adyacente.</Text>

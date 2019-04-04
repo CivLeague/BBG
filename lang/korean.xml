@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-				<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="ko_KR">
+		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="ko_KR">
             <Text>호수로 보이는 타일 두 개의 자연경관입니다. [ICON_Food] 식량 +2, [ICON_PRODUCTION] 생산력 +1, [ICON_CULTURE] 문화 +2, [ICON_GOLD] 금 +2을 제공합니다. 담수를 제공하지 않습니다.</Text>
         </Replace>
         <Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="ko_KR">
@@ -201,12 +201,6 @@
 			<Text>이전 10턴 중 도시를 해방했다면 [ICON_Production] 생산력 +50%를 제공합니다.</Text>
 		</Replace>
 		<!-- Korea -->
-		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ko_KR">
-            <Text>한국 특유의 과학 발전을 위한 특수지구로 캠퍼스 특수지구를 대체합니다. [ICON_SCIENCE] 과학 +2를 제공합니다. 언덕에 지어야 합니다.</Text>
-        </Replace>
-		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="ko_KR">
-			<Text>인접효과: 인접한 광산 2개당 [ICON_SCIENCE] 과학이 +1 증가합니다. 인접한 특수지구 하나당 [ICON_SCIENCE] 과학이 -1 감소합니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="ko_KR">
 			<Text>[ICON_Science] 과학 +{1_num}.</Text>
 		</Replace>
@@ -330,9 +324,6 @@
         <Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="ko_KR">
             <Text>아즈텍 특유의 건물입니다. [ICON_Amenities] 쾌적도 +1, [ICON_Culture] 문화 +3, [ICON_GreatGeneral] 위대한 장군 점수 +1을 제공합니다.</Text>
         </Replace>
-        <Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ko_KR">
-            <Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +1을 제공합니다. 불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다. 성지 특수지구에 인접한 경우 [ICON_Faith] 신앙 +1, 사막에 건설한 경우 [ICON_Food] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다.</Text>
-        </Replace>
         <Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="ko_KR">
             <Text>석조기술과 함께 잠금 해제되며 사막, 사막 언덕, 범람원 또는 평원에 지어야 하는 시설입니다. [ICON_Faith] 신앙 +1을 제공합니다. 인근 특수지구에서 추가 생산량을 획득합니다. 도심부에 인접하는 경우 [ICON_Food] 식량 +2를 제공합니다. 인접 보너스를 제공하는 다른 모든 특수지구의 경우 해당 특수지구가 인접했다면 해당 산출물 +2를 제공합니다.</Text>
         </Replace>
@@ -381,12 +372,6 @@
 		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION" Language="ko_KR">
 			<Text>인접한 적 유닛을 공격할 때 [ICON_Ranged] 원거리 전투력 +7을 획득합니다. </Text>
 		</Row>
-		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="ko_KR">
-            <Text>중국 특유의 만리장성을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Strength] 방어력이 증가하며, [ICON_PRODUCTION] 생산력 +1, [ICON_Gold] 금 +1을 제공합니다. 성 기술을 연구하면 [ICON_Culture] 문화 +1을 추가 제공합니다. 다른 만리장성 타일과 인접한 경우 [ICON_Gold] 금과 [ICON_Culture] 문화 보너스 효과가 +1만큼 추가로 제공됩니다. 기술 발전표의 진전에 따라, 연결된 만리장성 타일에 [ICON_Tourism] 관광이 추가로 부여됩니다. 제국 국경을 따라 일렬로 지어야 합니다.</Text>
-        </Replace>
-		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="ko_KR">
-            <Text>프랑스 특유의 샤토를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Culture] 문화 +2를 제공합니다. 매력도 +1을 제공합니다. 인접한 불가사의마다 [ICON_Culture] 문화 +1을 제공합니다. 인접한 사치 자원마다 [ICON_Food] 식량 +1과 [ICON_Gold] 금 +1을 제공합니다. 강 근처에만 지을 수 있습니다.</Text>
-        </Replace>
 		<Replace Tag="LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION" Language="ko_KR">
 			<Text>공격 시 [ICON_Strength] 전투력 +15.</Text>
 		</Replace>	

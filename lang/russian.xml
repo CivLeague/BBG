@@ -68,7 +68,7 @@
 			<Text>Венгерский уникальный юнит Индустриальной эпохи, который заменяет кавалерию. +1 к [ICON_Strength] боевой мощи за каждый заключенный в настоящий момент союз.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="ru_RU">
-			<Text>+1 к [ICON_FOOD] пище с клеток тундры, включая холмы. Позволяет строить фермы в тундре. После открытия строительной инженерии можно строить фермы на холмах в тундре. Уменьшает стоимость приобретения клеток снега и тундры (в том числе с холмами) на 50%. +100% к добыче расходуемых ресурсов на таких клетках.[NEWLINE][NEWLINE]Города с национальным парком имеют +8 к [ICON_FOOD] Пище и +8 к [ICON_PRODUCTION] производству.</Text>
+			<Text>+1 к [ICON_FOOD] пище с клеток тундры, включая холмы. Позволяет строить фермы в тундре. После открытия строительной инженерии можно строить фермы на холмах в тундре. Уменьшает стоимость приобретения клеток снега и тундры (в том числе с холмами) на 50%. +100% к добыче расходуемых ресурсов на таких клетках и +1 к [ICON_PRODUCTION] производству шахт на холмах в тундре.[NEWLINE][NEWLINE]Города с национальным парком имеют +8 к [ICON_FOOD] Пище и +8 к [ICON_PRODUCTION] производству.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="ru_RU">
 			<Text>Канадский уникальный юнит эпохи Современности. Может создавать национальный парк. +5 к [ICON_Strength] боевой мощи в 4 клетках от нац. парка. Ещё +5 к [ICON_Strength] боевой мощи рядом с дружественным национальным парком.</Text>
@@ -203,12 +203,6 @@
 			<Text>+50% [ICON_Production] производства в течение 10 ходов после освобождения города.</Text>
 		</Replace>
 		<!-- Korea -->
-		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный район Кореи для научных исследований. Заменяет кампус. +2 [ICON_SCIENCE] к науке (учитывается как бонус соседства).</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="ru_RU">
-			<Text>Соседство: +1 [ICON_SCIENCE] к науке за каждые 2 рудники рядом. -1 [ICON_SCIENCE] к науке за каждый район рядом.</Text>
-		</Replace>
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="ru_RU">
 			<Text>+{1_num} [ICON_SCIENCE] к науке (учитывается как бонус соседства).</Text>
 		</Replace>
@@ -332,9 +326,6 @@
 		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальное здание ацтеков. Дает [ICON_Amenities] довольство, +3 очка [ICON_Culture] культуры и 1 очко [ICON_GreatGeneral] великого полководца.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет строителям строить сфинкса (Уникально для Египта).[NEWLINE][NEWLINE]+2 [ICON_Faith] веры и +1 [ICON_Culture] культуры. +1 престижа. +1 [ICON_Faith] веры и +1 [ICON_Culture] культуры, если построен рядом с чудом света. +1 [ICON_Faith] веры рядом со священным местом.  +1 [ICON_FOOD] еды и +1 [ICON_PRODUCTION] производства, если клетка - пустыня. Можно строить в пойме реки.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="ru_RU">
 			<Text>Улучшение, доступное после изучения каменной кладки. Можно построить только в пустыне, на холмах в пустыне, на равнине или в пойме реки. +1 [ICON_Faith] веры. Дополнительные бонусы от соседних районов. +2 [ICON_Food] пищи, если граничит с центром города. Для остальных районов с бонусами за соседство: +2 ед. соответствующего ресурса при соседстве с районом.</Text>
 		</Replace>
@@ -383,12 +374,6 @@
 		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION" Language="ru_RU">
 			<Text>+7 [ICON_Strength] к боевой мощи по соседним юнитам.</Text>
 		</Row>
-		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет строителям создавать Великую стену (Уникально для Китая).[NEWLINE][NEWLINE]Дает улучшение к [ICON_Strength] обороне, а также +1 к [ICON_Gold] золоту и [ICON_PRODUCTION] производству. +1 к [ICON_Culture] культуре после исследования зАмков. Бонусы к [ICON_Culture] культуре и [ICON_Gold] золоту удваиваются, если рядом есть ещё одна клетка с великой стеной. По мере вашего продвижения по дереву технологий появляется бонус к [ICON_Tourism] туризму. Можно построить только вдоль границы империи.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет строителям строить шато (Уникально для Франции).[NEWLINE][NEWLINE]+2 [ICON_Culture] культуры. +1 престижа. +1 [ICON_Culture] культуры за каждое построенное рядом чудо. +1 [ICON_Gold] золота и +1 [ICON_Food] пищи за каждый ресурс роскоши рядом. Можно строить только возле рек.</Text>
-		</Replace>
 		<Replace Tag="LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION" Language="ru_RU">
 			<Text>+15 [ICON_Strength] к боевой мощи при атаке.</Text>
 		</Replace>	

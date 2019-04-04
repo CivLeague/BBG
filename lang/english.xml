@@ -118,9 +118,6 @@
 		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION" Language="en_US">
 			<Text>+7 [ICON_Strength] Combat Strength when attacking adjacent enemy units.</Text>
 		</Row>
-		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct the Great Wall, unique to China.[NEWLINE][NEWLINE]Provides an increase to [ICON_Strength] Defense, +1 [ICON_PRODUCTION] Production, and +1 [ICON_Gold] Gold. +1 [ICON_Culture] Culture after researching Castles. Gold and Culture yields are doubled if there is an adjacent Great Wall Improvement. Additional [ICON_Tourism] Tourism as you advance through the Technology Tree. Must be built in a line along the borders of your empire.</Text>
-		</Replace>
 		<!-- Egypt -->
 		<!-- France -->
 		<!-- Georgia -->
