@@ -1989,13 +1989,11 @@ UPDATE Feature_AdjacentYields SET YieldChange='2' WHERE FeatureType='FEATURE_DEV
 --==============================================================
 -- additional niter spawn locations
 INSERT INTO Resource_ValidFeatures (ResourceType , FeatureType)
-VALUES
-	('RESOURCE_NITER' , 'FEATURE_FOREST'),
-	('RESOURCE_NITER' , 'FEATURE_FLOODPLAINS');
+	VALUES ('RESOURCE_NITER' , 'FEATURE_FLOODPLAINS');
 -- additional aluminum spawn locations
 INSERT INTO Resource_ValidFeatures (ResourceType , FeatureType)
-VALUES
-	('RESOURCE_ALUMINUM' , 'FEATURE_JUNGLE');
+	VALUES ('RESOURCE_ALUMINUM' , 'FEATURE_JUNGLE');
+UPDATE Improvement_ValidResources SET MustRemoveFeature=0 WHERE ImprovementType='IMPROVEMENT_MINE' AND ResourceType='RESOURCE_ALUMINUM'; 
 -- add 1 production to fishing boat improvement
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_FISHING_BOATS' AND YieldType='YIELD_PRODUCTION';
 -- Amani Abuse Fix... can immediately re-declare war when an enemy suzerian removes Amani
