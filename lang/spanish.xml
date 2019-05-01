@@ -276,9 +276,6 @@
 		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="es_ES">
 			<Text>+15% a la producción [ICON_Production] de maravillas.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_NAME" Language="es_ES">
-			<Text>El Verdadero Profeta!</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="es_ES">
 			<Text>Cualquier jugador puede comprar el edificio de culto de su religión por una décima parte del coste de Fe [ICON_Faith] habitual. Este edificio está mejorado para añadir un 20% de producción a Ciencia [ICON_Science], Fe [ICON_Faith] y Cultura [ICON_Culture] en las ciudades árabes.</Text>
 		</Replace>

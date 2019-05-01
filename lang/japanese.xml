@@ -265,9 +265,6 @@
 		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="ja_JP">
 			<Text>遺産に対する生産力+15%。</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_NAME" Language="ja_JP">
-			<Text>真の信者</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="ja_JP">
 			<Text>すべてのプレイヤーは自分が創始する宗教の崇拝の建物を通常の10分の1の信仰力[ICON_Faith] で購入できる。またこの建物のあるアラブの都市が生み出す科学力[ICON_Science]、信仰力[ICON_Faith] 、文化力[ICON_Culture]が+20%される。</Text>
 		</Replace>
@@ -405,9 +402,6 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HANGING_GARDENS_DESCRIPTION" Language="ja_JP">
 			<Text>全都市の成長率が15%上昇。建設した都市に[ICON_HOUSING]住宅+2、空中庭園から6タイル以内にある都市の[ICON_HOUSING]住宅+1。川の隣にのみ建設可能。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_HWARANG_DESCRIPTION" Language="ja_JP">
-			<Text>[ICON_Governor] 総督が任命されている都市は、彼らが持つ昇進1つにつき[ICON_Culture] 文化力と[ICON_Science] 科学力にそれぞれ5%のボーナスを得る。この昇進には最初の1つも含む。</Text>
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_CULTURAL_BONUS_GOLDEN_AGE" Language="ja_JP">
 			<Text>ペン・筆・声(黄金時代):[NEWLINE][ICON_CivicBoosted] 天啓によるボーナスが10%増加し、各都市は専門区域ごとに[ICON_Culture] 文化力+2と[ICON_Science] 科学力+2を得る。</Text>

@@ -264,9 +264,6 @@
 		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="ko_KR">
 			<Text>불가사의 건설에 대한 [ICON_Production] 생산력 +15%를 제공합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_NAME" Language="ko_KR">
-			<Text>진정으로 믿는 자</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="ko_KR">
 			<Text>해당 종교의 예배 건물은 일반적인 [ICON_Faith] 신앙 비용의 10%만 소진하여 구매할 수 있습니다. 이 예배 건물을 개선하면 아라비아 도시에서 생산되는 [ICON_Science] 과학, [ICON_Faith] 신앙 및 [ICON_Culture] 문화가 20% 추가됩니다.</Text>
 		</Replace>
@@ -389,9 +386,6 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HANGING_GARDENS_DESCRIPTION" Language="ko_KR">
 			<Text>모든 도시에 성장률 +15%를 제공합니다. 강 옆에 지어야 합니다. 이 도시에 [ICON_HOUSING] 주거공간 +2를 제공합니다. 이 불가사의에서 6타일 내에 있는 모든 도심부에 [ICON_HOUSING] 주거공간 +1을 제공합니다. </Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_HWARANG_DESCRIPTION" Language="ko_KR">
-			<Text>도시에 정착한 [ICON_Governor] 총독이 진급을 획득할 때마다 +5%의 [ICON_Culture] 문화 및 [ICON_Science] 과학을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_CULTURAL_BONUS_GOLDEN_AGE" Language="ko_KR">
 			<Text>펜, 붓과 목소리 황금기:[NEWLINE][ICON_CivicBoosted] 영감이 사회 제도 상승효과 10%를 추가로 제공합니다. 각 도시에는 전문 특수지구당 [ICON_Culture] 문화 +2와 [ICON_Gold] 금 +2가 제공됩니다.</Text>

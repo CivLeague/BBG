@@ -1,6 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+	<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="de_DE">
+			<Text>Naturwunder über zwei Geländefelder. Es erscheint als See und bietet +2 [ICON_FOOD] Nahrung, +1 [ICON_PRODUCTION] Produktion, +2 [ICON_CULTURE] Kultur und +2 [ICON_GOLD] Gold.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="de_DE">
+			<Text>Naturwunder über zwei Geländefelder. Es erscheint als See und bietet +2 [ICON_FOOD] Nahrung, +2 [ICON_Faith] Glauben und +2 [ICON_Culture] Kultur. Einheiten werden vollständig geheilt, wenn sie für eine Runde angrenzend ans Tote Meer heilen.</Text>
+		</Replace>
+		<Replace Tag="LOC_ALL_PARK_COMBAT_BONUS_DESCRIPTION" Language="de_DE">
+			<Text>+{1_Amount} Kampfstärke beim Kampf innerhalb von 4 Geländefeldern an einem Nationalpark</Text>
+		</Replace>
+		<Replace Tag="LOC_OWNER_PARK_COMBAT_BONUS_DESCRIPTION" Language="de_DE">
+			<Text>+{1_Amount} Kampfstärke beim Kampf innerhalb von 4 Geländefeldern an einem Nationalpark</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="de_DE">
+			<Text>Einzigartiges Gebäude von Georgien, welches die antiken Stadtmauern ersetzt und stärkere äußere Verteidigung bietet. Bringt +3 [ICON_TOURISM] Tourismus nach Erreichen der Ausrichtung 'Naturschutz'. Bringt +4 [ICON_Faith] Glauben. In einem Goldenen Zeitalter sind [ICON_TOURISM] Tourismus und [ICON_FAITH] Glauben +100%.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="de_DE">
+			<Text>+25% [ICON_Production] Produktion für alle Marine- und Landmilitäreinheiten. Unterhaltskosten für Einheiten werden um 1 [ICON_GOLD] Gold pro Runde und Einheit reduziert.[NEWLINE]Verleiht +1 [Icon_Governor] Gouverneur Titel und erhöht das Strategische Ressourcen-Vorratslager um 15.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GOBUSTAN_DESCRIPTION" Language="de_DE">
+			<Text>Naturwunder über drei Geländefelder. Bietet +4 [ICON_CULTURE] Kultur und +4 [ICON_Production] Produktion.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_WHITEDESERT_DESCRIPTION" Language="de_DE">
+			<Text>Naturwunder über vier Geländefelder. Bietet +2 [ICON_SCIENCE] Wissenschaft, +2 [ICON_Culture] Kultur und +6 [ICON_GOLD] Gold.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_CHOCOLATEHILLS_DESCRIPTION" Language="de_DE">
+			<Text>Naturwunder über vier Geländefelder. Bietet +3 [ICON_Food] Nahrung, +3 [ICON_Production] Produktion und +1 [ICON_Science] Wissenschaft.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_DEVILSTOWER_DESCRIPTION" Language="de_DE">
+			<Text>Unpassierbares Naturwunder über ein Geländefeld. Bietet +2 [ICON_FAITH] Glauben und +1 [ICON_Production] Produktion für angrenzende Geländefelder.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="de_DE">
+			<Text>+100% [ICON_PRODUCTION] Produktion für Heilige Stätten und Aquädukte. Heilige Stätten gewähren +2 [ICON_FOOD] Nahrung, +2 [ICON_FAITH] Glauben und +1 [ICON_HOUSING] Wohnraum, wenn sie an einem Fluss platziert werden. Heilige Stätten lösen einen Kulturschock aus.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="de_DE">
+			<Text>Alle Landmilitäreinheiten und  religiöse Einheiten erhalten +1 [ICON_Movement] Bewegungspunkt.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="de_DE">
+			<Text>+100% [ICON_PRODUCTION] Produktion für Gebäude des Theaterplatzes. Große Werke in Eleonores Städten verursachen jeweils -1 Loyalität pro Runde in fremden Städten im Umkreis von 9 Geländefeldern. Eine Stadt, die eine andere Zivilisation wegen Loyalitätsverlust verlässt und derzeit die meiste Loyalität pro Runde von Eleonores Zivilisation erhält, überspringt den Schritt der freien Stadt, um sich direkt dieser Zivilisation anzuschließen.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="de_DE">
+			<Text>+100% [ICON_Production] Produktion für Belagerungseinheiten und defnesive Gebäude.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="de_DE">
+			<Text>Stadtzentren erhalten +1 [ICON_FAITH] Glauben und +1 [ICON_FOOD] Nahrung für jedes angrenzende Wüsten- und Wüstenhügel-Geländefeld. Minen erhalten -1 [ICON_PRODUCTION] Produktion und +4 [ICON_GOLD] Gold. Gebäude im Handelszentrum können mit [ICON_Faith] Glauben gekauft werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="de_DE">
+			<Text>Ein ausschließlich Korea zur Verfügung stehender Bezirk für wissenschaftliche Bestrebungen. Ersetzt den Campus-Bezirk und muss auf Hügeln gebaut werden. +2 [ICON_SCIENCE] Wissenschaft. Gewährt +1 [ICON_CULTURE] Kultur für angrenzende Theaterplätze.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="de_DE">
+			<Text>Nachbarschaftsbonus: +1 [ICON_SCIENCE] Wissenschaft für jede 2. Mine. -1 [ICON_SCIENCE] Wissenschaft für jedes angrenzende Bezirk-Geländefeld mit Außnahme des Theaterplatzes, welcher +1 [ICON_SCIENCE] Wissenschaft gewährt. Gewährt auch +1 [ICON_CULTURE] Kultur für angrenzende Theaterplätze.</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="de_DE">
+			<Text>+{1_num} [ICON_Science] Wissenschaft für angrenzende Theaterplätze.</Text>
+		</Row>
+		<Row Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="de_DE">
+			<Text>+{1_num} [ICON_CULTURE] Kultur für angrenzende Seowon.</Text>
+		</Row>		
+		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="de_DE">
+			<Text>Mapuche Spezialeinheit des Mittelalters, welche den Renner ersetzt. +1 [ICON_Movement] Fortbewegung und Plündern kostet nur 1 [ICON_Movement] Fortbewegung.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ANTIAIR_GUN_DESCRIPTION" Language="de_DE">
+			<Text>Luftabwehr-Unterstützungseinheit der Moderne. Bietet aus einer Entfernung von bis zu 1 Geländefeld von der Waffe Deckung vor Luftangriffen.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="de_DE">
+			<Text>Ungarische einzigartige Einheit des Industriezeitalters, die die Kavallerie ersetzt. +1 [ICON_Strength] Kampfstärke für jede aktive Allianz.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_FOOD] Nahrung auf Tundra und Tundra-Hügeln. Auf Schnee, Tundra, Schneehügeln und Tundrahügeln gewähren alle Minen +1 [ICON_PRODUCTION] Produktion und die Akkumulationsrate strategischer Ressourcen liegt bei +100%.[NEWLINE][NEWLINE]Ermöglicht den Bau von Bauernhöfen auf Tundra-Geländefeldern. Nachdem das Bauwesen freigeschaltet ist, können Bauernhöfe auch auf Tundra-Hügeln gebaut werden.[NEWLINE][NEWLINE]Reduziert die Kosten für den Kauf von Schnee-, Schneehügel-, Tundra- und Tundra-Hügel-Geländefeldern um 50%.[NEWLINE][NEWLINE]Städte mit Nationalparks gewähren zusätzliche +8 [ICON_FOOD] Nahrung und +8 [ICON_PRODUCTION] Produktion pro Runde.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="de_DE">
+			<Text>Kanadische einzigartige Einheit der Moderne. Kann einen Nationalpark errichten. +5 [ICON_Strength] Kampfstärke beim Kampf innerhalb von 4 Geländefeldern eines Nationalparks. Weitere +5 [ICON_Strength] Kampfstärke beim Kampf innerhalb von Geländefeldern innerhalb von 4 Geländefeldern eines eigenen Nationalparks.</Text>
+		</Replace>
+		<Replace Tag="LOC_TECH_COMPUTERS_DESCRIPTION" Language="de_DE">
+			<Text>Gewährt die Fähigkeit, einen zusätzlichen Spion auszubilden. +50% [ICON_Tourism] Tourismus in Eurem Reich.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVIC_ENVIRONMENTALISM_DESCRIPTION" Language="de_DE">
+			<Text>+50% [ICON_Tourism] Tourismus in Eurem Reich.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_DESCRIPTION" Language="de_DE">
+			<Text>Projekt für Weltraumrennen, das eine große Rakete startet, um einen Menschen auf den Mond zu befördern. Gewährt einen einmaligen [ICON_Culture] Kulturbonus, der dem Fünffachen Eurer [ICON_Science] Wissenschaft pro Runde entspricht und markiert den zweiten Schritt in Richtung Wissenschaftssieg.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Alle Nahkampf-Marineeinheiten erhalten +25% [ICON_PRODUCTION] Produktion und es werden ihnen Küstenraubzüge gewährt. Zusätzlich zu [ICON_GOLD] Gold erhaltet ihr [ICON_SCIENCE] Wissenschaft durch Plünderung von und Küstenraubzüge auf Minen. Plünderung von und Küstenraubzüge auf Steinbrüche, Weiden, Plantagen und Jagdlager gewähren zusätzlich zu [ICON_FAITH] Glauben [ICON_CULTURE] Kultur.[NEWLINE][NEWLINE]Alle Heiligen Stätten und deren Gebäude erhalten +50% [ICON_PRODUCTION] Produktion. Heilige Stätten erhalten +1 [ICON_FAITH] Glauben durch jedes angrenzende Küsten-Geländefeld.[NEWLINE][NEWLINE]Häfen neben einer Heiligen Stätte erhalten zusätzliche +2 [ICON_GOLD] Gold als Nachbarschaftsbonus.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Schaltet die Handwerker-Fähigkeit frei, die Große Mauer zu bauen, einzigartig für China.[NEWLINE][NEWLINE]Steigert die [ICON_Strength] Verteidigung. +2 [ICON_GOLD] Gold. +1 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur, wenn sie angrenzend an einer weiteren großen Mauer-Modernisierung anliegt. +2 [ICON_GOLD] Gold. +1 [ICON_Culture] Kultur nach Erforschen der Burgen. Gewährt [ICON_Tourism] Tourismus nach Erforschen der Luftfahrt. Muss in einer Linie entlang der Grenzen Eures Reichs gebaut werden. Kann nur von Naturkatastrophen geplündert (niemals zerstört) werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Erlaubt Handwerkern eine Mission, die einzigartige Modernisierung Spaniens, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben. +2 [ICON_Faith] Glauben, +1 [ICON_PRODUCTION] Produktion und +1 [ICON_FOOD] Nahrung, wenn auf einem anderen Kontinent als Eure [ICON_Capital] Hauptstadt.[NEWLINE][NEWLINE]+1 [ICON_Science] Wissenschaft für jeden benachbarten Campus- und Heilige-Stätte-Bezirk. +1 Wohnraum nach Erreichen der Öffentlichen Verwaltung und +2 Wissenschaft nach Erreichen der Aufklärung.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Schaltet die Handwerker-Fähigkeit frei, ein Chateau, die einzigartige Modernisierung Frankreichs, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Culture] Kultur und +1 Anziehungskraft. +1 [ICON_Culture] Kultur für jedes benachbarte Wunder. +1 [ICON_Gold] Gold und +1 [ICON_Food] Nahrung für jedes benachbarte Luxusgut. Gewährt +1 [ICON_HOUSING] Wohnraum nach Erforschung vom Feudalismus und [ICON_TOURISM] Tourismus nach der Erforschung von Luftfahrt. Kann nur an Flüssen gebaut werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Sphinx, die einzigartige Modernisierung Ägyptens, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben, +1 [ICON_Culture] Kultur und +2 Anziehungskraft.[NEWLINE][NEWLINE]+1 [ICON_Faith] Glauben und +1 [ICON_CULTURE] Kultur, wenn neben einem Wunder. +1 [ICON_FOOD] Nahrung und +1 [ICON_PRODUCTION] Produktion, wenn sie auf einem Wüstengeländefeld gebaut wurde oder +1 [ICON_CULTURE] Kultur beim Bau auf Schwemmland.[NEWLINE][NEWLINE]Zusätzliche [ICON_CULTURE] Kultur nach Erforschen von Diplomatischer Dienst. Gewährt [ICON_TOURISM] Tourismus nach der Erforschung von Luftfahrt. Kann nicht auf Schnee oder Schneehügeln gebaut werden.</Text>
+		</Replace>		
+		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="de_DE">
+			<Text>Ausgehobene Einheiten erlangen eine Fähigkeit, die ihnen +5 [ICON_Strength] Kampfstärke verleiht. Es kostet 75% weniger [ICON_GOLD] Gold und Ressourcen, ausgehobene Einheiten zu verbessern. Wenn Ihr Truppen in einem Stadtstaat aushebt, erhaltet Ihr 2 [ICON_ENVOY] Gesandte in diesem Stadtstaat. Erlangt die einzigartige Einheit Schwarze Armee, wenn die Schloss-Technologie erforscht wurde.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="de_DE">
+			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Sphinx, die einzigartige Modernisierung Ägyptens, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben, +1 [ICON_Culture] Kultur und +1 Anziehungskraft. +1 [ICON_Faith] Glauben und +1 [ICON_CULTURE] Kultur, wenn neben einem Wunder.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="de_DE">
+			<Text>Schaltet die Handwerker-Fähigkeit frei, ein Chateau, die einzigartige Modernisierung Frankreichs, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Culture] Kultur und +1 Anziehungskraft. +1 [ICON_Culture] Kultur für jedes angrenzende Wunder. +1 [ICON_Gold] Gold und +1 [ICON_Food] Nahrung für jedes angrenzende Luxusgut. Gewährt +1 [ICON_HOUSING] Wohnraum nach Erforschung vom Feudalismus und [ICON_TOURISM] Tourismus nach Erforschung von Luftfahrt. Kann nur an Flüssen gebaut werden.</Text>
+		</Replace>
 		<!---------------======== GATHERING STORM ========------------------->
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>+5 Loyalität pro Runde in besetzten Städten mit Garnisionseinheit. Das Erklären eines Überraschungskrieges zählt nur bezüglich [ICON_STAT_GRIEVANCE] Groll und Kriegstreiberei als formeller Krieg.</Text>
@@ -160,9 +267,6 @@
 		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="de_DE">
 			<Text>+15% [ICON_Production] Produktion für Wunder.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_NAME" Language="de_DE">
-			<Text>Treuer Gläubiger</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="de_DE">
 			<Text>Das Kultgebäude der arabischen Religion kann von jedem Spieler für ein Zehntel der üblichen [ICON_Faith] Glaubenskosten erworben werden. Das Kultgebäude steigert in Städten, wo es gebaut wurde, den Ertrag von [ICON_Science] Wissenschaft, [ICON_Faith] Glauben und [ICON_Culture] Kultur um 20%.</Text>
 		</Replace>
@@ -303,9 +407,6 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HANGING_GARDENS_DESCRIPTION" Language="de_DE">
 			<Text>Erhöht das Wachstum in allen Städten um 15%. Muss an einem Fluss gebaut werden. +2 [ICON_HOUSING] Wohnraum in der Stadt, in der dieses Wunder errichtet wurde und +1 [ICON_HOUSING] Wohnraum in allen anderen Städten innerhalb von 6 Geländefeldern.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_HWARANG_DESCRIPTION" Language="de_DE">
-			<Text>In einer Stadt etablierte [ICON_Governor] Gouverneure bringen +5% [ICON_Culture] Kultur und [ICON_Science] Wissenschaft für jede verdiente Beförderung, inklusive der Ersten.</Text>
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_CULTURAL_BONUS_GOLDEN_AGE" Language="de_DE">
 			<Text>Stift, Pinsel und Stimme Goldenes Zeitalter:[NEWLINE][ICON_CivicBoosted] Inspiartionen gewähren zusätzliche 10% der Ausrichtungskosten. Jede Stadt erhält +2 [ICON_Culture] Kultur und +2 [ICON_Gold] Gold für jeden Spezialbezirk.</Text>

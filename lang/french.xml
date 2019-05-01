@@ -262,9 +262,6 @@
 		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +15 % pour toutes les merveilles.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_NAME" Language="fr_FR">
-			<Text>Les vrais croivent!</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="fr_FR">
 			<Text>Le lieu de culte de la religion choisie peut être acheté par n'importe quel joueur pour un dixième de son coût normal en [ICON_Faith] foi. Cet édifice est amélioré pour augmenter de 20 % la [ICON_Science] science, la [ICON_Faith] foi et la [ICON_Culture] culture générées par les villes arabes.</Text>
 		</Replace>
@@ -383,9 +380,6 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HANGING_GARDENS_DESCRIPTION" Language="fr_FR">
 			<Text>Augmente la croissance de toutes les villes de 15 %. Doivent être construits près d'une rivière. [ICON_HOUSING] Habitations +2 dans la ville de construction. [ICON_HOUSING] Habitations +1 dans toutes les autres villes dans un rayon de 6 cases.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_HWARANG_DESCRIPTION" Language="fr_FR">
-			<Text>Les [ICON_Governor] gouverneurs établis dans une ville octroient 5% de [ICON_Culture] culture et 5% de [ICON_Science] science par promotion obtenue, y compris la première.</Text>
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_CULTURAL_BONUS_GOLDEN_AGE" Language="fr_FR">
 			<Text>Âge d'or "Le stylo, le pinceau et la voix" : [NEWLINE]Les [ICON_CivicBoosted] inspirations fournissent 10 % en plus vers l'obtention des dogmes. [ICON_Culture] Culture +2 et [ICON_Gold] or +2 pour chaque quartier spécialisé dans toutes les villes.</Text>

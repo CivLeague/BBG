@@ -266,9 +266,6 @@
 		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="ru_RU">
 			<Text>+15% [ICON_Production] производства при создании чудес.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_NAME" Language="ru_RU">
-			<Text>Воистину уверовавший</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="ru_RU">
 			<Text>Стоимость Вашего религиозного здания в единицах [ICON_Faith] веры уменьшена в десять раз (в том числе если его приобретает другой игрок). Это религиозное здание увеличивает очки  [ICON_Science] науки, [ICON_Faith] веры и [ICON_Culture] культуры на 20% в каждом городе, где оно построено.</Text>
 		</Replace>
@@ -391,9 +388,6 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HANGING_GARDENS_DESCRIPTION" Language="ru_RU">
 			<Text>+2 жилья в городе постройки и +1 жилья в других дружественных городах на расстоянии 6 клеток от чуда. Ускоряют рост всех городов на 15%. Можно построить только рядом с рекой.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_HWARANG_DESCRIPTION" Language="ru_RU">
-			<Text>[ICON_Governor] Губернаторы, работающие в городе, дают +5% [ICON_Culture] культуры и [ICON_Science] науки за каждое полученное ими повышение, включая первое.</Text>
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_CULTURAL_BONUS_GOLDEN_AGE" Language="ru_RU">
 			<Text>Перо, кисть и голос – золотой век:[NEWLINE][ICON_CivicBoosted] Вдохновение дает дополнительно 10% стоимости социальных институтов. Каждый город получает +2 [ICON_Culture] культуры и +2 [ICON_Gold] золота за каждый специализированный район.</Text>
