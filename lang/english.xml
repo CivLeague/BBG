@@ -5,10 +5,10 @@
 			<Text>+1 [ICON_GreatProphet] Great Prophet point per turn after researching Astrology. The last available [ICON_GreatProphet] Great Prophet will automatically go to Arabia, if they have not already recruited one. +1 [ICON_Science] Science for each foreign city following Arabia's Religion. </Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="en_US">
-			<Text>+25% [ICON_Production] Production towards districts and wonders if placed next to a River. Floodplains do not block placement of districts and wonders.</Text>
+			<Text>+25% [ICON_Production] Production towards districts and wonders if placed next to a River. +1 [ICON_FOOD] Food on floodplains tiles and floodplains do not block placement of districts and wonders.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>+25% [ICON_Production] Production towards districts and wonders if placed next to a River. Does not receive damage from Floods.</Text>
+			<Text>+25% [ICON_Production] Production towards districts and wonders if placed next to a River. +1 [ICON_FOOD] Food on floodplains tiles. Does not receive damage from Floods.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="en_US">
 			<Text>All world wonders provide +8 [ICON_Faith] Faith.</Text>

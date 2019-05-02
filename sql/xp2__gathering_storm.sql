@@ -143,7 +143,7 @@ UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES
 --==============================================================
 --******				  PANTHEONS						  ******
 --==============================================================
--- reeds and marshes works with all floodplains
+-- reeds and marshes works with all floodplains (see egypt for ReqArgs)
 INSERT INTO RequirementSetRequirements 
     (RequirementSetId, RequirementId)
     VALUES

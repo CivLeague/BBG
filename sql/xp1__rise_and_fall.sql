@@ -210,6 +210,26 @@ INSERT INTO ModifierArguments
 
 
 --==============================================================
+--******				PANTHEONS					  ******
+--==============================================================
+-- Lady of the Reeds and Marshes now applies ubsunur
+INSERT INTO RequirementSetRequirements 
+    (RequirementSetId              , RequirementId)
+    VALUES 
+    ('PLOT_HAS_REEDS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_UBSUNUR_HOLLOW'    );
+INSERT INTO Requirements 
+    (RequirementId                          , RequirementType)
+    VALUES 
+    ('REQUIRES_PLOT_HAS_UBSUNUR_HOLLOW'     , 'REQUIREMENT_PLOT_FEATURE_TYPE_MATCHES');
+INSERT INTO RequirementArguments 
+    (RequirementId                          , Name          , Value)
+    VALUES 
+    ('REQUIRES_PLOT_HAS_UBSUNUR_HOLLOW'     , 'FeatureType' , 'FEATURE_UBSUNUR_HOLLOW'       );
+
+
+
+
+--==============================================================
 --******				START BIASES					  ******
 --==============================================================
 UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_NETHERLANDS' AND TerrainType='TERRAIN_COAST';

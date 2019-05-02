@@ -764,22 +764,19 @@ INSERT INTO ModifierArguments
 	('SACRED_PATH_WOODS_FAITH_ADJACENCY'                , 'YieldType'                 , 'YIELD_FAITH'                                   ),
 	('SACRED_PATH_WOODS_FAITH_ADJACENCY'                , 'Amount'                    , '1'                                             ),
 	('SACRED_PATH_WOODS_FAITH_ADJACENCY'                , 'Description'               , 'LOC_DISTRICT_SACREDPATH_WOODS_FAITH'           );
--- Lady of the Reeds and Marshes now applies to grassland and plains floodplains, as well as marsh wonders
+-- Lady of the Reeds and Marshes now applies pantanal
 INSERT INTO RequirementSetRequirements 
     (RequirementSetId              , RequirementId)
     VALUES 
-    ('PLOT_HAS_REEDS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_PANTANAL'          ),
-    ('PLOT_HAS_REEDS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_UBUNSUR_HOLLOW'    );
+    ('PLOT_HAS_REEDS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_PANTANAL'          );
 INSERT INTO Requirements 
     (RequirementId                          , RequirementType)
     VALUES 
-    ('REQUIRES_PLOT_HAS_PANTANAL'           , 'REQUIREMENT_PLOT_FEATURE_TYPE_MATCHES'),
-    ('REQUIRES_PLOT_HAS_UBUNSUR_HOLLOW'     , 'REQUIREMENT_PLOT_FEATURE_TYPE_MATCHES');
+    ('REQUIRES_PLOT_HAS_PANTANAL'           , 'REQUIREMENT_PLOT_FEATURE_TYPE_MATCHES');
 INSERT INTO RequirementArguments 
     (RequirementId                          , Name          , Value)
     VALUES 
-    ('REQUIRES_PLOT_HAS_PANTANAL'           , 'FeatureType' , 'FEATURE_PANTANAL'             ),
-    ('REQUIRES_PLOT_HAS_UBUNSUR_HOLLOW'     , 'FeatureType' , 'FEATURE_UBUNSUR_HOLLOW'       );
+    ('REQUIRES_PLOT_HAS_PANTANAL'           , 'FeatureType' , 'FEATURE_PANTANAL'             );
 
 
 
