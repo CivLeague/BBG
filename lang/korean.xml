@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="ko_KR">
+			<Text>점성술 기술을 연구하면 매 턴 [ICON_GreatProphet] 위대한 선지자 점수 +1을 얻습니다. 플레이어가 [ICON_GreatProphet] 위대한 선지자가 없을 시, 마지막에서 두 번째 위대한 선지자를 다른 문명이 영입하는 경우, 플레이어는 마지막 [ICON_GreatProphet] 위대한 선지자를 즉시 얻습니다. 아라비아의 종교를 믿는 타 문명 도시마다 [ICON_Science] 과학 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="ko_KR">
+			<Text>특수지구와 불가사의를 강 옆에 배치할 경우 이들의 건설에 대한 [ICON_Production] 생산력 +25%를 제공합니다. 범람원 타일에서 [ICON_FOOD] 식량 +1을 제공합니다. 범람원은 특수지구 및 불가사의 배치를 방해하지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>특수지구와 불가사의를 강 옆에 배치할 경우 이들의 건설에 대한 [ICON_Production] 생산력 +25%를 제공합니다. 범람원 타일에서 [ICON_FOOD] 식량 +1을 제공합니다. 홍수 피해를 입지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="ko_KR">
+			<Text>모든 세계 불가사의에서 [ICON_Faith] 신앙 +8을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_DAR_E_MEHR_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_CULTURE] 문화 +2를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_DESCRIPTION" Language="ko_KR">
+			<Text>다르-에 메르흐([ICON_Faith] 신앙 + 3, [ICON_CULTURE] 문화 +2)를 건설할 수 있게 됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="ko_KR">
+			<Text>성소와 사원은 고유 [ICON_Faith] 신앙 생산량만큼 [ICON_Production] 생산력을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_RESOURCE_CATTLE] 소, [ICON_RESOURCE_SHEEP] 양, [ICON_RESOURCE_RICE] 쌀 및 [ICON_RESOURCE_WHEAT] 밀 자원에서 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ko_KR">
+			<Text>군사 유닛이 생산되면 해당 유닛 전투력의 25%에 준하는 [ICON_FAITH] 신앙이 제공됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ko_KR">
+			<Text>강에 인접한 타일에서 [ICON_FAITH] 신앙 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>습지, 오아시스 및 범람원에서 [ICON_Production] 생산력 +1.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_SACRED_PATH_DESCRIPTION" Language="ko_KR">
+			<Text>성지 특수지구는 인접한 숲 및 열대우림 타일에서 [ICON_Faith] 신앙 +1을 획득합니다.</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="ko_KR">
+			<Text>인접한 숲 {1_Num : plural 1?타일; other?타일;}에서 [ICON_Faith] 신앙 +{1_num}.</Text>
+		</Row>
+		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_Governor] 총독이 있는 도시에 [ICON_Amenities] 쾌적도 +1, [ICON_Food] 식량 +3 및 [ICON_Housing] 주거공간 +3을 제공합니다.[NEWLINE][ICON_Governor] 총독이 없는 도시는 충성심 -2가 적용됩니다.[NEWLINE]보상으로 [Icon_Governor] 총독 타이틀 +2.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="ko_KR">
+			<Text>도시 국가 영향력 강화에 소모되는 [ICON_Gold] 금이 절반으로 감소합니다.[NEWLINE]플레이어가 종주국인 경우 도시 국가의 유닛(징병된 유닛 포함)이 [ICON_Strength] 전투력 +4를 얻습니다.[NEWLINE][Icon_Governor] 총독 타이틀 +1을 부여합니다. 턴당 [ICON_Envoy] 사절 획득을 위한 우호도 점수 +2.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="ko_KR">
+			<Text>군마를 대체하는 헝가리 특유의 중세 시대 유닛입니다. 도시 국가 동원 유닛이 인접한 경우 각 [ICON_Strength] 전투력 +2를 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ko_KR">
+			<Text>도시 국가 동원 유닛이 능력을 획득하여 [ICON_Strength] 전투력 +5를 얻습니다. 동원 유닛 업그레이드 시 [ICON_GOLD] 금 및 자원 소비량이 75% 감소합니다. 도시 국가의 군대를 동원하면 해당 도시 국가를 통해 [ICON_ENVOY] 사절 1명을 얻습니다. 성 기술을 연구하면 특유 유닛인 검은 군대를 생산할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="ko_KR">
+			<Text>인접효과: 인접한 광산 2개당 [ICON_SCIENCE] 과학이 +1 증가합니다. 극장가를 제외한 인접 특수지구 하나당 [ICON_SCIENCE] 과학이 -1 감소합니다. 또한 인접한 극장가에 [ICON_CULTURE] 문화 +1의 인접 보너스를 제공합니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="ko_KR">
             <Text>호수로 보이는 타일 두 개의 자연경관입니다. [ICON_Food] 식량 +2, [ICON_PRODUCTION] 생산력 +1, [ICON_CULTURE] 문화 +2, [ICON_GOLD] 금 +2을 제공합니다. 담수를 제공하지 않습니다.</Text>
         </Replace>

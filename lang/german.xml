@@ -1,7 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-	<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="de_DE">
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_GreatProphet] Punkt des Typs "Großer Prophet" pro Runde, wenn Astrologie erforscht wurde. Arabien erhält automatisch den letzten Großen Propheten [ICON_GreatProphet], wenn sie noch keinen bisher erhielten. +1 [ICON_Science] Wissenschaft für jede fremde Stadt mit Arabiens Religion. </Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="de_DE">
+			<Text>+25% [ICON_Production] Produktion für Bezirke und Wunder, wenn sie neben einem Fluss platziert werden. Schwemmland verhindert nicht die Platzierung von Bezirken und Wundern.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>+25% [ICON_Production] Produktion für Bezirke und Wunder, wenn sie neben einem Fluss platziert werden. Erleidet keinen Schaden durch Überschwemmungen.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="de_DE">
+			<Text>Alle Weltwunder gewähren +8 [ICON_Faith] Glauben.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_DAR_E_MEHR_DESCRIPTION" Language="de_DE">
+			<Text>+2 [ICON_CULTURE] Kultur.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_DESCRIPTION" Language="de_DE">
+			<Text>Ermöglicht Dar-e Mehrs zu bauen (+3 [ICON_Faith] Glauben, +2 [ICON_CULTURE] Kultur).</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="de_DE">
+			<Text>Schreine und Tempel bringen [ICON_PRODUCTION] Produktion, gleich ihrem [ICON_Faith] Glaubens-Ertrag.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_FOOD] Nahrung für Vieh- [ICON_RESOURCE_CATTLE], Schaf- [ICON_RESOURCE_SHEEP], Reis- [ICON_RESOURCE_RICE] und Weizen- [ICON_RESOURCE_WHEAT] Geländefelder.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="de_DE">
+			<Text>Erhalte Glauben [ICON_FAITH] in Höhe von 25% der Kampfstärke der Einheit, wenn eine militärische Einheit produziert wurde.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_FAITH] Glauben für Geländefelder die an einem Fluss angrenzenr.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_Production] Produktion von Sumpf, Oase und Schwemmland.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_SACRED_PATH_DESCRIPTION" Language="de_DE">
+			<Text>Heilige Stätten erhalten +1 [ICON_Faith] Glauben von amgrenzenden Regenwälder- und Wälder-Geländefeldern.</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="de_DE">
+			<Text>+{1_num} [ICON_Faith] Glaube für angrenzende Wald- {1_Num : plural 1?Geländefeld; other?Geländefelder;}.</Text>
+		</Row>
+		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_Amenities] Annehmlichkeit,+3 [ICON_FOOD] Nahrung und +3 [ICON_Housing] Wohnraum für Städte mit [ICON_Governor] Gouverneur.[NEWLINE]-2 Loyalität in Städten ohne [ICON_Governor] Gouverneur.[NEWLINE]Verleiht +2 [Icon_Governor] Gouverneur Titel.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="de_DE">
+			<Text>Das Ausheben des Militärs eines Stadtstaates kostet halb so viel [ICON_Gold] Gold.[NEWLINE]Stadtstaaten-Einheiten erhalten +4 [ICON_Strength] Kampfstärkebonus, sofern Ihr der Suzerain seid (inklusive ausgehobener Militäreinheiten).[NEWLINE]Verleiht +1 [Icon_Governor] Gouverneur Titel. +2 Einflusspunkte pro Runde für Gesandte in Stadtstaaten.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="de_DE">
+			<Text>Ungarische einzigartige Einheit des Mittelalters, die den Renner ersetzt. +2 [ICON_Strength] Kampfstärke für jede angrenzende ausgehobene Einheit.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="de_DE">
+			<Text>Ausgehobene Einheiten erlangen eine Fähigkeit, die ihnen +5 [ICON_Strength] Kampfstärke verleiht. Es kostet 75% weniger [ICON_GOLD] Gold und Ressourcen, ausgehobene Einheiten zu verbessern. Wenn Ihr Truppen in einem Stadtstaat aushebt, erhaltet Ihr 1 [ICON_ENVOY] Gesandten in diesem Stadtstaat. Erlangt die einzigartige Einheit Schwarze Armee, wenn die Schloss-Technologie erforscht wurde.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="de_DE">
+			<Text>Nachbarschaftsbonus: +1 [ICON_SCIENCE] Wissenschaft durch jedes 2. Mine-Geländefeld. -1 [ICON_SCIENCE] Wissenschaft durch jedes angrenzende Bezirk-Geländefeld außer dem Theaterplatz. Gewährt +1 [ICON_CULTURE] Kultur für angrenzende Theaterplätze.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="de_DE">
 			<Text>Naturwunder über zwei Geländefelder. Es erscheint als See und bietet +2 [ICON_FOOD] Nahrung, +1 [ICON_PRODUCTION] Produktion, +2 [ICON_CULTURE] Kultur und +2 [ICON_GOLD] Gold.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="de_DE">

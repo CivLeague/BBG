@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="ru_RU">
+			<Text>+1 [ICON_GreatProphet] очко великого пророка в ход после изучения Астрологии. Автоматическое появление последнего [ICON_GreatProphet] великого пророка при появлении предпоследнего (если вы еще не заслужили [ICON_GreatProphet] великого пророка). +1 [ICON_Science] науки за каждый чужой город, поддерживающий религию Аравии. </Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="ru_RU">
+			<Text>+25% [ICON_Production] к производству районов и чудес света возле рек. Речные поймы не препятствуют строительству районов и чудес света.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>+25% [ICON_Production] к производству районов и чудес света, если находится рядом с рекой. Не получает урона от паводков.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="ru_RU">
+			<Text>Все чудеса света дают +8 [ICON_Faith] веры.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_DAR_E_MEHR_DESCRIPTION" Language="ru_RU">
+			<Text>+2 [ICON_CULTURE] культуры.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строить храмы огня (+3 [ICON_Faith] веры, +2 [ICON_CULTURE] культуры).</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="ru_RU">
+			<Text>Храмы и святилища производят [ICON_PRODUCTION] производства столько же, сколько и [ICON_Faith] веры.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ru_RU">
+			<Text>+1 [ICON_FOOD] пищи на клетках с [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE] и [ICON_RESOURCE_WHEAT].</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ru_RU">
+			<Text>Даёт 25% стоимости боевой единицы в виде [ICON_FAITH] веры при его постройке.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ru_RU">
+			<Text>+1 [ICON_FAITH] веры на клетках рядом с рекой.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>+1 [ICON_Production] производства на болотах, в оазисах и поймах рек.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_SACRED_PATH_DESCRIPTION" Language="ru_RU">
+			<Text>Священные места получают +1 к [ICON_Faith] вере за каждые соседние клетки с лесом или джунглями.</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="ru_RU">
+			<Text>+{1_num} [ICON_Faith] веры от соседн{1_Num : plural 1?ей клетки; other?их клеток;} с лесом.</Text>
+		</Row>
+		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="ru_RU">
+			<Text>+1 [ICON_Amenities] довольства, +3 [ICON_FOOD] пищи и +3 [ICON_Housing] жилья в городах с [ICON_Governor] губернаторами.[NEWLINE]-2 лояльности в городах без [ICON_Governor] губернаторов.[NEWLINE]Даёт +2 [Icon_Governor] губернаторских титула.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="ru_RU">
+			<Text>Мобилизация войск городов-государств стоит вдвое меньше [ICON_Gold] золота.[NEWLINE]Юниты города-государства получают +4 к [ICON_Strength] боевой мощи, если вы являетесь его сюзереном (в том числе мобилизованные войска).[NEWLINE]Дает +1 [Icon_Governor] губернаторский титул. +2 Influence per turn towards envoys.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный венгерский юнит Средневековья. Заменяет летучие отряды. +2 [ICON_Strength] боевой мощи за каждый соседний мобилизованный юнит.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ru_RU">
+			<Text>Мобилизованные юниты получают +5 к [ICON_Strength] боевой мощи. На повышение нанятых юнитов тратится на 75% меньше [ICON_GOLD] золота и ресурсов. При найме армии города-государства вы получаете [ICON_ENVOY] посла в этом городе. После исследования технологии «Замки» дается уникальный юнит «Черная армия».</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="ru_RU">
+			<Text>Соседство: +1 [ICON_SCIENCE] науки за каждые 2 соседние шахты. -1 [ICON_SCIENCE] науки за каждый соседний район, кроме театральной площади. +1 [ICON_CULTURE] культуры за каждую соседнюю театральную площадь.</Text>
+		</Replace>
 		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="ru_RU">
 			<Text>Чудо природы. Занимает две клетки. Является озером и дает +2 [ICON_FOOD] пищи, +1 [ICON_PRODUCTION] производства, +2 [ICON_CULTURE] культуры и +2 [ICON_GOLD] золота.</Text>
 		</Replace>
