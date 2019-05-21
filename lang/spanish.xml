@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="es_ES">
+            <Text>+25% [ICON_Production] Producción hacia distritos y maravillas si se coloca al lado de un río. +1 [ICON_FOOD] de comida en las planicies aluviales y las planicies aluviales no bloquean la ubicación de distritos y maravillas.</Text>
+        </Replace>
+        <Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="es_ES">
+            <Text>+25% [ICON_Production] Producción hacia distritos y maravillas si se coloca al lado de un río. +1 [ICON_FOOD] de comida en las planicies aluviales. No recibe daños de las inundaciones.</Text>
+        </Replace>
+        <Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="es_ES">
+            <Text>Recibe 25% del valor de producción de una unidad de tierra militar en [ICON_FAITH] Fe cuando la unidad sea producida.</Text>
+        </Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="es_ES">
+			<Text>Después de descubrir Astronomía, recibe un punto por turno para un +1 [ICON_GreatProphet] Gran Profeta. El último [ICON_GreatProphet] Gran Profeta disponible automáticamente lo recibirá Arabia, en caso que no ah reclutado a uno. +1 [ICON_Science] Ciencia para cada ciudad extranjera siguiendo la religión de Arabia.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="es_ES">
+			<Text>Todas las maravillas del mundo proporcionan +8 [ICON_Faith] Fe.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_DAR_E_MEHR_DESCRIPTION" Language="es_ES">
+			<Text>+2 [ICON_CULTURE] Cultura.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_DESCRIPTION" Language="es_ES">
+			<Text>Permite la construcción de Dar-e Mehrs (+3 [ICON_Faith] Fe, +2 [ICON_CULTURE] Cultura).</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="es_ES">
+			<Text> Santuarios y templos proporcionan [ICON_PRODUCTION] Producción equivalente a la cantidad de [ICON_Faith] Fe que darán.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="es_ES">
+			<Text>+1 [ICON_FOOD] Comida por cada espacio de [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], y por cada espacio de [ICON_RESOURCE_WHEAT] que sea modificado.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="es_ES">
+			<Text>+1 [ICON_FAITH] Fe a los espacios alrededor de un Río.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>+1 [ICON_Production] Producción de Pantano, Oasis y llanuras de inundación.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_SACRED_PATH_DESCRIPTION" Language="es_ES">
+			<Text>Los distritos de Sitios sagrado obtienen +1 [ICON_Faith] Fe por cada bosque lluvioso y bosques a su alrededor.</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="es_ES">
+			<Text>+{1_num} [ICON_Faith] Fe de los bosques a su alrededor {1_Num : plural 1?tile; other?tiles;}.</Text>
+		</Row>
+		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="es_ES">
+			<Text>+1 [ICON_Amenities] Lujo, +3 [ICON_FOOD] Comida, y +3 [ICON_Housing] Vivienda en ciudades con [ICON_Governor] Gobernadores[NEWLINE]-2 Lealtad en ciudades sin [ICON_Governor] Governadores.[NEWLINE]Otorga +2 Títulos de [Icon_Governor] Gobernador.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="es_ES">
+			<Text>Comprar unidades los estados de la ciudad cuesta la mitad de [ICON_Gold] Oro.[NEWLINE]Unidades de los estados de la ciudad ganan +4 [ICON_Strength] fuerza de combate si tú eres su soberano (incluyendo unidades compradas).[NEWLINE]Otorga +1 Títulos de [Icon_Governor] Gobernador. +2 Influencia por turno hacia los [ICON_ENVOY] enviados.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="es_ES">
+			<Text>Unidad de la era medieval única húngara que sustituye al Corcel. +2 [ICON_Strength] Fuerza de combate por cada unidad comprada de una ciudad des estado que este a su alrededor.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="es_ES">
+			<Text>Unidades compradas reciben una abilidad que les da +5 [ICON_Strength] Fuerza de combate. Cuesta 75% menos [ICON_GOLD] Oro y recursos para mejorar unidades compradas.Si compras las unidades de una ciudad de estado, recibirás 1 [ICON_ENVOY] Enviado con esa ciudad de estado. Gana la unidad única del Ejército Negro cuando se investiga la tecnología de los Castillos.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="es_ES">
+			<Text>Adjacency: +1 [ICON_SCIENCE] Ciencia por cada 2 minas alrededor. -1 [ICON_SCIENCE]Ciencia para cada distrito alrededor, excepto al distrito de teatro. También provee +1 [ICON_CULTURE] Cultura por cada distrito de teatro a su alrededor.</Text>
+		</Replace>
 		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="es_ES">
 			<Text>Maravilla Natural de dos espacios. Se mira como un lago y da +2 [ICON_FOOD] Comida, +1 [ICON_PRODUCTION] Producción, +2 [ICON_CULTURE] Cultura, +2 [ICON_GOLD] Oro.</Text>
 		</Replace>
@@ -97,9 +151,6 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="es_ES">
 			<Text>Desbloquea la habilidad del Constructor para construir una Esfinge, única a Egipto.[NEWLINE][NEWLINE]+2 [ICON_Faith] Fe, +1 [ICON_Culture] Cultura, and +2 Apelación.[NEWLINE][NEWLINE]+1 [ICON_Faith] Fe and +1 [ICON_CULTURE] Cultura si está al lado de una Maravilla. +1 [ICON_FOOD] Comida y +1 [ICON_PRODUCTION] Producción si se construye en el Desierto o +1 [ICON_CULTURE] Cultura si se construye en Llanuras Inundables.[NEWLINE][NEWLINE]Adiciona [ICON_CULTURE] Cultura cuando se descubre Servicio Diplomático. Da[ICON_TOURISM]Turismo después de completar la tecnología de Vuelo. No se puede construir en nieve o colina de nieve.</Text>
-		</Replace>		
-		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="es_ES">
-			<Text>Unidades reclutadas reciben una habilidad que les da +5 [ICON_Strength] Fuerza de combate. Cuesta 75% menos [ICON_GOLD] Oro y recursos para mejorar unidades reclutadas. Si reclutas unidades de un ciudad-estado, recibe 2 [ICON_ENVOY] Enviados con esa ciudad-estado. Adquiere la Unidad única llamada El Ejército Negro cuando completes la tecnología de Castillos.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="es_ES">
@@ -158,10 +209,10 @@
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="es_ES">
 			<Text>Unidad única macedonia de caballería pesada. +5 [ICON_Strength] Fuerza de combate adicional cuando se encuentra adyacente a un [ICON_GREATGENERAL] Gran General de cualquier era. +5 [ICON_GREATGENERAL] Puntos de gran general cuando derrota una unidad enemiga. Empieza con un ascenso gratis.</Text>
 		</Replace>
-		<!--<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="en_US">
+		<!--<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="es_ES">
 			<Text>Unidad única macedonia de caballería pesada. +5 [ICON_Strength] Fuerza de combate adicional cuando se encuentra a una distancia máxima de 2 casillas de un [ICON_GREATGENERAL] Gran General de cualquier era. +5 [ICON_GREATGENERAL] Puntos de gran general cuando derrota una unidad enemiga. Empieza con un ascenso gratis.</Text>
 		</Replace>-->
-		<!--<Replace Tag="LOC_HETAIROI_GREAT_GENERAL_COMBAT_BONUS_DESCRIPTION" Language="en_US">
+		<!--<Replace Tag="LOC_HETAIROI_GREAT_GENERAL_COMBAT_BONUS_DESCRIPTION" Language="es_ES">
 			<Text>+5 Bonus de combate por Gran General cercano</Text>
 		</Replace>-->
 		<!-- Mongolia -->

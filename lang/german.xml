@@ -151,9 +151,6 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Sphinx, die einzigartige Modernisierung Ägyptens, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben, +1 [ICON_Culture] Kultur und +2 Anziehungskraft.[NEWLINE][NEWLINE]+1 [ICON_Faith] Glauben und +1 [ICON_CULTURE] Kultur, wenn neben einem Wunder. +1 [ICON_FOOD] Nahrung und +1 [ICON_PRODUCTION] Produktion, wenn sie auf einem Wüstengeländefeld gebaut wurde oder +1 [ICON_CULTURE] Kultur beim Bau auf Schwemmland.[NEWLINE][NEWLINE]Zusätzliche [ICON_CULTURE] Kultur nach Erforschen von Diplomatischer Dienst. Gewährt [ICON_TOURISM] Tourismus nach der Erforschung von Luftfahrt. Kann nicht auf Schnee oder Schneehügeln gebaut werden.</Text>
-		</Replace>		
-		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="de_DE">
-			<Text>Ausgehobene Einheiten erlangen eine Fähigkeit, die ihnen +5 [ICON_Strength] Kampfstärke verleiht. Es kostet 75% weniger [ICON_GOLD] Gold und Ressourcen, ausgehobene Einheiten zu verbessern. Wenn Ihr Truppen in einem Stadtstaat aushebt, erhaltet Ihr 2 [ICON_ENVOY] Gesandte in diesem Stadtstaat. Erlangt die einzigartige Einheit Schwarze Armee, wenn die Schloss-Technologie erforscht wurde.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="de_DE">

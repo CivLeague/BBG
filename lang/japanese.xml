@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="ja_JP">
+			<Text>占星術の研究完了後、毎ターン [ICON_GreatProphet] 大預言者ポイント+1。もしアラビアが大預言者を獲得しないまま [ICON_GreatProphet] 大預言者のストックが残り1名となった場合、その [ICON_GreatProphet] 大預言者は自動的にアラビアのものとなる。アラビア発の宗教を信奉する他文明の都市1つごとに科学力+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="ja_JP">
+			<Text>世界遺産1つにつき [ICON_Faith] 信仰力+8。</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_DAR_E_MEHR_DESCRIPTION" Language="ja_JP">
+			<Text>[ICON_CULTURE] 文化力+2。</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_DESCRIPTION" Language="ja_JP">
+			<Text>ダルエ・メフルの建設が可能になる。（[ICON_Faith] 信仰力+3、[ICON_CULTURE] 文化力+2。）</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="ja_JP">
+			<Text>神殿と寺院が、それぞれ自身の出力する [ICON_Faith] 信仰力と同量の [ICON_PRODUCTION] 生産力を生み出すようになる。</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ja_JP">
+			<Text>[ICON_RESOURCE_CATTLE] 家畜、 [ICON_RESOURCE_SHEEP] 羊、 [ICON_RESOURCE_RICE] 米、 [ICON_RESOURCE_WHEAT] 小麦のあるタイルから食料+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ja_JP">
+			<Text>河川に隣接するタイルから  [ICON_FAITH] 信仰力+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>湿地、オアシス、氾濫原から [ICON_Production] 生産力+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_SACRED_PATH_DESCRIPTION" Language="ja_JP">
+			<Text>聖地が隣接する森林およびジャングルから [ICON_Faith] 信仰力+1を得る。</Text>
+		</Replace>
+		<Row Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="ja_JP">
+			<Text>隣接する森林1つにつき [ICON_Faith] 信仰力+1。</Text>
+		</Row>
+		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="ja_JP">
+			<Text>[ICON_Governor] 総督が置かれている都市の [ICON_Amenities] 快適性+1、 [ICON_FOOD] 食料+3、 [ICON_Housing] 住宅+3。[NEWLINE][ICON_Governor] 総督が置かれていない都市の忠誠度-2。[NEWLINE][ICON_Governor] 総督の昇進を2つ獲得。</Text>>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="ja_JP">
+			<Text>都市国家の徴用に必要な [ICON_Gold] ゴールド-50%。[NEWLINE]宗主国である場合、その都市国家が持つユニットの [ICON_Strength] 戦闘力+4。（徴用されたユニットを含む）[NEWLINE][ICON_Governor] 総督の昇進を1つ獲得。代表団を得るためのターンごとのポイント+2。</Text>>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="ja_JP">
+			<Text>コーサーの代替となるハンガリー固有のユニット。隣接する徴用されたユニット1つにつき [ICON_Strength] 戦闘力+2。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ja_JP">
+			<Text>徴用されたユニットの [ICON_Strength] 戦闘力+5、アップグレードに必要な [ICON_GOLD] ゴールドと戦略資源-75%。都市国家から徴用を行うたび、その都市国家への [ICON_ENVOY] 代表団が+1される。城の研究完了で固有ユニットである黒軍を解禁する。</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="ja_JP">
+			<Text>隣接する鉱山2つにつき [ICON_SCIENCE] 科学力+1。劇場区域以外の隣接する区域1つにつき [ICON_SCIENCE] 科学力-1。隣接する劇場区域の [ICON_CULTURE] 文化力+1。</Text>
+		</Replace>
 		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="ja_JP">
 			<Text>2タイルにわたる湖の自然遺産。各タイルから[ICON_FOOD]食料+2、[ICON_PRODUCTION]生産力+1、[ICON_CULTURE]文化力+2、[ICON_GOLD]ゴールド+2。淡水は供給しない。</Text>
 		</Replace>

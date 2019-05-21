@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="ru_RU">
+            <Text>+25% [ICON_Production] производства районов и чудес, размещённых рядом с рекой. +1 [ICON_FOOD] пищи на поймах; на поймах можно строить районы и чудеса.</Text>
+        </Replace>
+        <Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="ru_RU">
+            <Text>+25% [ICON_Production] производства районов и чудес, размещённых рядом с рекой. +1 [ICON_FOOD] пищи на поймах. Затопления не наносят повреждений.</Text>
+        </Replace>
+        <Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ru_RU">
+            <Text>При постройке военного юнита получайте [ICON_FAITH] веру в размере 25% от стоимости постройки.</Text>
+        </Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_GreatProphet] очко великого пророка в ход после изучения Астрологии. Автоматическое появление последнего [ICON_GreatProphet] великого пророка при появлении предпоследнего (если вы еще не заслужили [ICON_GreatProphet] великого пророка). +1 [ICON_Science] науки за каждый чужой город, поддерживающий религию Аравии. </Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="ru_RU">
-			<Text>+25% [ICON_Production] к производству районов и чудес света возле рек. Речные поймы не препятствуют строительству районов и чудес света.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>+25% [ICON_Production] к производству районов и чудес света, если находится рядом с рекой. Не получает урона от паводков.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="ru_RU">
 			<Text>Все чудеса света дают +8 [ICON_Faith] веры.</Text>
@@ -24,9 +27,6 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_FOOD] пищи на клетках с [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE] и [ICON_RESOURCE_WHEAT].</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ru_RU">
-			<Text>Даёт 25% стоимости боевой единицы в виде [ICON_FAITH] веры при его постройке.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_FAITH] веры на клетках рядом с рекой.</Text>
@@ -151,9 +151,6 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям строить сфинкса (уникально для Египта).[NEWLINE][NEWLINE]+2 [ICON_Faith] веры и +1 [ICON_Culture] культуры. +2 престижа. +1 к [ICON_Faith] вере и [ICON_CULTURE] культуре, если построен рядом с чудом света. +1 к [ICON_FOOD] пище и [ICON_PRODUCTION] производству в пустыне либо +1 [ICON_CULTURE] культуры в пойме реки. Дополнительная [ICON_CULTURE] культура после открытия «Дипломатической службы». Дает [ICON_TOURISM] туризм после открытия «Авиации». Нельзя построить рядом с другим сфинксом. Нельзя построить на снегу и заснеженных холмах.</Text>
-		</Replace>		
-		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ru_RU">
-			<Text>Мобилизованные юниты получают +5 к [ICON_Strength] боевой мощи. На повышение нанятых юнитов тратится на 75% меньше [ICON_GOLD] золота и ресурсов. При найме армии города-государства вы получаете 2 [ICON_ENVOY] послов в этом городе. После исследования технологии «Замки» дается уникальный юнит «Черная армия».</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ru_RU">

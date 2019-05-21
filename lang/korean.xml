@@ -26,8 +26,8 @@
 			<Text>[ICON_RESOURCE_CATTLE] 소, [ICON_RESOURCE_SHEEP] 양, [ICON_RESOURCE_RICE] 쌀 및 [ICON_RESOURCE_WHEAT] 밀 자원에서 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ko_KR">
-			<Text>군사 유닛이 생산되면 해당 유닛 전투력의 25%에 준하는 [ICON_FAITH] 신앙이 제공됩니다.</Text>
-		</Replace>
+            <Text>지상 군사 유닛이 생산되면 해당 유닛 비용의 25%에 준하는 [ICON_FAITH] 신앙이 제공됩니다.</Text>
+        </Replace>
 		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ko_KR">
 			<Text>강에 인접한 타일에서 [ICON_FAITH] 신앙 +1을 제공합니다.</Text>
 		</Replace>
@@ -50,8 +50,8 @@
 			<Text>군마를 대체하는 헝가리 특유의 중세 시대 유닛입니다. 도시 국가 동원 유닛이 인접한 경우 각 [ICON_Strength] 전투력 +2를 획득합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ko_KR">
-			<Text>도시 국가 동원 유닛이 능력을 획득하여 [ICON_Strength] 전투력 +5를 얻습니다. 동원 유닛 업그레이드 시 [ICON_GOLD] 금 및 자원 소비량이 75% 감소합니다. 도시 국가의 군대를 동원하면 해당 도시 국가를 통해 [ICON_ENVOY] 사절 1명을 얻습니다. 성 기술을 연구하면 특유 유닛인 검은 군대를 생산할 수 있습니다.</Text>
-		</Replace>
+            <Text>도시 국가 동원 유닛이 능력을 획득하여 [ICON_Strength] 전투력 +5를 얻습니다. 동원 유닛 업그레이드 시 [ICON_GOLD] 금 및 자원 소비량이 75% 감소합니다. 도시 국가의 군대를 동원하면 해당 도시 국가를 통해 [ICON_ENVOY] 사절 1명을 얻습니다. 성 기술을 연구하면 특유 유닛인 검은 군대를 생산할 수 있습니다.</Text>
+        </Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="ko_KR">
 			<Text>인접효과: 인접한 광산 2개당 [ICON_SCIENCE] 과학이 +1 증가합니다. 극장가를 제외한 인접 특수지구 하나당 [ICON_SCIENCE] 과학이 -1 감소합니다. 또한 인접한 극장가에 [ICON_CULTURE] 문화 +1의 인접 보너스를 제공합니다.</Text>
 		</Replace>
@@ -151,9 +151,6 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +2를 제공합니다. 불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다. 범람원이 아닌 사막에 지으면 [ICON_Food] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다. 범람원에 지으면 [ICON_CULTURE] 문화 +1을 제공합니다. 외교부 사회 제도를 발견하면 문화를 추가로 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 다른 스핑크스 옆에 지을 수 없습니다. 설원 또는 설원 언덕에 지을 수 없습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ko_KR">
-			<Text>도시 국가 동원 유닛이 능력을 획득하여 [ICON_Strength] 전투력 +5를 얻습니다. 동원 유닛 업그레이드 시 [ICON_GOLD] 금 및 자원 소비량이 75% 감소합니다. 도시 국가의 군대를 동원하면 해당 도시 국가를 통해 [ICON_ENVOY] 사절 2명을 얻습니다. 성 기술을 연구하면 특유 유닛인 검은 군대를 생산할 수 있습니다.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ko_KR">

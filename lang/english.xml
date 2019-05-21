@@ -26,7 +26,7 @@
 			<Text>+1 [ICON_FOOD] Food for [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], and [ICON_RESOURCE_WHEAT] tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="en_US">
-			<Text>Receive 25% of a military land unit's base combat strength in [ICON_FAITH] Faith when produced.</Text>
+			<Text>Receive 25% of a military land unit's production value in [ICON_FAITH] Faith when produced.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_FAITH] Faith to tiles adjacent to a River.</Text>
