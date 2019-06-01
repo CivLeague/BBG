@@ -34,9 +34,6 @@
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ja_JP">
 			<Text>[ICON_RESOURCE_CATTLE] 家畜、 [ICON_RESOURCE_SHEEP] 羊、 [ICON_RESOURCE_RICE] 米、 [ICON_RESOURCE_WHEAT] 小麦のあるタイルから食料+1。</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ja_JP">
-			<Text>河川に隣接するタイルから  [ICON_FAITH] 信仰力+1。</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>湿地、オアシス、氾濫原から [ICON_Production] 生産力+1。</Text>
 		</Replace>

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ru_RU">
+            <Text>+1 [ICON_FAITH] веры на обработанных клетках рядом с рекой.</Text>
+        </Replace>
+        <Replace Tag="LOC_POLICY_RETINUES_DESCRIPTION" Language="ru_RU">
+            <Text>Уменьшение стоимости в ресурсах на 50% при постройке или улучшении юнитов.</Text>
+        </Replace>
+        <Replace Tag="LOC_POLICY_FORCE_MODERNIZATION_DESCRIPTION" Language="ru_RU">
+            <Text>Скидка в 50% [ICON_Gold] золота при улучшении юнитов. Уменьшение стоимости в ресурсах на 50% при постройке или улучшении юнитов.</Text>
+        </Replace>
 		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="ru_RU">
 			<Text>Ваша лунная экспедиция завершается успешно! Это дает разовый бонус к [ICON_Culture] культуре, равный 5-кратному размеру вашей [ICON_Science] науки за ход. Означает второй шаг к научной победе.</Text>
 		</Replace>
@@ -33,9 +42,6 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_FOOD] пищи на клетках с [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE] и [ICON_RESOURCE_WHEAT].</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ru_RU">
-			<Text>+1 [ICON_FAITH] веры на клетках рядом с рекой.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_Production] производства на болотах, в оазисах и поймах рек.</Text>

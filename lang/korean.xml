@@ -43,9 +43,6 @@
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ko_KR">
             <Text>지상 군사 유닛이 생산되면 해당 유닛 비용의 25%에 준하는 [ICON_FAITH] 신앙이 제공됩니다.</Text>
         </Replace>
-		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ko_KR">
-			<Text>강에 인접한 타일에서 [ICON_FAITH] 신앙 +1을 제공합니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>습지, 오아시스 및 범람원에서 [ICON_Production] 생산력 +1.</Text>
 		</Replace>
