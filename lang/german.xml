@@ -11,7 +11,7 @@
 			<Text>+25% [ICON_Production] Produktion für Bezirke und Wunder, wenn sie neben einem Fluss platziert werden. Erleidet keinen Schaden durch Überschwemmungen.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="de_DE">
-			<Text>Alle Weltwunder gewähren +8 [ICON_Faith] Glauben.</Text>
+			<Text>Alle Weltwunder gewähren +6 [ICON_Faith] Glauben.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_DAR_E_MEHR_DESCRIPTION" Language="de_DE">
 			<Text>+2 [ICON_CULTURE] Kultur.</Text>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.2.4">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.3.1">
 	<Properties>
-		<Name>Better Balanced Game v3.2.4</Name>
+		<Name>Better Balanced Game v3.3.1</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
@@ -11,7 +11,7 @@
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
 	
-	<!-- can load only seleect files based on these requirements, if applied -->
+	<!-- can load only select files based on these requirements, if applied -->
 	<ActionCriteria>
 		<Criteria id="base">
 			<RuleSetInUse>RULESET_STANDARD</RuleSetInUse>
@@ -87,21 +87,9 @@
 		<ImportFiles id="bbg_import_files">
 		</ImportFiles>
 		
-		<UpdateText id="bbg_xp1_text_updates" criteria="xp1">
+		<UpdateText id="bbg_text_updates">
 			<Properties>
-				<LoadOrder>11610</LoadOrder>
-			</Properties>
-			<File>lang/english.xml</File>
-			<File>lang/korean.xml</File>
-			<File>lang/russian.xml</File>
-			<File>lang/french.xml</File>
-			<File>lang/german.xml</File>
-			<File>lang/spanish.xml</File>
-			<File>lang/japanese.xml</File>
-		</UpdateText>
-		<UpdateText id="bbg_xp2_text_updates" criteria="xp2">
-			<Properties>
-				<LoadOrder>11611</LoadOrder>
+				<LoadOrder>11609</LoadOrder>
 			</Properties>
 			<File>lang/english.xml</File>
 			<File>lang/korean.xml</File>

@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ja_JP">
+            <Text>河川に隣接する改善済みのタイルに[ICON_FAITH]信仰力+1。</Text>
+        </Replace>
+        <Replace Tag="LOC_POLICY_RETINUES_DESCRIPTION" Language="ja_JP">
+            <Text>全ユニットの生産及びアップグレードに必要な戦略資源の量が-50%される。</Text>
+		</Replace>
+        <Replace Tag="LOC_POLICY_FORCE_MODERNIZATION_DESCRIPTION" Language="ja_JP">
+            <Text>全ユニットの生産及びアップグレードに必要な戦略資源の量が-50%、アップグレードに必要な[ICON_Gold]ゴールドが-50%される。</Text>
+        </Replace>
+		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="ja_JP">
+			<Text>人類の月面に降り立たせることに成功しました！ 1ターンで得られる [ICON_Science] 科学力の5倍に相当する [ICON_Culture] 文化力ボーナスが発生 (1回のみ) し、科学による勝利に向けた次なる一歩を踏み出せます。</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_DESCRIPTION" Language="ja_JP">
+			<Text>人類を月面に降り立たせるための大型ロケットを打ち上げる宇宙開発競争プロジェクト。1ターンで得られる [ICON_Science] 科学力の5倍に相当する [ICON_Culture] 文化力ボーナスが発生 (1回のみ) し、科学による勝利がより近づく。</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="ja_JP">
 			<Text>占星術の研究完了後、毎ターン [ICON_GreatProphet] 大預言者ポイント+1。もしアラビアが大預言者を獲得しないまま [ICON_GreatProphet] 大預言者のストックが残り1名となった場合、その [ICON_GreatProphet] 大預言者は自動的にアラビアのものとなる。アラビア発の宗教を信奉する他文明の都市1つごとに科学力+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="ja_JP">
-			<Text>世界遺産1つにつき [ICON_Faith] 信仰力+8。</Text>
+			<Text>世界遺産1つにつき [ICON_Faith] 信仰力+6。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_DAR_E_MEHR_DESCRIPTION" Language="ja_JP">
 			<Text>[ICON_CULTURE] 文化力+2。</Text>

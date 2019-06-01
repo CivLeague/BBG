@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="ru_RU">
+			<Text>Ваша лунная экспедиция завершается успешно! Это дает разовый бонус к [ICON_Culture] культуре, равный 5-кратному размеру вашей [ICON_Science] науки за ход. Означает второй шаг к научной победе.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_DESCRIPTION" Language="ru_RU">
+			<Text>Проект «Космическая гонка» отправляет лунную экспедицию. Дает разовый бонус к [ICON_Culture] культуре, равный 5-кратному размеру вашей [ICON_Science] науки за ход. Означает второй шаг к научной победе.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="ru_RU">
             <Text>+25% [ICON_Production] производства районов и чудес, размещённых рядом с рекой. +1 [ICON_FOOD] пищи на поймах; на поймах можно строить районы и чудеса.</Text>
         </Replace>
@@ -14,7 +20,7 @@
 			<Text>+1 [ICON_GreatProphet] очко великого пророка в ход после изучения Астрологии. Автоматическое появление последнего [ICON_GreatProphet] великого пророка при появлении предпоследнего (если вы еще не заслужили [ICON_GreatProphet] великого пророка). +1 [ICON_Science] науки за каждый чужой город, поддерживающий религию Аравии. </Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="ru_RU">
-			<Text>Все чудеса света дают +8 [ICON_Faith] веры.</Text>
+			<Text>Все чудеса света дают +6 [ICON_Faith] веры.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_DAR_E_MEHR_DESCRIPTION" Language="ru_RU">
 			<Text>+2 [ICON_CULTURE] культуры.</Text>

@@ -275,8 +275,15 @@ INSERT INTO Modifiers (ModifierId, ModifierType)
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
     VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN_MOD' , 'Amount' , '1');
 --Wildcard delayed to Political Philosophy
-UPDATE Modifiers SET OwnerRequirementSetId='PLAYER_HAS_POLITICAL_PHILOSOPHY' WHERE ModifierId='TRAIT_WILDCARD_GOVERNMENT_SLOT';
-
+UPDATE Modifiers SET OwnerRequirementSetId='PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD' WHERE ModifierId='TRAIT_WILDCARD_GOVERNMENT_SLOT';
+INSERT INTO Requirements (RequirementId, RequirementType)
+	VALUES ('REQUIRES_PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD', 'REQUIREMENT_PLAYER_HAS_CIVIC');
+INSERT INTO RequirementArguments (RequirementId, Name, Value)
+	VALUES ('REQUIRES_PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD', 'CivicType', 'CIVIC_POLITICAL_PHILOSOPHY');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+	VALUES ('PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD', 'REQUIRES_PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
+	VALUES ('PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD', 'REQUIREMENTSET_TEST_ALL');
 
 --==================
 -- Greece (Gorgo)
@@ -488,6 +495,8 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 --==============================================================
 --******		C U L T U R E   V I C T O R I E S		  ******
 --==============================================================
+-- moon landing worth 5x science in culture instead of 10x
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='PROJECT_COMPLETION_GRANT_CULTURE_BASED_ON_SCIENCE_RATE' AND Name='Multiplier';
 -- computers and environmentalism tourism boosts to 50% (from 25%)
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='COMPUTERS_BOOST_ALL_TOURISM';
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='ENVIRONMENTALISM_BOOST_ALL_TOURISM'; 
@@ -734,12 +743,22 @@ INSERT INTO ModifierArguments
 	('INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD'    , 'YieldType'                 , 'YIELD_FAITH'                                   ),
 	('INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD'    , 'UnitProductionPercent'     , '25'                                            );
 UPDATE BeliefModifiers SET ModifierID='INITIATION_RITES_FAITH_YIELD_CPL_MOD' WHERE BeliefType='BELIEF_INITIATION_RITES' AND ModifierID='INITIATION_RITES_FAITH_DISPERSAL';
--- River Goddess gives +1 Faith to tiles along rivers
+-- River Goddess gives +1 Faith to improved tiles along rivers
+INSERT INTO Requirements (RequirementId, RequirementType)
+	VALUES
+	('REQUIRES_PLOT_IS_IMPROVED' , 'REQUIREMENT_PLOT_HAS_ANY_IMPROVEMENT');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
+	VALUES
+	('IMPROVED_PLOT_ADJACENT_TO_RIVER_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+	VALUES
+	('IMPROVED_PLOT_ADJACENT_TO_RIVER_REQUIREMENTS', 'REQUIRES_PLOT_ADJACENT_TO_RIVER'),
+	('IMPROVED_PLOT_ADJACENT_TO_RIVER_REQUIREMENTS', 'REQUIRES_PLOT_IS_IMPROVED');
 INSERT INTO Modifiers 
 	(ModifierId                                         , ModifierType                                                , SubjectRequirementSetId)
 	VALUES
 	('RIVER_GODDESS_FAITH_BONUS_CPL_MOD'                , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER'                       , 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS'      ),
-	('RIVER_GODDESS_FAITH_BONUS_MODIFIER_CPL_MOD'       , 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD'               , 'PLOT_ADJACENT_TO_RIVER_REQUIREMENTS'     );
+	('RIVER_GODDESS_FAITH_BONUS_MODIFIER_CPL_MOD'       , 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD'               , 'IMPROVED_PLOT_ADJACENT_TO_RIVER_REQUIREMENTS'     );
 INSERT INTO ModifierArguments 
 	(ModifierId                                         , Name                       , Value)
 	VALUES
@@ -884,8 +903,8 @@ INSERT INTO PolicyModifiers (PolicyType , ModifierId)
 -- Religious spread from trade routes increased
 UPDATE GlobalParameters SET Value='3.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_PRESSURE_FOR_DESTINATION';
 UPDATE GlobalParameters SET Value='3.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_PRESSURE_FOR_ORIGIN'     ;
--- Divine Inspiration yield doubled
-UPDATE ModifierArguments SET Value='8' WHERE ModifierId='DIVINE_INSPIRATION_WONDER_FAITH_MODIFIER' AND Name='Amount';
+-- Divine Inspiration yield increased
+UPDATE ModifierArguments SET Value='6' WHERE ModifierId='DIVINE_INSPIRATION_WONDER_FAITH_MODIFIER' AND Name='Amount';
 -- Crusader +7 instead of +10
 UPDATE ModifierArguments SET Value='7' WHERE ModifierId='JUST_WAR_COMBAT_BONUS_MODIFIER';
 -- Lay Ministry now +2 Culture and +2 Faith per Theater and Holy Site

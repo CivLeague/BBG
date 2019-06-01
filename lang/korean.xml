@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ko_KR">
+            <Text>강에 인접하였으며 시설물이 있는(개발한) 타일에서 [ICON_FAITH] 신앙 +1을 제공합니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_POLICY_RETINUES_DESCRIPTION" Language="ko_KR">
+            <Text>모든 유닛 생산 및 업그레이드에 자원 비용이 50% 감소합니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_POLICY_FORCE_MODERNIZATION_DESCRIPTION" Language="ko_KR">
+            <Text>모든 유닛 업그레이드에 [ICON_Gold] 금 50% 할인. 모든 유닛 생산 및 업그레이드에 자원 비용 50% 감소.</Text>
+        </Replace>
+		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="ko_KR">
+			<Text>성공적으로 달에 인간을 상륙시켰습니다! 플레이어의 턴당 [ICON_Science] 과학 생산량의 5배인 [ICON_Culture] 문화 보너스를 일회성으로 부여하며, 과학 승리로의 두 번째 단계를 표시합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_DESCRIPTION" Language="ko_KR">
+			<Text>우주 경쟁 프로젝트의 하나로, 달에 인간을 상륙시키기 위해 대형 로켓을 발사합니다. 플레이어의 턴당 [ICON_Science] 과학 생산량의 5배인 [ICON_Culture] 문화 보너스를 일회성으로 부여하며, 과학 승리로의 두 번째 단계를 표시합니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="ko_KR">
 			<Text>점성술 기술을 연구하면 매 턴 [ICON_GreatProphet] 위대한 선지자 점수 +1을 얻습니다. 플레이어가 [ICON_GreatProphet] 위대한 선지자가 없을 시, 마지막에서 두 번째 위대한 선지자를 다른 문명이 영입하는 경우, 플레이어는 마지막 [ICON_GreatProphet] 위대한 선지자를 즉시 얻습니다. 아라비아의 종교를 믿는 타 문명 도시마다 [ICON_Science] 과학 +1을 제공합니다.</Text>
 		</Replace>
@@ -11,7 +26,7 @@
 			<Text>특수지구와 불가사의를 강 옆에 배치할 경우 이들의 건설에 대한 [ICON_Production] 생산력 +25%를 제공합니다. 범람원 타일에서 [ICON_FOOD] 식량 +1을 제공합니다. 홍수 피해를 입지 않습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="ko_KR">
-			<Text>모든 세계 불가사의에서 [ICON_Faith] 신앙 +8을 제공합니다.</Text>
+			<Text>모든 세계 불가사의에서 [ICON_Faith] 신앙 +6을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_DAR_E_MEHR_DESCRIPTION" Language="ko_KR">
 			<Text>[ICON_CULTURE] 문화 +2를 제공합니다.</Text>

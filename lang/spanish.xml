@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="es_ES">
+			<Text>¡Has enviado a una persona a la luna con éxito! Otorga una bonificación única a Cultura [ICON_Culture] equivalente a 5 veces tu Ciencia [ICON_Science] por turno, y marca el segundo paso hacia la victoria científica.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_DESCRIPTION" Language="es_ES">
+			<Text>El proyecto de la Carrera espacial que lanza un gran cohete para que un humano aterrice en la luna. Otorga una bonificación única a Cultura [ICON_Culture] equivalente a 5 veces tu Ciencia [ICON_Science] por turno, y marca el segundo paso hacia la victoria científica.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="es_ES">
             <Text>+25% [ICON_Production] Producción hacia distritos y maravillas si se coloca al lado de un río. +1 [ICON_FOOD] de comida en las planicies aluviales y las planicies aluviales no bloquean la ubicación de distritos y maravillas.</Text>
         </Replace>
@@ -14,7 +20,7 @@
 			<Text>Después de descubrir Astronomía, recibe un punto por turno para un +1 [ICON_GreatProphet] Gran Profeta. El último [ICON_GreatProphet] Gran Profeta disponible automáticamente lo recibirá Arabia, en caso que no ah reclutado a uno. +1 [ICON_Science] Ciencia para cada ciudad extranjera siguiendo la religión de Arabia.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="es_ES">
-			<Text>Todas las maravillas del mundo proporcionan +8 [ICON_Faith] Fe.</Text>
+			<Text>Todas las maravillas del mundo proporcionan +6 [ICON_Faith] Fe.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_DAR_E_MEHR_DESCRIPTION" Language="es_ES">
 			<Text>+2 [ICON_CULTURE] Cultura.</Text>

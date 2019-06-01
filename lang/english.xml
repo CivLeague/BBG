@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_FAITH] Faith to improved tiles along a River.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="en_US">
+			<Text>You successfully land a person on the moon! Grants a one time [ICON_Culture] Culture bonus equal to 5 times your [ICON_Science] Science per turn, and marks the second step towards the Science Victory.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_DESCRIPTION" Language="en_US">
+			<Text>Space Race project which launches a large rocket to land a human on the moon. Grants a one time [ICON_Culture] Culture bonus equal to 5 times your [ICON_Science] Science per turn, and marks the second step towards the Science Victory.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_RETINUES_DESCRIPTION" Language="en_US">
+			<Text>50% resource discount on all unit production and upgrades.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_FORCE_MODERNIZATION_DESCRIPTION" Language="en_US">
+			<Text>50% [ICON_Gold] Gold discount on all unit upgrades. 50% resource discount on all unit production and upgrades.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_GreatProphet] Great Prophet point per turn after researching Astrology. The last available [ICON_GreatProphet] Great Prophet will automatically go to Arabia, if they have not already recruited one. +1 [ICON_Science] Science for each foreign city following Arabia's Religion. </Text>
 		</Replace>
@@ -11,7 +26,7 @@
 			<Text>+25% [ICON_Production] Production towards districts and wonders if placed next to a River. +1 [ICON_FOOD] Food on floodplains tiles. Does not receive damage from Floods.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="en_US">
-			<Text>All world wonders provide +8 [ICON_Faith] Faith.</Text>
+			<Text>All world wonders provide +6 [ICON_Faith] Faith.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_DAR_E_MEHR_DESCRIPTION" Language="en_US">
 			<Text>+2 [ICON_CULTURE] Culture.</Text>
@@ -27,9 +42,6 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="en_US">
 			<Text>Receive 25% of a military land unit's production value in [ICON_FAITH] Faith when produced.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_FAITH] Faith to tiles adjacent to a River.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_Production] Production from Marsh, Oasis, and Floodplains.</Text>
