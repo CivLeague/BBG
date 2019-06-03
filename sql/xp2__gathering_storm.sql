@@ -122,7 +122,7 @@ UPDATE Units SET Maintenance=2, Combat=40 WHERE UnitType='UNIT_MAORI_TOA';
 --==================
 --cav units require horses and horse maint
 UPDATE Units SET StrategicResource='RESOURCE_HORSES' WHERE UnitType='UNIT_RUSSIAN_COSSACK';
-UPDATE Units_XP2 SET ResourceCost=1, ResourceMaintenanceType='RESOURCE_HORSES', ResourceMaintenanceAmount=1 WHERE UnitType='UNIT_RUSSIAN_COSSACK';
+UPDATE Units_XP2 SET ResourceCost=20, ResourceMaintenanceType='RESOURCE_HORSES', ResourceMaintenanceAmount=1 WHERE UnitType='UNIT_RUSSIAN_COSSACK';
 
 
 
