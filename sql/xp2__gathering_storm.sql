@@ -6,10 +6,6 @@
 --==================
 -- Reduce combat strength of mustangs due to them already having many extra combat bonuses over biplanes
 UPDATE Units SET Combat=90 , RangedCombat=90 WHERE UnitType='UNIT_AMERICAN_P51';
--- cav units cost horses and horse maint
-INSERT INTO Units_XP2 (UnitType , ResourceCost, ResourceMaintenanceType, ResourceMaintenanceAmount)
-	VALUES ('UNIT_AMERICAN_ROUGH_RIDER' , 20, 'RESOURCE_HORSES', 1);
-UPDATE Units SET StrategicResource='RESOURCE_HORSES' WHERE UnitType='UNIT_AMERICAN_ROUGH_RIDER';
 
 
 --==================
@@ -50,6 +46,7 @@ UPDATE Units SET Combat=70 , Cost=360 WHERE UnitType='UNIT_CANADA_MOUNTIE';
 UPDATE RequirementArguments SET Value='4' WHERE RequirementId='UNIT_PARK_REQUIREMENT'       AND Name='MaxDistance';
 UPDATE RequirementArguments SET Value='4' WHERE RequirementId='UNIT_OWNER_PARK_REQUIREMENT' AND Name='MaxDistance';
 
+
 --==========
 -- EGYPT
 --==========
@@ -82,6 +79,12 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	('THEATER_BUILDING_PRODUCTION_BONUS_CPLMOD' , 'Amount'       , '100'                     );
 
 
+--==========
+-- FRANCE
+--==========
+UPDATE Units_XP2 SET ResourceCost=10 WHERE UnitType='UNIT_FRENCH_GARDE_IMPERIALE';
+
+
 --==================
 -- Hungary
 --==================
@@ -93,9 +96,7 @@ UPDATE ModifierArguments SET Value='1' WHERE ModifierId='HUSZAR_ALLIES_COMBAT_BO
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='BLACK_ARMY_ADJACENT_LEVY';
 -- Remove extra movement from levied units
 DELETE FROM UnitAbilityModifiers WHERE ModifierId='RAVEN_LEVY_MOVEMENT';
--- cav units requires horses and horse maint
-UPDATE Units SET StrategicResource='RESOURCE_HORSES' WHERE UnitType='UNIT_HUNGARY_HUSZAR';
-UPDATE Units_XP2 SET ResourceCost=20, ResourceMaintenanceType='RESOURCE_HORSES', ResourceMaintenanceAmount=1 WHERE UnitType='UNIT_HUNGARY_HUSZAR';
+
 
 
 --==================
@@ -117,26 +118,18 @@ DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_LESS_UNIT_PRODUCTION'    ;
 UPDATE Units SET Maintenance=2, Combat=40 WHERE UnitType='UNIT_MAORI_TOA';
 
 
---==================
--- Russia
---==================
---cav units require horses and horse maint
-UPDATE Units SET StrategicResource='RESOURCE_HORSES' WHERE UnitType='UNIT_RUSSIAN_COSSACK';
-UPDATE Units_XP2 SET ResourceCost=20, ResourceMaintenanceType='RESOURCE_HORSES', ResourceMaintenanceAmount=1 WHERE UnitType='UNIT_RUSSIAN_COSSACK';
-
-
 
 --==============================================================
 --******				  DIPLOMACY						  ******
 --==============================================================
-UPDATE Resolutions SET EarliestEra='ERA_MEDIEVAL' WHERE ResolutionType='WC_RES_DIPLOVICTORY';
-UPDATE Resolutions SET EarliestEra='ERA_MEDIEVAL' WHERE ResolutionType='WC_RES_WORLD_IDEOLOGY';
-UPDATE Resolutions SET EarliestEra='ERA_MEDIEVAL' WHERE ResolutionType='WC_RES_MIGRATION_TREATY';
-UPDATE Resolutions SET EarliestEra='ERA_RENAISSANCE' WHERE ResolutionType='WC_RES_GLOBAL_ENERGY_TREATY';
-UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_ARMS_CONTROL';
-UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_HERITAGE_ORG';
-UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_PUBLIC_WORKS';
-UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_DEFORESTATION_TREATY';
+--UPDATE Resolutions SET EarliestEra='ERA_MEDIEVAL' WHERE ResolutionType='WC_RES_DIPLOVICTORY';
+--UPDATE Resolutions SET EarliestEra='ERA_MEDIEVAL' WHERE ResolutionType='WC_RES_WORLD_IDEOLOGY';
+--UPDATE Resolutions SET EarliestEra='ERA_MEDIEVAL' WHERE ResolutionType='WC_RES_MIGRATION_TREATY';
+--UPDATE Resolutions SET EarliestEra='ERA_RENAISSANCE' WHERE ResolutionType='WC_RES_GLOBAL_ENERGY_TREATY';
+--UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_ARMS_CONTROL';
+--UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_HERITAGE_ORG';
+--UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_PUBLIC_WORKS';
+--UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_DEFORESTATION_TREATY';
 
 
 
@@ -172,14 +165,9 @@ UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_INCA' A
 --==============================================================
 --******			  U N I T S  (NON-UNIQUE)			  ******
 --==============================================================
-UPDATE Units SET StrategicResource='RESOURCE_HORSES' WHERE UnitType='UNIT_CAVALRY';
-UPDATE Units_XP2 SET ResourceCost=20, ResourceMaintenanceType='RESOURCE_HORSES', ResourceMaintenanceAmount=1 WHERE UnitType='UNIT_CAVALRY';
 UPDATE Units SET StrategicResource='RESOURCE_NITER' WHERE UnitType='UNIT_INFANTRY';
 UPDATE Units_XP2 SET ResourceMaintenanceType='RESOURCE_NITER' WHERE UnitType='UNIT_INFANTRY';
 UPDATE Units SET PrereqTech='TECH_STEEL' WHERE UnitType='UNIT_ANTIAIR_GUN';
-UPDATE Units SET AntiAirCombat=85 WHERE UnitType='UNIT_BATTLESHIP';
-UPDATE Units SET AntiAirCombat=85 WHERE UnitType='UNIT_DESTROYER';
-UPDATE Units SET AntiAirCombat=105 WHERE UnitType='UNIT_MISSILE_CRUISER';
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
 	VALUES ('SIEGE_DEFENSE_BONUS_VS_RANGED_COMBAT', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'SIEGE_DEFENSE_REQUIREMENTS');
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
@@ -207,6 +195,17 @@ UPDATE Units SET Combat=90,  RangedCombat=90  WHERE UnitType='UNIT_FIGHTER';
 UPDATE Units SET Combat=100, RangedCombat=100 WHERE UnitType='UNIT_JET_FIGHTER';
 UPDATE Units SET Combat=75,  Bombard=100 	  WHERE UnitType='UNIT_BOMBER';
 UPDATE Units SET Combat=80,  Bombard=110      WHERE UnitType='UNIT_JET_BOMBER';
+
+
+
+--==============================================================
+--******					W A L L S					  ******
+--==============================================================
+UPDATE Buildings SET OuterDefenseHitPoints=50 WHERE BuildingType = 'BUILDING_WALLS';
+UPDATE Buildings SET OuterDefenseHitPoints=50 WHERE BuildingType = 'BUILDING_STAR_FORT';
+UPDATE Buildings SET OuterDefenseHitPoints=50 WHERE BuildingType = 'BUILDING_CASTLE';
+UPDATE Buildings SET OuterDefenseHitPoints=75 WHERE BuildingType = 'BUILDING_TSIKHE';
+UPDATE ModifierArguments SET Value='200' WHERE ModifierId='STEEL_UNLOCK_URBAN_DEFENSES';
 
 
 
@@ -287,16 +286,13 @@ UPDATE GlobalParameters SET Value='0' WHERE Name='FAVOR_GRIEVANCES_MINIMUM';
 -- additional niter spawn locations
 INSERT INTO Resource_ValidFeatures (ResourceType , FeatureType)
 	VALUES ('RESOURCE_NITER' , 'FEATURE_FLOODPLAINS');
--- additional aluminum spawn locations
-INSERT INTO Resource_ValidFeatures (ResourceType , FeatureType)
-	VALUES ('RESOURCE_ALUMINUM' , 'FEATURE_JUNGLE');
 UPDATE Improvement_ValidResources SET MustRemoveFeature=0 WHERE ImprovementType='IMPROVEMENT_MINE' AND ResourceType='RESOURCE_ALUMINUM';
 -- Research Labs give +5 base Science instead of +3
 UPDATE Building_YieldChanges SET YieldChange=5 WHERE BuildingType='BUILDING_RESEARCH_LAB';
 
 -- citizen yields
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' AND DistrictType="DISTRICT_COTHON";
-UPDATE District_CitizenYieldChanges SET YieldChange=5 WHERE YieldType='YIELD_GOLD' AND DistrictType="DISTRICT_SUGUBA";
+UPDATE District_CitizenYieldChanges SET YieldChange=4 WHERE YieldType='YIELD_GOLD' AND DistrictType="DISTRICT_SUGUBA";
 
 -- GATHERING STORM WAR GOSSIP --
 DELETE FROM Gossips WHERE GossipType='GOSSIP_MAKE_DOW';

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ja_JP">
-            <Text>河川に隣接する改善済みのタイルに[ICON_FAITH]信仰力+1。</Text>
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ja_JP">
+            <Text>このパンテオンを開始した際に首都で労働者1体を得る。[ICON_RESOURCE_CATTLE]、[ICON_RESOURCE_SHEEP]、[ICON_RESOURCE_RICE]、および[ICON_RESOURCE_WHEAT]のあるタイルに[ICON_FOOD]食料+1。</Text>
+        </Replace>
+        <Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="ja_JP">
+            <Text>このパンテオンを開始した際に首都で労働者1体を得る。[ICON_RESOURCE_CATTLE]、[ICON_RESOURCE_SHEEP]、[ICON_RESOURCE_RICE]、および[ICON_RESOURCE_WHEAT]のあるタイルに[ICON_FOOD]食料+1。</Text>
         </Replace>
         <Replace Tag="LOC_POLICY_RETINUES_DESCRIPTION" Language="ja_JP">
             <Text>全ユニットの生産及びアップグレードに必要な戦略資源の量が-50%される。</Text>
@@ -180,9 +183,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>伝道者に対するコスト-30％。審問官は一回多く審問を行うことができ、完全にほかの宗教を排除できる。全てのユニットは、異なる宗教を信奉する文明のユニットと戦闘する時に戦闘力[ICON_Strength]+4。</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="ja_JP">
-			<Text>キャンプから食糧[ICON_Food]+2。</Text>
-		</Replace>
 		<!----------------======  LATEST VERSION  ======---------------->
 		<!-- Khmer -->
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="ja_JP">
@@ -235,12 +235,6 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="ja_JP">
 			<Text>兵営(大将軍)、港(大提督)、商業ハブ(大商人)の各区域から [ICON_GreatPerson] 偉人ポイント+1。</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="ja_JP">
-			<Text>キャンプによって [ICON_Food] 食料+2と [ICON_GOLD] ゴールド+2。</Text>
-		</Replace>	
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_FESTIVALS_DESCRIPTION" Language="ja_JP">
-			<Text>[ICON_RESOURCE_WINE] 酒、[ICON_RESOURCE_INCENSE] 香料、[ICON_RESOURCE_COCOA] カカオ、[ICON_RESOURCE_TOBACCO] タバコ、[ICON_RESOURCE_OLIVES] オリーブ、[ICON_RESOURCE_COFFEE] コーヒー, [ICON_RESOURCE_TEA] 茶のプランテーションから [ICON_Food] 食料+2。</Text>
 		</Replace>
 		<!-- -->
 		<!-- -->
@@ -442,20 +436,11 @@
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がスペイン固有の施設である修道院を建設できるようになる。[NEWLINE][NEWLINE][ICON_Faith] 信仰力+2、自文明の首都とは異なる大陸に建設された場合さらに[ICON_Faith] 信仰力+2。[NEWLINE][NEWLINE]キャンパスに隣接している場合[ICON_Science] 科学力+2。官吏の技術を獲得後住宅+1。[NEWLINE][NEWLINE]啓蒙思想を獲得後[ICON_Science] 科学力+2。</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="ja_JP">
-			<Text>キャンプによって [ICON_Food] 食料+1と [ICON_Faith] 信仰力+2。</Text>
-		</Replace
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="ja_JP">
 			<Text>採石場による [ICON_Faith] 信仰力+3。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="ja_JP">
 			<Text>高級資源とボーナス資源を扱う鉱山による [ICON_Faith] 信仰力+3。</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_GOD_OF_CRAFTSMEN_DESCRIPTION" Language="ja_JP">
-			<Text>戦略資源を扱う鉱山による [ICON_Production] 生産力+2。</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_FESTIVALS_DESCRIPTION" Language="ja_JP">
-			<Text>[ICON_RESOURCE_WINE] 酒、[ICON_RESOURCE_INCENSE] 香料、[ICON_RESOURCE_COCOA] カカオ、[ICON_RESOURCE_TOBACCO] タバコ、[ICON_RESOURCE_OLIVES] オリーブ、[ICON_RESOURCE_COFFEE] コーヒー, [ICON_RESOURCE_TEA] 茶のプランテーションから [ICON_Food] 食料+1と [ICON_Faith] 信仰力+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HANGING_GARDENS_DESCRIPTION" Language="ja_JP">
 			<Text>全都市の成長率が15%上昇。建設した都市に[ICON_HOUSING]住宅+2、空中庭園から6タイル以内にある都市の[ICON_HOUSING]住宅+1。川の隣にのみ建設可能。</Text>

@@ -34,9 +34,6 @@
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="es_ES">
 			<Text>+1 [ICON_FOOD] Comida por cada espacio de [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], y por cada espacio de [ICON_RESOURCE_WHEAT] que sea modificado.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="es_ES">
-			<Text>+1 [ICON_FAITH] Fe a los espacios alrededor de un Río.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="es_ES">
 			<Text>+1 [ICON_Production] Producción de Pantano, Oasis y llanuras de inundación.</Text>
 		</Replace>
@@ -181,9 +178,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="es_ES">
 			<Text>30% [ICON_FAITH] Descuento de fé al reclutar misioneros. Los inquisidores pueden remover Herejía una vez más y eliminar el 100% de presencia de otras religiones. Las unidades de combate obtienen un bonus de +4 [ICON_Strength] Fuerza contra civilizaciones que sigan otra religión.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="es_ES">
-			<Text>+2 [ICON_Food] Alimentos de campamentos.</Text>
-		</Replace>
 		<!----------------======  LATEST VERSION  ======---------------->
 		<!-- Khmer -->
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="es_ES">
@@ -240,12 +234,6 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="es_ES">
 			<Text>+1 [ICON_GreatPerson] Puntos de Gran Personaje por los distritos de Campamento(General), Puerto(Almirante) y Centro Comercial(Mercader).</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="es_ES">
-			<Text>+2 [ICON_Food] Comida y +2 [ICON_GOLD] Oro de campamentos (mejora de casilla).</Text>
-		</Replace>	
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_FESTIVALS_DESCRIPTION" Language="es_ES">
-			<Text>+2 [ICON_Food] Comida por [ICON_RESOURCE_WINE] Vino, [ICON_RESOURCE_INCENSE] Incienso, [ICON_RESOURCE_COCOA] Chocolate, [ICON_RESOURCE_TOBACCO] Tabaco, [ICON_RESOURCE_OLIVES] Olivas, [ICON_RESOURCE_COFFEE] Café, y [ICON_RESOURCE_TEA] Té.</Text>
 		</Replace>
 		<!-- -->
 		<!-- -->

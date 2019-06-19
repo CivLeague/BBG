@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ru_RU">
-            <Text>+1 [ICON_FAITH] веры на обработанных клетках рядом с рекой.</Text>
-        </Replace>
         <Replace Tag="LOC_POLICY_RETINUES_DESCRIPTION" Language="ru_RU">
             <Text>Уменьшение стоимости в ресурсах на 50% при постройке или улучшении юнитов.</Text>
         </Replace>
@@ -187,9 +184,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Стоимость миссионеров снижена на 30%. Инквизиторы могут очищать от ереси на 1 раз больше. Инквизиторы ликвидируют присутствие других религий на 100%. боевые юниты получают + 4 [ICON_Strength] боевой мощи против игроков с другой религией.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="ru_RU">
-			<Text>+2 [ICON_Food] от лагерей.</Text>
-		</Replace>
 		<!----------------======  LATEST VERSION  ======---------------->
 		<!-- Khmer -->
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="ru_RU">
@@ -243,12 +237,6 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_GreatPerson] очко великих людей в каждом военном лагере (генералы), гавани (адмиралы) и центре коммерции (торговцы).</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="ru_RU">
-			<Text>+2 [ICON_Food] пищи и +2 [ICON_GOLD] золота от лагерей.</Text>
-		</Replace>	
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_FESTIVALS_DESCRIPTION" Language="ru_RU">
-			<Text>+2 [ICON_Food] пищи от плантаций [ICON_RESOURCE_WINE] вина, [ICON_RESOURCE_INCENSE] благовоний, [ICON_RESOURCE_COCOA] какао, [ICON_RESOURCE_TOBACCO] табака, [ICON_RESOURCE_OLIVES] оливок, [ICON_RESOURCE_COFFEE] кофе, and [ICON_RESOURCE_TEA] чая.</Text>
 		</Replace>
 		<!-- -->
 		<!-- -->
@@ -445,9 +433,6 @@
 		</Replace>		
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="ru_RU">
 			<Text>+3 [ICON_Faith] веры от рудников редких и бонусных ресурсов.</Text>
-		</Replace>		
-		<Replace Tag="LOC_BELIEF_GOD_OF_CRAFTSMEN_DESCRIPTION" Language="ru_RU">
-			<Text>+2 [ICON_Production] производства в рудниках на стратегических ресурсах.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HANGING_GARDENS_DESCRIPTION" Language="ru_RU">
 			<Text>+2 жилья в городе постройки и +1 жилья в других дружественных городах на расстоянии 6 клеток от чуда. Ускоряют рост всех городов на 15%. Можно построить только рядом с рекой.</Text>

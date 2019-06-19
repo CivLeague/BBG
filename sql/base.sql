@@ -40,12 +40,6 @@ INSERT INTO RequirementArguments (RequirementId , Name , Value)
 
 
 --==================
--- Brazil
---==================
-UPDATE Units SET AntiAirCombat=90 WHERE UnitType='UNIT_BRAZILIAN_MINAS_GERAES';
-
-
---==================
 -- China
 --==================
 -- Great Wall gets it's adjacency gold and culture a little easier
@@ -654,7 +648,6 @@ UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWOR
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='STONE_CIRCLES_QUARRY_FAITH_MODIFIER' and Name='Amount';
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='RELIGIOUS_IDOLS_BONUS_MINE_FAITH_MODIFIER' and Name='Amount';
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='RELIGIOUS_IDOLS_LUXURY_MINE_FAITH_MODIFIER' and Name='Amount';
-UPDATE ModifierArguments SET Value='2' WHERE ModifierId='GOD_OF_CRAFTSMEN_STRATEGIC_MINE_PRODUCTION_MODIFIER' and Name='Amount';
 -- Goddess of the Harvest is +50% faith from chops instead of +100%
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='GODDESS_OF_THE_HARVEST_HARVEST_MODIFIER' and Name='Amount';
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='GODDESS_OF_THE_HARVEST_REMOVE_FEATURE_MODIFIER' and Name='Amount';
@@ -686,10 +679,6 @@ INSERT INTO BeliefModifiers ( BeliefType , ModifierId )
 	( 'BELIEF_GOD_OF_WAR' , 'GOD_OF_WAR_AND_PLUNDER_COMHUB' ),
 	( 'BELIEF_GOD_OF_WAR' , 'GOD_OF_WAR_AND_PLUNDER_HARBOR' ),
 	( 'BELIEF_GOD_OF_WAR' , 'GOD_OF_WAR_AND_PLUNDER_ENCAMP' );
--- Goddess of the Hunt gives +2 Food per camp
-UPDATE ModifierArguments SET Value='2' WHERE ModifierId='GODDESS_OF_THE_HUNT_CAMP_FOOD_MODIFIER' AND Name='Amount';
--- Goddess of Festivals gives +2 Food per plantation
-UPDATE ModifierArguments SET Value='2' WHERE ModifierId='GODDESS_OF_FESTIVALS_PLANTATION_TAG_FOOD_MODIFIER' AND Name='Amount';
 -- Fertility Rites gives +1 food for rice and wheat, and +1 prod for sheep and cattle
 INSERT INTO Tags 
 	(Tag                                , Vocabulary)
@@ -743,29 +732,6 @@ INSERT INTO ModifierArguments
 	('INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD'    , 'YieldType'                 , 'YIELD_FAITH'                                   ),
 	('INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD'    , 'UnitProductionPercent'     , '25'                                            );
 UPDATE BeliefModifiers SET ModifierID='INITIATION_RITES_FAITH_YIELD_CPL_MOD' WHERE BeliefType='BELIEF_INITIATION_RITES' AND ModifierID='INITIATION_RITES_FAITH_DISPERSAL';
--- River Goddess gives +1 Faith to improved tiles along rivers
-INSERT INTO Requirements (RequirementId, RequirementType)
-	VALUES
-	('REQUIRES_PLOT_IS_IMPROVED' , 'REQUIREMENT_PLOT_HAS_ANY_IMPROVEMENT');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
-	VALUES
-	('IMPROVED_PLOT_ADJACENT_TO_RIVER_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
-	VALUES
-	('IMPROVED_PLOT_ADJACENT_TO_RIVER_REQUIREMENTS', 'REQUIRES_PLOT_ADJACENT_TO_RIVER'),
-	('IMPROVED_PLOT_ADJACENT_TO_RIVER_REQUIREMENTS', 'REQUIRES_PLOT_IS_IMPROVED');
-INSERT INTO Modifiers 
-	(ModifierId                                         , ModifierType                                                , SubjectRequirementSetId)
-	VALUES
-	('RIVER_GODDESS_FAITH_BONUS_CPL_MOD'                , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER'                       , 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS'      ),
-	('RIVER_GODDESS_FAITH_BONUS_MODIFIER_CPL_MOD'       , 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD'               , 'IMPROVED_PLOT_ADJACENT_TO_RIVER_REQUIREMENTS'     );
-INSERT INTO ModifierArguments 
-	(ModifierId                                         , Name                       , Value)
-	VALUES
-	('RIVER_GODDESS_FAITH_BONUS_CPL_MOD'                , 'ModifierId'                , 'RIVER_GODDESS_FAITH_BONUS_MODIFIER_CPL_MOD'    ),
-	('RIVER_GODDESS_FAITH_BONUS_MODIFIER_CPL_MOD'       , 'YieldType'                 , 'YIELD_FAITH'                                   ),
-	('RIVER_GODDESS_FAITH_BONUS_MODIFIER_CPL_MOD'       , 'Amount'                    , '1'                                             );
-UPDATE BeliefModifiers SET ModifierID='RIVER_GODDESS_FAITH_BONUS_CPL_MOD' WHERE BeliefType='BELIEF_RIVER_GODDESS' AND ModifierID='RIVER_GODDESS_HOLY_SITE_AMENITY';
 -- Sacred Path +1 Faith Holy Site adjacency now applies to both Woods and Rainforest
 INSERT INTO BeliefModifiers 
 	(BeliefType                   , ModifierId)

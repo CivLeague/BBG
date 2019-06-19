@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ko_KR">
-            <Text>강에 인접하였으며 시설물이 있는(개발한) 타일에서 [ICON_FAITH] 신앙 +1을 제공합니다.</Text>
-        </Replace>
         <Replace Tag="LOC_POLICY_RETINUES_DESCRIPTION" Language="ko_KR">
             <Text>모든 유닛 생산 및 업그레이드에 자원 비용이 50% 감소합니다.</Text>
         </Replace>
@@ -187,9 +184,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>선교사의 구매 가격이 30% 감소합니다. 이단심문관이 이단 제거를 1번 더 할 수 있습니다. 이단심문관이 다른 종교를 100% 제거합니다. 다른 종교를 따르는 플레이어를 상대하는 경우 전투 유닛은 [ICON_Strength] 전투력 보너스 +4를 획득합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="ko_KR">
-			<Text>야영지에서 [ICON_Food] 식량 +2를 제공합니다.</Text>
-		</Replace>
 		<!----------------======  LATEST VERSION  ======---------------->
 		<!-- Khmer -->
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="ko_KR">
@@ -243,9 +237,6 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="ko_KR">
 			<Text>주둔지(장군), 항만(제독) 및 상업 중심지(상인) 특수지구로부터 해당 [ICON_GreatPerson] 위인 점수 +1을 획득합니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_FESTIVALS_DESCRIPTION" Language="ko_KR">
-			<Text>[ICON_RESOURCE_WINE] 와인, [ICON_RESOURCE_INCENSE] 향료, [ICON_RESOURCE_COCOA] 코코아, [ICON_RESOURCE_TOBACCO] 담배, [ICON_RESOURCE_OLIVES] 올리브, [ICON_RESOURCE_COFFEE] 커피 및 [ICON_RESOURCE_TEA] 차 재배지에서 [ICON_Food] 식량 +2를 제공합니다.</Text>
 		</Replace>
 		<!-- -->
 		<!-- -->
@@ -443,9 +434,6 @@
 		</Replace>		
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="ko_KR">
 			<Text>사치 자원과 보너스 자원 위에 건설된 광산에서 [ICON_Faith] 신앙 +3을 획득합니다.</Text>
-		</Replace>		
-		<Replace Tag="LOC_BELIEF_GOD_OF_CRAFTSMEN_DESCRIPTION" Language="ko_KR">
-			<Text>전략 자원 위에 있는 광산에서 [ICON_Production] 생산력 +2를 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HANGING_GARDENS_DESCRIPTION" Language="ko_KR">
 			<Text>모든 도시에 성장률 +15%를 제공합니다. 강 옆에 지어야 합니다. 이 도시에 [ICON_HOUSING] 주거공간 +2를 제공합니다. 이 불가사의에서 6타일 내에 있는 모든 도심부에 [ICON_HOUSING] 주거공간 +1을 제공합니다. </Text>

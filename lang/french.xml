@@ -300,11 +300,8 @@
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="fr_FR">
 			<Text>+1 point de [ICON_GreatPerson] Personnage illustre pour les Campement (général illustre), Port (amiral illustre) et Plateforme Commerciale (marchant illustre).</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_FESTIVALS_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Food] Nourriture +2 pour les [ICON_RESOURCE_WINE] vignes, l'[ICON_RESOURCE_INCENSE] encens et les plantations de [ICON_RESOURCE_COCOA] cacao, de [ICON_RESOURCE_TOBACCO] tabac, d'[ICON_RESOURCE_OLIVES] olives, de [ICON_RESOURCE_COFFEE] café et de [ICON_RESOURCE_TEA] thé.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Faith] Foi +8 pour toutes les merveilles mondiales.</Text>
+			<Text>[ICON_Faith] Foi +6 pour toutes les merveilles mondiales.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_FOOD] Nourriture +1 pour les cases de [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], et [ICON_RESOURCE_WHEAT].</Text>
@@ -312,17 +309,11 @@
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="fr_FR">
 			<Text>Vous recevez 25% de la puissance de combat de base d'une unité militaire terrestre en [ICON_FAITH] Foi lorsque vous en produisez une.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_FAITH] Foi +1 pour les cases aménagées adjacentes à une rivière.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +1 pour les cases de Marais, d'Oasis et de Plaines Innondables de tout types.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_SACRED_PATH_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Faith] Foi +1 pour les lieux saints adjacents à des cases de Forêt ou de Forêt Tropicale.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Food] Nourriture +2 pour les Camps.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HARVEST_DESCRIPTION" Language="fr_FR">
 			<Text>Récolter une ressource ou supprimer des caractéristiques de terrain fournit 50% du montant de la récolte en [ICON_Faith] foi.</Text>
@@ -344,9 +335,6 @@
 		</Replace>		
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Faith] Foi +3 pour les mines construites sur des ressources de luxe et bonus.</Text>
-		</Replace>		
-		<Replace Tag="LOC_BELIEF_GOD_OF_CRAFTSMEN_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Production] Production +2 pour les mines construites sur une ressource stratégique.</Text>
 		</Replace>
 		
 		<!-- =============== C R O Y A N C E S === DE === R E L I G I O N =============== -->
