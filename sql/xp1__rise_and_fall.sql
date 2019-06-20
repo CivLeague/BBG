@@ -13,7 +13,7 @@ INSERT INTO UnitReplaces (CivUniqueUnitType , ReplacesUnitType)
 -- Georgia Tsikhe changed to a stronger Ancient Wall replacement instead of a Renaissance Wall replacement
 DELETE FROM BuildingPrereqs WHERE Building='BUILDING_TSIKHE';
 UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_WALLS' WHERE CivUniqueBuildingType='BUILDING_TSIKHE';
-UPDATE Buildings SET Cost=80 , PrereqTech='TECH_MASONRY' , OuterDefenseHitPoints=150 WHERE BuildingType='BUILDING_TSIKHE';
+UPDATE Buildings SET Cost=80 , PrereqTech='TECH_MASONRY' , OuterDefenseHitPoints=75 WHERE BuildingType='BUILDING_TSIKHE';
 -- Georgia gets 50% faith kills instead of Protectorate War Bonus
 INSERT INTO Modifiers (ModifierId, ModifierType)
 	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD');

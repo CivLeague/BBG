@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ko_KR">
+            <Text>이 교리를 채택하면 수도에 건설자 유닛을 제공합니다. [ICON_RESOURCE_CATTLE] 소, [ICON_RESOURCE_SHEEP] 양, [ICON_RESOURCE_RICE] 쌀 및 [ICON_RESOURCE_WHEAT] 밀 자원에서 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="ko_KR">
+            <Text>이 교리를 채택하면 수도에 건설자 유닛을 제공합니다. [ICON_RESOURCE_CATTLE] 소, [ICON_RESOURCE_SHEEP] 양, [ICON_RESOURCE_RICE] 쌀 및 [ICON_RESOURCE_WHEAT] 밀 자원에서 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
+        </Replace>
         <Replace Tag="LOC_POLICY_RETINUES_DESCRIPTION" Language="ko_KR">
             <Text>모든 유닛 생산 및 업그레이드에 자원 비용이 50% 감소합니다.</Text>
         </Replace>

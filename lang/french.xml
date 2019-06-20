@@ -304,7 +304,10 @@
 			<Text>[ICON_Faith] Foi +6 pour toutes les merveilles mondiales.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_FOOD] Nourriture +1 pour les cases de [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], et [ICON_RESOURCE_WHEAT].</Text>
+			<Text>En cas de sélection, un bâtisseur apparaît dans votre capitale. [ICON_FOOD] Nourriture +1 pour les cases de [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], et [ICON_RESOURCE_WHEAT].</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>En cas de sélection, un bâtisseur apparaît dans votre capitale. [ICON_FOOD] Nourriture +1 pour les cases de [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], et [ICON_RESOURCE_WHEAT].</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="fr_FR">
 			<Text>Vous recevez 25% de la puissance de combat de base d'une unité militaire terrestre en [ICON_FAITH] Foi lorsque vous en produisez une.</Text>
@@ -449,6 +452,14 @@
 		
 		<Replace Tag="LOC_UNIT_ANTIAIR_GUN_DESCRIPTION" Language="fr_FR">
 			<Text>Cette unité antiaérienne de l'ère moderne protège des attaques aériennes jusqu'à une case de distance.</Text>
+		</Replace>
+		
+		<!-- Correction traduction officelle suite à la mise à jour de Juin 2019 -->
+		<Replace Tag="LOC_ABILITY_ENABLE_WALL_PROMOTION_CLASS_ATTACK_DESCRIPTION" Language="fr_FR">
+			<Text>Sur une case adjacente à une ville ennemie, les unités de combat rapproché et anti-cavalerie peuvent endommager ses remparts. N'affecte que les remparts Antiques. Inefficace contre les défenses urbaines.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BATTERING_RAM_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Si cette unité de soutien de l'Antiquité est adjacente à une ville, les unités de combat rapproché et anti-cavalerie peuvent endommager ses remparts. N'affecte que les remparts Antiques. Inefficace contre les défenses urbaines.</Text>
 		</Replace>
 		
 		<!-- =============== T E C H N O L O G I E S =============== -->
