@@ -3,8 +3,9 @@
 	<LocalizedText>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ru_RU">
             <Text>Даёт бесплатного рабочего, который появляется в столице. +1 [ICON_FOOD] пищи на клетках с [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], и[ICON_RESOURCE_WHEAT].</Text>
+		</Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="ru_RU">
-            <Text>Даёт бесплатного рабочего, который появляется в столице. +1 [ICON_FOOD] пищи на клетках с [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE] и [ICON_RESOURCE_WHEAT].</Text>
+            <Text>Даёт бесплатного рабочего, который появляется в столице. +1 [ICON_FOOD] пищи на клетках с [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], и [ICON_RESOURCE_WHEAT].</Text>
 		</Replace>
         <Replace Tag="LOC_POLICY_RETINUES_DESCRIPTION" Language="ru_RU">
             <Text>Уменьшение стоимости в ресурсах на 50% при постройке или улучшении юнитов.</Text>
