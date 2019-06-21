@@ -6,6 +6,10 @@
 --==================
 -- Reduce combat strength of mustangs due to them already having many extra combat bonuses over biplanes
 UPDATE Units SET Combat=90 , RangedCombat=90 WHERE UnitType='UNIT_AMERICAN_P51';
+-- rough rider is a cav replacement, so should cost horses
+INSERT INTO Units_XP2 (UnitType , ResourceCost)
+	VALUES ('UNIT_AMERICAN_ROUGH_RIDER' , 10);
+UPDATE Units SET StrategicResource='RESOURCE_HORSES' WHERE UnitType='UNIT_AMERICAN_ROUGH_RIDER';
 
 
 --==================
@@ -284,9 +288,8 @@ INSERT INTO TraitModifiers (TraitType, ModifierId)
 --can't go minus favor from grievances
 UPDATE GlobalParameters SET Value='0' WHERE Name='FAVOR_GRIEVANCES_MINIMUM';
 -- additional niter spawn locations
-INSERT INTO Resource_ValidFeatures (ResourceType , FeatureType)
-	VALUES ('RESOURCE_NITER' , 'FEATURE_FLOODPLAINS');
-UPDATE Improvement_ValidResources SET MustRemoveFeature=0 WHERE ImprovementType='IMPROVEMENT_MINE' AND ResourceType='RESOURCE_ALUMINUM';
+--INSERT INTO Resource_ValidFeatures (ResourceType , FeatureType)
+--	VALUES ('RESOURCE_NITER' , 'FEATURE_FLOODPLAINS');
 -- Research Labs give +5 base Science instead of +3
 UPDATE Building_YieldChanges SET YieldChange=5 WHERE BuildingType='BUILDING_RESEARCH_LAB';
 
