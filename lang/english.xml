@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_FOOD] Food in Tundra tiles. In Snow and Tundra tiles, all Mines and Lumbermills provide +1 [ICON_PRODUCTION] Production, all Camps provides +1 [ICON_FOOD] Food, and strategic resource accumulation rate is +100%.[NEWLINE][NEWLINE]Can build Farms on Tundra tiles, and also on Tundra Hills tiles with the Civil Engineering Civic.[NEWLINE][NEWLINE]The cost of purchasing Snow, Snow Hills, Tundra Hills and Tundra tiles is reduced by 50%.[NEWLINE][NEWLINE]Cities with National Parks generate an extra +8 [ICON_FOOD] Food and +8 [ICON_PRODUCTION] Production per turn.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="en_US">
+			<Text>Receive 25% of a military land unit's production value in [ICON_FAITH] Faith when produced.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Receive 25% of a military land unit's production value in [ICON_FAITH] Faith when produced.</Text>
+		</Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="en_US">
 			<Text>When chosen receive a Builder in your capital. +1 [ICON_FOOD] Food for [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], and [ICON_RESOURCE_WHEAT] tiles.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>When chosen receive a Builder in your capital. +1 [ICON_FOOD] Food for [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], and [ICON_RESOURCE_WHEAT] tiles.</Text>
 		</Replace>
-		
 		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="en_US">
 			<Text>You successfully land a person on the moon! Grants a [ICON_Culture] Culture bonus equal to 5 times your [ICON_Science] Science per turn, and marks the second step towards the Science Victory.</Text>
 		</Replace>
@@ -40,9 +48,6 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="en_US">
 			<Text>Shrines and Temples provide [ICON_PRODUCTION] Production equal to their intrinsic [ICON_Faith] Faith output.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="en_US">
-			<Text>Receive 25% of a military land unit's production value in [ICON_FAITH] Faith when produced.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_Production] Production from Marsh, Oasis, and Floodplains.</Text>
@@ -133,9 +138,6 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="en_US">
 			<Text>Hungarian unique Industrial era unit that replaces Cavalry. +1 [ICON_Strength] Combat Strength for every active Alliance.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_FOOD] Food in Tundra and Tundra Hills tiles. In Snow, Tundra, Snow Hills, and Tundra Hills tiles, all Mines provide +1 [ICON_PRODUCTION] Production and strategic resource accumulation rate is +100%.[NEWLINE][NEWLINE]Allows Farms to be built on Tundra terrain, and after Civil Engineering is unlocked, Farms can be built on Tundra Hills as well.[NEWLINE][NEWLINE]The cost of purchasing Snow, Snow Hills, Tundra Hills and Tundra tiles is reduced by 50%.[NEWLINE][NEWLINE]Cities with National Parks generate an extra +8 [ICON_FOOD] Food and +8 [ICON_PRODUCTION] Production per turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="en_US">
 			<Text>Canadian unique Modern era unit. Can create a National Park. +5 [ICON_Strength] Combat Strength when fighting within 4 tiles of a National Park. Additional +5 [ICON_Strength] Combat Strength when fighting within 4 tiles of an Owned National Park.</Text>

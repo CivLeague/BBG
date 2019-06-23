@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="de_DE">
+			<Text>Erhalte beim Produzieren einer Landeinheit [ICON_FAITH ]Glauben in Höhe von 25% der Kampfstärke dieser Landeinheit.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Erhalte beim Produzieren einer Landeinheit [ICON_FAITH ]Glauben in Höhe von 25% der Kampfstärke dieser Landeinheit.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="de_DE">
 			<Text>+25% [ICON_Production] Produktion für Bezirke und Wunder, wenn sie neben einem Fluss platziert werden. +1 [ICON_FOOD] Nahrung auf Schwemmland-Geländefeldern und Schwemmland blockiert nicht die Platzierung von Bezirken und Wundern.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text> +25% [ICON_Production] Produktion für Bezirke und Wunder, wenn sie neben einem Fluss platziert werden. +1 [ICON_FOOD] Nahrung auf Schwemmland-Geländefeldern. Erleidet keinen Schaden durch Überschwemmungen.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="de_DE">
-			<Text>Erhalte beim Produzieren einer Landeinheit [ICON_FAITH ]Glauben in Höhe von 25% der Kampfstärke dieser Landeinheit.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_GreatProphet] Punkt des Typs "Großer Prophet" pro Runde, wenn Astrologie erforscht wurde. Arabien erhält automatisch den letzten Großen Propheten [ICON_GreatProphet], wenn sie noch keinen bisher erhielten. +1 [ICON_Science] Wissenschaft für jede fremde Stadt mit Arabiens Religion. </Text>

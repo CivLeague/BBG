@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="ko_KR">
+            <Text>툰드라에서 [ICON_FOOD] 식량 +1을 제공합니다. 툰드라 지형에 농장을 건설할 수 있게 허용합니다. 토목 공학이 잠금 해제된 후에는 툰드라 언덕에 농장을 건설할 수 있습니다. 설원, 툰드라, 설원 언덕 및 툰드라 언덕에서 모든 광산이 [ICON_PRODUCTION] 생산력 +1을, 제재소에서 [ICON_PRODUCTION] 생산력 +1을, 야영지에서 [ICON_FOOD] 식량 +1을 제공하며, 전략 자원 누적률은 +100% 증가합니다. 또한 해당 지형 유형 타일의 구매 비용이 50% 감소합니다.[NEWLINE][NEWLINE]국립공원을 소유한 도시는 [ICON_FOOD] 식량 +8과 [ICON_PRODUCTION] 생산력 +8을 획득합니다.</Text>
+        </Replace>
+		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ko_KR">
+            <Text>지상 군사 유닛이 생산되면 해당 유닛 비용의 25%에 준하는 [ICON_FAITH] 신앙이 제공됩니다.</Text>
+        </Replace>
+		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="ko_KR">
+            <Text>지상 군사 유닛이 생산되면 해당 유닛 비용의 25%에 준하는 [ICON_FAITH] 신앙이 제공됩니다.</Text>
+        </Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ko_KR">
             <Text>이 교리를 채택하면 수도에 건설자 유닛을 제공합니다. [ICON_RESOURCE_CATTLE] 소, [ICON_RESOURCE_SHEEP] 양, [ICON_RESOURCE_RICE] 쌀 및 [ICON_RESOURCE_WHEAT] 밀 자원에서 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
         </Replace>
@@ -43,9 +52,6 @@
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ko_KR">
 			<Text>[ICON_RESOURCE_CATTLE] 소, [ICON_RESOURCE_SHEEP] 양, [ICON_RESOURCE_RICE] 쌀 및 [ICON_RESOURCE_WHEAT] 밀 자원에서 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="ko_KR">
-            <Text>지상 군사 유닛이 생산되면 해당 유닛 비용의 25%에 준하는 [ICON_FAITH] 신앙이 제공됩니다.</Text>
-        </Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>습지, 오아시스 및 범람원에서 [ICON_Production] 생산력 +1.</Text>
 		</Replace>

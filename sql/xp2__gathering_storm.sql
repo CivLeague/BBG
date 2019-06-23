@@ -122,6 +122,14 @@ DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_LESS_UNIT_PRODUCTION'    ;
 UPDATE Units SET Maintenance=2, Combat=40 WHERE UnitType='UNIT_MAORI_TOA';
 
 
+--==========
+-- Nubia
+--==========
+INSERT INTO Improvement_ValidFeatures (ImprovementType , FeatureType)
+	VALUES
+	('IMPROVEMENT_PYRAMID' , 'FEATURE_FLOODPLAINS_GRASSLAND'),
+	('IMPROVEMENT_PYRAMID' , 'FEATURE_FLOODPLAINS_PLAINS');
+
 
 --==============================================================
 --******				  DIPLOMACY						  ******
