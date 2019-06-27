@@ -139,9 +139,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ja_JP">
 			<Text>徴用されたユニットの[ICON_STRENGTH]戦闘力+5。[NEWLINE]徴用されたユニットのアップグレードに[ICON_GOLD]ゴールドや資源が不要になる。[NEWLINE]部隊を徴用すると、その都市国家の[ICON_ENVOY]代表団+2。「城」技術を研究すると、固有ユニット「黒軍」を得る。</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="ja_JP">
-            <Text>丘陵を含むツンドラから[ICON_FOOD]食料+1。丘陵を含む雪原及びツンドラ上の鉱山から[ICON_PRODUCTION]生産力+1、戦略資源の毎ターン供給量+100%。[NEWLINE][NEWLINE]ツンドラに農場を建設することができる（土木工学の解禁後はツンドラの丘陵にも建設できるようになる）。[NEWLINE][NEWLINE]丘陵を含む雪原及びツンドラのタイル購入コストが50%削減される。[NEWLINE][NEWLINE]国立公園をもつ都市は追加で[ICON_FOOD]食料+8と[ICON_PRODUCTION]生産力+8を毎ターン得る。</Text>
-        </Replace>
 		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="ja_JP">
 			<Text>カナダ固有の近代陸上ユニット。国立公園を建設できる。[NEWLINE]国立公園から4タイル以内での戦闘において[ICON_STRENGTH]戦闘力+5。[NEWLINE]その国立公園がカナダのものである場合には[ICON_STRENGTH]戦闘力さらに+5。</Text>
 		</Replace>

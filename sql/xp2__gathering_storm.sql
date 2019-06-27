@@ -296,8 +296,8 @@ INSERT INTO TraitModifiers (TraitType, ModifierId)
 --can't go minus favor from grievances
 UPDATE GlobalParameters SET Value='0' WHERE Name='FAVOR_GRIEVANCES_MINIMUM';
 -- additional niter spawn locations
---INSERT INTO Resource_ValidFeatures (ResourceType , FeatureType)
---	VALUES ('RESOURCE_NITER' , 'FEATURE_FLOODPLAINS');
+INSERT INTO Resource_ValidFeatures (ResourceType , FeatureType)
+	VALUES ('RESOURCE_NITER' , 'FEATURE_FLOODPLAINS');
 -- Research Labs give +5 base Science instead of +3
 UPDATE Building_YieldChanges SET YieldChange=5 WHERE BuildingType='BUILDING_RESEARCH_LAB';
 

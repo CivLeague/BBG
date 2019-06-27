@@ -1368,8 +1368,8 @@ INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_PANTANAL', 'YIELD_SCIENCE', 2);
 INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_CLIFFS_DOVER', 'YIELD_FOOD', 2);
---INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
---	VALUES ('FEATURE_DEAD_SEA', 'YIELD_FOOD', 2);
+INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
+	VALUES ('FEATURE_DEAD_SEA', 'YIELD_FOOD', 2);
 INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_CRATER_LAKE', 'YIELD_FOOD', 2);
 UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_CRATER_LAKE' AND YieldType='YIELD_SCIENCE'; 
