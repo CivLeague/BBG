@@ -138,6 +138,7 @@ UPDATE Resolutions SET EarliestEra='ERA_MEDIEVAL' WHERE ResolutionType='WC_RES_D
 UPDATE Resolutions SET EarliestEra='ERA_MEDIEVAL' WHERE ResolutionType='WC_RES_WORLD_IDEOLOGY';
 UPDATE Resolutions SET EarliestEra='ERA_MEDIEVAL' WHERE ResolutionType='WC_RES_MIGRATION_TREATY';
 UPDATE Resolutions SET EarliestEra='ERA_RENAISSANCE' WHERE ResolutionType='WC_RES_GLOBAL_ENERGY_TREATY';
+UPDATE Resolutions SET EarliestEra='ERA_RENAISSANCE' WHERE ResolutionType='WC_RES_ESPIONAGE_PACT';
 UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_ARMS_CONTROL';
 UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_HERITAGE_ORG';
 UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_PUBLIC_WORKS';
@@ -213,11 +214,11 @@ UPDATE Units SET Combat=80,  Bombard=110      WHERE UnitType='UNIT_JET_BOMBER';
 --==============================================================
 --******					W A L L S					  ******
 --==============================================================
---UPDATE Buildings SET OuterDefenseHitPoints=50 WHERE BuildingType = 'BUILDING_WALLS';
---UPDATE Buildings SET OuterDefenseHitPoints=50 WHERE BuildingType = 'BUILDING_STAR_FORT';
---UPDATE Buildings SET OuterDefenseHitPoints=50 WHERE BuildingType = 'BUILDING_CASTLE';
-UPDATE Buildings SET OuterDefenseHitPoints=150 WHERE BuildingType = 'BUILDING_TSIKHE';
---UPDATE ModifierArguments SET Value='200' WHERE ModifierId='STEEL_UNLOCK_URBAN_DEFENSES';
+UPDATE Buildings SET OuterDefenseHitPoints=75 WHERE BuildingType = 'BUILDING_WALLS';
+UPDATE Buildings SET OuterDefenseHitPoints=75 WHERE BuildingType = 'BUILDING_STAR_FORT';
+UPDATE Buildings SET OuterDefenseHitPoints=75 WHERE BuildingType = 'BUILDING_CASTLE';
+UPDATE Buildings SET OuterDefenseHitPoints=100 WHERE BuildingType = 'BUILDING_TSIKHE';
+UPDATE ModifierArguments SET Value='300' WHERE ModifierId='STEEL_UNLOCK_URBAN_DEFENSES';
 
 
 

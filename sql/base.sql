@@ -470,19 +470,6 @@ UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_DIPLOMATIC_SERVICE' 
 --==============================================================
 -- nan-modal culture per district no longer applies to city center or wonders
 UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_DISTRICT' WHERE ModifierId='MINOR_CIV_NAN_MADOL_DISTRICTS_CULTURE_BONUS';
--- fix valetta's bonus to work on Georgian walls
-INSERT INTO TraitModifiers (TraitType , ModifierId)
-    VALUES ('MINOR_CIV_VALLETTA_TRAIT' , 'MINOR_CIV_VALLETTA_UNIQUE_INFLUENCE_PURCHASE_CHEAPER_TSIKHE_BONUS');
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
-    VALUES ('MINOR_CIV_VALLETTA_UNIQUE_INFLUENCE_PURCHASE_CHEAPER_TSIKHE_BONUS' , 'MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER' , 'PLAYER_IS_SUZERAIN');
-INSERT INTO Modifiers (ModifierId , ModifierType)
-    VALUES ('MINOR_CIV_VALLETTA_PURCHASE_CHEAPER_TSIKHE_BONUS' , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PURCHASE_COST');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
-    VALUES ('MINOR_CIV_VALLETTA_UNIQUE_INFLUENCE_PURCHASE_CHEAPER_TSIKHE_BONUS' , 'ModifierId' , 'MINOR_CIV_VALLETTA_PURCHASE_CHEAPER_TSIKHE_BONUS');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
-    VALUES ('MINOR_CIV_VALLETTA_PURCHASE_CHEAPER_TSIKHE_BONUS' , 'BuildingType' , 'BUILDING_TSIKHE');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
-    VALUES ('MINOR_CIV_VALLETTA_PURCHASE_CHEAPER_TSIKHE_BONUS' , 'Amount' , '50');
 
 
 
