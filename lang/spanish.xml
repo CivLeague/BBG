@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TECH_STEEL_DESCRIPTION" Language="es_ES">
+			<Text>+1 a la Producción [ICON_Production] por la mejora del Aserradero. Desbloquea Defensas urbanas, lo que otorga automáticamente a todas tus ciudades la habilidad de atacar a distancia y 300 a la Fuerza de fortificación. Todas las mejoras de muralla anteriores quedan obsoletas y las unidades de apoyo de asedio ya no son efectivas.</Text>
+		</Replace>
         <Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="es_ES">
             <Text>Recibe 25% del valor de producción de una unidad de tierra militar en [ICON_FAITH] Fe cuando la unidad sea producida.</Text>
         </Replace>

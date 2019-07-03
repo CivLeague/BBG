@@ -985,6 +985,16 @@ UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_PRIVATEER'
 
 
 --==============================================================
+--******					W A L L S					  ******
+--==============================================================
+UPDATE Buildings SET OuterDefenseHitPoints=75 WHERE BuildingType = 'BUILDING_WALLS';
+UPDATE Buildings SET OuterDefenseHitPoints=75 WHERE BuildingType = 'BUILDING_STAR_FORT';
+UPDATE Buildings SET OuterDefenseHitPoints=75 WHERE BuildingType = 'BUILDING_CASTLE';
+UPDATE ModifierArguments SET Value='300' WHERE ModifierId='STEEL_UNLOCK_URBAN_DEFENSES';
+
+
+
+--==============================================================
 --******			W O N D E R S  (MAN-MADE)			  ******
 --==============================================================
 -- Wonders Provide +5 score instead of +15

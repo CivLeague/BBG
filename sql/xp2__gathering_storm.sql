@@ -212,17 +212,6 @@ UPDATE Units SET Combat=80,  Bombard=110      WHERE UnitType='UNIT_JET_BOMBER';
 
 
 --==============================================================
---******					W A L L S					  ******
---==============================================================
-UPDATE Buildings SET OuterDefenseHitPoints=75 WHERE BuildingType = 'BUILDING_WALLS';
-UPDATE Buildings SET OuterDefenseHitPoints=75 WHERE BuildingType = 'BUILDING_STAR_FORT';
-UPDATE Buildings SET OuterDefenseHitPoints=75 WHERE BuildingType = 'BUILDING_CASTLE';
-UPDATE Buildings SET OuterDefenseHitPoints=100 WHERE BuildingType = 'BUILDING_TSIKHE';
-UPDATE ModifierArguments SET Value='300' WHERE ModifierId='STEEL_UNLOCK_URBAN_DEFENSES';
-
-
-
---==============================================================
 --******			W O N D E R S  (NATURAL)			  ******
 --==============================================================
 UPDATE Feature_YieldChanges SET YieldChange='4' WHERE FeatureType='FEATURE_GOBUSTAN'       AND YieldType='YIELD_CULTURE'   ;

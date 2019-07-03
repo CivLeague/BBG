@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TECH_STEEL_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Production] Production +1 pour les scieries. Débloque les défenses urbaines, octroyant à toutes vos villes 300 points de puissance de retranchement et la possibilité d'attaquer une fois à distance. Tous les remparts précédents deviennent obsolètes et les unités de siège de soutien ne sont plus efficaces.</Text>
+		</Replace>
 		<!-- https://steamcommunity.com/workshop/filedetails/discussion/1368312893/1734342793786174547/ -->
 		
 		

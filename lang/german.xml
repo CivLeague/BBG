@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TECH_STEEL_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_Production] Produktion durch die Sägewerk-Modernisierung. Schaltet Urbane Verteidigung frei und gewährt all Euren Städten automatisch 300 Befestigungsstärke und die Fernkampffähigkeit. Alle bisherigen Mauer-Modernisierungen werden veraltet und Belagerungs-Unterstützungseinheiten sind nicht mehr effektiv.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_RETINUES_DESCRIPTION" Language="de_DE">
+            <Text>50% weniger Ressourcen benötigt bei allen Einheitenproduktionen und upgraden von Einheiten.</Text>
+        </Replace>
+        <Replace Tag="LOC_POLICY_FORCE_MODERNIZATION_DESCRIPTION" Language="de_DE">
+            <Text>50% [ICON_Gold] weniger Gold benötigt beim Upgraden von Einheiten.  50% weniger Ressourcen beim Ausbilden von Einheiten benötigt.</Text>
+        </Replace>
+        <Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="de_DE">
+            <Text>Erhalte einen freien Handwerker in der Hauptstadt. +1 [ICON_FOOD] Nahrung für [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], and [ICON_RESOURCE_WHEAT].</Text>
+        </Replace>
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Erhalte einen freien Handwerker in der Hauptstadt. +1 [ICON_FOOD] Nahrung für [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], and [ICON_RESOURCE_WHEAT].</Text>
+		</Replace>
+        <Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="de_DE">
+            <Text>+1 [ICON_FOOD] Nahrung in Tundra. In Tundra und Schnee alle Minen und Sägewerke geben +1 [ICON_PRODUCTION] Produktion, alle Lager geben +1 [ICON_FOOD] Nahrung, alle strategischen Ressourcen werden doppelt so schnell ausgehoben. [NEWLINE][NEWLINE]Ist in der Lage Bauernhöfe in Tundra und in Tundra Hügeln mit der Bauwesen Technologie.[NEWLINE][NEWLINE]Die Kosten für das Kaufen von Schnee, Schnee Hügeln, Tundra Hügeln und Tundra ist um 50% reduziert.[NEWLINE][NEWLINE]Städte mit einem Nationalpark geben extra +8 [ICON_FOOD] Nahrung und +8 [ICON_PRODUCTION] Produktion pro Runde.</Text>
+        </Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="de_DE">
 			<Text>Erhalte beim Produzieren einer Landeinheit [ICON_FAITH ]Glauben in Höhe von 25% der Kampfstärke dieser Landeinheit.</Text>
 		</Replace>
