@@ -44,7 +44,7 @@
 			<Text>인접한 모든 사막 및 언덕 타일마다 도심부가 [ICON_FAITH] 신앙 +1과 [ICON_FOOD] 식량 +1을 얻습니다. 광산이 [ICON_PRODUCTION] 생산력 -1과 [ICON_GOLD] 금 +2를 적용받습니다. 은행업 기술 및 경제학 기술을 연구하면 각각 [ICON_GOLD] 금 +1을 추가 제공합니다. [ICON_Faith] 신앙으로 상업 중심지 특수지구 건물을 구매할 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_CREE_OKIHTCITAW_DESCRIPTION" Language="ko_KR">
-            <Text>숲 및 열대우림 지형에서 [ICON_Movement] 이동력이 빨라집니다.</Text>
+            <Text>숲 및 열대우림 지형에서 이동력이 빨라집니다.</Text>
         </Replace>
 		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="ko_KR">
 			<Text>크리 특유의 고대 시대 유닛으로 정찰병을 대체합니다. 강력한 정찰 유닛이며 숲 및 열대우림 지형에서 [ICON_Movement] 이동력이 빨라집니다.</Text>
@@ -58,9 +58,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ko_KR">
 			<Text>종교를 창시할 때 교리를 한 개 더 고를 수 있습니다. 개척자와 건설자의 [ICON_Movement] 이동력이 1 증가합니다. 종교를 창시했고 현재 전쟁에 참여하지 않는 각 문명(인도 포함)을 접할 때마다 [ICON_Faith] 신앙 +5를 제공합니다. 상대 문명은 간디와 전투 시 전쟁 피로도가 2배 증가합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ko_KR">
-            <Text>송수로 특수지구의 건설 시간이 반으로 감소합니다. 성지를 강에 배치할 경우 [ICON_FOOD] 식량 +2, [ICON_FAITH] 신앙 +2 및 [ICON_HOUSING] 주거공간 +1을 제공합니다. 성지는 문화 폭탄을 유발합니다.</Text>
-        </Replace>
 		<Replace Tag="LOC_TECH_STEEL_DESCRIPTION" Language="ko_KR">
 			<Text>제재소 시설에서 [ICON_Production] 생산력 +1을 제공합니다. 플레이어의 모든 도시에 자동으로 요새 전투력 300을 부여하고 원거리 공격을 가능하게 하는 도시 방어를 잠금 해제합니다. 이전의 모든 성벽 시설이 구식으로 변하고 공성 지원 유닛이 효과를 발휘하지 못합니다.</Text>
 		</Replace>
@@ -127,9 +124,6 @@
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="ko_KR">
 			<Text>[ICON_Governor] 총독이 있는 도시에 [ICON_Amenities] 쾌적도 +1, [ICON_Food] 식량 +3 및 [ICON_Housing] 주거공간 +3을 제공합니다.[NEWLINE][ICON_Governor] 총독이 없는 도시는 충성심 -2가 적용됩니다.[NEWLINE]보상으로 [Icon_Governor] 총독 타이틀 +2.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="ko_KR">
-			<Text>도시 국가 영향력 강화에 소모되는 [ICON_Gold] 금이 절반으로 감소합니다.[NEWLINE]플레이어가 종주국인 경우 도시 국가의 유닛(징병된 유닛 포함)이 [ICON_Strength] 전투력 +4를 얻습니다.[NEWLINE][Icon_Governor] 총독 타이틀 +1을 부여합니다. 턴당 [ICON_Envoy] 사절 획득을 위한 우호도 점수 +2.</Text>
-		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="ko_KR">
 			<Text>군마를 대체하는 헝가리 특유의 중세 시대 유닛입니다. 도시 국가 동원 유닛이 인접한 경우 각 [ICON_Strength] 전투력 +2를 획득합니다.</Text>
 		</Replace>
@@ -175,9 +169,6 @@
 		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="ko_KR">
             <Text>공성 유닛 생성 및 방어 건물 건설에 대한 [ICON_Production] 생산력 +100%.</Text>
         </Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="ko_KR">
-			<Text>인접한 모든 사막 및 언덕 타일마다 도심부가 [ICON_FAITH] 신앙 +1과 [ICON_FOOD] 식량 +1을 얻습니다. 광산이 [ICON_PRODUCTION] 생산력 -1과 [ICON_GOLD] 금 +4를 적용받습니다. [ICON_Faith] 신앙으로 상업 중심지 특수지구 건물을 구매할 수 있습니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ko_KR">
             <Text>한국 특유의 과학 발전을 위한 특수지구로 캠퍼스 특수지구를 대체합니다. [ICON_SCIENCE] 과학 +2를 제공합니다. 인접한 극장가 특수지구에서 [ICON_CULTURE] 문화 +1의 인접 보너스를 획득합니다. 언덕에 지어야 합니다.</Text>
         </Replace>
@@ -438,9 +429,6 @@
         <Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="ko_KR">
             <Text>아즈텍 특유의 건물입니다. [ICON_Amenities] 쾌적도 +1, [ICON_Culture] 문화 +3, [ICON_GreatGeneral] 위대한 장군 점수 +1을 제공합니다.</Text>
         </Replace>
-        <Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="ko_KR">
-            <Text>석조기술과 함께 잠금 해제되며 사막, 사막 언덕, 범람원 또는 평원에 지어야 하는 시설입니다. [ICON_Faith] 신앙 +1을 제공합니다. 인근 특수지구에서 추가 생산량을 획득합니다. 도심부에 인접하는 경우 [ICON_Food] 식량 +2를 제공합니다. 인접 보너스를 제공하는 다른 모든 특수지구의 경우 해당 특수지구가 인접했다면 해당 산출물 +2를 제공합니다.</Text>
-        </Replace>
         <Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="ko_KR">
             <Text>타일 세 개의 자연경관입니다. [ICON_Food] 식량 +2,[ICON_PRODUCTION] 생산력 +2,[ICON_Science] 과학 +2를 제공합니다.</Text>
         </Replace>
@@ -506,9 +494,6 @@
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_2" Language="ko_KR">
 			<Text>펜, 붓과 목소리: [ICON_CivicBoosted] 영감을 발동할 때마다 시대 점수 +1을 얻습니다. 걸작 슬롯이 있는 건물을 건설하면 시대 점수 +1을 얻습니다. 황금기 시작 시점에서 선택하면 [ICON_CivicBoosted] 영감이 사회 제도 비용의 10%를 추가로 제공합니다. 각 도시는 전문 특수지구마다 [ICON_Culture] 문화 +2와 [ICON_Gold] 금 +2를 얻습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ko_KR">
-			<Text>종교를 창시할 때 교리를 한 개 더 고를 수 있습니다. 개척자와 건설자의 [ICON_Movement] 이동력이 1 증가합니다. 종교를 창시했고 현재 전쟁에 참여하지 않는 각 문명(인도 포함)을 접할 때마다 [ICON_Faith] 신앙 +5를 제공합니다. 상대 문명은 간디와 전투 시 전쟁 피로도가 2배 증가합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="ko_KR">
 			<Text>마푸체 특유의 체마물을 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Production] 생산력 +1 및 타일 매력도의 75%만큼 [ICON_CULTURE] 문화를 제공합니다. 공공 행정 사회 제도를 획득하면 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 추가로 제공합니다. 놀라운 매력도 이상의 타일에서 지을 수 있습니다.</Text>
