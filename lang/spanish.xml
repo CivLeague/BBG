@@ -95,7 +95,7 @@
 			<Text>Maravilla Natural de un espacio por cual no se puede pasar. Da +2 [ICON_FAITH] Fe y +1 [ICON_Production] de Producción a los espacios que estan alrededor.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="es_ES">
-			<Text>+100% [ICON_PRODUCTION] de Producción para Sitios Santos Y Acueducto. Sitios Santos dan +2 [ICON_FOOD] Comida, +2 [ICON_FAITH] Fe, and +1 [ICON_HOUSING] de alojamiento si está al lado de un río. Sitios Santos causan una bomba Cultural que toma espacios que están alrededor aunque sean de alguien.</Text>
+			<Text>+100% [ICON_PRODUCTION] de Producción para Acueducto. Sitios Santos dan +2 [ICON_FOOD] Comida, +2 [ICON_FAITH] Fe, and +1 [ICON_HOUSING] de alojamiento si está al lado de un río. Sitios Santos causan una bomba Cultural que toma espacios que están alrededor aunque sean de alguien.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="es_ES">
 			<Text>Todas las unidades de combate terrestres y religiosas reciben +1 [ICON_Movement] movimiento.</Text>
@@ -270,7 +270,7 @@
 		</Replace>
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="es_ES">
-			<Text>+25% a la Producción [ICON_Production] para las unidades a distancia. Todas las uniddes a distancia ganan un 25% a la experiencia de combate. Las Minas sobre recursos estratégicos otorgan +1 a la Producción [ICON_Production] . Las Minas sobre recursos de Lujo y adicionales otorgan +2 [ICON_Gold] de Oro.</Text>
+			<Text>Todas las uniddes a distancia ganan un 25% a la experiencia de combate. Las Minas sobre recursos estratégicos otorgan +1 a la Producción [ICON_Production] . Las Minas sobre recursos de Lujo y adicionales otorgan +2 [ICON_Gold] de Oro.</Text>
 		</Replace>
 		<!-- Persia -->
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="es_ES">
@@ -335,9 +335,6 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="es_ES">
 			<Text>Un edificio exclusivo de los jemeres que sustituye al Templo. Concede un Misionero gratis cuando es contruido (si una religión ya ha sido fundada). Necesario para comprar Aóstoles e Inquisidores con Fe [ICON_Faith] . Los Misioneros comprados en esta ciudad reciben la habilidad Mártir, que confiere una reliquia [ICON_GreatWork_Relic] si este misionero muere en combate teológico.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="es_ES">
-			<Text>Unidad de asedio exclusiva jémer de la edad Clásica que sustituye a la catapulta y es mas poderosa, tanto en defensa como en ataque. Puede moverse y disparar en el mismo turno y ejerce una zona de control.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="es_ES">
 			<Text>Las Rutas comerciales Internacionales proporcionan +2 a Fe [ICON_FAITH] para Jémer. Las Rutas comerciales de otras civilizaciones con Jémer también les proporcionan +2 a Fe [ICON_FAITH] . +3 a Fe [ICON_FAITH] y +1 a Servicios [ICON_AMENITIES] por entretenimiento para todas las ciudades con un Acueducto. Las Granjas adyacentes a un Acueducto proporcional +2 Alimento [ICON_FOOD].</Text>

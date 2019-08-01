@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.4.2">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.5.1">
 	<Properties>
-		<Name>Better Balanced Game v3.4.2</Name>
+		<Name>Better Balanced Game v3.5.1</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
@@ -70,7 +70,7 @@
 	<FrontEndActions>
 		<UpdateText id="bbg_pregame_text_updates">
 			<Properties>
-				<LoadOrder>11609</LoadOrder>
+				<LoadOrder>150</LoadOrder>
 			</Properties>
 			<File>lang/english.xml</File>
 			<File>lang/korean.xml</File>
@@ -89,7 +89,7 @@
 		
 		<UpdateText id="bbg_text_updates">
 			<Properties>
-				<LoadOrder>11609</LoadOrder>
+				<LoadOrder>152</LoadOrder>
 			</Properties>
 			<File>lang/english.xml</File>
 			<File>lang/korean.xml</File>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ru_RU">
+            <Text>+100% [ICON_PRODUCTION] производства от акведуков. Священные места дают +2 [ICON_FOOD] еды, +2 [ICON_FAITH] веры и +1 [ICON_HOUSING] жилья, если стоят у реки. Священные места осуществляют культурный захват клеток.</Text>
+        </Replace>
 		<Replace Tag="LOC_TECH_STEEL_DESCRIPTION" Language="ru_RU">
 			<Text>Лесопилка дает +1 [ICON_Production] производства. Открывает городские укрепления, автоматически дающие всем вашим городам по 300 ед. мощи при обороне и способность к дальнобойной атаке. Все предыдущие улучшения стен и осадные юниты поддержки становятся неэффективными.</Text>
 		</Replace>
@@ -108,9 +111,6 @@
 		</Replace>
 		<Replace Tag="LOC_FEATURE_DEVILSTOWER_DESCRIPTION" Language="ru_RU">
 			<Text>Чудо природы. Занимает одну непроходимую клетку. Дает +2 [ICON_FAITH] к вере и +1 [ICON_Production] к производству на соседних клетках.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ru_RU">
-			<Text>+100% [ICON_PRODUCTION] к производству священных мест и акведуков. Священные места дают +2 [ICON_FOOD] пищи, +2 [ICON_FAITH] веры и +1 [ICON_HOUSING] жилья, если построены рядом с рекой. Священные места производят культурный захват клеток.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="ru_RU">
 			<Text>Все наземные боевые и религиозные юниты имеют +1 [ICON_Movement] к перемещению.</Text>
@@ -278,7 +278,7 @@
 		</Replace>
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ru_RU">
-			<Text>+25% [ICON_Production] производства при создании юнитов дальнего боя. Все дальнобойные получают  на 25% больше боевого опыта. Рудники на стратегических ресурсах дают +1 [ICON_Production] производства. Рудники на бонусных ресурсах и ресурсах роскоши дают +2 [ICON_Gold] золота.</Text>
+			<Text>Все дальнобойные получают  на 25% больше боевого опыта. Рудники на стратегических ресурсах дают +1 [ICON_Production] производства. Рудники на бонусных ресурсах и ресурсах роскоши дают +2 [ICON_Gold] золота.</Text>
 		</Replace>
 		<!-- Persia -->
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="ru_RU">
@@ -334,9 +334,6 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальное здание кхмеров, которое заменяет храм. Необходимо для найма апостолов и инквизиторов за [ICON_Faith] веру. При постройке здания дает бесплатно одного миссионера. Миссионеры, нанятые в этом городе, сразу получают способность «Мученик», которая дает [ICON_GreatWork_Relic] реликвию, если юнит погибает в теологической баталии.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный кхмерский осадный юнит Античности. Заменяет катапульту и сильнее ее. Может перемещаться и стрелять в тот же ход, имеет зону контроля.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="ru_RU">
 			<Text>Кхмеры получают +2 [ICON_FAITH] за международные торговые пути к своим городам и от них. Цивилизация-отправитель такого торгового пути также имеет с него +2 [ICON_FAITH] веры. +3 [ICON_FAITH] веры и +1 [ICON_AMENITIES] довольства от развлечений в каждом городе с акведуком. Фермы рядом с акведуком дают +2 [ICON_FOOD] еды.</Text>

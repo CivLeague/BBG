@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ja_JP">
+            <Text>用水路に対する[ICON_PRODUCTION]生産力+100%。河川に隣接した聖地が[ICON_FOOD]食料+2、[ICON_FAITH]信仰力+2、[ICON_HOUSING]住宅+1を供給する。聖地の建造で文化爆弾が発動する。</Text>
+        </Replace>
 		<Replace Tag="LOC_TECH_STEEL_DESCRIPTION" Language="ja_JP">
 			<Text>製材所の施設の [ICON_Production] 生産力+1。都市防衛を解除し、すべての都市に自動的に防衛力300と長距離攻撃能力をもたらす。これまでの防壁施設はすべて廃れ、攻城支援ユニットは有効性を失う。</Text>
 		</Replace>
@@ -102,9 +105,6 @@
 		</Replace>
 		<Replace Tag="LOC_FEATURE_DEVILSTOWER_DESCRIPTION" Language="ja_JP">
 			<Text>1タイルの通行不能な自然遺産。隣接する各タイルに[ICON_FAITH]信仰+2、[ICON_PRODUCTION]生産力+1を与える。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ja_JP">
-			<Text>聖地と用水路に対する[ICON_PRODUCTION]生産力+100%。[NEWLINE]河川に隣接する場合のみ、聖地が[ICON_FOOD]食料+2、[ICON_FAITH]信仰+2、[ICON_HOUSING]住宅+1を供給する。[NEWLINE]聖地が文化爆弾を発動させる。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="ja_JP">
 			<Text>すべての陸上ユニットおよび宗教ユニットの[ICON_MOVEMENT]移動力+1。</Text>
@@ -274,7 +274,7 @@
 		</Replace>
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ja_JP">
-			<Text>長距離戦闘ユニットの生産力[ICON_Production]+25%。すべての長距離戦闘ユニットは戦闘経験値+25%。戦略資源の鉱山の生産力[ICON_Production]+1。ボーナス資源と高級資源の鉱山のゴールド [ICON_Gold] +2。</Text>
+			<Text>すべての長距離戦闘ユニットは戦闘経験値+25%。戦略資源の鉱山の生産力[ICON_Production]+1。ボーナス資源と高級資源の鉱山のゴールド [ICON_Gold] +2。</Text>
 		</Replace>
 		<!-- Persia -->
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="ja_JP">
@@ -330,9 +330,6 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ja_JP">
 			<Text>クメール固有の建造物。神殿に取ってかわる。 [ICON_Faith] 信仰力を使って使徒と審問官を購入するのに必要。プラサートが完成すると無料の伝道師を得る。この都市で購入された伝道師は殉教者の能力を得る。神学戦争でこの伝道師が命を落とすと [ICON_GreatWork_Relic] 遺物が生まれる。</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="ja_JP">
-			<Text>カタパルトの取ってかわるクメール固有の太古の攻囲ユニット。カタパルトより強く、同じターンに移動と攻撃を実行し、支配領域を行使できる。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="ja_JP">
 			<Text>他文明や都市国家との交易路1つにつき、交易路の受け手と送り手の文明それぞれに[ICON_FAITH] 信仰力+2をもたらす。用水路のある各都市に[ICON_FAITH] 信仰力+3、娯楽による快適性+1。用水路に隣接している場合、農場から[ICON_FOOD] 食料+2。</Text>

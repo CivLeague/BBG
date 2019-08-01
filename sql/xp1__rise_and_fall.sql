@@ -3,6 +3,12 @@
 --==============================================================
 
 --==================
+-- Cree
+--==================
+UPDATE UnitAbilityModifiers SET ModifierId='RANGER_IGNORE_FOREST_MOVEMENT_PENALTY' WHERE UnitAbilityType='ABILITY_CREE_OKIHTCITAW';
+
+
+--==================
 -- Georgia
 --==================
 -- Georgian Khevsur unit becomes sword replacement
@@ -128,6 +134,18 @@ INSERT INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , Bo
 
 
 --==================
+-- Sumeria
+--==================
+-- extra +3 envoys points per turn
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+	VALUES ('SUMERIA_ENVOY_POINTS_FROM_MILITARY_ALLIANCE', 'Amount', '3');
+INSERT INTO Modifiers (ModifierId, ModifierType)
+	VALUES ('SUMERIA_ENVOY_POINTS_FROM_MILITARY_ALLIANCE', 'MODIFIER_PLAYER_ADJUST_INFLUENCE_POINTS_PER_TURN');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+	VALUES ('TRAIT_CIVILIZATION_FIRST_CIVILIZATION', 'SUMERIA_ENVOY_POINTS_FROM_MILITARY_ALLIANCE');
+
+
+--==================
 -- Zulu
 --==================
 -- Zulu get corps/armies bonus at mobilization
@@ -192,20 +210,34 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	('GOV_CONQUEST_PRODUCTION_BONUS'    , 'StartEra' , 'ERA_ANCIENT'    ),
 	('GOV_CONQUEST_PRODUCTION_BONUS'    , 'EndEra'   , 'ERA_INFORMATION'),
 	('GOV_CONQUEST_REDUCED_MAINTENANCE' , 'Amount'   , '1'              );
--- Foreign Ministry gets +2 influence per turn
+-- Foreign Ministry gets +2 influence per turn and 2 envoys
 INSERT INTO BuildingModifiers 
     (BuildingType            , ModifierId)
     VALUES 
-    ('BUILDING_GOV_CITYSTATES' , 'GOV_BUILDING_CS_BONUS_INFLUENCE_CPLMOD');
+    ('BUILDING_GOV_CITYSTATES' , 'GOV_BUILDING_CS_BONUS_INFLUENCE_CPLMOD'),
+	('BUILDING_GOV_CITYSTATES' , 'FOREIGN_MINISTRY_ENVOYS');
 INSERT INTO Modifiers 
     (ModifierId                                 , ModifierType)
     VALUES 
-    ('GOV_BUILDING_CS_BONUS_INFLUENCE_CPLMOD'   , 'MODIFIER_PLAYER_ADJUST_INFLUENCE_POINTS_PER_TURN');
-    
+    ('GOV_BUILDING_CS_BONUS_INFLUENCE_CPLMOD'   , 'MODIFIER_PLAYER_ADJUST_INFLUENCE_POINTS_PER_TURN'),
+	('FOREIGN_MINISTRY_ENVOYS'					, 'MODIFIER_PLAYER_GRANT_INFLUENCE_TOKEN');
 INSERT INTO ModifierArguments 
     (ModifierId                                 , Name                      , Value)
     VALUES 
-    ('GOV_BUILDING_CS_BONUS_INFLUENCE_CPLMOD'   , 'Amount'                  , '2');
+    ('GOV_BUILDING_CS_BONUS_INFLUENCE_CPLMOD'   , 'Amount'                  , '2'),
+	('FOREIGN_MINISTRY_ENVOYS'					, 'Amount'					, '2');
+
+
+
+--==============================================================
+--******				G O V E R N O R S				  ******
+--==============================================================
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
+	VALUES ('GARRISON_COMMANDER_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+	VALUES ('GARRISON_COMMANDER_REQUIREMENTS', 'PLAYER_IS_DEFENDER_REQUIREMENTS');
+UPDATE Modifiers SET SubjectRequirementSetId='GARRISON_COMMANDER_REQUIREMENTS' WHERE ModifierId='GARRISON_COMMANDER_ADJUST_CITY_COMBAT_BONUS';
+
 
 
 
@@ -226,6 +258,14 @@ INSERT INTO RequirementArguments
     VALUES 
     ('REQUIRES_PLOT_HAS_UBSUNUR_HOLLOW'     , 'FeatureType' , 'FEATURE_UBSUNUR_HOLLOW'       );
 
+
+
+
+	--==============================================================
+--******				S  C  O  R  E				  	  ******
+--==============================================================
+-- Wonders Provide +5 score instead of +15
+UPDATE ScoringLineItems SET Multiplier=0 WHERE LineItemType='LINE_ITEM_ERA_SCORE';
 
 
 

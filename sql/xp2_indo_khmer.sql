@@ -7,7 +7,7 @@
 --==================
 -- Jongs cost Niter
 INSERT INTO Units_XP2 (UnitType , ResourceCost)
-	VALUES ('UNIT_INDONESIAN_JONG' , 20);
+	VALUES ('UNIT_INDONESIAN_JONG' , 10);
 UPDATE Units SET StrategicResource ='RESOURCE_NITER'  WHERE UnitType='UNIT_INDONESIAN_JONG';
 
 

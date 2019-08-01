@@ -30,7 +30,5 @@ UPDATE Units SET StrategicResource ='RESOURCE_HORSES'  WHERE UnitType='UNIT_MAPU
 --==================
 -- Netherlands
 --==================
--- UU requires 10 Niter
-UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_DUTCH_ZEVEN_PROVINCIEN';
 
 

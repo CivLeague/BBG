@@ -5,20 +5,22 @@
 --==================
 -- Nubia
 --==================
--- Nubia ranged production and experience cut to 25% (from %50) and ranged experience cut in half to 25%... Also, Pitati Archers have same ranged strength as regular Archers (25 instead of 30)
+-- no extra Nubia ranged production and experience cut to 25% (from %50) ... Also, Pitati Archers have same ranged strength as regular Archers (25 instead of 30)
 UPDATE Units SET RangedCombat=25 WHERE UnitType='UNIT_NUBIAN_PITATI';
-UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_ANCIENT_RANGED_UNIT_PRODUCTION' and Name='Amount';
-UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_CLASSICAL_RANGED_UNIT_PRODUCTION' and Name='Amount';
-UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_MEDIEVAL_RANGED_UNIT_PRODUCTION' and Name='Amount';
-UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RENAISSANCE_RANGED_UNIT_PRODUCTION' and Name='Amount';
-UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_INDUSTRIAL_RANGED_UNIT_PRODUCTION' and Name='Amount';
-UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_MODERN_RANGED_UNIT_PRODUCTION' and Name='Amount';
-UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_ATOMIC_RANGED_UNIT_PRODUCTION' and Name='Amount';
-UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_INFORMATION_RANGED_UNIT_PRODUCTION' and Name='Amount';
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_ANCIENT_RANGED_UNIT_PRODUCTION' and Name='Amount';
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_CLASSICAL_RANGED_UNIT_PRODUCTION' and Name='Amount';
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_MEDIEVAL_RANGED_UNIT_PRODUCTION' and Name='Amount';
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_RENAISSANCE_RANGED_UNIT_PRODUCTION' and Name='Amount';
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_INDUSTRIAL_RANGED_UNIT_PRODUCTION' and Name='Amount';
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_MODERN_RANGED_UNIT_PRODUCTION' and Name='Amount';
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_ATOMIC_RANGED_UNIT_PRODUCTION' and Name='Amount';
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_INFORMATION_RANGED_UNIT_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RANGED_EXPERIENCE_MODIFIER' and Name='Amount';
 -- Nubian Pyramid can also be built on flat plains, but not adjacent to each other
 INSERT INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
-	VALUES ('IMPROVEMENT_PYRAMID' , 'TERRAIN_PLAINS');
+	VALUES
+	('IMPROVEMENT_PYRAMID' , 'TERRAIN_PLAINS'),
+	('IMPROVEMENT_PYRAMID' , 'TERRAIN_GRASS');
 UPDATE Improvements SET SameAdjacentValid=0 WHERE ImprovementType='IMPROVEMENT_PYRAMID';
 -- Nubian Pyramid gets double adjacency yields
 UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_CityCenterAdjacency";

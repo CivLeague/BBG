@@ -103,6 +103,13 @@ DELETE FROM UnitAbilityModifiers WHERE ModifierId='RAVEN_LEVY_MOVEMENT';
 
 
 
+--==========
+-- Inca
+--==========
+UPDATE Units SET RangedCombat=30 WHERE UnitType='UNIT_INCA_WARAKAQ';
+
+
+
 --==================
 -- Kongo
 --==================
@@ -112,6 +119,63 @@ UPDATE Units_XP2 SET ResourceCost=10 WHERE UnitType='UNIT_KONGO_SHIELD_BEARER';
 --==========
 -- Mali
 --==========
+-- less gold from mines initially
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TRAIT_MALI_MINES_GOLD' AND Name='Amount';
+INSERT INTO Modifiers
+	(ModifierId                              , ModifierType                        , SubjectRequirementSetId)
+	VALUES
+	('TRAIT_MALI_MINE_GOLD_BANKING_CPLMOD'   , 'MODIFIER_PLAYER_ADJUST_PLOT_YIELD' , 'MALI_MINE_AND_BANKING_REQUIREMENTS_CPLMOD'  ),
+	('TRAIT_MALI_MINE_GOLD_ECONOMICS_CPLMOD' , 'MODIFIER_PLAYER_ADJUST_PLOT_YIELD' , 'MALI_MINE_AND_ECONOMICS_REQUIREMENTS_CPLMOD');
+	
+INSERT INTO ModifierArguments
+	(ModifierId                              , Name        , Value)
+	VALUES
+	('TRAIT_MALI_MINE_GOLD_BANKING_CPLMOD'   , 'YieldType' , 'YIELD_GOLD'),
+	('TRAIT_MALI_MINE_GOLD_BANKING_CPLMOD'   , 'Amount'    , '1'         ),
+	('TRAIT_MALI_MINE_GOLD_ECONOMICS_CPLMOD' , 'YieldType' , 'YIELD_GOLD'),
+	('TRAIT_MALI_MINE_GOLD_ECONOMICS_CPLMOD' , 'Amount'    , '1'         );
+	
+INSERT INTO RequirementSets
+	(RequirementSetId , RequirementSetType)
+	VALUES 
+	('MALI_MINE_AND_BANKING_REQUIREMENTS_CPLMOD'   , 'REQUIREMENTSET_TEST_ALL'),
+	('MALI_MINE_AND_ECONOMICS_REQUIREMENTS_CPLMOD' , 'REQUIREMENTSET_TEST_ALL');
+	
+INSERT INTO RequirementSetRequirements
+	(RequirementSetId , RequirementId)
+	VALUES 
+	('MALI_MINE_AND_BANKING_REQUIREMENTS_CPLMOD'   , 'PLAYER_HAS_BANKING_CPLMOD'  ),
+	('MALI_MINE_AND_BANKING_REQUIREMENTS_CPLMOD'   , 'REQUIRES_PLOT_HAS_MINE'     ),
+	('MALI_MINE_AND_ECONOMICS_REQUIREMENTS_CPLMOD' , 'PLAYER_HAS_ECONOMICS_CPLMOD'),
+	('MALI_MINE_AND_ECONOMICS_REQUIREMENTS_CPLMOD' , 'REQUIRES_PLOT_HAS_MINE'     );
+	
+INSERT INTO Requirements 
+	(RequirementId , RequirementType)
+	VALUES 
+	('PLAYER_HAS_BANKING_CPLMOD'   , 'REQUIREMENT_PLAYER_HAS_TECHNOLOGY'),
+	('PLAYER_HAS_ECONOMICS_CPLMOD' , 'REQUIREMENT_PLAYER_HAS_TECHNOLOGY');
+	
+INSERT INTO RequirementArguments 
+	(RequirementId , Name , Value) 
+	VALUES 
+	('PLAYER_HAS_BANKING_CPLMOD'   , 'TechnologyType' , 'TECH_BANKING'  ),
+	('PLAYER_HAS_ECONOMICS_CPLMOD' , 'TechnologyType' , 'TECH_ECONOMICS');
+
+INSERT INTO Types (Type, Kind)
+	VALUES
+	('TRAIT_CIVILIZATIONS_MALI_BANKING_GOLD', 'KIND_TRAIT'),
+	('TRAIT_CIVILIZATIONS_MALI_ECONOMICS_GOLD', 'KIND_TRAIT');
+INSERT INTO Traits (TraitType) VALUES ('TRAIT_CIVILIZATIONS_MALI_BANKING_GOLD'), ('TRAIT_CIVILIZATIONS_MALI_ECONOMICS_GOLD');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+	VALUES
+	('TRAIT_CIVILIZATIONS_MALI_BANKING_GOLD', 'TRAIT_MALI_MINE_GOLD_BANKING_CPLMOD'),
+	('TRAIT_CIVILIZATIONS_MALI_ECONOMICS_GOLD', 'TRAIT_MALI_MINE_GOLD_ECONOMICS_CPLMOD');
+
+INSERT INTO CivilizationTraits (CivilizationType, TraitType)
+	VALUES
+	('CIVILIZATION_MALI', 'TRAIT_CIVILIZATIONS_MALI_BANKING_GOLD'),
+	('CIVILIZATION_MALI', 'TRAIT_CIVILIZATIONS_MALI_ECONOMICS_GOLD');
+-- remove production handicaps since they can be shift-entered to avoid
 DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_LESS_BUILDING_PRODUCTION';
 DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_LESS_UNIT_PRODUCTION'    ;
 
@@ -131,6 +195,7 @@ INSERT INTO Improvement_ValidFeatures (ImprovementType , FeatureType)
 	('IMPROVEMENT_PYRAMID' , 'FEATURE_FLOODPLAINS_PLAINS');
 
 
+
 --==============================================================
 --******				  DIPLOMACY						  ******
 --==============================================================
@@ -143,6 +208,19 @@ UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES
 UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_HERITAGE_ORG';
 UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_PUBLIC_WORKS';
 UPDATE Resolutions SET EarliestEra='ERA_INDUSTRIAL' WHERE ResolutionType='WC_RES_DEFORESTATION_TREATY';
+DELETE FROM Resolutions WHERE ResolutionType='WC_RES_PUBLIC_RELATIONS';
+
+
+
+--==============================================================
+--******				G O V E R N M E N T				  ******
+--==============================================================
+UPDATE Governments SET OtherGovernmentIntolerance=0 WHERE GovernmentType='GOVERNMENT_DEMOCRACY';
+UPDATE Governments SET OtherGovernmentIntolerance=0 WHERE GovernmentType='GOVERNMENT_DIGITAL_DEMOCRACY';
+UPDATE Governments SET OtherGovernmentIntolerance=-40 WHERE GovernmentType='GOVERNMENT_FASCISM';
+UPDATE Governments SET OtherGovernmentIntolerance=-40 WHERE GovernmentType='GOVERNMENT_COMMUNISM';
+UPDATE Governments SET OtherGovernmentIntolerance=-40 WHERE GovernmentType='GOVERNMENT_CORPORATE_LIBERTARIANISM';
+UPDATE Governments SET OtherGovernmentIntolerance=-40 WHERE GovernmentType='GOVERNMENT_SYNTHETIC_TECHNOCRACY';
 
 
 
@@ -186,7 +264,7 @@ INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
 	VALUES ('SIEGE_DEFENSE_BONUS_VS_RANGED_COMBAT', 'Amount', '10');
 INSERT INTO ModifierStrings (ModifierId, Context, Text)
-	VALUES ('SIEGE_DEFENSE_BONUS_VS_RANGED_COMBAT', 'Preview', '+{1_Amount} Combat Strength against ranged attacks');
+	VALUES ('SIEGE_DEFENSE_BONUS_VS_RANGED_COMBAT', 'Preview', '{LOC_SIEGE_RANGED_DEFENSE_DESCRIPTION}');
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
 	VALUES ('SIEGE_DEFENSE_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
@@ -198,7 +276,7 @@ INSERT INTO Types (Type, Kind)
 INSERT INTO TypeTags (Type , Tag)
 	VALUES ('ABILITY_SIEGE_RANGED_DEFENSE', 'CLASS_SIEGE');
 INSERT INTO UnitAbilities (UnitAbilityType , Name , Description)
-	VALUES ('ABILITY_SIEGE_RANGED_DEFENSE', 'LOC_ABILITY_SIEGE_RANGED_DEFENSE_NAME', 'LOC_ABILITY_SIEGE_RANGED_DEFENSE_DESCRIPTION');
+	VALUES ('ABILITY_SIEGE_RANGED_DEFENSE', 'LOC_PROMOTION_TORTOISE_NAME', 'LOC_PROMOTION_TORTOISE_DESCRIPTION');
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
 	VALUES ('ABILITY_SIEGE_RANGED_DEFENSE', 'SIEGE_DEFENSE_BONUS_VS_RANGED_COMBAT');
 
@@ -288,8 +366,6 @@ UPDATE GlobalParameters SET Value='0' WHERE Name='FAVOR_GRIEVANCES_MINIMUM';
 -- additional niter spawn locations
 INSERT INTO Resource_ValidFeatures (ResourceType , FeatureType)
 	VALUES ('RESOURCE_NITER' , 'FEATURE_FLOODPLAINS');
--- Research Labs give +5 base Science instead of +3
-UPDATE Building_YieldChanges SET YieldChange=5 WHERE BuildingType='BUILDING_RESEARCH_LAB';
 
 -- citizen yields
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' AND DistrictType="DISTRICT_COTHON";

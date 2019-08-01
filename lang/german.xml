@@ -113,7 +113,7 @@
 			<Text>Unpassierbares Naturwunder über ein Geländefeld. Bietet +2 [ICON_FAITH] Glauben und +1 [ICON_Production] Produktion für angrenzende Geländefelder.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="de_DE">
-			<Text>+100% [ICON_PRODUCTION] Produktion für Heilige Stätten und Aquädukte. Heilige Stätten gewähren +2 [ICON_FOOD] Nahrung, +2 [ICON_FAITH] Glauben und +1 [ICON_HOUSING] Wohnraum, wenn sie an einem Fluss platziert werden. Heilige Stätten lösen einen Kulturschock aus.</Text>
+			<Text>+100% [ICON_PRODUCTION] Produktion für Aquädukte. Heilige Stätten gewähren +2 [ICON_FOOD] Nahrung, +2 [ICON_FAITH] Glauben und +1 [ICON_HOUSING] Wohnraum, wenn sie an einem Fluss platziert werden. Heilige Stätten lösen einen Kulturschock aus.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="de_DE">
 			<Text>Alle Landmilitäreinheiten und  religiöse Einheiten erhalten +1 [ICON_Movement] Bewegungspunkt.</Text>
@@ -288,7 +288,7 @@
 		</Replace>
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="de_DE">
-			<Text>+25% [ICON_Production] Produktion für Fernkampfeinheiten. Alle Fernkampfeinheiten erhalten +25% Kampferfahrung. Minen auf strategischen Ressourcen liefern +1 [ICON_Production] Produktion. Minen auf Bonus-Ressourcen und Luxusgütern liefernv +2 [ICON_Gold] Gold.</Text>
+			<Text>Alle Fernkampfeinheiten erhalten +25% Kampferfahrung. Minen auf strategischen Ressourcen liefern +1 [ICON_Production] Produktion. Minen auf Bonus-Ressourcen und Luxusgütern liefernv +2 [ICON_Gold] Gold.</Text>
 		</Replace>
 		<!-- Persia -->
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="de_DE">
@@ -344,9 +344,6 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="de_DE">
 			<Text>Einzigartiges Gebäude des Khmer-Reichs. Gewährt einen Missionar nach dem Bau(, wenn eine Religion gegründet wurde). Missionare, die in dieser Stadt erworben wurden, erhalten die Fähigkeit "Märtyrer", wodurch eine [ICON_GreatWork_Relic] Reliquie erschaffen wird, wenn der Missionar im theologischen Kampf stirbt. Erforderlich für den Erwerb von Aposteln und Inquisitoren mit [ICON_Faith] Glauben.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="de_DE">
-			<Text>Einzigartige Khmer Klassik-Belagerungseinheit, die das Katapult ersetzt und sowohl defensiv als auch offensiv stärker ist. Kann sich in einer Runde sowohl fortbewegen als auch schießen und wendet Kontrollzone an.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="de_DE">
 			<Text>+2 [ICON_FAITH] Glauben für die Khmer von internationalen Handelsrouten zu und von den Khmer. Die sendende Zivilisation erhält +2 [ICON_FAITH] Glauben. +3 [ICON_FAITH] Glauben und +1 [ICON_AMENITIES] Annehmlichkeit durch Unterhaltung für jede Stadt mit einem Aquädukt. Bauernhöfe bieten +2 [ICON_FOOD] Nahrung, wenn diese an ein Aquädukt grenzen.</Text>

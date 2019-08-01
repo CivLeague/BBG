@@ -13,11 +13,6 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('PRASAT_GRANT_MISSIONARY_CPLMOD' , 'Amount' , '1');
 INSERT INTO BuildingModifiers (BuildingType , ModifierId)
     VALUES ('BUILDING_PRASAT' , 'PRASAT_GRANT_MISSIONARY_CPLMOD');
--- Domrey Unique Unit will now be a Catapult replacement that has a higher melee strength and bombard strength
-UPDATE Units SET Combat=33, Bombard=45, Cost=160, Maintenance=2, PrereqTech='TECH_ENGINEERING', MandatoryObsoleteTech='TECH_STEEL' WHERE UnitType='UNIT_KHMER_DOMREY';
-UPDATE UnitUpgrades SET UpgradeUnit='UNIT_BOMBARD' WHERE Unit='UNIT_KHMER_DOMREY';
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType)
-	VALUES ('UNIT_KHMER_DOMREY', 'UNIT_CATAPULT');
 -- Trade routes to or from other civilizations give +2 Faith to both parties
 INSERT INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('TRAIT_INCOMING_TRADE_FAITH_FOR_SENDER', 'MODIFIER_PLAYER_CITIES_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS');
@@ -56,21 +51,17 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD' , 'YieldType' , 'YIELD_FAITH');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD' , 'Description' , 'LOC_DISTRICT_HOLY_SITE_RIVER_FAITH');
--- +100% production to aquaducts and holy sites
+-- +100% production to aquaducts
 INSERT INTO TraitModifiers (TraitType , ModifierId)
 	VALUES
-	('TRAIT_LEADER_MONASTERIES_KING' , 'TRAIT_BOOST_AQUEDUCT_PRODUCTION_CPLMOD'),
-	('TRAIT_LEADER_MONASTERIES_KING' , 'TRAIT_BOOST_HOLYSITE_PRODUCTION_CPLMOD');
+	('TRAIT_LEADER_MONASTERIES_KING' , 'TRAIT_BOOST_AQUEDUCT_PRODUCTION_CPLMOD');
 INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId , OwnerRequirementSetId)
 	VALUES
-	('TRAIT_BOOST_AQUEDUCT_PRODUCTION_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION' , NULL , NULL),
-	('TRAIT_BOOST_HOLYSITE_PRODUCTION_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION' , NULL , NULL);
+	('TRAIT_BOOST_AQUEDUCT_PRODUCTION_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION' , NULL , NULL);
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES
 	('TRAIT_BOOST_AQUEDUCT_PRODUCTION_CPLMOD' , 'DistrictType' , 'DISTRICT_AQUEDUCT' ),
-	('TRAIT_BOOST_AQUEDUCT_PRODUCTION_CPLMOD' , 'Amount'       , '100'               ),
-	('TRAIT_BOOST_HOLYSITE_PRODUCTION_CPLMOD' , 'DistrictType' , 'DISTRICT_HOLY_SITE'),
-	('TRAIT_BOOST_HOLYSITE_PRODUCTION_CPLMOD' , 'Amount'       , '100'               );
+	('TRAIT_BOOST_AQUEDUCT_PRODUCTION_CPLMOD' , 'Amount'       , '100'               );
 
 
 --==============================================================

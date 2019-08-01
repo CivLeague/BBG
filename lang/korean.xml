@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ko_KR">
+            <Text>송수로 특수지구의 건설 시간이 반으로 감소합니다. 성지를 강에 배치할 경우 [ICON_FOOD] 식량 +2, [ICON_FAITH] 신앙 +2 및 [ICON_HOUSING] 주거공간 +1을 제공합니다. 성지는 문화 폭탄을 유발합니다.</Text>
+        </Replace>
 		<Replace Tag="LOC_TECH_STEEL_DESCRIPTION" Language="ko_KR">
 			<Text>제재소 시설에서 [ICON_Production] 생산력 +1을 제공합니다. 플레이어의 모든 도시에 자동으로 요새 전투력 300을 부여하고 원거리 공격을 가능하게 하는 도시 방어를 잠금 해제합니다. 이전의 모든 성벽 시설이 구식으로 변하고 공성 지원 유닛이 효과를 발휘하지 못합니다.</Text>
 		</Replace>
@@ -109,12 +112,6 @@
 		<Replace Tag="LOC_FEATURE_DEVILSTOWER_DESCRIPTION" Language="ko_KR">
 			<Text>통과할 수 없는 타일 1개의 자연경관입니다. 인접 타일에 [ICON_FAITH] 신앙 +2와 [ICON_Production] 생산력 +1을 제공합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ko_KR">
-			<Text>성지 및 송수로 특수지구의 건설 시간이 반으로 감소합니다. 성지를 강에 배치할 경우 [ICON_FOOD] 식량 +2, [ICON_FAITH] 신앙 +2 및 [ICON_HOUSING] 주거공간 +1을 제공합니다. 성지는 문화 폭탄을 유발합니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="ko_KR">
-            <Text>모든 지상 전투 유닛 및 종교 유닛의 [ICON_Movement] 이동력 +1.</Text>
-        </Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="ko_KR">
 			<Text>도시의 극장가 건물 건설에 대한 [ICON_Production] 생산력 +100%를 제공합니다. 엘레오노르의 도시에 있는 각 걸작 때문에 9타일 내의 외국 타일에서 턴당 충성심 -1이 발생합니다. 충성심을 잃어 다른 문명을 떠났고 현재 엘레오노르의 문명에서 가장 많은 턴당 충성심을 얻고 있는 문명은 자유 도시 단계를 생략하고 이 문명에 합류할 수 있습니다.</Text>
 		</Replace>
@@ -279,7 +276,7 @@
 		</Replace>
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ko_KR">
-			<Text>원거리 유닛 생성 시 +25%의 [ICON_Production] 생산력을 받습니다. 모든 원거리 유닛이 +25%의 전투 경험치를 획득합니다. 전략 자원 위에 있는 광산에서 [ICON_Production] 생산력 +1을 제공합니다. 보너스 자원과 사치 자원 위에 있는 광산에서 [ICON_Gold] 금 +2를 제공합니다.</Text>
+			<Text>모든 원거리 유닛이 +25%의 전투 경험치를 획득합니다. 전략 자원 위에 있는 광산에서 [ICON_Production] 생산력 +1을 제공합니다. 보너스 자원과 사치 자원 위에 있는 광산에서 [ICON_Gold] 금 +2를 제공합니다.</Text>
 		</Replace>
 		<!-- Persia -->
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="ko_KR">
@@ -335,9 +332,6 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ko_KR">
 			<Text>크메르 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하는 데 필요합니다. 지어질 때 무료 선교사 1명을 제공합니다. 이 도시에서 구매한 선교사는 신학 전투에서 처치되었을 때 [ICON_GreatWork_Relic] 성유물을 부여하는 순교자 능력을 얻습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="ko_KR">
-			<Text>캐터펄트를 대체하는 크메르 특유의 고전 시대 공성 유닛입니다. 캐터펄트보다 공격력 및 방어력이 모두 강합니다. 같은 턴에 이동 및 발포 가능하며 통제 지역 영향력을 행사합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="ko_KR">
 			<Text>외국 도시와 연결된 모든 [ICON_TradeRoute] 교역로에서 양 문명 모두 [ICON_FAITH] 신앙 +2를 획득합니다. 송수로를 보유한 각 도시는 유흥에 의한 [ICON_FAITH] 신앙 +3 및 [ICON_AMENITIES] 쾌적도 +1을 제공합니다. 농장은 송수로에 인접한 경우 [ICON_FOOD] 식량 +2를 제공합니다.</Text>
