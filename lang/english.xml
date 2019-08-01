@@ -40,6 +40,9 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="en_US">
 			<Text>City Centers gain +1 [ICON_FAITH] Faith and +1 [ICON_FOOD] for every adjacent Desert and Desert Hills tiles. Mines receive -1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold. Additional +1 [ICON_GOLD] Gold on Mines after researching Banking and also Economics. May purchase Commercial Hub district buildings with [ICON_Faith] Faith.</Text>
 		</Replace>
+		<Replace Tag="LOC_ABILITY_CREE_OKIHTCITAW_DESCRIPTION" Language="en_US">
+			<Text>Faster movement in Woods and Rainforest terrain.</Text>
+		</Replace>
 		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="en_US">
 			<Text>Cree unique Ancient era unit that is stronger than and replaces the Scout. Faster [ICON_Movement] Movement in Woods and Rainforest terrain.</Text>
 		</Replace>		
