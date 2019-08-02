@@ -29,13 +29,16 @@
 			<Text>+5 [ICON_Strength] Combat Strength from the Fascism government.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROMOTION_GRAPE_SHOT_DESCRIPTION" Language="en_US">
-			<Text>+7 [ICON_Strength] Attack vs land units.</Text>
+			<Text>+7 [ICON_Bombard] Bombard Strength when attacking land units.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROMOTION_SHRAPNEL_DESCRIPTION" Language="en_US">
-			<Text>+10 [ICON_Strength] Attack vs land units.</Text>
+			<Text>+10 [ICON_Bombard] Bombard Strength when attacking land units.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_ADVANCED_RANGEFINDING_DESCRIPTION" Language="en_US">
+			<Text>+10 [ICON_Bombard] Bombard Strength when attacking naval units.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="en_US">
-			<Text>+7 [ICON_Strength] Attack vs melee and ranged units.</Text>
+			<Text>+7 [ICON_Strength] Combat Strength when attacking melee and ranged units.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="en_US">
 			<Text>City Centers gain +1 [ICON_FAITH] Faith and +1 [ICON_FOOD] for every adjacent Desert and Desert Hills tiles. Mines receive -1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold. Additional +1 [ICON_GOLD] Gold on Mines after researching Banking and also Economics. May purchase Commercial Hub district buildings with [ICON_Faith] Faith.</Text>
@@ -291,9 +294,6 @@
 		<!-- Arabia -->
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="en_US">
 			<Text>The worship building for their Religion can be purchased by any player for just one-tenth of the usual [ICON_Faith] Faith cost. It adds 20% to the [ICON_Science] Science, [ICON_Faith] Faith, and [ICON_Culture] Culture to the city's output.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_GreatProphet] Great Prophet point per turn after researching Astrology. The last available [ICON_GreatProphet] Great Prophet will automatically go to Arabia, if they have not already recruited one. +1 [ICON_Science] Science for each foreign city following Arabia's Religion. </Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="en_US">

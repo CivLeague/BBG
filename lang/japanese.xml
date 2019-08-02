@@ -49,9 +49,6 @@
 		<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="ja_JP">
 			<Text>神殿と寺院が、それぞれ自身の出力する [ICON_Faith] 信仰力と同量の [ICON_PRODUCTION] 生産力を生み出すようになる。</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ja_JP">
-			<Text>[ICON_RESOURCE_CATTLE] 家畜、 [ICON_RESOURCE_SHEEP] 羊、 [ICON_RESOURCE_RICE] 米、 [ICON_RESOURCE_WHEAT] 小麦のあるタイルから食料+1。</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>湿地、オアシス、氾濫原から [ICON_Production] 生産力+1。</Text>
 		</Replace>
@@ -346,9 +343,6 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_KURGAN_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がスキタイの固有の施設であるクルガンを建設できるようになる。[NEWLINE][NEWLINE] [ICON_Faith]信仰力+1 [ICON_Gold]ゴールド+1 隣接する牧草地1つにつき[ICON_Faith]信仰力+1、[ICON_PRODUCTION]生産力+1.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="ja_JP">
-			<Text>占星術を研究した後、ターン毎に大きな大預言者ポイント[ICON_GreatProphet]+1. アラビアの宗教を信仰する他文明の都市ごとに科学力[ICON_Science]を得る。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION" Language="ja_JP">
 			<Text>太古の防壁に取ってかわるグルジア固有の建造物。社会制度「自然保護」に到達すると、[ICON_TOURISM]観光力+3。[ICON_Faith] 信仰力+3。</Text>

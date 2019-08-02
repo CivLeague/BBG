@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+				<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="ru_RU">
+			<Text>Приобретение войск ГГ стоит в 2 раза меньше [ICON_Gold] золота.[NEWLINE]Боевые единицы ГГ получают +4 [ICON_Strength] к боевой мощи, если вы сюзерен (касается и приобретённых у ГГ юнитов).[NEWLINE]Даёт +1 [Icon_Governor] губернаторский титул. +2 посла и +2 влияния в ход на получение послов.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_LAVRA_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный религиозный район России. Заменяет священное место и дешевле стоит.[NEWLINE][NEWLINE]Даёт очки великих [ICON_GREATWRITER] писателей, [ICON_GREATArtist] художников и [ICON_GREATMusician] музыкантов, если в городе есть театральная площадь. Каждый раз, когда в городе израсходован великий человек, его границы растут на 1 клетку.</Text>
+		</Replace>
+		<Replace Tag="LOC_SIEGE_RANGED_DEFENSE_DESCRIPTION" Language="ru_RU">
+			<Text>+10 боевой мощи против дальнобойных атак.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ru_RU">
+			<Text>+100% [ICON_PRODUCTION] производства акведукам. Священные места дают +2 [ICON_FOOD] еды, +2 [ICON_FAITH] веры и +1 [ICON_HOUSING] жилья , если стоят рядом с рекой. При постройке священное место захватывает соседние клетки (культурный захват).</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="ru_RU">
+			<Text>Улучшение, доступное после изучения каменной кладки. Можно построить на пустынных холмах, поймах, полях и лугах. +1 [ICON_Faith] веры. Производит больше в зависимости от того, какие районы находятся рядом (+2 ресурса, соответствующего соседнему району). +2 [ICON_Food] пищи рядом с городским центром.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="ru_RU">
+			<Text>Даёт 3 очка влияния в ход на получение послов, а приобретение войск ГГ стоит в 2 раза меньше.[NEWLINE][NEWLINE]При захвате варварского лагеря получите дополнительный бонус как при исследовании племенной деревни.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет рабочим строить Зикураты, уникальное улучшение Шумеров.[NEWLINE][NEWLINE]+2 [ICON_Science] науки. +1 [ICON_Culture] культуры рядом с рекой. +1 [ICON_CULTURE] культуры после открытия дипломатической службы. +1 [ICON_CULTURE] культуры и +1 [ICON_Science] науки после открытия просвещения. Нельзя строить на холмах.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="ru_RU">
+			<Text>+1 [ICON_Amenities] довольства от всех соседних с этим чудом озерных клеток. +1 [ICON_Food] пищи, +1 [ICON_Production] производства и +2 [ICON_CULTURE] культуры всем озерным клеткам в ваших городах. Может быть построено на озере рядом с землёй.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_FASCISM_ATTACK_BUFF_MODIFIER_DESCRIPTION" Language="ru_RU">
+			<Text>+5 силы от Фашизма</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_FASCISM_ATTACK_BUFF_DESCRIPTION" Language="ru_RU">
+			<Text>+5 [ICON_Strength] боевой мощи от Фашизма.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_GRAPE_SHOT_DESCRIPTION" Language="ru_RU">
+            <Text>+7 к [ICON_Bombard] осадной боевой мощи при атаке наземных юнитов.</Text>
+        </Replace>
+        <Replace Tag="LOC_PROMOTION_SHRAPNEL_DESCRIPTION" Language="ru_RU">
+            <Text>+10 к [ICON_Bombard] осадной боевой мощи при атаке наземных юнитов.</Text>
+        </Replace>
+        <Replace Tag="LOC_PROMOTION_ADVANCED_RANGEFINDING_DESCRIPTION" Language="ru_RU">
+            <Text>+10 к [ICON_Bombard] осадной боевой мощи при атаке морских юнитов.</Text>
+        </Replace>
+        <Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="ru_RU">
+            <Text>+7 к [ICON_Strength] боевой мощи при атаке юнитов ближнего и дальнего боя.</Text>
+        </Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="ru_RU">
+			<Text>Центры города получают +1 [ICON_FAITH] веры и +1 [ICON_FOOD] пищи за каждую соседнюю клетку с пустыней. Рудники дают -1 [ICON_PRODUCTION] производства и +2 [ICON_GOLD] золота. Дополнительно +1 [ICON_GOLD] золота от рудников после изучения банковского дела и экономики. В торговых районах здания можно покупать за [ICON_Faith] веру.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный разведывательный юнит Кри древней эпохи. Быстрее перемещается по лесам и джунглям.</Text>
+		</Replace>		
+		<Replace Tag="LOC_UNIT_WARRIOR_MONK_DESCRIPTION" Language="ru_RU">
+			<Text>Быстрый боевой юнит эпохи Античности с уникальным деревом повышений.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_WARRIOR_MONKS_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет использовать [ICON_Faith] веру для приобретения боевых монахов, боевых юнитов эпохи Античности с уникальным деревом повышений. Открываются при изучении теологии и могут быть куплены в городах, где построено святилище.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ru_RU">
+			<Text>Дополнительное верование при основании религии. Поселенцы и строители получают +1 [ICON_Movement] ОП. +5 [ICON_Faith] веры за каждую встреченную цивилизацию (включая и собственную), у которой есть религия и которая не состоит в войне. Война против Ганди создаёт в 2 раза больше военной усталости.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ru_RU">
             <Text>+100% [ICON_PRODUCTION] производства от акведуков. Священные места дают +2 [ICON_FOOD] еды, +2 [ICON_FAITH] веры и +1 [ICON_HOUSING] жилья, если стоят у реки. Священные места осуществляют культурный захват клеток.</Text>
         </Replace>
@@ -54,9 +111,6 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="ru_RU">
 			<Text>Храмы и святилища производят [ICON_PRODUCTION] производства столько же, сколько и [ICON_Faith] веры.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ru_RU">
-			<Text>+1 [ICON_FOOD] пищи на клетках с [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE] и [ICON_RESOURCE_WHEAT].</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_Production] производства на болотах, в оазисах и поймах рек.</Text>
@@ -350,9 +404,6 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_KURGAN_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям создавать курганы (Уникально для Скифии).[NEWLINE][NEWLINE]+1 [ICON_Faith] веры. +1 [ICON_Gold] золота. [NEWLINE]+1 [ICON_Faith] веры за каждое соседнее пастбище.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="ru_RU">
-			<Text>+1 очко [ICON_GreatProphet] великого пророка в ход после изучения Астрологии. +1 [ICON_Science] науки за каждый иностранный город, следующий религии Аравии.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальное здание Грузии, которое заменяет первые стены и защищает сильнее их. Дает 3 [ICON_TOURISM] ед. туризма после исследования социального института «Охрана природы». Дает 3 [ICON_Faith] ед. веры.</Text>

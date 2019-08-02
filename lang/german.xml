@@ -52,9 +52,6 @@
 		<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="de_DE">
 			<Text>Schreine und Tempel bringen [ICON_PRODUCTION] Produktion, gleich ihrem [ICON_Faith] Glaubens-Ertrag.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_FOOD] Nahrung für Vieh- [ICON_RESOURCE_CATTLE], Schaf- [ICON_RESOURCE_SHEEP], Reis- [ICON_RESOURCE_RICE] und Weizen- [ICON_RESOURCE_WHEAT] Geländefelder.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="de_DE">
 			<Text>Erhalte Glauben [ICON_FAITH] in Höhe von 25% der Kampfstärke der Einheit, wenn eine militärische Einheit produziert wurde.</Text>
 		</Replace>
@@ -360,9 +357,6 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_KURGAN_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Kurgan, die einzigartige Modernisierung Skythiens zu bauen.[NEWLINE][NEWLINE]+1 [ICON_Faith] Glaube und +1 [ICON_Gold] Gold. +1 [ICON_Faith] Glaube und +1 [ICON_PRODUCTION] Produktion für jede angrenzende Weide.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_GreatProphet] Punkt des Typs "Großer Prophet" pro Runde, wenn Astrologie erforscht wurde. +1 [ICON_Science] Wissenschaft für jede fremde Stadt mit Arabiens Religione.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION" Language="de_DE">
 			<Text>Einzigartiges Gebäude von Georgien. Stärker als die Stadtmauern. Bietet 3 [ICON_TOURISM] Tourismus nach Erreichen der Ausrichtung 'Naturschutz'. Bietet 3 [ICON_Faith] Glauben.</Text>

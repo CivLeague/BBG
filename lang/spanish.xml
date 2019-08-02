@@ -352,9 +352,6 @@
 		<Replace Tag="LOC_IMPROVEMENT_KURGAN_DESCRIPTION" Language="es_ES">
 			<Text>Desbloquea la habilidad de Constructor para crear un Kugrán, exclusivo de Escita.[NEWLINE][NEWLINE]+1 a Fe [ICON_Faith]. +1 de Oro [ICON_Gold]. +1 a Fe [ICON_Faith] y +1 de Producción [ICON_PRODUCTION] por cada Pastizal adyacente.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="es_ES">
-			<Text>+1 punto de Gran profeta [ICON_GreatProphet] por turno despues de investigar Atrología. +1 a Ciencia [ICON_Science] por cada ciudad extranjera que siga la religión de Arabia.</Text>
-		</Replace>
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION" Language="es_ES">
 			<Text>Un edificio exclusivo de Georgia que sustituye a las Murallas Antiguas y es mas fuerte. Proporciona 3 de Turismo [ICON_TOURISM] tras avanzar en el principio de Conservación. Proporciona 3 de Fe [ICON_Faith].</Text>
 		</Replace>
