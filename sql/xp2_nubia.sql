@@ -1,3 +1,11 @@
+--==========
+-- Nubia
+--==========
+INSERT INTO Improvement_ValidFeatures (ImprovementType , FeatureType)
+	VALUES
+	('IMPROVEMENT_PYRAMID' , 'FEATURE_FLOODPLAINS_GRASSLAND'),
+	('IMPROVEMENT_PYRAMID' , 'FEATURE_FLOODPLAINS_PLAINS');
+
 
 --==============================================================
 --******			W O N D E R S  (MAN-MADE)			  ******
