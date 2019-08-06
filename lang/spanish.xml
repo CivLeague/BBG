@@ -32,14 +32,17 @@
 			<Text>+5 [ICON_Strength] Fuerza de combate del gobierno del fascismo.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROMOTION_GRAPE_SHOT_DESCRIPTION" Language="en_ES">
-			<Text>+7 [ICON_Strength] Attack vs land units.</Text>
-		</Replace>
-		<Replace Tag="LOC_PROMOTION_SHRAPNEL_DESCRIPTION" Language="en_ES">
-			<Text>+10 [ICON_Strength] Attack vs land units.</Text>
-		</Replace>
-		<Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="en_ES">
-			<Text>+7 [ICON_Strength] Ataque vs unidades cuerpo a cuerpo y a distancia.</Text>
-		</Replace>
+            <Text>+7 [ICON_Bombard] Fuerza de bombardeo al atacar unidades terrestres.</Text>
+        </Replace>
+        <Replace Tag="LOC_PROMOTION_SHRAPNEL_DESCRIPTION" Language="en_ES">
+            <Text>+10 [ICON_Bombard] Fuerza de bombardeo al atacar unidades terrestres.</Text>
+        </Replace>
+        <Replace Tag="LOC_PROMOTION_ADVANCED_RANGEFINDING_DESCRIPTION" Language="en_ES">
+            <Text>+10 [ICON_Bombard] Fuerza de bombardeo al atacar unidades navales.</Text>
+        </Replace>
+        <Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="en_ES">
+            <Text>+7 [ICON_Strength] Fuerza de combate al atacar unidades cuerpo a cuerpo y a distancia.</Text>
+        </Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="en_ES">
 			<Text>Los centros de la ciudad obtienen +1 [ICON_FAITH] Fe y +1 [ICON_FOOD] Alimentos por cada colina de desierto y espacios de desierto que están adyacentes. Las minas reciben -1 [ICON_PRODUCTION] Producción y +2 [ICON_GOLD] Oro. Oro adicional +1 [ICON_GOLD] sobre minas después de investigar banca, así como economía. Puede comprar edificios de distrito commercial con [ICON_Faith] Fe.</Text>
 		</Replace>
