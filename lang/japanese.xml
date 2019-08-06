@@ -180,9 +180,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>宗教を設立するときに追加の信仰を獲得できる。開拓者と労働者は移動力[ICON_Movement]+1。宗教を創始しており、インドと戦争状態ではない文明（インドを含む）と遭遇すると、そのつど+5[ICON_Faith]信仰力と+1[ICON_Favor]外交支持。ガンジーを相手に戦う文明は、戦争による疲労が2倍になる。</Text>
 		</Replace>
-		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>都市を発展させるローマ固有の区域。用水路に取ってかわり、より安価に建設できる。隣接している異なる区域1つにつき[ICON_Culture]文化+1。[NEWLINE][NEWLINE]隣接する川、湖、オアシス、山岳から真水を都市にもたらす。都市に真水がまだ供給されていなかった場合は最大で[ICON_Housing]住宅+6を獲得。真水がすでに引かれている都市は[ICON_Housing]住宅+2。地熱孔に隣接していると[ICON_Afix]快適性+1。いずれの場合も浴場の特別ボーナスとして[ICON_Housing] 住宅+2、[ICON_Afix]快適性+1。干ばつ中に[ICON_Food]食糧が失われない。都心に隣接している必要がある。</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>通常より早い段階で艦隊と大艦隊を編成できる（傭兵と重商主義）。大陸間にまたがる[ICON_TradeRoute]交易路が存在する場合、他文明と結ばれた交易路には[ICON_Gold]ゴールドのボーナス、自分の都市同士を結ぶ交易路には[ICON_Food]食糧と[ICON_Production]生産力のボーナスが発生する。最初の[ICON_Capital]首都と異なる大陸に位置する都市の都心に隣接していると、その都市でのターン毎の忠誠心+2。</Text>
 		</Replace>
@@ -249,10 +246,6 @@
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ja_JP">
 			<Text>軍事ユニットはこの宗教を信仰している他文明の近くで戦闘力[ICON_Strength]+7 を得る。</Text>
-		</Replace>
-		<!-- Goddess of the Harvest Pantheon -->
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HARVEST_DESCRIPTION" Language="ja_JP">
-			<Text>資源を収穫するかその特徴を取り除くと、ほかの収穫と同じ量の信仰力[ICON_Faith] の50％を得る。</Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ja_JP">

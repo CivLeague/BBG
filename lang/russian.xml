@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-				<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="ru_RU">
+		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="ru_RU">
 			<Text>Приобретение войск ГГ стоит в 2 раза меньше [ICON_Gold] золота.[NEWLINE]Боевые единицы ГГ получают +4 [ICON_Strength] к боевой мощи, если вы сюзерен (касается и приобретённых у ГГ юнитов).[NEWLINE]Даёт +1 [Icon_Governor] губернаторский титул. +2 посла и +2 влияния в ход на получение послов.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_LAVRA_DESCRIPTION" Language="ru_RU">
@@ -58,9 +58,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ru_RU">
 			<Text>Дополнительное верование при основании религии. Поселенцы и строители получают +1 [ICON_Movement] ОП. +5 [ICON_Faith] веры за каждую встреченную цивилизацию (включая и собственную), у которой есть религия и которая не состоит в войне. Война против Ганди создаёт в 2 раза больше военной усталости.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ru_RU">
-            <Text>+100% [ICON_PRODUCTION] производства от акведуков. Священные места дают +2 [ICON_FOOD] еды, +2 [ICON_FAITH] веры и +1 [ICON_HOUSING] жилья, если стоят у реки. Священные места осуществляют культурный захват клеток.</Text>
-        </Replace>
 		<Replace Tag="LOC_TECH_STEEL_DESCRIPTION" Language="ru_RU">
 			<Text>Лесопилка дает +1 [ICON_Production] производства. Открывает городские укрепления, автоматически дающие всем вашим городам по 300 ед. мощи при обороне и способность к дальнобойной атаке. Все предыдущие улучшения стен и осадные юниты поддержки становятся неэффективными.</Text>
 		</Replace>
@@ -124,9 +121,6 @@
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_Amenities] довольства, +3 [ICON_FOOD] пищи и +3 [ICON_Housing] жилья в городах с [ICON_Governor] губернаторами.[NEWLINE]-2 лояльности в городах без [ICON_Governor] губернаторов.[NEWLINE]Даёт +2 [Icon_Governor] губернаторских титула.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="ru_RU">
-			<Text>Мобилизация войск городов-государств стоит вдвое меньше [ICON_Gold] золота.[NEWLINE]Юниты города-государства получают +4 к [ICON_Strength] боевой мощи, если вы являетесь его сюзереном (в том числе мобилизованные войска).[NEWLINE]Дает +1 [Icon_Governor] губернаторский титул. +2 Influence per turn towards envoys.</Text>
-		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный венгерский юнит Средневековья. Заменяет летучие отряды. +2 [ICON_Strength] боевой мощи за каждый соседний мобилизованный юнит.</Text>
 		</Replace>
@@ -174,9 +168,6 @@
 		</Replace>
 		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="ru_RU">
 			<Text>+100% к [ICON_Production] производству осадных юнитов и стен.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="ru_RU">
-			<Text>Центры городов получают +1 [ICON_FAITH] к вере и +1 [ICON_FOOD] к пище за каждую соседнюю клетку пустыни и пустынных холмов. Рудники получают -1 [ICON_PRODUCTION] производства и +4 [ICON_GOLD] золота. Здания центра коммерции можно покупать за [ICON_Faith] веру.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный район Кореи для научных исследований. Заменяет кампус. +2 [ICON_SCIENCE] науки. Соседние театральные площади получают +1 к [ICON_CULTURE] культуре. Можно строить только на холмах.</Text>
@@ -241,9 +232,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Дополнительное верование при основании Религии. Поселенцы и Строители получают +1 [ICON_Movement] ОП. + 5 [ICON_Faith] Веры и +1 [ICON_Favor] ед. мирового влияния в ход за каждую известную им цивилизацию (включая Индию), которая основала Религию и в настоящее время не воюет. Враждебные цивилизации , воюющие с Ганди, получают в два раза больше усталости от войны.</Text>
 		</Replace>
-		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный римский район, который заменяет Акведук и дешевле в строительстве. +1 [ICON_Culture] культура за каждый соседний район. [NEWLINE] Поставляет в город пресную воду из соседней реки, озера, оазиса или с гор. Города без начального доступа к пресной воде получают до 6 [ICON_Housing] ед. жилья. Города с изначальным доступом к пресной воде получают +2 [ICON_Housing] ед. жилья. Если построено по соседству с геотермальным полем, то получает + 1 [ICON_Amenities] к довольству. бани всегда дают дополнительный бонус +2 [ICON_Housing] к жилью и + 1 [ICON_Amenities] к довольству. Предотвращает потери [ICON_Food]  пищи во время засухи. Можно построить только рядом с центром города.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Можно создавать флоты и армады раньше обычного (Наемники и Меркантилизм). Бонусы от межконтинентальных [ICON_TradeRoute] торговых путей ( в [ICON_Gold] золоте, если к другим цивилизациям; в [ICON_Food] пище и [ICON_Production] производстве, если внутри страны. +2 лояльности за ход, если рядом с центром города построена миссия, а сам город не находится на континенте, где расположена [ICON_Capital] столица.</Text>
 		</Replace>
@@ -292,10 +280,6 @@
 		<Replace Tag="LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_DESCRIPTION" Language="ru_RU">
 			<Text>Египетская уникальная тяжёлая кавалерия древней эпохи. 4 [ICON_Movement] ОП, если ход начат в открытой местности.</Text>
 		</Replace>
-		<!-- Rome -->
-		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="ru_RU">
-			<Text>Соседство: +1 [ICON_Culture] культуры за каждый соседний район.</Text>
-		</Row>
 		<!-- Gov -->
 		<!-- Pantheons -->
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_NAME" Language="ru_RU">
@@ -310,10 +294,6 @@
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ru_RU">
 			<Text>Военные юниты получают +7 [ICON_Strength] боевой мощи на территории иностранных городов, исповедующими эту религию.</Text>
-		</Replace>
-		<!-- Goddess of the Harvest Pantheon -->
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HARVEST_DESCRIPTION" Language="ru_RU">
-			<Text>Удаление бонусных ресурсов и элементов ландшафта дает также очки [ICON_FAITH] веры в количестве 50%</Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ru_RU">
@@ -434,9 +414,6 @@
 		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальное здание ацтеков. Дает [ICON_Amenities] довольство, +3 очка [ICON_Culture] культуры и 1 очко [ICON_GreatGeneral] великого полководца.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="ru_RU">
-			<Text>Улучшение, доступное после изучения каменной кладки. Можно построить только в пустыне, на холмах в пустыне, на равнине или в пойме реки. +1 [ICON_Faith] веры. Дополнительные бонусы от соседних районов. +2 [ICON_Food] пищи, если граничит с центром города. Для остальных районов с бонусами за соседство: +2 ед. соответствующего ресурса при соседстве с районом.</Text>
-		</Replace>
 		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="ru_RU">
 			<Text>Чудо природы. Занимает три клетки. Дает +2 [ICON_FOOD] еды, +2 [ICON_PRODUCTION] производства и +2 [ICON_SCIENCE] науки.</Text>
 		</Replace>
@@ -502,9 +479,6 @@
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_2" Language="ru_RU">
 			<Text>«Перо, кисть, голос»: каждое вызванное [ICON_CivicBoosted] вдохновение прибавляет +1 очко к счету эпохи. +1 очко к счету эпохи за постройку здания с ячейкой для шедевра. При выборе в начале золотого века [ICON_CivicBoosted] вдохновение дает дополнительно 10% стоимости социальных институтов. Каждый город получает +2 [ICON_Culture] культуры и +2 [ICON_Gold] золота за каждый специализированный район.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ru_RU">
-			<Text>Дополнительное верование при основании религии. +1 [ICON_Movement] ОП поселенцам и строителям. +5 [ICON_Faith] веры за каждую известную им цивилизацию (включая Индию), которая основала религию и в настоящее время не воюет. Враждебные цивилизации, воюющие с Ганди, получают в два раза больше усталости от войны.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям строить чемамюль – уникальную постройку мапуче.[NEWLINE][NEWLINE]Производит [ICON_CULTURE] культуру в количестве, равном 75% престижа клетки, а также +1 [ICON_PRODUCTION]. Ещё +1 [ICON_PRODUCTION] производства при изучении Гражданской Службы. Дополнительный [ICON_TOURISM] туризм после исследования авиации. Необходим потрясающий престиж.</Text>

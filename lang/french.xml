@@ -126,9 +126,6 @@
 		<Replace Tag="LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive à l'Égypte, cette unité d'attaque à distance de l'Antiquité dispose de 4 [ICON_Movement] PM quand elle commence son tour en terrain dégagé.</Text>
 		</Replace>
-		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="fr_FR">
-			<Text>Proximité: [ICON_Culture] Culture +1 pour chaque quartier adjacent.</Text>
-		</Row>
 		<!-- --------------- ESPAGNE --------------- -->
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire une mission, exclusive à l'Espagne. [NEWLINE][NEWLINE][ICON_Faith] Foi +2. [ICON_Faith] Foi +2, [ICON_PRODUCTION] Production +1 et [ICON_FOOD] Nourriture +1 en cas de construction sur un continent différent de votre [ICON_Capital] capitale. [ICON_Science] Science +1 pour chaque campus et lieu saint adjacent. [ICON_SCIENCE] Science +2 après avoir adopté les Lumières. +1 [ICON_HOUSING] Habitations +1 après avoir adopté la Fonction Publique.</Text>
@@ -267,10 +264,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Loyauté +5 par tour dans les villes occupées possédant une unité en garnison. Déclarer une Guerre Surprise compte comme pour une Guerre Formelle dans le calcul des [ICON_STAT_GRIEVANCE] Griefs et du Bellicisme.</Text>
 		</Replace>
-		<!-- --------------- ROME --------------- -->
-		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Quartier exclusif à Rome, remplaçant l'aqueduc à moindres coûts et favorisant la croissance démographique. [ICON_Culture] Culture +1 pour chaque quartier adjacent. [NEWLINE][NEWLINE]Achemine de l'eau douce depuis une rivière, un lac, un oasis ou une montagne adjacent. Les villes dépourvues d'eau douce reçoivent un bonus de 6 [ICON_Housing] habitations, tandis que les villes en possédant ne reçoivent que 2 [ICON_Housing] habitations supplémentaires. Dans les deux cas, les thermes offrent un bonus de 2 [ICON_Housing] habitations et une [ICON_Amenities] activité. [ICON_Amenities] Activités +1 si construit sur une case adjacente à une fissure géothermique. Doivent être adjacents au centre-ville.</Text>
-		</Replace>
 		<!-- --------------- RUSSIE --------------- -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive à la Russie, cette unité de l'ère industrielle qui remplace la Cavalerie peut se déplacer après l'attaque s'il lui reste des [ICON_Movement] PM. [ICON_Strength] Puissance de combat +5 sur les cases de son territoire ou adjacentes.</Text>
@@ -332,9 +325,6 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_SACRED_PATH_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Faith] Foi +1 pour les lieux saints adjacents à des cases de Forêt ou de Forêt Tropicale.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HARVEST_DESCRIPTION" Language="fr_FR">
-			<Text>Récolter une ressource ou supprimer des caractéristiques de terrain fournit 50% du montant de la récolte en [ICON_Faith] foi.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="fr_FR">
 			<Text>Chaque lieu saint ou place du théâtre d'une ville convertie à cette religion fournit respectivement [ICON_Faith] foi +2 ou [ICON_Culture] culture +2.</Text>
@@ -526,14 +516,17 @@
 			<Text>+5 [ICON_Strength] Puissance de Combat dû au Fascisme.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROMOTION_GRAPE_SHOT_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Ranged] Puissance d'attaque à distance +7 contre les unités terrestres.</Text>
-		</Replace>
-		<Replace Tag="LOC_PROMOTION_SHRAPNEL_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Bombard] Puissance de bombardement +10 contre les unités terrestres.</Text>
-		</Replace>
-		<Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Strength] Puissance d'attaque +7 contre les unités de combat rapproché et d'attaque à distance.</Text>
-		</Replace>
+            <Text>+7 [ICON_Bombard] Puissance de Bombardement en attaquant des unités terrestres.</Text>
+        </Replace>
+        <Replace Tag="LOC_PROMOTION_SHRAPNEL_DESCRIPTION" Language="fr_FR">
+            <Text>+10 [ICON_Bombard] Puissance de Bombardement en attaquant des unités terrestres.</Text>
+        </Replace>
+        <Replace Tag="LOC_PROMOTION_ADVANCED_RANGEFINDING_DESCRIPTION" Language="fr_FR">
+            <Text>+10 [ICON_Bombard] Puissance de Bombardement en attaquant des unités navales.</Text>
+        </Replace>
+        <Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="fr_FR">
+            <Text>+7 [ICON_Strength] Puissance de Combat en attaquant des unités de Mêlée ou de Combat à Distance.</Text>
+        </Replace>
 		
 	</LocalizedText>
 </GameData>

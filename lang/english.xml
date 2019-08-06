@@ -269,9 +269,6 @@
 		<Replace Tag="LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_DESCRIPTION" Language="en_US">
 			<Text>Egyptian unique Ancient era ranged unit. 4 [ICON_Movement] Movement when starting in open terrain.</Text>
 		</Replace>
-		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="en_US">
-			<Text>Adjacency: +1 [ICON_Culture] Culture for each adjacent district.</Text>
-		</Row>
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_NAME" Language="en_US">
 			<Text>God of War and Plunder</Text>
 		</Replace>
@@ -430,9 +427,6 @@
 		<!---->
 		<!---->
 		<!--===============   P A N T H E O N S   ===============-->
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HARVEST_DESCRIPTION" Language="en_US">
-			<Text>Harvesting a resource or removing a feature receives [ICON_Faith] Faith equal to 50% of the other yield's quantity.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="en_US">
 			<Text>+3 [ICON_Faith] Faith from Quarries.</Text>
 		</Replace>		

@@ -266,9 +266,6 @@
 		<Replace Tag="LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_DESCRIPTION" Language="ko_KR">
 			<Text>이집트 특유의 고대 시대 원거리 유닛입니다. 개방 지형에서 턴을 시작하는 경우 [ICON_Movement] 이동력이 4가 됩니다.</Text>
 		</Replace>
-		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="ko_KR">
-			<Text>인접효과: 인접한 특수지구 하나당 [ICON_Culture] 문화가 +1 증가합니다.</Text>
-		</Row>
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_NAME" Language="ko_KR">
 			<Text>전쟁과 약탈의 신</Text>
 		</Replace>
@@ -430,9 +427,6 @@
 		<!---->
 		<!---->
 		<!--===============   P A N T H E O N S   ===============-->
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HARVEST_DESCRIPTION" Language="ko_KR">
-			<Text>자원 수확 또는 지형 제거를 통해 획득하는 수확량의 50% 만큼의 [ICON_Faith] 신앙을 획득합니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="ko_KR">
 			<Text>채석장에서 [ICON_Faith] 신앙 +3을 획득합니다.</Text>
 		</Replace>	

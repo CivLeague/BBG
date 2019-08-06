@@ -190,9 +190,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Gewährt einen zusätzlichen Glaubenssatz, beim Gründen der Religion. Siedler und Handwerker erhalten +1 [ICON_Movement] Fortbewegungspunkt. +5 [ICON_Faith] Glauben und +1 [ICON_Favor] Diplomatische Gunst pro Runde für jede getroffene Zivilisation(einschließlich Indien), die eine Religion gegründet hat und sich nicht im Krieg befindet. Feindliche Zivilisationen erhalten die doppelte Kriegsmüdigkeit beim Kampf gegen Gandhi.</Text>
 		</Replace>
-		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Ein Bezirk, der das Wachstum der Stadt fördert. Steht nur Rom zur Verfügung. Ersetzt das Aquädukt und ist günstiger im Bau. +1 [ICON_Culture] Kultur für jeden angrenzenden Bezirk.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzenden Fluss, See, Berg oder einer angrenzenden Oase. Städte ohne Süßwasserwuelle erhalten bis zu 6 [ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben, erhalten stattdessen +2 [ICON_Housing] Wohnraum. +1 [ICON_Amenities] Annehmlichkeit beim Bau neben einem geothermischen Riss. In allen Fällen bietet ein Bad einen zusätzlichen Bonus von +2 [ICON_Housing] Wohnraum +1 [ICON_Amenities] Annehmlichkeit. Verhindert [ICON_Food] Nahrungsverlust während einer Dürre. Muss ans Stadtzentrum angrenzen.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Erstellt Flotten und Armadas früher als normal (Söldner und Merkantilismus). Kontinente verbindende [ICON_TradeRoute] Handelswege zu anderen Zivilisationen erhalten einen [ICON_Gold] Gold-Bonus und zu Euren eigenen Städten [ICON_Food] Nahrungs- und [ICON_Production] Produktions-Bonusse. +2 Loyalität pro Runde für Städte mit einer ans Stadtzentrum angrenzenden Missionsmodernisierung, die nicht auf dem Kontinent Eurer ursprünglichen [ICON_Capital] Hauptstadt liegen.</Text>
 		</Replace>
@@ -241,10 +238,6 @@
 		<Replace Tag="LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_DESCRIPTION" Language="de_DE">
 			<Text>Spezielle Fernkampfeinheit der Ägypter der Antike. 4 [ICON_Movement] Fortbewegung bei Start in offenem Gelände.</Text>
 		</Replace>
-		<!-- Rome -->
-		<Row Tag="LOC_DISTRICT_BATH_DESCRIPTION_ADJACENCY" Language="de_DE">
-			<Text>Nachbarschaftsbonus: +1 [ICON_Culture] Kultur für jeden angrenzenden Bezirk.</Text>
-		</Row>
 		<!-- Gov -->
 		<!-- Pantheons -->
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_NAME" Language="de_DE">
@@ -263,10 +256,6 @@
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="de_DE">
 			<Text>Kampfeinheiten erhalten +7 [ICON_Strength] bei fremden Städten mit dieser Religion.</Text>
-		</Replace>
-		<!-- Goddess of the Harvest Pantheon -->
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_THE_HARVEST_DESCRIPTION" Language="de_DE">
-			<Text>Der Abbau einer Ressource und das Entfernen einer Geländeart bringen [ICON_Faith] Glauben in 50% der Höhe der Ertragsmenge.</Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="de_DE">

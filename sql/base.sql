@@ -138,9 +138,7 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
 	VALUES ('REQUIRES_PLOT_HAS_FLOODPLAINS_CPL', 'REQUIREMENTSET_TEST_ANY');
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 	VALUES ('REQUIRES_PLOT_HAS_FLOODPLAINS_CPL', 'REQUIRES_PLOT_HAS_FLOODPLAINS');
--- Sphinx now allowed to be adjacent to each other, along with yield improvements
-UPDATE Improvements SET SameAdjacentValid=1 WHERE ImprovementType='IMPROVEMENT_SPHINX';
--- Base Faith Increased to 2 (from 1)
+-- Sphinx base Faith Increased to 2 (from 1)
 UPDATE Improvement_YieldChanges SET YieldChange=2 WHERE ImprovementType='IMPROVEMENT_SPHINX' AND YieldType='YIELD_FAITH';
 -- +1 Faith and +1 Culture if adjacent to a wonder, instead of 2 Faith.
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='SPHINX_WONDERADJACENCY_FAITH' AND Name='Amount';
@@ -898,9 +896,9 @@ INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE' , 'REQUIRES_CITY_HAS_HOLY_SITE');
 -- Warrior Monks only require a shrine and now work with Classical Great Generals
 UPDATE Units SET PrereqCivic='CIVIC_THEOLOGY' WHERE UnitType='UNIT_WARRIOR_MONK';
-UPDATE Unit_BuildingPrereqs SET PrereqBuilding='BUILDING_SHRINE' WHERE PrereqBuilding='BUILDING_TEMPLE';
-DELETE FROM Unit_BuildingPrereqs WHERE PrereqBuilding='BUILDING_STAVE_CHURCH';
-DELETE FROM Unit_BuildingPrereqs WHERE PrereqBuilding='BUILDING_PRASAT';
+DELETE FROM Unit_BuildingPrereqs WHERE PrereqBuilding='BUILDING_STAVE_CHURCH' AND Unit='UNIT_WARRIOR_MONK';
+DELETE FROM Unit_BuildingPrereqs WHERE PrereqBuilding='BUILDING_PRASAT' AND Unit='UNIT_WARRIOR_MONK';
+UPDATE Unit_BuildingPrereqs SET PrereqBuilding='BUILDING_SHRINE' WHERE PrereqBuilding='BUILDING_TEMPLE' AND Unit='UNIT_WARRIOR_MONK';
 -- Work Ethic now provides production equal to base yield for Shrine and Temple
 DELETE From BeliefModifiers WHERE ModifierId='WORK_ETHIC_FOLLOWER_PRODUCTION';
 INSERT INTO Modifiers 
