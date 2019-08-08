@@ -117,6 +117,8 @@ INSERT INTO ModifierStrings (ModifierId , Context , Text)
 --==================
 -- Egypt
 --==================
+-- Sphinx now allowed to be adjacent to each other
+UPDATE Improvements SET SameAdjacentValid=1 WHERE ImprovementType='IMPROVEMENT_SPHINX';
 -- wonder and district on rivers bonus increased to 25%
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RIVER_FASTER_BUILDTIME_WONDER';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RIVER_FASTER_BUILDTIME_DISTRICT';

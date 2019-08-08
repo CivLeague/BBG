@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="ja_JP">
+			<Text>都市国家から徴用を行う際の必要[ICON_Gold]ゴールド-50%。[NEWLINE]自身が宗主国である都市国家の、徴用されたものを含む全ユニットの[ICON_Strength]戦闘力+4。[NEWLINE][Icon_Governor]総督の昇進1つを獲得。代表団2つと、代表団を得るためのターンごとの影響力＋2。</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_LAVRA_DESCRIPTION" Language="ja_JP">
+			<Text>聖地の代替となるロシアに固有の区域。建設コストが低い。[NEWLINE][NEWLINE]この都市に劇場区域が存在する場合、[ICON_GREATWRITER]大著述家、[ICON_GREATArtist]大芸術家、[ICON_GREATMusician]大音楽家ポイントを産出する。 この都市で偉人を獲得するごとに都市の境界が1タイルずつ拡張する。</Text>
+		</Replace>
+		<Replace Tag="LOC_SIEGE_RANGED_DEFENSE_DESCRIPTION" Language="ja_JP">
+			<Text>遠隔攻撃に対して防衛を行う際の[ICON_Strength]戦闘力+10。</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ja_JP">
-            <Text>用水路に対する[ICON_PRODUCTION]生産力+100%。河川に隣接した聖地が[ICON_FOOD]食料+2、[ICON_FAITH]信仰力+2、[ICON_HOUSING]住宅+1を供給する。聖地の建造で文化爆弾が発動する。</Text>
-        </Replace>
+			<Text>上水道に対する[ICON_PRODUCTION]生産力+100%。河川に隣接する聖地が[ICON_FOOD]食料+2、[ICON_FAITH]信仰力+2、[ICON_HOUSING]住宅+1を供給する。聖地の建設で文化爆弾が発動する。</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="ja_JP">
+			<Text>石工術の技術によって解禁される改善。草原、平原、砂漠、丘陵の砂漠あるいは氾濫原にしか建設できない。[ICON_Faith]信仰力+1。隣接する区域によって追加の産出を得る。都心に隣接している場合[ICON_Food]食料+2。その他のタイル産出がある区域に隣接している場合、該当する出力と同じ種類のものを2得る。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="ja_JP">
+			<Text>代表団を得るための影響力を毎ターン追加で3獲得し、都市国家から徴用を行う際のコストが半分になる。[NEWLINE][NEWLINE]蛮族の野営地を討伐した際、通常の[ICON_Gold]ゴールド報酬に加えて集落からのボーナスも得る。</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="ja_JP">
+			<Text>労働者がシュメール固有の改善であるジッグラトを建設できるようになる。[NEWLINE][NEWLINE]河川に隣接している場合[ICON_Science]科学力+2、[ICON_Culture]文化力+1。外交官の社会制度を解禁すると追加で[ICON_CULTURE]文化力+1。啓蒙思想の社会制度を解禁するとさらに追加で[ICON_Science]科学力+1および[ICON_CULTURE]文化力+1。丘陵上には建設できない。</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="ja_JP">
+			<Text>この遺産に接する湖タイルの数と同じ数だけ娯楽からの[ICON_Amenities]快適性を得る。 自文明のすべての湖における[ICON_Food]食料+1、[ICON_Production]生産+1、[ICON_CULTURE]文化+2。陸タイルに隣接した湖にしか建設できない。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_FASCISM_ATTACK_BUFF_MODIFIER_DESCRIPTION" Language="ja_JP">
+			<Text>ファシズムによる戦闘力+5</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_FASCISM_ATTACK_BUFF_DESCRIPTION" Language="ja_JP">
+			<Text>ファシズムの政治体制により[ICON_Strength]戦闘力+5。</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_GRAPE_SHOT_DESCRIPTION" Language="ja_JP">
+			<Text>陸上ユニットを攻撃する際の[ICON_Bombard]砲撃戦闘力+7。</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_SHRAPNEL_DESCRIPTION" Language="ja_JP">
+			<Text>陸上ユニットを攻撃する際の[ICON_Bombard]砲撃戦闘力+10。</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_ADVANCED_RANGEFINDING_DESCRIPTION" Language="ja_JP">
+			<Text>海上ユニットを攻撃する際の[ICON_Bombard]砲撃戦闘力+10。</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="ja_JP">
+			<Text>白兵または遠隔戦闘ユニットを攻撃する際の[ICON_Bombard]砲撃戦闘力+10。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="ja_JP">
+			<Text>都心が隣接する砂漠および丘陵の砂漠と同じ数だけ追加で[ICON_FAITH]信仰力と[ICON_FOOD]食料を得る。すべての鉱山の[ICON_PRODUCTION]生産力-1、[ICON_GOLD]ゴールド+2。銀行制度と経済学の技術、それぞれを解禁すると追加の[ICON_GOLD]ゴールド+1。この区域の建造物を[ICON_Faith]信仰力によって購入できる。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_CREE_OKIHTCITAW_DESCRIPTION" Language="ja_JP">
+			<Text>森林及びジャングルでの移動力が高い。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="ja_JP">
+			<Text>斥候を代替するクリー固有のユニット。斥候よりも強力で、森林及びジャングルでの[ICON_Movement]移動力が高い。</Text>
+		</Replace>		
+		<Replace Tag="LOC_UNIT_WARRIOR_MONK_DESCRIPTION" Language="ja_JP">
+			<Text>移動力が高く固有の昇進ツリーを持つ中世の陸上ユニット。</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_WARRIOR_MONKS_DESCRIPTION" Language="ja_JP">
+			<Text>[ICON_Faith]信仰力で、移動力が高く固有の昇進ツリーを持つ中世の陸上ユニットである武僧を訓練できるようになる。訓練は神学の社会制度を解禁後、神殿を持つ聖地のある都市でしか行えない。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ja_JP">
+			<Text>宗教を創始した際に追加の信仰を1つ得る。開拓者と労働者の[ICON_Movement]移動力+1。自文明を含む主要文明のうち、戦争状態でなくかつすでに宗教を創始している文明1つごとに[ICON_Faith]信仰力+5。自文明と戦争している文明はその戦争における疲労が2倍になる。</Text>
+		</Replace>
 		<Replace Tag="LOC_TECH_STEEL_DESCRIPTION" Language="ja_JP">
 			<Text>製材所の施設の [ICON_Production] 生産力+1。都市防衛を解除し、すべての都市に自動的に防衛力300と長距離攻撃能力をもたらす。これまでの防壁施設はすべて廃れ、攻城支援ユニットは有効性を失う。</Text>
 		</Replace>
@@ -61,9 +118,6 @@
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="ja_JP">
 			<Text>[ICON_Governor] 総督が置かれている都市の [ICON_Amenities] 快適性+1、 [ICON_FOOD] 食料+3、 [ICON_Housing] 住宅+3。[NEWLINE][ICON_Governor] 総督が置かれていない都市の忠誠度-2。[NEWLINE][ICON_Governor] 総督の昇進を2つ獲得。</Text>>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="ja_JP">
-			<Text>都市国家の徴用に必要な [ICON_Gold] ゴールド-50%。[NEWLINE]宗主国である場合、その都市国家が持つユニットの [ICON_Strength] 戦闘力+4。（徴用されたユニットを含む）[NEWLINE][ICON_Governor] 総督の昇進を1つ獲得。代表団を得るためのターンごとのポイント+2。</Text>>
-		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="ja_JP">
 			<Text>コーサーの代替となるハンガリー固有のユニット。隣接する徴用されたユニット1つにつき [ICON_Strength] 戦闘力+2。</Text>
 		</Replace>
@@ -111,9 +165,6 @@
 		</Replace>
 		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="ja_JP">
 			<Text>防御施設と攻城ユニットに対する[ICON_PRODUCTION]生産力+100%。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="ja_JP">
-			<Text>隣接する砂漠や砂漠の丘陵タイル1つにつき、都心の[ICON_FAITH]信仰力+1、[ICON_FOOD]食料+1。[NEWLINE]鉱山の[ICON_PRODUCTION]生産力-1、[ICON_GOLD]ゴールド+4。[NEWLINE]商業ハブ区域の建造物を[ICON_FAITH]信仰力で購入できる。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ja_JP">
 			<Text>キャンパスに取ってかわる韓国固有の区域。丘陵にのみ建設できる。[NEWLINE]基本隣接ボーナスとして[ICON_SCIENCE]科学力+2をもち、劇場区域に隣接すると[ICON_CULTURE]文化力+1。</Text>
@@ -372,9 +423,6 @@
 		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="ja_JP">
 			<Text>アステカ固有の建造物。[ICON_Amenities] 快適性+1、[ICON_CULTURE] 文化力+3、ターンごとに [ICON_GreatGeneral] 大将軍ポイント+1。</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="ja_JP">
-			<Text>石工術によって解除される施設。砂漠、砂漠(丘陵)、氾濫原、平野にのみ建設可能。 [ICON_Faith] 信仰力+1。隣接する区域からの産出量が増加する。都心に隣接している場合、[ICON_Food] 食料+2。その他隣接ボーナスが発生する区域が隣接している場合、該当するボーナスが+2。</Text>
-		</Replace>
 		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="ja_JP">
 			<Text>3タイルの自然遺産。[ICON_FOOD] 食料+2、[ICON_PRODUCTION] 生産力+2、[ICON_SCIENCE] 科学力+2。</Text>
 		</Replace>
@@ -443,9 +491,6 @@
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_2" Language="ja_JP">
 			<Text>ペン・筆・声: 天啓を得るたびに時代スコア+1。 傑作スロットがある建造物を建てるごとに時代スコア+1。黄金時代の公約として選択された場合、[ICON_CivicBoosted] 天啓によるボーナスが10%増加し、各都市は専門区域ごとに[ICON_Culture] 文化力+2と[ICON_Gold] ゴールド+2を得る。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ja_JP">
-			<Text>労働者と開拓者の移動力[ICON_Movement]+1。宗教を創始しており、戦争状態ではない文明インドを含む)と遭遇すると、そのつど[ICON_Faith]信仰力+5。ガンジーを相手に戦う文明は、戦争による疲労が2倍になる。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がマプチェの固有施設「ケマムル」を建設できるようになる。[NEWLINE][NEWLINE]　[ICON_CULTURE]文化力+1、さらにタイルのアピールの75%に相当する [ICON_CULTURE]文化力が得られる。 [ICON_PRODUCTION] 生産力+1 公務員制度から追加で[ICON_PRODUCTION]生産力+1 航空技術を研究した後は、[ICON_TOURISM] 観光力がさらに高まる。「最高」以上のアピールが必要。</Text>
