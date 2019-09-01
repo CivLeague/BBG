@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_FILM_STUDIO_DESCRIPTION" Language="es_ES">
+			<Text>Un edificio exclusivo de América. +50% a la presión del Turismo [ICON_Tourism] por esta ciudad a otras civilizaciones en la Época Moderna.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="es_ES">
+			<Text>Unidad de asedio exclusiva jémer de la edad Clásica que sustituye a la catapulta y es mas poderosa, tanto en defensa como en ataque. Puede moverse y disparar en el mismo turno y ejerce una zona de control.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="es_ES">
+            <Text>Las ciudades felíces reciben +10% [ICON_SCIENCE] Ciencia y +10% [ICON_PRODUCTION] Producción. Las ciudades felíces generan +1 punto [ICON_GreatScientist] de Gran Científico por Campus y +1 [ICON_GreatEngineer] punto de Gran Ingeniero por Zona Industrial. Las ciudades eufóricas reciben el doble de bonificación.</Text>
+        </Replace>
+		<Replace Tag="LOC_POLICY_COLLECTIVIZATION_DESCRIPTION_XP2" Language="es_ES">
+			<Text>+4 a la Producción [ICON_Production] y +4 a Alimentos [ICON_Food] por Rutas comerciales [ICON_TradeRoute] nacionales.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION" Language="es_ES">
+			<Text>+4 a Fe [ICON_Faith] por Fisuras geotérmicas y Suelo volcánico.</Text>
+		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="en_ES">
 			<Text>El apalancamiento de los estados de la ciudad cuesta la mitad de [ICON_Gold] Oro. [NEWLINE] Las unidades de estado de la ciudad obtienen +4 [ICON_Strength] Fuerza de combate si eres el soberano del estado de la ciudad (incluidas las unidades apalancadas). [NEWLINE] Gana +1 [Icon_Governor] Título del Gobernador. +2 enviados y +2 influencia por turno hacia los enviados.</Texto>
 		</Replace>
@@ -48,12 +63,6 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="en_ES">
 			<Text> Unidad única de Cree de la era antigua que es más fuerte que y reemplaza al Scout. Movimiento más rápido [ICON_Movement] en terrenos de bosques y selvas tropicales.</Text>
-		</Replace>		
-		<Replace Tag="LOC_UNIT_WARRIOR_MONK_DESCRIPTION" Language="en_ES">
-			<Text>Unidad de combate terrestre clásica de movimiento rápido con un árbol de promoción único.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_WARRIOR_MONKS_DESCRIPTION" Language="en_ES">
-			<Text>Permite gastar [ICON_Faith] Fe para entrenar monjes guerreros, unidades clásicas de combate terrestre con un árbol de promoción único. Disponible en Teología y solo se puede comprar en una ciudad con un Santuario en su Sitio Sagrado.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="en_ES">
 			<Text>Otorga una creencia extra al fundar una religión. Los colonos y constructores reciben +1 [ICON_Movement] Movimiento. +5 [ICON_Faith] Fe para cada civilización (incluida la India) que han conocido que ha fundado una religión y no está actualmente en guerra. Las civilizaciones opuestas reciben el doble de cansancio bélico por luchar contra Gandhi.</Text>
@@ -211,19 +220,10 @@
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="es_ES">
 			<Text>Desbloquea la capacidad del constructor para construir un Castillo, único a Francia..[NEWLINE][NEWLINE]+2 [ICON_Culture] Cultura and +1 Apelación. +1 [ICON_Culture] Culture por cada Maravilla que esté al lado de sí mismo +1 [ICON_Gold] Oro y +1 [ICON_Food] Comida por cada recurso de lujo que tambien esté al lado sí mismo. Da +1 [ICON_HOUSING] Alojamineto en el Feudalismo y [ICON_TOURISM] Turismo después de completar la tecnología de Vuelo. Solo puede ser creado junto a un río.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="es_ES">
-			<Text>Desbloquea la habilidad del Constructor para construir una Esfinge, única a Egipto.[NEWLINE][NEWLINE]+2 [ICON_Faith] Fe, +1 [ICON_Culture] Cultura, and +2 Apelación.[NEWLINE][NEWLINE]+1 [ICON_Faith] Fe and +1 [ICON_CULTURE] Cultura si está al lado de una Maravilla. +1 [ICON_FOOD] Comida y +1 [ICON_PRODUCTION] Producción si se construye en el Desierto o +1 [ICON_CULTURE] Cultura si se construye en Llanuras Inundables.[NEWLINE][NEWLINE]Adiciona [ICON_CULTURE] Cultura cuando se descubre Servicio Diplomático. Da[ICON_TOURISM]Turismo después de completar la tecnología de Vuelo. No se puede construir en nieve o colina de nieve.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="es_ES">
-			<Text>Desbloquea la habilidad del Constructor para construir una Esfinge, única a Egipto.[NEWLINE][NEWLINE]+2 [ICON_Faith] Fe, +1 [ICON_Culture] Cultura, and +1 Apelación. +1 [ICON_Faith] Fe y +1 [ICON_CULTURE] Cultura si esta al lado de una Maravilla.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="es_ES">
 			<Text>Desbloquea la capacidad del constructor para construir un Castillo, único a Francia.[NEWLINE][NEWLINE]+2 [ICON_Culture] Cultura and +1 Apelación. +1 [ICON_Culture] Cultura por cada Maravilla al lado de si mismo. +1 [ICON_Gold] Oro y +1 [ICON_Food] Comida por cada recurso de lujo que este a su lado. Da +1 [ICON_HOUSING] Alojamiento en Feudalismo y [ICON_TOURISM] Turismo después de completar la tecnología de Vuelo. Solo puede ser creado junto a un río.</Text>
 		</Replace>
 		<!---------------======== GATHERING STORM ========------------------->
-		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="es_ES">
-			<Text>+5 Lealtad por turno en las ciudades ocupadas con una unidad en la guarnición. Declarar una guerra por sorpresa cuenta como guerra formal con el fin de  [ICON_STAT_GRIEVANCE] Quejas y hastío bélico.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="es_ES">
 			<Text>Otorga una creencia extra cuando se funda una religión. Colonos y Constructores reciben +1 [ICON_Movement] Movimiento. +5 [ICON_Faith] Fé y +1 [ICON_Favor] Favor Diplomático por turno por cada civilización (incluyendo India) que haya conocido y haya fundado una religión y no esté en guerra. Otras civilizaciones reciben el doble de hastío bélico al luchar contra Gandhi.</Text>
 		</Replace>
@@ -259,6 +259,9 @@
         </Replace>
 		<!-- Macedon -->
 		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="es_ES">
+			<Text>Recibe bonuses tras conquistar una ciudad: +20% [ICON_PRODUCTION] en todas las ciuudades por 10 turnos, así como un [ICON_TechBoosted] Eureka por cada campamento o campus en la ciudad conquistada y una [ICON_CivicBoosted] Inspiracion por cada lugar sagrado o distrito de teatro.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION" Language="es_ES">
 			<Text>Recibe bonuses tras conquistar una ciudad: +20% [ICON_PRODUCTION] en todas las ciuudades por 10 turnos, así como un [ICON_TechBoosted] Eureka por cada campamento o campus en la ciudad conquistada y una [ICON_CivicBoosted] Inspiracion por cada lugar sagrado o distrito de teatro.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="es_ES">
@@ -312,10 +315,6 @@
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="es_ES">
 			<Text>Todas las uniddes a distancia ganan un 25% a la experiencia de combate. Las Minas sobre recursos estratégicos otorgan +1 a la Producción [ICON_Production] . Las Minas sobre recursos de Lujo y adicionales otorgan +2 [ICON_Gold] de Oro.</Text>
-		</Replace>
-		<!-- Persia -->
-		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="es_ES">
-			<Text>+5 de Lealtad por turno en las ciudades ocupadas on una unidad de guarnición. La declaración de guerra por sorpresa solo cuenta como guerra formal a efectos de belicosidad y hastio bélico.</Text>
 		</Replace>
 		<!-- Russia -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="es_ES">

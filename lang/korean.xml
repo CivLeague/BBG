@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_FILM_STUDIO_DESCRIPTION" Language="ko_KR">
+			<Text>미국 특유의 건물입니다. 현대 시대에서 [ICON_Tourism] 관광 +50%를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="ko_KR">
+			<Text>캐터펄트를 대체하는 크메르 특유의 고전 시대 공성 유닛입니다. 캐터펄트보다 공격력 및 방어력이 모두 강합니다. 같은 턴에 이동 및 발포 가능하며 통제 지역 영향력을 행사합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ko_KR">
+            <Text>행복한 도시에 [ICON_SCIENCE] 과학 +10%, [ICON_PRODUCTION] 생산력 +10%를 제공합니다. 황홀한 도시에는 [ICON_SCIENCE] 과학 +5%, [ICON_PRODUCTION] 생산력 +5%가 추가로 제공됩니다. 행복한 도시는 캠퍼스마다 [ICON_GreatScientist] 위대한 과학자 점수 +1, 산업구역마다 [ICON_GreatEngineer] 위대한 기술자 점수 +1을 제공합니다. 황홀한 도시에는 과학자 및 기술자 점수 효과가 +1씩 추가로 제공됩니다.</Text>
+        </Replace>
+		<Replace Tag="LOC_POLICY_COLLECTIVIZATION_DESCRIPTION_XP2" Language="ko_KR">
+			<Text>국내 [ICON_TradeRoute] 교역로에서 [ICON_Production] 생산력 +4 및 [ICON_Food] 식량 +4.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION" Language="ko_KR">
+			<Text>지열 열하 및 화산토에서 [ICON_Faith] 신앙 +4을 획득합니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_SIEGE_RANGED_DEFENSE_DESCRIPTION" Language="ko_KR">
 			<Text>원거리 공격에서 방어 시 [ICON_Strength] 전투력 +10.</Text>
 		</Replace>
@@ -48,12 +63,6 @@
         </Replace>
 		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="ko_KR">
 			<Text>크리 특유의 고대 시대 유닛으로 정찰병을 대체합니다. 강력한 정찰 유닛이며 숲 및 열대우림 지형에서 [ICON_Movement] 이동력이 빨라집니다.</Text>
-		</Replace>		
-		<Replace Tag="LOC_UNIT_WARRIOR_MONK_DESCRIPTION" Language="ko_KR">
-			<Text>빠르게 이동하는 고전 시대 지상 전투 유닛으로 특유의 진급 발전표를 지닙니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_WARRIOR_MONKS_DESCRIPTION" Language="ko_KR">
-			<Text>[ICON_Faith] 신앙을 소비하여 전투승을 훈련할 수 있습니다. 이 고전 시대의 지상 전투 유닛은 특유의 진급 발전표를 지닙니다. 신학 사회 제도로 잠금 해제되며, 성지에 성소가 있는 도시에서만 구매할 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ko_KR">
 			<Text>종교를 창시할 때 교리를 한 개 더 고를 수 있습니다. 개척자와 건설자의 [ICON_Movement] 이동력이 1 증가합니다. 종교를 창시했고 현재 전쟁에 참여하지 않는 각 문명(인도 포함)을 접할 때마다 [ICON_Faith] 신앙 +5를 제공합니다. 상대 문명은 간디와 전투 시 전쟁 피로도가 2배 증가합니다.</Text>
@@ -217,16 +226,7 @@
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>프랑스 특유의 샤토를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Culture] 문화 +2를 제공합니다. 매력도 +1을 제공합니다. 인접한 모든 불가사의마다 [ICON_Culture] 문화 +1을 제공합니다. 인접한 모든 사치 자원마다 [ICON_Food] 식량 +1과 [ICON_Gold] 금 +1을 제공합니다. 봉건제 사회 제도를 획득하면 [ICON_HOUSING] 주거공간 +1을 추가 제공하며, 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 강 근처에만 지을 수 있습니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +2를 제공합니다. 불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다. 범람원이 아닌 사막에 지으면 [ICON_Food] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다. 범람원에 지으면 [ICON_CULTURE] 문화 +1을 제공합니다. 외교부 사회 제도를 발견하면 문화를 추가로 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 다른 스핑크스 옆에 지을 수 없습니다. 설원 또는 설원 언덕에 지을 수 없습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ko_KR">
-			<Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +1을 제공합니다. 불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다.</Text>
-		</Replace>
 		<!---------------======== GATHERING STORM ========------------------->
-		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>주둔 유닛이 있는 점령 도시에 턴당 충성심 +5가 부여됩니다. 기습 전쟁의 선포는 [ICON_STAT_GRIEVANCE] 적대감과 전쟁 피로도 유발의 목적으로만 공식 전쟁으로 인정됩니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>종교를 창시할 때 교리를 한 개 더 고를 수 있습니다. 개척자와 건설자의 [ICON_Movement] 이동력이 1 증가합니다. 종교를 창시했고 현재 전쟁에 참여하지 않는 각 문명(인도 포함)을 접할 때마다 [ICON_Faith] 신앙 +5와 [ICON_Favor] 외교적 환심 +1을 제공합니다. 상대 문명은 간디와 전투 시 전쟁 피로도가 2배 증가합니다.</Text>
 		</Replace>
@@ -255,6 +255,9 @@
 			<Text>인접한 성지 특수지구에서 [ICON_Gold] 금 +{1_num}.</Text>
 		</Row>
 		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="ko_KR">
+			<Text>도시 점령 시 다음의 상승을 획득합니다: 10턴 동안 모든 도시에 [ICON_Production] 생산력 보너스 20%, 점령한 도시의 주둔지 또는 캠퍼스마다 [ICON_TechBoosted] 유레카 1개, 성지 또는 극장가마다 [ICON_CivicBoosted] 영감 1개.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION" Language="ko_KR">
 			<Text>도시 점령 시 다음의 상승을 획득합니다: 10턴 동안 모든 도시에 [ICON_Production] 생산력 보너스 20%, 점령한 도시의 주둔지 또는 캠퍼스마다 [ICON_TechBoosted] 유레카 1개, 성지 또는 극장가마다 [ICON_CivicBoosted] 영감 1개.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="ko_KR">
@@ -376,10 +379,6 @@
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ko_KR">
 			<Text>모든 원거리 유닛이 +25%의 전투 경험치를 획득합니다. 전략 자원 위에 있는 광산에서 [ICON_Production] 생산력 +1을 제공합니다. 보너스 자원과 사치 자원 위에 있는 광산에서 [ICON_Gold] 금 +2를 제공합니다.</Text>
-		</Replace>
-		<!-- Persia -->
-		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="ko_KR">
-			<Text>주둔 유닛이 있는 점령 도시에 턴당 충성심 +5가 부여됩니다. 기습 전쟁의 선포는 전쟁 도발과 전쟁 피로도 유발의 목적으로만 공식 전쟁으로 인정됩니다.</Text>
 		</Replace>
 		<!-- Poland -->
         <Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="ko_KR">

@@ -116,6 +116,13 @@ UPDATE Buildings SET Cost=60 WHERE BuildingType='BUILDING_ORDU';
 --==================
 -- Scotland
 --==================
+-- Highlander gets +10 combat strength (defense)
+UPDATE Units SET Combat=60 WHERE UnitType='UNIT_SCOTTISH_HIGHLANDER';
+-- happy and ecstatic percentages increased
+UPDATE ModifierArguments SET Value='8'  WHERE ModifierId='TRAIT_SCIENCE_HAPPY' AND Name='Amount';
+UPDATE ModifierArguments SET Value='16' WHERE ModifierId='TRAIT_SCIENCE_ECSTATIC' AND Name='Amount';
+UPDATE ModifierArguments SET Value='8'  WHERE ModifierId='TRAIT_PRODUCTION_HAPPY' AND Name='Amount';
+UPDATE ModifierArguments SET Value='16' WHERE ModifierId='TRAIT_PRODUCTION_ECSTATIC' AND Name='Amount';
 -- Golf Course moved to Games and Recreation
 UPDATE Improvements SET PrereqCivic='CIVIC_GAMES_RECREATION' WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE';
 -- Golf Course base yields are 1 Culture and 2 Gold... +1 to each if next to City Center (+1 Culture at Civil Service and +1 Gold at Guilds)
@@ -232,6 +239,22 @@ INSERT INTO ModifierArguments
 --==============================================================
 --******				G O V E R N O R S				  ******
 --==============================================================
+-- Magnus' Surplus Logistics gives +2 production in addition to the food
+INSERT INTO Modifiers
+	(ModifierId , ModifierType)
+	VALUES
+	('SURPLUS_LOGISTICS_TRADE_ROUTE_PROD' , 'MODIFIER_SINGLE_CITY_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS');
+INSERT INTO ModifierArguments
+	(ModifierId , Name , Value)
+	VALUES
+	('SURPLUS_LOGISTICS_TRADE_ROUTE_PROD', 'Amount', '2'),
+	('SURPLUS_LOGISTICS_TRADE_ROUTE_PROD', 'Domestic', '1'),
+	('SURPLUS_LOGISTICS_TRADE_ROUTE_PROD', 'YieldType', 'YIELD_PRODUCTION');
+INSERT INTO GovernorPromotionModifiers
+	(GovernorPromotionType, ModifierId)
+	VALUES
+	('GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS', 'SURPLUS_LOGISTICS_TRADE_ROUTE_PROD');
+-- Victor's combat bonus only works on defense
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
 	VALUES ('GARRISON_COMMANDER_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)

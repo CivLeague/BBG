@@ -5,6 +5,8 @@
 --==================
 -- America
 --==================
+-- Film Studios tourism bonus reduced from 100% to 50%
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='FILMSTUDIO_ENHANCEDLATETOURISM' AND Name='Modifier';
 -- American Rough Riders will now be a cav replacement
 UPDATE Units SET Combat=62, Cost=340, PromotionClass='PROMOTION_CLASS_LIGHT_CAVALRY', PrereqTech='TECH_MILITARY_SCIENCE' WHERE UnitType='UNIT_AMERICAN_ROUGH_RIDER';
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_HELICOPTER' WHERE Unit='UNIT_AMERICAN_ROUGH_RIDER';
@@ -117,8 +119,6 @@ INSERT INTO ModifierStrings (ModifierId , Context , Text)
 --==================
 -- Egypt
 --==================
--- Sphinx now allowed to be adjacent to each other
-UPDATE Improvements SET SameAdjacentValid=1 WHERE ImprovementType='IMPROVEMENT_SPHINX';
 -- wonder and district on rivers bonus increased to 25%
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RIVER_FASTER_BUILDTIME_WONDER';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RIVER_FASTER_BUILDTIME_DISTRICT';
@@ -341,6 +341,15 @@ INSERT INTO ExcludedAdjacencies (TraitType , YieldChangeId)
     ('TRAIT_CIVILIZATION_ADJACENT_DISTRICTS' , 'River_Gold');
 -- Samurai come at Feudalism now
 UPDATE Units SET PrereqCivic='CIVIC_FEUDALISM' , PrereqTech=NULL WHERE UnitType='UNIT_JAPANESE_SAMURAI';
+
+
+--==================
+-- Rome
+--==================
+-- Baths get Culture minor adjacency bonus added
+INSERT INTO District_Adjacencies (DistrictType , YieldChangeId)
+	VALUES ('DISTRICT_BATH' , 'District_Culture');
+
 
 
 --==================
@@ -896,11 +905,8 @@ INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
     VALUES ('CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE' , 'REQUIRES_CITY_FOLLOWS_RELIGION');
 INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE' , 'REQUIRES_CITY_HAS_HOLY_SITE');
--- Warrior Monks only require a shrine and now work with Classical Great Generals
-UPDATE Units SET PrereqCivic='CIVIC_THEOLOGY' WHERE UnitType='UNIT_WARRIOR_MONK';
-DELETE FROM Unit_BuildingPrereqs WHERE PrereqBuilding='BUILDING_STAVE_CHURCH' AND Unit='UNIT_WARRIOR_MONK';
-DELETE FROM Unit_BuildingPrereqs WHERE PrereqBuilding='BUILDING_PRASAT' AND Unit='UNIT_WARRIOR_MONK';
-UPDATE Unit_BuildingPrereqs SET PrereqBuilding='BUILDING_SHRINE' WHERE PrereqBuilding='BUILDING_TEMPLE' AND Unit='UNIT_WARRIOR_MONK';
+-- Warrior Monks +5 Combat Strength
+UPDATE Units SET Combat=40 WHERE UnitType='UNIT_WARRIOR_MONK';
 -- Work Ethic now provides production equal to base yield for Shrine and Temple
 DELETE From BeliefModifiers WHERE ModifierId='WORK_ETHIC_FOLLOWER_PRODUCTION';
 INSERT INTO Modifiers 
@@ -1393,6 +1399,7 @@ VALUES ('BUILDING_VENETIAN_ARSENAL', 'RENAISSANCE_NAVAL_CARRIER_PRODUCTION');
 --******			W O N D E R S  (NATURAL)			  ******
 --==============================================================
 -- Several lack-luster wonders improved
+UPDATE Features SET Settlement=1 WHERE FeatureType='FEATURE_CLIFFS_DOVER';
 INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_PANTANAL', 'YIELD_SCIENCE', 2);
 INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
@@ -1428,8 +1435,21 @@ UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_FAI
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOLD' 			AND DistrictType="DISTRICT_ROYAL_NAVY_DOCKYARD";
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType="DISTRICT_THEATER";
 
-
-
+--****		REQUIREMENTS		****--
+INSERT INTO Requirements
+	(RequirementId , RequirementType)
+	VALUES
+	('PLAYER_HAS_MEDIEVAL_FAIRES_CPLMOD', 	'REQUIREMENT_PLAYER_HAS_CIVIC'),
+	('PLAYER_HAS_URBANIZATION_CPLMOD', 		'REQUIREMENT_PLAYER_HAS_CIVIC'),
+	('PLAYER_HAS_BANKING_CPLMOD'   , 		'REQUIREMENT_PLAYER_HAS_TECHNOLOGY'),
+	('PLAYER_HAS_ECONOMICS_CPLMOD' , 		'REQUIREMENT_PLAYER_HAS_TECHNOLOGY');
+INSERT INTO RequirementArguments
+	(RequirementId , Name , Value)
+	VALUES
+	('PLAYER_HAS_MEDIEVAL_FAIRES_CPLMOD',	'CivicType', 		'CIVIC_MEDIEVAL_FAIRES'  ),
+	('PLAYER_HAS_URBANIZATION_CPLMOD', 	 	'CivicType', 		'CIVIC_URBANIZATION'),
+	('PLAYER_HAS_BANKING_CPLMOD'   , 		'TechnologyType', 	'TECH_BANKING'  ),
+	('PLAYER_HAS_ECONOMICS_CPLMOD' , 		'TechnologyType', 	'TECH_ECONOMICS');
 
 
 
