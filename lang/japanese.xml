@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_FILM_STUDIO_DESCRIPTION" Language="ja_JP">
+			<Text>アメリカ固有の建造物。近代において他文明から得られるこの都市の [ICON_Tourism] 観光力+50%。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="ja_JP">
+			<Text>カタパルトの取ってかわるクメール固有の太古の攻囲ユニット。カタパルトより強く、同じターンに移動と攻撃を実行し、支配領域を行使できる。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ja_JP">
+			<Text>「幸せである」状態の都市は [ICON_SCIENCE] 科学力+10%と [ICON_PRODUCTION] 生産力+10%。「興奮している」状態の都市はさらに追加で、 [ICON_SCIENCE] 科学力+5%, [ICON_PRODUCTION] 生産力+5%。「幸せである」状態の都市の [ICON_GreatScientist] 大科学者ポイント+1、工業地帯毎に [ICON_GreatEngineer] 大技術者ポイント+1を算出する。「興奮している」状態の都市はこのボーナスが2倍になる。</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_COLLECTIVIZATION_DESCRIPTION_XP2" Language="ja_JP">
+			<Text>国内の [ICON_TradeRoute] 交易路の [ICON_Production] 生産力+4、 [ICON_Food] 食料+4。</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION" Language="ja_JP">
+			<Text>地熱孔と火山性土による [ICON_Faith] 信仰力+4。</Text>
+		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="ja_JP">
 			<Text>都市国家から徴用を行う際の必要[ICON_Gold]ゴールド-50%。[NEWLINE]自身が宗主国である都市国家の、徴用されたものを含む全ユニットの[ICON_Strength]戦闘力+4。[NEWLINE][Icon_Governor]総督の昇進1つを獲得。代表団2つと、代表団を得るためのターンごとの影響力＋2。</Text>
 		</Replace>
@@ -51,12 +66,6 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="ja_JP">
 			<Text>斥候を代替するクリー固有のユニット。斥候よりも強力で、森林及びジャングルでの[ICON_Movement]移動力が高い。</Text>
-		</Replace>		
-		<Replace Tag="LOC_UNIT_WARRIOR_MONK_DESCRIPTION" Language="ja_JP">
-			<Text>移動力が高く固有の昇進ツリーを持つ中世の陸上ユニット。</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_WARRIOR_MONKS_DESCRIPTION" Language="ja_JP">
-			<Text>[ICON_Faith]信仰力で、移動力が高く固有の昇進ツリーを持つ中世の陸上ユニットである武僧を訓練できるようになる。訓練は神学の社会制度を解禁後、神殿を持つ聖地のある都市でしか行えない。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ja_JP">
 			<Text>宗教を創始した際に追加の信仰を1つ得る。開拓者と労働者の[ICON_Movement]移動力+1。自文明を含む主要文明のうち、戦争状態でなくかつすでに宗教を創始している文明1つごとに[ICON_Faith]信仰力+5。自文明と戦争している文明はその戦争における疲労が2倍になる。</Text>
@@ -215,19 +224,10 @@
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がフランス固有の改善であるシャトーを建設できるようになる。[NEWLINE][NEWLINE][ICON_Culture]文化力+2、アピール+1。隣接する遺産1つごとに[ICON_Culture]文化力+1。隣接する高級資源1つごとに[ICON_Gold]ゴールド+1、[ICON_Food]食料+1。封建制度の完了で[ICON_HOUSING]住宅+1、飛行機の完了で[ICON_TOURISM]観光力を産出。河川の隣にしか建設できない。</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>労働者がエジプト固有の改善であるスフィンクスを建設できるようになる。[NEWLINE][NEWLINE][ICON_Faith]信仰力+2、[ICON_Culture]文化力+1、アピール+2。[NEWLINE][NEWLINE]遺産の隣に建設された場合、追加で[ICON_Faith]信仰力+1、[ICON_CULTURE]文化力+1。砂漠上に建設された場合[ICON_FOOD]食料+1、[ICON_PRODUCTION]生産力+1。氾濫原上に建設された場合、[ICON_CULTURE]文化力+1。[NEWLINE][NEWLINE]外交官の完了で追加の[ICON_CULTURE]文化力を産出。飛行機の完了で[ICON_TOURISM]観光力を産出。雪原上には建設できない。</Text>
-		</Replace>		
-		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ja_JP">
-			<Text>労働者がエジプト固有の改善であるスフィンクスを建設できるようになる。[NEWLINE][NEWLINE][ICON_Faith]信仰力+2、[ICON_Culture]文化力+1、アピール+2。[NEWLINE][NEWLINE]遺産の隣に建設された場合、追加で[ICON_Faith]信仰力+1、[ICON_CULTURE]文化力+1。</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がフランス固有の改善であるシャトーを建設できるようになる。[NEWLINE][NEWLINE][ICON_Culture]文化力+2、アピール+1。隣接する遺産1つごとに[ICON_Culture]文化力+1。隣接する高級資源1つごとに[ICON_Gold]ゴールド+1、[ICON_Food]食料+1。封建制度の完了で[ICON_HOUSING]住宅+1、飛行機の完了で[ICON_TOURISM]観光力を産出。河川の隣にしか建設できない。</Text>
 		</Replace>
 		<!---------------======== GATHERING STORM ========------------------->
-		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>占領下の都心に、守備隊がいると1ターンにつき+5の忠誠値。奇襲戦争を宣言しても戦争による[ICON_STAT_GRIEVANCE]不平と好戦性ペナルティが増加しない（正式な宣戦布告と同じ。）。</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>宗教を設立するときに追加の信仰を獲得できる。開拓者と労働者は移動力[ICON_Movement]+1。宗教を創始しており、インドと戦争状態ではない文明（インドを含む）と遭遇すると、そのつど+5[ICON_Faith]信仰力と+1[ICON_Favor]外交支持。ガンジーを相手に戦う文明は、戦争による疲労が2倍になる。</Text>
 		</Replace>
@@ -263,6 +263,9 @@
         </Replace>
 		<!-- Macedon -->
 		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="ja_JP">
+			<Text>敵の都市を占領すると、10ターンの間、すべての都市の[ICON_PRODUCTION]生産力に20%のボーナスが発生する。兵営かキャンパスを有する都市を占領すると[ICON_TechBoosted]ひらめきが発生する。また、聖地か劇場広場を有する都市を占領すると[ICON_CivicBoosted]天啓が発生する。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION" Language="ja_JP">
 			<Text>敵の都市を占領すると、10ターンの間、すべての都市の[ICON_PRODUCTION]生産力に20%のボーナスが発生する。兵営かキャンパスを有する都市を占領すると[ICON_TechBoosted]ひらめきが発生する。また、聖地か劇場広場を有する都市を占領すると[ICON_CivicBoosted]天啓が発生する。</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="ja_JP">
@@ -316,10 +319,6 @@
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ja_JP">
 			<Text>すべての長距離戦闘ユニットは戦闘経験値+25%。戦略資源の鉱山の生産力[ICON_Production]+1。ボーナス資源と高級資源の鉱山のゴールド [ICON_Gold] +2。</Text>
-		</Replace>
-		<!-- Persia -->
-		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="ja_JP">
-			<Text>守備隊の占領した都市でのターンごとの忠誠度+5。奇襲戦争を宣言しても戦争による疲労と好戦性ペナルティが増加しない（正式に宣戦布告した場合と同等）</Text>
 		</Replace>
 		<!-- Russia -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="ja_JP">

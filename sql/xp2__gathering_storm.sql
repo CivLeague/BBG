@@ -148,18 +148,6 @@ INSERT INTO RequirementSetRequirements
 	('MALI_MINE_AND_BANKING_REQUIREMENTS_CPLMOD'   , 'REQUIRES_PLOT_HAS_MINE'     ),
 	('MALI_MINE_AND_ECONOMICS_REQUIREMENTS_CPLMOD' , 'PLAYER_HAS_ECONOMICS_CPLMOD'),
 	('MALI_MINE_AND_ECONOMICS_REQUIREMENTS_CPLMOD' , 'REQUIRES_PLOT_HAS_MINE'     );
-	
-INSERT INTO Requirements 
-	(RequirementId , RequirementType)
-	VALUES 
-	('PLAYER_HAS_BANKING_CPLMOD'   , 'REQUIREMENT_PLAYER_HAS_TECHNOLOGY'),
-	('PLAYER_HAS_ECONOMICS_CPLMOD' , 'REQUIREMENT_PLAYER_HAS_TECHNOLOGY');
-	
-INSERT INTO RequirementArguments 
-	(RequirementId , Name , Value) 
-	VALUES 
-	('PLAYER_HAS_BANKING_CPLMOD'   , 'TechnologyType' , 'TECH_BANKING'  ),
-	('PLAYER_HAS_ECONOMICS_CPLMOD' , 'TechnologyType' , 'TECH_ECONOMICS');
 
 INSERT INTO Types (Type, Kind)
 	VALUES
@@ -212,18 +200,15 @@ UPDATE Governments SET OtherGovernmentIntolerance=-40 WHERE GovernmentType='GOVE
 UPDATE Governments SET OtherGovernmentIntolerance=-40 WHERE GovernmentType='GOVERNMENT_COMMUNISM';
 UPDATE Governments SET OtherGovernmentIntolerance=-40 WHERE GovernmentType='GOVERNMENT_CORPORATE_LIBERTARIANISM';
 UPDATE Governments SET OtherGovernmentIntolerance=-40 WHERE GovernmentType='GOVERNMENT_SYNTHETIC_TECHNOCRACY';
+UPDATE ModifierArguments SET Value='4' WHERE ModifierId='COLLECTIVIZATION_INTERNAL_TRADE_PRODUCTION' AND Name='Amount';
 
 
 
 --==============================================================
 --******				  PANTHEONS						  ******
 --==============================================================
--- reeds and marshes works with all floodplains (see egypt for ReqArgs)
-INSERT INTO RequirementSetRequirements 
-    (RequirementSetId, RequirementId)
-    VALUES
-    ('PLOT_HAS_REEDS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_FLOODPLAINS_GRASSLAND'),
-    ('PLOT_HAS_REEDS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_FLOODPLAINS_PLAINS');
+-- more faith for fire goddess and no district dmg from eruptions
+UPDATE ModifierArguments SET Value='4' WHERE ModifierId='GODDESS_OF_FIRE_FEATURES_FAITH_MODIFIER' AND Name='Amount';
 
 
 

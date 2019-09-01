@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_FILM_STUDIO_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальное здание Америки. +50% к влиянию [ICON_Tourism] туризма от этого города на другие цивилизации в Новое время.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный кхмерский осадный юнит Античности. Заменяет катапульту и сильнее ее. Может перемещаться и стрелять в тот же ход, имеет зону контроля.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ru_RU">
+			<Text>Счастливые города получают +10% [ICON_SCIENCE] науки и +10% [ICON_PRODUCTION] производства. Города в экстазе получают ещё по 5% бонуса к [ICON_SCIENCE] науке и [ICON_PRODUCTION] производству. Счастливые города производят +1 [ICON_GreatScientist] оч. великого ученого в кампусах и +1 [ICON_GreatEngineer] оч. великого инженера в промышленных зонах. Бонус очков великих людей удваивается для городов в состоянии экстаза.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_COLLECTIVIZATION_DESCRIPTION_XP2" Language="ru_RU">
+			<Text>+4 [ICON_Production] производства и +4 [ICON_Food] пищи от внутренних [ICON_TradeRoute] торговых путей.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION" Language="ru_RU">
+			<Text>+4 [ICON_FAITH] веры от геотермальных полей и вулканической почвы.</Text>
+		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="ru_RU">
 			<Text>Приобретение войск ГГ стоит в 2 раза меньше [ICON_Gold] золота.[NEWLINE]Боевые единицы ГГ получают +4 [ICON_Strength] к боевой мощи, если вы сюзерен (касается и приобретённых у ГГ юнитов).[NEWLINE]Даёт +1 [Icon_Governor] губернаторский титул. +2 посла и +2 влияния в ход на получение послов.</Text>
 		</Replace>
@@ -48,12 +63,6 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный разведывательный юнит Кри древней эпохи. Быстрее перемещается по лесам и джунглям.</Text>
-		</Replace>		
-		<Replace Tag="LOC_UNIT_WARRIOR_MONK_DESCRIPTION" Language="ru_RU">
-			<Text>Быстрый боевой юнит эпохи Античности с уникальным деревом повышений.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_WARRIOR_MONKS_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет использовать [ICON_Faith] веру для приобретения боевых монахов, боевых юнитов эпохи Античности с уникальным деревом повышений. Открываются при изучении теологии и могут быть куплены в городах, где построено святилище.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ru_RU">
 			<Text>Дополнительное верование при основании религии. Поселенцы и строители получают +1 [ICON_Movement] ОП. +5 [ICON_Faith] веры за каждую встреченную цивилизацию (включая и собственную), у которой есть религия и которая не состоит в войне. Война против Ганди создаёт в 2 раза больше военной усталости.</Text>
@@ -215,20 +224,10 @@
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям строить шато (уникально для Франции).[NEWLINE][NEWLINE]+2 [ICON_Culture] культуры. +1 престижа. +1 [ICON_Culture] культуры за каждое соседнее чудо. +1 к [ICON_Gold] золоту и [ICON_FOOD] пище за каждый соседний редкий ресурс роскоши. +1 к [ICON_HOUSING] жилью после открытия феодализма. Дает [ICON_TOURISM] туризм после исследования «Авиации». Можно строить только возле рек.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет строителям строить сфинкса (уникально для Египта).[NEWLINE][NEWLINE]+2 [ICON_Faith] веры и +1 [ICON_Culture] культуры. +2 престижа. +1 к [ICON_Faith] вере и [ICON_CULTURE] культуре, если построен рядом с чудом света. +1 к [ICON_FOOD] пище и [ICON_PRODUCTION] производству в пустыне либо +1 [ICON_CULTURE] культуры в пойме реки. Дополнительная [ICON_CULTURE] культура после открытия «Дипломатической службы». Дает [ICON_TOURISM] туризм после открытия «Авиации». Нельзя построить рядом с другим сфинксом. Нельзя построить на снегу и заснеженных холмах.</Text>
-		</Replace>
-		
-		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет строителям строить сфинкса (уникально для Египта).[NEWLINE][NEWLINE]+2 [ICON_Faith] веры и +1 [ICON_Culture] культуры. +1 престижа. +1 к [ICON_Faith] вере и [ICON_Culture] культуре, если построен рядом с чудом света. Нельзя построить рядом с другим сфинксом. Можно строить в пойме реки.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям строить шато (уникально для Франции).[NEWLINE][NEWLINE]+2 [ICON_Culture] культуры. +1 престижа. +1 [ICON_Culture] культуры за каждое соседнее чудо. +1 к [ICON_Gold] золоту и [ICON_FOOD] пище за каждый соседний редкий ресурс роскоши. +1 к [ICON_HOUSING] жилью после открытия феодализма. Дает [ICON_TOURISM] туризм после исследования «Авиации». Можно строить только возле рек.</Text>
 		</Replace>
 		<!---------------======== GATHERING STORM ========------------------->
-		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>+5 лояльность за ход в захваченных городах с гарнизоном. Объявленная внезапная война считается официальной войной при расчете [ICON_STAT_GRIEVANCE] претензий  и милитаризма.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Дополнительное верование при основании Религии. Поселенцы и Строители получают +1 [ICON_Movement] ОП. + 5 [ICON_Faith] Веры и +1 [ICON_Favor] ед. мирового влияния в ход за каждую известную им цивилизацию (включая Индию), которая основала Религию и в настоящее время не воюет. Враждебные цивилизации , воюющие с Ганди, получают в два раза больше усталости от войны.</Text>
 		</Replace>
@@ -261,6 +260,9 @@
 		</Row>
 		<!-- Macedon -->
 		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="ru_RU">
+			<Text>При захвате города: +20% [ICON_PRODUCTION] производства во всех городах на 10 ходов, а также [ICON_TechBoosted] эврика за каждый военный лагерь и кампус в захваченном городе и [ICON_CivicBoosted] вдохновение за каждое священное место и театральную площадь.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION" Language="ru_RU">
 			<Text>При захвате города: +20% [ICON_PRODUCTION] производства во всех городах на 10 ходов, а также [ICON_TechBoosted] эврика за каждый военный лагерь и кампус в захваченном городе и [ICON_CivicBoosted] вдохновение за каждое священное место и театральную площадь.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="ru_RU">
@@ -313,10 +315,6 @@
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ru_RU">
 			<Text>Все дальнобойные получают  на 25% больше боевого опыта. Рудники на стратегических ресурсах дают +1 [ICON_Production] производства. Рудники на бонусных ресурсах и ресурсах роскоши дают +2 [ICON_Gold] золота.</Text>
-		</Replace>
-		<!-- Persia -->
-		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="ru_RU">
-			<Text>+5 лояльности за ход в захваченных городах с гарнизоном. Объявление внезапной войны считается официальной войной при расчете штрафов на счастье за военные действия и усталость от войны.</Text>
 		</Replace>
 		<!-- Russia -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="ru_RU">

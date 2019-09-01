@@ -25,10 +25,3 @@ DELETE FROM UnitAbilityModifiers WHERE ModifierId='MALON_RAIDER_TERRITORY_COMBAT
 INSERT INTO Units_XP2 (UnitType , ResourceCost)
 	VALUES ('UNIT_MAPUCHE_MALON_RAIDER' , 20);
 UPDATE Units SET StrategicResource ='RESOURCE_HORSES'  WHERE UnitType='UNIT_MAPUCHE_MALON_RAIDER';
-
-
---==================
--- Netherlands
---==================
-
-

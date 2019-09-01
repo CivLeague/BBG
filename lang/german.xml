@@ -1,6 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_FILM_STUDIO_DESCRIPTION" Language="de_DE">
+			<Text>A building unique to America. +50% [ICON_Tourism] Tourism pressure from this city towards other civilizations in the Modern era.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="de_DE">
+			<Text>Einzigartige Khmer Klassik-Belagerungseinheit, die das Katapult ersetzt und sowohl defensiv als auch offensiv stärker ist. Kann sich in einer Runde sowohl fortbewegen als auch schießen und wendet Kontrollzone an.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="de_DE">
+			<Text>Glückliche Städte erhalten zusätzliche +10% [ICON_SCIENCE] Wissenschaft und +10% [ICON_PRODUCTION] Produktion, während begeisterte Städte weitere +5% erhalten. Glückliche Städte generieren +1 [ICON_GreatScientist] Großer-Wissenschaftler-Punkt pro Campus und +1 [ICON_GreatEngineer] Großer-Ingenieur-Punkt pro Industriegebiet. Begeisterte Städte verdoppeln diese zusätzlichen Große-Persönlichkeiten-Punkte.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_COLLECTIVIZATION_DESCRIPTION_XP2" Language="de_DE">
+			<Text>+4 [ICON_Production] Produktion und +4 [ICON_Food] Nahrung aus inländischen [ICON_TradeRoute] Handelswegen.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION" Language="de_DE">
+			<Text>+4 [ICON_FAITH] Glauben durch geothermische Risse und Vulkanerde.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_GRAPE_SHOT_DESCRIPTION" Language="de_DE">
+			<Text>+7 [ICON_Bombard] Schussstärke gegen Landeinheiten.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_SHRAPNEL_DESCRIPTION" Language="de_DE">
+			<Text>+10 [ICON_Bombard] Schussstärke gegen Marineeinheiten.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_ADVANCED_RANGEFINDING_DESCRIPTION" Language="de_DE">
+			<Text>+10 [ICON_Bombard] Schussstärke gegen Marineeinheiten.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="de_DE">
+			<Text>+7 [ICON_Strength] Schussstärke bei dem Beschißen von Nah und Fernkämfern.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_LAVRA_DESCRIPTION" Language="de_DE">
+			<Text>Einzigartiger Bezirk Russlands für religiöse Aktivitäten. Ersetzt den Heilige Stätte Bezirk und ist Günstiger im Bau.[NEWLINE][NEWLINE]Gewährt [ICON_GREATWRITER] Große Schriftsteller, [ICON_GREATArtist] Große Künstler, und [ICON_GREATMusician] Große Musiker Punkte in Städten mit einem Theaterplatz. Jedes Mal wenn eine Große Persönlichkeit in einer Stadt aktiviet wird wächst diese um ein Feld.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="de_DE">
+			<Text>Das Ausheben von Stadtstaatentruppen kostet die Hälfte an [ICON_Gold] Gold.[NEWLINE]Stadtstaateneinheiten erhaten dabei +4 [ICON_Strength] Kampfstärke für den Suzerain Status über die Stadt (Ausgehobene Einheiten eingeschlossen).[NEWLINE]Gewärt +1 [Icon_Governor] Gouverneurstitel. +2 Gesandte +2 Einfuss pro Runde für Gesandtengenerierung.</Text>
+		</Replace>
+		<Replace Tag="LOC_SIEGE_RANGED_DEFENSE_DESCRIPTION" Language="de_DE">
+			<Text>+10 Kampfstärke bei Verteidigung gegen Beschuss von Fernkampfeinheiten.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="de_DE">
+			<Text>+100% [ICON_PRODUCTION] Produktion für den Bau von Aquedukten. Heilige Stätten errichtet an Flüssen gewähren +2 [ICON_FOOD] Nahrung, +2 [ICON_FAITH] Glauben, und +1 [ICON_HOUSING] Wohnraum. Heilige Stätten lösen einen Kulturschock aus.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="de_DE">
+			<Text>Modernisierung welche mit der Steinmetzkunst freigeschaltet wird. Sie muss auf Wüste, Wüsten Hügel, Schwemmland, Ebenen oder Grasland errichtet werden und generiert +1 [ICON_Faith] Glauben. Erhält zusätzlich Erträge von angrenzenden Bezirken. +2 [ICON_Food] Nahrung bei benachbartem Stadtzentrum. Alle anderen angrenzenden Bezirke gewähren + 2 Ertrage ihrer entsprechenden Spezialisierung.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="de_DE">
+			<Text>3 zusätzliche Einflusspunkte pro Runde für Gesandtengenerierung und halbierte Kosten für das Ausheben von Stadtstaateneinheiten.[NEWLINE][NEWLINE]Die Einnahme von Barbaren Außenposten gewährt zusätzlich zu dem üblichem[ICON_Gold] Gold einen Stammesdorf Bonus.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="de_DE">
+			<Text>Ermöglicht die Errichtung des Zikkurats, einer einzigartigen Modernisierung Sumeriens.[NEWLINE][NEWLINE]+2 [ICON_Science] Wissenschaft. +1 [ICON_Culture] Kultur wenn angrenzend an einen Fluss. +1 [ICON_CULTURE] Kultur für den Diplomatischen Dienst. +1 [ICON_CULTURE] Kultur und +1 [ICON_Science] Wissenschaft bei Erreichen der Aufklärung. Darf nur auf Flachland errichtet werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_Amenities] Annehmlichkeit für jedes benachbarte See Geländefelds Huey Teocllis. +1 [ICON_Food] Nahrung, +1 [ICON_Production] Produktion, +2 [ICON_CULTURE] Kultur auf jedem Seegeländefeld innerhalb des Reiches. Muss auf einem See angrenzend an Land errichtet werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_FASCISM_ATTACK_BUFF_MODIFIER_DESCRIPTION" Language="de_DE">
+			<Text>+5 Kampfstärke von Faschismus</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_FASCISM_ATTACK_BUFF_DESCRIPTION" Language="de_DE">
+			<Text>+5 [ICON_Strength] Kampfstärke aufgrund von Faschismus.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_FAITH] Glauben und +1 [ICON_FOOD] Nahrung für jedes an das Stadtzentrum angrenzende Wüsten, oder Wüstenhügelgeländefeld. Minen produzieren -1 [ICON_PRODUCTION] Produktion, dafür aber +2 [ICON_GOLD] Gold. Zusätzliche+1 [ICON_GOLD] Gold von Minen nach jeweils der Erforschung von Baken und des Wirtschaftswesens. Kann Gebäude im Handelsbezirk mit [ICON_Faith] Gauben erwerben.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_CREE_OKIHTCITAW_DESCRIPTION" Language="de_DE">
+			<Text>Schnellere Fortbewegung in Wäldern und Regenwald.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="de_DE">
+			<Text>Eine einzig den Cree zugängliche Aufklärungseinheit der Antike, eine stärkere, ihn ersetzende Variante des Spähers. Schnellere [ICON_Movement] Fortbewegung in Wäldern und Regenwald.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="de_DE">
+			<Text>Gründet eine Religion mit einem zusätzlichen Glaubenssatz. Siedler und Handwerker erhalten +1 [ICON_Movement] Bewegungsreichweite. +5 [ICON_Faith] Glauben für jede getroffene Zivilisation (Indien eingeschossen), die eine Religion gegründet hat und sich nicht Im Krieg befindet. Gegnerische Zivilisationen erhalten doppelt so viel Kriegsmüdigkeit beim Kampf gegen Gandhi.</Text>
+		</Replace>
 		<Replace Tag="LOC_TECH_STEEL_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_Production] Produktion durch die Sägewerk-Modernisierung. Schaltet Urbane Verteidigung frei und gewährt all Euren Städten automatisch 300 Befestigungsstärke und die Fernkampffähigkeit. Alle bisherigen Mauer-Modernisierungen werden veraltet und Belagerungs-Unterstützungseinheiten sind nicht mehr effektiv.</Text>
 		</Replace>
@@ -33,12 +102,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_GreatProphet] Punkt des Typs "Großer Prophet" pro Runde, wenn Astrologie erforscht wurde. Arabien erhält automatisch den letzten Großen Propheten [ICON_GreatProphet], wenn sie noch keinen bisher erhielten. +1 [ICON_Science] Wissenschaft für jede fremde Stadt mit Arabiens Religion. </Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="de_DE">
-			<Text>+25% [ICON_Production] Produktion für Bezirke und Wunder, wenn sie neben einem Fluss platziert werden. Schwemmland verhindert nicht die Platzierung von Bezirken und Wundern.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+25% [ICON_Production] Produktion für Bezirke und Wunder, wenn sie neben einem Fluss platziert werden. Erleidet keinen Schaden durch Überschwemmungen.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="de_DE">
 			<Text>Alle Weltwunder gewähren +6 [ICON_Faith] Glauben.</Text>
@@ -173,20 +236,10 @@
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, ein Chateau, die einzigartige Modernisierung Frankreichs, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Culture] Kultur und +1 Anziehungskraft. +1 [ICON_Culture] Kultur für jedes benachbarte Wunder. +1 [ICON_Gold] Gold und +1 [ICON_Food] Nahrung für jedes benachbarte Luxusgut. Gewährt +1 [ICON_HOUSING] Wohnraum nach Erforschung vom Feudalismus und [ICON_TOURISM] Tourismus nach der Erforschung von Luftfahrt. Kann nur an Flüssen gebaut werden.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Sphinx, die einzigartige Modernisierung Ägyptens, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben, +1 [ICON_Culture] Kultur und +2 Anziehungskraft.[NEWLINE][NEWLINE]+1 [ICON_Faith] Glauben und +1 [ICON_CULTURE] Kultur, wenn neben einem Wunder. +1 [ICON_FOOD] Nahrung und +1 [ICON_PRODUCTION] Produktion, wenn sie auf einem Wüstengeländefeld gebaut wurde oder +1 [ICON_CULTURE] Kultur beim Bau auf Schwemmland.[NEWLINE][NEWLINE]Zusätzliche [ICON_CULTURE] Kultur nach Erforschen von Diplomatischer Dienst. Gewährt [ICON_TOURISM] Tourismus nach der Erforschung von Luftfahrt. Kann nicht auf Schnee oder Schneehügeln gebaut werden.</Text>
-		</Replace>
-		
-		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Sphinx, die einzigartige Modernisierung Ägyptens, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben, +1 [ICON_Culture] Kultur und +1 Anziehungskraft. +1 [ICON_Faith] Glauben und +1 [ICON_CULTURE] Kultur, wenn neben einem Wunder.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, ein Chateau, die einzigartige Modernisierung Frankreichs, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Culture] Kultur und +1 Anziehungskraft. +1 [ICON_Culture] Kultur für jedes angrenzende Wunder. +1 [ICON_Gold] Gold und +1 [ICON_Food] Nahrung für jedes angrenzende Luxusgut. Gewährt +1 [ICON_HOUSING] Wohnraum nach Erforschung vom Feudalismus und [ICON_TOURISM] Tourismus nach Erforschung von Luftfahrt. Kann nur an Flüssen gebaut werden.</Text>
 		</Replace>
 		<!---------------======== GATHERING STORM ========------------------->
-		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+5 Loyalität pro Runde in besetzten Städten mit Garnisionseinheit. Das Erklären eines Überraschungskrieges zählt nur bezüglich [ICON_STAT_GRIEVANCE] Groll und Kriegstreiberei als formeller Krieg.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Gewährt einen zusätzlichen Glaubenssatz, beim Gründen der Religion. Siedler und Handwerker erhalten +1 [ICON_Movement] Fortbewegungspunkt. +5 [ICON_Faith] Glauben und +1 [ICON_Favor] Diplomatische Gunst pro Runde für jede getroffene Zivilisation(einschließlich Indien), die eine Religion gegründet hat und sich nicht im Krieg befindet. Feindliche Zivilisationen erhalten die doppelte Kriegsmüdigkeit beim Kampf gegen Gandhi.</Text>
 		</Replace>
@@ -219,6 +272,9 @@
 		</Row>
 		<!-- Macedon -->
 		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="de_DE">
+			<Text>Erhaltet Bonusse bei Stadt-Eroberungen: +20% [ICON_PRODUCTION] in alle Städten für 10 Rundens, sowie ein[ICON_TechBoosted] Heureka für jedes Lager oder jeden Campusin der eroberten Stadt und eine [ICON_CivicBoosted] Eingebung für jede Heilige Stätte oder jeden Theaterplatz.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION" Language="de_DE">
 			<Text>Erhaltet Bonusse bei Stadt-Eroberungen: +20% [ICON_PRODUCTION] in alle Städten für 10 Rundens, sowie ein[ICON_TechBoosted] Heureka für jedes Lager oder jeden Campusin der eroberten Stadt und eine [ICON_CivicBoosted] Eingebung für jede Heilige Stätte oder jeden Theaterplatz.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="de_DE">
@@ -275,10 +331,6 @@
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="de_DE">
 			<Text>Alle Fernkampfeinheiten erhalten +25% Kampferfahrung. Minen auf strategischen Ressourcen liefern +1 [ICON_Production] Produktion. Minen auf Bonus-Ressourcen und Luxusgütern liefernv +2 [ICON_Gold] Gold.</Text>
-		</Replace>
-		<!-- Persia -->
-		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="de_DE">
-			<Text>+5 Loyalität in besetzten Städten mit Garnisons-Einheit. Das Erklären eines Überraschungskriegs zählt nur bezüglich Kriegstreiberei und Kriegsmüdigkeit als formeller Krieg.</Text>
 		</Replace>
 		<!-- Russia -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="de_DE">

@@ -117,12 +117,6 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_FOOD] Nourriture +1 pour les cases de plaines inondables. [ICON_Production] Production +25 % pour la construction de quartiers et de merveilles adjacents à une rivière. Ne subit aucun dégât d'inondation.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire un sphinx, exclusif à l'Égypte. [NEWLINE][NEWLINE][ICON_Faith] Foi +2 et [ICON_Culture] culture +1. Attrait +2. [ICON_Faith] Foi +1 et [ICON_CULTURE] +1 si adjacent à une merveille. [ICON_FOOD] Nourriture +1 et [ICON_PRODUCTION] Production +1 si construit sur une case de désert ou [ICON_CULTURE] Culture +1 si construit sur une plaine inondable. [ICON_CULTURE] Culture supplémentaire une fois le Service Diplomatique adopté. Octroie du [ICON_Tourism] tourisme une fois l'aviation recherchée. Ne peut pas être construit sur les cases de neige ou de colline enneigée.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire un sphinx, exclusif à l'Égypte. [NEWLINE][NEWLINE][ICON_Faith] Foi +2 et [ICON_Culture] culture +1. Attrait +1. [ICON_Faith] Foi +1 et [ICON_CULTURE] +1 si adjacent à une merveille.</Text>
-		</Replace>
 		<Replace Tag="LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive à l'Égypte, cette unité d'attaque à distance de l'Antiquité dispose de 4 [ICON_Movement] PM quand elle commence son tour en terrain dégagé.</Text>
 		</Replace>
@@ -374,9 +368,6 @@
 		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_DESCRIPTION" Language="fr_FR">
 			<Text>Permet la construction du Dar-e Mehr ([ICON_Faith] Foi +3 et [ICON_CULTURE] Culture +2).</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_WARRIOR_MONKS_DESCRIPTION" Language="fr_FR">
-			<Text>Permet de dépenser de la [ICON_Faith] foi pour former des moines-guerriers, des unités de combat terrestres de l'ère Classique à l'arbre de promotions spécifique. La ville d'achat doit posséder un lieu saint doté d'un temple.</Text>
-		</Replace>
 		
 		<!-- =============== M E R V E I L L E S === N A T U R E L L E S =============== -->
 		
@@ -467,9 +458,6 @@
 		</Replace>
 		<Replace Tag="LOC_SIEGE_RANGED_DEFENSE_DESCRIPTION" Language="fr_FR">
 			<Text>+10 Puissance de Combat en cas de défense face à une attaque à distance.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_WARRIOR_MONK_DESCRIPTION" Language="fr_FR">
-			<Text>Cette unité de combat terrestre rapide de l'ère Classique profite d'un arbre de promotions spécifique.</Text>
 		</Replace>
 		
 		<!-- Correction traduction officelle suite à la mise à jour de Juin 2019 -->

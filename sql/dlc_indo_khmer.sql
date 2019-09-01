@@ -4,6 +4,11 @@
 --==================
 -- Khmer
 --==================
+-- Domrey Unique Unit will now be a Catapult replacement that has a higher melee strength and bombard strength
+UPDATE Units SET Combat=28, Bombard=40, Cost=140, Maintenance=2, PrereqTech='TECH_ENGINEERING', MandatoryObsoleteTech='TECH_STEEL' WHERE UnitType='UNIT_KHMER_DOMREY';
+UPDATE UnitUpgrades SET UpgradeUnit='UNIT_BOMBARD' WHERE Unit='UNIT_KHMER_DOMREY';
+INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType)
+	VALUES ('UNIT_KHMER_DOMREY', 'UNIT_CATAPULT');
 -- Prasat gives a free Missionary when built
 INSERT INTO Modifiers (ModifierId , ModifierType , RunOnce , Permanent)
     VALUES ('PRASAT_GRANT_MISSIONARY_CPLMOD' , 'MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY' , 1 , 1);
