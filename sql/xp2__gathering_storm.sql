@@ -207,6 +207,12 @@ UPDATE ModifierArguments SET Value='4' WHERE ModifierId='COLLECTIVIZATION_INTERN
 --==============================================================
 --******				  PANTHEONS						  ******
 --==============================================================
+-- reeds and marshes works with all floodplains (see egypt for ReqArgs)
+INSERT INTO RequirementSetRequirements 
+    (RequirementSetId, RequirementId)
+    VALUES
+    ('PLOT_HAS_REEDS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_FLOODPLAINS_GRASSLAND'),
+    ('PLOT_HAS_REEDS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_FLOODPLAINS_PLAINS');
 -- more faith for fire goddess and no district dmg from eruptions
 UPDATE ModifierArguments SET Value='4' WHERE ModifierId='GODDESS_OF_FIRE_FEATURES_FAITH_MODIFIER' AND Name='Amount';
 

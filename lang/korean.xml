@@ -16,6 +16,51 @@
 		<Replace Tag="LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION" Language="ko_KR">
 			<Text>지열 열하 및 화산토에서 [ICON_Faith] 신앙 +4을 획득합니다.</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ko_KR">
+            <Text>행복한 도시에 [ICON_SCIENCE] 과학 +10%, [ICON_PRODUCTION] 생산력 +10%를 제공합니다. 황홀한 도시에는 [ICON_SCIENCE] 과학 +5%, [ICON_PRODUCTION] 생산력 +5%가 추가로 제공됩니다. 행복한 도시는 캠퍼스마다 [ICON_GreatScientist] 위대한 과학자 점수 +1, 산업구역마다 [ICON_GreatEngineer] 위대한 기술자 점수 +1을 제공합니다. 황홀한 도시에는 과학자 및 기술자 점수 효과가 +1씩 추가로 제공됩니다.</Text>
+        </Replace>
+		<Replace Tag="LOC_TRAIT_FALLBABYLON_COMBAT_BONUS_DESCRIPTION" Language="ko_KR">
+			<Text>공격시 전투력 +{1_Value}</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>도시 성장을 위한 로마 특유의 특수지구입니다. 송수로 특수지구를 대체하며 건설 비용이 더 낮습니다. 인접한 특수지구 타일 2개당 보너스 [ICON_Culture] 문화 +1을 획득합니다.[NEWLINE][NEWLINE]인접한 강, 호수, 오아시스 또는 산으로부터 이 도시에 담수 원천을 제공합니다. 담수를 확보하지 못한 도시에는 [ICON_Housing] 주거공간을 최대 6만큼 제공합니다. 하지만 이미 담수를 확보한 도시에는 [ICON_Housing] 주거공간 +2를 제공합니다. 목욕탕은 위와 관계없이 추가 보너스 [ICON_Housing] 주거공간 +2 및 [ICON_Amenities] 쾌적도 +1을 제공합니다. 지열 열하 옆에 건설한 경우 [ICON_Amenities] 쾌적도 +1을 제공합니다. 가뭄 기간 중 [ICON_Food] 식량 손실을 방지합니다. 도심부 옆에 건설해야 합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_ALT_DESCRIPTION" Language="ko_KR">
+			<Text>도시 성장을 위한 로마 특유의 특수지구입니다. 송수로 특수지구를 대체하며 건설 비용이 더 낮습니다. 인접한 특수지구 타일 2개당 보너스 [ICON_Culture] 문화 +1을 획득합니다.[NEWLINE][NEWLINE]인접한 강, 호수, 오아시스 또는 산으로부터 이 도시에 담수 원천을 제공합니다. 담수를 확보하지 못한 도시에는 [ICON_Housing] 주거공간을 최대 6만큼 제공합니다. 하지만 이미 담수를 확보한 도시에는 [ICON_Housing] 주거공간 +2를 제공합니다. 목욕탕은 위와 관계없이 추가 보너스 [ICON_Housing] 주거공간 +2 및 [ICON_Amenities] 쾌적도 +1을 제공합니다. 지열 열하 옆에 건설한 경우 [ICON_Amenities] 쾌적도 +1을 제공합니다. 가뭄 기간 중 [ICON_Food] 식량 손실을 방지합니다. 도심부 옆에 건설해야 합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BATH_DESCRIPTION" Language="ko_KR">
+			<Text>도시 성장을 위한 로마 특유의 특수지구입니다. 송수로 특수지구를 대체하며 건설 비용이 더 낮습니다. 인접한 특수지구 타일 2개당 보너스 [ICON_Culture] 문화 +1을 획득합니다.[NEWLINE][NEWLINE]인접한 강, 호수, 오아시스 또는 산으로부터 이 도시에 담수 원천을 제공합니다. 담수를 확보하지 못한 도시에는 [ICON_Housing] 주거공간을 최대 6만큼 제공합니다. 하지만 이미 담수를 확보한 도시에는 [ICON_Housing] 주거공간 +2를 제공합니다. 목욕탕은 위와 관계없이 추가 보너스[ICON_Housing] 주거공간 +2 및 [ICON_Amenities] 쾌적도 +1을 제공합니다. 도심부 옆에 지어야 합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +2를 제공합니다.[NEWLINE][NEWLINE]불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다. 범람원이 아닌 사막에 지으면 [ICON_Food] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다. 범람원에 지으면 [ICON_CULTURE] 문화 +1을 제공합니다.[NEWLINE][NEWLINE]외교부 사회 제도를 발견하면 [ICON_CULTURE] 문화를 추가로 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 다른 스핑크스 옆에 지을 수 없습니다. 설원 또는 설원 언덕에 지을 수 없습니다.</Text>
+		</Replace>				
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ko_KR">
+			<Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +1을 제공합니다. 불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다. 범람원이 아닌 사막에 지으면 [ICON_Food] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다. 범람원에 지으면 [ICON_CULTURE] 문화 +1을 제공합니다.[NEWLINE][NEWLINE]외교부 사회 제도를 발견하면 [ICON_CULTURE] 문화를 추가로 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 다른 스핑크스 옆에 지을 수 없습니다. 설원 또는 설원 언덕에 지을 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS_DESCRIPTION" Language="ko_KR">
+			<Text>도시에 [ICON_Food] 성장 +20%를 제공합니다. 이 도시가 목적지인 [ICON_TradeRoute] 교역로에서 출발 도시에 [ICON_Food] 식량 +2 및 [ICON_PRODUCTION] 생산력 +2를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_COLLECTIVIZATION_DESCRIPTION_XP2" Language="ko_KR">
+			<Text>국내 [ICON_TradeRoute] 교역로에서 [ICON_Food] 식량 +4 및 [ICON_Production] 생산력 +4.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION" Language="ko_KR">
+			<Text>지열 열하 및 화산토에서 [ICON_Faith] 신앙 +4를 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_PAIRIDAEZA_DESCRIPTION" Language="ko_KR">
+			<Text>페르시아 특유의 파이리다에자를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_CULTURE] 문화 +1 및 [ICON_GOLD] 금 +2를 제공합니다. 매력도 +2를 제공합니다. 인접한 성지, 캠퍼스 또는 극장가마다 [ICON_CULTURE] 문화 +1을 제공합니다. 인접한 상업 중심지, 항만, 산업구역 또는 도심부마다 [ICON_GOLD] 금 +1을 제공합니다. 기술 발전표 및 사회 제도표의 진전에 따라 추가 [ICON_Culture] 문화 및 [ICON_Tourism] 관광을 제공합니다. 설원, 툰드라, 설원 언덕, 툰드라 언덕 위에 또는 다른 파이리다에자 옆에 지을 수 없습니다.</Text>
+		</Replace>		
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>모든 유닛이 공격시 [ICON_Strength] 전투력 +3을 얻습니다. 주둔 유닛이 있는 점령 도시에 턴당 충성심 +5가 부여됩니다. 기습 전쟁의 선포는 [ICON_STAT_GRIEVANCE] 적대감과 전쟁 피로도 유발의 목적으로만 공식 전쟁으로 인정됩니다.</Text>
+		</Replace>		
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="ko_KR">
+			<Text>모든 유닛이 공격시 [ICON_Strength] 전투력 +3을 얻습니다. 주둔 유닛이 있는 점령 도시에 턴당 충성심 +5가 부여됩니다. 기습 전쟁의 선포는 전쟁 도발과 전쟁 피로도 유발의 목적으로만 공식 전쟁으로 인정됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_DESCRIPTION" Language="ko_KR">
+			<Text>모든 유닛이 공격시 [ICON_Strength] 전투력 +3을 얻습니다. 점령 도시에 생산량 페널티가 없습니다. 기습 전쟁의 선포는 전쟁 도발과 전쟁 피로도 유발의 목적으로써만 공식 전쟁으로 인정됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="ko_KR">
+			<Text>정치 철학 완성 시 [ICON_TradeRoute] 교역로 최대치 +1을 제공합니다. 자국 도시 간의 교역에서 [ICON_Gold] 금 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 기술 발전표 및 사회 제도표의 진전에 따라 추가 [ICON_Gold] 금 및 [ICON_Culture] 문화를 제공합니다. 자국 영토 내의 도로는 일반적인 경우보다 한 단계 업그레이드된 도로입니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_SIEGE_RANGED_DEFENSE_DESCRIPTION" Language="ko_KR">
 			<Text>원거리 공격에서 방어 시 [ICON_Strength] 전투력 +10.</Text>
 		</Replace>
