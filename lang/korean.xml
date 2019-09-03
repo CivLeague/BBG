@@ -10,15 +10,6 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ko_KR">
             <Text>행복한 도시에 [ICON_SCIENCE] 과학 +10%, [ICON_PRODUCTION] 생산력 +10%를 제공합니다. 황홀한 도시에는 [ICON_SCIENCE] 과학 +5%, [ICON_PRODUCTION] 생산력 +5%가 추가로 제공됩니다. 행복한 도시는 캠퍼스마다 [ICON_GreatScientist] 위대한 과학자 점수 +1, 산업구역마다 [ICON_GreatEngineer] 위대한 기술자 점수 +1을 제공합니다. 황홀한 도시에는 과학자 및 기술자 점수 효과가 +1씩 추가로 제공됩니다.</Text>
         </Replace>
-		<Replace Tag="LOC_POLICY_COLLECTIVIZATION_DESCRIPTION_XP2" Language="ko_KR">
-			<Text>국내 [ICON_TradeRoute] 교역로에서 [ICON_Production] 생산력 +4 및 [ICON_Food] 식량 +4.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION" Language="ko_KR">
-			<Text>지열 열하 및 화산토에서 [ICON_Faith] 신앙 +4을 획득합니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ko_KR">
-            <Text>행복한 도시에 [ICON_SCIENCE] 과학 +10%, [ICON_PRODUCTION] 생산력 +10%를 제공합니다. 황홀한 도시에는 [ICON_SCIENCE] 과학 +5%, [ICON_PRODUCTION] 생산력 +5%가 추가로 제공됩니다. 행복한 도시는 캠퍼스마다 [ICON_GreatScientist] 위대한 과학자 점수 +1, 산업구역마다 [ICON_GreatEngineer] 위대한 기술자 점수 +1을 제공합니다. 황홀한 도시에는 과학자 및 기술자 점수 효과가 +1씩 추가로 제공됩니다.</Text>
-        </Replace>
 		<Replace Tag="LOC_TRAIT_FALLBABYLON_COMBAT_BONUS_DESCRIPTION" Language="ko_KR">
 			<Text>공격시 전투력 +{1_Value}</Text>
 		</Replace>
@@ -145,6 +136,9 @@
         <Replace Tag="LOC_POLICY_FORCE_MODERNIZATION_DESCRIPTION" Language="ko_KR">
             <Text>모든 유닛 업그레이드에 [ICON_Gold] 금 50% 할인. 모든 유닛 생산 및 업그레이드에 자원 비용 50% 감소.</Text>
         </Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="ko_KR">
+			<Text>점성술 기술을 연구하면 매 턴 [ICON_GreatProphet] 위대한 선지자 점수 +1을 얻습니다. 플레이어가 [ICON_GreatProphet] 위대한 선지자가 없을 시, 마지막에서 두 번째 위대한 선지자를 다른 문명이 영입하는 경우, 플레이어는 마지막 [ICON_GreatProphet] 위대한 선지자를 즉시 얻습니다. 아라비아의 종교를 믿는 타 문명 도시마다 [ICON_Science] 과학 +1을 제공합니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="ko_KR">
 			<Text>특수지구와 불가사의를 강 옆에 배치할 경우 이들의 건설에 대한 [ICON_Production] 생산력 +25%를 제공합니다. 범람원 타일에서 [ICON_FOOD] 식량 +1을 제공합니다. 범람원은 특수지구 및 불가사의 배치를 방해하지 않습니다.</Text>
 		</Replace>
@@ -337,9 +331,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="ko_KR">
 			<Text>해당 종교의 예배 건물은 일반적인 [ICON_Faith] 신앙 비용의 10%만 소진하여 구매할 수 있습니다. 이 예배 건물을 개선하면 아라비아 도시에서 생산되는 [ICON_Science] 과학, [ICON_Faith] 신앙 및 [ICON_Culture] 문화가 20% 추가됩니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="ko_KR">
-			<Text>점성술 기술을 연구하면 매 턴 [ICON_GreatProphet] 위대한 선지자 점수 +1을 얻습니다. 플레이어가 [ICON_GreatProphet] 위대한 선지자가 없을 시, 마지막에서 두 번째 위대한 선지자를 다른 문명이 영입하는 경우, 플레이어는 마지막 [ICON_GreatProphet] 위대한 선지자를 즉시 얻습니다. 아라비아의 종교를 믿는 타 문명 도시마다 [ICON_Science] 과학 +1을 제공합니다.</Text>
-		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>이전 10턴 중 도시를 해방했다면 [ICON_Production] 생산력 +50%를 제공합니다.</Text>
@@ -425,6 +416,7 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ko_KR">
 			<Text>모든 원거리 유닛이 +25%의 전투 경험치를 획득합니다. 전략 자원 위에 있는 광산에서 [ICON_Production] 생산력 +1을 제공합니다. 보너스 자원과 사치 자원 위에 있는 광산에서 [ICON_Gold] 금 +2를 제공합니다.</Text>
 		</Replace>
+		<!-- Persia -->
 		<!-- Poland -->
         <Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="ko_KR">
             <Text>폴란드 창시 종교는 폴란드의 문화 폭탄으로 타일을 잃은 인접 도시의 대중 종교가 됩니다. 성지는 인접 특수지구로부터 일반적인 신앙 인접 보너스를 획득합니다.[NEWLINE][NEWLINE]모든 성유물은 신앙(+2), 문화(+2) 및 금(+4) 보너스를 제공합니다. 종교를 창시하거나 완성할 때 무료로 성유물을 하나 받습니다.</Text>
