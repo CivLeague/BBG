@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="ko_KR">
+			<Text>중세, 르네상스 및 산업 시대 불가사의 건설에 대해 [ICON_Production] 생산력 +20%를 제공합니다. 모든 시대의 불가사의 [ICON_Tourism] 관광 생산량이 50% 증가합니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_BUILDING_FILM_STUDIO_DESCRIPTION" Language="ko_KR">
 			<Text>미국 특유의 건물입니다. 현대 시대에서 [ICON_Tourism] 관광 +50%를 제공합니다.</Text>
 		</Replace>

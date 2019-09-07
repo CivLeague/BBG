@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="de_DE">
+			<Text>+20 % [ICON_Production] Produktion für Wunder des Mittelalters, der Renaissance und des Industriezeitalters. +50 % [ICON_Tourism] Tourismus durch Wunder aus beliebigen Zeitaltern.</Text>
+		</Replace>
 		<Replace Tag="LOC_BUILDING_FILM_STUDIO_DESCRIPTION" Language="de_DE">
 			<Text>A building unique to America. +50% [ICON_Tourism] Tourism pressure from this city towards other civilizations in the Modern era.</Text>
 		</Replace>

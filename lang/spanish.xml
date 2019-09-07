@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="es_ES">
+			<Text>+20% a la Producción [ICON_Production] para las maravillas de la Edad Media, el Renacimiento y la Revolución Industrial. +50% al Turismo [ICON_Tourism] por las maravillas de cualquier época.</Text>
+		</Replace>
 		<Replace Tag="LOC_BUILDING_FILM_STUDIO_DESCRIPTION" Language="es_ES">
 			<Text>Un edificio exclusivo de América. +50% a la presión del Turismo [ICON_Tourism] por esta ciudad a otras civilizaciones en la Época Moderna.</Text>
 		</Replace>

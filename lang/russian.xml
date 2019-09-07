@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="ru_RU">
+			<Text>+20% [ICON_Production] к производству при создании чудес света Средневековья, эпохи Возрождения и Промышленной эры. +50% [ICON_Tourism] туризма от чудес любой эпохи.</Text>
+		</Replace>
 		<Replace Tag="LOC_BUILDING_FILM_STUDIO_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальное здание Америки. +50% к влиянию [ICON_Tourism] туризма от этого города на другие цивилизации в Новое время.</Text>
 		</Replace>

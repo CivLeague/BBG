@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="ja_JP">
+			<Text>中世、ルネサンス時代、産業時代の遺産に対する [ICON_Production] 生産力+20%。遺産による [ICON_Tourism] 観光力+50%。</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_FALLBABYLON_COMBAT_BONUS_DESCRIPTION" Language="ja_JP">
 			<Text>攻撃時+{1_Value}</Text>
 		</Replace>
