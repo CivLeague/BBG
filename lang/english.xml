@@ -515,9 +515,6 @@
 		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_ENVOY] Envoy when you build a wonder, including Apadana, in this city.[NEWLINE][NEWLINE]Must be built adjacent to your [ICON_CAPITAL] Capital.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_HALICARNASSUS_MAUSOLEUM_DESCRIPTION" Language="en_US">
-			<Text>Grants a free [ICON_GREATADMIRAL] Great Admiral when the wonder is constructed.[NEWLINE][NEWLINE]All [ICON_GREATADMIRAL] Great Admirals and all [ICON_GREATGENERAL] Great Generals can use their retirement ability an additional time. Must be built adjacent to a Harbor district.</Text>
-		</Replace>
 		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="en_US">
 			<Text>+100% [ICON_Production] Production towards naval units in all cities. Must be built on a Coast tile that is adjacent to an Industrial Zone district.</Text>
 		</Replace>

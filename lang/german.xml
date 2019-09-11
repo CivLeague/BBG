@@ -347,10 +347,6 @@
 		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_ENVOY] Gesandter beim Bau eines Wunders, einschließlich dem Apadana, in dieser Stadt.[NEWLINE][NEWLINE]Muss angrenzend an Eure [ICON_CAPITAL] Hauptstadt gebaut werden.</Text>
 		</Replace>
-		<!-- Mausoleum at Halicarnassus -->
-		<Replace Tag="LOC_BUILDING_HALICARNASSUS_MAUSOLEUM_DESCRIPTION" Language="de_DE">
-			<Text>Gewährt einen kostenlosen [ICON_GREATADMIRAL] Großen Admiral, wenn das Wunder fertiggestellt wird.[NEWLINE][NEWLINE]Alle [ICON_GREATADMIRAL] Großen Admiräle und alle [ICON_GREATGENERAL] Großen Generäle können ihre Ruhestand-Fähigkeit ein weiteres Mal nutzen. Muss angrenzend an einen Hafenbezirk gebaut werden.</Text>
-		</Replace>
 		<!-- Venetian Arsenal -->
 		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="de_DE">
 			<Text>+100% [ICON_Production] Produktion für alle Marineeinheiten in allen Städten. Muss an der Küste und neben einem Industriegebiet-Bezirk gebaut werden.</Text>

@@ -413,9 +413,6 @@
 		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_ENVOY] Émissaires +1 lorsque vous construisez une merveille dans cette ville, dont une apadana. [NEWLINE][NEWLINE]Doit être construite adjacente à votre [ICON_CAPITAL] capitale.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_HALICARNASSUS_MAUSOLEUM_DESCRIPTION" Language="fr_FR">
-			<Text>Octroie un [ICON_GREATADMIRAL] amiral illustre gratuit une fois la merveille construite. [NEWLINE][NEWLINE]Tous les [ICON_GREATADMIRAL] amiraux illustres et [ICON_GREATGENERAL] généraux illustres peuvent utiliser leur compétence de retraite une fois supplémentaire. Doit être construit adjacent à un port.</Text>
-		</Replace>
 		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +100% pour les unités navales dans toutes vos villes. Doit être construit sur côte adjacente à une zone industrielle.</Text>
 		</Replace>

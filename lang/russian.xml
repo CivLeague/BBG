@@ -331,10 +331,6 @@
 		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_ENVOY] посол после постройки чуда света – в том числе Ападаны – в этом городе.[NEWLINE][NEWLINE]Можно построить только рядом с Вашей [ICON_CAPITAL] столицей.</Text>
 		</Replace>
-		<!-- Mausoleum at Halicarnassus -->
-		<Replace Tag="LOC_BUILDING_HALICARNASSUS_MAUSOLEUM_DESCRIPTION" Language="ru_RU">
-			<Text>После постройки дает бесплатного [ICON_GREATADMIRAL] великого флотоводца.[NEWLINE][NEWLINE]Все [ICON_GREATADMIRAL] великие флотоводцы и [ICON_GREATGENERAL] великие генералы могут использовать способность ухода в отставку дважды. Можно построить только рядом с гаванью.</Text>
-		</Replace>
 		<!-- Venetian Arsenal -->
 		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="ru_RU">
 			<Text>+100% [ICON_Production] производства при создании морских юнитов. Можно построить только на клетке побережья рядом с промышленной зоной.</Text>

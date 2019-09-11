@@ -515,9 +515,6 @@
 		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="ko_KR">
 			<Text>이 도시에 아파다나를 포함한 불가사의를 건설하면 [ICON_ENVOY] 사절 +1.[NEWLINE][NEWLINE]플레이어 [ICON_CAPITAL] 수도 옆에 지어야 합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_HALICARNASSUS_MAUSOLEUM_DESCRIPTION" Language="ko_KR">
-			<Text>불가사의 건설이 완료되면 무료 [ICON_GREATADMIRAL] 위대한 제독을 제공합니다.[NEWLINE][NEWLINE][ICON_GREATADMIRAL] 위대한 제독은 퇴장 능력을 한 번 더 쓸 수 있으며 [ICON_GREATGENERAL] 위대한 장군 또한 능력을 한 번 더 쓸 수 있습니다. 항만 특수지구 옆에 지어야 합니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="ko_KR">
 			<Text>모든 도시에서 해군 유닛을 생산할 때 [ICON_Production] 생산력 +100%. 산업구역 특수지구 옆 해안 타일에 지어야 합니다.</Text>
 		</Replace>

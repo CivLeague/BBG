@@ -115,8 +115,6 @@ UPDATE Units SET Combat=35, RangedCombat=20 WHERE UnitType='UNIT_PERSIAN_IMMORTA
 --==============================================================
 -- Apadana +1 envoy instead of 2
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='APADANA_AWARD_TWO_INFLUENCE_TOKEN_MODIFIER';
--- Mausoleum at Halicarnassus gives 1 extra retirement Admirals and Generals instead of Admirals and Engineers
-UPDATE RequirementArguments SET Value='GREAT_PERSON_CLASS_GENERAL' WHERE RequirementId='REQUIREMENT_UNIT_IS_ENGINEER';
 
 
 

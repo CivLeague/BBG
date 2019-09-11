@@ -331,14 +331,6 @@
 		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="es_ES">
 			<Text>+1 [ICON_ENVOY] Enviado al construir una maravilla, incluida la Apadana, en esta ciudad.[NEWLINE][NEWLINE]Debe construirse adyacente a la Capital [ICON_CAPITAL] .</Text>
 		</Replace>
-		<!-- Mausoleum at Halicarnassus -->
-		<Replace Tag="LOC_BUILDING_HALICARNASSUS_MAUSOLEUM_DESCRIPTION" Language="es_ES">
-			<Text>Concede un Gran almirante [ICON_GREATADMIRAL] gratis al construir la maravilla.[NEWLINE][NEWLINE]Todos los Grandes almirantes [ICON_GREATADMIRAL] y Grandes generales [ICON_GREATGENERAL] tienen una habilidad de retirada adicional. Debe construirse adyacente a un distrito de Puerto.</Text>
-		</Replace>
-		<!-- Venetian Arsenal -->
-		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="es_ES">
-			<Text>+100% a la Producción [ICON_Production] para unidades navales en todas las ciudades. Debe construirse en una casilla de Costa que se encuentre adyacente a un distrito de Zona industrial.</Text>
-		</Replace>
 		<!-- NEW -->
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_2" Language="es_ES">
 			<Text>Pluma, pincel y voz: Gana +1 a la puntuación de época cada vez que activas una Inspiración [ICON_CivicBoosted]. +1 a la puntuación de época al construir un edificio con un espacio de gran obra. Si se elige al princpio de una Edad de Oro, [ICON_CivicBoosted] las inspiraciones proporcionan un 10% adicional de los costes de los principios. Cada ciudad recibe +1 a Cultura [ICON_Culture] y +1 de Oro [ICON_Gold] por cada distrito especializado.</Text>

@@ -377,14 +377,6 @@
 		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="ja_JP">
 			<Text>この都市に遺産(アパダーナを含む)を建設すると、[ICON_ENVOY] 代表団を1つ得る。首都に隣接した土地にのみ建設可能。</Text>
 		</Replace>
-		<!-- Mausoleum at Halicarnassus -->
-		<Replace Tag="LOC_BUILDING_HALICARNASSUS_MAUSOLEUM_DESCRIPTION" Language="ja_JP">
-			<Text>遺産を建設すると[ICON_GREATADMIRAL] 大提督1人を無償で獲得する。[NEWLINE][NEWLINE]すべての[ICON_GREATGENERAL]大将軍と[ICON_GREATADMIRAL] 大提督は退職能力を追加使用できるようになる。港区域に隣接した土地にのみ建設可能</Text>
-		</Replace>
-		<!-- Venetian Arsenal -->
-		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="ja_JP">
-			<Text>すべての海洋ユニットの[ICON_Production]生産+100%。工業地帯区域に隣接した沿岸タイルにのみ建設可能。</Text>
-		</Replace>
 		<!-- NEW -->
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="ja_JP">
 			<Text>聖地と劇場区域では、それぞれ [ICON_Faith]+2、[ICON_Culture]+2。</Text>
