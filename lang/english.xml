@@ -446,10 +446,6 @@
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. +2 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital.[NEWLINE][NEWLINE]+2 [ICON_Science] Science if built next to a Campus district. +1 Housing at Civil Service.[NEWLINE][NEWLINE]+2 Science at The Enlightenment.</Text>
 		</Replace>
-		<!-- Zulu -->
-		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="en_US">
-			<Text>May form Corps (Mercenaries Civic) and Armies (Nationalism Civic) earlier. An additional +5 [ICON_STRENGTH] Base Combat Strength to both Corps and Armies at Mobilization Civic.</Text>
-		</Replace>
 		<!---->
 		<!---->
 		<!--===============   D E D I C A T I O N S   ===============-->

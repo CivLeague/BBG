@@ -446,10 +446,6 @@
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="ko_KR">
 			<Text>스페인 특유의 전도관을 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2를 제공합니다. [ICON_Capital] 수도와 다른 대륙에 있으면 추가 [ICON_Faith] 신앙 +2를 제공합니다. [NEWLINE][NEWLINE]캠퍼스 특수지구 옆에 지으면 [ICON_Science] 과학 +2를 제공합니다. 공공 행정 사회 제도를 획득하면 [ICON_HOUSING] 주거공간 +1을 추가 제공합니다. [NEWLINE][NEWLINE]계몽주의 사회 제도를 획득하면 [ICON_Science] 과학 +2를 추가 제공합니다.</Text>
 		</Replace>
-		<!-- Zulu -->
-		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="ko_KR">
-			<Text>보다 빠르게 군단(용병 사회 제도)과 군대(민족주의 사회 제도)를 구성할 수 있습니다. 동원령 사회 제도를 획득하면 군단 및 군대에 [ICON_STRENGTH] 기본 전투력 +5를 제공합니다.</Text>
-		</Replace>
 		<!---->
 		<!---->
 		<!--===============   D E D I C A T I O N S   ===============-->

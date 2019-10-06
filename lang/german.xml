@@ -339,10 +339,6 @@
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="de_DE">
 			<Text>Russische Spezialeinheit des Industriezeitalters, die die Kavallerie ersetzt. Erhält +5 [ICON_Strength] Kampfstärke bei Kämpfen auf oder neben eigenem Gebiet. Kann sich nach dem Angriff fortbewegen, wenn noch [ICON_Movement] Fortbewegungspunkte übrig sind.</Text>
 		</Replace>
-		<!-- Zulu -->
-		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="de_DE">
-			<Text>Kann Korps (Söldner-Ausrichtung) und Armeen (Nationalismus-Ausrichtung) früher formen. Zusätzlich +5 [ICON_STRENGTH] Basis-Kampfstärke für Korps und Armeen, wenn die Mobilisierung-Ausrichtung abgeschlossen wurde.</Text>
-		</Replace>
 		<!-- Apadana Wonder -->
 		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_ENVOY] Gesandter beim Bau eines Wunders, einschließlich dem Apadana, in dieser Stadt.[NEWLINE][NEWLINE]Muss angrenzend an Eure [ICON_CAPITAL] Hauptstadt gebaut werden.</Text>

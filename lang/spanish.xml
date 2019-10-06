@@ -323,10 +323,6 @@
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="es_ES">
 			<Text>Unidad exclusiva de Rusia de la Revolución Industrial que sustituye a la Caballería. Más fuerte que la Caballería y gana +5 a la Fuerza de combate [ICON_Strength] cuando lucha en su territorio de origen o en uno adyacente. Puede moverse después de atacar si quedan puntos de Movimiento [ICON_Movement] .</Text>
 		</Replace>
-		<!-- Zulu -->
-		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="es_ES">
-			<Text>Se pueden formar Corps (Principio de Mercenarios) y Ejércitos (Principio de Nacionalismo) antes. +5 adicional a la Fuerza de combate base [ICON_STRENGTH] de Corps Y Ejércitos después de alcanzar el principio de Movilización.</Text>
-		</Replace>
 		<!-- Apadana Wonder -->
 		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="es_ES">
 			<Text>+1 [ICON_ENVOY] Enviado al construir una maravilla, incluida la Apadana, en esta ciudad.[NEWLINE][NEWLINE]Debe construirse adyacente a la Capital [ICON_CAPITAL] .</Text>

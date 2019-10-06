@@ -313,7 +313,7 @@
 		</Row>
 		<!-- Mapuche -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="ru_RU">
-			<Text>Все боевые юниты, произведенные в городах с действующим [ICON_Governor] губернатором, получают на 25% больше опыта в бою. +10 [ICON_Strength] боевой мощи против цивилизаций, находящихся в золотом веке.</Text>
+			<Text>Все боевые юниты, произведенные в городах с действующим [ICON_Governor] губернатором, получают на 25% больше опыта в бою. +5 [ICON_Strength] боевой мощи против цивилизаций, находящихся в золотом веке.</Text>
 		</Replace>
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ru_RU">
@@ -322,10 +322,6 @@
 		<!-- Russia -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный русский юнит Промышленной эры, заменяющий кавалерию. +5 [ICON_Strength] боевой мощи при сражении на своей территории или рядом с ней. Если остались [ICON_Movement] ОП, может продолжать движение после атаки.</Text>
-		</Replace>
-		<!-- Zulu -->
-		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="ru_RU">
-			<Text>Можно раньше формировать корпуса (социальный институт «Наемники») и армии (социальный институт «Национализм»). +5 базовой [ICON_STRENGTH] боевой мощи корпусов и армий (социальный институт "Мобилизация").</Text>
 		</Replace>
 		<!-- Apadana Wonder -->
 		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="ru_RU">

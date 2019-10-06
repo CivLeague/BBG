@@ -304,10 +304,6 @@
 		<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire une ziggurat, exclusive à Sumer. [NEWLINE][NEWLINE][ICON_Science] Science +2. [ICON_Culture] Culture +1 si adjacente à une rivière. [ICON_CULTURE] Culture +1 au Service Diplomatique. [ICON_CULTURE] Culture +1 et [ICON_Science] Science +1 aux Lumières. Construction impossible sur une colline, mais peut être construite sur des plaines inondables.</Text>
 		</Replace>
-		<!-- --------------- ZOULOUS --------------- -->
-		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="fr_FR">
-			<Text>Peut former plus tôt des régiments (dogme Mercenaires) et des armées (dogme Nationalisme). [ICON_STRENGTH] Puissance de combat de base +5 pour les régiments et armées après le dogme Mobilisation.</Text>
-		</Replace>
 		
 		<!-- =============== P A N T H É O N S =============== -->
 		

@@ -369,10 +369,6 @@
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="ja_JP">
 			<Text>騎兵にとって代わる、ロシア固有の産業時代のユニット。自分の領土に隣接しているタイルでの戦闘で戦闘力+5。移動ポイントが残っている場合は、攻撃後に移動することもできる。</Text>
 		</Replace>
-		<!-- Zulu -->
-		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="ja_JP">
-			<Text>軍団（傭兵）と大軍団（ナショナリズム）を早期に作ることが出来る。社会制度の戦時動員で軍団と大軍団に戦闘力[ICON_STRENGTH]+5。</Text>
-		</Replace>
 		<!-- Apadana Wonder -->
 		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="ja_JP">
 			<Text>この都市に遺産(アパダーナを含む)を建設すると、[ICON_ENVOY] 代表団を1つ得る。首都に隣接した土地にのみ建設可能。</Text>
