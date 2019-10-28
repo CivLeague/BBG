@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_FALLBABYLON_COMBAT_BONUS_DESCRIPTION" Language="es_ES">
+			<Text>+{1_Value} cuando ataca</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>Un distrito único en Roma que sustituye al distrito de Aqueduct y es más barato de construir. +1 [ICON_Culture] Cultura por cada 2 distritos adyacentes.[NEWLINE][NEWLINE]Proporciona a esta ciudad una fuente de agua dulce de un río adyacente, lago, oasis o montaña. Las ciudades que aún no tienen agua dulce reciben hasta 6 [ICON_Housing] Vivienda. Las ciudades que ya tienen agua dulce existente obtendrán +2 [ICON_Housing] Vivienda. Si se construye junto a una fisura geotérmica +1 [ICON_Amenities] Servicios. En todos los casos, el baño proporciona una bonificación adicional de +2 [ICON_Housing] Vivienda y +1 [ICON_Amenities] Servicios. Evita la pérdida de alimentos [ICON_Food] durante la sequía. Debe ser construido junto al centro de la ciudad.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_ALT_DESCRIPTION" Language="es_ES">
+			<Text>Un distrito único en Roma que sustituye al distrito de Aqueduct y es más barato de construir. +1 [ICON_Culture] Cultura por cada 2 distritos adyacentes.[NEWLINE][NEWLINE]Proporciona a esta ciudad una fuente de agua dulce de un río adyacente, lago, oasis o montaña. Las ciudades que aún no tienen agua dulce reciben hasta 6 viviendas [ICON_Housing]. Las ciudades que ya tienen agua dulce existente obtendrán +2 [ICON_Housing] Vivienda. Si se construye junto a una fisura geotérmica +1 [ICON_Amenities] Servicios. En todos los casos, el baño proporciona una bonificación adicional de +2 [ICON_Housing] Vivienda y +1 [ICON_Amenities] Servicios. Evita la pérdida de alimentos [ICON_Food] durante la sequía. Debe ser construido junto al centro de la ciudad.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BATH_DESCRIPTION" Language="es_ES">
+			<Text>Un distrito único en Roma que sustituye al distrito de Aqueduct y es más barato de construir. +1 [ICON_Culture] Cultura por cada 2 distritos adyacentes.[NEWLINE][NEWLINE]Proporciona a esta ciudad una fuente de agua dulce de un río adyacente, lago, oasis o montaña. Las ciudades que aún no tienen agua dulce reciben hasta 6 viviendas [ICON_Housing]. En todos los casos, el baño proporciona una bonificación adicional de +2 [ICON_Housing] Vivienda y +1 [ICON_Amenities] Servicios. Debe construirse junto al centro de la ciudad.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>Desbloquea la habilidad del Constructor para construir una Esfinge, exclusiva de Egipto.[NEWLINE][NEWLINE]+2 [ICON_Faith] Fe, +1 [ICON_Culture] Cultura y +1 Apelación.[NEWLINE][NEWLINE]+1 [ICON_Faith] Fe y +1 [ICON_CULTURE] Cultura si está al lado de una maravilla. Egipto. [NEWLINE] [NEWLINE]+2 [ICON_Faith] Fe, +1 [ICON_Culture] Cultura y +2 Apelación. [NEWLINE][NEWLINE]+1 [ICON_Faith] Fe y +1 [ICON_CULTURE] Cultura si está al lado de una maravilla. +1 [ICON_FOOD] Alimentos y +1 [ICON_PRODUCTION] Producción si se construye en desierto o +1 [ICON_CULTURE] Cultura si se construye en llanuras de inundación. Alimentos y +1 [ICON_PRODUCTION] Producción si se construye en desierto o +1 [ICON_CULTURE] Cultura si se construye en llanuras de inundación.[NEWLINE][NEWLINE]Cultura adicional [ICON_CULTURE] una vez que se descubre el Servicio Diplomático. Proporciona turismo [ICON_TOURISM] después de investigar Vuelo. No se puede construir junto a otra Esfinge o en Nieve o Colinas de nieve.</Text>
+		</Replace>				
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="es_ES">
+			<Text>Desbloquea la habilidad del Constructor para construir una Esfinge, exclusiva de Egipto.[NEWLINE][NEWLINE]+2 [ICON_Faith] Fe, +1 [ICON_Culture] Cultura y +1 Apelación. +1 [ICON_Faith] Fe y +1 [ICON_CULTURE] Cultura si está al lado de una maravilla.. +1 [ICON_FOOD] Comida y +1 [ICON_PRODUCTION] Producción si se construye en el Desierto o +1 [ICON_CULTURE] Cultura si se construye en Fllanura de inundación. [NEWLINE] [NEWLINE] Cultura [ICON_CULTURE] Adicional una vez que se descubre el Servicio Diplomático. Proporciona turismo [ICON_TOURISM] después de investigar Vuelo. No se puede construir al lado de otra Esfinge o en nieve o Colinas de nieve.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS_DESCRIPTION" Language="es_ES">
+			<Text>+20% [ICON_Food] Crecimiento en la ciudad. Las rutas comerciales [ICON_TradeRoute] a la ciudad de Magnus proporcionan +2 [ICON_Food] Comida y +2 [ICON_PRODUCTION] Producción a su ciudad inicial.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_PAIRIDAEZA_DESCRIPTION" Language="es_ES">
+			<Text>Desbloquea la habilidad del Constructor para construir un Pairidaeza, exclusivo de Persia. [NEWLINE] [NEWLINE] +1 [ICON_CULTURE] Cultura y +2 [ICON_GOLD] Oro. +2 Apelación. +1 [ICON_CULTURE] Cultura para cada Lugar Sagrado adyacente, Campus y Plaza del Teatro. +1 [ICON_GOLD] Oro por cada centro comercial adyacente, puerto, zona industrial y centro de la ciudad. Cultura [ICON_Culture] adicional y turismo [ICON_Tourism] a medida que avanzas a través del Árbol de Tecnología y Cívica. No se puede construir en nieve, tundra, colinas de nieve o colinas de tundra o adyacentes a otro Pairidaeza.</Text>
+		</Replace>		
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="es_ES">
+			<Text>Todas las unidades obtienen +3 [ICON_Strength] Fuerza de combate al atacar. +5 Lealtad por turno en ciudades ocupadas con una unidad guarnecida. Declarar una guerra sorpresa cuenta como una guerra formal a los efectos de [ICON_STAT_GRIEVANCE] agravios y belicismo.</Text>
+		</Replace>		
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="es_ES">
+			<Text>Todas las unidades obtienen +3 [ICON_Strength] Fuerza de combate al atacar. +5 Lealtad por turno en ciudades ocupadas con una unidad guarnecida. Declarar una Guerra Sorpresa cuenta como una Guerra Formal con el propósito de belicismo y cansancio de guerra.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_DESCRIPTION" Language="es_ES">
+			<Text>Todas las unidades obtienen +3 [ICON_Strength] Fuerza de combate al atacar. No hay sanciones a los rendimientos en las ciudades ocupadas. Declarar una Guerra Sorpresa solo cuenta como una Guerra Formal con el propósito de belicismo y cansancio de guerra..</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="es_ES">
+			<Text>+1 [ICON_TradeRoute] Capacidad de Ruta Comercial con Filosofía Política cívica. Reciba +2 [ICON_Gold] Oro y +1 [ICON_Culture] Cultura para rutas entre sus propias ciudades. Cultura adicional [ICON_GOLD] Oro y [ICON_CULTURE] para rutas comerciales nacionales a medida que avanzas por los árboles de Tecnología y Cívicos. Las carreteras construidas en su territorio son un nivel más avanzadas de lo habitual.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="es_ES">
 			<Text>+20% a la Producción [ICON_Production] para las maravillas de la Edad Media, el Renacimiento y la Revolución Industrial. +50% al Turismo [ICON_Tourism] por las maravillas de cualquier época.</Text>
 		</Replace>

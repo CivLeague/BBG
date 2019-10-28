@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_FALLBABYLON_COMBAT_BONUS_DESCRIPTION" Language="de_DE">
+			<Text>+{1_Value} beim angreifen </Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Ein Bezirk der das Wachstum der Stadt fördert. Steht nur Rom zur  Verfügung. Ersetzt das Aquädukt und ist günstiger im Bau. +1 [ICON_Culture] Kultur für jeweils 2 benachbarte Distrikte.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzendem Fluss, See, Berg oder einer angrenzenden Oase. Städte ohne Süßwasserquelle erhalten bis zu 6[ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben erhalten stattdessen +2[ICON_Housing] Wohnraum. +1 [ICON_Amenities] Annehmlichkeiten, wenn neben einem geothermischen Riss. In jedem Fall bietet das Bad einen zusätzlichen Bonus von +2[ICON_Housing] Wohnraum und +1 [ICON_Amenities] Annehmlichkeiten. Verhindert [ICON_Food] Nahrungsverlust bei Dürre. Muss neben dem Stadtzentrum errichtet werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_ALT_DESCRIPTION" Language="de_DE">
+			<Text>Ein Bezirk der das Wachstum der Stadt fördert. Steht nur Rom zur  Verfügung. Ersetzt das Aquädukt und ist günstiger im Bau. +1 [ICON_Culture] Kultur für jeweils 2 benachbarte Distrikte.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzendem Fluss, See, Berg oder einer angrenzenden Oase. Städte ohne Süßwasserquelle erhalten bis zu 6[ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben erhalten stattdessen +2[ICON_Housing] Wohnraum. +1 [ICON_Amenities] Annehmlichkeiten, wenn neben einem geothermischen Riss. In jedem Fall bietet das Bad einen zusätzlichen Bonus von +2[ICON_Housing] Wohnraum und +1 [ICON_Amenities] Annehmlichkeiten. Verhindert [ICON_Food] Nahrungsverlust bei Dürre. Muss neben dem Stadtzentrum errichtet werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_BATH_DESCRIPTION" Language="de_DE">
+			<Text>Ein Distrikt der das Aquädukt ersetzt. Steht nur Rom zur Verfügung. +1 [ICON_Culture] Kultur für jeweils 2 benachbarte Distrikte.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzendem Fluss, See, Berg oder einer angrenzenden Oase. Städte ohne Süßwasserquelle erhalten bis zu 6[ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben erhalten stattdessen +2[ICON_Housing] Wohnraum. Muss neben dem Stadtzentrum errichtet werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Schaltet die Handwerker Fähigkeit frei eine Sphinx zu errichten. Kann nur von Ägypten errichtet werden.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben, +1 [ICON_Culture] Kultur, und +1 Ansehnlichkeit. +1 [ICON_Faith] Glauben und +1 [ICON_CULTURE] Kultur ,wenn neben einem Wunder errichtet. +1 [ICON_FOOD] Nahrung und +1 [ICON_PRODUCTION] Produktion wenn in der Wüste gebaut oder +1 [ICON_CULTURE] Kultur wenn auf Schwemmland gebaut.[NEWLINE][NEWLINE]Zusätzliche [ICON_CULTURE] Kultur sobald Diplomatischer Dienst  freigeschaltet wurde. Gibt zusätzlich [ICON_TOURISM] Tourismus nach der Erforschung des Fliegens. Kann nicht neben einer weiteren Sphinx oder im Schnee gebaut werden.Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="de_DE">
+			<Text>Schaltet die Handwerker Fähigkeit frei eine Sphinx zu errichten. Kann nur von Ägypten errichtet werden.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben, +1 [ICON_Culture] Kultur, und +1 Ansehnlichkeit. +1 [ICON_Faith] Glauben und +1 [ICON_CULTURE] Kultur ,wenn neben einem Wunder errichtet. +1 [ICON_FOOD] Nahrung und +1 [ICON_PRODUCTION] Produktion wenn in der Wüste gebaut oder +1 [ICON_CULTURE] Kultur wenn auf Schwemmland gebaut.[NEWLINE][NEWLINE]Zusätzliche [ICON_CULTURE] Kultur sobald Diplomatischer Service freigeschaltet wurde. Gibt zusätzlich [ICON_TOURISM] Tourismus nach der Erforschung des Fliegens. Kann nicht neben einer weiteren Sphinx oder im Schnee gebaut werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS_DESCRIPTION" Language="de_DE">
+			<Text>+20% [ICON_Food] Wachstum in der Stadt. Deine [ICON_TradeRoute] Handelsrouten zu Magnus' Stadt geben +2 [ICON_Food] Nahrung und +2 [ICON_PRODUCTION] Produktion zu der Stadt von welcher diese ausgehen.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_PAIRIDAEZA_DESCRIPTION" Language="de_DE">
+			<Text>Schaltet die Handwerker Fähigkeit frei eine Pairidaeza zu errichten, kann nur von Persien errichtet werden.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Kultur und +2 [ICON_GOLD] Gold. +2 Ansehnlichkeit. +1 [ICON_CULTURE] Kultur für jede angrenzende heilige Stätte, jeden Campus, und jedes Theater. +1 [ICON_GOLD] Gold für jedes angrenzende Handelszentrum, jeden Hafen, jedes Industriegebiet, und jedes Stadtzentrum. Zusätzlich [ICON_Culture] Kultur und [ICON_Tourism] Tourismus beim Fortschritt durch Technologie und Kulturbaum. Kann nicht auf Schnee und Tundra sowie nicht neben einer weiteren Pairidaeza errichtet werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Alle Einheiten erhalten +3 [ICON_Strength] Stärke beim Angreifen. +5 Loyalität pro Zug in besetzten Städten mit einer bemannenden Einheit. Einen Überraschungskrieg zu erklären gilt als formaler Krieg für[ICON_STAT_GRIEVANCE] Groll und Kriegstreiberei.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="de_DE">
+			<Text>Alle Einheiten erhalten +3 [ICON_Strength] Stärke beim Angreifen. +5 Loyalität pro Zug in besetzten Städten mit einer bemannenden Einheit. Einen Überraschungskrieg zu erklären gilt als formaler Krieg für Kriegsmüdigkeit und Kriegstreiberei.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_DESCRIPTION" Language="de_DE">
+			<Text>Alle Einheiten erhalten +3 [ICON_Strength] Stärke beim Angreifen. Keine Reduktion von Erträgen in besetzten Städten. Einen Überraschungskrieg zu erklären gilt als formaler Krieg für Kriegsmüdigkeit und Kriegstreiberei.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_TradeRoute] Handelsroutenkapazität mit dem erforschen der polizschen Philosophie. Erhält +2 [ICON_Gold] Gold und +1 [ICON_Culture] Kultur für Handelsrouten zwischen seinen eigenen Städten. Weiteres [ICON_GOLD] Gold und weitere  [ICON_CULTURE] Kultur für interne Handelsrouten beim Voranschreiten durch Kultur und Technikbaum. Straßen in eigenem Territorium sind ein Level weiter fortgeschritten als üblich.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="de_DE">
 			<Text>+20 % [ICON_Production] Produktion für Wunder des Mittelalters, der Renaissance und des Industriezeitalters. +50 % [ICON_Tourism] Tourismus durch Wunder aus beliebigen Zeitaltern.</Text>
 		</Replace>

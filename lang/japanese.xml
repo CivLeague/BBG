@@ -17,7 +17,7 @@
 			<Text>上水道を安価に代替するローマ固有の区域。隣接する区域2つごとに[ICON_CULTURE]文化力+2。[NEWLINE][NEWLINE]隣接する河川、湖、オアシスまたは山岳から淡水を都市に供給する。この都市にまだ淡水が供給されていなかった場合は[ICON_HOUSING]住宅+6。[ICON_HOUSING]住宅+2と[ICON_Amenities]快適性+1を追加で供給する。都心に隣接しなければならない。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>労働者がエジプト固有の改善であるスフィンクスを建設できるようになる。[NEWLINE][NEWLINE][ICON_Faith]信仰力+2、[ICON_CULTURE]文化力+1、タイルのアピール+2。[NEWLINE][NEWLINE]遺産に隣接している場合は追加で[ICON_Faith]信仰力+1、[ICON_CULTURE]文化力+1。砂漠に建設された場合は[ICON_Food]食料+1、[ICON_PRODUCTION]生産力+1。氾濫原に建設された場合は[ICON_CULTURE]文化力+1。[NEWLINE][NEWLINE]外交官の社会制度を解禁すると追加の[ICON_CULTURE]文化力を産出するようになる。飛行機の技術を研究すると観光力を産出するようになる。スフィンクスの隣、雪原および雪原の丘陵上には建設できない。</Text>
+			<Text>労働者がエジプト固有の改善であるスフィンクスを建設できるようになる。[NEWLINE][NEWLINE][ICON_Faith]信仰力+2、[ICON_CULTURE]文化力+1、タイルのアピール+1。[NEWLINE][NEWLINE]遺産に隣接している場合は追加で[ICON_Faith]信仰力+1、[ICON_CULTURE]文化力+1。砂漠に建設された場合は[ICON_Food]食料+1、[ICON_PRODUCTION]生産力+1。氾濫原に建設された場合は[ICON_CULTURE]文化力+1。[NEWLINE][NEWLINE]外交官の社会制度を解禁すると追加の[ICON_CULTURE]文化力を産出するようになる。飛行機の技術を研究すると観光力を産出するようになる。スフィンクスの隣、雪原および雪原の丘陵上には建設できない。</Text>
 		</Replace>				
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がエジプト固有の改善であるスフィンクスを建設できるようになる。[NEWLINE][NEWLINE][ICON_Faith]信仰力+2、[ICON_CULTURE]文化力+1、タイルのアピール+1。[NEWLINE][NEWLINE]遺産に隣接している場合は追加で[ICON_Faith]信仰力+1、[ICON_CULTURE]文化力+1。砂漠に建設された場合は[ICON_Food]食料+1、[ICON_PRODUCTION]生産力+1。氾濫原に建設された場合は[ICON_CULTURE]文化力+1。[NEWLINE][NEWLINE]外交官の社会制度を解禁すると追加の[ICON_CULTURE]文化力を産出するようになる。飛行機の技術を研究すると観光力を産出するようになる。スフィンクスの隣、雪原および雪原の丘陵上には建設できない。</Text>
