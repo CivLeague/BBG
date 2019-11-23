@@ -85,6 +85,7 @@
 	<!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
 	<InGameActions>
 		<ImportFiles id="bbg_import_files">
+			<File>PantheonChooser.lua</File>
 		</ImportFiles>
 		
 		<UpdateText id="bbg_text_updates">
@@ -239,5 +240,6 @@
 		<File>sql/xp2_macedon_persia.sql</File>
 		<File>sql/xp2_nubia.sql</File>
 		<File>sql/xp2_rise_and_fall.sql</File>
+		<File>PantheonChooser.lua</File>
 	</Files>
 </Mod>

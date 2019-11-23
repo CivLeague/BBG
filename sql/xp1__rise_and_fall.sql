@@ -102,6 +102,12 @@ INSERT INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , Bo
 	VALUES ('203' , 'IMPROVEMENT_CHEMAMULL' , 'YIELD_PRODUCTION' , '1' , 'CIVIC_CIVIL_SERVICE');
 
 
+--==================
+-- Netherlands
+--==================
+UPDATE Units SET StrategicResource='RESOURCE_NITER' WHERE UnitType='UNIT_DE_ZEVEN_PROVINCIEN';
+
+
 --=========
 --Mongolia
 --=========
