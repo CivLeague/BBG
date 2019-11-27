@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.6.4">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.6.7">
 	<Properties>
-		<Name>Better Balanced Game v3.6.4</Name>
+		<Name>Better Balanced Game v3.6.7</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
@@ -85,7 +85,11 @@
 	<!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
 	<InGameActions>
 		<ImportFiles id="bbg_import_files">
-			<File>PantheonChooser.lua</File>
+			<File>exploits/PantheonChooser.lua</File>
+			<File>exploits/GG_Fix.lua</File>
+			<File>exploits/GG_Fix_UI.lua</File>
+			<File>exploits/Culture_Fix.lua</File>
+			<File>exploits/Culture_Fix_UI.lua</File>
 		</ImportFiles>
 		
 		<UpdateText id="bbg_text_updates">
@@ -99,6 +103,8 @@
 			<File>lang/german.xml</File>
 			<File>lang/spanish.xml</File>
 			<File>lang/japanese.xml</File>
+			<File>exploits/Culture_Fix.xml</File>
+			<File>exploits/GG_Fix.xml</File>
 		</UpdateText>
 		
 		<UpdateDatabase id="bbg_base_db_updates" criteria="base">
@@ -240,6 +246,12 @@
 		<File>sql/xp2_macedon_persia.sql</File>
 		<File>sql/xp2_nubia.sql</File>
 		<File>sql/xp2_rise_and_fall.sql</File>
-		<File>PantheonChooser.lua</File>
+		<File>exploits/PantheonChooser.lua</File>
+		<File>exploits/GG_Fix.lua</File>
+		<File>exploits/GG_Fix_UI.lua</File>
+		<File>exploits/Culture_Fix.lua</File>
+		<File>exploits/Culture_Fix_UI.lua</File>
+		<File>exploits/Culture_Fix.xml</File>
+		<File>exploits/GG_Fix.xml</File>
 	</Files>
 </Mod>

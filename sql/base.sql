@@ -493,8 +493,9 @@ UPDATE GlobalParameters SET Value='5' WHERE Name='TOURISM_BASE_FROM_WONDER';
 UPDATE GlobalParameters SET Value='150' WHERE Name='TOURISM_TOURISM_TO_MOVE_CITIZEN';
 -- no longer have to wait any number of turns to move greatworks between cities
 UPDATE GlobalParameters SET Value='0' WHERE Name='GREATWORK_ART_LOCK_TIME';
--- relics give 6 tourism instead of 8
-UPDATE GreatWorks SET Tourism=6 WHERE GreatWorkObjectType='GREATWORKOBJECT_RELIC';
+-- relics give 4 tourism instead of 8
+UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_RELIC';
+--
 
 -- fix same artist, same archelogist culture and tourism from bing 1 and 1 to being default numbers
 UPDATE Building_GreatWorks SET NonUniquePersonYield=4 WHERE BuildingType='BUILDING_HERMITAGE';

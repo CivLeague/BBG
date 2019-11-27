@@ -163,9 +163,6 @@ INSERT INTO CivilizationTraits (CivilizationType, TraitType)
 	VALUES
 	('CIVILIZATION_MALI', 'TRAIT_CIVILIZATIONS_MALI_BANKING_GOLD'),
 	('CIVILIZATION_MALI', 'TRAIT_CIVILIZATIONS_MALI_ECONOMICS_GOLD');
--- remove production handicaps since they can be shift-entered to avoid
-DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_LESS_BUILDING_PRODUCTION';
-DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_LESS_UNIT_PRODUCTION'    ;
 
 
 --==================
