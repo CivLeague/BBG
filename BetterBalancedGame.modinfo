@@ -86,9 +86,14 @@
 	<InGameActions>
 		<ImportFiles id="bbg_import_files">
 			<File>exploits/PantheonChooser.lua</File>
-			<File>exploits/GG_Fix.lua</File>
 			<File>exploits/GG_Fix_UI.lua</File>
+			<File>exploits/Culture_Fix_UI.lua</File>
 		</ImportFiles>
+		
+		<AddGameplayScripts id="fix_exploits">
+            <File>exploits/GG_Fix.lua</File>
+			<File>exploits/Culture_Fix.lua</File>
+        </AddGameplayScripts>
 		
 		<UpdateText id="bbg_text_updates">
 			<Properties>
@@ -102,6 +107,7 @@
 			<File>lang/spanish.xml</File>
 			<File>lang/japanese.xml</File>
 			<File>exploits/GG_Fix.xml</File>
+			<File>exploits/Culture_Fix.xml</File>
 		</UpdateText>
 		
 		<UpdateDatabase id="bbg_base_db_updates" criteria="base">
@@ -247,5 +253,8 @@
 		<File>exploits/GG_Fix.lua</File>
 		<File>exploits/GG_Fix_UI.lua</File>
 		<File>exploits/GG_Fix.xml</File>
+		<File>exploits/Culture_Fix.lua</File>
+		<File>exploits/Culture_Fix_UI.lua</File>
+		<File>exploits/Culture_Fix.xml</File>
 	</Files>
 </Mod>
