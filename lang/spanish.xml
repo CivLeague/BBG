@@ -97,9 +97,6 @@
         <Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="en_ES">
             <Text>+7 [ICON_Strength] Fuerza de combate al atacar unidades cuerpo a cuerpo y a distancia.</Text>
         </Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="en_ES">
-			<Text>Los centros de la ciudad obtienen +1 [ICON_FAITH] Fe y +1 [ICON_FOOD] Alimentos por cada colina de desierto y espacios de desierto que están adyacentes. Las minas reciben -1 [ICON_PRODUCTION] Producción y +2 [ICON_GOLD] Oro. Oro adicional +1 [ICON_GOLD] sobre minas después de investigar banca, así como economía. Puede comprar edificios de distrito commercial con [ICON_Faith] Fe.</Text>
-		</Replace>
 		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="en_ES">
 			<Text> Unidad única de Cree de la era antigua que es más fuerte que y reemplaza al Scout. Movimiento más rápido [ICON_Movement] en terrenos de bosques y selvas tropicales.</Text>
 		</Replace>

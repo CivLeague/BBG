@@ -97,9 +97,6 @@
 		<Replace Tag="LOC_ABILITY_FASCISM_ATTACK_BUFF_DESCRIPTION" Language="de_DE">
 			<Text>+5 [ICON_Strength] Kampfstärke aufgrund von Faschismus.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_FAITH] Glauben und +1 [ICON_FOOD] Nahrung für jedes an das Stadtzentrum angrenzende Wüsten, oder Wüstenhügelgeländefeld. Minen produzieren -1 [ICON_PRODUCTION] Produktion, dafür aber +2 [ICON_GOLD] Gold. Zusätzliche+1 [ICON_GOLD] Gold von Minen nach jeweils der Erforschung von Baken und des Wirtschaftswesens. Kann Gebäude im Handelsbezirk mit [ICON_Faith] Gauben erwerben.</Text>
-		</Replace>
 		<Replace Tag="LOC_ABILITY_CREE_OKIHTCITAW_DESCRIPTION" Language="de_DE">
 			<Text>Schnellere Fortbewegung in Wäldern und Regenwald.</Text>
 		</Replace>
@@ -222,9 +219,6 @@
 		</Replace>
 		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="de_DE">
 			<Text>+100% [ICON_Production] Produktion für Belagerungseinheiten und defnesive Gebäude.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="de_DE">
-			<Text>Stadtzentren erhalten +1 [ICON_FAITH] Glauben und +1 [ICON_FOOD] Nahrung für jedes angrenzende Wüsten- und Wüstenhügel-Geländefeld. Minen erhalten -1 [ICON_PRODUCTION] Produktion und +4 [ICON_GOLD] Gold. Gebäude im Handelszentrum können mit [ICON_Faith] Glauben gekauft werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="de_DE">
 			<Text>Ein ausschließlich Korea zur Verfügung stehender Bezirk für wissenschaftliche Bestrebungen. Ersetzt den Campus-Bezirk und muss auf Hügeln gebaut werden. +2 [ICON_SCIENCE] Wissenschaft. Gewährt +1 [ICON_CULTURE] Kultur für angrenzende Theaterplätze.</Text>

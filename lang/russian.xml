@@ -97,9 +97,6 @@
         <Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="ru_RU">
             <Text>+7 к [ICON_Strength] боевой мощи при атаке юнитов ближнего и дальнего боя.</Text>
         </Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="ru_RU">
-			<Text>Центры города получают +1 [ICON_FAITH] веры и +1 [ICON_FOOD] пищи за каждую соседнюю клетку с пустыней. Рудники дают -1 [ICON_PRODUCTION] производства и +2 [ICON_GOLD] золота. Дополнительно +1 [ICON_GOLD] золота от рудников после изучения банковского дела и экономики. В торговых районах здания можно покупать за [ICON_Faith] веру.</Text>
-		</Replace>
 		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный разведывательный юнит Кри древней эпохи. Быстрее перемещается по лесам и джунглям.</Text>
 		</Replace>

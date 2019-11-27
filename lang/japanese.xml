@@ -103,9 +103,6 @@
 		<Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="ja_JP">
 			<Text>白兵または遠隔戦闘ユニットを攻撃する際の[ICON_Bombard]砲撃戦闘力+10。</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="ja_JP">
-			<Text>都心が隣接する砂漠および丘陵の砂漠と同じ数だけ追加で[ICON_FAITH]信仰力と[ICON_FOOD]食料を得る。すべての鉱山の[ICON_PRODUCTION]生産力-1、[ICON_GOLD]ゴールド+2。銀行制度と経済学の技術、それぞれを解禁すると追加の[ICON_GOLD]ゴールド+1。この区域の建造物を[ICON_Faith]信仰力によって購入できる。</Text>
-		</Replace>
 		<Replace Tag="LOC_ABILITY_CREE_OKIHTCITAW_DESCRIPTION" Language="ja_JP">
 			<Text>森林及びジャングルでの移動力が高い。</Text>
 		</Replace>
