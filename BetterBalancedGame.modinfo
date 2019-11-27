@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.6.9">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.6.10">
 	<Properties>
-		<Name>Better Balanced Game v3.6.9</Name>
+		<Name>Better Balanced Game v3.6.10</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
@@ -90,7 +90,7 @@
 			<File>exploits/Culture_Fix_UI.lua</File>
 		</ImportFiles>
 		
-		<AddGameplayScripts id="fix_exploits">
+		<AddGameplayScripts id="bbg_fix_exploits">
             <File>exploits/GG_Fix.lua</File>
 			<File>exploits/Culture_Fix.lua</File>
         </AddGameplayScripts>
@@ -106,8 +106,8 @@
 			<File>lang/german.xml</File>
 			<File>lang/spanish.xml</File>
 			<File>lang/japanese.xml</File>
-			<File>exploits/GG_Fix.xml</File>
-			<File>exploits/Culture_Fix.xml</File>
+			<File>exploits/GG_Fix_UI.xml</File>
+			<File>exploits/Culture_Fix_UI.xml</File>
 		</UpdateText>
 		
 		<UpdateDatabase id="bbg_base_db_updates" criteria="base">
@@ -252,9 +252,9 @@
 		<File>exploits/PantheonChooser.lua</File>
 		<File>exploits/GG_Fix.lua</File>
 		<File>exploits/GG_Fix_UI.lua</File>
-		<File>exploits/GG_Fix.xml</File>
+		<File>exploits/GG_Fix_UI.xml</File>
 		<File>exploits/Culture_Fix.lua</File>
 		<File>exploits/Culture_Fix_UI.lua</File>
-		<File>exploits/Culture_Fix.xml</File>
+		<File>exploits/Culture_Fix_UI.xml</File>
 	</Files>
 </Mod>
