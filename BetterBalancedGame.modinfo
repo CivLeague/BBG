@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.6.11">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.6.13">
 	<Properties>
-		<Name>Better Balanced Game v3.6.11</Name>
+		<Name>Better Balanced Game v3.6.13</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
 		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
-		<Authors>codenaugh, S1AL</Authors>
+		<Authors>codenaugh, S1AL, D. / Jack The Narrator</Authors>
 		<SpecialThanks>wazabaza, abstr, priz, seed.of.apricot, WhySoHate, Ignasiuz</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
