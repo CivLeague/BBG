@@ -191,7 +191,7 @@
 			<Text>国立公園から4タイル以内で戦闘を行う際の戦闘力+{1_Amount}</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="ja_JP">
-			<Text>太古の防壁に取ってかわるグルジア固有の建造物。[ICON_FAITH]信仰+4。[NEWLINE]自然保護の社会制度を解禁後、[ICON_TOURISM]観光力+3。[NEWLINE]黄金時代中はこれらの出力は+100%される。</Text>
+			<Text>太古の防壁に取ってかわるグルジア固有の建造物。[ICON_FAITH]信仰+3。[NEWLINE]自然保護の社会制度を解禁後、[ICON_TOURISM]観光力+3。[NEWLINE]黄金時代中はこれらの出力は+100%される。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="ja_JP">
 			<Text>陸上および海上戦闘ユニットに対する[ICON_PRODUCTION]生産力+25%。[NEWLINE]ユニットにかかる[ICON_GOLD]維持費-1。[NEWLINE][ICON_GOVERNOR]総督の称号+1。戦略資源の備蓄上限が15増加する。</Text>
@@ -256,9 +256,6 @@
 		
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>すべての海軍白兵ユニットに対する[ICON_PRODUCTION]生産力が+25%され、それらのユニットが沿岸を略奪できる。[NEWLINE]鉱山を略奪または沿岸襲撃した際、[ICON_GOLD]ゴールドに加えて[ICON_SCIENCE]科学力を得る。[NEWLINE]採石場、牧草地、プランテーションおよびキャンプを略奪または沿岸襲撃した際、[ICON_FAITH]ゴールドに加えて[ICON_CULTURE]科学力を得る。[NEWLINE][NEWLINE]聖地とその建造物の建設に対する[ICON_PRODUCTION]生産力+50%。また聖地は隣接する沿岸タイルから通常の隣接ボーナスを得る。[NEWLINE][NEWLINE]聖地に隣接する港は[ICON_GOLD]ゴールドの隣接ボーナス2を得る。</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>労働者が中国固有の改善である長城を建設できるようになる。[NEWLINE][NEWLINE][ICON_Strength]戦闘力ボーナスと[ICON_GOLD]ゴールド+2を与え、 城の技術を研究後は[ICON_Culture]文化力+1を追加で産出する。隣接する長城1つごとに[ICON_GOLD]ゴールドおよび[ICON_CULTURE]文化力+1。 飛行機の技術を研究後は[ICON_Tourism]観光力を産出する。自文明の国境にしか建設できない。災害によって破壊されることがない（略奪状態で留まる）。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がスペイン固有の改善である修道院を建設できるようになる。[NEWLINE][NEWLINE][ICON_Faith]信仰+2。自文明の[ICON_Capital]首都と異なる大陸に建設された場合、[ICON_Faith]信仰+2、[ICON_PRODUCTION]生産力+1、[ICON_FOOD]食料+1。[NEWLINE][NEWLINE]隣接するキャンパスあるいは聖地1つごとに[ICON_Science]科学力+1。公務員制度の完了で住宅+1、王権神授説の完了で科学+2。</Text>

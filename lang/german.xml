@@ -191,7 +191,7 @@
 			<Text>+{1_Amount} Kampfstärke beim Kampf innerhalb von 4 Geländefeldern an einem Nationalpark</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="de_DE">
-			<Text>Einzigartiges Gebäude von Georgien, welches die antiken Stadtmauern ersetzt und stärkere äußere Verteidigung bietet. Bringt +3 [ICON_TOURISM] Tourismus nach Erreichen der Ausrichtung 'Naturschutz'. Bringt +4 [ICON_Faith] Glauben. In einem Goldenen Zeitalter sind [ICON_TOURISM] Tourismus und [ICON_FAITH] Glauben +100%.</Text>
+			<Text>Einzigartiges Gebäude von Georgien, welches die antiken Stadtmauern ersetzt und stärkere äußere Verteidigung bietet. Bringt +3 [ICON_TOURISM] Tourismus nach Erreichen der Ausrichtung 'Naturschutz'. Bringt +3 [ICON_Faith] Glauben. In einem Goldenen Zeitalter sind [ICON_TOURISM] Tourismus und [ICON_FAITH] Glauben +100%.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="de_DE">
 			<Text>+25% [ICON_Production] Produktion für alle Marine- und Landmilitäreinheiten. Unterhaltskosten für Einheiten werden um 1 [ICON_GOLD] Gold pro Runde und Einheit reduziert.[NEWLINE]Verleiht +1 [Icon_Governor] Gouverneur Titel und erhöht das Strategische Ressourcen-Vorratslager um 15.</Text>
@@ -259,9 +259,6 @@
 		
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Alle Nahkampf-Marineeinheiten erhalten +25% [ICON_PRODUCTION] Produktion und es werden ihnen Küstenraubzüge gewährt. Zusätzlich zu [ICON_GOLD] Gold erhaltet ihr [ICON_SCIENCE] Wissenschaft durch Plünderung von und Küstenraubzüge auf Minen. Plünderung von und Küstenraubzüge auf Steinbrüche, Weiden, Plantagen und Jagdlager gewähren zusätzlich zu [ICON_FAITH] Glauben [ICON_CULTURE] Kultur.[NEWLINE][NEWLINE]Alle Heiligen Stätten und deren Gebäude erhalten +50% [ICON_PRODUCTION] Produktion. Heilige Stätten erhalten +1 [ICON_FAITH] Glauben durch jedes angrenzende Küsten-Geländefeld.[NEWLINE][NEWLINE]Häfen neben einer Heiligen Stätte erhalten zusätzliche +2 [ICON_GOLD] Gold als Nachbarschaftsbonus.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker-Fähigkeit frei, die Große Mauer zu bauen, einzigartig für China.[NEWLINE][NEWLINE]Steigert die [ICON_Strength] Verteidigung. +2 [ICON_GOLD] Gold. +1 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur, wenn sie angrenzend an einer weiteren großen Mauer-Modernisierung anliegt. +2 [ICON_GOLD] Gold. +1 [ICON_Culture] Kultur nach Erforschen der Burgen. Gewährt [ICON_Tourism] Tourismus nach Erforschen der Luftfahrt. Muss in einer Linie entlang der Grenzen Eures Reichs gebaut werden. Kann nur von Naturkatastrophen geplündert (niemals zerstört) werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Erlaubt Handwerkern eine Mission, die einzigartige Modernisierung Spaniens, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben. +2 [ICON_Faith] Glauben, +1 [ICON_PRODUCTION] Produktion und +1 [ICON_FOOD] Nahrung, wenn auf einem anderen Kontinent als Eure [ICON_Capital] Hauptstadt.[NEWLINE][NEWLINE]+1 [ICON_Science] Wissenschaft für jeden benachbarten Campus- und Heilige-Stätte-Bezirk. +1 Wohnraum nach Erreichen der Öffentlichen Verwaltung und +2 Wissenschaft nach Erreichen der Aufklärung.</Text>
@@ -425,7 +422,7 @@
 			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Kurgan, die einzigartige Modernisierung Skythiens zu bauen.[NEWLINE][NEWLINE]+1 [ICON_Faith] Glaube und +1 [ICON_Gold] Gold. +1 [ICON_Faith] Glaube und +1 [ICON_PRODUCTION] Produktion für jede angrenzende Weide.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION" Language="de_DE">
-			<Text>Einzigartiges Gebäude von Georgien. Stärker als die Stadtmauern. Bietet 3 [ICON_TOURISM] Tourismus nach Erreichen der Ausrichtung 'Naturschutz'. Bietet 3 [ICON_Faith] Glauben.</Text>
+			<Text>Einzigartiges Gebäude von Georgien. Stärker als die Stadtmauern. Bietet +3 [ICON_TOURISM] Tourismus nach Erreichen der Ausrichtung 'Naturschutz'. Bietet +3 [ICON_Faith] Glauben.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="de_DE">
 			<Text>Georgische Spezialeinheit der Klassik, welche den Schwertkämpfer ersetzt. +5 [ICON_Strength] Kampfstärke beim Kampf in Hügel-Gelände. Zum Betreten von Hügel-Gelände wird nur 1 [ICON_Movement] Fortbewegungspunkt benötigt.</Text>

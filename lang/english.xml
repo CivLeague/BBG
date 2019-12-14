@@ -191,7 +191,7 @@
 			<Text>+{1_Amount} Combat Strength when within 4 tiles of an Owned National Park</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="en_US">
-			<Text>A building unique to Georgia which replaces and is stronger than the Ancient Walls. Provides +3 [ICON_TOURISM] Tourism after advancing to the Conservation Civic. Provides +4 [ICON_Faith] Faith. When in a Golden Age the [ICON_TOURISM] Tourism and [ICON_FAITH] Faith are +100%.</Text>
+			<Text>A building unique to Georgia which replaces and is stronger than the Ancient Walls. Provides +3 [ICON_TOURISM] Tourism after advancing to the Conservation Civic. Provides +3 [ICON_Faith] Faith. When in a Golden Age the [ICON_TOURISM] Tourism and [ICON_FAITH] Faith are +100%.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="en_US">
 			<Text>+25% [ICON_Production] Production towards all naval and land military units. Reduces the maintenance cost of units by 1 [ICON_GOLD] Gold.[NEWLINE]Awards +1 [Icon_Governor] Governor Title and increases Strategic Resources stockpiles by 15.</Text>
@@ -252,9 +252,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>All naval melee units get +25% [ICON_PRODUCTION] Production and can raid the coast. Receive [ICON_SCIENCE] Science from pillaging and coastal raiding Mines in addition to [ICON_GOLD] Gold. Pillaging or coastal raiding Quarries, Pastures, Plantations, and Camps provide [ICON_CULTURE] Culture in addition to [ICON_FAITH] Faith.[NEWLINE][NEWLINE]All Holy Site districts and their buildings get +50% [ICON_PRODUCTION] Production. Holy Sites get standard adjacency bonus from coastal water tiles.[NEWLINE][NEWLINE]Harbors next to a Holy Site get an additional +2 [ICON_GOLD] Gold adjacency bonus.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct the Great Wall, unique to China.[NEWLINE][NEWLINE]Provides an increase to [ICON_Strength] Defense and +2 [ICON_GOLD] Gold. +1 [ICON_Culture] Culture after researching Castles. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if there is an adjacent Great Wall Improvement. Provides [ICON_Tourism] Tourism after researching Flight. Must be built in a line along the borders of your empire. Can only be pillaged (never destroyed) by natural disasters.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. +2 [ICON_Faith] Faith, +1 [ICON_PRODUCTION] Production, and +1 [ICON_FOOD] Food if on a different continent than your [ICON_Capital] Capital.[NEWLINE][NEWLINE]+1 [ICON_Science] Science for every adjacent Campus and Holy Site district. +1 Housing at Civil Service and +2 Science at The Enlightenment.</Text>
@@ -353,7 +350,7 @@
 		<!-- France -->
 		<!-- Georgia -->
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION" Language="en_US">
-			<Text>A building unique to Georgia which replaces and is stronger than the Ancient Walls. Provides 3 [ICON_TOURISM] Tourism after advancing to the Conservation Civic. Provides 3 [ICON_Faith] Faith.</Text>
+			<Text>A building unique to Georgia which replaces and is stronger than the Ancient Walls. Provides +3 [ICON_TOURISM] Tourism after advancing to the Conservation Civic. Provides +3 [ICON_Faith] Faith.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="en_US">
 			<Text>Georgian unique Classical Era unit that replaces the Swordsman. Hills provide a +5 [ICON_Strength] Combat Strength bonus and only require 1 [ICON_Movement] Movement.</Text>

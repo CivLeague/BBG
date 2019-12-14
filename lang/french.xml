@@ -87,9 +87,6 @@
 			<Text>Puissance de combat +{1_Amount} dans un rayon de 4 cases autour d'un parc national de ce joueur.</Text>
 		</Replace>
 		<!-- --------------- CHINE --------------- -->
-		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire la Grande Muraille, exclusive à la Chine. [NEWLINE][NEWLINE][ICON_GOLD] Or +2. Améliore la [ICON_Strength] puissance défensive. [ICON_Gold] Or +1 et [ICON_CULTURE] +1 si adjacente à d'autres segments. [ICON_Culture] Culture +1 après avoir recherché les Châteaux. Octroie du [ICON_Tourism] Tourisme après avoir recherché l'Aviation. Doit être construite sur une ligne longeant la frontière de votre empire. Peut uniquement être pillée (jamais détruite) par les catastrophes naturelles.</Text>
-		</Replace>
 		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive à la Chine, cette unité d'attaque à distance remplace l'Arbalétrier. [ICON_Ranged] Puissance d'attaque à distance +7 en cas d'attaque sur une unité ennemie adjacente.</Text>
 		</Replace>
@@ -163,7 +160,7 @@
 		</Replace>
 		<!-- --------------- GÉORGIE --------------- -->
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="fr_FR">
-			<Text>Bâtiment exclusif à la Géorgie. Défense plus importante que les remparts Antiques. [ICON_TOURISM] Tourisme +3 après l'adoption du dogme de la conservation. [ICON_Faith] Foi +4. [ICON_TOURISM] Tourisme et [ICON_FAITH] foi doublés lors d'un âge d'or.</Text>
+			<Text>Bâtiment exclusif à la Géorgie. Défense plus importante que les remparts Antiques. [ICON_TOURISM] Tourisme +3 après l'adoption du dogme de la conservation. [ICON_Faith] Foi +3. [ICON_TOURISM] Tourisme et [ICON_FAITH] foi doublés lors d'un âge d'or.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION" Language="fr_FR">
 			<Text>Bâtiment exclusif à la Géorgie qui remplace les Remparts Antiques. [ICON_TOURISM] Tourisme +3 après l'adoption du dogme de la conservation. [ICON_Faith] Foi +3. </Text>
