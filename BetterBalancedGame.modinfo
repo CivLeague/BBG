@@ -92,7 +92,6 @@
 			<Properties>
 				<Context>InGame</Context>
 			</Properties>
-			<File>exploits/GG_Fix_UI.xml</File>
 			<File>exploits/Culture_Fix_UI.xml</File>
 		</AddUserInterfaces>
 
@@ -255,8 +254,6 @@
 		<File>sql/xp2_rise_and_fall.sql</File>
 		<File>exploits/PantheonChooser.lua</File>
 		<File>exploits/GG_Fix.lua</File>
-		<File>exploits/GG_Fix_UI.lua</File>
-		<File>exploits/GG_Fix_UI.xml</File>
 		<File>exploits/Culture_Fix.lua</File>
 		<File>exploits/Culture_Fix_UI.lua</File>
 		<File>exploits/Culture_Fix_UI.xml</File>
