@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.6.14">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.6.15">
 	<Properties>
-		<Name>Better Balanced Game v3.6.14</Name>
+		<Name>Better Balanced Game v3.6.15</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
@@ -88,13 +88,6 @@
 			<File>exploits/PantheonChooser.lua</File>
 		</ImportFiles>
 		
-	    <AddUserInterfaces>
-			<Properties>
-				<Context>InGame</Context>
-			</Properties>
-			<File>exploits/Culture_Fix_UI.xml</File>
-		</AddUserInterfaces>
-
 		<AddGameplayScripts id="bbg_fix_exploits">
             <File>exploits/GG_Fix.lua</File>
 			<File>exploits/Culture_Fix.lua</File>
@@ -226,6 +219,14 @@
 			</Properties>
 			<File>sql/dlc_poland.sql</File>
 		</UpdateDatabase>
+		
+		<ReplaceUIScript id="PriorityTarget_UnitPanel" criteria="xp2">
+			<Properties>
+				<LoadOrder>9999</LoadOrder>
+				<LuaContext>UnitPanel</LuaContext>
+				<LuaReplace>exploits/UnitPanel_AirExploit.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
 	</InGameActions>
 	
 	<!-- defines file dependencies -->
@@ -255,7 +256,6 @@
 		<File>exploits/PantheonChooser.lua</File>
 		<File>exploits/GG_Fix.lua</File>
 		<File>exploits/Culture_Fix.lua</File>
-		<File>exploits/Culture_Fix_UI.lua</File>
-		<File>exploits/Culture_Fix_UI.xml</File>
+		<File>exploits/UnitPanel_AirExploit.lua</File>
 	</Files>
 </Mod>
