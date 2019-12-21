@@ -917,6 +917,7 @@ UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_DAR_E_MEHR'   ;
 --==============================================================
 -- Wonders Provide +5 score instead of +15
 UPDATE ScoringLineItems SET Multiplier=5 WHERE LineItemType='LINE_ITEM_WONDERS';
+-- converting foreign populations reduced from 2 to 1
 UPDATE ScoringLineItems SET Multiplier=1 WHERE LineItemType='LINE_ITEM_ERA_CONVERTED';
 
 
