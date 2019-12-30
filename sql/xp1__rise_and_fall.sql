@@ -82,6 +82,13 @@ INSERT INTO District_Adjacencies (DistrictType , YieldChangeId)
 	VALUES
 	('DISTRICT_SEOWON'  , 'Theater_Science'),
 	('DISTRICT_THEATER' , 'Seowon_Culture' );
+-- Seowon bombs
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+	VALUES ('TRAIT_CIVILIZATION_THREE_KINGDOMS' , 'TRAIT_SEOWON_BOMB');
+INSERT INTO Modifiers (ModifierId, ModifierType)
+	VALUES ('TRAIT_SEOWON_BOMB', 'MODIFIER_PLAYER_ADD_CULTURE_BOMB_TRIGGER');
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+	VALUES ('TRAIT_SEOWON_BOMB', 'DistrictType', 'DISTRICT_SEOWON');
 
 
 --==================
@@ -163,6 +170,17 @@ INSERT INTO TraitModifiers (TraitType, ModifierId)
 --==================
 -- Zulu
 --==================
+-- Zulu get corps/armies bonus at nationalism
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+    VALUES ('PLAYER_HAS_NATIONALISM_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO Requirements (RequirementId, RequirementType)
+    VALUES ('REQUIRES_PLAYER_HAS_NATIONALISM' , 'REQUIREMENT_PLAYER_HAS_CIVIC');
+INSERT INTO RequirementArguments (RequirementId , Name , Value)
+    VALUES ('REQUIRES_PLAYER_HAS_NATIONALISM' , 'CivicType' , 'CIVIC_NATIONALISM');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+    VALUES ('PLAYER_HAS_NATIONALISM_REQUIREMENTS' , 'REQUIRES_PLAYER_HAS_NATIONALISM');
+UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_NATIONALISM_REQUIREMENTS' WHERE ModifierId='TRAIT_LAND_CORPS_COMBAT_STRENGTH';
+UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_NATIONALISM_REQUIREMENTS' WHERE ModifierId='TRAIT_LAND_ARMIES_COMBAT_STRENGTH';
 
 
 
@@ -170,13 +188,13 @@ INSERT INTO TraitModifiers (TraitType, ModifierId)
 --==============================================================
 --******			  D E D I C A T I O N S				  ******
 --==============================================================
--- Pen and Brush gives +2 Culture and +2 Gold per District
+-- Pen and Brush gives +2 Culture and +1 Gold per District
 INSERT INTO Modifiers (ModifierId , ModifierType , OwnerRequirementSetId)
     VALUES ('COMMEMORATION_CULTURAL_DISTRICTGOLD' , 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_DISTRICT' , 'PLAYER_HAS_GOLDEN_AGE');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('COMMEMORATION_CULTURAL_DISTRICTGOLD' , 'YieldType' , 'YIELD_GOLD');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
-    VALUES ('COMMEMORATION_CULTURAL_DISTRICTGOLD' , 'Amount' , '2');
+    VALUES ('COMMEMORATION_CULTURAL_DISTRICTGOLD' , 'Amount' , '1');
 INSERT INTO CommemorationModifiers (CommemorationType, ModifierId)
 	VALUES ('COMMEMORATION_CULTURAL', 'COMMEMORATION_CULTURAL_DISTRICTGOLD');
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='COMMEMORATION_CULTURAL_DISTRICTCULTURE' and Name='Amount';
@@ -196,7 +214,6 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('GOV_TALL_FOOD_BUFF' , 'YieldType' , 'YIELD_FOOD');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('GOV_TALL_FOOD_BUFF' , 'Amount' , '3');
-UPDATE ModifierArguments SET Value='2' WHERE ModifierId='GOV_BUILDING_TALL_GRANT_GOVERNOR_POINTS' AND Name='Delta';
 --Warlord's Throne gives +25% production to naval and land military units... also reduces unit maintenance by 1
 DELETE FROM BuildingModifiers WHERE ModifierId='GOV_PRODUCTION_BOOST_FROM_CAPTURE';
 DELETE FROM ModifierArguments WHERE ModifierId='GOV_PRODUCTION_BOOST_FROM_CAPTURE';
@@ -237,6 +254,8 @@ INSERT INTO ModifierArguments
 --==============================================================
 --******				G O V E R N O R S				  ******
 --==============================================================
+-- Victor combat bonus reduced to +3
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='GARRISON_COMMANDER_ADJUST_CITY_COMBAT_BONUS' AND Name='Amount';
 -- Magnus' Surplus Logistics gives +2 production in addition to the food
 INSERT INTO Modifiers
 	(ModifierId , ModifierType)

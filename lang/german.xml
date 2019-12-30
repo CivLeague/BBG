@@ -2,7 +2,7 @@
 <GameData>
 	<LocalizedText>
 		<Replace Tag="LOC_TRAIT_FALLBABYLON_COMBAT_BONUS_DESCRIPTION" Language="de_DE">
-			<Text>+{1_Value} beim angreifen </Text>
+			<Text>+{1_Value} beim angreifen</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Ein Bezirk der das Wachstum der Stadt fördert. Steht nur Rom zur  Verfügung. Ersetzt das Aquädukt und ist günstiger im Bau. +1 [ICON_Culture] Kultur für jeweils 2 benachbarte Distrikte.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzendem Fluss, See, Berg oder einer angrenzenden Oase. Städte ohne Süßwasserquelle erhalten bis zu 6[ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben erhalten stattdessen +2[ICON_Housing] Wohnraum. +1 [ICON_Amenities] Annehmlichkeiten, wenn neben einem geothermischen Riss. In jedem Fall bietet das Bad einen zusätzlichen Bonus von +2[ICON_Housing] Wohnraum und +1 [ICON_Amenities] Annehmlichkeiten. Verhindert [ICON_Food] Nahrungsverlust bei Dürre. Muss neben dem Stadtzentrum errichtet werden.</Text>
@@ -14,7 +14,7 @@
 			<Text>Ein Distrikt der das Aquädukt ersetzt. Steht nur Rom zur Verfügung. +1 [ICON_Culture] Kultur für jeweils 2 benachbarte Distrikte.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzendem Fluss, See, Berg oder einer angrenzenden Oase. Städte ohne Süßwasserquelle erhalten bis zu 6[ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben erhalten stattdessen +2[ICON_Housing] Wohnraum. Muss neben dem Stadtzentrum errichtet werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker Fähigkeit frei eine Sphinx zu errichten. Kann nur von Ägypten errichtet werden.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben, +1 [ICON_Culture] Kultur, und +1 Ansehnlichkeit. +1 [ICON_Faith] Glauben und +1 [ICON_CULTURE] Kultur ,wenn neben einem Wunder errichtet. +1 [ICON_FOOD] Nahrung und +1 [ICON_PRODUCTION] Produktion wenn in der Wüste gebaut oder +1 [ICON_CULTURE] Kultur wenn auf Schwemmland gebaut.[NEWLINE][NEWLINE]Zusätzliche [ICON_CULTURE] Kultur sobald Diplomatischer Dienst  freigeschaltet wurde. Gibt zusätzlich [ICON_TOURISM] Tourismus nach der Erforschung des Fliegens. Kann nicht neben einer weiteren Sphinx oder im Schnee gebaut werden.Text>
+			<Text>Schaltet die Handwerker Fähigkeit frei eine Sphinx zu errichten. Kann nur von Ägypten errichtet werden.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben, +1 [ICON_Culture] Kultur, und +1 Ansehnlichkeit. +1 [ICON_Faith] Glauben und +1 [ICON_CULTURE] Kultur ,wenn neben einem Wunder errichtet. +1 [ICON_FOOD] Nahrung und +1 [ICON_PRODUCTION] Produktion wenn in der Wüste gebaut oder +1 [ICON_CULTURE] Kultur wenn auf Schwemmland gebaut.[NEWLINE][NEWLINE]Zusätzliche [ICON_CULTURE] Kultur sobald Diplomatischer Dienst  freigeschaltet wurde. Gibt zusätzlich [ICON_TOURISM] Tourismus nach der Erforschung des Fliegens. Kann nicht neben einer weiteren Sphinx oder im Schnee gebaut werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker Fähigkeit frei eine Sphinx zu errichten. Kann nur von Ägypten errichtet werden.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben, +1 [ICON_Culture] Kultur, und +1 Ansehnlichkeit. +1 [ICON_Faith] Glauben und +1 [ICON_CULTURE] Kultur ,wenn neben einem Wunder errichtet. +1 [ICON_FOOD] Nahrung und +1 [ICON_PRODUCTION] Produktion wenn in der Wüste gebaut oder +1 [ICON_CULTURE] Kultur wenn auf Schwemmland gebaut.[NEWLINE][NEWLINE]Zusätzliche [ICON_CULTURE] Kultur sobald Diplomatischer Service freigeschaltet wurde. Gibt zusätzlich [ICON_TOURISM] Tourismus nach der Erforschung des Fliegens. Kann nicht neben einer weiteren Sphinx oder im Schnee gebaut werden.</Text>
@@ -151,9 +151,6 @@
 		<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="de_DE">
 			<Text>Schreine und Tempel bringen [ICON_PRODUCTION] Produktion, gleich ihrem [ICON_Faith] Glaubens-Ertrag.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="de_DE">
-			<Text>Erhalte Glauben [ICON_FAITH] in Höhe von 25% der Kampfstärke der Einheit, wenn eine militärische Einheit produziert wurde.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_Production] Produktion von Sumpf, Oase und Schwemmland.</Text>
 		</Replace>
@@ -165,9 +162,6 @@
 		</Row>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_Amenities] Annehmlichkeit,+3 [ICON_FOOD] Nahrung und +3 [ICON_Housing] Wohnraum für Städte mit [ICON_Governor] Gouverneur.[NEWLINE]-2 Loyalität in Städten ohne [ICON_Governor] Gouverneur.[NEWLINE]Verleiht +2 [Icon_Governor] Gouverneur Titel.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="de_DE">
-			<Text>Das Ausheben des Militärs eines Stadtstaates kostet halb so viel [ICON_Gold] Gold.[NEWLINE]Stadtstaaten-Einheiten erhalten +4 [ICON_Strength] Kampfstärkebonus, sofern Ihr der Suzerain seid (inklusive ausgehobener Militäreinheiten).[NEWLINE]Verleiht +1 [Icon_Governor] Gouverneur Titel. +2 Einflusspunkte pro Runde für Gesandte in Stadtstaaten.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="de_DE">
 			<Text>Ungarische einzigartige Einheit des Mittelalters, die den Renner ersetzt. +2 [ICON_Strength] Kampfstärke für jede angrenzende ausgehobene Einheit.</Text>
@@ -208,9 +202,6 @@
 		<Replace Tag="LOC_FEATURE_DEVILSTOWER_DESCRIPTION" Language="de_DE">
 			<Text>Unpassierbares Naturwunder über ein Geländefeld. Bietet +2 [ICON_FAITH] Glauben und +1 [ICON_Production] Produktion für angrenzende Geländefelder.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="de_DE">
-			<Text>+100% [ICON_PRODUCTION] Produktion für Aquädukte. Heilige Stätten gewähren +2 [ICON_FOOD] Nahrung, +2 [ICON_FAITH] Glauben und +1 [ICON_HOUSING] Wohnraum, wenn sie an einem Fluss platziert werden. Heilige Stätten lösen einen Kulturschock aus.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="de_DE">
 			<Text>Alle Landmilitäreinheiten und  religiöse Einheiten erhalten +1 [ICON_Movement] Bewegungspunkt.</Text>
 		</Replace>
@@ -222,9 +213,6 @@
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="de_DE">
 			<Text>Ein ausschließlich Korea zur Verfügung stehender Bezirk für wissenschaftliche Bestrebungen. Ersetzt den Campus-Bezirk und muss auf Hügeln gebaut werden. +2 [ICON_SCIENCE] Wissenschaft. Gewährt +1 [ICON_CULTURE] Kultur für angrenzende Theaterplätze.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="de_DE">
-			<Text>Nachbarschaftsbonus: +1 [ICON_SCIENCE] Wissenschaft für jede 2. Mine. -1 [ICON_SCIENCE] Wissenschaft für jedes angrenzende Bezirk-Geländefeld mit Außnahme des Theaterplatzes, welcher +1 [ICON_SCIENCE] Wissenschaft gewährt. Gewährt auch +1 [ICON_CULTURE] Kultur für angrenzende Theaterplätze.</Text>
 		</Replace>
 		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="de_DE">
 			<Text>+{1_num} [ICON_Science] Wissenschaft für angrenzende Theaterplätze.</Text>
@@ -335,11 +323,11 @@
 		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="de_DE">
 			<Text>Ein ausschließlich Norwegen zur Verfügung stehendes Gebäude, welches den Tempel ersetzt. +1 [ICON_FAITH] Glauben für jedes Feld mit einer Ressource in dieser Stadt und +1 [ICON_PRODUCTION] Produktion für alle Küstenfelder mit einer Ressource in dieser Stadt. Erforderlich für den Erwerb von Aposteln und Inquisitoren mit [ICON_Faith] Glauben.</Text>
 		</Replace>
-		<!-- -->
-		<!-- -->
-		<!-- -->
-		<!-- -->
 		<!-- Crusader Religion -->
+		<!-- -->
+		<!-- -->
+		<!-- -->
+		<!-- -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="de_DE">
 			<Text>Kampfeinheiten erhalten +7 [ICON_Strength] bei fremden Städten mit dieser Religion.</Text>
 		</Replace>
@@ -408,9 +396,6 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="de_DE">
 			<Text>+2 [ICON_FAITH] Glauben für die Khmer von internationalen Handelsrouten zu und von den Khmer. Die sendende Zivilisation erhält +2 [ICON_FAITH] Glauben. +3 [ICON_FAITH] Glauben und +1 [ICON_AMENITIES] Annehmlichkeit durch Unterhaltung für jede Stadt mit einem Aquädukt. Bauernhöfe bieten +2 [ICON_FOOD] Nahrung, wenn diese an ein Aquädukt grenzen.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="de_DE">
-			<Text>Einzigartiges Gebäude von Norwegen. +1 [ICON_FAITH] Glauben für jede Ressource in dieser Stadt. Erforderlich für den Erwerb von Aposteln und Inquisitoren mit [ICON_Faith] Glauben.</Text>
-		</Replace>
 		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="de_DE"> 
 			<Text>Naturwunder über vier Geländefelder. Es erscheint als Sumpf und bietet +2 [ICON_Food] Nahrung, +2 [ICON_Culture] Kultur, und +2 [ICON_Science] Wissenschaft.</Text>
 		</Replace>
@@ -440,9 +425,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_DIVINE_WIND_DESCRIPTION" Language="de_DE">
 			<Text>Landeinheiten haben +5 [ICON_Strength] Kampfstärke auf Land-Geländefeldern, die an Küsten angrenzen. Marineeinheiten haben +5 [ICON_Strength] Kampfstärke auf Flachwasser-Geländefeldern.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="de_DE">
-			<Text>Ermöglicht allen Marine-Nahkampfeinheiten Küstenraub und bietet ihnen +25% [ICON_PRODUCTION] Produktion.</Text>
-		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="de_DE">
 			<Text>Ein ausschließlich Griechenland zur Verfügung stehender Bezirk für Kulturstätten. Ersetzt den Theaterplatz-Bezirk und ist günstiger im Bau.[NEWLINE][NEWLINE]+1 [ICON_Culture] Kulturbonus für alle angrenzenden Wunder und Bezirke. Kann nur auf Hügeln errichtet werden.</Text>
 		</Replace>
@@ -458,9 +440,6 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="de_DE">
 			<Text>Einzigartiges Gebäude von den Atzteken. Bietet eine [ICON_Amenities] Annehmlichkeit, +3 [ICON_CULTURE] Kultur, und einen [ICON_GreatGeneral] "Großer General"-Punkt.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="de_DE">
-			<Text>Modernisierung, die durch Steinmetzkunst freigeschaltet wird und auf Wüste, Wüstenhügeln, Schwemmland oder Ebene gebaut werden muss. +1 [ICON_Faith] Glauben. Erhält zusätzliche Erträge durch angrenzende Bezirke. +2 [ICON_Food] Nahrung, wenn angrenzend an ein Stadtzentrum. Für alle anderen Bezirke, die Nachbarschaftsbonusse gewähren: +2 für den entsprechenden Ertrag, wenn der Bezirk angrenzt.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="de_DE">
 			<Text>Naturwunder über drei Geländefelder. Bietet +2 [ICON_FOOD] Nahrung, +2 [ICON_PRODUCTION] Produktion und +2 [ICON_SCIENCE] Wissenschaft.</Text>
@@ -494,9 +473,6 @@
 			<Text>Unpassierbares Naturwunder über zwei Geländefelder. Es erscheint in Küstenregionen und bietet +2 [ICON_Science] Wissenschaft und +1 [ICON_FOOD] Nahrung für angrenzende Geländefelder.</Text>
 		</Replace>
 		<!-- Version 6 -->
-		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_Amenities] Annehmlichkeit, +3 [ICON_FOOD] Nahrung und +3 [ICON_Housing] Wohnraum in Städten mit [ICON_Governor] Gouverneur[NEWLINE]-2 Loyaltität in Städten ohne [ICON_Governor] Gouverneur.[NEWLINE]Verleiht +1 [Icon_Governor] Gouverneur Titel.</Text>
-		</Replace>
 		<!-- Version 7 -->
 		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="de_DE"> 
 			<Text>Chinesische Spezialeinheit des Mittelalters, die den Armbrustschützen ersetzt. +7 [ICON_Ranged] Fernkampfstärke, wenn der Kauernde Tiger banachbarte feindliche Einheiten angreift.</Text>
@@ -507,9 +483,6 @@
 		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION" Language="de_DE">
 			<Text>+7 [ICON_Ranged] Fernkampfstärke beim Angriff auf benachbarte Einheiten.</Text>
 		</Row>
-		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="de_DE">
-			<Text>Norwegische Spezialeinheit des Mittelalters. +2 [ICON_Movement] Fortbewegungspunkte bei Start in feindlichem Gebiet. +15 [ICON_Strength] Kampfstärke beim Angreifen.</Text>
-		</Replace>		
 		<Replace Tag="LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION" Language="de_DE">
 			<Text>+15 [ICON_Strength] Kampfstärke beim Angreifen.</Text>
 		</Replace>	
@@ -530,9 +503,6 @@
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_2" Language="de_DE">
 			<Text>Stift,Pinsel und Stimme: Erhalte +1 Zeitalterpunkt jedes Mal, wenn du eine [ICON_CivicBoosted] Inspiration erhälst. +1 Zeitalterpunkt für das Errichten eines Gebäudes mit einem Große-Werke-Platz. Wenn es bei Beginn eines Goldenen Zeitalters gewählt wird, gewähren [ICON_CivicBoosted] Inspirationen zusätzliche 10% von Ausrichtungskosten. Jede Stadt erhält dann +2 [ICON_Culture] Kultur und +2 [ICON_Gold] Gold für jeden Spezialbezirk.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="de_DE">
-			<Text>Gewährt einen zusätzlichen Glaubenssatz, beim Gründen der Religion. Siedler und Handwerker erhalten +1 [ICON_Movement] Fortbewegungspunkt. +5 [ICON_Faith] Glauben für jede Zivilisation (einschließlich Indien), die eine Religion gegründet hat und sich nicht im Krieg befindet. Feindliche Zivilisationen erhalten die doppelte Kriegsmündigkeit beim Kampf gegen Gandhi.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei ein Chemamüll, die einzigartige Modernisierung der Mapuche, zu bauen.[NEWLINE][NEWLINE]Gewährt [ICON_CULTURE] Kultur in Höhe von 75% der Anziehungskraft des Geländefeldes und +1 [ICON_PRODUCTION] Produktion. Bietet zusätzlich +1 [ICON_PRODUCTION] Produktion beim Errichen der 'Öffentliche Verwaltung'-Ausrichtung. Zusätzlicher [ICON_TOURISM] Tourismus nach Erforschen der 'Luftfahrt'. Kann nur auf Geländefeldern errichtet werden mit einer Anziehungskraft von mindestens Atemberaubend.</Text>

@@ -92,14 +92,12 @@ UPDATE Units_XP2 SET ResourceCost=10 WHERE UnitType='UNIT_FRENCH_GARDE_IMPERIALE
 --==================
 -- Hungary
 --==================
--- only 1 envoy from levying city-states units
-UPDATE ModifierArguments SET Value='1' WHERE ModifierId='LEVY_MILITARY_TWO_FREE_ENVOYS';
--- huszars only +1 combat strength from each alliance instead of 3
-UPDATE ModifierArguments SET Value='1' WHERE ModifierId='HUSZAR_ALLIES_COMBAT_BONUS';
--- black army only +2 combat strength from adjacent levied units
+-- Huszars only +2 combat strength from each alliance instead of 3
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId='HUSZAR_ALLIES_COMBAT_BONUS';
+-- Black Army only +2 combat strength from adjacent levied units
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='BLACK_ARMY_ADJACENT_LEVY';
--- Remove extra movement from levied units
-DELETE FROM UnitAbilityModifiers WHERE ModifierId='RAVEN_LEVY_MOVEMENT';
+-- Only 1 extra movement for levied units
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId='RAVEN_LEVY_MOVEMENT';
 
 
 
@@ -127,6 +125,36 @@ UPDATE Units_XP2 SET ResourceCost=10 WHERE UnitType='UNIT_KONGO_SHIELD_BEARER';
 --==================
 UPDATE Units SET Maintenance=2, Combat=40 WHERE UnitType='UNIT_MAORI_TOA';
 
+
+
+--==================
+-- Ottoman
+--==================
+-- Great Bazaar is now a Market replacement
+DELETE FROM BuildingPrereqs WHERE Building='BUILDING_GRAND_BAZAAR';
+UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_MARKET' WHERE CivUniqueBuildingType='BUILDING_GRAND_BAZAAR'; 
+UPDATE Building_YieldChanges SET YieldChange=3 WHERE BuildingType='BUILDING_GRAND_BAZAAR';
+UPDATE Buildings SET PrereqTech='TECH_CURRENCY', Cost=100 WHERE BuildingType='BUILDING_GRAND_BAZAAR';
+
+
+
+--==================
+-- Sweden
+--==================
+INSERT INTO TraitModifiers (TraitType , ModifierId)
+	VALUES
+	('TRAIT_CIVILIZATION_NOBEL_PRIZE' , 'NOBEL_PRIZE_UNIVERISTY_BOOST' ),
+	('TRAIT_CIVILIZATION_NOBEL_PRIZE' , 'NOBEL_PRIZE_FACTORY_BOOST' );
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES
+	('NOBEL_PRIZE_UNIVERISTY_BOOST' , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION' , null),
+	('NOBEL_PRIZE_FACTORY_BOOST' , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION' , null);
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra , SecondExtra)
+	VALUES 
+	('NOBEL_PRIZE_UNIVERISTY_BOOST' , 'BuildingType' , 'BUILDING_UNIVERSITY' , null , null),
+	('NOBEL_PRIZE_UNIVERISTY_BOOST' , 'Amount'       , '50'                  , null , null),
+	('NOBEL_PRIZE_FACTORY_BOOST'    , 'BuildingType' , 'BUILDING_FACTORY'    , null , null),
+	('NOBEL_PRIZE_FACTORY_BOOST'    , 'Amount'       , '50'                  , null , null);
 
 
 --==============================================================
@@ -243,6 +271,11 @@ UPDATE Feature_AdjacentYields SET YieldChange='2' WHERE FeatureType='FEATURE_DEV
 --==============================================================
 --******				    O T H E R					  ******
 --==============================================================
+-- oil available on all floodplains
+INSERT INTO Resource_ValidFeatures (ResourceType , FeatureType)
+	VALUES
+	('RESOURCE_OIL' , 'FEATURE_FLOODPLAINS_GRASSLAND'),
+	('RESOURCE_OIL' , 'FEATURE_FLOODPLAINS_PLAINS');
 -- retinues policy card is 50% of resource cost for produced and upgrade units
 INSERT INTO Modifiers (ModifierId, ModifierType)
 	VALUES ('PROFESSIONAL_ARMY_RESOURCE_DISCOUNT_MODIFIER_CPLMOD', 'MODIFIER_CITY_ADJUST_STRATEGIC_RESOURCE_REQUIREMENT_MODIFIER');

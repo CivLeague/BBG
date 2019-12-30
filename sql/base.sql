@@ -12,6 +12,9 @@ UPDATE Units SET Combat=62, Cost=340, PromotionClass='PROMOTION_CLASS_LIGHT_CAVA
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_HELICOPTER' WHERE Unit='UNIT_AMERICAN_ROUGH_RIDER';
 INSERT INTO UnitReplaces VALUES ('UNIT_AMERICAN_ROUGH_RIDER' , 'UNIT_CAVALRY');
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='ROUGH_RIDER_BONUS_ON_HILLS';
+-- Continent combat bonus attack only
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+	VALUES ('REQUIREMENTS_UNIT_ON_HOME_CONTINENT', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
 
 
 --==================
@@ -251,9 +254,15 @@ UPDATE ModifierArguments SET Value='25' WHERE ModifierId='UNIQUE_LEADER_CULTURE_
 --==================
 -- Varu upgrades to 
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_CUIRASSIER' WHERE Unit='UNIT_INDIAN_VARU';
--- India Stepwell Unique Improvement gets +1 base Faith and +1 Food moved from Professional Sports to Feudalism
+-- Stepwell Unique Improvement gets +1 base Faith and +1 Food moved from Professional Sports to Feudalism
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_STEPWELL' AND YieldType='YIELD_FAITH'; 
 UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_FEUDALISM' WHERE Id='20';
+-- Stepwells get +1 food per adajacent farm
+INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentImprovement)
+	VALUES ('STEPWELL_FOOD', 'Placeholder', 'YIELD_FOOD', 1, 1, 'IMPROVEMENT_FARM');
+INSERT INTO Improvement_Adjacencies (ImprovementType, YieldChangeId)
+	VALUES ('IMPROVEMENT_STEPWELL', 'STEPWELL_FOOD');
+DELETE FROM ImprovementModifiers WHERE ImprovementType='IMPROVEMENT_STEPWELL';
 
 
 --==================
@@ -290,6 +299,17 @@ INSERT INTO Requirements (RequirementId , RequirementType)
 	VALUES ('REQUIREMENT_UNIT_IS_SETTLER' , 'REQUIREMENT_UNIT_TYPE_MATCHES');
 INSERT INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('REQUIREMENT_UNIT_IS_SETTLER' , 'UnitType' , 'UNIT_SETTLER');
+-- +50% production to shrines and temples
+INSERT INTO TraitModifiers (TraitType , ModifierId)
+	VALUES 
+	('TRAIT_LEADER_SATYAGRAHA' , 'SATYAGRAHA_HOLY_SITE_BUILDING_BOOST' );
+INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES 
+	('SATYAGRAHA_HOLY_SITE_BUILDING_BOOST' , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION' , null);
+INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra , SecondExtra)
+	VALUES 
+	('SATYAGRAHA_HOLY_SITE_BUILDING_BOOST' , 'DistrictType' , 'DISTRICT_HOLY_SITE' , null , null),
+	('SATYAGRAHA_HOLY_SITE_BUILDING_BOOST' , 'Amount'       , '50'                 , null , null);
 
 
 --==================
@@ -606,7 +626,11 @@ UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='FASCISM_LEGA
 --==============================================================
 --******				P A N T H E O N S				  ******
 --==============================================================
+-- Dance of Aurora yields reduced... only work for flat tundra
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='DANCE_OF_THE_AURORA_FAITHTUNDRAHILLSADJACENCY' AND Name='Amount';
+-- stone circles +1 faith
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='STONE_CIRCLES_QUARRY_FAITH_MODIFIER' and Name='Amount';
+-- religious idols +1 faith
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='RELIGIOUS_IDOLS_BONUS_MINE_FAITH_MODIFIER' and Name='Amount';
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='RELIGIOUS_IDOLS_LUXURY_MINE_FAITH_MODIFIER' and Name='Amount';
 -- Goddess of the Harvest is +50% faith from chops instead of +100%
@@ -915,6 +939,9 @@ UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_DAR_E_MEHR'   ;
 --==============================================================
 --******				S  C  O  R  E				  	  ******
 --==============================================================
+-- less points for wide, more for tall
+UPDATE ScoringLineItems SET Multiplier=2 WHERE LineItemType='LINE_ITEM_CITIES';
+UPDATE ScoringLineItems SET Multiplier=2 WHERE LineItemType='LINE_ITEM_POPULATION';
 -- Wonders Provide +5 score instead of +15
 UPDATE ScoringLineItems SET Multiplier=5 WHERE LineItemType='LINE_ITEM_WONDERS';
 -- converting foreign populations reduced from 2 to 1
@@ -1379,6 +1406,10 @@ INSERT INTO Feature_AdjacentYields (FeatureType, YieldType, YieldChange)
 --==============================================================
 --******				    O T H E R					  ******
 --==============================================================
+-- oil can be found on flat plains
+INSERT INTO Resource_ValidTerrains (ResourceType, TerrainType)
+	VALUES ('RESOURCE_OIL', 'TERRAIN_PLAINS');
+-- incense +1 food
 INSERT INTO Resource_YieldChanges (ResourceType, YieldType, YieldChange)
 	VALUES ('RESOURCE_INCENSE', 'YIELD_FOOD', 1);
 -- add 1 production to fishing boat improvement
