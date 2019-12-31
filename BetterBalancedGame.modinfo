@@ -13,55 +13,56 @@
 	
 	<!-- can load only select files based on these requirements, if applied -->
 	<ActionCriteria>
-		<Criteria id="base">
-			<RuleSetInUse>RULESET_STANDARD</RuleSetInUse>
-		</Criteria>
 		<Criteria id="xp1">
-			<RuleSetInUse>RULESET_EXPANSION_1</RuleSetInUse>
+			<ModInUse>1B28771A-C749-434B-9053-D1380C553DE9</ModInUse>
 		</Criteria>
 		<Criteria id="xp2">
-			<RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse>
+			<ModInUse>4873eb62-8ccc-4574-b784-dda455e74e68</ModInUse>
 		</Criteria>
-		<Criteria id="xp1_australia" any="1">
-			<LeaderPlayable>Players:Expansion1_Players::LEADER_JOHN_CURTIN</LeaderPlayable>
+		<Criteria id="xp1_xp2">
+			<ModInUse>1B28771A-C749-434B-9053-D1380C553DE9</ModInUse>
+			<ModInUse>4873eb62-8ccc-4574-b784-dda455e74e68</ModInUse>
 		</Criteria>
-		<Criteria id="xp2_australia" any="1">
+		<Criteria id="dlc_australia">
+			<ModInUse>E3F53C61-371C-440B-96CE-077D318B36C0</ModInUse>
+		</Criteria>
+		<Criteria id="xp2_australia">
 			<LeaderPlayable>Players:Expansion2_Players::LEADER_JOHN_CURTIN</LeaderPlayable>
 		</Criteria>
-		<Criteria id="xp1_aztec" any="1">
-			<LeaderPlayable>Players:Expansion1_Players::LEADER_MONTEZUMA</LeaderPlayable>
+		<Criteria id="dlc_aztec">
+			<ModInUse>02A8BDDE-67EA-4D38-9540-26E685E3156E</ModInUse>
 		</Criteria>
-		<Criteria id="xp2_aztec" any="1">
+		<Criteria id="xp2_aztec">
 			<LeaderPlayable>Players:Expansion2_Players::LEADER_MONTEZUMA</LeaderPlayable>
 		</Criteria>
-		<Criteria id="xp1_indo_khmer" any="1">
-			<LeaderPlayable>Players:Expansion1_Players::LEADER_GITARJA,Players:Expansion1_Players::LEADER_JAYAVARMAN</LeaderPlayable>
+		<Criteria id="dlc_indo_khmer">
+			<ModInUse>1F367231-A040-4793-BDBB-088816853683</ModInUse>
 		</Criteria>
-		<Criteria id="xp2_indo_khmer" any="1">
+		<Criteria id="xp2_indo_khmer">
 			<LeaderPlayable>Players:Expansion2_Players::LEADER_GITARJA,Players:Expansion2_Players::LEADER_JAYAVARMAN</LeaderPlayable>
 		</Criteria>
-		<Criteria id="xp1_macedon_persia" any="1">
-			<LeaderPlayable>Players:Expansion1_Players::LEADER_ALEXANDER,Players:Expansion1_Players::LEADER_CYRUS</LeaderPlayable>
+		<Criteria id="dlc_macedon_persia">
+			<ModInUse>E2749E9A-8056-45CD-901B-C368C8E83DEB</ModInUse>
 		</Criteria>
-		<Criteria id="xp2_macedon_persia" any="1">
+		<Criteria id="xp2_macedon_persia">
 			<LeaderPlayable>Players:Expansion2_Players::LEADER_ALEXANDER,Players:Expansion2_Players::LEADER_CYRUS</LeaderPlayable>
 		</Criteria>
-		<Criteria id="xp1_norway_cs" any="1">
-			<LeaderPlayable>Players:Expansion1_Players::LEADER_HARDRADA,Players:Expansion1_Players::LEADER_HARDRADA</LeaderPlayable>
+		<Criteria id="dlc_norway_cs">
+			<ModInUse>2F6E858A-28EF-46B3-BEAC-B985E52E9BC1</ModInUse>
 		</Criteria>
-		<Criteria id="xp2_norway_cs" any="1">
+		<Criteria id="xp2_norway_cs">
 			<LeaderPlayable>Players:Expansion2_Players::LEADER_HARDRADA,Players:Expansion2_Players::LEADER_HARDRADA</LeaderPlayable>
 		</Criteria>
-		<Criteria id="xp1_nubia" any="1">
-			<LeaderPlayable>Players:Expansion1_Players::LEADER_AMANITORE</LeaderPlayable>
+		<Criteria id="dlc_nubia">
+			<ModInUse>643EA320-8E1A-4CF1-A01C-00D88DDD131A</ModInUse>
 		</Criteria>
-		<Criteria id="xp2_nubia" any="1">
+		<Criteria id="xp2_nubia">
 			<LeaderPlayable>Players:Expansion2_Players::LEADER_AMANITORE</LeaderPlayable>
 		</Criteria>
-		<Criteria id="xp1_poland" any="1">
-			<LeaderPlayable>Players:Expansion1_Players::LEADER_JADWIGA</LeaderPlayable>
+		<Criteria id="dlc_poland">
+			<ModInUse>3809975F-263F-40A2-A747-8BFB171D821A</ModInUse>
 		</Criteria>
-		<Criteria id="xp2_poland" any="1">
+		<Criteria id="xp2_poland">
 			<LeaderPlayable>Players:Expansion2_Players::LEADER_JADWIGA</LeaderPlayable>
 		</Criteria>
 	</ActionCriteria>
@@ -106,57 +107,57 @@
 			<File>lang/japanese.xml</File>
 		</UpdateText>
 		
-		<UpdateDatabase id="bbg_base_db_updates" criteria="base">
+		<UpdateDatabase id="bbg_base_db_updates">
 			<Properties>
 				<LoadOrder>11612</LoadOrder>
 			</Properties>
+			<File>sql/base.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp1_db_updates" criteria="xp1">
 			<Properties>
 				<LoadOrder>11613</LoadOrder>
 			</Properties>
-			<File>sql/base.sql</File>
 			<File>sql/xp1__rise_and_fall.sql</File>
 		</UpdateDatabase>
 		
-		<UpdateDatabase id="bbg_xp1_australia" criteria="xp1_australia">
+		<UpdateDatabase id="bbg_dlc_australia" criteria="dlc_australia">
 			<Properties>
 				<LoadOrder>11614</LoadOrder>
 			</Properties>
 			<File>sql/dlc_australia.sql</File>
 		</UpdateDatabase>
-		<UpdateDatabase id="bbg_xp1_aztec" criteria="xp1_aztec">
+		<UpdateDatabase id="bbg_dlc_aztec" criteria="dlc_aztec">
 			<Properties>
 				<LoadOrder>11615</LoadOrder>
 			</Properties>
 			<File>sql/dlc_aztec.sql</File>
 		</UpdateDatabase>
-		<UpdateDatabase id="bbg_xp1_indo_khmer" criteria="xp1_indo_khmer">
+		<UpdateDatabase id="bbg_dlc_indo_khmer" criteria="dlc_indo_khmer">
 			<Properties>
 				<LoadOrder>11616</LoadOrder>
 			</Properties>
 			<File>sql/dlc_indo_khmer.sql</File>
 		</UpdateDatabase>
-		<UpdateDatabase id="bbg_xp1_macedon_persia" criteria="xp1_macedon_persia">
+		<UpdateDatabase id="bbg_dlc_macedon_persia" criteria="dlc_macedon_persia">
 			<Properties>
 				<LoadOrder>11617</LoadOrder>
 			</Properties>
 			<File>sql/dlc_macedon_persia.sql</File>
 		</UpdateDatabase>
-		<UpdateDatabase id="bbg_xp1_norway_cs" criteria="xp1_norway_cs">
+		<UpdateDatabase id="bbg_dlc_norway_cs" criteria="dlc_norway_cs">
 			<Properties>
 				<LoadOrder>11618</LoadOrder>
 			</Properties>
 			<File>sql/dlc_norway_cs.sql</File>
 		</UpdateDatabase>
-		<UpdateDatabase id="bbg_xp1_nubia" criteria="xp1_nubia">
+		<UpdateDatabase id="bbg_dlc_nubia" criteria="dlc_nubia">
 			<Properties>
 				<LoadOrder>11619</LoadOrder>
 			</Properties>
 			<File>sql/dlc_nubia.sql</File>
 		</UpdateDatabase>
-		<UpdateDatabase id="bbg_xp1_poland" criteria="xp1_poland">
+		<UpdateDatabase id="bbg_dlc_poland" criteria="dlc_poland">
 			<Properties>
 				<LoadOrder>11620</LoadOrder>
 			</Properties>
@@ -167,57 +168,54 @@
 			<Properties>
 				<LoadOrder>11621</LoadOrder>
 			</Properties>
-			<File>sql/base.sql</File>
-			<File>sql/xp1__rise_and_fall.sql</File>
 			<File>sql/xp2__gathering_storm.sql</File>
+		</UpdateDatabase>
+		
+		<UpdateDatabase id="bbg_xp1_xp2_db_updates" criteria="xp1_xp2">
+			<Properties>
+				<LoadOrder>11622</LoadOrder>
+			</Properties>
 			<File>sql/xp2_rise_and_fall.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp2_australia" criteria="xp2_australia">
 			<Properties>
-				<LoadOrder>11622</LoadOrder>
+				<LoadOrder>11623</LoadOrder>
 			</Properties>
-			<File>sql/dlc_australia.sql</File>
 			<File>sql/xp2_australia.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_xp2_aztec" criteria="xp2_aztec">
 			<Properties>
-				<LoadOrder>11623</LoadOrder>
+				<LoadOrder>11624</LoadOrder>
 			</Properties>
-			<File>sql/dlc_aztec.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_xp2_indo_khmer" criteria="xp2_indo_khmer">
 			<Properties>
-				<LoadOrder>11624</LoadOrder>
+				<LoadOrder>11625</LoadOrder>
 			</Properties>
-			<File>sql/dlc_indo_khmer.sql</File>
 			<File>sql/xp2_indo_khmer.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_xp2_macedon_persia" criteria="xp2_macedon_persia">
 			<Properties>
-				<LoadOrder>11625</LoadOrder>
+				<LoadOrder>11626</LoadOrder>
 			</Properties>
-			<File>sql/dlc_macedon_persia.sql</File>
 			<File>sql/xp2_macedon_persia.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_xp2_norway_cs" criteria="xp2_norway_cs">
 			<Properties>
-				<LoadOrder>11626</LoadOrder>
+				<LoadOrder>11627</LoadOrder>
 			</Properties>
-			<File>sql/dlc_norway_cs.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_xp2_nubia" criteria="xp2_nubia">
 			<Properties>
-				<LoadOrder>11627</LoadOrder>
+				<LoadOrder>11628</LoadOrder>
 			</Properties>
-			<File>sql/dlc_nubia.sql</File>
 			<File>sql/xp2_nubia.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_xp2_poland" criteria="xp2_poland">
 			<Properties>
-				<LoadOrder>11628</LoadOrder>
+				<LoadOrder>11629</LoadOrder>
 			</Properties>
-			<File>sql/dlc_poland.sql</File>
 		</UpdateDatabase>
 		
 		<ReplaceUIScript id="PriorityTarget_UnitPanel" criteria="xp2">

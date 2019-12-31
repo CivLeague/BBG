@@ -223,8 +223,16 @@ UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_GUILDS_REQUIREMENTS' WH
 DELETE FROM DistrictModifiers WHERE DistrictType='DISTRICT_ACROPOLIS';
 INSERT INTO TraitModifiers
 	VALUES ('TRAIT_CIVILIZATION_PLATOS_REPUBLIC' , 'AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
+	VALUES ('BUILDING_IS_AMPHITHEATER_CPLMOD', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+	VALUES ('BUILDING_IS_AMPHITHEATER_CPLMOD', 'REQUIRES_CITY_HAS_AMPHITHEATER_CPLMOD');
+INSERT INTO Requirements (RequirementId, RequirementType)
+	VALUES ('REQUIRES_CITY_HAS_AMPHITHEATER_CPLMOD', 'REQUIREMENT_CITY_HAS_BUILDING');
+INSERT INTO RequirementArguments (RequirementId, Name, Value)
+	VALUES ('REQUIRES_CITY_HAS_AMPHITHEATER_CPLMOD', 'BuildingType', 'BUILDING_AMPHITHEATER');
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
-    VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN' , 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER', 'BUILDING_IS_AMPHITHEATER');
+    VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN' , 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER', 'BUILDING_IS_AMPHITHEATER_CPLMOD');
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
     VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN' , 'ModifierId' , 'AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN_MOD');
 INSERT INTO Modifiers (ModifierId, ModifierType)
@@ -252,8 +260,6 @@ UPDATE ModifierArguments SET Value='25' WHERE ModifierId='UNIQUE_LEADER_CULTURE_
 --==================
 -- India
 --==================
--- Varu upgrades to 
-UPDATE UnitUpgrades SET UpgradeUnit='UNIT_CUIRASSIER' WHERE Unit='UNIT_INDIAN_VARU';
 -- Stepwell Unique Improvement gets +1 base Faith and +1 Food moved from Professional Sports to Feudalism
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_STEPWELL' AND YieldType='YIELD_FAITH'; 
 UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_FEUDALISM' WHERE Id='20';
@@ -270,13 +276,15 @@ DELETE FROM ImprovementModifiers WHERE ImprovementType='IMPROVEMENT_STEPWELL';
 --==================
 -- Extra belief when founding a Religion
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
-    VALUES ('EXTRA_BELIEF_MODIFIER', 'MODIFIER_PLAYER_ADD_BELIEF', 'HAS_A_RELIGION');
+    VALUES ('EXTRA_BELIEF_MODIFIER', 'MODIFIER_PLAYER_ADD_BELIEF', 'HAS_A_RELIGION_BBG');
 INSERT INTO TraitModifiers (TraitType, ModifierId)
     VALUES ('TRAIT_LEADER_SATYAGRAHA', 'EXTRA_BELIEF_MODIFIER');
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
-    VALUES ('HAS_A_RELIGION', 'REQUIREMENTSET_TEST_ALL');
+    VALUES ('HAS_A_RELIGION_BBG', 'REQUIREMENTSET_TEST_ALL');
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
-    VALUES ('HAS_A_RELIGION', 'REQUIRES_PLAYER_HAS_FOUNDED_A_RELIGION');
+    VALUES ('HAS_A_RELIGION_BBG', 'REQUIRES_FOUNDED_RELIGION_BBG');
+INSERT INTO Requirements (RequirementId, RequirementType, Inverse)
+	VALUES ('REQUIRES_FOUNDED_RELIGION_BBG', 'REQUIREMENT_FOUNDED_NO_RELIGION', 1);
 -- +1 movement to builders
 INSERT INTO TraitModifiers (TraitType , ModifierId)
 	VALUES ('TRAIT_LEADER_SATYAGRAHA' , 'GANDHI_FAST_BUILDERS');
@@ -417,9 +425,17 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 --==================
 -- Missions moved to Theology
 UPDATE Improvements SET PrereqCivic='CIVIC_THEOLOGY' WHERE ImprovementType='IMPROVEMENT_MISSION';
--- Missions get +1 housing at Exploration
+-- Missions get +1 housing at Civil Service
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
+	VALUES ('PLAYER_HAS_CIVIL_SERVICE_REQUIREMENTS_BBG', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+	VALUES ('PLAYER_HAS_CIVIL_SERVICE_REQUIREMENTS_BBG', 'REQUIRES_PLAYER_HAS_CIVIL_SERVICE_BBG');
+INSERT INTO Requirements (RequirementId, RequirementType)
+	VALUES ('REQUIRES_PLAYER_HAS_CIVIL_SERVICE_BBG', 'REQUIREMENT_PLAYER_HAS_CIVIC');
+INSERT INTO RequirementArguments (RequirementId, Name, Value)
+	VALUES ('REQUIRES_PLAYER_HAS_CIVIL_SERVICE_BBG', 'CivicType', 'CIVIC_CIVIL_SERVICE');
 INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
-	VALUES ('MISSION_HOUSING_WITH_CIVIL_SERVICE' , 'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_HOUSING', 'PLAYER_HAS_CIVIL_SERVICE_REQUIREMENTS');
+	VALUES ('MISSION_HOUSING_WITH_CIVIL_SERVICE' , 'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_HOUSING', 'PLAYER_HAS_CIVIL_SERVICE_REQUIREMENTS_BBG');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('MISSION_HOUSING_WITH_CIVIL_SERVICE' , 'Amount' , 1);
 INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
@@ -439,6 +455,25 @@ INSERT INTO TraitModifiers ( TraitType , ModifierId )
 -- Sumerian War Carts are no longer free to maintain so that you cannot have unlimited and are heavy chariot replacement with 32 combat
 UPDATE Units SET Maintenance=1, Combat=32, PrereqTech='TECH_THE_WHEEL', MandatoryObsoleteTech='TECH_BALLISTICS' WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
 INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SUMERIAN_WAR_CART', 'UNIT_HEAVY_CHARIOT');
+-- war carts have a chance to steal defeated barbs and city state units
+INSERT INTO Types (Type , Kind)
+	VALUES ('ABILITY_WAR_CART_CAPTURE' , 'KIND_ABILITY');
+INSERT INTO TypeTags (Type, Tag)
+	VALUES ('ABILITY_WAR_CART_CAPTURE', 'CLASS_WAR_CART');
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description)
+	VALUES ('ABILITY_WAR_CART_CAPTURE', 'Placeholder', 'Placeholder');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
+	VALUES ('ABILITY_WAR_CART_CAPTURE', 'WAR_CART_CAPTURE_CS_BARBS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
+	VALUES ('WAR_CART_CAPTURE_CS_BARBS', 'MODIFIER_UNIT_ADJUST_COMBAT_UNIT_CAPTURE', 'OPP_IS_CS_OR_BARB');
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+	VALUES ('WAR_CART_CAPTURE_CS_BARBS', 'CanCapture', '1');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
+	VALUES ('OPP_IS_CS_OR_BARB', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+	VALUES
+	('OPP_IS_CS_OR_BARB', 'REQUIRES_OPPONENT_IS_BARBARIAN'),
+	('OPP_IS_CS_OR_BARB', 'REQUIRES_OPPONENT_IS_MINOR_CIV');
 -- Sumeria's Ziggurat gets +1 Culture at Diplomatic Service instead of Natural History
 UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_DIPLOMATIC_SERVICE' WHERE ImprovementType='IMPROVEMENT_ZIGGURAT';
 -- zigg gets +1 science and culture at enlightenment
@@ -967,8 +1002,6 @@ UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_SCYTHI
 UPDATE StartBiasRivers SET Tier=4 WHERE CivilizationType='CIVILIZATION_SUMERIA';
 UPDATE StartBiasRivers SET Tier=4 WHERE CivilizationType='CIVILIZATION_FRANCE';
 -- t4 feature mechanics
-UPDATE StartBiasFeatures SET Tier=4 WHERE CivilizationType='CIVILIZATION_EGYPT' AND FeatureType='FEATURE_FLOODPLAINS_PLAINS';
-UPDATE StartBiasFeatures SET Tier=4 WHERE CivilizationType='CIVILIZATION_EGYPT' AND FeatureType='FEATURE_FLOODPLAINS_GRASSLAND';
 UPDATE StartBiasFeatures SET Tier=4 WHERE CivilizationType='CIVILIZATION_BRAZIL' AND FeatureType='FEATURE_JUNGLE';
 UPDATE StartBiasFeatures SET Tier=4 WHERE CivilizationType='CIVILIZATION_KONGO' AND FeatureType='FEATURE_JUNGLE';
 -- t4 terrain mechanics

@@ -7,6 +7,7 @@ INSERT INTO Improvement_ValidFeatures (ImprovementType , FeatureType)
 	('IMPROVEMENT_PYRAMID' , 'FEATURE_FLOODPLAINS_PLAINS');
 
 
+
 --==============================================================
 --******			W O N D E R S  (MAN-MADE)			  ******
 --==============================================================
