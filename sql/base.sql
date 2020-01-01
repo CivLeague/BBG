@@ -345,10 +345,10 @@ INSERT INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('BERSERKER_FAITH_PURCHASE_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ENABLE_UNIT_FAITH_PURCHASE');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('BERSERKER_FAITH_PURCHASE_CPLMOD' , 'Tag' , 'CLASS_MELEE_BERSERKER');
---Berserker Movement bonus extended to all water tiles	
+--Berserker Movement bonus extended to all water tiles
 UPDATE RequirementSets SET RequirementSetType='REQUIREMENTSET_TEST_ANY' WHERE RequirementSetId='BERSERKER_PLOT_IS_ENEMY_TERRITORY';
 INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
-	VALUES 
+	VALUES
 	('BERSERKER_PLOT_IS_ENEMY_TERRITORY' , 'REQUIRES_PLOT_HAS_COAST'),
 	('BERSERKER_PLOT_IS_ENEMY_TERRITORY' , 'REQUIRES_TERRAIN_OCEAN' );
 -- Melee Naval production reduced to 25% from 50%
@@ -403,15 +403,15 @@ INSERT INTO TraitModifiers (TraitType , ModifierId)
 	('TRAIT_LEADER_MELEE_COASTAL_RAIDS' , 'TRAIT_LEADER_THUNDERBOLT_HOLYSITE_COASTAL_ADJACENCY');
 -- +50% production towards Holy Sites and associated Buildings
 INSERT INTO TraitModifiers (TraitType , ModifierId)
-	VALUES 
+	VALUES
 	('TRAIT_LEADER_MELEE_COASTAL_RAIDS'          , 'THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'              ),
 	('TRAIT_LEADER_MELEE_COASTAL_RAIDS'          , 'THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'              );
 INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
-	VALUES 
+	VALUES
 	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION'                 , null                               ),
 	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION'                 , null                               );
 INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra , SecondExtra)
-	VALUES 
+	VALUES
 	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'DistrictType' , 'DISTRICT_HOLY_SITE' , null , null),
 	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'Amount'       , '50'                 , null , null),
 	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'DistrictType' , 'DISTRICT_HOLY_SITE' , null , null),
