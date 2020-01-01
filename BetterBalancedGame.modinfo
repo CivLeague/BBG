@@ -47,12 +47,6 @@
 		<Criteria id="xp2_macedon_persia">
 			<LeaderPlayable>Players:Expansion2_Players::LEADER_ALEXANDER,Players:Expansion2_Players::LEADER_CYRUS</LeaderPlayable>
 		</Criteria>
-		<Criteria id="dlc_norway_cs">
-			<ModInUse>2F6E858A-28EF-46B3-BEAC-B985E52E9BC1</ModInUse>
-		</Criteria>
-		<Criteria id="xp2_norway_cs">
-			<LeaderPlayable>Players:Expansion2_Players::LEADER_HARDRADA,Players:Expansion2_Players::LEADER_HARDRADA</LeaderPlayable>
-		</Criteria>
 		<Criteria id="dlc_nubia">
 			<ModInUse>643EA320-8E1A-4CF1-A01C-00D88DDD131A</ModInUse>
 		</Criteria>
@@ -114,54 +108,48 @@
 			<File>sql/base.sql</File>
 		</UpdateDatabase>
 		
-		<UpdateDatabase id="bbg_xp1_db_updates" criteria="xp1">
-			<Properties>
-				<LoadOrder>11613</LoadOrder>
-			</Properties>
-			<File>sql/xp1__rise_and_fall.sql</File>
-		</UpdateDatabase>
-		
 		<UpdateDatabase id="bbg_dlc_australia" criteria="dlc_australia">
 			<Properties>
-				<LoadOrder>11614</LoadOrder>
+				<LoadOrder>11613</LoadOrder>
 			</Properties>
 			<File>sql/dlc_australia.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_dlc_aztec" criteria="dlc_aztec">
 			<Properties>
-				<LoadOrder>11615</LoadOrder>
+				<LoadOrder>11614</LoadOrder>
 			</Properties>
 			<File>sql/dlc_aztec.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_dlc_indo_khmer" criteria="dlc_indo_khmer">
 			<Properties>
-				<LoadOrder>11616</LoadOrder>
+				<LoadOrder>11615</LoadOrder>
 			</Properties>
 			<File>sql/dlc_indo_khmer.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_dlc_macedon_persia" criteria="dlc_macedon_persia">
 			<Properties>
-				<LoadOrder>11617</LoadOrder>
+				<LoadOrder>11616</LoadOrder>
 			</Properties>
 			<File>sql/dlc_macedon_persia.sql</File>
 		</UpdateDatabase>
-		<UpdateDatabase id="bbg_dlc_norway_cs" criteria="dlc_norway_cs">
-			<Properties>
-				<LoadOrder>11618</LoadOrder>
-			</Properties>
-			<File>sql/dlc_norway_cs.sql</File>
-		</UpdateDatabase>
 		<UpdateDatabase id="bbg_dlc_nubia" criteria="dlc_nubia">
 			<Properties>
-				<LoadOrder>11619</LoadOrder>
+				<LoadOrder>11618</LoadOrder>
 			</Properties>
 			<File>sql/dlc_nubia.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_dlc_poland" criteria="dlc_poland">
 			<Properties>
-				<LoadOrder>11620</LoadOrder>
+				<LoadOrder>11619</LoadOrder>
 			</Properties>
 			<File>sql/dlc_poland.sql</File>
+		</UpdateDatabase>
+
+		<UpdateDatabase id="bbg_xp1_db_updates" criteria="xp1">
+			<Properties>
+				<LoadOrder>11620</LoadOrder>
+			</Properties>
+			<File>sql/xp1__rise_and_fall.sql</File>
 		</UpdateDatabase>
 		
 		<UpdateDatabase id="bbg_xp2_db_updates" criteria="xp2">
@@ -201,11 +189,6 @@
 			</Properties>
 			<File>sql/xp2_macedon_persia.sql</File>
 		</UpdateDatabase>
-		<UpdateDatabase id="bbg_xp2_norway_cs" criteria="xp2_norway_cs">
-			<Properties>
-				<LoadOrder>11627</LoadOrder>
-			</Properties>
-		</UpdateDatabase>
 		<UpdateDatabase id="bbg_xp2_nubia" criteria="xp2_nubia">
 			<Properties>
 				<LoadOrder>11628</LoadOrder>
@@ -241,7 +224,6 @@
 		<File>sql/dlc_aztec.sql</File>
 		<File>sql/dlc_indo_khmer.sql</File>
 		<File>sql/dlc_macedon_persia.sql</File>
-		<File>sql/dlc_norway_cs.sql</File>
 		<File>sql/dlc_nubia.sql</File>
 		<File>sql/dlc_poland.sql</File>
 		<File>sql/xp1__rise_and_fall.sql</File>
