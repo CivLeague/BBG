@@ -144,6 +144,8 @@ DELETE FROM BuildingPrereqs WHERE Building='BUILDING_GRAND_BAZAAR';
 UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_MARKET' WHERE CivUniqueBuildingType='BUILDING_GRAND_BAZAAR'; 
 UPDATE Building_YieldChanges SET YieldChange=3 WHERE BuildingType='BUILDING_GRAND_BAZAAR';
 UPDATE Buildings SET PrereqTech='TECH_CURRENCY', Cost=100 WHERE BuildingType='BUILDING_GRAND_BAZAAR';
+INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+	VALUES ('BUILDING_GRAND_BAZAAR', 'MARKET_TRADE_ROUTE_CAPACITY');
 
 
 
