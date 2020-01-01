@@ -47,7 +47,7 @@
 			<Text>Units within the city's territory get +3 [ICON_Strength] Combat Strength. Your other cities within 9 tiles gain +4 Loyalty per turn towards your civilization.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="en_US">
-			<Text>Sumerian unique Ancient era unit that replaces the Heavy Chariot. Has a chance to capture defeated Barbarian and City-State units. No penalties against anti-cavalry units. 4 [ICON_Movement] Movement if this unit starts in open terrain.</Text>
+			<Text>Sumerian unique Ancient era unit that replaces the Heavy Chariot. Has a chance to capture defeated City-State units. No penalties against anti-cavalry units. 4 [ICON_Movement] Movement if this unit starts in open terrain.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="en_US">
 			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build. Awards 1 [ICON_Envoy] Envoy when an Amphitheater is completed.[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for adjacent City Center. +1 [ICON_Culture] Culture bonus for each adjacent wonder and district. Can only be built on Hills.</Text>
@@ -55,7 +55,9 @@
 		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="en_US">
 			<Text>Norwegian unique Medieval era unit. +2 [ICON_Movement] Movement if this unit starts in enemy territory or is embarked. +15 [ICON_Strength] Combat Strength when attacking. Can be purchased with [ICON_FAITH] Faith.</Text>
 		</Replace>
-		
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="en_US">
+			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards these buildings. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.</Text>
+		</Replace>		
 		
 
 		
