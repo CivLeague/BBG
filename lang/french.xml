@@ -52,6 +52,9 @@
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +50% pour 10 tours après avoir libéré une ville.</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION" Language="fr_FR">		<!-- Correction de la traduction officielle : Rendements +1, pas +2 pour les cases charmantes -->
+			<Text>[ICON_Housing] Habitations +3 pour les villes côtières. Les pâturages déclenchent une bombe culturelle. Rendements +1 pour les campus, plateformes commerciales, lieux saints et places du théâtre situés sur des cases à l'attrait charmant, +3 si l'attrait est époustouflant.</Text>
+		</Replace>
 		<!-- --------------- AZTEQUES --------------- -->
 		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="fr_FR">
 			<Text>Bâtiment exclusif aux Aztèques. [ICON_Amenities] Activités +1, [ICON_CULTURE] culture +3 et points de [ICON_GreatGeneral] général illustre +1.</Text>
@@ -79,6 +82,10 @@
 		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_NAME" Language="fr_FR">
 			<Text>Boulet de canon!</Text>
 		</Row>
+		<!-- --------------- CONGO --------------- -->
+		<Replace Tag="LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION" Language="fr_FR">		<!-- Correction de la traduction officielle : Coloo peut à nouveau recruter des personnages illustres =D -->
+			<Text>Ne peut ni construire des lieux saints, ni recruter de prophète illustre, ni fonder une religion. Adopte les croyances de toute religion qui s'est propagée à la majorité de ses villes. Reçoit un apôtre de la religion dominante de la ville lorsqu'il construit un mbanza ou une place du théâtre.</Text>
+		</Replace>
 		<!-- --------------- CORÉE --------------- -->
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="fr_FR">
 			<Text>Destiné à la recherche scientifique, ce quartier exclusif à la Corée remplace le campus. [ICON_SCIENCE] Science +2. Octroie +1 [ICON_CULTURE] Culture aux Places du Théâtre adjacentes. Déclenche une bombe culturelle une fois construit. Doit être construit sur une colline.</Text>
@@ -320,10 +327,7 @@
 			<Text>Dieu de la guerre et du pillage</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="fr_FR">
-			<Text>+1 point de [ICON_GreatPerson] Personnage illustre pour les Campement (général illustre), Port (amiral illustre) et Plateforme Commerciale (marchant illustre).</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Faith] Foi +6 pour toutes les merveilles mondiales.</Text>
+			<Text>+1 point de [ICON_GreatPerson] Personnage illustre pour les Campements (général illustre), Ports (amiral illustre) et Plateformes Commerciales (marchant illustre).</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="fr_FR">
 			<Text>En cas de sélection, un bâtisseur apparaît dans votre capitale. [ICON_FOOD] Nourriture +1 pour les cases de [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], et [ICON_RESOURCE_WHEAT].</Text>
@@ -349,15 +353,6 @@
 		<Replace Tag="LOC_DISTRICT_TUNDRA_FAITH" Language="fr_FR">
 			<Text>Cases de toundra plate adjacentes : [ICON_Faith] foi +{1_num}.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="fr_FR">
-			<Text>Chaque lieu saint ou place du théâtre d'une ville convertie à cette religion fournit respectivement [ICON_Faith] foi +2 ou [ICON_Culture] culture +2.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="fr_FR">
-			<Text>La religion se propage aux villes 40 % plus éloignées.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Science] Science +1 par groupe de 3 fidèles de cette religion dans d'autres civilisations.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +15 % pour toutes les merveilles.</Text>
 		</Replace>
@@ -374,7 +369,7 @@
 		<!-- =============== C R O Y A N C E S === DE === R E L I G I O N =============== -->
 		
 		<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="fr_FR">
-			<Text>Les Autels et les Temples fournissent une quantité de [ICON_PRODUCTION] Production égale à leur génération de [ICON_Faith] foi intrinsèque.</Text>
+			<Text>Les Autels et les Temples fournissent une quantité de [ICON_PRODUCTION] Production égale à leur génération de [ICON_Faith] Foi intrinsèque.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +7 pour les unités militaires proches des villes étrangères converties à cette religion.</Text>
@@ -399,6 +394,18 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_DESCRIPTION" Language="fr_FR">
 			<Text>Permet la construction du Dar-e Mehr ([ICON_Faith] Foi +3 et [ICON_CULTURE] Culture +2).</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Faith] Foi +6 pour toutes les merveilles mondiales.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="fr_FR">
+			<Text>Chaque lieu saint ou place du théâtre d'une ville convertie à cette religion fournit respectivement [ICON_Faith] foi +2 ou [ICON_Culture] culture +2.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="fr_FR">
+			<Text>La religion se propage aux villes 40 % plus éloignées.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Science] Science +1 par groupe de 3 fidèles de cette religion dans d'autres civilisations.</Text>
 		</Replace>
 		
 		<!-- =============== M E R V E I L L E S === N A T U R E L L E S =============== -->
