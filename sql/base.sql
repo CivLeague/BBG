@@ -768,11 +768,22 @@ UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWOR
 
 
 --==============================================================
---******			  	G O V E R N M E N T S			  ******
+--******			  G O V E R N M E N T S				  ******
 --==============================================================
 -- fascism attack bonus works on defense now too
 UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='FASCISM_ATTACK_BUFF';
 UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='FASCISM_LEGACY_ATTACK_BUFF';
+
+
+--==============================================================
+--******			 G R E A T    P E O P L E  			  ******
+--==============================================================
+UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_GRANT_INFLUENCE_TOKEN', RunOnce=1 WHERE ModifierId='GREATPERSON_GEORGY_ZHUKOV_ACTIVE';
+UPDATE ModifierArguments SET Name='Amount', Value='3' WHERE ModifierId='GREATPERSON_GEORGY_ZHUKOV_ACTIVE';
+UPDATE ModifierStrings SET Text='LOC_GREATPERSON_ANA_NZINGA_ACTIVE' WHERE ModifierId='GREATPERSON_GEORGY_ZHUKOV_ACTIVE';
+UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_GRANT_INFLUENCE_TOKEN', RunOnce=1 WHERE ModifierId='HORATIO_NELSON_FLANKING_BONUS';
+UPDATE ModifierArguments SET Name='Amount', Value='2' WHERE ModifierId='HORATIO_NELSON_FLANKING_BONUS';
+UPDATE ModifierStrings SET Text='LOC_GREATPERSON_ANA_NZINGA_ACTIVE' WHERE ModifierId='GREATPERSON_HORATIO_NELSON_ACTIVE';
 
 
 --==============================================================

@@ -284,6 +284,8 @@ UPDATE Feature_AdjacentYields SET YieldChange='2' WHERE FeatureType='FEATURE_DEV
 --==============================================================
 --******				    O T H E R					  ******
 --==============================================================
+-- statue of liberty text fix
+UPDATE Buildings SET Description='LOC_BUILDING_STATUE_LIBERTY_EXPANSION2_DESCRIPTION' WHERE BuildingType='BUILDING_STATUE_LIBERTY';
 -- oil available on all floodplains
 INSERT INTO Resource_ValidFeatures (ResourceType , FeatureType)
 	VALUES
