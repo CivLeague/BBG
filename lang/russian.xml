@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="ru_RU">
+			<Text>Может сократить на 50% присутствие чужих религий на своей территории. Вступает в теологические баталии с юнитами других религий.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Может сократить на 50% присутствие чужих религий на своей территории. Вступает в теологические баталии с юнитами других религий.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="ru_RU">
 			<Text>Юниты получают +5 к [ICON_Strength] боевой мощи на родном континенте. +1 престижа для всех клеток города с национальным парком. Получает уникальный юнит «Мужественный всадник» после исследования технологии «Военная наука».</Text>
 		</Replace>
@@ -9,12 +16,6 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный венгерский юнит Промышленной эры. Заменяет кавалеристов. +2 [ICON_Strength] к боевой мощи за каждый действующий союз.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ru_RU">
-			<Text>Мобилизованные юниты получают +1 [ICON_Movement] ОП и +5 к [ICON_Strength] боевой мощи. На повышение нанятых юнитов тратится на 75% меньше [ICON_GOLD] золота и ресурсов. При найме армии города-государства вы получаете 2 [ICON_ENVOY] послов в этом городе. После исследования технологии «Замки» дается уникальный юнит «Черная армия».</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ru_RU">
-			<Text>Дополнительное верование при основании религии. Поселенцы и рабочие получают +1 [ICON_Movement] ОП. +5 [ICON_Faith] веры за каждую известную им цивилизацию (включая Индию), которая основала религию и в настоящее время не воюет. +50% [ICON_PRODUCTION] к производству священных мест. Враждебные цивилизации, воюющие с Ганди, получают в два раза больше усталости от войны.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Дополнительное верование при основании религии. Поселенцы и рабочие получают +1 [ICON_Movement] ОП. +5 [ICON_Faith] веры и +1 [ICON_Favor] ед. мирового влияния в ход за каждую известную им цивилизацию (включая Индию), которая основала религию и в настоящее время не воюет. +50% [ICON_PRODUCTION] к производству священных мест. Враждебные цивилизации, воюющие с Ганди, получают в два раза больше усталости от войны.</Text>
@@ -448,9 +449,6 @@
 		<!-- Newer -->
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="ru_RU">
 			<Text>Каждый поверженный Вами юнит противника дает [ICON_FAITH] веру в количестве 50% от базовой [ICON_STRENGTH] боевой мощи поверженного юнита. Каждый ваш [ICON_ENVOY] посол в городе-государстве с вашей доминирующей религией считается за двух [ICON_ENVOY] послов. (Должна быть доминирующая религия).</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="ru_RU">
-			<Text>Каждый поверженный Вами юнит противника дает [ICON_CULTURE] культуру в количестве 25% от базовой [ICON_STRENGTH] боевой мощи поверженного юнита.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="ru_RU">
 			<Text>Дополнительная универсальная ячейка политического курса при любом правительстве.[NEWLINE][NEWLINE]При постройке амфитеатра получите 1 посла.</Text>

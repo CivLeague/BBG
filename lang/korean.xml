@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="ko_KR">
+			<Text>해당 영토에 퍼진 다른 종교를 50% 감소시킬 수 있으며 다른 종교의 유닛과 신학 전투를 시작할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>해당 영토에 퍼진 다른 종교를 50% 감소시킬 수 있으며 다른 종교의 유닛과 신학 전투를 시작할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ko_KR">
+            <Text>징병된 유닛이 능력을 획득하여 [ICON_Movement] 이동력 +1을 얻습니다. 징병된 유닛 업그레이드 시 [ICON_GOLD] 금 및 자원 소비량이 75% 감소합니다. 도시 국가의 군대를 징병하면 해당 도시 국가의 [ICON_ENVOY] 사절 1명을 얻습니다. 성 기술을 연구하면 특유 유닛인 검은 군대를 생산할 수 있습니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="ko_KR">
+            <Text>전투에서 승리를 거두면 패배한 유닛의 [ICON_Strength] 전투력 25%에 준하는 [ICON_Science] 과학이 제공됩니다. 도시가 전쟁 피로도를 입지 않습니다. 세계 불가사의가 있는 도시를 점령하면 모든 군사 유닛의 체력이 완전히 회복됩니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ko_KR">
+            <Text>기념비성 황금기:[NEWLINE]모든 건설자에 [ICON_Movement] 이동력 +2를 제공합니다.[ICON_Faith] 신앙으로 민간 유닛을 구입할 수 있습니다. [ICON_FAITH] 신앙 및 [ICON_GOLD] 금을 통한 건설자와 개척자 구입 비용이 20% 더 낮습니다.</Text>
+        </Replace>
+
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="ko_KR">
 			<Text>본 대륙에 있는 유닛은 공격시 [ICON_Strength] 전투력 +5를 획득합니다. 국립공원을 보유한 도시의 모든 타일에 매력도 +1을 제공합니다. 군사 과학 기술을 연구하면 특유 유닛인 의용 기병대를 얻습니다.</Text>
 		</Replace>
@@ -9,9 +25,6 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ko_KR">
 			<Text>기병대를 대체하는 헝가리 특유의 산업 시대 유닛입니다. 각 활성 동맹에서 [ICON_Strength] 전투력 +2를 획득합니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ko_KR">
-			<Text>징병된 유닛이 능력을 획득하여 [ICON_Strength] 전투력 +5와 [ICON_Movement] 이동력 +1을 얻습니다. 징병된 유닛 업그레이드 시 [ICON_GOLD] 금 및 자원 소비량이 75% 감소합니다. 도시 국가의 군대를 징병하면 해당 도시 국가를 통해 [ICON_ENVOY] 사절 2명을 얻습니다. 성 기술을 연구하면 특유 유닛인 검은 군대를 생산할 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ko_KR">
 			<Text>종교를 창시할 때 교리를 한 개 더 고를 수 있습니다. 개척자와 건설자의 [ICON_Movement] 이동력이 1 증가합니다. 종교를 창시했고 현재 전쟁에 참여하지 않는 각 문명(인도 포함)을 접할 때마다 [ICON_Faith] 신앙 +5를 제공합니다. 성지 특수지구 내 건물을 생산할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 상대 문명은 간디와 전투 시 전쟁 피로도가 2배 증가합니다.</Text>
@@ -398,9 +411,6 @@
 			<Text>모든 정부에 와일드카드 정책 슬롯이 1개 더 추가됩니다.[NEWLINE][NEWLINE]원형 극장 건물을 건설시 [ICON_Envoy] 사절 1명을 획득합니다.</Text>
 		</Replace>
 		<!-- Greece (Gorgo) -->
-        <Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="ko_KR">
-            <Text>전투에서 승리를 거두면 패배한 유닛의 [ICON_Strength] 전투력 25%에 준하는 [ICON_Culture] 문화가 제공됩니다.</Text>
-        </Replace>
 		<!-- India -->
 		<!-- India (Chandra) -->
 		<!-- India (Gandhi) -->

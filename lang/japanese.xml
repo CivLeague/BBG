@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="ja_JP">
+			<Text>領土内から他の宗教の勢力を50%減少させ、他の宗教のユニットと神学戦争を始めることができる。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>領土内から他の宗教の勢力を50%減少させ、他の宗教のユニットと神学戦争を始めることができる。</Text>
+		</Replace>
+
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="ja_JP">
 			<Text>自大陸で攻撃を行う際、ユニットの[ICON_Strength]戦闘力+5。国立公園のある都市はすべてのタイルにアピール+1。 軍事科学の研究を完了すると固有ユニットのラフライダーが解禁される。</Text>
 		</Replace>
@@ -9,9 +16,6 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ja_JP">
 			<Text>騎兵を代替するハンガリーに固有のユニット。有効な同盟1つごとに[ICON_Strength]戦闘力+2。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ja_JP">
-			<Text>徴用されたユニットの[ICON_Strength]戦闘力+5、[ICON_Movement]移動力+1。徴用されたユニットをアップグレードする際に必要な[ICON_GOLD]ゴールドと資源-75%。都市国家からユニットを徴用するたびに、その都市国家に対する[ICON_ENVOY]代表団2人を得る。城・軍事科学の研究を完了すると固有ユニットの黒軍・フッサーがそれぞれ解禁される。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ja_JP">
 			<Text>宗教を創始した際に追加の信仰を1つ得る。開拓者と労働者の[ICON_Movement]移動力+1。自文明を含む主要文明のうち、戦争状態でなくすでに宗教を創始している文明1つごとに[ICON_Faith]信仰力+5。聖地区域の建設に対する生産力+50%。自文明と戦争している文明はその戦争における疲労が2倍になる。</Text>
@@ -448,9 +452,6 @@
 		<!-- Newer -->
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="ja_JP">
 			<Text>戦闘に勝利すると、倒したしたユニットの基本[ICON_STRENGTH]戦闘力の50%に等しい[ICON_FAITH]信仰力が得られる。自国の主流宗教を信仰する都市国家に[ICON_ENVOY]代表団を派遣するごとに、2つ[ICON_ENVOY]代表団としてカウントされる(主流宗教がなければならない。)</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="ja_JP">
-			<Text>戦闘に勝利すると、倒したユニットの[ICON_STRENGTH]戦闘力の25%に等しい[ICON_CULTURE]文化力を得る。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="ja_JP">
 			<Text>政府のワイルドカード政策スロットが1つ増える。[NEWLINE][NEWLINE]円形劇場が完成するたびに代表団を1つ得られる。</Text>

@@ -188,6 +188,9 @@ UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_NATIONALISM_REQUIREMENT
 --==============================================================
 --******			  D E D I C A T I O N S				  ******
 --==============================================================
+-- Monumentality discount reduced from 30% to 20%
+UPDATE ModifierArguments SET Value='20' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_BUILDER_DISCOUNT_MODIFIER' AND Name='Amount';
+UPDATE ModifierArguments SET Value='20' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_SETTLER_DISCOUNT_MODIFIER' AND Name='Amount';
 -- Pen and Brush gives +2 Culture and +1 Gold per District
 INSERT INTO Modifiers (ModifierId , ModifierType , OwnerRequirementSetId)
     VALUES ('COMMEMORATION_CULTURAL_DISTRICTGOLD' , 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_DISTRICT' , 'PLAYER_HAS_GOLDEN_AGE');

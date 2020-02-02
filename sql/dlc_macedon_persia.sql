@@ -5,6 +5,15 @@
 --==========
 -- Macedon
 --==========
+-- 25% Science from kills
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+	VALUES ('TRAIT_LEADER_TO_WORLDS_END', 'SCIENCE_ON_KILLS_BBG');
+INSERT INTO Modifiers (ModifierId, ModifierType)
+	VALUES ('SCIENCE_ON_KILLS_BBG', 'MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD');
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+	VALUES
+		('SCIENCE_ON_KILLS_BBG', 'PercentDefeatedStrength', '25'),
+		('SCIENCE_ON_KILLS_BBG', 'YieldType', 'YIELD_SCIENCE');
 -- +20% Production for 10 turns after conquering a city
 INSERT INTO TraitModifiers (TraitType , ModifierId)
 	VALUES

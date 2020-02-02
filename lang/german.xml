@@ -166,9 +166,6 @@
 		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="de_DE">
 			<Text>Ungarische einzigartige Einheit des Mittelalters, die den Renner ersetzt. +2 [ICON_Strength] Kampfstärke für jede angrenzende ausgehobene Einheit.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="de_DE">
-			<Text>Ausgehobene Einheiten erlangen eine Fähigkeit, die ihnen +5 [ICON_Strength] Kampfstärke verleiht. Es kostet 75% weniger [ICON_GOLD] Gold und Ressourcen, ausgehobene Einheiten zu verbessern. Wenn Ihr Truppen in einem Stadtstaat aushebt, erhaltet Ihr 1 [ICON_ENVOY] Gesandten in diesem Stadtstaat. Erlangt die einzigartige Einheit Schwarze Armee, wenn die Schloss-Technologie erforscht wurde.</Text>
-		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="de_DE">
 			<Text>Nachbarschaftsbonus: +1 [ICON_SCIENCE] Wissenschaft durch jedes 2. Mine-Geländefeld. -1 [ICON_SCIENCE] Wissenschaft durch jedes angrenzende Bezirk-Geländefeld außer dem Theaterplatz. Gewährt +1 [ICON_CULTURE] Kultur für angrenzende Theaterplätze.</Text>
 		</Replace>
@@ -415,9 +412,6 @@
 		<!-- Newer -->
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="de_DE">
 			<Text>Kampfsiege bringen [ICON_FAITH] Glauben in Höhe von 50% der [ICON_STRENGTH] Kampfstärke der besiegten Einheit. Jeder [ICON_ENVOY] Gesandte, den ihr in einen Stadtstaat mit Eurer vorherrschenden Religion entsendet, zählt als zwei [ICON_ENVOY] Gesandte. (Muss eine Merheitsreligion haben.)</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="de_DE">
-			<Text>Kampfsiege bringen [ICON_CULTURE] Kultur in Höhe von 25% der [ICON_STRENGTH] Kampfstärke der besiegten Einheit.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Stufenbrunnen, die einzigartige Modernisierung Indiens, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_Food] Nahrung, +1 [ICON_FAITH] Glauben und +1 [ICON_Housing] Wohnraum. +1 [ICON_Faith] Glauben, wenn angrenzend an einen Heilige-Stätte-Bezirk. +1 [ICON_Food] Nahrung, wenn angrenzend an einen Bauernhof. Kann nicht auf Hügeln oder angrenzend an einen weiteren Stufenbrunnen gebaut werden.</Text>

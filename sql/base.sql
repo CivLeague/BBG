@@ -255,8 +255,7 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
 --==================
 -- Greece (Gorgo)
 --==================
--- 25% culture from kills instead of 50%
-UPDATE ModifierArguments SET Value='25' WHERE ModifierId='UNIQUE_LEADER_CULTURE_KILLS' AND Name='PercentDefeatedStrength';
+
 
 
 --==================
@@ -775,15 +774,13 @@ UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='FASCISM_ATTA
 UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='FASCISM_LEGACY_ATTACK_BUFF';
 
 
+
 --==============================================================
 --******			 G R E A T    P E O P L E  			  ******
 --==============================================================
-UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_GRANT_INFLUENCE_TOKEN', RunOnce=1 WHERE ModifierId='GREATPERSON_GEORGY_ZHUKOV_ACTIVE';
-UPDATE ModifierArguments SET Name='Amount', Value='3' WHERE ModifierId='GREATPERSON_GEORGY_ZHUKOV_ACTIVE';
-UPDATE ModifierStrings SET Text='LOC_GREATPERSON_ANA_NZINGA_ACTIVE' WHERE ModifierId='GREATPERSON_GEORGY_ZHUKOV_ACTIVE';
-UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_GRANT_INFLUENCE_TOKEN', RunOnce=1 WHERE ModifierId='HORATIO_NELSON_FLANKING_BONUS';
-UPDATE ModifierArguments SET Name='Amount', Value='2' WHERE ModifierId='HORATIO_NELSON_FLANKING_BONUS';
-UPDATE ModifierStrings SET Text='LOC_GREATPERSON_ANA_NZINGA_ACTIVE' WHERE ModifierId='GREATPERSON_HORATIO_NELSON_ACTIVE';
+DELETE FROM GreatPersonIndividualActionModifiers WHERE GreatPersonIndividualType='GREAT_PERSON_INDIVIDUAL_HORATIO_NELSON';
+DELETE FROM GreatPersonIndividualActionModifiers WHERE GreatPersonIndividualType='GREAT_PERSON_INDIVIDUAL_GEORGY_ZHUKOV';
+
 
 
 --==============================================================
@@ -1014,8 +1011,10 @@ INSERT INTO PolicyModifiers (PolicyType , ModifierId)
 --==============================================================
 --******				R E L I G I O N					  ******
 --==============================================================
+-- Nerf Inquisitors
+UPDATE Units SET ReligionEvictPercent=50 WHERE UnitType='UNIT_INQUISITOR';
 -- Religious spread from trade routes increased
-UPDATE GlobalParameters SET Value='3.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_PRESSURE_FOR_DESTINATION';
+UPDATE GlobalParameters SET Value='6.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_PRESSURE_FOR_DESTINATION';
 UPDATE GlobalParameters SET Value='3.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_PRESSURE_FOR_ORIGIN'     ;
 -- Divine Inspiration yield increased
 UPDATE ModifierArguments SET Value='6' WHERE ModifierId='DIVINE_INSPIRATION_WONDER_FAITH_MODIFIER' AND Name='Amount';
@@ -1102,11 +1101,16 @@ UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_DAR_E_MEHR'   ;
 --==============================================================
 --******				S  C  O  R  E				  	  ******
 --==============================================================
+-- more points for techs and civics
+UPDATE ScoringLineItems SET Multiplier=4 WHERE LineItemType='LINE_ITEM_CIVICS';
+UPDATE ScoringLineItems SET Multiplier=3 WHERE LineItemType='LINE_ITEM_TECHS';
 -- less points for wide, more for tall
 UPDATE ScoringLineItems SET Multiplier=2 WHERE LineItemType='LINE_ITEM_CITIES';
 UPDATE ScoringLineItems SET Multiplier=2 WHERE LineItemType='LINE_ITEM_POPULATION';
--- Wonders Provide +5 score instead of +15
-UPDATE ScoringLineItems SET Multiplier=5 WHERE LineItemType='LINE_ITEM_WONDERS';
+-- Wonders Provide +4 score instead of +15
+UPDATE ScoringLineItems SET Multiplier=4 WHERE LineItemType='LINE_ITEM_WONDERS';
+-- Great People worth only 3 instead of 5
+UPDATE ScoringLineItems SET Multiplier=3 WHERE LineItemType='LINE_ITEM_GREAT_PEOPLE';
 -- converting foreign populations reduced from 2 to 1
 UPDATE ScoringLineItems SET Multiplier=1 WHERE LineItemType='LINE_ITEM_ERA_CONVERTED';
 

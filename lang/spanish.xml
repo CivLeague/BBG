@@ -169,9 +169,6 @@
 		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="es_ES">
 			<Text>Unidad de la era medieval única húngara que sustituye al Corcel. +2 [ICON_Strength] Fuerza de combate por cada unidad comprada de una ciudad des estado que este a su alrededor.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="es_ES">
-			<Text>Unidades compradas reciben una abilidad que les da +5 [ICON_Strength] Fuerza de combate. Cuesta 75% menos [ICON_GOLD] Oro y recursos para mejorar unidades compradas.Si compras las unidades de una ciudad de estado, recibirás 1 [ICON_ENVOY] Enviado con esa ciudad de estado. Gana la unidad única del Ejército Negro cuando se investiga la tecnología de los Castillos.</Text>
-		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="es_ES">
 			<Text>Adjacency: +1 [ICON_SCIENCE] Ciencia por cada 2 minas alrededor. -1 [ICON_SCIENCE]Ciencia para cada distrito alrededor, excepto al distrito de teatro. También provee +1 [ICON_CULTURE] Cultura por cada distrito de teatro a su alrededor.</Text>
 		</Replace>
@@ -419,9 +416,6 @@
 		<!-- Newer -->
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="es_ES">
 			<Text>Las victorias en combate proporcionan Fe [ICON_FAITH] equivalente al 50% de la Fuerza de combate [ICON_STRENGTH] de la unidad derrotada. Cada Enviado [ICON_ENVOY] que envíes a una ciudad-estado de tu religión mayoritaria cuenta como dos Enviados [ICON_ENVOY] (debes tener una religión mayoritaria.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="es_ES">
-			<Text>Las victorias en combate proporcionan Cultura [ICON_CULTURE] equivalente al 25% de la Fuerza de combate [ICON_STRENGTH] de la unidad derrotada.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="es_ES">
 			<Text>Desbloquea la habilidad de Constructor para crear un Pozo escalonado, exclusivo de la India. [NEWLINE][NEWLINE]+1 a Alimentos [ICON_Food], +1 a Fe [ICON_FAITH] y +1 a Alojamiento [ICON_Housing]. +1 a Fe [ICON_FAITH] si está adyacente a un distrito de Lugar sagrado. +1 a Alimentos [ICON_Food] si está adyacente a una Granja. No puede construirse sobre Colinas ni adyacente a otro Pozo escalonado.</Text>
