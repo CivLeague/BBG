@@ -118,6 +118,7 @@ UPDATE Units SET StrategicResource='RESOURCE_NITER' WHERE UnitType='UNIT_DE_ZEVE
 --=========
 --Mongolia
 --=========
+INSERT INTO TypeTags VALUES ('ABILITY_GENGHIS_KHAN_CAVALRY_BONUS', 'CLASS_MONGOLIAN_KESHIG');
 -- No longer receives +1 diplo visibility for trading post
 DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_TRADING_POST_DIPLO_VISIBILITY';
 DELETE FROM DiplomaticVisibilitySources WHERE VisibilitySourceType='SOURCE_TRADING_POST_TRAIT';
@@ -201,6 +202,9 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 INSERT INTO CommemorationModifiers (CommemorationType, ModifierId)
 	VALUES ('COMMEMORATION_CULTURAL', 'COMMEMORATION_CULTURAL_DISTRICTGOLD');
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='COMMEMORATION_CULTURAL_DISTRICTCULTURE' and Name='Amount';
+
+
+
 
 
 
