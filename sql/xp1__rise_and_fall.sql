@@ -9,6 +9,13 @@ UPDATE UnitAbilityModifiers SET ModifierId='RANGER_IGNORE_FOREST_MOVEMENT_PENALT
 
 
 --==================
+-- Egypt
+--==================
+-- alpine training from matterhorn bugfix
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_ALPINE_TRAINING', 'CLASS_LIGHT_CHARIOT');
+
+
+--==================
 -- Georgia
 --==================
 -- Georgian Khevsur unit becomes sword replacement
@@ -189,9 +196,9 @@ UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_NATIONALISM_REQUIREMENT
 --==============================================================
 --******			  D E D I C A T I O N S				  ******
 --==============================================================
--- Monumentality discount reduced from 30% to 20%
-UPDATE ModifierArguments SET Value='20' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_BUILDER_DISCOUNT_MODIFIER' AND Name='Amount';
-UPDATE ModifierArguments SET Value='20' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_SETTLER_DISCOUNT_MODIFIER' AND Name='Amount';
+-- Monumentality discount reduced from 30% to 0%
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_BUILDER_DISCOUNT_MODIFIER' AND Name='Amount';
+UPDATE ModifierArguments SET Value='0' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_SETTLER_DISCOUNT_MODIFIER' AND Name='Amount';
 -- Pen and Brush gives +2 Culture and +1 Gold per District
 INSERT INTO Modifiers (ModifierId , ModifierType , OwnerRequirementSetId)
     VALUES ('COMMEMORATION_CULTURAL_DISTRICTGOLD' , 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_DISTRICT' , 'PLAYER_HAS_GOLDEN_AGE');
@@ -305,7 +312,7 @@ INSERT INTO RequirementArguments
 	--==============================================================
 --******				S  C  O  R  E				  	  ******
 --==============================================================
--- Wonders Provide +5 score instead of +15
+-- no double counting for era points
 UPDATE ScoringLineItems SET Multiplier=0 WHERE LineItemType='LINE_ITEM_ERA_SCORE';
 
 

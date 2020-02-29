@@ -80,8 +80,6 @@ INSERT INTO ModifierStrings (ModifierId , Context , Text)
 --==================
 -- Egypt
 --==================
--- alpine training from matterhorn bugfix
-INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_ALPINE_TRAINING', 'CLASS_LIGHT_CHARIOT');
 -- wonder and district on rivers bonus increased to 25%
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RIVER_FASTER_BUILDTIME_WONDER';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RIVER_FASTER_BUILDTIME_DISTRICT';
@@ -786,6 +784,8 @@ DELETE FROM GreatPersonIndividualActionModifiers WHERE GreatPersonIndividualType
 --==============================================================
 --******				P A N T H E O N S				  ******
 --==============================================================
+-- city patron buff
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='CITY_PATRON_GODDESS_DISTRICT_PRODUCTION_MODIFIER' AND Name='Amount';
 -- Dance of Aurora yields reduced... only work for flat tundra
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='DANCE_OF_THE_AURORA_FAITHTUNDRAHILLSADJACENCY' AND Name='Amount';
 -- stone circles +1 faith
