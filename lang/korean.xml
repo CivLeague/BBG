@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ko_KR">
+			<Text>도시가 생성하는 [ICON_Culture] 문화가 15% 증가하고 인근 도시에 미치는 종교 영향력이 100% 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN_DESCRIPTION" Language="ko_KR">
+			<Text>도시가 생성하는 [ICON_Science] 과학이 15% 증가합니다.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME' Language="ko_KR">
+			<Text>지식 공유</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION' Language="ko_KR">
+			<Text>이 도시에 연결된 국제 [ICON_TradeRoute] 교역로에서 양 문명 모두 [ICON_Science] 과학 +2를 획득합니다.</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME' Language="ko_KR">
+			<Text>유레카</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="ko_KR">
+			<Text>도시의 캠퍼스에서 얻는 인접 보너스가 두 배가 됩니다.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE_DESCRIPTION" Language="ko_KR">
+			<Text>발견된 모든 전략자원을 턴당 +1씩 추가로 제공합니다.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="ko_KR">
+			<Text>협상가</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="ko_KR">
+			<Text>도시를 포위할 수 없습니다. 도시 주둔군의 [ICON_Strength] 전투력이 +5 증가합니다.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_EMISSARY_DESCRIPTION" Language="ko_KR">
+			<Text>9타일 이내의 플레이어 타 도시는 턴당 플레이어 문명을 향한 충성심 +4를 획득합니다.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="ko_KR">
+			<Text>딜메이커</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="ko_KR">
+			<Text>이 도시에서 [ICON_GOLD] 금으로 건물을 구매하는 비용이 50% 저렴합니다.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="ko_KR">
+			<Text>도시에서 전략 자원이 없어도 전략 자원을 요구하는 유닛을 생산할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST_DESCRIPTION" Language="ko_KR">
+			<Text>석탄 발전소, 석유 발전소, 원자력 발전소에서 얻는 각 자원 당 [ICON_POWER] 전력이 +4 증가하며, [ICON_Production] 생산력이 +4 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="ko_KR">
+			<Text>도시의 특수지구 건설에 대한 [ICON_Production] 생산력 +50%를 제공합니다.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="ko_KR">
+			<Text>농업</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION' Language="ko_KR">
+			<Text>도시 내 자원에 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_NAME" Language="ko_KR">
+			<Text>건축 붐</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시의 특수지구마다 [ICON_HOUSING] 주거 +1과 [ICON_AMENITIES] 쾌적도 +1을 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="ko_KR">
+			<Text>도시 공원을 도시에 건설할 수 있습니다. 도시당 하나만 건설 가능합니다. [ICON_SCIENCE] 과학 +4, [ICON_Culture] 문화 +4, [ICON_GOLD] 금 +4, [ICON_HOUSING] 주거 +1, [ICON_Amenities] 쾌적도 +1과 매력도 +2를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_FISHERY_DESCRIPTION" Language="ko_KR">
+			<Text>양식장을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Food] 식량 +1을 제공하며, 해양 자원에 인접해 있으면 추가 [ICON_Food] 식량 +1을 제공합니다. 해안 지역에 건설해야 합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_CITY_PATRON_GODDESS_DESCRIPTION" Language="ko_KR">
+			<Text>전문 특수지구가 없는 도시의 특수지구 건설에 대한 [ICON_Production] 생산력 +50%를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ko_KR">
+			<Text>기념비성 황금기:[NEWLINE]모든 건설자에 [ICON_Movement] 이동력 +2를 제공합니다.[ICON_Faith] 신앙으로 민간 유닛을 구입할 수 있습니다.</Text>
+		</Replace>	
+
 		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="ko_KR">
 			<Text>해당 영토에 퍼진 다른 종교를 50% 감소시킬 수 있으며 다른 종교의 유닛과 신학 전투를 시작할 수 있습니다.</Text>
 		</Replace>
@@ -12,9 +82,6 @@
         </Replace>
         <Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="ko_KR">
             <Text>전투에서 승리를 거두면 패배한 유닛의 [ICON_Strength] 전투력 25%에 준하는 [ICON_Science] 과학이 제공됩니다. 도시가 전쟁 피로도를 입지 않습니다. 세계 불가사의가 있는 도시를 점령하면 모든 군사 유닛의 체력이 완전히 회복됩니다.</Text>
-        </Replace>
-        <Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ko_KR">
-            <Text>기념비성 황금기:[NEWLINE]모든 건설자에 [ICON_Movement] 이동력 +2를 제공합니다.[ICON_Faith] 신앙으로 민간 유닛을 구입할 수 있습니다. [ICON_FAITH] 신앙 및 [ICON_GOLD] 금을 통한 건설자와 개척자 구입 비용이 20% 더 낮습니다.</Text>
         </Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="ko_KR">

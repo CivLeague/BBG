@@ -209,7 +209,7 @@
 			<Text>Exclusive aux Khmers, cette unité de siège de l'ère classique remplace la catapulte et peut se déplacer et tirer dans le même tour, en plus d'exercer une zone de contrôle.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_FAITH] Foi +2 pour chaque route commerciale internationale envoyée ou reçue. La civilisation émetrice reçoit également 2 [ICON_FAITH] foi. [ICON_FAITH] Foi +3 et [ICON_AMENITIES] activités de loisirs +1 pour chaque ville dotée d'un aqueduc. [ICON_FOOD] Nourriture +2 pour les fermes adjacentes à un aqueduc.</Text>
+			<Text>[ICON_FAITH] Foi +2 pour chaque route commerciale internationale envoyée ou reçue. La civilisation émettrice reçoit également 2 [ICON_FAITH] foi. [ICON_FAITH] Foi +3 et [ICON_AMENITIES] activités de loisirs +1 pour chaque ville dotée d'un aqueduc. [ICON_FOOD] Nourriture +2 pour les fermes adjacentes à un aqueduc.</Text>
 		</Replace>
 		<!-- --------------- MACÉDOINE --------------- -->
 		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="fr_FR">
@@ -365,6 +365,9 @@
 		<Replace Tag="LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_FAITH] Foi +4 pour les fissures géothermiques et les sols volcaniques.</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_CITY_PATRON_GODDESS_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Production] Production +50 % pour la construction de quartiers dans les villes ne possédant pas de quartier spécialisé.</Text>
+		</Replace>
 		
 		<!-- =============== C R O Y A N C E S === DE === R E L I G I O N =============== -->
 		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="fr_FR">
@@ -476,7 +479,7 @@
 			<Text>"Le stylo, le pinceau et la voix" : score d'ère +1 chaque fois que vous déclenchez une [ICON_CivicBoosted] inspiration, et +1 pour chaque bâtiment construit possédant un emplacement de chef-d'œuvre. Choisi au début d'un âge d'or, les [ICON_CivicBoosted] inspirations fournissent 10% en plus vers l'obtention des dogmes. [ICON_Culture] Culture +2 et [ICON_Gold] or +1 pour chaque quartier spécialisé dans toutes les villes.</Text>
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="fr_FR">
-			<Text>Âge d'or "Monumentalité" :[NEWLINE][ICON_Movement] PM +2 pour tous les bâtisseurs. Permet d'acheter des unités civiles avec de la [ICON_Faith] foi. Le coût en [ICON_FAITH] foi et en [ICON_GOLD] or des bâtisseurs et des colons est réduit de 20 %.</Text>
+			<Text>Âge d'or "Monumentalité" :[NEWLINE][ICON_Movement] PM +2 pour tous les bâtisseurs. Permet d'acheter des unités civiles avec de la [ICON_Faith] foi.</Text>
 		</Replace>
 		
 		<!-- =============== G O U V E R N E M E N T S =============== -->
@@ -496,12 +499,82 @@
 		
 		<!-- =============== G O U V E R N E U R S =============== -->
 		
+		<!-- Victor -->
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_GARRISON_COMMANDER_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +3 pour les unités qui combattent dans le territoire de la ville. Loyauté +4 par tour dans vos autres villes se trouvant dans un rayon de 9 cases.</Text>
 		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="fr_FR">
+			<Text>Logistiques défensives</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="fr_FR">
+			<Text>La ville ne peut pas être assiégée et gagne +5 Puissance Défensive.</Text>
+		</Row>
+		<!-- Magnus -->	
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Food] Croissance de la ville +20 %. Vos [ICON_TradeRoute] routes commerciales s'y terminant octroient +2 [ICON_Food] nourriture et +2 [ICON_PRODUCTION] Production à la ville d'origine.</Text>
 		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="fr_FR">
+			<Text>La formation des unités militaires dans la ville ne demande aucune Ressource Stratégique.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_POWER] Électricité +4 et [ICON_Production] production +4 pour la centrale nucléaire, à charbon ou à pétrole de la ville.</Text>
+		</Replace>
+		<!-- Pingala -->
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Science] Science générée par la ville +15 %.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME' Language="fr_FR">
+			<Text>Savoir partagé.</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION' Language="fr_FR">
+			<Text>[ICON_SCIENCE] Science +2 de la part des routes commerciales étrangères vers cette ville. La civilisation émettrice reçoit le même montant pour chaque route commerciale vers cette ville.</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME' Language="fr_FR">
+			<Text>Eurêka !</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="fr_FR">
+			<Text>Double le bonus de proximité du Campus de la ville.</Text>
+		</Row>
+		<!-- Moksha -->
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Culture] Culture générée par la ville +15 %. La pression religieuse de cette ville envers les autres villes est 100 % plus forte.</Text>
+		</Replace>
+		<!-- Amani -->
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE_DESCRIPTION" Language="fr_FR">
+			<Text>Vous générez une Ressource Stratégique supplémentaire par tour pour tout type de Ressource Stratégique révélée.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_EMISSARY_DESCRIPTION" Language="fr_FR">
+			<Text>Loyauté +4 par tour dans toutes vos villes dans un rayon de 9 cases.</Text>
+		</Replace>
+		<!-- Reyna -->
+		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="fr_FR">
+			<Text>Négociatrice</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="fr_FR">
+			<Text>50% de réduction pour l'achat en [ICON_GOLD] Or des bâtiments de la ville.</Text>
+		</Row>
+		<!-- Liang -->
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Production] Production +50 % pour la construction de quartiers dans cette ville.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="fr_FR">
+			<Text>Agriculture</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION' Language="fr_FR">
+			<Text>[ICON_FOOD] Nourriture +1 sur toutes les ressources révélées dans la ville.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_NAME" Language="fr_FR">
+			<Text>Boom démographique</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_HOUSING] Habitations +1 et [ICON_AMENITIES] Activités +1 pour tous les quartiers de la ville.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="fr_FR">
+			<Text>Peut construire un parc urbain sur un terrain plat de cette ville. [ICON_Culture] Culture +4, [ICON_SCIENCE] Science +4 et [ICON_GOLD] Or +4. [ICON_HOUSING] Habitations +1, [ICON_Amenities] Activités +1 et Attrait +2.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_FISHERY_DESCRIPTION" Language="fr_FR">
+			<Text>Débloque la compétence de bâtisseur d'Aquaculture dans la ville où Liang est établie. [ICON_Food] Nourriture +1 et [ICON_Food] Nourriture bonus +1 si adjacente à une ressource maritime. Doit être construite sur la côte.</Text>
+		</Replace>		
 	
 		<!-- =============== U N I T É S (non-uniques) =============== -->
 		
