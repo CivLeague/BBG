@@ -290,6 +290,7 @@ UPDATE Feature_AdjacentYields SET YieldChange='2' WHERE FeatureType='FEATURE_DEV
 --==============================================================
 -- fascism attack bonus working for GDR
 INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_FASCISM_ATTACK_BUFF', 'CLASS_GIANT_DEATH_ROBOT');
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_FASCISM_LEGACY_ATTACK_BUFF', 'CLASS_GIANT_DEATH_ROBOT');
 -- statue of liberty text fix
 UPDATE Buildings SET Description='LOC_BUILDING_STATUE_LIBERTY_EXPANSION2_DESCRIPTION' WHERE BuildingType='BUILDING_STATUE_LIBERTY';
 -- oil available on all floodplains
@@ -616,11 +617,11 @@ INSERT INTO GovernorPromotionPrereqs (GovernorPromotionType, PrereqGovernorPromo
 UPDATE GovernorPromotions SET Level=2, Column=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_WATER_WORKS';
 
 -- better parks
-UPDATE Improvement_YieldChanges SET YieldChange=4 WHERE ImprovementType='IMPROVEMENT_CITY_PARK' AND YieldType='YIELD_CULTURE';
+UPDATE Improvement_YieldChanges SET YieldChange=3 WHERE ImprovementType='IMPROVEMENT_CITY_PARK' AND YieldType='YIELD_CULTURE';
 INSERT INTO Improvement_YieldChanges (ImprovementType, YieldType, YieldChange) VALUES
-	('IMPROVEMENT_CITY_PARK', 'YIELD_SCIENCE', 4);
+	('IMPROVEMENT_CITY_PARK', 'YIELD_SCIENCE', 3);
 INSERT INTO Improvement_YieldChanges (ImprovementType, YieldType, YieldChange) VALUES
-	('IMPROVEMENT_CITY_PARK', 'YIELD_GOLD', 4);
+	('IMPROVEMENT_CITY_PARK', 'YIELD_GOLD', 3);
 UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='CITY_PARK_WATER_AMENITY';
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
 	('CITY_PARK_HOUSING_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_HOUSING');

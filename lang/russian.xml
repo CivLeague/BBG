@@ -401,7 +401,7 @@
 			<Text>Религия распространяется на 40% дальше от городов.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION" Language="ru_RU">
-			<Text>+1 [ICON_Science] науки за каждые 3 последователя этой религии в других державах.</Text>
+			<Text>+1 [ICON_Science] науки за каждые 2 последователя этой религии в других державах.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_Amenities] довольства в городах с хотя бы одним специализированным районом.</Text>
@@ -410,10 +410,10 @@
 			<Text>Священные места, а также святилища и храмы в них дают по +1 [ICON_Housing] жилья каждый.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_DESCRIPTION" Language="ru_RU">
-			<Text>+1 [ICON_Gold] золота за каждые 3 последователя этой религии.</Text>
+			<Text>+1 [ICON_Gold] золота за каждые 2 последователя этой религии.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_WORLD_CHURCH_DESCRIPTION" Language="ru_RU">
-			<Text>+1 [ICON_Culture] культуры за каждые 3 последователя этой религии в других державах.</Text>
+			<Text>+1 [ICON_Culture] культуры за каждые 2 последователя этой религии в других державах.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="ru_RU">
 			<Text>+15% [ICON_Production] производства при создании чудес.</Text>

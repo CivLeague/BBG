@@ -416,7 +416,7 @@
 			<Text>この宗教の伝播距離が40%増加する。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION" Language="ja_JP">
-			<Text>他の文明にいるこの宗教の信者3人ごとに科学力 [ICON_Science]+1。</Text>
+			<Text>他の文明にいるこの宗教の信者2人ごとに科学力 [ICON_Science]+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="ja_JP">
 			<Text>専門区域を持つ都市の快適性[ICON_Amenities]+1。</Text>
@@ -425,10 +425,10 @@
 			<Text>聖地区域及び社と神殿1つごとに住宅[ICON_Housing]+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_DESCRIPTION" Language="ja_JP">
-			<Text>この宗教の信者3人につきゴールド[ICON_Gold]+1。</Text>
+			<Text>この宗教の信者2人につきゴールド[ICON_Gold]+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_WORLD_CHURCH_DESCRIPTION" Language="ja_JP">
-			<Text>他の文明にいるこの宗教の信者3人ごとに文化力+1。</Text>
+			<Text>他の文明にいるこの宗教の信者2人ごとに文化力+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="ja_JP">
 			<Text>遺産に対する生産力+15%。</Text>

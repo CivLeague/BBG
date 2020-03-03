@@ -389,10 +389,10 @@
 			<Text>[ICON_Housing] Habitations +1 pour les lieux saint, les autels et les temples.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Gold] Or +1 par groupe de 3 fidèles de cette religion.</Text>
+			<Text>[ICON_Gold] Or +1 par groupe de 2 fidèles de cette religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_WORLD_CHURCH_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Culture] Culture +1 par groupe de 3 fidèles de cette religion dans d'autres civilisations.</Text>
+			<Text>[ICON_Culture] Culture +1 par groupe de 2 fidèles de cette religion dans d'autres civilisations.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_PILGRIMAGE_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Faith] Foi +3 pour chaque ville convertie à cette religion dans d'autres civilisations et cités-états.</Text>
@@ -413,7 +413,7 @@
 			<Text>La religion se propage aux villes 40 % plus éloignées.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Science] Science +1 par groupe de 3 fidèles de cette religion dans d'autres civilisations.</Text>
+			<Text>[ICON_Science] Science +1 par groupe de 2 fidèles de cette religion dans d'autres civilisations.</Text>
 		</Replace>
 		
 		<!-- =============== M E R V E I L L E S === N A T U R E L L E S =============== -->
@@ -503,12 +503,6 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_GARRISON_COMMANDER_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +3 pour les unités qui combattent dans le territoire de la ville. Loyauté +4 par tour dans vos autres villes se trouvant dans un rayon de 9 cases.</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="fr_FR">
-			<Text>Logistiques défensives</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="fr_FR">
-			<Text>La ville ne peut pas être assiégée et gagne +5 Puissance Défensive.</Text>
-		</Row>
 		<!-- Magnus -->	
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Food] Croissance de la ville +20 %. Vos [ICON_TradeRoute] routes commerciales s'y terminant octroient +2 [ICON_Food] nourriture et +2 [ICON_PRODUCTION] Production à la ville d'origine.</Text>
@@ -546,6 +540,12 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_EMISSARY_DESCRIPTION" Language="fr_FR">
 			<Text>Loyauté +4 par tour dans toutes vos villes dans un rayon de 9 cases.</Text>
 		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="fr_FR">
+			<Text>Condottiere</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="fr_FR">
+			<Text>La ville ne peut pas être assiégée et gagne +5 Puissance Défensive.</Text>
+		</Row>
 		<!-- Reyna -->
 		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="fr_FR">
 			<Text>Négociatrice</Text>
@@ -570,11 +570,8 @@
 			<Text>[ICON_HOUSING] Habitations +1 et [ICON_AMENITIES] Activités +1 pour tous les quartiers de la ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="fr_FR">
-			<Text>Peut construire un parc urbain sur un terrain plat de cette ville. [ICON_Culture] Culture +4, [ICON_SCIENCE] Science +4 et [ICON_GOLD] Or +4. [ICON_HOUSING] Habitations +1, [ICON_Amenities] Activités +1 et Attrait +2.</Text>
+			<Text>Peut construire un parc urbain sur un terrain plat de cette ville. [ICON_Culture] Culture +3, [ICON_SCIENCE] Science +3 et [ICON_GOLD] Or +3. [ICON_HOUSING] Habitations +1, [ICON_Amenities] Activités +1 et Attrait +2.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_FISHERY_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur d'Aquaculture dans la ville où Liang est établie. [ICON_Food] Nourriture +1 et [ICON_Food] Nourriture bonus +1 si adjacente à une ressource maritime. Doit être construite sur la côte.</Text>
-		</Replace>		
 	
 		<!-- =============== U N I T É S (non-uniques) =============== -->
 		
@@ -624,6 +621,9 @@
 		
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire des bateaux de pêche. [NEWLINE][NEWLINE][ICON_Food] Nourriture +1 et +1 [ICON_PRODUCTION] production. Ne peut être construit que sur une ressource valide. [NEWLINE][NEWLINE]Construit sur une ressource de luxe, permet à la ville d'exploiter cette ressource.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_FISHERY_DESCRIPTION" Language="fr_FR">
+			<Text>Débloque la compétence de bâtisseur permettant de construire des Aquacultures. [ICON_Food] Nourriture +1 et [ICON_Food] Nourriture bonus +1 si adjacente à une ressource maritime. Doit être construite sur la côte.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_FASCISM_ATTACK_BUFF_MODIFIER_DESCRIPTION" Language="fr_FR">
 			<Text>+5 Puissance de Combat dû au Fascisme.</Text>
