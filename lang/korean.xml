@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION' Language="ko_KR">
+            <Text>이 도시가 목적지인 국내 [ICON_TradeRoute] 교역로에서 출발 도시에 [ICON_Science] 과학 +2를 제공합니다.</Text>
+        </Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ko_KR">
 			<Text>도시가 생성하는 [ICON_Culture] 문화가 15% 증가하고 인근 도시에 미치는 종교 영향력이 100% 증가합니다.</Text>
 		</Replace>
@@ -170,7 +173,7 @@
 			<Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +1을 제공합니다. 불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다. 범람원이 아닌 사막에 지으면 [ICON_Food] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다. 범람원에 지으면 [ICON_CULTURE] 문화 +1을 제공합니다.[NEWLINE][NEWLINE]외교부 사회 제도를 발견하면 [ICON_CULTURE] 문화를 추가로 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 다른 스핑크스 옆에 지을 수 없습니다. 설원 또는 설원 언덕에 지을 수 없습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS_DESCRIPTION" Language="ko_KR">
-			<Text>도시에 [ICON_Food] 성장 +20%를 제공합니다. 이 도시가 목적지인 [ICON_TradeRoute] 교역로에서 출발 도시에 [ICON_Food] 식량 +2 및 [ICON_PRODUCTION] 생산력 +2를 제공합니다.</Text>
+			<Text>도시에 [ICON_Food] 성장 +20%를 제공합니다. 이 도시가 목적지인 국내 [ICON_TradeRoute] 교역로에서 출발 도시에 [ICON_Food] 식량 +2 및 [ICON_PRODUCTION] 생산력 +2를 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_COLLECTIVIZATION_DESCRIPTION_XP2" Language="ko_KR">
 			<Text>국내 [ICON_TradeRoute] 교역로에서 [ICON_Food] 식량 +4 및 [ICON_Production] 생산력 +4.</Text>
