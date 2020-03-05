@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<Replace Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION' Language="ko_KR">
-            <Text>이 도시가 목적지인 국내 [ICON_TradeRoute] 교역로에서 출발 도시에 [ICON_Science] 과학 +2를 제공합니다.</Text>
-        </Replace>
+    	<Replace Tag="LOC_GOVERNOR_THE_CARDINAL_DESCRIPTION" Language="ko_KR">
+      		<Text>도시의 [ICON_Religion] 신앙심과 문화력을 강화하고 종교 유닛을 수용할 수 있는 종교 및 영적 지도자인 {LOC_GOVERNOR_THE_CARDINAL_NAME} 총독은 제국 [ICON_FAITH] 신앙과 [ICON_CULTURE] 문화의 등불입니다.</Text>
+    	</Replace>
+    	<Replace Tag="LOC_GOVERNOR_THE_EDUCATOR_DESCRIPTION" Language="ko_KR">
+      		<Text>{LOC_GOVERNOR_THE_EDUCATOR_NAME} 총독은 도시의 [ICON_SCIENCE] 과학 육성에 중점을 둡니다. 또한, 자신의 배정된 도시로 [ICON_GreatPerson] 위인을 영입하는 데 능숙합니다.</Text>
+    	</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ko_KR">
 			<Text>도시가 생성하는 [ICON_Culture] 문화가 15% 증가하고 인근 도시에 미치는 종교 영향력이 100% 증가합니다.</Text>
 		</Replace>
@@ -13,15 +16,15 @@
 		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME' Language="ko_KR">
 			<Text>지식 공유</Text>
 		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION' Language="ko_KR">
-			<Text>이 도시에 연결된 국제 [ICON_TradeRoute] 교역로에서 양 문명 모두 [ICON_Science] 과학 +2를 획득합니다.</Text>
-		</Row>
 		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME' Language="ko_KR">
 			<Text>유레카</Text>
 		</Row>
 		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="ko_KR">
 			<Text>도시의 캠퍼스에서 얻는 인접 보너스가 두 배가 됩니다.</Text>
 		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION' Language="ko_KR">
+            <Text>이 도시가 목적지인 국내 [ICON_TradeRoute] 교역로에서 출발 도시에 [ICON_Science] 과학 +2를 제공합니다.</Text>
+        </Row>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE_DESCRIPTION" Language="ko_KR">
 			<Text>발견된 모든 전략자원을 턴당 +1씩 추가로 제공합니다.</Text>
 		</Replace>
