@@ -1,6 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_GOVERNOR_THE_CARDINAL_DESCRIPTION" Language="ru_RU">
+			<Text>{LOC_GOVERNOR_THE_CARDINAL_NAME} Духовный и религиозный губернатор, увеличивающий [ICON_CULTURE] Культурные показатели и [ICON_Religion] Религиозное влияние города.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_THE_EDUCATOR_DESCRIPTION" Language="ru_RU">
+			<Text>{LOC_GOVERNOR_THE_EDUCATOR_NAME} Сфокусирован на увеличении показателей [ICON_SCIENCE] Науки в этом городе. Также может увеличивать число [ICON_GreatPerson] Великих людей в своем городе.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ru_RU">
+			<Text>15% увеличение [ICON_Culture] Культуры, вырабатываемой этим городом. Религиозное влияние к соседним городам увеличено на 100%.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN_DESCRIPTION" Language="ru_RU">
+			<Text>15% увеличение [ICON_Science] Науки, вырабатываемой этим городом.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME' Language="ru_RU">
+			<Text>Общие Знания</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION' Language="ru_RU">
+			<Text>Внутренние [ICON_TradeRoute] Торговые пути к городу с Пингалой дают +2 [ICON_SCIENCE] Науки.</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME' Language="ru_RU">
+			<Text>Эврика</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="ru_RU">
+			<Text>Удваивает бонус соседства с кампусом в этом городе.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE_DESCRIPTION" Language="ru_RU">
+			<Text>Дает дополнительную единицу, ранее изученного, Стратегического Ресурса за ход.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="ru_RU">
+			<Text>Посредник</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="ru_RU">
+			<Text>Город не может быть взят в Осаду. Увеличивает защиту городского горнизона на 5.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_EMISSARY_DESCRIPTION" Language="ru_RU">
+			<Text>Все города, в радиусе 9 клеток, получают 4 лояльности в ход в пользу вашей цивилизации.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="ru_RU">
+			<Text>Дилер</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="ru_RU">	
+			<Text>50% [ICON_GOLD] Скидка на все здания, купленные в этом городе.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="ru_RU">
+			<Text>Стратегические ресурсы в этом городе не требуются для создания ресурсозависимых юнитов.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST_DESCRIPTION" Language="ru_RU">
+			<Text>+4 [ICON_Production] Производства и +4 [ICON_POWER] Энергии, вырабатываемой в этом городе угольными, нефтяными или атомными электростанциями.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="ru_RU">
+			<Text>+50% [ICON_Production] Производства при строительстве районов в этом городе.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="ru_RU">
+			<Text>Сельское Хозяйство</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION' Language="ru_RU">
+			<Text>+1 [ICON_FOOD] Пищи на каждом известном ресурсе в этом городе.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_NAME" Language="ru_RU">
+			<Text>Первоклассное жилье</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_DESCRIPTION" Language="ru_RU">
+			<Text>+1 [ICON_HOUSING] К Жилью и +1 [ICON_AMENITIES] К Довольству за каждый район в этом городе.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строить Городской парк. Одна постройка на город. +3 [ICON_SCIENCE] Науки, +3 [ICON_Culture] Культуры, +3 [ICON_GOLD] Золота, +1 [ICON_HOUSING] Жилья, +1 [ICON_Amenities] Довольства, и +2 Престижа.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_FISHERY_DESCRIPTION" Language="ru_RU">
+			<Text>Позволяет строителям создавать рыбный промысел.[NEWLINE][NEWLINE]+1 [ICON_Food] Еды, +1 дополнительной [ICON_Food] Еды, при соседстве с водным ресурсом. Может быть построен только на побережье.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_CITY_PATRON_GODDESS_DESCRIPTION" Language="ru_RU">
+			<Text>+50% [ICON_Production] К производству районов в городах без специализированного района.</Text>
+		</Replace>
+		<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ru_RU">
+			<Text>Монументальность Золотой Век:[NEWLINE]+2 [ICON_Movement] К передвижению для всех строителей. Открывает возможность покупать гражданские юниты за [ICON_Faith] Веру.</Text>
+		</Replace>
+
+		
 		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="ru_RU">
 			<Text>Может сократить на 50% присутствие чужих религий на своей территории. Вступает в теологические баталии с юнитами других религий.</Text>
 		</Replace>
