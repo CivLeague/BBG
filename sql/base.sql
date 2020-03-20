@@ -1181,18 +1181,6 @@ UPDATE ModifierArguments SET Value='300' WHERE ModifierId='STEEL_UNLOCK_URBAN_DE
 --==============================================================
 --******			W O N D E R S  (MAN-MADE)			  ******
 --==============================================================
--- Huey gives +2 culture to lake tiles
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
-	VALUES ('BUILDING_HUEY_TEOCALLI', 'HUEY_LAKE_CULTURE');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
-	VALUES
-	('HUEY_LAKE_CULTURE', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'FOODHUEY_PLAYER_REQUIREMENTS'),
-	('HUEY_LAKE_CULTURE_MODIFIER', 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD', 'FOODHUEY_PLOT_IS_LAKE_REQUIREMENTS');
-INSERT INTO ModifierArguments (ModifierId, Name, Value)
-	VALUES
-	('HUEY_LAKE_CULTURE', 'ModifierId', 'HUEY_LAKE_CULTURE_MODIFIER'),
-	('HUEY_LAKE_CULTURE_MODIFIER', 'Amount', '2'),
-	('HUEY_LAKE_CULTURE_MODIFIER', 'YieldType', 'YIELD_CULTURE');
 -- Hanging Gardens gives +1 housing to cities within 6 tiles
 UPDATE Buildings SET Housing='1' WHERE BuildingType='BUILDING_HANGING_GARDENS';
 INSERT INTO BuildingModifiers (BuildingType , ModifierId)

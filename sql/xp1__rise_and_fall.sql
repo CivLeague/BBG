@@ -341,6 +341,18 @@ DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND 
 --==============================================================
 --******			W O N D E R S  (NATURAL)			  ******
 --==============================================================
+-- Huey gives +2 culture to lake tiles
+INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+	VALUES ('BUILDING_HUEY_TEOCALLI', 'HUEY_LAKE_CULTURE');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
+	VALUES
+	('HUEY_LAKE_CULTURE', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'FOODHUEY_PLAYER_REQUIREMENTS'),
+	('HUEY_LAKE_CULTURE_MODIFIER', 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD', 'FOODHUEY_PLOT_IS_LAKE_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+	VALUES
+	('HUEY_LAKE_CULTURE', 'ModifierId', 'HUEY_LAKE_CULTURE_MODIFIER'),
+	('HUEY_LAKE_CULTURE_MODIFIER', 'Amount', '2'),
+	('HUEY_LAKE_CULTURE_MODIFIER', 'YieldType', 'YIELD_CULTURE');
 -- Eye of the Sahara gets 2 Food, 2 Production, and 2 Science
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='EYESAHARA_PRODUCTION_ATOMIC' AND Name='Amount';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='EYESAHARA_SCIENCE_ATOMIC' AND Name='Amount';
