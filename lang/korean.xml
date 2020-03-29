@@ -1,15 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ko_KR">
+			<Text>도시가 생성하는 [ICON_Culture] 문화가 15% 증가하고 인근 도시에 미치는 종교 영향력이 50% 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="ko_KR">
+			<Text>본 대륙에 있는 유닛이 방어시, 또는 타 대륙에 있는 유닛이 공격시 [ICON_Strength] 전투력 +5를 획득합니다. 국립공원을 보유한 도시의 모든 타일에 매력도 +1을 제공합니다. 군사 과학 기술을 연구하면 특유 유닛인 의용 기병대를 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="ko_KR">
+			<Text>채석장에서 [ICON_Production] 생산력 +1, [ICON_Faith] 신앙 +1을 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="ko_KR">
+			<Text>성 기술 연구로 무료 스파이를 1명 더 받으며 스파이를 더 생성할 수 있는 능력을 얻습니다. 모든 스파이는 무료 진급을 가진 요원으로 시작합니다. 중세, 르네상스 및 산업 시대 불가사의 건설에 대해 [ICON_Production] 생산력 +20%를 제공합니다. 모든 시대의 불가사의 [ICON_Tourism] 관광 생산량이 50% 증가합니다.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION' Language="ko_KR">
+			<Text>이 도시가 목적지인 국내 [ICON_TradeRoute] 교역로에서 출발 도시에 [ICON_Science] 과학 +3을 제공합니다.</Text>
+		</Row>
+
+		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="ko_KR">
+			<Text>특수지구 포위 시 +10</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="ko_KR">
+			<Text>+10 when besieging a district</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION" Language="ko_KR">
+			<Text>검사를 대체하는 마케도니아 특유의 근접 유닛입니다. 특수지구 점령 시 [ICON_Strength] 전투력 +10를 획득합니다. 지원 보너스가 50% 추가로 부여됩니다.</Text>
+		  </Replace>
+		<Replace Tag="LOC_PROMOTION_COMBAT_HOME_CONTINENT_DESCRIPTION" Language="ko_KR">
+			<Text>고향 대륙에서 방어시 [ICON_Strength] 전투력 +5. (루즈벨트)</Text>
+		</Replace>
+		<Row Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_Capital] 수도가 위치하지 않은 대륙에서 공격 시 [ICON_Strength] 전투력 +5. (루즈벨트)</Text>
+		</Row>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="ko_KR">
+			<Text>도시에 주둔군을 유닛으로 배치하면 도시는 턴당 충성심 +3을 얻으며, 군단 또는 군대로 배치하면 도시는 턴당 충성심 +5를 얻습니다. 타 도시를 유닛으로 정복하면, 해당 유닛은 군단 또는 군대로 업그레이드됩니다(단, 올바른 사회 제도를 잠금 해제한 경우). 이칸다 특수지구 내부 건물들은 [ICON_Culture] 문화 +1, [ICON_Gold] 금 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="ko_KR">
+			<Text>타일 약탈을 통해 얻은 수확량이 100% 증가합니다. 자신의 동맹국과 전쟁 중인 모든 세력에 전쟁광 페널티 없이 전쟁을 선포할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="ko_KR">
+			<Text>타일 약탈을 통해 얻은 수확량이 100% 증가합니다. 자신의 동맹국과 전쟁 중인 모든 세력에 전쟁광 페널티 없이 전쟁을 선포할 수 있습니다. 동맹국의 동맹이 공동의 적과의 전투에 참여할 경우 동맹 점수를 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>타일 약탈을 통해 얻은 수확량이 100% 증가합니다. 동맹국의 동맹이 공동의 적과의 전투에 참여할 경우 동맹 점수를 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="ko_KR">
+			<Text>여기 용이 있다 황금기:[NEWLINE]새로 건설한 도시는 [ICON_Citizen] 인구 +3을 획득한 채 시작합니다. 해상 및 승선 유닛에 [ICON_Movement] 이동력 +2를 제공합니다. 원래 [ICON_Capital] 수도의 대륙에 없는 도시에 턴당 충성심 +2를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION" Language="ko_KR">
+			<Text>각 [ICON_GreatWork_Relic] 성유물, [ICON_GreatWork_Artifact] 유물, [ICON_GreatWork_Sculpture] 조각상 걸작 예술품에서 일반적으로 받는 [ICON_Culture] 문화 외에 추가로 [ICON_Food] 식량 +2, [ICON_Production] 생산력 +2, [ICON_Gold] 금 +4가 제공됩니다. [ICON_GreatWriter] 위대한 작가, [ICON_GreatArtist] 위대한 예술가, [ICON_GreatMusician] 위대한 음악가 및 [ICON_GreatMerchant] 위대한 상인 점수를 +50% 더 받습니다. 고고학자를 생산할 때 [ICON_Production] 생산력 +100%를 제공합니다. 궁전은 걸작 슬롯 5개를 가지고 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ST_BASILS_CATHEDRAL_DESCRIPTION" Language="ko_KR">
+			<Text>무료 [ICON_GreatWork_Relic] 성유물 1개를 받으며, 빈 [ICON_GreatWork_Relic] 성유물 걸작 슬롯 3개를 가지고 있습니다. 이 도시에서 [ICON_Tourism] 종교 관광 +100%를 획득합니다. 이 도시의 모든 툰드라 타일에 [ICON_Food] 식량 +1, [ICON_Production] 생산력 +1, [ICON_Culture] 문화 +1을 제공합니다. 도심부 옆에 지어야 합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_CRISTO_REDENTOR_DESCRIPTION" Language="ko_KR">
+			<Text>무료 [ICON_GreatWork_Relic] 성유물 1개를 받습니다. [ICON_GreatWork_Relic] 성유물 및 성도의 [ICON_Tourism] 관광 생산량이 계몽주의 사회 제도를 연구한 다른 문명에 의해 감소되지 않습니다. 문명 내 해변 리조트의 [ICON_Tourism] 관광 생산량이 100% 증가합니다. 언덕에 지어야 합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_AMUNDSEN_SCOTT_RESEARCH_STATION_DESCRIPTION" Language="ko_KR">
+			<Text>모든 도시에 [ICON_SCIENCE] 과학 +20% 및 [ICON_PRODUCTION] 생산력 +10%를 제공합니다. 소유 도시 중 해당 도시가 도심부 3타일 내에 툰드라 혹은 툰드라 언덕 타일이 5개 이상인 경우 이러한 보너스가 두 배가 됩니다. 연구소가 있는 캠퍼스 옆 설원이나 툰드라 타일에 지어야 합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION" Language="ko_KR">
+			<Text>접하는 모든 문명마다 [ICON_VisLimited] 외교 시정 레벨이 평소보다 1 높아집니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 공중 유닛이 얻는 전투 경험치가 +50% 증가합니다. 비행장 특수지구에 공중 유닛 슬롯 +2를 제공합니다. 신속한 배치 사회 제도가 잠금 해제되면, 지상 유닛을 공항이 있는 비행장 특수지구 사이에서 공수할 수 있게 됩니다. [ICON_RESOURCE_ALUMINUM] 알루미늄 자원을 발견하였다면, [ICON_RESOURCE_ALUMINUM] 알루미늄 자원을 매턴 2개씩 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +25% 증가합니다. 군단 및 군대를 직접 훈련시킬 수 있습니다. 군단 및 군대 훈련 비용이 25% 감소합니다. [ICON_RESOURCE_OIL] 석유 자원을 발견하였다면, [ICON_RESOURCE_OIL] 석유 자원을 매턴 2개씩 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +25% 증가합니다.[NEWLINE]전략 자원 비축력이 +10 증가합니다(일반 속도 기준).[NEWLINE]군단 및 군대를 직접 훈련시킬 수 있습니다. 군단 및 군대 훈련 비용이 25% 감소합니다. [ICON_RESOURCE_OIL] 석유 자원을 발견하였다면, [ICON_RESOURCE_OIL] 석유 자원을 매턴 2개씩 제공합니다.</Text>
+		</Replace>
+
+
     	<Replace Tag="LOC_GOVERNOR_THE_CARDINAL_DESCRIPTION" Language="ko_KR">
       		<Text>도시의 [ICON_Religion] 신앙심과 문화력을 강화하고 종교 유닛을 수용할 수 있는 종교 및 영적 지도자인 {LOC_GOVERNOR_THE_CARDINAL_NAME} 총독은 제국 [ICON_FAITH] 신앙과 [ICON_CULTURE] 문화의 등불입니다.</Text>
     	</Replace>
     	<Replace Tag="LOC_GOVERNOR_THE_EDUCATOR_DESCRIPTION" Language="ko_KR">
       		<Text>{LOC_GOVERNOR_THE_EDUCATOR_NAME} 총독은 도시의 [ICON_SCIENCE] 과학 육성에 중점을 둡니다. 또한, 자신의 배정된 도시로 [ICON_GreatPerson] 위인을 영입하는 데 능숙합니다.</Text>
     	</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ko_KR">
-			<Text>도시가 생성하는 [ICON_Culture] 문화가 15% 증가하고 인근 도시에 미치는 종교 영향력이 100% 증가합니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN_DESCRIPTION" Language="ko_KR">
 			<Text>도시가 생성하는 [ICON_Science] 과학이 15% 증가합니다.</Text>
 		</Replace>
@@ -22,9 +91,6 @@
 		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="ko_KR">
 			<Text>도시의 캠퍼스에서 얻는 인접 보너스가 두 배가 됩니다.</Text>
 		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION' Language="ko_KR">
-            <Text>이 도시가 목적지인 국내 [ICON_TradeRoute] 교역로에서 출발 도시에 [ICON_Science] 과학 +2를 제공합니다.</Text>
-        </Row>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE_DESCRIPTION" Language="ko_KR">
 			<Text>발견된 모든 전략자원을 턴당 +1씩 추가로 제공합니다.</Text>
 		</Replace>
@@ -62,20 +128,20 @@
 			<Text>건축 붐</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_DESCRIPTION" Language="ko_KR">
-			<Text>이 도시의 특수지구마다 [ICON_HOUSING] 주거 +1과 [ICON_AMENITIES] 쾌적도 +1을 얻습니다.</Text>
+			<Text>이 도시의 특수지구 및 불가사의마다 [ICON_HOUSING] 주거 +1과 [ICON_AMENITIES] 쾌적도 +1을 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="ko_KR">
-			<Text>도시 공원을 도시에 건설할 수 있습니다. 도시당 하나만 건설 가능합니다. [ICON_SCIENCE] 과학 +3, [ICON_Culture] 문화 +3, [ICON_GOLD] 금 +3, [ICON_HOUSING] 주거 +1, [ICON_Amenities] 쾌적도 +1과 매력도 +2를 제공합니다.</Text>
-		</Replace>
+			<Text>오락과 여가 사회제도가 잠금 해제되면, 도시 공원을 도시의 평지 타일에 건설할 수 있습니다. 도시당 하나만 건설 가능합니다. [ICON_SCIENCE] 과학 +3, [ICON_Culture] 문화 +3, [ICON_GOLD] 금 +3, [ICON_HOUSING] 주거 +1, [ICON_Amenities] 쾌적도 +1과 매력도 +2를 제공합니다.</Text>
+        </Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FISHERY_DESCRIPTION" Language="ko_KR">
 			<Text>양식장을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Food] 식량 +1을 제공하며, 해양 자원에 인접해 있으면 추가 [ICON_Food] 식량 +1을 제공합니다. 해안 지역에 건설해야 합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_CITY_PATRON_GODDESS_DESCRIPTION" Language="ko_KR">
 			<Text>전문 특수지구가 없는 도시의 특수지구 건설에 대한 [ICON_Production] 생산력 +50%를 제공합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ko_KR">
+		<!--<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ko_KR">
 			<Text>기념비성 황금기:[NEWLINE]모든 건설자에 [ICON_Movement] 이동력 +2를 제공합니다.[ICON_Faith] 신앙으로 민간 유닛을 구입할 수 있습니다.</Text>
-		</Replace>	
+		</Replace>-->
 
 		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="ko_KR">
 			<Text>해당 영토에 퍼진 다른 종교를 50% 감소시킬 수 있으며 다른 종교의 유닛과 신학 전투를 시작할 수 있습니다.</Text>
@@ -90,14 +156,11 @@
             <Text>전투에서 승리를 거두면 패배한 유닛의 [ICON_Strength] 전투력 25%에 준하는 [ICON_Science] 과학이 제공됩니다. 도시가 전쟁 피로도를 입지 않습니다. 세계 불가사의가 있는 도시를 점령하면 모든 군사 유닛의 체력이 완전히 회복됩니다.</Text>
         </Replace>
 
-		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="ko_KR">
-			<Text>본 대륙에 있는 유닛은 공격시 [ICON_Strength] 전투력 +5를 획득합니다. 국립공원을 보유한 도시의 모든 타일에 매력도 +1을 제공합니다. 군사 과학 기술을 연구하면 특유 유닛인 의용 기병대를 얻습니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="ko_KR">
 			<Text>보다 빠르게 군단(용병 사회 제도)과 군대(민족주의 사회 제도)를 구성할 수 있습니다. 민족주의 사회 제도를 획득하면 군단 및 군대에 [ICON_STRENGTH] 기본 전투력 +5를 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ko_KR">
-			<Text>기병대를 대체하는 헝가리 특유의 산업 시대 유닛입니다. 각 활성 동맹에서 [ICON_Strength] 전투력 +2를 획득합니다.</Text>
+			<Text>기병대를 대체하는 헝가리 특유의 산업 시대 유닛입니다. 각 활성 동맹에서 [ICON_Strength] 전투력 +1를 획득합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ko_KR">
 			<Text>종교를 창시할 때 교리를 한 개 더 고를 수 있습니다. 개척자와 건설자의 [ICON_Movement] 이동력이 1 증가합니다. 종교를 창시했고 현재 전쟁에 참여하지 않는 각 문명(인도 포함)을 접할 때마다 [ICON_Faith] 신앙 +5를 제공합니다. 성지 특수지구 내 건물을 생산할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 상대 문명은 간디와 전투 시 전쟁 피로도가 2배 증가합니다.</Text>
@@ -114,7 +177,7 @@
 		<Replace Tag="LOC_MOMENT_CATEGORY_CULTURAL_BONUS_GOLDEN_AGE" Language="ko_KR">
 			<Text>펜, 붓과 목소리 황금기:[NEWLINE][ICON_CivicBoosted] 영감이 사회 제도 상승효과 10%를 추가로 제공합니다. 각 도시에는 전문 특수지구당 [ICON_Culture] 문화 +2와 [ICON_Gold] 금 +1이 제공됩니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_2" Language="ko_KR">
+		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_3" Language="ko_KR">
 			<Text>펜, 붓과 목소리: [ICON_CivicBoosted] 영감을 발동할 때마다 시대 점수 +1을 얻습니다. 걸작 슬롯이 있는 건물을 건설하면 시대 점수 +1을 얻습니다. 황금기 시작 시점에서 선택하면 [ICON_CivicBoosted] 영감이 사회 제도 비용의 10%를 추가로 제공합니다. 각 도시는 전문 특수지구마다 [ICON_Culture] 문화 +2와 [ICON_Gold] 금 +1을 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="ko_KR">
@@ -145,9 +208,6 @@
 			<Text>스웨덴이 위인을 영입하면 [ICON_Favor] 외교적 환심 50을 얻습니다(일반 속도 기준). 스웨덴이 공장에서 [ICON_GreatEngineer] 위대한 기술자 점수 +1을, 대학교에서 [ICON_GreatScientist] 위대한 과학자 점수 +1을 얻습니다. 공장 및 대학교 건물을 건설할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 게임에 스웨덴이 있으면 산업 시대부터 3개의 특유한 세계 의회 경쟁이 추가됩니다.</Text>
 		</Replace>
 		
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="ko_KR">
-			<Text>중세, 르네상스 및 산업 시대 불가사의 건설에 대해 [ICON_Production] 생산력 +20%를 제공합니다. 모든 시대의 불가사의 [ICON_Tourism] 관광 생산량이 50% 증가합니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_BUILDING_FILM_STUDIO_DESCRIPTION" Language="ko_KR">
 			<Text>미국 특유의 건물입니다. 현대 시대에서 [ICON_Tourism] 관광 +50%를 제공합니다.</Text>
 		</Replace>
@@ -388,7 +448,7 @@
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>프랑스 특유의 샤토를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Culture] 문화 +2를 제공합니다. 매력도 +1을 제공합니다. 인접한 모든 불가사의마다 [ICON_Culture] 문화 +1을 제공합니다. 인접한 모든 사치 자원마다 [ICON_Food] 식량 +1과 [ICON_Gold] 금 +1을 제공합니다. 봉건제 사회 제도를 획득하면 [ICON_HOUSING] 주거공간 +1을 추가 제공하며, 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 강 근처에만 지을 수 있습니다.</Text>
 		</Replace>
-		<!---------------======== GATHERING STORM ========------------------->
+		<!--======== GATHERING STORM ========-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>일반 경우보다 더 빨리 선단(용병) 및 함대(중상주의)를 형성할 수 있습니다. 여러 대륙 간을 연결하는 [ICON_TradeRoute] 교역로는 다른 문명에 대한 교역로의 경우 보너스 [ICON_Gold] 금, 자체 도시 간 교역로의 경우 보너스 [ICON_Food] 식량 및 [ICON_Production] 생산력을 제공합니다. 원래 [ICON_Capital] 수도의 대륙이 아닌 도심부 근처에 전도관 시설이 있는 도시의 경우 턴당 충성심 +2가 제공됩니다.</Text>
 		</Replace>
@@ -433,7 +493,6 @@
 		</Replace>
 		<!---->
 		<!---->
-		<!----------------======  PREVIOUS VERSIONS  ======---------------->
 		<!---->
 		<!---->
 		<!--===============   C I V I L I Z A T I O N S   ===============-->
@@ -561,9 +620,6 @@
 		<!---->
 		<!---->
 		<!--===============   P A N T H E O N S   ===============-->
-		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="ko_KR">
-			<Text>채석장에서 [ICON_Faith] 신앙 +3을 획득합니다.</Text>
-		</Replace>	
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="ko_KR">
 			<Text>사치 자원과 보너스 자원 위에 건설된 광산에서 [ICON_Faith] 신앙 +3을 획득합니다.</Text>
 		</Replace>

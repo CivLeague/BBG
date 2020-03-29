@@ -166,6 +166,8 @@ INSERT INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , Bo
 --==================
 -- Sumeria
 --==================
+-- alpine training from matterhorn bugfix
+INSERT INTO TypeTags (Type, Tag) VALUES ('ABILITY_ALPINE_TRAINING', 'CLASS_WAR_CART');
 -- extra +3 envoys points per turn
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
 	VALUES ('SUMERIA_ENVOY_POINTS_FROM_MILITARY_ALLIANCE', 'Amount', '3');
@@ -178,6 +180,58 @@ INSERT INTO TraitModifiers (TraitType, ModifierId)
 --==================
 -- Zulu
 --==================
+-- impi come at stirrips like pikemen
+UPDATE Units SET PrereqTech='TECH_STIRRUPS' WHERE UnitType='UNIT_ZULU_IMPI';
+-- +1 culture and +1 gold for each encampment building
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
+	('ZULU_BARRACKS_CULTURE_BBG', 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
+	('ZULU_BARRACKS_GOLD_BBG', 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
+	('ZULU_STABLE_CULTURE_BBG',   'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
+	('ZULU_STABLE_GOLD_BBG',   'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
+	('ZULU_ARMORY_CULTURE_BBG',   'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
+	('ZULU_ARMORY_GOLD_BBG',   'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
+	('ZULU_ACADEMY_CULTURE_BBG',  'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE'),
+	('ZULU_ACADEMY_GOLD_BBG',  'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('ZULU_BARRACKS_CULTURE_BBG', 'BuildingType', 'BUILDING_BARRACKS'),
+	('ZULU_BARRACKS_CULTURE_BBG', 'YieldType', 'YIELD_CULTURE'),
+	('ZULU_BARRACKS_CULTURE_BBG', 'Amount', '1'),
+	('ZULU_BARRACKS_GOLD_BBG',    'BuildingType', 'BUILDING_BARRACKS'),
+	('ZULU_BARRACKS_GOLD_BBG',    'YieldType', 'YIELD_GOLD'),
+	('ZULU_BARRACKS_GOLD_BBG',    'Amount', '1'),
+	('ZULU_STABLE_CULTURE_BBG',   'BuildingType', 'BUILDING_STABLE'),
+	('ZULU_STABLE_CULTURE_BBG',   'YieldType', 'YIELD_CULTURE'),
+	('ZULU_STABLE_CULTURE_BBG',   'Amount', '1'),
+	('ZULU_STABLE_GOLD_BBG',      'BuildingType', 'BUILDING_STABLE'),
+	('ZULU_STABLE_GOLD_BBG',      'YieldType', 'YIELD_GOLD'),
+	('ZULU_STABLE_GOLD_BBG',      'Amount', '1'),
+	('ZULU_ARMORY_CULTURE_BBG',   'BuildingType', 'BUILDING_ARMORY'),
+	('ZULU_ARMORY_CULTURE_BBG',   'YieldType', 'YIELD_CULTURE'),
+	('ZULU_ARMORY_CULTURE_BBG',   'Amount', '1'),
+	('ZULU_ARMORY_GOLD_BBG',      'BuildingType', 'BUILDING_ARMORY'),
+	('ZULU_ARMORY_GOLD_BBG',      'YieldType', 'YIELD_GOLD'),
+	('ZULU_ARMORY_GOLD_BBG',      'Amount', '1'),
+	('ZULU_ACADEMY_CULTURE_BBG',  'BuildingType', 'BUILDING_MILITARY_ACADEMY'),
+	('ZULU_ACADEMY_CULTURE_BBG',  'YieldType', 'YIELD_CULTURE'),
+	('ZULU_ACADEMY_CULTURE_BBG',  'Amount', '1'),
+	('ZULU_ACADEMY_GOLD_BBG',     'BuildingType', 'BUILDING_MILITARY_ACADEMY'),
+	('ZULU_ACADEMY_GOLD_BBG',     'YieldType', 'YIELD_GOLD'),
+	('ZULU_ACADEMY_GOLD_BBG',     'Amount', '1');
+--INSERT INTO Types (Type, Kind) VALUES
+--	('TRAIT_ZULU_MIL_BUILDINGS_YIELDS_BBG', 'KIND_TRAIT');
+--INSERT INTO Traits (TraitType, Name, Description) VALUES 
+--	('TRAIT_ZULU_MIL_BUILDINGS_YIELDS_BBG', 'blah', 'blah');
+--INSERT INTO CivilizationTraits (CivilizationType, TraitType) VALUES
+--	('CIVILIZATION_ZULU', 'TRAIT_ZULU_MIL_BUILDINGS_YIELDS_BBG');
+INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES
+	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_BARRACKS_CULTURE_BBG'),
+	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_BARRACKS_GOLD_BBG'),
+	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_STABLE_CULTURE_BBG'),
+	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_STABLE_GOLD_BBG'),
+	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_ARMORY_CULTURE_BBG'),
+	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_ARMORY_GOLD_BBG'),
+	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_ACADEMY_CULTURE_BBG'),
+	('TRAIT_CIVILIZATION_ZULU_ISIBONGO', 'ZULU_ACADEMY_GOLD_BBG');
 -- Zulu get corps/armies bonus at nationalism
 INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
     VALUES ('PLAYER_HAS_NATIONALISM_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
@@ -196,9 +250,11 @@ UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_NATIONALISM_REQUIREMENT
 --==============================================================
 --******			  D E D I C A T I O N S				  ******
 --==============================================================
+-- Sic Hunt Dracones works on all new cities, not just diff continent
+UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_CITIES_ADD_POPULATION', NewOnly=1, Permanent=1 WHERE ModifierId='COMMEMORATION_EXPLORATION_GA_NEW_CITY_POPULATION';
 -- Monumentality discount reduced from 30% to 0%
-UPDATE ModifierArguments SET Value='0' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_BUILDER_DISCOUNT_MODIFIER' AND Name='Amount';
-UPDATE ModifierArguments SET Value='0' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_SETTLER_DISCOUNT_MODIFIER' AND Name='Amount';
+--UPDATE ModifierArguments SET Value='0' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_BUILDER_DISCOUNT_MODIFIER' AND Name='Amount';
+--UPDATE ModifierArguments SET Value='0' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_SETTLER_DISCOUNT_MODIFIER' AND Name='Amount';
 -- Pen and Brush gives +2 Culture and +1 Gold per District
 INSERT INTO Modifiers (ModifierId , ModifierType , OwnerRequirementSetId)
     VALUES ('COMMEMORATION_CULTURAL_DISTRICTGOLD' , 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_DISTRICT' , 'PLAYER_HAS_GOLDEN_AGE');
@@ -213,12 +269,10 @@ UPDATE ModifierArguments SET Value='2' WHERE ModifierId='COMMEMORATION_CULTURAL_
 
 
 
-
-
 --==============================================================
 --******				G O V E R N M E N T				  ******
 --==============================================================
--- Audience Hall gets +3 Food and +3 Housing instead of +4 Housing, and an extra gov title
+-- Audience Hall gets +3 Food and +3 Housing instead of +4 Housing
 INSERT INTO BuildingModifiers (BuildingType , ModifierId)
 	VALUES ('BUILDING_GOV_TALL' , 'GOV_TALL_FOOD_BUFF');
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='GOV_TALL_HOUSING_BUFF';
@@ -335,6 +389,20 @@ UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAPUCHE
 UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_GRASS_MOUNTAIN';
 UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_DESERT_MOUNTAIN';
 DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_TUNDRA_MOUNTAIN';
+
+
+
+--==============================================================
+--******			W O N D E R S  (NATURAL)			  ******
+--==============================================================
+-- scott research station can be built and works in tundra
+INSERT INTO Building_ValidTerrains (BuildingType, TerrainType) VALUES
+	('BUILDING_AMUNDSEN_SCOTT_RESEARCH_STATION', 'TERRAIN_TUNDRA'),
+	('BUILDING_AMUNDSEN_SCOTT_RESEARCH_STATION', 'TERRAIN_TUNDRA_HILLS');
+UPDATE RequirementArguments SET Value='TERRAIN_TUNDRA' WHERE RequirementId='REQUIRES_CITY_HAS_5_SNOW' AND Name='TerrainType';
+-- St. Basil gives 1 relic
+INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
+	('BUILDING_ST_BASILS_CATHEDRAL', 'WONDER_GRANT_RELIC_BBG');
 
 
 

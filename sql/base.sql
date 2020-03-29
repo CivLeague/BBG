@@ -12,9 +12,26 @@ UPDATE Units SET Combat=62, Cost=340, PromotionClass='PROMOTION_CLASS_LIGHT_CAVA
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_HELICOPTER' WHERE Unit='UNIT_AMERICAN_ROUGH_RIDER';
 INSERT INTO UnitReplaces VALUES ('UNIT_AMERICAN_ROUGH_RIDER' , 'UNIT_CAVALRY');
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='ROUGH_RIDER_BONUS_ON_HILLS';
--- Continent combat bonus attack only
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
-	VALUES ('REQUIREMENTS_UNIT_ON_HOME_CONTINENT', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
+-- Continent combat bonus: +5 attack on foreign continent, +5 defense on home continent
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+	('TRAIT_COMBAT_BONUS_FOREIGN_CONTINENT_BBG',    'MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER', NULL),
+	('COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('TRAIT_COMBAT_BONUS_FOREIGN_CONTINENT_BBG', 'ModifierId', 'COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG'),
+	('COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG', 'Amount', '5');
+INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES
+	('COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG', 'Preview', 'LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION');
+INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES
+	('TRAIT_LEADER_ROOSEVELT_COROLLARY', 'TRAIT_COMBAT_BONUS_FOREIGN_CONTINENT_BBG');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
+	('REQUIREMENTS_UNIT_ON_HOME_CONTINENT',    'PLAYER_IS_DEFENDER_REQUIREMENTS'),
+	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'PLAYER_IS_ATTACKER_REQUIREMENTS'),
+	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIRES_UNIT_ON_FOREIGN_CONTINENT_BBG'),
+	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIRES_LAND_DOMAIN');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
+	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO Requirements (RequirementId, RequirementType, Inverse) VALUES
+	('REQUIRES_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENT_UNIT_ON_HOME_CONTINENT', 1);
 
 
 --==================
@@ -186,6 +203,10 @@ UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_ENGLISH_SE
 --==================
 -- France
 --==================
+-- move spies buffs to france and off catherine for eleanor france buff
+UPDATE TraitModifiers SET TraitType='TRAIT_CIVILIZATION_WONDER_TOURISM' WHERE TraitType='FLYING_SQUADRON_TRAIT' AND ModifierId='UNIQUE_LEADER_ADD_SPY_CAPACITY';
+UPDATE TraitModifiers SET TraitType='TRAIT_CIVILIZATION_WONDER_TOURISM' WHERE TraitType='FLYING_SQUADRON_TRAIT' AND ModifierId='UNIQUE_LEADER_ADD_SPY_UNIT';
+UPDATE TraitModifiers SET TraitType='TRAIT_CIVILIZATION_WONDER_TOURISM' WHERE TraitType='FLYING_SQUADRON_TRAIT' AND ModifierId='UNIQUE_LEADER_SPIES_START_PROMOTED';
 -- Reduce tourism bonus for wonders
 UPDATE ModifierArguments SET Value='150' WHERE ModifierId='TRAIT_WONDER_DOUBLETOURISM' AND Name='ScalingFactor';
 -- Chateau now gives 1 housing at Feudalism, and ajacent luxes now give stacking food in addition to stacking gold 
@@ -331,6 +352,20 @@ UPDATE Units SET PrereqCivic='CIVIC_FEUDALISM' , PrereqTech=NULL WHERE UnitType=
 
 
 --==================
+-- Kongo
+--==================
+-- +100% prod towards archealogists
+INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES
+	('TRAIT_CIVILIZATION_NKISI', 'TRAIT_ARCHAEOLOGIST_PROD_BBG');
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
+	('TRAIT_ARCHAEOLOGIST_PROD_BBG', 'MODIFIER_PLAYER_UNITS_ADJUST_UNIT_PRODUCTION');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('TRAIT_ARCHAEOLOGIST_PROD_BBG', 'UnitType', 'UNIT_ARCHAEOLOGIST'),
+	('TRAIT_ARCHAEOLOGIST_PROD_BBG', 'Amount', '100');
+
+
+
+--==================
 -- Norway
 --==================
 -- Berserker no longer gets +10 on attack and -5 on defense... simplified to be base on defense and +15 on attack
@@ -407,8 +442,8 @@ INSERT INTO TraitModifiers (TraitType , ModifierId)
 	('TRAIT_LEADER_MELEE_COASTAL_RAIDS'          , 'THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'              );
 INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES
-	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION'                 , null                               ),
-	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION'                 , null                               );
+	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION'                 , null),
+	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION'                 , null);
 INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra , SecondExtra)
 	VALUES
 	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'DistrictType' , 'DISTRICT_HOLY_SITE' , null , null),
@@ -537,6 +572,13 @@ INSERT INTO TraitModifiers ( TraitType , ModifierId )
 --==================
 -- Sumeria
 --==================
+-- replace bugged shared xp and pillage rewards with double pillage rewards
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU' AND ModifierId='TRAIT_ADJUST_JOINTWAR_EXPERIENCE';
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
+	('TRAIT_ADJUST_PILLAGE_BBG', 'MODIFIER_PLAYER_ADJUST_IMPROVEMENT_PILLAGE');
+INSERT INTO ModifierArguments (ModifierId, Name, Value, Extra) VALUES
+	('TRAIT_ADJUST_PILLAGE_BBG', 'Amount', '2', '-1');
+UPDATE TraitModifiers SET ModifierId='TRAIT_ADJUST_PILLAGE_BBG' WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU' AND ModifierId='TRAIT_ADJUST_JOINTWAR_PLUNDER';
 -- Sumerian War Carts are no longer free to maintain so that you cannot have unlimited and are heavy chariot replacement with 32 combat
 UPDATE Units SET Maintenance=1, Combat=32, PrereqTech='TECH_THE_WHEEL', MandatoryObsoleteTech='TECH_BALLISTICS' WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
 INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SUMERIAN_WAR_CART', 'UNIT_HEAVY_CHARIOT');
@@ -788,8 +830,17 @@ DELETE FROM GreatPersonIndividualActionModifiers WHERE GreatPersonIndividualType
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='CITY_PATRON_GODDESS_DISTRICT_PRODUCTION_MODIFIER' AND Name='Amount';
 -- Dance of Aurora yields reduced... only work for flat tundra
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='DANCE_OF_THE_AURORA_FAITHTUNDRAHILLSADJACENCY' AND Name='Amount';
--- stone circles +1 faith
-UPDATE ModifierArguments SET Value='3' WHERE ModifierId='STONE_CIRCLES_QUARRY_FAITH_MODIFIER' and Name='Amount';
+-- stone circles -1 faith and +1 prod
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId='STONE_CIRCLES_QUARRY_FAITH_MODIFIER' and Name='Amount';
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+	('STONE_CIRCLES_QUARRY_PROD_BBG', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS'),
+	('STONE_CIRCLES_QUARRY_PROD_MODIFIER_BBG', 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD', 'PLOT_HAS_QUARRY_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('STONE_CIRCLES_QUARRY_PROD_BBG', 'ModifierId', 'STONE_CIRCLES_QUARRY_PROD_MODIFIER_BBG'),
+	('STONE_CIRCLES_QUARRY_PROD_MODIFIER_BBG', 'YieldType', 'YIELD_PRODUCTION'),
+	('STONE_CIRCLES_QUARRY_PROD_MODIFIER_BBG', 'Amount', '1');
+INSERT INTO BeliefModifiers (BeliefType, ModifierID) VALUES
+	('BELIEF_STONE_CIRCLES', 'STONE_CIRCLES_QUARRY_PROD_BBG');
 -- religious idols +1 faith
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='RELIGIOUS_IDOLS_BONUS_MINE_FAITH_MODIFIER' and Name='Amount';
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='RELIGIOUS_IDOLS_LUXURY_MINE_FAITH_MODIFIER' and Name='Amount';
@@ -915,7 +966,7 @@ INSERT INTO RequirementArguments
 --==============================================================
 -- Limes should not become obselete
 DELETE FROM ObsoletePolicies WHERE PolicyType='POLICY_LIMES';
--- Adds +100% Siege Unit Production to Limes Policy Card (the +100% to walls card)
+-- Adds +100% Siege Unit Production to Limes Policy Card
 INSERT INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('LIMES_SIEGE_ANCIENT_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
 INSERT INTO Modifiers (ModifierId , ModifierType)
@@ -1011,11 +1062,35 @@ INSERT INTO PolicyModifiers (PolicyType , ModifierId)
 --==============================================================
 --******				R E L I G I O N					  ******
 --==============================================================
+UPDATE UnitCommands SET VisibleInUI=0 WHERE CommandType='UNITCOMMAND_CONDEMN_HERETIC';
+UPDATE Map_GreatPersonClasses SET MaxWorldInstances=6 WHERE MapSizeType='MAPSIZE_STANDARD';
+UPDATE Map_GreatPersonClasses SET MaxWorldInstances=8 WHERE MapSizeType='MAPSIZE_LARGE';
+UPDATE Map_GreatPersonClasses SET MaxWorldInstances=9 WHERE MapSizeType='MAPSIZE_HUGE';
+UPDATE Units SET BaseSightRange=1 WHERE UnitType='UNIT_MISSIONARY';
+-- remove marytr ability from prasat missionaries
+DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_PRASAT' AND ModifierId='PRASAT_GRANT_MARTYR';
+-- reduce debator promotion
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='APOSTLE_DEBATER' AND Name='Amount';
+UPDATE ModifierArguments SET Value='100' WHERE ModifierId='APOSTLE_FOREIGN_SPREAD' AND Name='Amount';
+UPDATE ModifierArguments SET Value='25' WHERE ModifierId='APOSTLE_EVICT_ALL' AND Name='Amount';
+-- remove spread from condemning and defeating
+UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_COMBAT_VICTORY';
+UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_UNIT_CAPTURE';
+
+-- give monks wall breaker ability
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
+	('ENABLE_WALL_ATTACK_WHOLE_GAME_MONK_BBG', 'MODIFIER_PLAYER_UNITS_ADJUST_ENABLE_WALL_ATTACK_WHOLE_GAME_PROMOTION_CLASS');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('ENABLE_WALL_ATTACK_WHOLE_GAME_MONK_BBG', 'PromotionClass', 'PROMOTION_CLASS_MONK');
+INSERT INTO UnitAbilities (UnitAbilityType) VALUES
+	('WARRIOR_MONK_WALL_BREAKER_BBG');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES
+	('WARRIOR_MONK_WALL_BREAKER_BBG', 'ENABLE_WALL_ATTACK_WHOLE_GAME_MONK_BBG');
 -- Nerf Inquisitors
-UPDATE Units SET ReligionEvictPercent=50 WHERE UnitType='UNIT_INQUISITOR';
+UPDATE Units SET ReligionEvictPercent=50, SpreadCharges=2 WHERE UnitType='UNIT_INQUISITOR';
 -- Religious spread from trade routes increased
-UPDATE GlobalParameters SET Value='6.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_PRESSURE_FOR_DESTINATION';
-UPDATE GlobalParameters SET Value='3.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_PRESSURE_FOR_ORIGIN'     ;
+UPDATE GlobalParameters SET Value='2.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_PRESSURE_FOR_DESTINATION';
+UPDATE GlobalParameters SET Value='1.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_PRESSURE_FOR_ORIGIN'     ;
 -- Divine Inspiration yield increased
 UPDATE ModifierArguments SET Value='6' WHERE ModifierId='DIVINE_INSPIRATION_WONDER_FAITH_MODIFIER' AND Name='Amount';
 -- Crusader +7 instead of +10
@@ -1155,6 +1230,10 @@ UPDATE StartBiasFeatures SET Tier=5 WHERE CivilizationType='CIVILIZATION_KONGO' 
 --==============================================================
 --******			  U N I T S  (NON-UNIQUE)			  ******
 --==============================================================
+UPDATE UnitCommands SET VisibleInUI=0 WHERE CommandType='UNITCOMMAND_PRIORITY_TARGET';
+UPDATE Units SET BaseMoves=3 WHERE UnitType='UNIT_MILITARY_ENGINEER';
+UPDATE Units SET Cost=310 WHERE UnitType='UNIT_CAVALRY';
+UPDATE Units SET PrereqTech='TECH_STIRRUPS' WHERE UnitType='UNIT_PIKEMAN';
 UPDATE Units SET Combat=72 , BaseMoves=3 WHERE UnitType='UNIT_INFANTRY';
 UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_PRIVATEER';
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
@@ -1181,6 +1260,13 @@ UPDATE ModifierArguments SET Value='300' WHERE ModifierId='STEEL_UNLOCK_URBAN_DE
 --==============================================================
 --******			W O N D E R S  (MAN-MADE)			  ******
 --==============================================================
+-- cristo gets 1 relic
+INSERT INTO Modifiers (ModifierId , ModifierType , RunOnce , Permanent)
+	VALUES ('WONDER_GRANT_RELIC_BBG' , 'MODIFIER_PLAYER_GRANT_RELIC' , 1 , 1);	
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('WONDER_GRANT_RELIC_BBG' , 'Amount' , '1');
+INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
+	('BUILDING_CRISTO_REDENTOR', 'WONDER_GRANT_RELIC_BBG');
 -- Hanging Gardens gives +1 housing to cities within 6 tiles
 UPDATE Buildings SET Housing='1' WHERE BuildingType='BUILDING_HANGING_GARDENS';
 INSERT INTO BuildingModifiers (BuildingType , ModifierId)
@@ -1563,9 +1649,10 @@ INSERT INTO Feature_AdjacentYields (FeatureType, YieldType, YieldChange)
 -- oil can be found on flat plains
 INSERT INTO Resource_ValidTerrains (ResourceType, TerrainType)
 	VALUES ('RESOURCE_OIL', 'TERRAIN_PLAINS');
--- incense +1 food
+-- incense +1 food and +1 food
 INSERT INTO Resource_YieldChanges (ResourceType, YieldType, YieldChange)
 	VALUES ('RESOURCE_INCENSE', 'YIELD_FOOD', 1);
+UPDATE Resource_YieldChanges SET YieldChange=2 WHERE ResourceType='RESOURCE_INCENSE' AND YieldType='YIELD_FAITH';
 -- add 1 production to fishing boat improvement
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_FISHING_BOATS' AND YieldType='YIELD_PRODUCTION';
 

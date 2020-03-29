@@ -5,6 +5,7 @@
 --==========
 -- Macedon
 --==========
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='HYPASPIST_SIEGE_BONUS' AND Name='Amount';
 -- 25% Science from kills
 INSERT INTO TraitModifiers (TraitType, ModifierId)
 	VALUES ('TRAIT_LEADER_TO_WORLDS_END', 'SCIENCE_ON_KILLS_BBG');

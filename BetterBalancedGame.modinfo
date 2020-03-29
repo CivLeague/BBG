@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="bdffd1bc-49e5-4dd6-81b2-aab1eb55563f" version="3.9.3">
+<Mod id="bdffd1bc-49e5-4dd6-81b2-aab1eb55563f" version="3.10.4">
 	<Properties>
-		<Name>Better Balanced Game 3.9.3</Name>
+		<Name>Better Balanced Game 3.10.4</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
 		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
 		<Authors>codenaugh, S1AL, D. / Jack The Narrator</Authors>
-		<SpecialThanks>wazabaza, abstr, priz, seed.of.apricot, WhySoHate</SpecialThanks>
+		<SpecialThanks>wazabaza, abstr, priz, seed.of.apricot, WhySoHate, Klas</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
 	
@@ -71,8 +71,6 @@
 			<File>lang/korean.xml</File>
 			<File>lang/russian.xml</File>
 			<File>lang/french.xml</File>
-			<File>lang/german.xml</File>
-			<File>lang/spanish.xml</File>
 			<File>lang/japanese.xml</File>
 		</UpdateText>
 	</FrontEndActions>
@@ -96,8 +94,6 @@
 			<File>lang/korean.xml</File>
 			<File>lang/russian.xml</File>
 			<File>lang/french.xml</File>
-			<File>lang/german.xml</File>
-			<File>lang/spanish.xml</File>
 			<File>lang/japanese.xml</File>
 		</UpdateText>
 		
@@ -200,14 +196,6 @@
 				<LoadOrder>11629</LoadOrder>
 			</Properties>
 		</UpdateDatabase>
-		
-		<ReplaceUIScript id="PriorityTarget_UnitPanel" criteria="xp2">
-			<Properties>
-				<LoadOrder>9999</LoadOrder>
-				<LuaContext>UnitPanel</LuaContext>
-				<LuaReplace>exploits/UnitPanel_AirExploit.lua</LuaReplace>
-			</Properties>
-		</ReplaceUIScript>
 	</InGameActions>
 	
 	<!-- defines file dependencies -->
@@ -216,8 +204,6 @@
 		<File>lang/korean.xml</File>
 		<File>lang/russian.xml</File>
 		<File>lang/french.xml</File>
-		<File>lang/german.xml</File>
-		<File>lang/spanish.xml</File>
 		<File>lang/japanese.xml</File>
 		<File>sql/base.sql</File>
 		<File>sql/dlc_australia.sql</File>
@@ -236,6 +222,5 @@
 		<File>exploits/PantheonChooser.lua</File>
 		<File>exploits/GG_Fix.lua</File>
 		<File>exploits/Culture_Fix.lua</File>
-		<File>exploits/UnitPanel_AirExploit.lua</File>
 	</Files>
 </Mod>
