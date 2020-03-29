@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+
+		<!-- 
+		missing LOC_MILITARY_GA_BUFF_DESCRIPTION
+		has LOC_MOMENT_CATEGORY_MILITARY_BONUS_GOLDEN_AGE
+		has LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_9
+		has LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE
+		missing LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5
+		using martyr prasat LOC_BUILDING_PRASAT_DESCRIPTION
+		-->
+		<Replace Tag="LOC_PROMOTION_TRANSLATOR_DESCRIPTION" Language="fr_FR">
+			<Text>Propagation de la religion deux  fois plus forte dans les villes des autres civilisations.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_PROSELYTIZER_DESCRIPTION" Language="fr_FR">
+			<Text>La propagation de la religion élimine 50 % de la pression des autres religions de la ville cible.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_DEBATER_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Religion] Puissance religieuse +10 en combat théologique.</Text>
+		</Replace>
+
+
 		<!-- https://steamcommunity.com/workshop/filedetails/discussion/1368312893/1734342793786174547/ -->
 		
 		<!-- =============== D I R I G E A N T S === M U L T I P L E S =============== -->
@@ -535,6 +555,12 @@
 		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="fr_FR">
 			<Text>Âge d'or "Hic Sunt Dracones" : [NEWLINE][ICON_Citizen] Citoyens de départ +3 pour toutes vos nouvelles villes. [ICON_Movement] PM +2 pour les unités navales ou embarquées. Loyauté +2 par tour pour les villes ne se trouvant pas sur le continent de votre [ICON_Capital] capitale d'origine.</Text>
 		</Replace>
+		<Replace Tag="LOC_MOMENT_CATEGORY_MILITARY_BONUS_GOLDEN_AGE" Language="fr_FR">
+			<Text>Âge d'or "Aux armes !" :[NEWLINE]Débloque un casus belli spécial pouvant être utilisé immédiatement après avoir dénoncé la cible : pénalités de bellicisme -75 % par rapport à une guerre formelle. [ICON_Production] Production d'unités militaires +15 % et +10 [ICON_Strength] Puissance de Combat contre les Villes.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_9" Language="fr_FR">
+			<Text>"Aux armes !" : score d'ère +1 pour chaque régiment non barbare éliminé au combat, et +2 pour chaque armée non barbare. Choisi au début d'un âge d'or, débloque un casus belli spécial pouvant être utilisé immédiatement après avoir dénoncé la cible : pénalités de bellicisme -75 % par rapport à une guerre formelle. [ICON_Production] Production d'unités militaires +15 % et +10 [ICON_Strength] Puissance de Combat contre les Villes. De l'ère industrielle à l'ère atomique.</Text>
+		</Replace>
 		
 		<!-- =============== G O U V E R N E M E N T S =============== -->
 		
@@ -706,7 +732,7 @@
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="fr_FR">
 			<Text>Expérience au combat +50 % pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +2 dans les aérodromes. [ICON_RESOURCE_ALUMINUM] Aluminium +2 par tour. Permet le transport aérien des unités entre les aérodromes équipés d'un aéroport une fois le déploiement rapide découvert.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_DESCRIPTION" Language="fr_FR">
+		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [ICON_RESOURCE_OIL] Pétrole +2 par tour une fois qu'il est découvert. Permet la formation immédiate de régiments et d'armées. Coûts d'entraînement des régiments et des armées -25 %.</Text>
 		</Replace>
 		

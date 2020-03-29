@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+
+		<!-- missing LOC_MILITARY_GA_BUFF_DESCRIPTION -->
+		<Replace Tag="LOC_MOMENT_CATEGORY_MILITARY_BONUS_GOLDEN_AGE" Language="ru_RU">
+			<Text>К оружию! - золотой век:[NEWLINE]Дает доступ к особому поводу для войны, за который вам предъявляется на 75% претензий меньше по сравнению с официальной войной. Объявить войну можно сразу после осуждения противника. +15% [ICON_Production] производства при создании военных юнитов. Военные юниты получают +10 [ICON_Strength] против городов.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_9" Language="ru_RU">
+			<Text>К оружию!: Каждый уничтоженный в бою корпус, кроме варваров, прибавляет 1 очко к счету эпохи, а уничтоженная армия - 2 очка. Если выбрано в начале золотого века, дает доступ к особому поводу для войны, за который вам предъявляется на 75% претензий меньше по сравнению с официальной войной. Объявить войну можно сразу после осуждения противника. +15% [ICON_Production] производства при создании военных юнитов. Военные юниты получают +10 [ICON_Strength] против городов.</Text>
+		</Replace>
+		<!--<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ru_RU">
+			<Text>Монументальность Золотой Век:[NEWLINE]+2 [ICON_Movement] К передвижению для всех строителей. Открывает возможность покупать гражданские юниты за [ICON_Faith] Веру.</Text>
+		</Replace>-->
+		<!-- missing LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5 -->
+		<!-- old prasat, has martyr. new not coded -->
+		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальное здание кхмеров, которое заменяет храм. Необходимо для найма апостолов и инквизиторов за [ICON_Faith] веру. При постройке здания дает бесплатно одного миссионера. Миссионеры, нанятые в этом городе, сразу получают способность «Мученик», которая дает [ICON_GreatWork_Relic] реликвию, если юнит погибает в теологической баталии.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_TRANSLATOR_DESCRIPTION" Language="ru_RU">
+			<Text>В городах других цивилизаций религия распространяется с удвоенной силой.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_PROSELYTIZER_DESCRIPTION" Language="ru_RU">
+			<Text>Распространение религии снижает на 50% влияние других религий в выбранном городе.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_DEBATER_DESCRIPTION" Language="ru_RU">
+			<Text>+10 [ICON_Religion] к религиозной силе в теологической баталии.</Text>
+		</Replace>
+		
+
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ru_RU">
 			<Text>15% увеличение [ICON_Culture] Культуры, вырабатываемой этим городом. Религиозное влияние к соседним городам увеличено на 50%.</Text>
 		</Replace>
@@ -16,7 +43,6 @@
 		<Replace Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION' Language="ru_RU">
 			<Text>Внутренние [ICON_TradeRoute] Торговые пути к городу с Пингалой получают +3 [ICON_SCIENCE] Науки.</Text>
 		</Replace>
-
 		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="ru_RU">
 			<Text>+10 при осаде района</Text>
 		</Replace>
@@ -44,6 +70,9 @@
 		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="ru_RU">
 			<Text>Здесь живут драконы - золотой век:[NEWLINE]+3 ед. [ICON_Citizen] населения в новых городах. +2 [ICON_Movement] ОП для морских и находящихся на борту судна юнитов. +2 ед. лояльности за ход в городах на континентах, на которых нет вашей [ICON_Capital] столицы.</Text>
 		</Replace>
+		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_6" Language="ru_RU">
+			<Text>Здесь живут драконы: Каждый открытый континент или чудо природы прибавляет +3 очка к счету эпохи. Уничтожение в бою каждого морского юнита, кроме варваров, прибавляет +1 очко к счету эпохи. Если выбрано в начале золотого века, +3 ед. [ICON_Citizen] населения в новых городах. +2 [ICON_Movement] ОП для морских и находящихся на борту судна юнитов. +2 ед. лояльности за ход в городах на континентах, на которых нет вашей [ICON_Capital] столицы. Возрождение и Промышленная эра.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION" Language="ru_RU">
 			<Text>+2 [ICON_Food] пищи, +2 [ICON_Production] производства и +4 [ICON_Gold] золота от каждой [ICON_GreatWork_Relic] реликвии, [ICON_GreatWork_Artifact] артефакта и скульптурного шедевра [ICON_GreatWork_Sculpture] в дополнение к [ICON_Culture] культуре. На 50% больше очков [ICON_GreatWriter] великого писателя, [ICON_GreatArtist] великого художника, [ICON_GreatMusician] великого музыканта и [ICON_GreatMerchant] великого торговца. +100% к [ICON_PRODUCTION] производству при создании археологов. В дворце есть 5 ячеек для шедевров.</Text>
 		</Replace>
@@ -62,14 +91,11 @@
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="ru_RU">
 			<Text>+50% боевого опыта всем воздушным юнитам, созданным в этом городе. +1 ячейка для воздушных юнитов на аэродроме. После открытия технологии «Быстрое развертывание» позволяет перебрасывать наземные юниты между аэродромами, где есть аэропорты. +2 [ICON_RESOURCE_ALUMINUM] Алюминия в ход.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_DESCRIPTION" Language="ru_RU">
-			<Text>+25% боевого опыта всем наземным войскам, созданным в этом городе. Позволяет создавать сразу корпуса и армии. Стоимость подготовки корпусов и армий уменьшается на 25%. +2 [ICON_RESOURCE_OIL] Нефти в ход, если открыта.</Text>
-		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="ru_RU">
             <Text>+25% боевого опыта всем наземным войскам, созданным в этом городе. [NEWLINE]Запасы стратегических ресурсов увеличины на 10 (при стандартной скорости игры). [NEWLINE]Позволяет создавать сразу корпуса и армии. Стоимость подготовки корпусов и армий уменьшается на 25%. +2 [ICON_RESOURCE_OIL] Нефти в ход, если открыта.</Text>
         </Replace>
 		<Replace Tag="LOC_POLICY_VETERANCY_DESCRIPTION_XP2" Language="ru_RU">
-      		<Text>+30% [ICON_Production] производства при создании военных лагерей, гаваней и зданий в таких районах.</Text>
+ 			<Text>+30% [ICON_Production] производства при создании военных лагерей, гаваней и зданий в таких районах.</Text>
 		</Replace>
 		
 
@@ -128,10 +154,10 @@
 			<Text>+1 [ICON_FOOD] Пищи на каждом известном ресурсе в этом городе.</Text>
 		</Row>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_NAME" Language="ru_RU">
-			<Text>+1 [ICON_HOUSING] к Жилью и +1 [ICON_AMENITIES] к Довольству за каждый район и чудо в этом городе.</Text>
+			<Text>Первоклассное жилье</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_DESCRIPTION" Language="ru_RU">
-			<Text>+1 [ICON_HOUSING] К Жилью и +1 [ICON_AMENITIES] К Довольству за каждый район в этом городе.</Text>
+			<Text>+1 [ICON_HOUSING] к Жилью и +1 [ICON_AMENITIES] к Довольству за каждый район и чудо в этом городе.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет построить городской парк после изучения социального института «Игры и развлечения». Одна постройка на город. +3 [ICON_SCIENCE] Науки, +3 [ICON_Culture] Культуры, +3 [ICON_GOLD] Золота, +1 [ICON_HOUSING] Жилья, +1 [ICON_Amenities] Довольства, и +2 Престижа соседним клеткам.</Text>
@@ -142,9 +168,6 @@
 		<Replace Tag="LOC_BELIEF_CITY_PATRON_GODDESS_DESCRIPTION" Language="ru_RU">
 			<Text>+50% [ICON_Production] К производству районов в городах без специализированного района.</Text>
 		</Replace>
-		<!--<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ru_RU">
-			<Text>Монументальность Золотой Век:[NEWLINE]+2 [ICON_Movement] К передвижению для всех строителей. Открывает возможность покупать гражданские юниты за [ICON_Faith] Веру.</Text>
-		</Replace>-->
 
 		
 		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="ru_RU">
@@ -566,9 +589,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="ru_RU">
 			<Text>Стоимость Вашего религиозного здания в единицах [ICON_Faith] веры уменьшена в десять раз (в том числе если его приобретает другой игрок). Это религиозное здание увеличивает очки  [ICON_Science] науки, [ICON_Faith] веры и [ICON_Culture] культуры на 20% в каждом городе, где оно построено.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальное здание кхмеров, которое заменяет храм. Необходимо для найма апостолов и инквизиторов за [ICON_Faith] веру. При постройке здания дает бесплатно одного миссионера. Миссионеры, нанятые в этом городе, сразу получают способность «Мученик», которая дает [ICON_GreatWork_Relic] реликвию, если юнит погибает в теологической баталии.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="ru_RU">
 			<Text>Кхмеры получают +2 [ICON_FAITH] за международные торговые пути к своим городам и от них. Цивилизация-отправитель такого торгового пути также имеет с него +2 [ICON_FAITH] веры. +3 [ICON_FAITH] веры и +1 [ICON_AMENITIES] довольства от развлечений в каждом городе с акведуком. Фермы рядом с акведуком дают +2 [ICON_FOOD] еды.</Text>

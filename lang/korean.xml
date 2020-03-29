@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+
+		<!-- missing LOC_MILITARY_GA_BUFF_DESCRIPTION -->
+		<Replace Tag="LOC_MOMENT_CATEGORY_MILITARY_BONUS_GOLDEN_AGE" Language="ko_KR">
+			<Text>전투 준비! 황금기:[NEWLINE]공식 전쟁 선포에 비해 전쟁광 페널티를 75% 낮춰주는 특수 개전 이유가 잠금 해제되며, 대상을 공개 비난하는 즉시 사용할 수 있습니다. 군사 유닛 생성에 대한 [ICON_Production] 생산력 +15%를 제공하며, 군사 유닛이 도시를 상대로 [ICON_Strength] 전투력 +10를 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_9" Language="ko_KR">
+			<Text>전투 준비!: 전투에서 야만인이 아닌 군단을 처치할 때마다 시대 점수 +1을 얻고, 전투에서 야만인이 아닌 군대를 처치할 때마다 시대 점수 +2를 얻습니다. 황금기 시작 시점에서 선택하면 공식 전쟁 대비 전쟁광 페널티를 75% 낮추고 대상을 비난하는 즉시 사용할 수 있는 특수 개전 이유가 잠금 해제됩니다. 군사 유닛에 대한 [ICON_Production] 생산력 +15%를 제공하며, 군사 유닛이 도시를 상대로 [ICON_Strength] 전투력 +10를 획득합니다.</Text>
+		</Replace>
+		<!--<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ko_KR">
+			<Text>기념비성 황금기:[NEWLINE]모든 건설자에 [ICON_Movement] 이동력 +2를 제공합니다.[ICON_Faith] 신앙으로 민간 유닛을 구입할 수 있습니다.</Text>
+		</Replace>-->
+		<!-- missing LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5 -->
+		<!--<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ko_KR">
+			<Text>크메르 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하는 데 필요합니다. 지어질 때 무료 선교사 1명을 제공합니다. 이 도시에서 구매한 선교사는 신학 전투에서 처치되었을 때 [ICON_GreatWork_Relic] 성유물을 부여하는 순교자 능력을 얻습니다.</Text>
+		</Replace>-->
+		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ko_KR">
+            <Text>크메르 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하는 데 필요합니다. 지어질 때 무료 선교사 1명을 제공합니다. (대중 종교 필요)</Text>
+        </Replace>
+		<Replace Tag="LOC_PROMOTION_TRANSLATOR_DESCRIPTION" Language="ko_KR">
+      		<Text>다른 문명의 도시에서 종교 전파력이 2배로 증가합니다.</Text>
+    	</Replace>
+		<Replace Tag="LOC_PROMOTION_PROSELYTIZER_DESCRIPTION" Language="ko_KR">
+      		<Text>종교 전파로 목표 도시의 타 종교 영향력을 50% 제거합니다.</Text>
+    	</Replace>
+    	<Replace Tag="LOC_PROMOTION_DEBATER_DESCRIPTION" Language="ko_KR">
+      		<Text>신학 전투 시 [ICON_Religion] 신앙력 +10.</Text>
+		</Replace>
+		
+
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ko_KR">
 			<Text>도시가 생성하는 [ICON_Culture] 문화가 15% 증가하고 인근 도시에 미치는 종교 영향력이 50% 증가합니다.</Text>
 		</Replace>
@@ -16,15 +45,11 @@
 		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION' Language="ko_KR">
 			<Text>이 도시가 목적지인 국내 [ICON_TradeRoute] 교역로에서 출발 도시에 [ICON_Science] 과학 +3을 제공합니다.</Text>
 		</Row>
-
 		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="ko_KR">
-			<Text>특수지구 포위 시 +10</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="ko_KR">
-			<Text>+10 when besieging a district</Text>
+			<Text>방어 가능한 특수지구 상대시 +10</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION" Language="ko_KR">
-			<Text>검사를 대체하는 마케도니아 특유의 근접 유닛입니다. 특수지구 점령 시 [ICON_Strength] 전투력 +10를 획득합니다. 지원 보너스가 50% 추가로 부여됩니다.</Text>
+			<Text>검사를 대체하는 마케도니아 특유의 근접 유닛입니다. 방어 가능한 특수지구 상대 시 [ICON_Strength] 전투력 +10을 획득합니다. 지원 보너스가 50% 추가로 부여됩니다.</Text>
 		  </Replace>
 		<Replace Tag="LOC_PROMOTION_COMBAT_HOME_CONTINENT_DESCRIPTION" Language="ko_KR">
 			<Text>고향 대륙에서 방어시 [ICON_Strength] 전투력 +5. (루즈벨트)</Text>
@@ -47,6 +72,9 @@
 		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="ko_KR">
 			<Text>여기 용이 있다 황금기:[NEWLINE]새로 건설한 도시는 [ICON_Citizen] 인구 +3을 획득한 채 시작합니다. 해상 및 승선 유닛에 [ICON_Movement] 이동력 +2를 제공합니다. 원래 [ICON_Capital] 수도의 대륙에 없는 도시에 턴당 충성심 +2를 제공합니다.</Text>
 		</Replace>
+		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_6" Language="ko_KR">
+			<Text>여기 용이 있다: 새로운 대륙이나 자연경관을 발견할 때마다 시대 점수 +3을 얻습니다. 전투에서 야만인 외의 해상 유닛을 처치할 때마다 시대 점수 +1을 얻습니다. 황금기 시작 시점에서 선택하면 새로 건설한 도시에서 시작 [ICON_Citizen] 인구 +3을 얻습니다. 해상 및 승선한 유닛이 [ICON_Movement] 이동력 +2를 얻습니다. 원래 [ICON_Capital] 수도의 대륙에 없는 도시가 턴당 충성심 +2를 얻습니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION" Language="ko_KR">
 			<Text>각 [ICON_GreatWork_Relic] 성유물, [ICON_GreatWork_Artifact] 유물, [ICON_GreatWork_Sculpture] 조각상 걸작 예술품에서 일반적으로 받는 [ICON_Culture] 문화 외에 추가로 [ICON_Food] 식량 +2, [ICON_Production] 생산력 +2, [ICON_Gold] 금 +4가 제공됩니다. [ICON_GreatWriter] 위대한 작가, [ICON_GreatArtist] 위대한 예술가, [ICON_GreatMusician] 위대한 음악가 및 [ICON_GreatMerchant] 위대한 상인 점수를 +50% 더 받습니다. 고고학자를 생산할 때 [ICON_Production] 생산력 +100%를 제공합니다. 궁전은 걸작 슬롯 5개를 가지고 있습니다.</Text>
 		</Replace>
@@ -64,9 +92,6 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="ko_KR">
 			<Text>이 도시에서 훈련된 모든 공중 유닛이 얻는 전투 경험치가 +50% 증가합니다. 비행장 특수지구에 공중 유닛 슬롯 +2를 제공합니다. 신속한 배치 사회 제도가 잠금 해제되면, 지상 유닛을 공항이 있는 비행장 특수지구 사이에서 공수할 수 있게 됩니다. [ICON_RESOURCE_ALUMINUM] 알루미늄 자원을 발견하였다면, [ICON_RESOURCE_ALUMINUM] 알루미늄 자원을 매턴 2개씩 제공합니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_DESCRIPTION" Language="ko_KR">
-			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +25% 증가합니다. 군단 및 군대를 직접 훈련시킬 수 있습니다. 군단 및 군대 훈련 비용이 25% 감소합니다. [ICON_RESOURCE_OIL] 석유 자원을 발견하였다면, [ICON_RESOURCE_OIL] 석유 자원을 매턴 2개씩 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +25% 증가합니다.[NEWLINE]전략 자원 비축력이 +10 증가합니다(일반 속도 기준).[NEWLINE]군단 및 군대를 직접 훈련시킬 수 있습니다. 군단 및 군대 훈련 비용이 25% 감소합니다. [ICON_RESOURCE_OIL] 석유 자원을 발견하였다면, [ICON_RESOURCE_OIL] 석유 자원을 매턴 2개씩 제공합니다.</Text>
@@ -139,9 +164,6 @@
 		<Replace Tag="LOC_BELIEF_CITY_PATRON_GODDESS_DESCRIPTION" Language="ko_KR">
 			<Text>전문 특수지구가 없는 도시의 특수지구 건설에 대한 [ICON_Production] 생산력 +50%를 제공합니다.</Text>
 		</Replace>
-		<!--<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ko_KR">
-			<Text>기념비성 황금기:[NEWLINE]모든 건설자에 [ICON_Movement] 이동력 +2를 제공합니다.[ICON_Faith] 신앙으로 민간 유닛을 구입할 수 있습니다.</Text>
-		</Replace>-->
 
 		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="ko_KR">
 			<Text>해당 영토에 퍼진 다른 종교를 50% 감소시킬 수 있으며 다른 종교의 유닛과 신학 전투를 시작할 수 있습니다.</Text>
@@ -552,9 +574,6 @@
             <Text>모든 특수지구는 옆에 있는 다른 특수지구에서 기본 인접 보너스를 추가로 받습니다. 상업 중심지 특수지구는 더 이상 강으로부터 인접 보너스를 얻을 수 없습니다.</Text>
         </Replace>
 		<!-- Khmer -->
-		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ko_KR">
-			<Text>크메르 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하는 데 필요합니다. 지어질 때 무료 선교사 1명을 제공합니다. 이 도시에서 구매한 선교사는 신학 전투에서 처치되었을 때 [ICON_GreatWork_Relic] 성유물을 부여하는 순교자 능력을 얻습니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="ko_KR">
 			<Text>외국 도시와 연결된 모든 [ICON_TradeRoute] 교역로에서 양 문명 모두 [ICON_FAITH] 신앙 +2를 획득합니다. 송수로를 보유한 각 도시는 유흥에 의한 [ICON_FAITH] 신앙 +3 및 [ICON_AMENITIES] 쾌적도 +1을 제공합니다. 농장은 송수로에 인접한 경우 [ICON_FOOD] 식량 +2를 제공합니다.</Text>
 		</Replace>
