@@ -2,29 +2,23 @@
 <GameData>
 	<LocalizedText>
 
-		<!-- missing LOC_MILITARY_GA_BUFF_DESCRIPTION -->
+		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="ru_RU">
+            <Text>+10 [ICON_STRENGTH] против защищенных районов.</Text>
+        </Row>
+        <Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ru_RU">
+            <Text>Монументальность – золотой век:[NEWLINE]Все строители получают +2 [ICON_Movement] ОП. Можно покупать гражданские юниты за очки [ICON_Faith] веры. Поселенцы и строители стоят на 10% дешевле при покупке за очки [ICON_FAITH] веры и [ICON_GOLD] золото.</Text>
+        </Replace>
+        <Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5" Language="ru_RU">
+            <Text>Монументальность: Каждый построенный специализированный район прибавляет +1 очко к счету эпохи. Если выбрано в начале золотого века, Все строители получают +2 [ICON_Movement] ОП. Можно покупать гражданские юниты за очки [ICON_Faith] веры. Античность, Средневековье и Возрождение. Поселенцы и строители стоят на 10% дешевле при покупке за очки [ICON_FAITH] веры и [ICON_GOLD] золото.</Text>
+        </Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_MILITARY_BONUS_GOLDEN_AGE" Language="ru_RU">
 			<Text>К оружию! - золотой век:[NEWLINE]Дает доступ к особому поводу для войны, за который вам предъявляется на 75% претензий меньше по сравнению с официальной войной. Объявить войну можно сразу после осуждения противника. +15% [ICON_Production] производства при создании военных юнитов. Военные юниты получают +10 [ICON_Strength] против городов.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_9" Language="ru_RU">
 			<Text>К оружию!: Каждый уничтоженный в бою корпус, кроме варваров, прибавляет 1 очко к счету эпохи, а уничтоженная армия - 2 очка. Если выбрано в начале золотого века, дает доступ к особому поводу для войны, за который вам предъявляется на 75% претензий меньше по сравнению с официальной войной. Объявить войну можно сразу после осуждения противника. +15% [ICON_Production] производства при создании военных юнитов. Военные юниты получают +10 [ICON_Strength] против городов.</Text>
 		</Replace>
-		<!--<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ru_RU">
-			<Text>Монументальность Золотой Век:[NEWLINE]+2 [ICON_Movement] К передвижению для всех строителей. Открывает возможность покупать гражданские юниты за [ICON_Faith] Веру.</Text>
-		</Replace>-->
-		<!-- missing LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5 -->
-		<!-- old prasat, has martyr. new not coded -->
 		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальное здание кхмеров, которое заменяет храм. Необходимо для найма апостолов и инквизиторов за [ICON_Faith] веру. При постройке здания дает бесплатно одного миссионера. Миссионеры, нанятые в этом городе, сразу получают способность «Мученик», которая дает [ICON_GreatWork_Relic] реликвию, если юнит погибает в теологической баталии.</Text>
-		</Replace>
-		<Replace Tag="LOC_PROMOTION_TRANSLATOR_DESCRIPTION" Language="ru_RU">
-			<Text>В городах других цивилизаций религия распространяется с удвоенной силой.</Text>
-		</Replace>
-		<Replace Tag="LOC_PROMOTION_PROSELYTIZER_DESCRIPTION" Language="ru_RU">
-			<Text>Распространение религии снижает на 50% влияние других религий в выбранном городе.</Text>
-		</Replace>
-		<Replace Tag="LOC_PROMOTION_DEBATER_DESCRIPTION" Language="ru_RU">
-			<Text>+10 [ICON_Religion] к религиозной силе в теологической баталии.</Text>
 		</Replace>
 		
 

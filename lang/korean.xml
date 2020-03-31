@@ -2,34 +2,24 @@
 <GameData>
 	<LocalizedText>
 
-		<!-- missing LOC_MILITARY_GA_BUFF_DESCRIPTION -->
+		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="ko_KR">
+            <Text>방어 가능한 특수지구 상대시 [ICON_Strength] 전투력 +10.</Text>
+        </Row>
 		<Replace Tag="LOC_MOMENT_CATEGORY_MILITARY_BONUS_GOLDEN_AGE" Language="ko_KR">
 			<Text>전투 준비! 황금기:[NEWLINE]공식 전쟁 선포에 비해 전쟁광 페널티를 75% 낮춰주는 특수 개전 이유가 잠금 해제되며, 대상을 공개 비난하는 즉시 사용할 수 있습니다. 군사 유닛 생성에 대한 [ICON_Production] 생산력 +15%를 제공하며, 군사 유닛이 도시를 상대로 [ICON_Strength] 전투력 +10를 획득합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_9" Language="ko_KR">
 			<Text>전투 준비!: 전투에서 야만인이 아닌 군단을 처치할 때마다 시대 점수 +1을 얻고, 전투에서 야만인이 아닌 군대를 처치할 때마다 시대 점수 +2를 얻습니다. 황금기 시작 시점에서 선택하면 공식 전쟁 대비 전쟁광 페널티를 75% 낮추고 대상을 비난하는 즉시 사용할 수 있는 특수 개전 이유가 잠금 해제됩니다. 군사 유닛에 대한 [ICON_Production] 생산력 +15%를 제공하며, 군사 유닛이 도시를 상대로 [ICON_Strength] 전투력 +10를 획득합니다.</Text>
 		</Replace>
-		<!--<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ko_KR">
-			<Text>기념비성 황금기:[NEWLINE]모든 건설자에 [ICON_Movement] 이동력 +2를 제공합니다.[ICON_Faith] 신앙으로 민간 유닛을 구입할 수 있습니다.</Text>
-		</Replace>-->
-		<!-- missing LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5 -->
-		<!--<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ko_KR">
-			<Text>크메르 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하는 데 필요합니다. 지어질 때 무료 선교사 1명을 제공합니다. 이 도시에서 구매한 선교사는 신학 전투에서 처치되었을 때 [ICON_GreatWork_Relic] 성유물을 부여하는 순교자 능력을 얻습니다.</Text>
-		</Replace>-->
-		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ko_KR">
-            <Text>크메르 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하는 데 필요합니다. 지어질 때 무료 선교사 1명을 제공합니다. (대중 종교 필요)</Text>
+		<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ko_KR">
+            <Text>기념비성 황금기:[NEWLINE]모든 건설자에 [ICON_Movement] 이동력 +2를 제공합니다.[ICON_Faith] 신앙으로 민간 유닛을 구입할 수 있습니다. [ICON_FAITH] 신앙 및 [ICON_GOLD] 금을 통한 건설자와 개척자 구입 비용이 10% 더 낮습니다.</Text>
         </Replace>
-		<Replace Tag="LOC_PROMOTION_TRANSLATOR_DESCRIPTION" Language="ko_KR">
-      		<Text>다른 문명의 도시에서 종교 전파력이 2배로 증가합니다.</Text>
-    	</Replace>
-		<Replace Tag="LOC_PROMOTION_PROSELYTIZER_DESCRIPTION" Language="ko_KR">
-      		<Text>종교 전파로 목표 도시의 타 종교 영향력을 50% 제거합니다.</Text>
-    	</Replace>
-    	<Replace Tag="LOC_PROMOTION_DEBATER_DESCRIPTION" Language="ko_KR">
-      		<Text>신학 전투 시 [ICON_Religion] 신앙력 +10.</Text>
+		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5" Language="ko_KR">
+			<Text>기념비성: 새로운 전문 특수지구를 건설할 때마다 시대 점수 +1을 얻습니다. 황금기 시작 시점에서 선택하면 모든 건설자가 [ICON_Movement] 이동력 +2를 얻습니다. [ICON_Faith] 신앙으로 민간 유닛을 구입할 수 있습니다. 건설자 및 개척자를 [ICON_FAITH] 신앙 및 [ICON_GOLD] 금으로 구매할 경우 비용이 10% 감소합니다.</Text>
+		  </Replace>
+		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ko_KR">
+			<Text>크메르 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하는 데 필요합니다. 지어질 때 무료 선교사 1명을 제공합니다. 이 도시에서 구매한 선교사는 신학 전투에서 처치되었을 때 [ICON_GreatWork_Relic] 성유물을 부여하는 순교자 능력을 얻습니다.</Text>
 		</Replace>
-		
-
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ko_KR">
 			<Text>도시가 생성하는 [ICON_Culture] 문화가 15% 증가하고 인근 도시에 미치는 종교 영향력이 50% 증가합니다.</Text>
 		</Replace>

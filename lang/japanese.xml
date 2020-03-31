@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-
-		<!--<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ja_JP">
-			<Text>不朽（黄金時代）:[NEWLINE]労働者の[ICON_Movement]移動力+2。[ICON_Faith]信仰力で文民ユニットを購入できるようになる。</Text>
-	  	</Replace>		
+		
 	  	<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="ja_JP">
-		  	<Text>不朽（黄金時代）:[NEWLINE]すべての労働者の[ICON_Movement]移動力+2。文民ユニットを[ICON_Faith]信仰力で購入できるようになる。労働者と開拓者の購入コストが[ICON_FAITH]信仰力および[ICON_GOLD]ゴールドのどちらにおいても-20%。</Text>
-	  	</Replace>-->
+		  	<Text>不朽（黄金時代）:[NEWLINE]すべての労働者の[ICON_Movement]移動力+2。文民ユニットを[ICON_Faith]信仰力で購入できるようになる。労働者と開拓者の購入コストが[ICON_FAITH]信仰力および[ICON_GOLD]ゴールドのどちらにおいても-10%。</Text>
+	  	</Replace>
 
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ja_JP">
       		<Text>この都市が産出する[ICON_Culture]文化力+15%。この年が近隣の都市に与える宗教的圧力+100%。</Text>

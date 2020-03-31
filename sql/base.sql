@@ -14,7 +14,7 @@ INSERT INTO UnitReplaces VALUES ('UNIT_AMERICAN_ROUGH_RIDER' , 'UNIT_CAVALRY');
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='ROUGH_RIDER_BONUS_ON_HILLS';
 -- Continent combat bonus: +5 attack on foreign continent, +5 defense on home continent
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
-	('TRAIT_COMBAT_BONUS_FOREIGN_CONTINENT_BBG',    'MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER', NULL),
+	('TRAIT_COMBAT_BONUS_FOREIGN_CONTINENT_BBG',    'MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER', 'UNIT_IS_DOMAIN_LAND'),
 	('COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('TRAIT_COMBAT_BONUS_FOREIGN_CONTINENT_BBG', 'ModifierId', 'COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG'),
@@ -26,8 +26,7 @@ INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
 	('REQUIREMENTS_UNIT_ON_HOME_CONTINENT',    'PLAYER_IS_DEFENDER_REQUIREMENTS'),
 	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'PLAYER_IS_ATTACKER_REQUIREMENTS'),
-	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIRES_UNIT_ON_FOREIGN_CONTINENT_BBG'),
-	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIRES_LAND_DOMAIN');
+	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIRES_UNIT_ON_FOREIGN_CONTINENT_BBG');
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
 	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENTSET_TEST_ALL');
 INSERT INTO Requirements (RequirementId, RequirementType, Inverse) VALUES
@@ -1062,20 +1061,20 @@ INSERT INTO PolicyModifiers (PolicyType , ModifierId)
 --==============================================================
 --******				R E L I G I O N					  ******
 --==============================================================
-UPDATE UnitCommands SET VisibleInUI=0 WHERE CommandType='UNITCOMMAND_CONDEMN_HERETIC';
+/*UPDATE UnitCommands SET VisibleInUI=0 WHERE CommandType='UNITCOMMAND_CONDEMN_HERETIC';
 UPDATE Map_GreatPersonClasses SET MaxWorldInstances=6 WHERE MapSizeType='MAPSIZE_STANDARD';
 UPDATE Map_GreatPersonClasses SET MaxWorldInstances=8 WHERE MapSizeType='MAPSIZE_LARGE';
 UPDATE Map_GreatPersonClasses SET MaxWorldInstances=9 WHERE MapSizeType='MAPSIZE_HUGE';
 UPDATE Units SET BaseSightRange=1 WHERE UnitType='UNIT_MISSIONARY';
 -- remove marytr ability from prasat missionaries
-DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_PRASAT' AND ModifierId='PRASAT_GRANT_MARTYR';
+DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_PRASAT' AND ModifierId='PRASAT_GRANT_MARTYR'; --DLC
 -- reduce debator promotion
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='APOSTLE_DEBATER' AND Name='Amount';
 UPDATE ModifierArguments SET Value='100' WHERE ModifierId='APOSTLE_FOREIGN_SPREAD' AND Name='Amount';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='APOSTLE_EVICT_ALL' AND Name='Amount';
 -- remove spread from condemning and defeating
 UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_COMBAT_VICTORY';
-UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_UNIT_CAPTURE';
+UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_UNIT_CAPTURE';*/
 
 -- give monks wall breaker ability
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES

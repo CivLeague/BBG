@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-
-		<!-- 
-		missing LOC_MILITARY_GA_BUFF_DESCRIPTION
-		has LOC_MOMENT_CATEGORY_MILITARY_BONUS_GOLDEN_AGE
-		has LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_9
-		has LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE
-		missing LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5
-		using martyr prasat LOC_BUILDING_PRASAT_DESCRIPTION
-		-->
-		<Replace Tag="LOC_PROMOTION_TRANSLATOR_DESCRIPTION" Language="fr_FR">
-			<Text>Propagation de la religion deux  fois plus forte dans les villes des autres civilisations.</Text>
-		</Replace>
-		<Replace Tag="LOC_PROMOTION_PROSELYTIZER_DESCRIPTION" Language="fr_FR">
-			<Text>La propagation de la religion élimine 50 % de la pression des autres religions de la ville cible.</Text>
-		</Replace>
-		<Replace Tag="LOC_PROMOTION_DEBATER_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Religion] Puissance religieuse +10 en combat théologique.</Text>
-		</Replace>
-
-
+	
 		<!-- https://steamcommunity.com/workshop/filedetails/discussion/1368312893/1734342793786174547/ -->
 		
 		<!-- =============== D I R I G E A N T S === M U L T I P L E S =============== -->
@@ -549,9 +530,6 @@
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_3" Language="fr_FR">
 			<Text>"Le stylo, le pinceau et la voix" : score d'ère +1 chaque fois que vous déclenchez une [ICON_CivicBoosted] inspiration, et +1 pour chaque bâtiment construit possédant un emplacement de chef-d'œuvre. Choisi au début d'un âge d'or, les [ICON_CivicBoosted] inspirations fournissent 10% en plus vers l'obtention des dogmes. [ICON_Culture] Culture +2 et [ICON_Gold] or +1 pour chaque quartier spécialisé dans toutes les villes.</Text>
 		</Replace>
-		<!--<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="fr_FR">
-			<Text>Âge d'or "Monumentalité" :[NEWLINE][ICON_Movement] PM +2 pour tous les bâtisseurs. Permet d'acheter des unités civiles avec de la [ICON_Faith] foi.</Text>
-		</Replace>-->
 		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="fr_FR">
 			<Text>Âge d'or "Hic Sunt Dracones" : [NEWLINE][ICON_Citizen] Citoyens de départ +3 pour toutes vos nouvelles villes. [ICON_Movement] PM +2 pour les unités navales ou embarquées. Loyauté +2 par tour pour les villes ne se trouvant pas sur le continent de votre [ICON_Capital] capitale d'origine.</Text>
 		</Replace>
@@ -561,6 +539,12 @@
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_9" Language="fr_FR">
 			<Text>"Aux armes !" : score d'ère +1 pour chaque régiment non barbare éliminé au combat, et +2 pour chaque armée non barbare. Choisi au début d'un âge d'or, débloque un casus belli spécial pouvant être utilisé immédiatement après avoir dénoncé la cible : pénalités de bellicisme -75 % par rapport à une guerre formelle. [ICON_Production] Production d'unités militaires +15 % et +10 [ICON_Strength] Puissance de Combat contre les Villes. De l'ère industrielle à l'ère atomique.</Text>
 		</Replace>
+		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="fr_FR">
+            <Text>+10 [ICON_STRENGTH] Puissance de Combat contre les quartiers défendables.</Text>
+        </Row>
+        <Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5" Language="fr_FR">
+			<Text>"Monumentalité" : score d'ère +1 chaque fois que vous construisez un nouveau quartier spécialisé. Choisi au début d'un âge d'or, [ICON_Movement] PM +2 pour tous les bâtisseurs. Permet d'acheter des unités civiles avec de la [ICON_Faith] foi. Le coût en [ICON_FAITH] foi et en [ICON_GOLD] or des bâtisseurs et des colons est réduit de 10 %. De l'ère classique à la Renaissance.</Text>
+        </Replace>
 		
 		<!-- =============== G O U V E R N E M E N T S =============== -->
 		

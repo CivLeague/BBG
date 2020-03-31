@@ -245,7 +245,7 @@ UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_NATIONALISM_REQUIREMENT
 --******			  D E D I C A T I O N S				  ******
 --==============================================================
 -- To Arms +10 vs cities
-/*INSERT INTO CommemorationModifiers (CommemorationType, ModifierId)
+INSERT INTO CommemorationModifiers (CommemorationType, ModifierId)
     VALUES ('COMMEMORATION_MILITARY', 'COMMEMORATION_MILITARY_GA_ATTACK_CITIES');
 INSERT INTO Modifiers (ModifierId , ModifierType , OwnerRequirementSetId)
     VALUES ('COMMEMORATION_MILITARY_GA_ATTACK_CITIES' , 'MODIFIER_PLAYER_UNITS_GRANT_ABILITY' , 'PLAYER_HAS_GOLDEN_AGE');
@@ -278,12 +278,12 @@ INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('MOD_MILITARY_GA_BUFF', 'Amount', '10');
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES
-('MOD_MILITARY_GA_BUFF', 'Preview', 'LOC_MILITARY_GA_BUFF_DESCRIPTION');*/
+('MOD_MILITARY_GA_BUFF', 'Preview', 'LOC_MILITARY_GA_BUFF_DESCRIPTION');
 -- Sic Hunt Dracones works on all new cities, not just diff continent
 UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_CITIES_ADD_POPULATION', NewOnly=1, Permanent=1 WHERE ModifierId='COMMEMORATION_EXPLORATION_GA_NEW_CITY_POPULATION';
--- Monumentality discount reduced from 30% to 0%
---UPDATE ModifierArguments SET Value='0' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_BUILDER_DISCOUNT_MODIFIER' AND Name='Amount';
---UPDATE ModifierArguments SET Value='0' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_SETTLER_DISCOUNT_MODIFIER' AND Name='Amount';
+-- Monumentality discount reduced from 30% to 10%
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_BUILDER_DISCOUNT_MODIFIER' AND Name='Amount';
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='COMMEMORATION_INFRASTRUCTURE_SETTLER_DISCOUNT_MODIFIER' AND Name='Amount';
 -- Pen and Brush gives +2 Culture and +1 Gold per District
 INSERT INTO Modifiers (ModifierId , ModifierType , OwnerRequirementSetId)
     VALUES ('COMMEMORATION_CULTURAL_DISTRICTGOLD' , 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_DISTRICT' , 'PLAYER_HAS_GOLDEN_AGE');
