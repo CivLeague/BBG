@@ -542,6 +542,9 @@
 		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="fr_FR">
             <Text>+10 [ICON_STRENGTH] Puissance de Combat contre les quartiers défendables.</Text>
         </Row>
+		<Replace Tag="LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE" Language="fr_FR">
+			<Text>Âge d'or "Monumentalité" :[NEWLINE][ICON_Movement] PM +2 pour tous les bâtisseurs. Permet d'acheter des unités civiles avec de la [ICON_Faith] foi. Le coût en [ICON_FAITH] foi et en [ICON_GOLD] or des bâtisseurs et des colons est réduit de 10 %.</Text>
+		</Replace>
         <Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5" Language="fr_FR">
 			<Text>"Monumentalité" : score d'ère +1 chaque fois que vous construisez un nouveau quartier spécialisé. Choisi au début d'un âge d'or, [ICON_Movement] PM +2 pour tous les bâtisseurs. Permet d'acheter des unités civiles avec de la [ICON_Faith] foi. Le coût en [ICON_FAITH] foi et en [ICON_GOLD] or des bâtisseurs et des colons est réduit de 10 %. De l'ère classique à la Renaissance.</Text>
         </Replace>
