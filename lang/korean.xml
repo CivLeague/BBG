@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+        <Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="ko_KR">
+            <Text>만리장성 시설 인접 보너스 [ICON_Culture] 문화를 제공합니다. 프랑스로 플레이하는 경우 스파이를 무료로 얻습니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_BUILDING_SHOPPING_MALL_DESCRIPTION" Language="ko_KR">
+            <Text>[ICON_Tourism] 관광 +6을 획득합니다. 도시에 여러 개의 주택가가 있는 경우에도 도시에 1회만 건설할 수 있습니다.</Text>
+        </Replace>
+		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ko_KR">
+            <Text>사원을 대체하는 크메르 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하는 데 필요합니다. 지어질 때 무료 선교사 1명을 제공합니다. (종교 창시 필요)</Text>
+        </Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ko_KR">
+            <Text>성지를 강에 배치할 경우 [ICON_FOOD] 식량 +2, [ICON_FAITH] 신앙 +2 및 [ICON_HOUSING] 주거공간 +1을 제공합니다. 성지는 문화 폭탄을 유발합니다.</Text>
+        </Replace>
 
 		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="ko_KR">
             <Text>방어 가능한 특수지구 상대시 [ICON_Strength] 전투력 +10.</Text>
