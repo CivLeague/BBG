@@ -71,7 +71,6 @@
 			<File>lang/korean.xml</File>
 			<File>lang/russian.xml</File>
 			<File>lang/french.xml</File>
-			<File>lang/japanese.xml</File>
 		</UpdateText>
 	</FrontEndActions>
 
@@ -94,7 +93,6 @@
 			<File>lang/korean.xml</File>
 			<File>lang/russian.xml</File>
 			<File>lang/french.xml</File>
-			<File>lang/japanese.xml</File>
 		</UpdateText>
 		
 		<UpdateDatabase id="bbg_base_db_updates">
@@ -204,7 +202,6 @@
 		<File>lang/korean.xml</File>
 		<File>lang/russian.xml</File>
 		<File>lang/french.xml</File>
-		<File>lang/japanese.xml</File>
 		<File>sql/base.sql</File>
 		<File>sql/dlc_australia.sql</File>
 		<File>sql/dlc_aztec.sql</File>
