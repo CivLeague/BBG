@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-
+		<!--<Remove Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="en_US">-->
+		<Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="en_US">
+			<Text>Bonus [ICON_Culture] Culture for the Great Wall improvement for adjacency. Gain a free Spy if playing as France.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SHOPPING_MALL_DESCRIPTION" Language="en_US">
+			<Text>+6 [ICON_Tourism] Tourism. Can only be built once in a city, even if the city has multiple Neighborhoods.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="en_US">
+			<Text>A building unique to Khmer that replace the Temple. Grants a free Missionary when built (if a Religion has been founded). Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith.</Text>
+		</Replace>		
+		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="en_US">
+			<Text>Holy Sites provide +2 [ICON_FOOD] Food, +2 [ICON_FAITH] Faith as adjacency, and +1 [ICON_HOUSING] Housing if placed on a river. Holy Sites trigger a Culture Bomb.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_Science] Science for every 3 followers of this Religion in other civilizations.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_TITHE_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_Gold] Gold for every 3 followers of this Religion.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_WORLD_CHURCH_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_Culture] Culture for every 3 followers of this Religion in other civilizations.</Text>
+		</Replace>
+				
 		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="en_US">
 			<Text>+10 [ICON_STRENGTH] against defensible districts.</Text>
 		</Row>
@@ -226,9 +248,6 @@
 		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="en_US">
 			<Text>Khmer unique Classical Era Siege unit that replaces the Catapult and is stronger than the Catapult, both offensively and defensively. Domreys can shoot in the same turn that they move and also exert zone of control.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="en_US">
-			<Text>Happy cities receive an +10% [ICON_SCIENCE] Science and +10% [ICON_PRODUCTION] Production, while Ecstatic cities recieve an additional +5%, for a total of +15%. Happy cities generate +1 [ICON_GreatScientist] Great Scientist point per Campus and +1 [ICON_GreatEngineer] Great Engineer point per Industrial Zone. Ecstatic cities double those Great Person Point amounts.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_FALLBABYLON_COMBAT_BONUS_DESCRIPTION" Language="en_US">
 			<Text>+{1_Value} when attacking</Text>
 		</Replace>
@@ -276,9 +295,6 @@
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_LAVRA_DESCRIPTION" Language="en_US">
 			<Text>A district unique to Russia for religious activity. Replaces the Holy Site district and is cheaper to build.[NEWLINE][NEWLINE]Accrues [ICON_GREATWRITER] Great Writer, [ICON_GREATArtist] Great Artist, and [ICON_GREATMusician] Great Musician Points in cities with a Theater Square. Your city border grows by one tile each time a Great Person is expended in this city.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="en_US">
-			<Text>+100% [ICON_PRODUCTION] Production to Aqueducts. Holy Sites provide +2 [ICON_FOOD] Food, +2 [ICON_FAITH] Faith, and +1 [ICON_HOUSING] Housing if placed on a river. Holy Sites trigger a Culture Bomb.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="en_US">
 			<Text>Improvement that unlocks with Masonry and must be built on Desert, Desert Hills, Floodplains, Plains, or Grassland. +1 [ICON_Faith] Faith. Receives additional yields from adjacent districts. +2 [ICON_Food] Food if adjacent to a city center. For all other districts that award adjacency bonuses: +2 of the appropriate yield if that district is adjacent.</Text>
@@ -652,20 +668,11 @@
 		<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="en_US">
 			<Text>Religion spreads to cities 40% further away.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_Science] Science for every 2 followers of this Religion in other civilizations.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_Amenities] Amenity in cities with a specialty district.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_COMMUNITY_DESCRIPTION" Language="en_US">
 			<Text>Holy Site Districts, Shrines, and Temples each provide +1 [ICON_Housing] Housing.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_TITHE_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_Gold] Gold for every 2 followers of this Religion.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_WORLD_CHURCH_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_Culture] Culture for every 2 followers of this Religion in other civilizations.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="en_US">
 			<Text>+15% [ICON_Production] Production towards wonders.</Text>

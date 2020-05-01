@@ -44,7 +44,7 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	('NATIONAL_PARK_PROD_YIELDS_CPLMOD'    , 'YieldType' , 'YIELD_PRODUCTION'),
 	('NATIONAL_PARK_PROD_YIELDS_CPLMOD'    , 'Amount'    , '8'               );
 -- Hockey rink at Civil Service
-UPDATE Improvements SET PrereqCivic='CIVIC_CIVIL_SERVICE' WHERE ImprovementType='IMPROVEMENT_ICE_HOCKEY_RINK';
+UPDATE Improvements SET PrereqCivic='CIVIC_DIPLOMATIC_SERVICE' WHERE ImprovementType='IMPROVEMENT_ICE_HOCKEY_RINK';
 -- Mounties get a base combat buff and combat buff from nearby parks radius increased
 UPDATE Units SET Combat=70 , Cost=360 WHERE UnitType='UNIT_CANADA_MOUNTIE';
 UPDATE RequirementArguments SET Value='4' WHERE RequirementId='UNIT_PARK_REQUIREMENT'       AND Name='MaxDistance';
@@ -136,6 +136,9 @@ UPDATE Units_XP2 SET ResourceCost=10 WHERE UnitType='UNIT_KONGO_SHIELD_BEARER';
 --==================
 -- Maori
 --==================
+UPDATE Modifiers SET SubjectRequirementSetId='UNIT_IS_DOMAIN_LAND' WHERE ModifierId='TRAIT_MAORI_MANA_OCEAN';
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES 
+	('VARU_ADJACENT_AT_WAR_REQUIREMENTS', 'REQUIRES_UNIT_IS_DOMAIN_LAND');
 UPDATE Units SET Maintenance=2, Combat=40 WHERE UnitType='UNIT_MAORI_TOA';
 
 
@@ -170,6 +173,16 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra , SecondExtra)
 	('NOBEL_PRIZE_UNIVERISTY_BOOST' , 'Amount'       , '50'                  , null , null),
 	('NOBEL_PRIZE_FACTORY_BOOST'    , 'BuildingType' , 'BUILDING_FACTORY'    , null , null),
 	('NOBEL_PRIZE_FACTORY_BOOST'    , 'Amount'       , '50'                  , null , null);
+
+
+
+--==============================================================
+--******				  BUILDINGS						  ******
+--==============================================================
+UPDATE Building_YieldChanges SET YieldChange=6 WHERE BuildingType='BUILDING_FOSSIL_FUEL_POWER_PLANT' AND YieldType='YIELD_PRODUCTION';
+UPDATE Building_YieldChanges SET YieldChange=8 WHERE BuildingType='BUILDING_POWER_PLANT' AND YieldType='YIELD_PRODUCTION';
+UPDATE Building_YieldChanges SET YieldChange=6 WHERE BuildingType='BUILDING_POWER_PLANT' AND YieldType='YIELD_SCIENCE';
+
 
 
 --==============================================================
@@ -237,6 +250,8 @@ UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_INCA' A
 --==============================================================
 --******			  U N I T S  (NON-UNIQUE)			  ******
 --==============================================================
+UPDATE Units_XP2 SET ResourceMaintenanceAmount=2 WHERE UnitType='UNIT_GIANT_DEATH_ROBOT';
+UPDATE Units_XP2 SET ResourceMaintenanceAmount=0, ResourceCost=0, ResourceMaintenanceType=NULL WHERE UnitType='UNIT_HELICOPTER';
 UPDATE Units SET Cost=200 WHERE UnitType='UNIT_KNIGHT';
 UPDATE Units SET Cost=180 WHERE UnitType='UNIT_COURSER';
 UPDATE Units SET StrategicResource='RESOURCE_NITER' WHERE UnitType='UNIT_INFANTRY';
@@ -306,6 +321,8 @@ INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('ALUM_FROM_AIRPORT_BBG', 'ResourceType', 'RESOURCE_ALUMINUM'),
 	('ALUM_FROM_AIRPORT_BBG', 'Amount', '2');
+-- Military Engineers get tunnels at military science
+UPDATE Improvements SET PrereqTech='TECH_MILITARY_SCIENCE' WHERE ImprovementType='IMPROVEMENT_MOUNTAIN_TUNNEL';
 -- Military Engineers can build roads without using charges
 UPDATE Routes_XP2 SET BuildWithUnitChargeCost=0 WHERE RouteType='ROUTE_ANCIENT_ROAD';
 UPDATE Routes_XP2 SET BuildWithUnitChargeCost=0 WHERE RouteType='ROUTE_INDUSTRIAL_ROAD';

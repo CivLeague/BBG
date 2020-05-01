@@ -9,7 +9,8 @@ UPDATE Units SET Combat=28, Bombard=40, Cost=140, Maintenance=2, PrereqTech='TEC
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_BOMBARD' WHERE Unit='UNIT_KHMER_DOMREY';
 INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType)
 	VALUES ('UNIT_KHMER_DOMREY', 'UNIT_CATAPULT');
--- Prasat gives a free Missionary when built
+-- Prasat gives a free Missionary when built instead of giving martyr ability to them
+DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_PRASAT' AND ModifierId='PRASAT_GRANT_MARTYR';
 INSERT INTO Modifiers (ModifierId , ModifierType , RunOnce , Permanent)
     VALUES ('PRASAT_GRANT_MISSIONARY_CPLMOD' , 'MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY' , 1 , 1);
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
@@ -56,17 +57,6 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD' , 'YieldType' , 'YIELD_FAITH');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('TRAIT_HOLY_SITE_RIVER_FAITH_CPLMOD' , 'Description' , 'LOC_DISTRICT_HOLY_SITE_RIVER_FAITH');
--- +100% production to aquaducts
-INSERT INTO TraitModifiers (TraitType , ModifierId)
-	VALUES
-	('TRAIT_LEADER_MONASTERIES_KING' , 'TRAIT_BOOST_AQUEDUCT_PRODUCTION_CPLMOD');
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId , OwnerRequirementSetId)
-	VALUES
-	('TRAIT_BOOST_AQUEDUCT_PRODUCTION_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION' , NULL , NULL);
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES
-	('TRAIT_BOOST_AQUEDUCT_PRODUCTION_CPLMOD' , 'DistrictType' , 'DISTRICT_AQUEDUCT' ),
-	('TRAIT_BOOST_AQUEDUCT_PRODUCTION_CPLMOD' , 'Amount'       , '100'               );
 
 
 --==============================================================

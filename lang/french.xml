@@ -429,10 +429,10 @@
 			<Text>[ICON_Housing] Habitations +1 pour les lieux saint, les autels et les temples.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Gold] Or +1 par groupe de 2 fidèles de cette religion.</Text>
+			<Text>[ICON_Gold] Or +1 par groupe de 3 fidèles de cette religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_WORLD_CHURCH_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Culture] Culture +1 par groupe de 2 fidèles de cette religion dans d'autres civilisations.</Text>
+			<Text>[ICON_Culture] Culture +1 par groupe de 3 fidèles de cette religion dans d'autres civilisations.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_PILGRIMAGE_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Faith] Foi +3 pour chaque ville convertie à cette religion dans d'autres civilisations et cités-états.</Text>
@@ -453,7 +453,7 @@
 			<Text>La religion se propage aux villes 40 % plus éloignées.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Science] Science +1 par groupe de 2 fidèles de cette religion dans d'autres civilisations.</Text>
+			<Text>[ICON_Science] Science +1 par groupe de 3 fidèles de cette religion dans d'autres civilisations.</Text>
 		</Replace>
 		
 		<!-- =============== M E R V E I L L E S === N A T U R E L L E S =============== -->

@@ -611,6 +611,18 @@ INSERT INTO Improvement_BonusYieldChanges (ImprovementType, YieldType, BonusYiel
 
 
 --==============================================================
+--******				B U I L D I N G S			  	  ******
+--==============================================================
+UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_BARRACKS';
+UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_STABLE';
+UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_BASILIKOI_PAIDES';
+UPDATE Building_GreatPersonPoints SET PointsPerTurn=2 WHERE BuildingType='BUILDING_ARMORY';
+UPDATE Building_GreatPersonPoints SET PointsPerTurn=2 WHERE BuildingType='BUILDING_MILITARY_ACADEMY';
+UPDATE Building_GreatPersonPoints SET PointsPerTurn=3 WHERE BuildingType='BUILDING_SEAPORT';
+
+
+
+--==============================================================
 --******			  C I T Y - S T A T E S				  ******
 --==============================================================
 -- nan-modal culture per district no longer applies to city center or wonders
@@ -659,8 +671,8 @@ UPDATE ModifierArguments SET Value='50' WHERE ModifierId='ENVIRONMENTALISM_BOOST
 UPDATE GlobalParameters SET Value='5' WHERE Name='TOURISM_BASE_FROM_WONDER';
 -- Reduce amount of tourism needed for foreign tourist from 200 to 150
 UPDATE GlobalParameters SET Value='150' WHERE Name='TOURISM_TOURISM_TO_MOVE_CITIZEN';
--- no longer have to wait any number of turns to move greatworks between cities
-UPDATE GlobalParameters SET Value='0' WHERE Name='GREATWORK_ART_LOCK_TIME';
+-- lower number of turns to move greatworks between cities
+UPDATE GlobalParameters SET Value='2' WHERE Name='GREATWORK_ART_LOCK_TIME';
 -- relics give 4 tourism instead of 8
 UPDATE GreatWorks SET Tourism=4 WHERE GreatWorkObjectType='GREATWORKOBJECT_RELIC';
 --
@@ -1099,14 +1111,14 @@ UPDATE ModifierArguments SET Value='2' WHERE ModifierId='LAY_MINISTRY_CULTURE_DI
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='LAY_MINISTRY_FAITH_DISTRICTS_MODIFIER' AND Name='Amount';
 -- Itinerant Preachers now causes a Religion to spread 40% father away instead of only 30%
 UPDATE ModifierArguments SET Value='4' WHERE ModifierId='ITINERANT_PREACHERS_SPREAD_DISTANCE';
--- Cross-Cultural Dialogue is now +1 Science for every 2 foreign followers
-UPDATE ModifierArguments SET Value='2' WHERE ModifierId='CROSS_CULTURAL_DIALOGUE_SCIENCE_FOREIGN_FOLLOWER_MODIFIER' AND Name='PerXItems';
+-- Cross-Cultural Dialogue is now +1 Science for every 3 foreign followers
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='CROSS_CULTURAL_DIALOGUE_SCIENCE_FOREIGN_FOLLOWER_MODIFIER' AND Name='PerXItems';
 -- Pilgrimmage now gives 3 Faith instead of 2 for each foreign city converted
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='PILGRIMAGE_FAITH_FOREIGN_CITY_MODIFIER' AND Name='Amount';
--- Tithe is now +1 Gold for every 2 followers
-UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TITHE_GOLD_FOLLOWER_MODIFIER' AND Name='PerXItems';
--- World Church is now +1 Culture for every 2 foreign followers
-UPDATE ModifierArguments SET Value='2' WHERE ModifierId='WORLD_CHURCH_CULTURE_FOREIGN_FOLLOWER_MODIFIER' AND Name='PerXItems';
+-- Tithe is now +1 Gold for every 3 followers
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='TITHE_GOLD_FOLLOWER_MODIFIER' AND Name='PerXItems';
+-- World Church is now +1 Culture for every 3 foreign followers
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='WORLD_CHURCH_CULTURE_FOREIGN_FOLLOWER_MODIFIER' AND Name='PerXItems';
 -- Zen Meditation now only requires 1 District to get the +1 Amentity
 UPDATE RequirementArguments SET Value='1' WHERE RequirementId='REQUIRES_CITY_HAS_2_SPECIALTY_DISTRICTS' AND Name='Amount';
 -- Religious Communities now gives +1 Housing to Holy Sites, like it does for Shines and Temples
@@ -1246,12 +1258,14 @@ INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ARROW_STO
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ARROW_STORM_ALL_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
 UPDATE Modifiers SET SubjectRequirementSetId='ARROW_STORM_ALL_REQUIREMENTS' WHERE ModifierId='ARROW_STORM_BONUS_VS_LAND_AND_SEA_UNITS';
 
+
+
 --==============================================================
 --******					W A L L S					  ******
 --==============================================================
-UPDATE Buildings SET OuterDefenseHitPoints=75 WHERE BuildingType = 'BUILDING_WALLS';
-UPDATE Buildings SET OuterDefenseHitPoints=75 WHERE BuildingType = 'BUILDING_STAR_FORT';
-UPDATE Buildings SET OuterDefenseHitPoints=75 WHERE BuildingType = 'BUILDING_CASTLE';
+UPDATE Buildings SET OuterDefenseHitPoints=75, Cost=100 WHERE BuildingType='BUILDING_WALLS';
+UPDATE Buildings SET OuterDefenseHitPoints=75, Cost=200 WHERE BuildingType='BUILDING_CASTLE';
+UPDATE Buildings SET OuterDefenseHitPoints=75 WHERE BuildingType='BUILDING_STAR_FORT';
 UPDATE ModifierArguments SET Value='300' WHERE ModifierId='STEEL_UNLOCK_URBAN_DEFENSES';
 
 
@@ -1259,6 +1273,18 @@ UPDATE ModifierArguments SET Value='300' WHERE ModifierId='STEEL_UNLOCK_URBAN_DE
 --==============================================================
 --******			W O N D E R S  (MAN-MADE)			  ******
 --==============================================================
+-- Huey gives +2 culture to lake tiles
+INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+	VALUES ('BUILDING_HUEY_TEOCALLI', 'HUEY_LAKE_CULTURE');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
+	VALUES
+	('HUEY_LAKE_CULTURE', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'FOODHUEY_PLAYER_REQUIREMENTS'),
+	('HUEY_LAKE_CULTURE_MODIFIER', 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD', 'FOODHUEY_PLOT_IS_LAKE_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+	VALUES
+	('HUEY_LAKE_CULTURE', 'ModifierId', 'HUEY_LAKE_CULTURE_MODIFIER'),
+	('HUEY_LAKE_CULTURE_MODIFIER', 'Amount', '2'),
+	('HUEY_LAKE_CULTURE_MODIFIER', 'YieldType', 'YIELD_CULTURE');
 -- cristo gets 1 relic
 INSERT INTO Modifiers (ModifierId , ModifierType , RunOnce , Permanent)
 	VALUES ('WONDER_GRANT_RELIC_BBG' , 'MODIFIER_PLAYER_GRANT_RELIC' , 1 , 1);	
@@ -1648,10 +1674,9 @@ INSERT INTO Feature_AdjacentYields (FeatureType, YieldType, YieldChange)
 -- oil can be found on flat plains
 INSERT INTO Resource_ValidTerrains (ResourceType, TerrainType)
 	VALUES ('RESOURCE_OIL', 'TERRAIN_PLAINS');
--- incense +1 food and +1 food
+-- incense +1 food
 INSERT INTO Resource_YieldChanges (ResourceType, YieldType, YieldChange)
 	VALUES ('RESOURCE_INCENSE', 'YIELD_FOOD', 1);
-UPDATE Resource_YieldChanges SET YieldChange=2 WHERE ResourceType='RESOURCE_INCENSE' AND YieldType='YIELD_FAITH';
 -- add 1 production to fishing boat improvement
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_FISHING_BOATS' AND YieldType='YIELD_PRODUCTION';
 

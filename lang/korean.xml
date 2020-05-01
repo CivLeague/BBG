@@ -649,7 +649,7 @@
 			<Text>종교의 전파 거리가 40% 증가합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION" Language="ko_KR">
-			<Text>다른 문명에서 이 종교를 믿는 신자 2명마다 [ICON_Science] 과학 +1을 제공합니다.</Text>
+			<Text>다른 문명에서 이 종교를 믿는 신자 3명마다 [ICON_Science] 과학 +1을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="ko_KR">
 			<Text>전문 특수지구를 보유한 도시에 [ICON_Amenities] 쾌적도 +1을 제공합니다.</Text>
@@ -658,10 +658,10 @@
 			<Text>성지 특수지구 및 성소와 사원에서 [ICON_Housing] 주거공간 +1을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_DESCRIPTION" Language="ko_KR">
-			<Text>이 종교의 신자 2명마다 [ICON_Gold] 금 +1을 제공합니다.</Text>
+			<Text>이 종교의 신자 3명마다 [ICON_Gold] 금 +1을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_WORLD_CHURCH_DESCRIPTION" Language="ko_KR">
-			<Text>다른 문명에서 이 종교를 믿는 신자 2명마다 [ICON_Culture] 문화 +1을 제공합니다.</Text>
+			<Text>다른 문명에서 이 종교를 믿는 신자 3명마다 [ICON_Culture] 문화 +1을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="ko_KR">
 			<Text>불가사의 건설에 대한 [ICON_Production] 생산력 +15%를 제공합니다.</Text>

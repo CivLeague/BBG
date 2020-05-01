@@ -6,6 +6,7 @@
 -- Cree
 --==================
 UPDATE UnitAbilityModifiers SET ModifierId='RANGER_IGNORE_FOREST_MOVEMENT_PENALTY' WHERE UnitAbilityType='ABILITY_CREE_OKIHTCITAW';
+UPDATE UnitUpgrades SET UpgradeUnit='UNIT_SKIRMISHER' WHERE Unit='UNIT_CREE_OKIHTCITAW';
 
 
 --==================
@@ -142,10 +143,10 @@ UPDATE Buildings SET Cost=60 WHERE BuildingType='BUILDING_ORDU';
 -- Highlander gets +10 combat strength (defense)
 UPDATE Units SET Combat=60 WHERE UnitType='UNIT_SCOTTISH_HIGHLANDER';
 -- happy and ecstatic percentages increased
-UPDATE ModifierArguments SET Value='10'  WHERE ModifierId='TRAIT_SCIENCE_HAPPY' AND Name='Amount';
-UPDATE ModifierArguments SET Value='15' WHERE ModifierId='TRAIT_SCIENCE_ECSTATIC' AND Name='Amount';
-UPDATE ModifierArguments SET Value='10'  WHERE ModifierId='TRAIT_PRODUCTION_HAPPY' AND Name='Amount';
-UPDATE ModifierArguments SET Value='15' WHERE ModifierId='TRAIT_PRODUCTION_ECSTATIC' AND Name='Amount';
+--UPDATE ModifierArguments SET Value='10'  WHERE ModifierId='TRAIT_SCIENCE_HAPPY' AND Name='Amount';
+--UPDATE ModifierArguments SET Value='15' WHERE ModifierId='TRAIT_SCIENCE_ECSTATIC' AND Name='Amount';
+--UPDATE ModifierArguments SET Value='10'  WHERE ModifierId='TRAIT_PRODUCTION_HAPPY' AND Name='Amount';
+--UPDATE ModifierArguments SET Value='15' WHERE ModifierId='TRAIT_PRODUCTION_ECSTATIC' AND Name='Amount';
 -- Golf Course moved to Games and Recreation
 UPDATE Improvements SET PrereqCivic='CIVIC_GAMES_RECREATION' WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE';
 -- Golf Course base yields are 1 Culture and 2 Gold... +1 to each if next to City Center
@@ -240,6 +241,13 @@ UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_NATIONALISM_REQUIREMENT
 
 
 
+--==============================================================
+--******			  	B U I L D I N G S	 		  	  ******
+--==============================================================
+UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_ORDU';
+UPDATE ModifierArguments SET Value='6' WHERE ModifierId='SHOPPING_MALL_TOURISM';
+
+
 
 --==============================================================
 --******			  D E D I C A T I O N S				  ******
@@ -268,7 +276,10 @@ INSERT INTO TypeTags (Type, Tag) VALUES
 	('ABILITY_MILITARY_GA_BUFF', 'CLASS_HEAVY_CHARIOT'),
 	('ABILITY_MILITARY_GA_BUFF', 'CLASS_LIGHT_CHARIOT'),
 	('ABILITY_MILITARY_GA_BUFF', 'CLASS_WARRIOR_MONK'),
-	('ABILITY_MILITARY_GA_BUFF', 'CLASS_WAR_CART');
+	('ABILITY_MILITARY_GA_BUFF', 'CLASS_WAR_CART'),
+	('ABILITY_MILITARY_GA_BUFF', 'CLASS_AIRCRAFT'),
+	('ABILITY_MILITARY_GA_BUFF', 'CLASS_AIR_BOMBER'),
+	('ABILITY_MILITARY_GA_BUFF', 'CLASS_AIR_FIGHTER');
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description, Inactive) VALUES
 	('ABILITY_MILITARY_GA_BUFF', 'LOC_ABILITY_MILITARY_GA_BUFF_NAME', 'LOC_ABILITY_MILITARY_GA_BUFF_DESCRIPTION', 1);
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES
@@ -368,6 +379,11 @@ INSERT INTO GovernorPromotionModifiers
 	(GovernorPromotionType, ModifierId)
 	VALUES
 	('GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS', 'SURPLUS_LOGISTICS_TRADE_ROUTE_PROD');
+-- switch Magnus' level 2 promos
+UPDATE GovernorPromotions SET Column=2 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST';
+UPDATE GovernorPromotions SET Column=0 WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER';
+UPDATE GovernorPromotionPrereqs SET PrereqGovernorPromotion='GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS' WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER';
+UPDATE GovernorPromotionPrereqs SET PrereqGovernorPromotion='GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION' WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST';
 
 
 
@@ -438,18 +454,6 @@ INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
 --==============================================================
 --******			W O N D E R S  (NATURAL)			  ******
 --==============================================================
--- Huey gives +2 culture to lake tiles
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
-	VALUES ('BUILDING_HUEY_TEOCALLI', 'HUEY_LAKE_CULTURE');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
-	VALUES
-	('HUEY_LAKE_CULTURE', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'FOODHUEY_PLAYER_REQUIREMENTS'),
-	('HUEY_LAKE_CULTURE_MODIFIER', 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD', 'FOODHUEY_PLOT_IS_LAKE_REQUIREMENTS');
-INSERT INTO ModifierArguments (ModifierId, Name, Value)
-	VALUES
-	('HUEY_LAKE_CULTURE', 'ModifierId', 'HUEY_LAKE_CULTURE_MODIFIER'),
-	('HUEY_LAKE_CULTURE_MODIFIER', 'Amount', '2'),
-	('HUEY_LAKE_CULTURE_MODIFIER', 'YieldType', 'YIELD_CULTURE');
 -- Eye of the Sahara gets 2 Food, 2 Production, and 2 Science
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='EYESAHARA_PRODUCTION_ATOMIC' AND Name='Amount';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='EYESAHARA_SCIENCE_ATOMIC' AND Name='Amount';
