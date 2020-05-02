@@ -132,9 +132,6 @@
 			<Text>Déplacement rapide dans les bois et forêts tropicales.</Text>
 		</Replace>
 		<!-- ========== ÉCOSSE ========== -->
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="fr_FR">
-			<Text>Les villes heureuses bénificient d'un bonus de [ICON_SCIENCE] science et de [ICON_PRODUCTION] production de 10%. Ce bonus est porté à 15% pour les villes en liesse. Les villes heureuses génèrent 1 [ICON_GreatScientist] point de savant illustre par campus et 1 [ICON_GreatEngineer] point d'ingénieur illustre par zone industrielle. Ces points sont doublés pour les villes en liesse.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire un terrain de golf, exclusif à l'Écosse.[NEWLINE][NEWLINE][ICON_AMENITIES] Activités +1, [ICON_GOLD] or +2 et [ICON_CULTURE] culture +1. [ICON_GOLD] Or +1 et [ICON_CULTURE] culture +1 si adjacent à un centre-ville. [ICON_CULTURE] culture +1 si adjacent à un complexe de loisirs. Bonus de [ICON_CULTURE] culture, d' [ICON_GOLD] or, de [ICON_TOURISM] tourisme et d' [ICON_HOUSING] habitations à mesure que vous progressez dans l'arbre des technologies et celui des dogmes. Ne peut pas être construit sur un désert ou sur une colline désertique. Limité à un par ville. Les cases contenant un terrain de golf ne peuvent pas être attribuées à une autre ville. Attrait +1.</Text>
 		</Replace>
@@ -216,13 +213,13 @@
 		</Replace>
 		<!-- ========== KHMERS ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_PRODUCTION] Production +100% pour les Aqueducs. [ICON_FOOD] Nourriture +2, [ICON_FAITH] Foi +2 et [ICON_HOUSING] habitations +1 pour les lieux saints placés sur une rivière. Les lieux saints déclenchent une bombe culturelle.</Text>
+			<Text>[ICON_FOOD] Nourriture +2, [ICON_FAITH] Foi +2 et [ICON_HOUSING] habitations +1 pour les lieux saints placés sur une rivière. Les lieux saints déclenchent une bombe culturelle.</Text>
 		</Replace>
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="fr_FR">
 			<Text>[ICON_Faith] Foi +{1_num} (rivières).</Text>
 		</Row>
 		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="fr_FR">
-			<Text>Bâtiment exclusif aux Khmers qui remplace le temple, sans lequel vous ne pourrez pas acheter d'apôtres ou d'inquisiteurs contre de la [ICON_Faith] foi. Octroie un missionnaire à sa construction si vous avez fondé une religion. Les missionnaires achetés dans cette ville reçoivent la compétence Martyr, qui octroie une [ICON_GreatWork_Relic] relique en cas de mort en combat théologique.</Text>
+			<Text>Bâtiment exclusif aux Khmers qui remplace le temple, sans lequel vous ne pourrez pas acheter d'apôtres ou d'inquisiteurs contre de la [ICON_Faith] foi. Octroie un missionnaire à sa construction si vous avez fondé une religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive aux Khmers, cette unité de siège de l'ère classique remplace la catapulte et peut se déplacer et tirer dans le même tour, en plus d'exercer une zone de contrôle.</Text>
@@ -671,6 +668,9 @@
 		<Replace Tag="LOC_CIVIC_ENVIRONMENTALISM_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Tourism] Tourisme +50 % dans tout votre empire.</Text>
 		</Replace>
+		<Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="fr_FR">
+			<Text>Octroie un espion gratuit si vous jouez la France. Bonus de [ICON_Culture] culture pour la Grande Muraille quand plusieurs segments sont adjacents.</Text>
+		</Replace>
 		
 		<!-- =============== D O G M E S =============== -->
 		
@@ -721,6 +721,9 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [ICON_RESOURCE_OIL] Pétrole +2 par tour une fois qu'il est découvert. Permet la formation immédiate de régiments et d'armées. Coûts d'entraînement des régiments et des armées -25 %.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SHOPPING_MALL_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Tourism] Tourisme +6. Ne peut être construit qu'une seule fois dans une ville, même si elle dispose de plusieurs quartiers résidentiels.</Text>
 		</Replace>
 		
 	</LocalizedText>

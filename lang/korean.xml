@@ -29,9 +29,6 @@
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5" Language="ko_KR">
 			<Text>기념비성: 새로운 전문 특수지구를 건설할 때마다 시대 점수 +1을 얻습니다. 황금기 시작 시점에서 선택하면 모든 건설자가 [ICON_Movement] 이동력 +2를 얻습니다. [ICON_Faith] 신앙으로 민간 유닛을 구입할 수 있습니다. 건설자 및 개척자를 [ICON_FAITH] 신앙 및 [ICON_GOLD] 금으로 구매할 경우 비용이 10% 감소합니다.</Text>
 		  </Replace>
-		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ko_KR">
-			<Text>크메르 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하는 데 필요합니다. 지어질 때 무료 선교사 1명을 제공합니다. 이 도시에서 구매한 선교사는 신학 전투에서 처치되었을 때 [ICON_GreatWork_Relic] 성유물을 부여하는 순교자 능력을 얻습니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ko_KR">
 			<Text>도시가 생성하는 [ICON_Culture] 문화가 15% 증가하고 인근 도시에 미치는 종교 영향력이 50% 증가합니다.</Text>
 		</Replace>
@@ -238,9 +235,6 @@
 		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="ko_KR">
 			<Text>캐터펄트를 대체하는 크메르 특유의 고전 시대 공성 유닛입니다. 캐터펄트보다 공격력 및 방어력이 모두 강합니다. 같은 턴에 이동 및 발포 가능하며 통제 지역 영향력을 행사합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ko_KR">
-            <Text>행복한 도시에 [ICON_SCIENCE] 과학 +10%, [ICON_PRODUCTION] 생산력 +10%를 제공합니다. 황홀한 도시에는 [ICON_SCIENCE] 과학 +5%, [ICON_PRODUCTION] 생산력 +5%가 추가로 제공됩니다. 행복한 도시는 캠퍼스마다 [ICON_GreatScientist] 위대한 과학자 점수 +1, 산업구역마다 [ICON_GreatEngineer] 위대한 기술자 점수 +1을 제공합니다. 황홀한 도시에는 과학자 및 기술자 점수 효과가 +1씩 추가로 제공됩니다.</Text>
-        </Replace>
 		<Replace Tag="LOC_TRAIT_FALLBABYLON_COMBAT_BONUS_DESCRIPTION" Language="ko_KR">
 			<Text>공격시 전투력 +{1_Value}</Text>
 		</Replace>
@@ -288,9 +282,6 @@
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_LAVRA_DESCRIPTION" Language="ko_KR">
 			<Text>종교 활동이 진행되는 러시아 특유의 특수지구입니다. 성지 특수지구를 대체하며 건설 비용이 더 낮습니다.[NEWLINE][NEWLINE]이 도시에 극장가 특수지구가 건설된 경우 [ICON_GreatArtist] 위대한 예술가, [ICON_GreatWriter] 위대한 작가, [ICON_GreatMusician] 위대한 음악가 점수를 각각 1씩 얻습니다. 이 도시에서 위인이 사용되어 사라질 때마다 도시 경계가 1타일 씩 증가합니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ko_KR">
-			<Text>송수로 특수지구의 건설 시간이 반으로 감소합니다. 성지를 강에 배치할 경우 [ICON_FOOD] 식량 +2, [ICON_FAITH] 신앙 +2 및 [ICON_HOUSING] 주거공간 +1을 제공합니다. 성지는 문화 폭탄을 유발합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="ko_KR">
 			<Text>석조기술과 함께 잠금 해제되며 사막, 사막 언덕, 범람원, 평원 또는 초원에 지어야 하는 시설입니다. [ICON_Faith] 신앙 +1을 제공합니다. 인근 특수지구에서 추가 생산량을 획득합니다. 도심부에 인접하는 경우 [ICON_Food] 식량 +2를 제공합니다. 인접 보너스를 제공하는 다른 모든 특수지구의 경우 해당 특수지구가 인접했다면 해당 산출물 +2를 제공합니다.</Text>

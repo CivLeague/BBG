@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="en_US">
+            <Text>Бонус к [ICON_Culture] культуре от соседства с Великой стеной. Играя за Францию, вы получаете бесплатного шпиона.</Text>
+        </Replace>
+        <Replace Tag="LOC_BUILDING_SHOPPING_MALL_DESCRIPTION" Language="en_US">
+            <Text>+6 [ICON_Tourism] туризма. Можно построить только одно такое здание в городе, даже если в нем есть несколько пригородов.</Text>
+        </Replace>
+        <Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="en_US">
+            <Text>Уникальное здание кхмеров, которое заменяет храм. При постройке здания дает бесплатно одного миссионера (если основана религия). Необходимо для найма апостолов и инквизиторов за [ICON_Faith] веру.</Text>
+        </Replace>
+        <Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="en_US">
+            <Text>Священные места дают +2 [ICON_FOOD] еды, +2 [ICON_FAITH] веры и +1 [ICON_HOUSING] жилья, если стоят рядом с рекой. При постройке священное место захватывает соседние клетки (культурный захват).</Text>
+        </Replace>
 
 		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="ru_RU">
             <Text>+10 [ICON_STRENGTH] против защищенных районов.</Text>
@@ -17,10 +29,6 @@
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_9" Language="ru_RU">
 			<Text>К оружию!: Каждый уничтоженный в бою корпус, кроме варваров, прибавляет 1 очко к счету эпохи, а уничтоженная армия - 2 очка. Если выбрано в начале золотого века, дает доступ к особому поводу для войны, за который вам предъявляется на 75% претензий меньше по сравнению с официальной войной. Объявить войну можно сразу после осуждения противника. +15% [ICON_Production] производства при создании военных юнитов. Военные юниты получают +10 [ICON_Strength] против городов.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальное здание кхмеров, которое заменяет храм. Необходимо для найма апостолов и инквизиторов за [ICON_Faith] веру. При постройке здания дает бесплатно одного миссионера. Миссионеры, нанятые в этом городе, сразу получают способность «Мученик», которая дает [ICON_GreatWork_Relic] реликвию, если юнит погибает в теологической баталии.</Text>
-		</Replace>
-		
 
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ru_RU">
 			<Text>15% увеличение [ICON_Culture] Культуры, вырабатываемой этим городом. Религиозное влияние к соседним городам увеличено на 50%.</Text>
@@ -259,9 +267,6 @@
 		<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный кхмерский осадный юнит Античности. Заменяет катапульту и сильнее ее. Может перемещаться и стрелять в тот же ход, имеет зону контроля.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ru_RU">
-			<Text>Счастливые города получают +10% [ICON_SCIENCE] науки и +10% [ICON_PRODUCTION] производства. Города в экстазе получают ещё по 5% бонуса к [ICON_SCIENCE] науке и [ICON_PRODUCTION] производству. Счастливые города производят +1 [ICON_GreatScientist] оч. великого ученого в кампусах и +1 [ICON_GreatEngineer] оч. великого инженера в промышленных зонах. Бонус очков великих людей удваивается для городов в состоянии экстаза.</Text>
-		</Replace>
 		<Replace Tag="LOC_POLICY_COLLECTIVIZATION_DESCRIPTION_XP2" Language="ru_RU">
 			<Text>+4 [ICON_Production] производства и +4 [ICON_Food] пищи от внутренних [ICON_TradeRoute] торговых путей.</Text>
 		</Replace>
@@ -276,9 +281,6 @@
 		</Replace>
 		<Replace Tag="LOC_SIEGE_RANGED_DEFENSE_DESCRIPTION" Language="ru_RU">
 			<Text>+10 боевой мощи против дальнобойных атак.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ru_RU">
-			<Text>+100% [ICON_PRODUCTION] производства акведукам. Священные места дают +2 [ICON_FOOD] еды, +2 [ICON_FAITH] веры и +1 [ICON_HOUSING] жилья , если стоят рядом с рекой. При постройке священное место захватывает соседние клетки (культурный захват).</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="ru_RU">
 			<Text>Улучшение, доступное после изучения каменной кладки. Можно построить на пустынных холмах, поймах, полях и лугах. +1 [ICON_Faith] веры. Производит больше в зависимости от того, какие районы находятся рядом (+2 ресурса, соответствующего соседнему району). +2 [ICON_Food] пищи рядом с городским центром.</Text>

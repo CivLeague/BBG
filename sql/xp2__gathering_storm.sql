@@ -251,7 +251,8 @@ UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_INCA' A
 --******			  U N I T S  (NON-UNIQUE)			  ******
 --==============================================================
 UPDATE Units_XP2 SET ResourceMaintenanceAmount=2 WHERE UnitType='UNIT_GIANT_DEATH_ROBOT';
-UPDATE Units_XP2 SET ResourceMaintenanceAmount=0, ResourceCost=0, ResourceMaintenanceType=NULL WHERE UnitType='UNIT_HELICOPTER';
+UPDATE Units_XP2 SET StrategicResource='RESOURCE_OIL' WHERE UnitType='UNIT_HELICOPTER';
+UPDATE Units SET ResourceMaintenanceAmount=0, ResourceCost=4, ResourceMaintenanceType=NULL WHERE UnitType='UNIT_HELICOPTER';
 UPDATE Units SET Cost=200 WHERE UnitType='UNIT_KNIGHT';
 UPDATE Units SET Cost=180 WHERE UnitType='UNIT_COURSER';
 UPDATE Units SET StrategicResource='RESOURCE_NITER' WHERE UnitType='UNIT_INFANTRY';
