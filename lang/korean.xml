@@ -448,9 +448,6 @@
 	    <Replace Tag="LOC_CIVIC_ENVIRONMENTALISM_DESCRIPTION" Language="ko_KR">
 			<Text>제국 전체에 [ICON_Tourism] 관광이 +50% 증가합니다.</Text>
 		</Replace>
-	    <Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_DESCRIPTION" Language="ko_KR">
-			<Text>우주 경쟁 프로젝트의 하나로, 달에 인간을 상륙시키기 위해 대형 로켓을 발사합니다. 플레이어의 턴당 [ICON_Science] 과학 생산량의 5배인 [ICON_Culture] 문화 보너스를 일회성으로 부여하며, 과학 승리로의 두 번째 단계를 표시합니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>모든 해상 근접 유닛이 해안 강습을 감행할 수 있게 되며, 이 유닛 생성에 대한 [ICON_PRODUCTION] 생산력 +25%를 제공합니다. 광산을 약탈 또는 해안 강습하면 [ICON_GOLD] 금뿐만 아니라 [ICON_SCIENCE] 과학도 얻습니다. 채석장, 목장, 재배지, 야영지를 약탈 또는 해안 강습하면 [ICON_FAITH] 신앙뿐만 아니라 [ICON_CULTURE] 문화도 얻습니다. 항해를 통해 특유 유닛인 바이킹 롱십을 훈련할 수 있습니다.[NEWLINE][NEWLINE]성지 특수지구와 성지 특수지구 내 건물을 생산할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 성지는 인접한 해안 타일에서 일반적인 신앙 인접 보너스를 획득합니다.[NEWLINE][NEWLINE]성지 특수지구와 인접한 항만 특수지구에서 [ICON_GOLD] 금 +2의 인접 보너스를 획득합니다.</Text>
 		</Replace>

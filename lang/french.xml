@@ -121,9 +121,6 @@
 		<Row Tag="LOC_DISTRICT_MINE_SCIENCE" Language="fr_FR">
 			<Text>[ICON_SCIENCE] Science bonus +{1_num} de la part {1_Num : plural 1?de la mine adjacente; other?des mines adjacentes;}.</Text>
 		</Row>
-		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="fr_FR">
-			<Text>Bonus de proximité : [ICON_SCIENCE] Science +1 toutes les deux mines adjacentes. [ICON_SCIENCE] Science -1 pour chaque Quartier adjacent, à l'exception de la Place du Théâtre. [ICON_CULTURE] Culture +1 pour les Places du Théâtre adjacentes.</Text>
-		</Replace>
 		<!-- ========== CRIS ========== -->
 		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive au peuple Cri, cette unité de l'Antiquité remplace les éclaireurs. Unité de reconnaissance puissante. [ICON_Movement] Déplacement rapide dans les bois et forêts tropicales.</Text>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="ru_RU">
             <Text>Бонус к [ICON_Culture] культуре от соседства с Великой стеной. Играя за Францию, вы получаете бесплатного шпиона.</Text>
         </Replace>
-        <Replace Tag="LOC_BUILDING_SHOPPING_MALL_DESCRIPTION" Language="en_US">
+        <Replace Tag="LOC_BUILDING_SHOPPING_MALL_DESCRIPTION" Language="ru_RU">
             <Text>+6 [ICON_Tourism] туризма. Можно построить только одно такое здание в городе, даже если в нем есть несколько пригородов.</Text>
         </Replace>
-        <Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="en_US">
+        <Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ru_RU">
             <Text>Уникальное здание кхмеров, которое заменяет храм. При постройке здания дает бесплатно одного миссионера (если основана религия). Необходимо для найма апостолов и инквизиторов за [ICON_Faith] веру.</Text>
         </Replace>
-        <Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="en_US">
+        <Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ru_RU">
             <Text>Священные места дают +2 [ICON_FOOD] еды, +2 [ICON_FAITH] веры и +1 [ICON_HOUSING] жилья, если стоят рядом с рекой. При постройке священное место захватывает соседние клетки (культурный захват).</Text>
         </Replace>
 
@@ -106,9 +106,6 @@
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_THE_EDUCATOR_DESCRIPTION" Language="ru_RU">
 			<Text>{LOC_GOVERNOR_THE_EDUCATOR_NAME} Сфокусирован на увеличении показателей [ICON_SCIENCE] Науки в этом городе. Также может увеличивать число [ICON_GreatPerson] Великих людей в своем городе.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ru_RU">
-			<Text>15% увеличение [ICON_Culture] Культуры, вырабатываемой этим городом. Религиозное влияние к соседним городам увеличено на 100%.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN_DESCRIPTION" Language="ru_RU">
 			<Text>15% увеличение [ICON_Science] Науки, вырабатываемой этим городом.</Text>
@@ -210,7 +207,7 @@
 			<Text>Священные места получают +1 [ICON_Faith] Веры за каждую соседнюю клетку с тундрой без холмов.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_TUNDRA_FAITH" Language="ru_RU">
-			+{1_num} [ICON_Faith] веры за {1_Num : plural 1?соседнюю клетку; other?соседние клетки;} с тундрой без холмов.
+			<Text>+{1_num} [ICON_Faith] веры за {1_Num : plural 1?соседнюю клетку; other?соседние клетки;} с тундрой без холмов.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_GARRISON_COMMANDER_DESCRIPTION" Language="ru_RU">
 			<Text>Обороняющиеся юниты на территории города получают +3 к [ICON_Strength] боевой мощи. Другие ваши города в пределах 9 клеток получают +4 к лояльности за ход в пользу вашей цивилизации.</Text>
@@ -441,9 +438,6 @@
 		<Replace Tag="LOC_CIVIC_ENVIRONMENTALISM_DESCRIPTION" Language="ru_RU">
 			<Text>+50% к [ICON_Tourism] туризму от любых источников.</Text>
 		</Replace>
-		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_DESCRIPTION" Language="ru_RU">
-			<Text>Проект «Космическая гонка» отправляет лунную экспедицию. Дает разовый бонус к [ICON_Culture] культуре, равный 5-кратному размеру вашей [ICON_Science] науки за ход. Означает второй шаг к научной победе.</Text>
-		</Replace>
 		
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Все морские юниты ближнего боя получают способность осуществлять рейды на прибрежные территории. +50% [ICON_PRODUCTION] производства при создании всех морских юнитов ближнего боя. Мародерство и рейды на побережье против рудников приносят не только [ICON_GOLD] золото, но и [ICON_SCIENCE] науку. Мародерство и рейды на побережье против каменоломен, пастбищ, плантаций и лагерей приносят не только [ICON_FAITH] веру, но и [ICON_CULTURE] культуру.[NEWLINE][NEWLINE] +50% к [ICON_PRODUCTION] производству священных мест. Священные места получают стандартный бонус соседства от клеток побережья.[NEWLINE][NEWLINE]Гавани рядом со священными местами имеют +2 к [ICON_GOLD] золоту (считается как бонус соседства).</Text>
@@ -664,9 +658,6 @@
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям строить миссию (только для Испании).[NEWLINE][NEWLINE]+2 [ICON_Faith] веры. +2 [ICON_Faith] веры, если построено не на том же континенте, что и ваша [ICON_Capital] столица. +2 [ICON_Science] науки, если построена рядом с кампусом. + 1 жилья после изучения Гражданской Службы.			</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="ru_RU">
-			<Text>+3 [ICON_Faith] веры от каменоломен.</Text>
-		</Replace>		
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="ru_RU">
 			<Text>+3 [ICON_Faith] веры от рудников редких и бонусных ресурсов.</Text>
 		</Replace>

@@ -7,7 +7,7 @@
 		</Description>
 		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
 		<Authors>codenaugh, S1AL, D. / Jack The Narrator</Authors>
-		<SpecialThanks>wazabaza, abstr, priz, seed.of.apricot, WhySoHate, Klas</SpecialThanks>
+		<SpecialThanks>abstr, priz, seed.of.apricot, WhySoHate, Klas, fl0r3k</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
 	
@@ -71,6 +71,7 @@
 			<File>lang/korean.xml</File>
 			<File>lang/russian.xml</File>
 			<File>lang/french.xml</File>
+			<File>lang/polish.xml</File>
 		</UpdateText>
 	</FrontEndActions>
 
@@ -93,6 +94,7 @@
 			<File>lang/korean.xml</File>
 			<File>lang/russian.xml</File>
 			<File>lang/french.xml</File>
+			<File>lang/polish.xml</File>
 		</UpdateText>
 		
 		<UpdateDatabase id="bbg_base_db_updates">
@@ -202,6 +204,7 @@
 		<File>lang/korean.xml</File>
 		<File>lang/russian.xml</File>
 		<File>lang/french.xml</File>
+		<File>lang/polish.xml</File>
 		<File>sql/base.sql</File>
 		<File>sql/dlc_australia.sql</File>
 		<File>sql/dlc_aztec.sql</File>
