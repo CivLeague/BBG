@@ -29,7 +29,7 @@ DELETE FROM BuildingPrereqs WHERE Building='BUILDING_TSIKHE';
 DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_TSIKHE' AND ModifierId='TSIKHE_PREVENT_MELEE_ATTACK_OUTER_DEFENSES';
 DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_TSIKHE' AND ModifierId='TSIKHE_PREVENT_BYPASS_OUTER_DEFENSE';
 UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_WALLS' WHERE CivUniqueBuildingType='BUILDING_TSIKHE';
-UPDATE Buildings SET Cost=80 , PrereqTech='TECH_MASONRY' , OuterDefenseHitPoints=100 WHERE BuildingType='BUILDING_TSIKHE';
+UPDATE Buildings SET Cost=100, PrereqTech='TECH_MASONRY' , OuterDefenseHitPoints=100 WHERE BuildingType='BUILDING_TSIKHE';
 -- Georgia gets 50% faith kills instead of Protectorate War Bonus
 INSERT INTO Modifiers (ModifierId, ModifierType)
 	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD');

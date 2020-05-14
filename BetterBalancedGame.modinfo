@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="bdffd1bc-49e5-4dd6-81b2-aab1eb55563f" version="3.11.1">
+<Mod id="bdffd1bc-49e5-4dd6-81b2-aab1eb55563f" version="3.11.2">
 	<Properties>
-		<Name>Better Balanced Game 3.11.1</Name>
+		<Name>Better Balanced Game 3.11.2</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
@@ -72,18 +72,19 @@
 			<File>lang/russian.xml</File>
 			<File>lang/french.xml</File>
 			<File>lang/polish.xml</File>
+			<File>lang/japanese.xml</File>
 		</UpdateText>
 	</FrontEndActions>
 
 	<!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
 	<InGameActions>
 		<ImportFiles id="bbg_import_files">
-			<File>exploits/PantheonChooser.lua</File>
+			<File>exploits/pantheon_chooser.lua</File>
 		</ImportFiles>
 		
 		<AddGameplayScripts id="bbg_fix_exploits">
-            <File>exploits/GG_Fix.lua</File>
-			<File>exploits/Culture_Fix.lua</File>
+            <File>exploits/gg_fix.lua</File>
+			<File>exploits/culture_fix.lua</File>
 		</AddGameplayScripts>
 		
 		<UpdateText id="bbg_text_updates">
@@ -95,6 +96,7 @@
 			<File>lang/russian.xml</File>
 			<File>lang/french.xml</File>
 			<File>lang/polish.xml</File>
+			<File>lang/japanese.xml</File>
 		</UpdateText>
 		
 		<UpdateDatabase id="bbg_base_db_updates">
@@ -205,6 +207,7 @@
 		<File>lang/russian.xml</File>
 		<File>lang/french.xml</File>
 		<File>lang/polish.xml</File>
+		<File>lang/japanese.xml</File>
 		<File>sql/base.sql</File>
 		<File>sql/dlc_australia.sql</File>
 		<File>sql/dlc_aztec.sql</File>
@@ -219,8 +222,8 @@
 		<File>sql/xp2_macedon_persia.sql</File>
 		<File>sql/xp2_nubia.sql</File>
 		<File>sql/xp2_rise_and_fall.sql</File>
-		<File>exploits/PantheonChooser.lua</File>
-		<File>exploits/GG_Fix.lua</File>
-		<File>exploits/Culture_Fix.lua</File>
+		<File>exploits/pantheon_chooser.lua</File>
+		<File>exploits/gg_fix.lua</File>
+		<File>exploits/culture_fix.lua</File>
 	</Files>
 </Mod>
