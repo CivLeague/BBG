@@ -79,7 +79,7 @@
 	<!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
 	<InGameActions>
 		<ImportFiles id="bbg_import_files">
-			<File>exploits/pantheon_chooser.lua</File>
+			<File>exploits/PantheonChooser.lua</File>
 		</ImportFiles>
 		
 		<AddGameplayScripts id="bbg_fix_exploits">
@@ -222,7 +222,7 @@
 		<File>sql/xp2_macedon_persia.sql</File>
 		<File>sql/xp2_nubia.sql</File>
 		<File>sql/xp2_rise_and_fall.sql</File>
-		<File>exploits/pantheon_chooser.lua</File>
+		<File>exploits/PantheonChooser.lua</File>
 		<File>exploits/gg_fix.lua</File>
 		<File>exploits/culture_fix.lua</File>
 	</Files>
