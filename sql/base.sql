@@ -829,8 +829,7 @@ UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='FASCISM_LEGA
 --==============================================================
 --******			 G R E A T    P E O P L E  			  ******
 --==============================================================
-DELETE FROM GreatPersonIndividualActionModifiers WHERE GreatPersonIndividualType='GREAT_PERSON_INDIVIDUAL_HORATIO_NELSON';
-DELETE FROM GreatPersonIndividualActionModifiers WHERE GreatPersonIndividualType='GREAT_PERSON_INDIVIDUAL_GEORGY_ZHUKOV';
+
 
 
 
@@ -1249,14 +1248,8 @@ UPDATE Units SET Combat=72 , BaseMoves=3 WHERE UnitType='UNIT_INFANTRY';
 UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_PRIVATEER';
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 	VALUES
-	('ARROW_STORM_ALL_REQUIREMENTS',	'PLAYER_IS_ATTACKER_REQUIREMENTS'),
-	('ARROW_STORM_ALL_REQUIREMENTS', 	'ARROW_STORM_OPPONENT_REQUIREMENTS_MET'),
 	('GRAPE_SHOT_REQUIREMENTS',			'PLAYER_IS_ATTACKER_REQUIREMENTS'),
 	('SHRAPNEL_REQUIREMENTS',			'PLAYER_IS_ATTACKER_REQUIREMENTS');
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES ('ARROW_STORM_OPPONENT_REQUIREMENTS_MET', 'REQUIREMENT_REQUIREMENTSET_IS_MET');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ARROW_STORM_OPPONENT_REQUIREMENTS_MET', 'RequirementSetId', 'ARROW_STORM_REQUIREMENTS');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('ARROW_STORM_ALL_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
-UPDATE Modifiers SET SubjectRequirementSetId='ARROW_STORM_ALL_REQUIREMENTS' WHERE ModifierId='ARROW_STORM_BONUS_VS_LAND_AND_SEA_UNITS';
 
 
 
