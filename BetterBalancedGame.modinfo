@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="bdffd1bc-49e5-4dd6-81b2-aab1eb55563f" version="3.11.4">
+<Mod id="bdffd1bc-49e5-4dd6-81b2-aab1eb55563f" version="3.12.1">
 	<Properties>
-		<Name>Better Balanced Game 3.11.4</Name>
+		<Name>Better Balanced Game 3.12.1</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
 		<Teaser>Mods to balance Civ Players League multiplayer games</Teaser>
 		<Authors>codenaugh, S1AL, D. / Jack The Narrator</Authors>
-		<SpecialThanks>abstr, priz, seed.of.apricot, WhySoHate, Klas, fl0r3k</SpecialThanks>
+		<SpecialThanks>abstr, priz, seed.of.apricot, Klas, fl0r3k, WhySoHate</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
 	
@@ -58,6 +58,9 @@
 		</Criteria>
 		<Criteria id="xp2_poland">
 			<LeaderPlayable>Players:Expansion2_Players::LEADER_JADWIGA</LeaderPlayable>
+		</Criteria>
+		<Criteria id="dlc_maya_colombia">
+			<ModInUse>9DE86512-DE1A-400D-8C0A-AB46EBBF76B9</ModInUse>
 		</Criteria>
 	</ActionCriteria>
 	
@@ -193,6 +196,12 @@
 				<LoadOrder>11629</LoadOrder>
 			</Properties>
 		</UpdateDatabase>
+		<UpdateDatabase id="bbg_dlc_maya_colombia" criteria="dlc_maya_colombia">
+			<Properties>
+				<LoadOrder>11630</LoadOrder>
+			</Properties>
+			<File>sql/dlc_maya_colombia.sql</File>
+		</UpdateDatabase>
 	</InGameActions>
 	
 	<!-- defines file dependencies -->
@@ -218,5 +227,6 @@
 		<File>sql/xp2_nubia.sql</File>
 		<File>sql/xp2_rise_and_fall.sql</File>
 		<File>exploits/culture_fix.lua</File>
+		<File>sql/dlc_maya_colombia.sql</File>
 	</Files>
 </Mod>
