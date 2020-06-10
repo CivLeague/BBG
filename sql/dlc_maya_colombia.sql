@@ -10,13 +10,7 @@ UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_UNIT_ADJUST_SIGHT' WHERE Modi
 INSERT INTO ExcludedGreatPersonClasses (GreatPersonClassType, TraitType) VALUES
     ( 'GREAT_PERSON_CLASS_GENERAL', 'TRAIT_LEADER_CAMPANA_ADMIRABLE' );
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='LLANERO_ADJACENCY_STRENGTH' AND Name='Amount';
-UPDATE Improvements SET PrereqCivic='CIVIC_FEUDALISM' WHERE ImprovementType='IMPROVEMENT_HACIENDA';
-UPDATE Adjacency_YieldChanges SET PrereqTech='TECH_MASS_PRODUCTION' WHERE ID='Hacienda_MechanizedPlantationAdjacency' AND PrereqTech='TECH_REPLACEABLE_PARTS';
-UPDATE Adjacency_YieldChanges SET PrereqCivic='CIVIC_MERCANTILISM' WHERE ID='Hacienda_AdvancedHaciendaAdjacency' AND PrereqCivic='CIVIC_RAPID_DEPLOYMENT';
-UPDATE Adjacency_YieldChanges SET PrereqCivic='CIVIC_MERCANTILISM' WHERE ID='Plantation_AdvancedHaciendaAdjacency' AND PrereqCivic='CIVIC_RAPID_DEPLOYMENT';
-UPDATE Adjacency_YieldChanges SET ObsoleteCivic='CIVIC_MERCANTILISM' WHERE ID='Hacienda_HaciendaAdjacency';
-UPDATE Adjacency_YieldChanges SET ObsoleteCivic='CIVIC_MERCANTILISM' WHERE ID='Plantation_HaciendaAdjacency';
-UPDATE Adjacency_YieldChanges SET ObsoleteTech='TECH_MASS_PRODUCTION' WHERE ID='Hacienda_PlantationAdjacency';
+UPDATE Improvements SET PrereqCivic='CIVIC_MEDIEVAL_FAIRES' WHERE ImprovementType='IMPROVEMENT_HACIENDA';
 
 
 -- Mayan start biases: after coastals and tundra and desert; make flat land bias last resort; delete non-plantation lux biases; add banana bias

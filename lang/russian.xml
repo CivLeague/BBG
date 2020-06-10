@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+
+		<Replace Tag="LOC_LEADER_TRAIT_TARUGA_DESCRIPTION" Language="ru_RU">
+			<Text>+5 % [ICON_SCIENCE] науки во всех городах за каждый вид доступных им стратегических ресурсов.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="ru_RU">
             <Text>Бонус к [ICON_Culture] культуре от соседства с Великой стеной. Играя за Францию, вы получаете бесплатного шпиона.</Text>
         </Replace>

@@ -16,11 +16,17 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="en_US">
 			<Text>All units have +1 sight. Promoting a unit does not end that unit’s turn.</Text>
 		</Replace>
+		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="en_US">
+			<Text>+1 Sight to all units (Ejército Patriota)</Text>
+		</Replace>
 		<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="en_US">
-			<Text>Gran Colombian Industrial era unique unit that replaces the Cavalry. Low maintenance cost. +1 [ICON_Strength] Combat Strength for every adjacent Llanero. Fully heals when in range of a Comandante General that activates its retire ability.</Text>
+			<Text>Gran Colombian Industrial era unique unit that replaces the Cavalry. Low maintenance cost. +2 [ICON_Strength] Combat Strength for every adjacent Llanero. Fully heals when in range of a Comandante General that activates its retire ability.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="en_US">
 			<Text>+2 [ICON_Strength] Combat Strength from each adjacent Llanero unit.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION" Language="en_US">
+			<Text>Earn a Comandante General when entering a new era. May not recruit [ICON_GreatGeneral] Great Generals.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION_XP1" Language="en_US">
 			<Text>Earn a Comandante General when the game enters a new era. May not recruit [ICON_GreatGeneral] Great Generals.</Text>
@@ -36,6 +42,12 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed). +1 [ICON_RESOURCE_NITER] Niter per turn once discovered.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="en_US">
+			<Text>+25% [ICON_Production] Production towards districts and wonders if placed next to a River. Floodplains do not block placement of districts and wonders.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>+25% [ICON_Production] Production towards districts and wonders if placed next to a River. Does not receive damage from Floods.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="en_US">
@@ -397,12 +409,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_GreatProphet] Great Prophet point per turn after researching Astrology. The last available [ICON_GreatProphet] Great Prophet will automatically go to Arabia, if they have not already recruited one. +1 [ICON_Science] Science for each foreign city following Arabia's Religion. </Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="en_US">
-			<Text>+25% [ICON_Production] Production towards districts and wonders if placed next to a River. +1 [ICON_FOOD] Food on floodplains tiles and floodplains do not block placement of districts and wonders.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>+25% [ICON_Production] Production towards districts and wonders if placed next to a River. +1 [ICON_FOOD] Food on floodplains tiles. Does not receive damage from Floods.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="en_US">
 			<Text>All world wonders provide +6 [ICON_Faith] Faith.</Text>

@@ -157,14 +157,6 @@ INSERT INTO BuildingModifiers (BuildingType, ModifierId)
 
 
 --==================
--- Scythia
---==================
-INSERT INTO Units_XP2 (UnitType, ResourceCost) VALUES
-	( 'UNIT_SCYTHIAN_HORSE_ARCHER', 10 );
-
-
-
---==================
 -- Sweden
 --==================
 INSERT INTO TraitModifiers (TraitType , ModifierId)

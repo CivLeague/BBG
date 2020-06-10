@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+	
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_DESCRIPTION" Language="ko_KR">
+			<Text>3타일 자연경관입니다. 이 지역에 들어오는 유닛은 멀리 떨어진 바다로 순간 이동합니다. 하지만 해상 유닛의 경우 '신비한 해류' 능력([ICON_Movement] 이동력 +1)을 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="ko_KR">
+			<Text>통과할 수 없는 3타일 자연경관입니다. 인접 타일에 [ICON_Gold] 금 +1과 [ICON_Culture] 문화 +1을 제공합니다. 극장가와 상업 중심지 특수지구에 많은 인접 보너스를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="ko_KR">
+			<Text>도시의 [ICON_Citizen] 시민 한 명당 턴당 [ICON_PRODUCTION] 생산력 +1을 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시의 범람원 및 화산토 타일에 [ICON_PRODUCTION] 생산력 +1을 제공합니다. 이 도시의 시설, 건물 및 특수지구는 환경 효과에 의해 피해를 입지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="ko_KR">
+			<Text>모든 유닛에게 시야 +1을 부여합니다. 유닛을 진급시켜도 해당 유닛의 턴이 끝나지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="ko_KR">
+			<Text>모든 유닛에게 시야 +1을 부여합니다(애국자 군대).</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="ko_KR">
+			<Text>기병대를 대체하는 그란 콜롬비아 특유의 산업 시대 유닛입니다. 유지 비용이 낮습니다. 인접한 각 야네로에게서 [ICON_Strength] 전투력 +2를 얻습니다. 퇴각 능력을 활성화하는 사령관의 범위 내에 있으면 체력을 모두 회복합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="ko_KR">
+			<Text>인접한 야네로 유닛마다 [ICON_Strength] 전투력 +2를 제공합니다..</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION" Language="ko_KR">
+			<Text>새 시대에 진입하면 사령관을 얻습니다. [ICON_GreatGeneral] 위대한 장군을 영입할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION_XP1" Language="ko_KR">
+			<Text>게임이 새 시대에 진입하면 사령관을 얻습니다. [ICON_GreatGeneral] 위대한 장군을 영입할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="ko_KR">
+			<Text>모든 해상 근접 유닛이 해안 강습을 감행할 수 있게 되며, [ICON_PRODUCTION] 생산력 +50%를 제공합니다.[NEWLINE][NEWLINE]성지 특수지구와 성지 특수지구 내 건물을 생산할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 성지는 인접한 해안 타일에서 일반적인 신앙 인접 보너스를 획득합니다.[NEWLINE][NEWLINE]성지 특수지구와 인접한 항만 특수지구에서 [ICON_GOLD] 금 +2의 인접 보너스를 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>모든 해상 근접 유닛이 해안 강습을 감행할 수 있게 되며, 이 유닛 생성에 대한 [ICON_PRODUCTION] 생산력 +50과학도 얻습니다. 채석장, 목장, 재배지, 야영지를 약탈 또는 해안 강습하면 [ICON_FAITH] 신앙뿐만 아니라 [ICON_CULTURE] 문화도 얻습니다. 항해를 통해 특유 유닛인 바이킹 롱십을 훈련할 수 있습니다.[NEWLINE][NEWLINE]성지 특수지구와 성지 특수지구 내 건물을 생산할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 성지는 인접한 해안 타일에서 일반적인 신앙 인접 보너스를 획득합니다.[NEWLINE][NEWLINE]성지 특수지구와 인접한 항만 특수지구에서 [ICON_GOLD] 금 +2의 인접 보너스를 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +25% 증가합니다.[NEWLINE][ICON_RESOURCE_NITER] 질산칼륨 자원을 발견하였다면, [ICON_RESOURCE_NITER] 질산칼륨 자원을 매턴 1개씩 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +25% 증가합니다.[NEWLINE]전략 자원 비축력이 +10 증가합니다(일반 속도 기준). [ICON_RESOURCE_NITER] 질산칼륨 자원을 발견하였다면, [ICON_RESOURCE_NITER] 질산칼륨 자원을 매턴 1개씩 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="ko_KR">
+            <Text>특수지구와 불가사의를 강 옆에 배치할 경우 이들의 건설에 대한 [ICON_Production] 생산력 +25%를 제공합니다. 범람원은 특수지구 및 불가사의 배치를 방해하지 않습니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="ko_KR">
+            <Text>특수지구와 불가사의를 강 옆에 배치할 경우 이들의 건설에 대한 [ICON_Production] 생산력 +25%를 제공합니다. 홍수 피해를 입지 않습니다.</Text>
+        </Replace>
+	
         <Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="ko_KR">
             <Text>만리장성 시설 인접 보너스 [ICON_Culture] 문화를 제공합니다. 프랑스로 플레이하는 경우 스파이를 무료로 얻습니다.</Text>
         </Replace>
@@ -138,9 +188,6 @@
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST_DESCRIPTION" Language="ko_KR">
 			<Text>석탄 발전소, 석유 발전소, 원자력 발전소에서 얻는 각 자원 당 [ICON_POWER] 전력이 +4 증가하며, [ICON_Production] 생산력이 +4 증가합니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="ko_KR">
-			<Text>도시의 특수지구 건설에 대한 [ICON_Production] 생산력 +50%를 제공합니다.</Text>
 		</Replace>
 		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="ko_KR">
 			<Text>농업</Text>
@@ -355,12 +402,6 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="ko_KR">
 			<Text>점성술 기술을 연구하면 매 턴 [ICON_GreatProphet] 위대한 선지자 점수 +1을 얻습니다. 플레이어가 [ICON_GreatProphet] 위대한 선지자가 없을 시, 마지막에서 두 번째 위대한 선지자를 다른 문명이 영입하는 경우, 플레이어는 마지막 [ICON_GreatProphet] 위대한 선지자를 즉시 얻습니다. 아라비아의 종교를 믿는 타 문명 도시마다 [ICON_Science] 과학 +1을 제공합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="ko_KR">
-			<Text>특수지구와 불가사의를 강 옆에 배치할 경우 이들의 건설에 대한 [ICON_Production] 생산력 +25%를 제공합니다. 범람원 타일에서 [ICON_FOOD] 식량 +1을 제공합니다. 범람원은 특수지구 및 불가사의 배치를 방해하지 않습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>특수지구와 불가사의를 강 옆에 배치할 경우 이들의 건설에 대한 [ICON_Production] 생산력 +25%를 제공합니다. 범람원 타일에서 [ICON_FOOD] 식량 +1을 제공합니다. 홍수 피해를 입지 않습니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="ko_KR">
 			<Text>모든 세계 불가사의에서 [ICON_Faith] 신앙 +6을 제공합니다.</Text>
 		</Replace>
@@ -419,7 +460,7 @@
 			<Text>통과할 수 없는 타일 1개의 자연경관입니다. 인접 타일에 [ICON_FAITH] 신앙 +2와 [ICON_Production] 생산력 +1을 제공합니다.</Text>
 		</Replace>
         <Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="ko_KR">
-            <Text>모든 지상 전투 유닛 및 종교 유닛의 [ICON_Movement] 이동력 +1.</Text>
+            <Text>모든 지상 전투 유닛 및 종교 유닛의 [ICON_Movement] 이동력이 1 증가합니다.</Text>
         </Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="ko_KR">
 			<Text>도시의 극장가 건물 건설에 대한 [ICON_Production] 생산력 +100%를 제공합니다. 엘레오노르의 도시에 있는 각 걸작 때문에 9타일 내의 외국 타일에서 턴당 충성심 -1이 발생합니다. 충성심을 잃어 다른 문명을 떠났고 현재 엘레오노르의 문명에서 가장 많은 턴당 충성심을 얻고 있는 문명은 자유 도시 단계를 생략하고 이 문명에 합류할 수 있습니다.</Text>
@@ -448,9 +489,6 @@
 	    <Replace Tag="LOC_CIVIC_ENVIRONMENTALISM_DESCRIPTION" Language="ko_KR">
 			<Text>제국 전체에 [ICON_Tourism] 관광이 +50% 증가합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>모든 해상 근접 유닛이 해안 강습을 감행할 수 있게 되며, 이 유닛 생성에 대한 [ICON_PRODUCTION] 생산력 +25%를 제공합니다. 광산을 약탈 또는 해안 강습하면 [ICON_GOLD] 금뿐만 아니라 [ICON_SCIENCE] 과학도 얻습니다. 채석장, 목장, 재배지, 야영지를 약탈 또는 해안 강습하면 [ICON_FAITH] 신앙뿐만 아니라 [ICON_CULTURE] 문화도 얻습니다. 항해를 통해 특유 유닛인 바이킹 롱십을 훈련할 수 있습니다.[NEWLINE][NEWLINE]성지 특수지구와 성지 특수지구 내 건물을 생산할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 성지는 인접한 해안 타일에서 일반적인 신앙 인접 보너스를 획득합니다.[NEWLINE][NEWLINE]성지 특수지구와 인접한 항만 특수지구에서 [ICON_GOLD] 금 +2의 인접 보너스를 획득합니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>스페인 특유의 전도관을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2를 제공합니다. [ICON_Capital] 수도와 다른 대륙에 있으면 [ICON_Faith] 신앙 +2, [ICON_PRODUCTION] 생산력 +1 및 [ICON_FOod] 식량 +1을 제공합니다. 모든 인접한 캠퍼스 및 성지 특수지구에 대해 [ICON_Science] 과학 +1을 제공합니다.  공공 행정 사회 제도를 획득하면 [ICON_HOUSING] 주거공간 +1을 추가 제공하며, 계몽주의 사회 제도를 획득하면 [ICON_Science] 과학 +2를 추가 제공합니다.</Text>
 		</Replace>
@@ -473,9 +511,6 @@
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="ko_KR">
 			<Text>성지 특수지구는 인접한 해안 타일에서 [ICON_Faith] 신앙 +{1_num}을 획득합니다.</Text>
 		</Row>
-		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="ko_KR">
-			<Text>모든 해상 근접 유닛이 해안 강습을 감행할 수 있게 되며, [ICON_PRODUCTION] 생산력 +25%를 제공합니다.[NEWLINE][NEWLINE]성지 특수지구와 성지 특수지구 내 건물을 생산할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 성지는 인접한 해안 타일에서 일반적인 신앙 인접 보너스를 획득합니다.[NEWLINE][NEWLINE]성지 특수지구와 인접한 항만 특수지구에서 [ICON_GOLD] 금 +2의 인접 보너스를 획득합니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="ko_KR">
 			<Text>유닛은 조선 기술 연구 후 해양 타일로 이동할 수 있게 됩니다. 해상 근접 유닛은 중립 지역에서 체력을 회복할 수 있습니다. 유닛은 승선 또는 하선 시, 추가 [ICON_Movement] 이동 비용이 들지 않습니다.</Text>
 		</Replace>
