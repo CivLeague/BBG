@@ -99,20 +99,7 @@ INSERT INTO ModifierStrings (ModifierId , Context , Text)
 -- wonder and district on rivers bonus increased to 25%
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RIVER_FASTER_BUILDTIME_WONDER';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RIVER_FASTER_BUILDTIME_DISTRICT';
--- +1 food on floodplains
-INSERT INTO TraitModifiers
-    (TraitType                , ModifierId)
-    VALUES
-    ('TRAIT_CIVILIZATION_ITERU' , 'ITERU_FLOODPLAINS_FOOD_BONUS');
-INSERT INTO Modifiers
-    (ModifierId                   , ModifierType                            , SubjectRequirementSetId)
-    VALUES 
-    ('ITERU_FLOODPLAINS_FOOD_BONUS' , 'MODIFIER_PLAYER_ADJUST_PLOT_YIELD' , 'REQUIRES_PLOT_HAS_FLOODPLAINS_CPL');
-INSERT INTO ModifierArguments
-    (ModifierId                    , Name      , Value)
-    VALUES
-    ('ITERU_FLOODPLAINS_FOOD_BONUS' , 'YieldType' , 'YIELD_FOOD'),
-    ('ITERU_FLOODPLAINS_FOOD_BONUS' , 'Amount'    , '1'         );
+--
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
 	VALUES ('REQUIRES_PLOT_HAS_FLOODPLAINS_CPL', 'REQUIREMENTSET_TEST_ANY');
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
