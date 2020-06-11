@@ -1,7 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_DESCRIPTION" Language="ru_RU">
+			<Text>Чудо природы на три клетки. Входящие юниты переносятся к далекому океану. Если это морские юниты, они получают способность "Загадочные течения" (+1 к [ICON_Movement] перемещению).</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="ru_RU">
+			<Text>Чудо природы на три непроходимых клетки. Дает +1 [ICON_Gold] золота и +1 [ICON_Culture] культуры соседним клеткам. Повышенный бонус за соседство с театральной площадью и центром коммерции.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="ru_RU">
+			<Text>+1 к [ICON_Production] производству за каждого [ICON_CITIZEN] жителя города.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="ru_RU">
+			<Text>+1 к [ICON_PRODUCTION] производству для клеток пойм и вулканической почвы. Городские улучшения, здания и районы не могут быть повреждены стихийными бедствиями.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="ru_RU">
+			<Text>Все юниты получают +1 к радиусу обзора. Повышение юнита не заканчивает его ход.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="ru_RU">
+			<Text>Все юниты получают +1 к радиусу обзора</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный кавалерийский юнит Великой Колумбии в Промышленную эру. Малые расходы на содержание. +2 к [ICON_Strength] боевой мощи за каждый соседний юнит льянеро в соседней клетке. Полностью исцеляется, если находится в радиусе активированной способности главнокомандующего "Отойти от дел".</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="ru_RU">
+			<Text>+2 к [ICON_Strength] боевой мощи за каждый юнит льянеро в соседней клетке.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION" Language="ru_RU">
+			<Text>Получает главнокомандующего при переходе в новую эпоху. Не может нанимать [ICON_GreatGeneral] великих генералов.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION_XP1" Language="ru_RU">
+			<Text>Получает главнокомандующего при переходе игры в новую эпоху. Не может нанимать [ICON_GreatGeneral] великих генералов.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="ru_RU">
+			<Text>Все морские юниты ближнего боя получают способность осуществлять рейды на прибрежные территории. +50% [ICON_PRODUCTION] производства при создании всех морских юнитов ближнего боя.[NEWLINE][NEWLINE]+50% к [ICON_PRODUCTION] производству священных мест и зданий в них. Священные места получают стандартный бонус соседства от клеток побережья.[NEWLINE][NEWLINE]Гавани рядом со священными местами имеют +2 к [ICON_GOLD] золоту (считается как бонус соседства).</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Все морские юниты ближнего боя получают способность осуществлять рейды на прибрежные территории. +50% [ICON_PRODUCTION] производства при создании всех морских юнитов ближнего боя. Мародерство и рейды на побережье против рудников приносят не только [ICON_GOLD] золото, но и [ICON_SCIENCE] науку. Мародерство и рейды на побережье против каменоломен, пастбищ, плантаций и лагерей приносят не только [ICON_FAITH] веру, но и [ICON_CULTURE] культуру.[NEWLINE][NEWLINE]+50% к [ICON_PRODUCTION] производству священных мест и зданий в них. Священные места получают стандартный бонус соседства от клеток побережья.[NEWLINE][NEWLINE]Гавани рядом со священными местами имеют +2 к [ICON_GOLD] золоту (считается как бонус соседства).</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="ru_RU">
+			<Text>+25% боевого опыта всем наземным войскам, созданным в этом городе.[NEWLINE]+1 [ICON_RESOURCE_NITER] Селитра в ход, если открыта.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>+25% боевого опыта всем наземным войскам, созданным в этом городе.[NEWLINE]Запасы стратегических ресурсов увеличены на 10 (при стандартной скорости). +1 [ICON_RESOURCE_NITER] Селитра в ход, если открыта.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="ru_RU">
+			<Text>+25% [ICON_Production] производства районов и чудес, размещенных рядом с рекой. Речные поймы не блокируют строительство районов и чудес.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>+25% [ICON_Production] производства районов и чудес, размещенных рядом с рекой. Затопления не наносят повреждения.</Text>
+		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_TARUGA_DESCRIPTION" Language="ru_RU">
 			<Text>+5 % [ICON_SCIENCE] науки во всех городах за каждый вид доступных им стратегических ресурсов.</Text>
 		</Replace>
@@ -147,9 +194,6 @@
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST_DESCRIPTION" Language="ru_RU">
 			<Text>+4 [ICON_Production] Производства и +4 [ICON_POWER] Энергии, вырабатываемой в этом городе угольными, нефтяными или атомными электростанциями.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="ru_RU">
-			<Text>+50% [ICON_Production] Производства при строительстве районов в этом городе.</Text>
 		</Replace>
 		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="ru_RU">
 			<Text>Сельское Хозяйство</Text>
@@ -347,12 +391,6 @@
 		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_DESCRIPTION" Language="ru_RU">
 			<Text>Проект «Космическая гонка» отправляет лунную экспедицию. Дает разовый бонус к [ICON_Culture] культуре, равный 5-кратному размеру вашей [ICON_Science] науки за ход. Означает второй шаг к научной победе.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="ru_RU">
-            <Text>+25% [ICON_Production] производства районов и чудес, размещённых рядом с рекой. +1 [ICON_FOOD] пищи на поймах; на поймах можно строить районы и чудеса.</Text>
-        </Replace>
-        <Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="ru_RU">
-            <Text>+25% [ICON_Production] производства районов и чудес, размещённых рядом с рекой. +1 [ICON_FOOD] пищи на поймах. Затопления не наносят повреждений.</Text>
-        </Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="ru_RU">
 			<Text>+1 [ICON_GreatProphet] очко великого пророка в ход после изучения Астрологии. Автоматическое появление последнего [ICON_GreatProphet] великого пророка при появлении предпоследнего (если вы еще не заслужили [ICON_GreatProphet] великого пророка). +1 [ICON_Science] науки за каждый чужой город, поддерживающий религию Аравии. </Text>
 		</Replace>
@@ -444,9 +482,6 @@
 			<Text>+50% к [ICON_Tourism] туризму от любых источников.</Text>
 		</Replace>
 		
-		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>Все морские юниты ближнего боя получают способность осуществлять рейды на прибрежные территории. +50% [ICON_PRODUCTION] производства при создании всех морских юнитов ближнего боя. Мародерство и рейды на побережье против рудников приносят не только [ICON_GOLD] золото, но и [ICON_SCIENCE] науку. Мародерство и рейды на побережье против каменоломен, пастбищ, плантаций и лагерей приносят не только [ICON_FAITH] веру, но и [ICON_CULTURE] культуру.[NEWLINE][NEWLINE] +50% к [ICON_PRODUCTION] производству священных мест. Священные места получают стандартный бонус соседства от клеток побережья.[NEWLINE][NEWLINE]Гавани рядом со священными местами имеют +2 к [ICON_GOLD] золоту (считается как бонус соседства).</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям строить миссию (уникально для Испании).[NEWLINE][NEWLINE]+2 [ICON_Faith] веры. +2 [ICON_Faith] веры, +1 [ICON_PRODUCTION] производства и +1 [ICON_FOOD] пищи, если построено не на том же континенте, что и ваша [ICON_Capital] столица. +1 [ICON_Science] науки за каждый соседний кампус и священное место. +1 к жилью после открытия «Гражданской службы» и +2 к [ICON_SCIENCE] науке после открытия «Просвещения».</Text>
 		</Replace>
@@ -472,9 +507,6 @@
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="ru_RU">
 			<Text>+{1_num} [ICON_Faith] веры от берега.</Text>
 		</Row>
-		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="ru_RU">
-			<Text>Все морские юниты ближнего боя получают прибавку +25% к [ICON_PRODUCTION] производству и могут грабить береговые клетки.[NEWLINE][NEWLINE]Священные районы и постройки в них получают прибавку +50% к [ICON_PRODUCTION] производству. Священные места получают стандартный бонус соседства с прибрежными клетками.[NEWLINE][NEWLINE]Гавани рядом со священными местами получают +2 к [ICON_GOLD] золоту (считается бонусом соседства).</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="ru_RU">
 			<Text>Юниты могут пересекать океан после изучения кораблестроения. Морские юниты ближнего боя могут восстанавливать здоровье на нейтральной территории. Юниты не требуют затрат [ICON_Movement] очков передвижения на высадку на море и с моря.</Text>
 		</Replace>

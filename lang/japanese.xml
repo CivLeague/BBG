@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_DESCRIPTION" Language="ja_JP">
+			<Text>3タイルの自然遺産。この自然遺産に進入したユニットはマップ上のいずれかの海洋タイルにワープするが、代わりに固有昇進「神秘の海流」（[ICON_Movement]移動力+1）を得る。</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="ja_JP">
+			<Text>通行不能な3タイルの自然遺産。 隣接するタイルに[ICON_Gold]ゴールド+1、[ICON_Culture]文化力+1を、劇場区域と商業ハブに隣接ボーナスを与える。</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="ja_JP">
+			<Text>この都市の[ICON_CITIZEN]市民1人につき[ICON_Production]生産力+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="ja_JP">
+			<Text>この都市が持つ氾濫原および火山灰地形の[ICON_PRODUCTION]生産力+1。この都市の改善、建造物および区域は災害によるダメージを受けなくなる。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="ja_JP">
+			<Text>すべてのユニットの視界+1。昇進がユニットのターンを終了しない。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="ja_JP">
+			<Text>すべてのユニットの視界+1。（愛国軍）</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="ja_JP">
+			<Text>騎兵を代替する大コロンビアに固有の産業時代のユニット。低維持費。隣接するリャネロ1体につき[ICON_Strength]戦闘力+2。大司令官の退職能力を受けると体力が全回復する。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="ja_JP">
+			<Text>隣接するリャネロ1体につき[ICON_Strength]戦闘力+2。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION" Language="ja_JP">
+			<Text>新たな時代に入った際に大司令官1体を得る。[ICON_GreatGeneral]大将軍を採用できない。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION_XP1" Language="ja_JP">
+			<Text>新たな時代に入った際に大司令官1体を得る。[ICON_GreatGeneral]大将軍を採用できない。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="ja_JP">
+			<Text>すべての海洋近接ユニットに対する[ICON_PRODUCTION]生産力が+50%され、それらは沿岸タイルを襲撃できる。[NEWLINE][NEWLINE]聖地とその建造物に対する[ICON_PRODUCTION]生産力+50%。聖地が沿岸から隣接ボーナスを得る。[NEWLINE][NEWLINE]聖地に隣接する港は隣接ボーナスとして[ICON_GOLD]ゴールド+2を得る。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>すべての海洋近接ユニットに対する[ICON_PRODUCTION]生産力が+50%され、それらは沿岸タイルを襲撃できる。鉱山を略奪または沿岸襲撃した際、通常の[ICON_GOLD]ゴールドに加えて[ICON_SCIENCE]科学力を得る。採石場、牧草地、プランテーション、またはキャンプを略奪または沿岸襲撃した際、通常の[ICON_FAITH]信仰力に加えて[ICON_CULTURE]文化力を得る。[NEWLINE][NEWLINE]聖地とその建造物に対する[ICON_PRODUCTION]生産力+50%。聖地が沿岸から隣接ボーナスを得る。[NEWLINE][NEWLINE]聖地に隣接する港は隣接ボーナスとして[ICON_GOLD]ゴールド+2を得る。</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="ja_JP">
+			<Text>この都市で訓練されたすべての陸上ユニットの経験値取得速度+25%[NEWLINE]発見されていれば、毎ターン[ICON_RESOURCE_NITER]硝石を1つ供給する。</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>この都市で訓練されたすべての陸上ユニットの経験値取得速度+25%[NEWLINE]戦略資源の備蓄量+10（スタンダード速度）。発見されていれば、毎ターン[ICON_RESOURCE_NITER]硝石を1つ供給する。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="ja_JP">
+			<Text>河川に隣接する区域と遺産に対する[ICON_Production]生産力+25%。氾濫原が区域と遺産の建設を妨げない。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>河川に隣接する区域と遺産に対する[ICON_Production]生産力+25%。氾濫原が区域と遺産の建設を妨げない。</Text>
+		</Replace>
+
 		<Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="ja_JP">
 			<Text>万里の長城の[ICON_Culture]文化力にボーナスを与える。フランスでプレイしている場合、スパイを1体獲得する。</Text>
 		</Replace>
@@ -142,9 +191,6 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST_DESCRIPTION" Language="ja_JP">
       		<Text>この都市の石炭・石油・原子力発電所から供給される[ICON_Production]生産力+4、[ICON_POWER]電力+4。</Text>
     	</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="ja_JP">
-      		<Text>この都市における区域の建設に対する[ICON_Production]生産力+50%。</Text>
-    	</Replace>
 		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="ja_JP">
 			<Text>農耕</Text>
     	</Row>
@@ -273,12 +319,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="ja_JP">
 			<Text>政治哲学の解禁により[ICON_TradeRoute]交易路の上限+1。国内交易路1つごとに[ICON_Gold]ゴールド+2、[ICON_CULTURE]文化力+1。社会制度ツリーおよびテクノロジーツリーの進展とともに追加の[ICON_GOLD]ゴールドと[ICON_CULTURE]文化力が国内交易路から得られるようになる。自文明内に敷設された道路は通常より1レベル高いグレードの道路となる。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="ja_JP">
-			<Text>河川に隣接する区域及び遺産に対して[ICON_Production]生産力+25%。 氾濫原から[ICON_FOOD]食料+1。氾濫原上にも区域及び遺産を建設できる。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>河川に隣接する区域及び遺産に対して[ICON_Production]生産力+25%。 氾濫原から[ICON_FOOD]食料+1。氾濫原上にも区域及び遺産を建設できる。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_FILM_STUDIO_DESCRIPTION" Language="ja_JP">
 			<Text>アメリカ固有の建造物。近代において他文明から得られるこの都市の [ICON_Tourism] 観光力+50%。</Text>
@@ -458,9 +498,6 @@
 			<Text>自文明の[ICON_TOURISM]観光力産出+50%。</Text>
 		</Replace>
 		
-		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>すべての海軍白兵ユニットに対する[ICON_PRODUCTION]生産力が+25%され、それらのユニットが沿岸を略奪できる。[NEWLINE]鉱山を略奪または沿岸襲撃した際、[ICON_GOLD]ゴールドに加えて[ICON_SCIENCE]科学力を得る。[NEWLINE]採石場、牧草地、プランテーションおよびキャンプを略奪または沿岸襲撃した際、[ICON_FAITH]ゴールドに加えて[ICON_CULTURE]科学力を得る。[NEWLINE][NEWLINE]聖地とその建造物の建設に対する[ICON_PRODUCTION]生産力+50%。また聖地は隣接する沿岸タイルから通常の隣接ボーナスを得る。[NEWLINE][NEWLINE]聖地に隣接する港は[ICON_GOLD]ゴールドの隣接ボーナス2を得る。</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がスペイン固有の改善である修道院を建設できるようになる。[NEWLINE][NEWLINE][ICON_Faith]信仰+2。自文明の[ICON_Capital]首都と異なる大陸に建設された場合、[ICON_Faith]信仰+2、[ICON_PRODUCTION]生産力+1、[ICON_FOOD]食料+1。[NEWLINE][NEWLINE]隣接するキャンパスあるいは聖地1つごとに[ICON_Science]科学力+1。公務員制度の完了で住宅+1、王権神授説の完了で科学+2。</Text>
 		</Replace>
@@ -486,9 +523,6 @@
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="ja_JP">
 			<Text>隣接する沿岸/湖タイルに１つにつき{1_num} [ICON_Faith]信仰力+1。</Text>
 		</Row>
-		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="ja_JP">
-			<Text>海洋近接戦闘ユニットが沿岸を略奪できるようになる。さらに海洋近接戦闘ユニットの[ICON_PRODUCTION]生産力+25%。[NEWLINE][NEWLINE]聖地区域とその建造物に対する[ICON_PRODUCTION]生産力+50%。聖地は沿岸/湖タイルから[ICON_Faith]信仰力+1の隣接ボーナスを得る。[NEWLINE][NEWLINE]港は隣接する聖地１つにつき[ICON_GOLD]ゴールドボーナス+2。</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="ja_JP">
 			<Text>造船」を研究するとユニットが外洋航行能力を得る。海洋近接戦闘ユニットが中立地帯で回復するようになる。乗船時と下船時に追加の[ICON_Movement]移動コストがかからなくなる。</Text>
 		</Replace>

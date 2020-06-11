@@ -95,6 +95,22 @@
 		<Row Tag="LOC_ABILITY_TIGER_ADJACENCY_NAME" Language="fr_FR">
 			<Text>Boulet de canon!</Text>
 		</Row>
+		<!-- ========== COLOMBIE ========== -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="fr_FR">
+			<Text>Champ de vision +1 pour toutes les unités. La promotion d'une unité ne met pas fin à son tour.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="fr_FR">
+			<Text>Champ de vision +1 pour toutes les unités (Ejército Patriota).</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="fr_FR">
+			<Text>Unité exclusive à l'ère industrielle de la Grande Colombie remplaçant la cavalerie. Coût d'entretien réduit. [ICON_Strength] Puissance de combat +2 pour chaque llanero adjacent. Se soigne entièrement si elle est proche d'un Comandante General qui active sa compétence de retraite.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Strength] Puissance de combat +2 pour chaque unité de llaneros adjacente.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION_XP1" Language="fr_FR">
+			<Text>Obtenez un Comandante General quand le jeu entre dans une nouvelle ère, mais recrutement des [ICON_GreatGeneral] Généraux illustres impossible.</Text>
+		</Replace>
 		<!-- ========== CONGO ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION" Language="fr_FR">		<!-- Correction de la traduction officielle : Coloo peut à nouveau recruter des personnages illustres =D -->
 			<Text>Ne peut ni construire des lieux saints, ni recruter de prophète illustre, ni fonder une religion. Adopte les croyances de toute religion qui s'est propagée à la majorité de ses villes. Reçoit un apôtre de la religion dominante de la ville lorsqu'il construit un mbanza ou une place du théâtre.</Text>
@@ -134,10 +150,10 @@
 		</Replace>
 		<!-- ========== ÉGYPTE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_FOOD] Nourriture +1 pour les cases de plaines inondables. [ICON_Production] Production +25 % pour la construction de quartiers et de merveilles adjacents à une rivière, désormais possible sur les plaines inondables.</Text>
+			<Text>[ICON_Production] Production +25 % pour la construction de quartiers et de merveilles adjacents à une rivière, désormais possible sur les plaines inondables.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_FOOD] Nourriture +1 pour les cases de plaines inondables. [ICON_Production] Production +25 % pour la construction de quartiers et de merveilles adjacents à une rivière. Ne subit aucun dégât d'inondation.</Text>
+			<Text>[ICON_Production] Production +25 % pour la construction de quartiers et de merveilles adjacents à une rivière. Ne subit aucun dégât d'inondation.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive à l'Égypte, cette unité d'attaque à distance de l'Antiquité dispose de 4 [ICON_Movement] PM quand elle commence son tour en terrain dégagé.</Text>
@@ -260,10 +276,10 @@
 		</Replace>
 		<!-- ========== NORVÈGE ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_PRODUCTION] Production +25 % pour toutes les unités navales de combat rapproché, qui peuvent attaquer les côtes. Octroie de la [ICON_SCIENCE] Science lors du pillage et de l'assaut côtier des mines, en plus de l'[ICON_GOLD] Or. Le pillage et l'assaut côtier des carrières, pâturages, plantations et camps octroient de la [ICON_CULTURE] Culture, en plus de la [ICON_FAITH] Foi. [ICON_PRODUCTION] Production +50% pour les Lieux Saints et leurs bâtiments. Les lieux Saints gagnent un bonus de proximité standard pour les cases côtières. [NEWLINE][NEWLINE] [ICON_GOLD] Or +2 pour les ports adjacents à un Lieu Saint.</Text>
+			<Text>[ICON_PRODUCTION] Production +50 % pour toutes les unités navales de combat rapproché, qui peuvent attaquer les côtes. Octroie de la [ICON_SCIENCE] Science lors du pillage et de l'assaut côtier des mines, en plus de l'[ICON_GOLD] Or. Le pillage et l'assaut côtier des carrières, pâturages, plantations et camps octroient de la [ICON_CULTURE] Culture, en plus de la [ICON_FAITH] Foi. [ICON_PRODUCTION] Production +50% pour les Lieux Saints et leurs bâtiments. Les lieux Saints gagnent un bonus de proximité standard pour les cases côtières. [NEWLINE][NEWLINE] [ICON_GOLD] Or +2 pour les ports adjacents à un Lieu Saint.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_PRODUCTION] Production +25 % pour toutes les unités navales de combat rapproché, qui peuvent attaquer les côtes. [NEWLINE][NEWLINE] [ICON_PRODUCTION] Production +50% Pour les lieux saints et leurs bâtiments. Les lieux saints recoivent un bonus de proximité standard pour les cases d'eau côtière. Les ports recoivent un bonus de proximité de +2 [ICON_GOLD] Or pour chaque lieu saint adjacent.</Text>
+			<Text>[ICON_PRODUCTION] Production +50 % pour toutes les unités navales de combat rapproché, qui peuvent attaquer les côtes. [NEWLINE][NEWLINE] [ICON_PRODUCTION] Production +50% Pour les lieux saints et leurs bâtiments. Les lieux saints recoivent un bonus de proximité standard pour les cases d'eau côtière. Les ports recoivent un bonus de proximité de +2 [ICON_GOLD] Or pour chaque lieu saint adjacent.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="fr_FR">
 			<Text>Les unités peuvent traverser les cases d'océan une fois la technologie de Construction Navale découverte. Les unités navales de combat rapproché se soignent lorsqu'elles se situent en territoire neutre. L'embarquement et le débarquement des unités ne consomment pas de [ICON_Movement] PM.</Text>
@@ -492,6 +508,12 @@
 		<Replace Tag="LOC_FEATURE_CLIFFS_DOVER_DESCRIPTION" Language="fr_FR">
 			<Text>Merveille naturelle de deux cases pouvant apparaître sur des falaises adjacentes à de l'eau. [ICON_FOOD] Nourriture +2, [ICON_Culture] culture +3 et [ICON_Gold] or +2.</Text>
 		</Replace>
+		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_DESCRIPTION" Language="fr_FR">
+			<Text>Merveille naturelle occupant 3 cases. Les unités qui y pénètrent sont téléportées dans un océan lointain, mais les unités navales y gagnent la capacité "Courants mystérieux" ([ICON_Movement] PM +1).</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="fr_FR">
+			<Text>Merveille naturelle infranchissable occupant 3 cases. [ICON_Gold] Or +1 et [ICON_Culture] Culture +1 sur les cases adjacentes. Bonus de proximité majeur pour les places du théâtre et les plateformes commerciales.</Text>
+		</Replace>
 		
 		<!-- =============== M E R V E I L L E S === M O N D I A L E S =============== -->
 		
@@ -626,7 +648,7 @@
 		</Row>
 		<!-- Liang -->
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Production] Production +50 % pour la construction de quartiers dans cette ville.</Text>
+			<Text>+1 [ICON_Production] Production par tour pour chaque [ICON_CITIZEN] Citoyen dans cette ville.</Text>
 		</Replace>
 		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="fr_FR">
 			<Text>Agriculture</Text>
@@ -643,6 +665,9 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="fr_FR">
 			<Text>Peut construire un parc urbain sur un terrain plat de cette ville une fois le Dogme des Loisirs découvert. [ICON_Culture] Culture +3, [ICON_SCIENCE] Science +3 et [ICON_GOLD] Or +3. [ICON_HOUSING] Habitations +1, [ICON_Amenities] Activités +1 et Attrait +2.</Text>
 		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="fr_FR">
+			<Text>+1 [ICON_PRODUCTION] Production pour les plaines innondables et les sols volcaniques dans cette ville. Les aménagements, bâtiments et quartiers de cette ville ne peuvent pas être endommagés par les effets environnementaux.</Text>
+		</Replace>
 	
 		<!-- =============== U N I T É S (non-uniques) =============== -->
 		
@@ -653,12 +678,16 @@
 			<Text>+10 Puissance de Combat en cas de défense face à une attaque à distance.</Text>
 		</Replace>
 		
-		<!-- Correction traduction officelle suite à la mise à jour de Juin 2019 -->
+		<!-- Correction traduction Firaxis suite à la mise à jour de Juin 2019 -->
 		<Replace Tag="LOC_ABILITY_ENABLE_WALL_PROMOTION_CLASS_ATTACK_DESCRIPTION" Language="fr_FR">
 			<Text>Sur une case adjacente à une ville ennemie, les unités de combat rapproché et anti-cavalerie peuvent endommager ses remparts. N'affecte que les remparts Antiques. Inefficace contre les défenses urbaines.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_BATTERING_RAM_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Si cette unité de soutien de l'Antiquité est adjacente à une ville, les unités de combat rapproché et anti-cavalerie peuvent endommager ses remparts. N'affecte que les remparts Antiques. Inefficace contre les défenses urbaines.</Text>
+		</Replace>
+		<!-- Correction traduction Firaxis pour Abu Al-Qasim -->
+		<Replace Tag="LOC_ABILITY_MEDIC_HEAL_DESCRIPTION" Language="fr_FR">
+			<Text>Guérison en retranchement augmentée de 20 PV pour les unités du joueur dans un rayon d'une case.</Text>
 		</Replace>
 		
 		<!-- =============== T E C H N O L O G I E S =============== -->
@@ -721,10 +750,20 @@
 			<Text>Expérience au combat +50 % pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +2 dans les aérodromes. [ICON_RESOURCE_ALUMINUM] Aluminium +2 par tour. Permet le transport aérien des unités entre les aérodromes équipés d'un aéroport une fois le déploiement rapide découvert.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [ICON_RESOURCE_OIL] Pétrole +2 par tour une fois qu'il est découvert. Permet la formation immédiate de régiments et d'armées. Coûts d'entraînement des régiments et des armées -25 %.</Text>
+			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_OIL] Pétrole +2 par tour une fois qu'il est découvert. [NEWLINE]Permet la formation immédiate de régiments et d'armées. Coûts d'entraînement des régiments et des armées -25 %.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SHOPPING_MALL_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Tourism] Tourisme +6. Ne peut être construit qu'une seule fois dans une ville, même si elle dispose de plusieurs quartiers résidentiels.</Text>
+		</Replace>
+		<!-- Correction traduction Firaxis suite au DLC Maya Grande Colombie -->
+		<Replace Tag="LOC_LEADER_TRAIT_TARUGA_DESCRIPTION" Language="fr_FR">
+			<Text>+5% de [ICON_SCIENCE] Science dans vos villes pour chaque type de ressource stratégique aménagée qu'elles possèdent.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
 		</Replace>
 		
 	</LocalizedText>
