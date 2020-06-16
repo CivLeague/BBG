@@ -50,9 +50,6 @@
 			</Replace>
 
 			<!-- ================ Australia ================ -->
-			<Replace Tag="LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION" Language="pl_PL">
-				<Text>+3 do [ICON_Housing] obszarów mieszkalnych nadmorskich miast. Pastwiska uruchamiają bombę kulturową. +1 do przychodów z kampusów, dzielnic biznesowych, dzielnic świątynnych i dzielnic kulturalnych na polach o czarującym poziomie atrakcyjności i +3 na polach o poziomie niesamowitym.  </Text>
-			</Replace>
 			<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="pl_PL">
 				<Text>+50% do [ICON_PRODUCTION] produkcji, jeśli w ciągu ostatnich 10 tur wyzwolili miasto.</Text>
 			</Replace>
@@ -61,8 +58,6 @@
 			<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="pl_PL">
 				<Text>Unikalna budowla Azteków. Zapewnia [ICON_AMENITIES] udogodnienia, +3 do [ICON_CULTURE] kultury i punkt [ICON_GreatGeneral] wielkiego generała.</Text>
 			</Replace>
-
-			<!-- ================ Brazilia ================ -->
 
 			<!-- ================ Canada ================ -->
 			<Replace Tag="LOC_ALL_PARK_COMBAT_BONUS_DESCRIPTION" Language="pl_PL">
@@ -108,10 +103,10 @@
 				<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść sfinksa, dostępnego tylko dla Egiptu.[NEWLINE][NEWLINE]+1 do [ICON_FAITH] wiary i +1 do [ICON_CULTURE] kultury. +2 do atrakcyjności. +1 do [ICON_FAITH] wiary i +1 do [ICON_CULTURE], jeśli znajduje się obok cudu. +1 do [ICON_FOOD] żywności i +1 do [ICON_PRODUCTION] produkcji jesli znajduje się na pustyni oraz +1 do [ICON_CULTURE] kultury, jeśli znajduje się na równinach zalewowych. Zapewnia dodatkową [ICON_CULTURE] kulturę po odkryciu historii naturalnej. Zapewnia [ICON_TOURISM] turystykę po opracowaniu technologii lotu. Nie można zbudować obok innego sfinksa. Nie można zbudować na śniegu i wzgórzach ze śniegiem.</Text>
 			</Replace>
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="pl_PL">
-				<Text>+25% do [ICON_PRODUCTION] produkcji dzielnic i cudów, gdy znajdują się nad rzeką. +1 do [ICON_FOOD] żywności na równinach zalewowych. Równiny zalewowe nie blokują budowy dzielnic i cudów.</Text>
+				<Text>+25% do [ICON_PRODUCTION] produkcji dzielnic i cudów, gdy znajdują się nad rzeką. Równiny zalewowe nie blokują budowy dzielnic i cudów.</Text>
 			</Replace>
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="pl_PL">
-				<Text>+25% do [ICON_PRODUCTION] produkcji dzielnic i cudów w sąsiedztwie rzeki. +1 do [ICON_FOOD] żywności na równinach zalewowych. Odporność na uszkodzenia zadawane przez powodzie.</Text>
+				<Text>+25% do [ICON_PRODUCTION] produkcji dzielnic i cudów w sąsiedztwie rzeki. Odporność na uszkodzenia zadawane przez powodzie.</Text>
 			</Replace>
 			<Replace Tag="LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_DESCRIPTION" Language="pl_PL">
 				<Text>Starożytna jednostka dystansowa dostępna wyłącznie dla Egiptu. Zastępuje ciężkie rydwany. 4 punkty [ICON_MOVEMENT] ruchu, gdy rozpoczyna na otwartym terenie.</Text>
@@ -151,6 +146,26 @@
 			<!-- ================ Germany ================ -->
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="pl_PL">
 				<Text>Po odblokowaniu idei gildii, każde miasto może budować o jedną dzielnicę więcej niż zwykle (powyżej zwykłego limitu wynikającego z wielkości [ICON_Citizen] populacji).</Text>
+			</Replace>
+
+			<!-- ================ Gran Colombia ================ -->
+			<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="pl_PL">
+				<Text>+1 do zasięgu widzenia wszystkich jednostek (Ejército Patriota)</Text>
+			</Replace>
+			<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="pl_PL">
+				<Text>+2 do [ICON_Strength] siły bojowej za każdą sąsiadującą jednostkę llanero.</Text>
+			</Replace>
+			<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="pl_PL">
+				<Text>Wszystkie jednostki mają +1 do zsięgu widzenia. Awansowanie jednostki nie kończy jej tury.</Text>
+			</Replace>
+			<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION" Language="pl_PL">
+				<Text>Gdy wkraczasz w nową epokę, zyskujesz komendanta generalnego. Nie może zatrudnić [ICON_GreatGeneral] wielkiego generała.</Text>
+			</Replace>
+			<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION_XP1" Language="pl_PL">
+				<Text>Gdy rozgrywka wkracza w nową epokę, zyskujesz komendanta generalnego. Nie może zatrudnić [ICON_GreatGeneral] wielkiego generała.</Text>
+			</Replace>
+			<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="pl_PL">
+				<Text>Jednostka epoki przemysłowej dostępna wyłącznie dla Wielkiej Kolumbii zastępująca kawalerię. Niskie koszty utrzymania. +2 do [ICON_Strength] siły bojowej za każdą sąsiadującą jednostkę llanero. Odzyskuje pełnię zdrowia, gdy znajduje się w zasięgu komendanta generalnego, który aktywował swoją jednorazową umiejętność związaną z zakończeniem kariery.</Text>
 			</Replace>
 
 			<!-- ================ Greece ================ -->
@@ -295,10 +310,10 @@
 				<Text>Po opracowaniu technologii szkutnictwa jednostki mogą wypływać na pola oceaniczne. Jednostki morskie walczące bezpośrednio leczą się na terytorium neutralnym. Jednostki nie ponoszą też dodatkowego kosztu [ICON_MOVEMENT] ruchu za okrętowanie i wyokrętowanie.</Text>
 			</Replace>
 			<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="pl_PL">
-				<Text>Umożliwia atakowanie wybrzeża przez wszystkie jednostki morskie walczące w zwarciu oraz zapewnia +25% do [ICON_PRODUCTION] produkcji morskich jednostek walczących w zwarciu. [NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] produkcji przy budowie dzielnic świątynnych i budowli w tych dzielnicach. Dzielnice świątynne otrzymują standardowy bonus za sąsiedztwo pól z wodami przybrzeżnymi.[NEWLINE][NEWLINE]Przystań zbudowana przy dzielnicy świątynnej otrzymuje bonus za sąsiedzwto w wysokości +2 [ICON_GOLD] złota.</Text>
+				<Text>Umożliwia atakowanie wybrzeża przez wszystkie jednostki morskie walczące w zwarciu oraz zapewnia +50% do [ICON_PRODUCTION] produkcji morskich jednostek walczących w zwarciu. [NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] produkcji przy budowie dzielnic świątynnych i budowli w tych dzielnicach. Dzielnice świątynne otrzymują standardowy bonus za sąsiedztwo pól z wodami przybrzeżnymi.[NEWLINE][NEWLINE]Przystań zbudowana przy dzielnicy świątynnej otrzymuje bonus za sąsiedzwto w wysokości +2 [ICON_GOLD] złota.</Text>
 			</Replace>
 			<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="pl_PL">
-				<Text>Umożliwia atakowanie wybrzeża przez wszystkie jednostki morskie walczące w zwarciu oraz zapewnia +25% do [ICON_PRODUCTION] produkcji morskich jednostek walczących w zwarciu. Plądrowanie kopalni i atakowanie ich na wybrzeżu oprócz [ICON_GOLD] złota zapewnia też [ICON_SCIENCE] naukę. Plądrowanie kamieniołomów, pastwisk, plantacji i obozów oraz atakowanie ich na wybrzeżu oprócz [ICON_FAITH] wiary zapewnia też [ICON_CULTURE] kulturę.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] produkcji przy budowie dzielnic świątynnych i budowli w tych dzielnicach. Dzielnice świątynne otrzymują standardowy bonus za sąsiedztwo pól z wodami przybrzeżnymi.[NEWLINE][NEWLINE]Przystań zbudowana przy dzielnicy świątynnej otrzymuje bonus za sąsiedzwto w wysokości +2 [ICON_GOLD] złota.</Text>
+				<Text>Umożliwia atakowanie wybrzeża przez wszystkie jednostki morskie walczące w zwarciu oraz zapewnia +50% do [ICON_PRODUCTION] produkcji morskich jednostek walczących w zwarciu. Plądrowanie kopalni i atakowanie ich na wybrzeżu oprócz [ICON_GOLD] złota zapewnia też [ICON_SCIENCE] naukę. Plądrowanie kamieniołomów, pastwisk, plantacji i obozów oraz atakowanie ich na wybrzeżu oprócz [ICON_FAITH] wiary zapewnia też [ICON_CULTURE] kulturę.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] produkcji przy budowie dzielnic świątynnych i budowli w tych dzielnicach. Dzielnice świątynne otrzymują standardowy bonus za sąsiedztwo pól z wodami przybrzeżnymi.[NEWLINE][NEWLINE]Przystań zbudowana przy dzielnicy świątynnej otrzymuje bonus za sąsiedzwto w wysokości +2 [ICON_GOLD] złota.</Text>
 			</Replace>
 			<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="pl_PL">
 				<Text>Unikalna średniowieczna jednostka Norwegii walcząca w zwarciu. +2 punkty [ICON_MOVEMENT] ruchu, jeśli ruch jednostki rozpoczyna się na wrogim terytorium albo jest zaokrętowana. +15 do [ICON_STRENGTH] siły bojowej podczas ataku. Może być zakupiona za [ICON_FAITH] wiarę.</Text>
@@ -319,11 +334,17 @@
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="pl_PL">
 				<Text>+1 [ICON_TradeRoute] do maksymalnej liczby szlaków handlowych w połączeniu z ideą filozofii politycznej. +2 [ICON_GOLD] złota i +1 [ICON_CULTURE] kultury dzięki szlakom łączącym własne miasta. Dodatkowe [ICON_GOLD] złoto i [ICON_CULTURE] kultura za krajowe szlaki handlowe wraz z postępami na drzewach idei i technologii. Drogi wybudowane na obszarze własnego terytorium są o jeden poziom bardziej zaawansowane niż domyślnie.</Text>
 			</Replace>
+			<Replace Tag="LOC_TRAIT_FALLBABYLON_COMBAT_BONUS_DESCRIPTION" Language="pl_PL">
+				<Text>+{1_Value} podczas ataku</Text>
+			</Replace>
+			<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_DESCRIPTION" Language="pl_PL">
+				<Text>+3 do [ICON_STRENGTH] siły bojowej jednostek podczas ataku. Brak obniżenia dochodów z okupowanych miast. W kwestii kary za wojowniczość i zmęczenia wojną wojna z zaskoczenia traktowana jest jak wojna formalna.</Text>
+			</Replace>
 			<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION1_DESCRIPTION" Language="pl_PL">
-				<Text>+3 do [ICON_STRENGTH] siły bojowej jednostem podczas ataku. +5 do lojalności na turę w okupowanych miastach ze stacjonującą w nich jednostką. W kwestii kary za wojowniczość i zmęczenia wojną wojna z zaskoczenia traktowana jest jak wojna formalna.</Text>
+				<Text>+3 do [ICON_STRENGTH] siły bojowej jednostek podczas ataku. +5 do lojalności na turę w okupowanych miastach ze stacjonującą w nich jednostką. W kwestii kary za wojowniczość i zmęczenia wojną wojna z zaskoczenia traktowana jest jak wojna formalna.</Text>
 			</Replace>
 			<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="pl_PL">
-				<Text>+3 do [ICON_STRENGTH] siły bojowej jednostem podczas ataku. +5 do lojalności na turę w okupowanych miastach ze stacjonującą w nich jednostką. W kwestii kary za wojowniczość i [ICON_STAT_GRIEVANCE] uraz wojna z zaskoczenia traktowana jest jak wojna formalna.</Text>
+				<Text>+3 do [ICON_STRENGTH] siły bojowej jednostek podczas ataku. +5 do lojalności na turę w okupowanych miastach ze stacjonującą w nich jednostką. W kwestii kary za wojowniczość i [ICON_STAT_GRIEVANCE] uraz wojna z zaskoczenia traktowana jest jak wojna formalna.</Text>
 			</Replace>
 
 			<!-- ================ Poland ================ -->
@@ -341,12 +362,6 @@
 			<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="pl_PL">
 				<Text>Unikalna dzielnica Rzymu wspomagająca rozwój miasta. Zastępuje dzielnicę akweduktu, a jej wzniesienie jest tańsze. +1 do [ICON_CULTURE] kultury za każde 2 sąsiadujące dzielnice.[NEWLINE][NEWLINE]Dostarcza miastu świeżą wodę ze źródła w postaci sąsiadującej rzeki, jeziora, oazy albo gór. Miasto, które nie posiada jeszcze słodkiej wody, otrzymuje z tego tytułu do 6 [ICON_HOUSING] obszarów mieszkalnych. Miasta, które mają już taką wodę, otrzymają zamiast tego +2 [ICON_HOUSING] obszary mieszkalne. +1 [ICON_AMENITIES] udogodnienie, jeśli sąsiaduje ze szczeliną geotermalną. We wszystkich przypadkach łaźnia zapewnia dodatkowe +2 [ICON_HOUSING] obszary mieszkalne i +1 [ICON_AMENITIES] udogodnienie. Zapobiega utracie [ICON_FOOD] żywności podczas suszy. Musi powstać w sąsiedztwie centrum miasta.</Text>
 			</Replace>
-			<Replace Tag="LOC_TRAIT_FALLBABYLON_COMBAT_BONUS_DESCRIPTION" Language="pl_PL">
-				<Text>+{1_Value} podczas ataku</Text>
-			</Replace>
-			<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_DESCRIPTION" Language="pl_PL">
-				<Text>+3 do [ICON_STRENGTH] siły bojowej jednostem podczas ataku. Brak obniżenia dochodów z okupowanych miast. W kwestii kary za wojowniczość i zmęczenia wojną wojna z zaskoczenia traktowana jest jak wojna formalna.</Text>
-			</Replace>
 
 			<!-- ================ Russia ================ -->
 			<Replace Tag="LOC_DISTRICT_LAVRA_DESCRIPTION" Language="pl_PL">
@@ -363,10 +378,10 @@
 
 			<!-- ================ Scyth ================ -->
 			<Replace Tag="LOC_IMPROVEMENT_KURGAN_DESCRIPTION" Language="pl_PL">
-				<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść kurhan, dostępny tylko w Scytii.[NEWLINE][NEWLINE]+1 do [ICON_FAITH] wiary i +1 do [ICON_GOLD] złota. Dodatkowo +1 do [ICON_FAITH] wiary i +1 do [ICON_PRODUKCJI] produkcji za każde sąsiadujące pastwisko.</Text>
+				<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść kurhan, dostępny tylko w Scytii.[NEWLINE][NEWLINE]+1 do [ICON_FAITH] wiary i +1 do [ICON_GOLD] złota. Dodatkowo +1 do [ICON_FAITH] wiary i +1 do [ICON_PRODUCTION] produkcji za każde sąsiadujące pastwisko.</Text>
 			</Replace>
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="pl_PL">
-				<Text>Może zakupić jednostki lekkiej, ciężkiej i łuczników konnych za [ICON_FAITH] wiarę</Text>
+				<Text>Może zakupić jednostki lekkiej, ciężkiej kawalerii oraz łuczników konnych za [ICON_FAITH] wiarę</Text>
 			</Replace>
 			<Replace Tag="LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION" Language="pl_PL">
 				<Text>Jednostka epoki klasycznej dostępna wyłącznie dla Scytów. Jednostka dystansowa z 4 punktami [ICON_MOVEMENT] ruchu i [ICON_RANGE] zasięgiem 2 pola.</Text>
@@ -391,7 +406,7 @@
 				<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść ziggurat, dostępny tylko w Sumerii.[NEWLINE][NEWLINE]+2 do [ICON_SCIENCE] nauki. +1 do [ICON_CULTURE] kultury, jeśli znajduje się nad rzeką. +1 [ICON_CULTURE] do kultury po opracowaniu idei służba dyplomatyczna. +1 do [ICON_CULTURE] kultury i +1 do [ICON_SCIENCE] nauki po opracowaniu idei oświecenia. Nie można zbudować go na wzgórzu, ale można wznieść go na równinach zalewowych.</Text>
 			</Replace>
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="pl_PL">
-				<Text>zyskuje 3 dodatkowe punkty wpłuwów do emisariuszy i płać połowę domyślnych kosztów poboru jednostek miast-państw.[NEWLINE][NEWLINE]Dodatkowa nagroda w postaci wioski plemiennej (oprócz [ICON_Gold] złota) za przejęcie obozu barbarzyńców.</Text>
+				<Text>zyskuje 3 dodatkowe punkty wpływów do emisariuszy i płać połowę domyślnych kosztów poboru jednostek miast-państw.[NEWLINE][NEWLINE]Dodatkowa nagroda w postaci wioski plemiennej (oprócz [ICON_Gold] złota) za przejęcie obozu barbarzyńców.</Text>
 			</Replace>
 			<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="pl_PL">
 				<Text>Podwojone łupu z plondrowania. Może bezkarnie wypowiadać wonjnę komukolwiek kto prowadzi wojnę z ich sojusznikiem.</Text>
@@ -460,12 +475,20 @@
 				<Text>+25% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości).[NEWLINE]Umożliwia bezpośrednie szkolenie korpusów i armii. Koszt szkolenia korpusów i armii zmniejszony o 25%. +2 [ICON_RESOURCE_OIL] ropy na turę jeżeli została odkryta.</Text>
 			</Replace>
 
+			<!-- ================ Armory ================ -->
+			<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="pl_PL">
+				<Text>+25% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]+1 [ICON_RESOURCE_NITER] saletry na turę (jeżeli odkryta).</Text>
+			</Replace>
+			<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>+25% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości).[NEWLINE]+1 [ICON_RESOURCE_NITER] saletry na turę (jeżeli odkryta).</Text>
+			</Replace>
+
 			<!-- ================ Government ================ -->
 			<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="pl_PL">
 				<Text>Pozyskiwanie miast-państw kosztuje o połowę mniej [ICON_GOLD] złota.[NEWLINE]Jednostki miasta-państwa zyskują premię +4 do [ICON_STRENGTH] siły bojowej, jeśli jesteś suzerenem tego miasta-państwa (premia obejmuje też pozyskane jednostki).[NEWLINE]Daje 1 tytuł [Icon_Governor] gubernatora. +2 emisariuszy i +2 punkty wpływu na turę.</Text>
 			</Replace>
 			<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="pl_PL">
-				<Text>+25% do [ICON_PRODUCTION] produkcji wszystkich jednostek morskich i lądowych. Zmniejsza koszt utrzymania jednostek o 1 [ICON_GOLD] złota.[NEW_LINE]Daje 1 tytuł [Icon_Governor] gubernatora i zwiększa zapasy zasobów strategicznych o 10.</Text>
+				<Text>+25% do [ICON_PRODUCTION] produkcji wszystkich jednostek morskich i lądowych. Zmniejsza koszt utrzymania jednostek o 1 [ICON_GOLD] złota.[NEWLINE]Daje 1 tytuł [Icon_Governor] gubernatora i zwiększa zapasy zasobów strategicznych o 10.</Text>
 			</Replace>
 			<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="pl_PL">
 				<Text>+1 [ICON_AMENITIES] udogodnienie, +3 [ICON_FOOD] żywności i +3 [ICON_HOUSING] obszary mieszkalne w miastach z [ICON_Governor] gubernatorami.[NEWLINE]-2 do lojalności w miastach bez [ICON_Governor] gubernatorów.[NEWLINE]Daje 1 tytuł [Icon_Governor] gubernatora.</Text>
@@ -516,7 +539,7 @@
 				<Text>Bum mieszkaniowy|Bumu mieszkaniowego|Bumowi mieszkaniowemu|Bum mieszkaniowy|Bumem mieszkaniowym|Bumie mieszkaniowym|bum mieszkaniowy|bumu mieszkaniowego|bumowi mieszkaniowemu|bum mieszkaniowy|bumem mieszkaniowym|bumie mieszkaniowym</Text>
 			</Replace>
 			<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="pl_PL">
-				<Text>+50% do [ICON_PRODUCTION] produkcji przy wznoszeniu dzielnic tego miasta.</Text>
+				<Text>+1 do [ICON_PRODUCTION] produkcji za każdego [ICON_CITIZEN] mieszkańca miasta.</Text>
 			</Replace>
 
 			<!-- ================ Magnus ================ -->
@@ -569,6 +592,11 @@
 			<!-- ================ Victor ================ -->
 			<Replace Tag="LOC_GOVERNOR_PROMOTION_GARRISON_COMMANDER_DESCRIPTION" Language="pl_PL">
 				<Text>Jednostki broniące się w obrębie miasta zyskują +3 do [ICON_STRENGTH] siły bojowej. Inne miasta, które należą do ciebie i znajdują się w promieniu 9 pól, zyskują +4 lojalności wobec twojej cywilizacji na turę.</Text>
+			</Replace>
+
+			<!-- ================ Liang ================ -->
+			<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="pl_PL">
+				<Text>+1 do [ICON_PRODUCTION] produkcji na równinach zalewowych i ziemi wulkanicznej miasta. Ulepszenia, budowle i dzielnice tego miasta nie mogą ulec zniszczeniu z powodu wpływu środowiska.</Text>
 			</Replace>
 
 
@@ -634,7 +662,7 @@
 				<Text>+1 do [ICON_SCIENCE] nauki za każdych 3 wyznawców religii w innych cywilizacjach.</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_DAR_E_MEHR_DESCRIPTION" Language="pl_PL">
-				<Text>Umożliwia budowę dar-e mehr (+3 do [ICON_FAITH] wiary, +2 do [ICON_CULTUR] kultury).</Text>
+				<Text>Umożliwia budowę dar-e mehr (+3 do [ICON_FAITH] wiary, +2 do [ICON_CULTURE] kultury).</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="pl_PL">
 				<Text>Wszystkie cuda świata zapewniają premię +6 do [ICON_FAITH] wiary.</Text>
@@ -678,10 +706,10 @@
 				<Text>Dzielnice świątynne otrzymują +1 do [ICON_FAITH] wiary z sąsiednich pól z tundrą.</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="pl_PL">
-				<Text>Po wybraniu otrzymasz budowniczego w swojej stolicy. +1 do [ICON_FODD] żywności na polach z [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE] i [ICON_RESOURCE_WHEAT].</Text>
+				<Text>Po wybraniu otrzymasz budowniczego w swojej stolicy. +1 do [ICON_FOOD] żywności na polach z [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE] i [ICON_RESOURCE_WHEAT].</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="pl_PL">
-				<Text>Po wybraniu otrzymasz budowniczego w swojej stolicy. +1 do [ICON_FODD] żywności na polach z [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE] i [ICON_RESOURCE_WHEAT].</Text>
+				<Text>Po wybraniu otrzymasz budowniczego w swojej stolicy. +1 do [ICON_FOOD] żywności na polach z [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE] i [ICON_RESOURCE_WHEAT].</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION" Language="pl_PL">
 				<Text>+4 do [ICON_FAITH] wiary dzięki szczelinom geotermalnym i wulkanicznej glebie.</Text>
@@ -693,10 +721,10 @@
 				<Text>Bóg wojny|Boga wojny|Bogowi wojny|Boga wojny|Bogiem wojny|Bogu wojny</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="pl_PL">
-				<Text>Za każdą wyprodukowaną naziemnej jednostkę wojskowej nagrasza [ICON_FAITH] wiarą równą 25% kosztu produkcji jednostki.</Text>
+				<Text>Za każdą wyprodukowaną naziemną jednostkę wojskową nagradza [ICON_FAITH] wiarą równą 25% kosztu produkcji jednostki.</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="pl_PL">
-				<Text>Za każdą wyprodukowaną naziemnej jednostkę wojskowej nagrasza [ICON_FAITH] wiarą równą 25% kosztu produkcji jednostki.</Text>
+				<Text>Za każdą wyprodukowaną naziemną jednostkę wojskową nagradza [ICON_FAITH] wiarą równą 25% kosztu produkcji jednostki.</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="pl_PL">
 				<Text>+1 do [ICON_PRODUCTION] produkcji dzięki mokradłom, oazom i pustynnym równinom zalewowym.</Text>
@@ -740,23 +768,20 @@
 
 
 		<!-- ================ U N I T S ================ -->
-		<Replace Tag="LOC_ABILITY_ENABLE_WALL_PROMOTION_CLASS_ATTACK_DESCRIPTION" Language="pl_PL">
-			<Text>Jednostki walczące w zwarciu i zwalczające kawalerię znajdujące się w sąsiedztwie wrogiego miasta zadają pełne uszkodzenia murom miejskim. Nie działa na miasta ze średniowiecznymi i renesansowymi murami. Nieskuteczne przeciwko obronie miejskiej.</Text>
-		</Replace>
 		<Replace Tag="LOC_SIEGE_RANGED_DEFENSE_DESCRIPTION" Language="pl_PL">
 			<Text>+10 siły bojowej podczas obrony przed atakami dystansowymi.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_ANTIAIR_GUN_DESCRIPTION" Language="pl_PL">
 			<Text>Przeciwlotnicza jednostka wsparcia epoki nowożytnej. Zapewnia osłonę przed atakami z powietrza w odległości do 1 pola od niej.</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_BATTERING_RAM_EXPANSION2_DESCRIPTION" Language="pl_PL">
-			<Text>Starożytna jednostka wsparcia. Gdy sąsiaduje z miastem, sprawia, że jednostki walczące w zwarciu i zwalczające kawalerię zadają pełne uszkodzenia murom miejskim. Nie działa na miasta ze średniowiecznymi i renesansowymi murami. Nieskuteczna przeciwko obronie miejskiej.</Text>
-		</Replace>
 
 
 		<!-- ================ W O N D E R S ================ -->
 
 			<!-- ================ Natural ================ -->
+			<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_DESCRIPTION" Language="pl_PL">
+				<Text>Zajmujący trzy pola cud natury. Jednostki, które znajdą się we wnętrzu cudu, przenoszone są na odległe pole oceanu, a jednostki morskie zyskują dzięki temu umiejętność „Tajemnicze prądy” (+1 do [ICON_Movement] ruchu).</Text>
+			</Replace>
 			<Replace Tag="LOC_FEATURE_CHOCOLATEHILLS_DESCRIPTION" Language="pl_PL">
 				<Text>Zajmujący cztery pola cud natury. Zapewnia +3 do [ICON_FOOD] żywności, +2 do [ICON_PRODUCTION] produkcji i +1 do [ICON_SCIENCE] nauki.</Text>
 			</Replace>
@@ -784,6 +809,9 @@
 			<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="pl_PL">
 				<Text>Zajmujący dwa pola cud natury. Ma właściwości jeziora i zapewnia +2 do [ICON_FOOD] żywności, +1 do ICON_PRODUCTION] produkcji, +2 do [ICON_CULTURE] kultury oraz +2 [ICON_GOLD] złota. Nie zapewnia wody pitnej.</Text>
 			</Replace>
+			<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="pl_PL">
+				<Text>Zajmujący trzy pola, nieprzekraczalny cud natury. Zapewnia sąsiadującym polom +1 [ICON_Gold] złota i +1 do [ICON_Culture] kultury. Duża premia dla sąsiadujących dzielnic kulturalnych i biznesowych.</Text>
+			</Replace>
 			<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="pl_PL">
 				<Text>Zajmujący cztery pola cud natury. Ma właściwości mokradeł. Zapewnia +2 do [ICON_FOOD] żywności, +2 do [ICON_CULTURE] kultury i +2 do [ICON_SCIENCE] nauki.</Text>
 			</Replace>
@@ -809,9 +837,6 @@
 			</Replace>
 			<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="pl_PL">
 				<Text>+1 [ICON_AMENITIES] udogodnienie z rozrywki za każde pole jeziora w promieniu jednego pola od Huey Teocalli. +1 do [ICON_FOOD] żywności, +1 do [ICON_PRODUCTION] produkcji i +2 do [ICON_CULTURE] kultiry za każde pole z jeziorem w twoim imperium. Można zbudować tylko na polu z jeziorem sąsiadującym z lądem.</Text>
-			</Replace>
-			<Replace Tag="LOC_BUILDING_OXFORD_UNIVERSITY_DESCRIPTION" Language="pl_PL">
-				<Text>+20% do [ICON_Science] nauki w tym mieście. Po zbudowaniu odblokowuje za darmo 2 losowo wybrane technologie. Można zbudować tylko na płaskim terenie z łąką lub równiną w sąsiedztwie kampusu z uniwersytetem.</Text>
 			</Replace>
 			<Replace Tag="LOC_BUILDING_ST_BASILS_CATHEDRAL_DESCRIPTION" Language="pl_PL">
 				<Text>Daje 1 [ICON_GreatWork_Relic] relikwię i 3 [ICON_GreatWork_Relic] miejsca na relikwie. +100% do [ICON_Tourism] turystyki religijnej z tego miasta. +1 do [ICON_FOOD] żywności, +1 do [ICON_PRODUCTION] produkcji i +1 do [ICON_CULTURE] kultury na wszystkich polach tundry należących do tego miasta. Można zbudować tylko w sąsiedztwie centrum miasta.</Text>

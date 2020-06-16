@@ -35,9 +35,9 @@
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="ko_KR">
 			<Text>모든 해상 근접 유닛이 해안 강습을 감행할 수 있게 되며, [ICON_PRODUCTION] 생산력 +50%를 제공합니다.[NEWLINE][NEWLINE]성지 특수지구와 성지 특수지구 내 건물을 생산할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 성지는 인접한 해안 타일에서 일반적인 신앙 인접 보너스를 획득합니다.[NEWLINE][NEWLINE]성지 특수지구와 인접한 항만 특수지구에서 [ICON_GOLD] 금 +2의 인접 보너스를 획득합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>모든 해상 근접 유닛이 해안 강습을 감행할 수 있게 되며, 이 유닛 생성에 대한 [ICON_PRODUCTION] 생산력 +50과학도 얻습니다. 채석장, 목장, 재배지, 야영지를 약탈 또는 해안 강습하면 [ICON_FAITH] 신앙뿐만 아니라 [ICON_CULTURE] 문화도 얻습니다. 항해를 통해 특유 유닛인 바이킹 롱십을 훈련할 수 있습니다.[NEWLINE][NEWLINE]성지 특수지구와 성지 특수지구 내 건물을 생산할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 성지는 인접한 해안 타일에서 일반적인 신앙 인접 보너스를 획득합니다.[NEWLINE][NEWLINE]성지 특수지구와 인접한 항만 특수지구에서 [ICON_GOLD] 금 +2의 인접 보너스를 획득합니다.</Text>
-		</Replace>
+        <Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="ko_KR">
+            <Text>모든 해상 근접 유닛이 해안 강습을 감행할 수 있게 되며, 이 유닛 생성에 대한 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 광산을 약탈 또는 해안 강습하면 [ICON_GOLD] 금뿐만 아니라 [ICON_SCIENCE] 과학도 얻습니다. 채석장, 목장, 재배지, 야영지를 약탈 또는 해안 강습하면 [ICON_FAITH] 신앙뿐만 아니라 [ICON_CULTURE] 문화도 얻습니다. 항해를 통해 특유 유닛인 바이킹 롱십을 훈련할 수 있습니다.[NEWLINE][NEWLINE]성지 특수지구와 성지 특수지구 내 건물을 생산할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 성지는 인접한 해안 타일에서 일반적인 신앙 인접 보너스를 획득합니다.[NEWLINE][NEWLINE]성지 특수지구와 인접한 항만 특수지구에서 [ICON_GOLD] 금 +2의 인접 보너스를 획득합니다.</Text>
+        </Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="ko_KR">
 			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +25% 증가합니다.[NEWLINE][ICON_RESOURCE_NITER] 질산칼륨 자원을 발견하였다면, [ICON_RESOURCE_NITER] 질산칼륨 자원을 매턴 1개씩 제공합니다.</Text>
 		</Replace>

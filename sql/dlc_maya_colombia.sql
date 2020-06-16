@@ -13,7 +13,7 @@ UPDATE ModifierArguments SET Value='2' WHERE ModifierId='LLANERO_ADJACENCY_STREN
 UPDATE Improvements SET PrereqCivic='CIVIC_MEDIEVAL_FAIRES' WHERE ImprovementType='IMPROVEMENT_HACIENDA';
 
 
--- Mayan start biases: after coastals and tundra and desert; make flat land bias last resort; delete non-plantation lux biases; add banana bias
+-- Mayan start biases: after coastals and tundra and desert; delete non-plantation lux biases; add banana bias; make flat land bias last priority
 UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_CITRUS';
 UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_COFFEE';
 UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_COCOA';

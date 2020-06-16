@@ -324,9 +324,8 @@
 			<Text>Débloque la compétence de bâtisseur permettant de construire un pairidaēza, exclusif à la Perse. [NEWLINE][NEWLINE][ICON_CULTURE] Culture +1 et [ICON_GOLD] or +2. Attrait +2. [ICON_CULTURE] Culture +1 pour chaque Lieu Saint, Campus et Place du Théâtre adjacent. [ICON_GOLD] Or +1 pour chaque Plateforme Commerciale, Port, Zone Industrielle et Centre-Ville adjacent. [ICON_Culture] Culture et [ICON_Tourism] tourisme additionnels à mesure que vous progressez dans l'arbre des technologies et celui des dogmes. Construction impossible sur une case de neige, de toundra, de colline enneigée ou de colline de toundra, ou adjacent à un autre pairidaēza.</Text>
 		</Replace>
 		<!-- ========== RUSSIE ========== -->
-		<!-- correction traduction officielle : ajout quartiers et aménagements immunisés au blizzard -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Le territoire des villes nouvellement fondées est plus vaste. [ICON_Faith] Foi et [ICON_Production] production +1 pour la toundra. Les unités, quartiers et aménagements sont insensibles au blizzard. Les unités des civilisations en guerre avec la Russie reçoivent +100 % des dégâts infligés par les blizzards sur le territoire russe.</Text>
+			<Text>Le territoire des villes nouvellement fondées est plus vaste. [ICON_Faith] Foi et [ICON_Production] production +1 pour la toundra. Les unités sont insensibles au blizzard. Les unités des civilisations en guerre avec la Russie reçoivent +100 % des dégâts infligés par les blizzards sur le territoire russe.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="fr_FR">
 			<Text>Exclusive à la Russie, cette unité de l'ère industrielle qui remplace la Cavalerie peut se déplacer après l'attaque s'il lui reste des [ICON_Movement] PM. [ICON_Strength] Puissance de combat +5 sur les cases de son territoire ou adjacentes.</Text>
@@ -580,9 +579,6 @@
 		<Replace Tag="LOC_BUILDING_GOV_CONQUEST_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +25% pour toutes les unités militaires terrestres et navales. Maintenance des unités militaires -1 [ICON_GOLD] Or.[NEWLINE]Octroie un Titre de [Icon_Governor] Gouverneur et augmente le stock de Ressources Stratégiques de 15.</Text>
 		</Replace>
-		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Production] Production +50% pour les unités de siège et les remparts.</Text>
-		</Replace>
 		
 		<!-- =============== G O U V E R N E U R S =============== -->
 		
@@ -718,6 +714,9 @@
 		</Replace>
 		<Replace Tag="LOC_POLICY_COLLECTIVIZATION_DESCRIPTION_XP2" Language="fr_FR">
 			<Text>[ICON_Production] Production +4 et [ICON_Food] nourriture +4 pour les [ICON_TradeRoute] routes commerciales intérieures.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Production] Production +100% pour les unités de siège et les remparts.</Text>
 		</Replace>
 		
 		<!-- =============== D I V E R S =============== -->
