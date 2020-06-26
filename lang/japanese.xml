@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="ja_JP">
+            <Text>ダルエ・メフルの建設が可能になる。([ICON_Faith]信仰力+3、[ICON_CULTURE]文化力+2。災害によって破壊されない。）</Text>
+        </Replace>
+        <Replace Tag="LOC_BUILDING_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="ja_JP">
+            <Text>[ICON_CULTURE]文化力+2。災害によって破壊されない。</Text>
+		</Replace>
+		
 		<Replace Tag="LOC_ABILITY_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="ja_JP">
 			<Text>丘陵地形での戦闘時に [ICON_Strength] 戦闘力+5。[NEWLINE][ICON_Bullet]丘陵でも [ICON_Movement] 移動ペナルティが発生しない。</Text>
 		</Replace>
