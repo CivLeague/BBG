@@ -241,7 +241,8 @@ UPDATE ModifierArguments SET Value='4' WHERE ModifierId='COLLECTIVIZATION_INTERN
 --==============================================================
 --******				  PANTHEONS						  ******
 --==============================================================
--- reeds and marshes works with all floodplains (see egypt for ReqArgs)
+-- reeds and marshes works with all floodplains (see egypt for ReqArgs) and remains only 1 prod
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId='LADY_OF_THE_REEDS_PRODUCTION2_MODIFIER' AND Name='Amount';
 INSERT INTO RequirementSetRequirements 
     (RequirementSetId, RequirementId)
     VALUES
@@ -249,6 +250,22 @@ INSERT INTO RequirementSetRequirements
     ('PLOT_HAS_REEDS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_FLOODPLAINS_PLAINS');
 -- more faith for fire goddess and no district dmg from eruptions
 UPDATE ModifierArguments SET Value='4' WHERE ModifierId='GODDESS_OF_FIRE_FEATURES_FAITH_MODIFIER' AND Name='Amount';
+
+
+
+--==============================================================
+--******				 RELIGIOUS						  ******
+--==============================================================
+/*--revert feed the world to pre-GS version
+DELETE FROM BeliefModifiers WHERE BeliefType='BELIEF_FEED_THE_WORLD' AND ModifierID='FEED_THE_WORLD_SHRINE_HOUSING';
+DELETE FROM BeliefModifiers WHERE BeliefType='BELIEF_FEED_THE_WORLD' AND ModifierID='FEED_THE_WORLD_TEMPLE_HOUSING';
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId='FEED_THE_WORLD_SHRINE_FOOD3' AND Name='Amount';
+UPDATE ModifierArguments SET Value='4' WHERE ModifierId='FEED_THE_WORLD_TEMPLE_FOOD3' AND Name='Amount';
+UPDATE Beliefs SET Description='LOC_BELIEF_FEED_THE_WORLD_DESCRIPTION' WHERE BeliefType='BELIEF_FEED_THE_WORLD';*/
+-- Cross-Cultural Dialogue is now +1 Science for every 3 foreign followers
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='CROSS_CULTURAL_DIALOGUE_SCIENCE_FOLLOWER_MODIFIER' AND Name='PerXItems';
+-- World Church is now +1 Culture for every 3 foreign followers
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='WORLD_CHURCH_CULTURE_FOLLOWER_MODIFIER' AND Name='PerXItems';
 
 
 

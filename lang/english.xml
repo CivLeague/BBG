@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Allows construction of Dar-e Mehrs (+3 [ICON_Faith] Faith, +2 [ICON_CULTURE] Culture. Cannot be pillaged by natural disasters).</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>+2 [ICON_CULTURE] Culture. Cannot be pillaged by natural disasters.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_ABILITY_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="en_US">
+			<Text>+5 [ICON_Strength] Combat Strength bonus when fighting in Hill terrain.[NEWLINE][ICON_Bullet]No [ICON_Movement] Movement penalty in Hill terrain.</Text>
+		</Replace>
 		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_DESCRIPTION" Language="en_US">
 			<Text>Three tile natural wonder. Units that enter it are teleported to an ocean far away, but naval units that do so earn the ability 'Mysterious Currents' (+1 [ICON_Movement] Movement).</Text>
 		</Replace>

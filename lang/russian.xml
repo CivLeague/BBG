@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_ABILITY_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="ru_RU">
+			<Text>+5 [ICON_Strength] к боевой мощи в сражениях на холмах.[NEWLINE][ICON_Bullet]Нет штрафа за [ICON_Movement] передвижение по холмам.</Text>
+		</Replace>
 		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_DESCRIPTION" Language="ru_RU">
 			<Text>Чудо природы на три клетки. Входящие юниты переносятся к далекому океану. Если это морские юниты, они получают способность "Загадочные течения" (+1 к [ICON_Movement] перемещению).</Text>
 		</Replace>

@@ -1131,6 +1131,7 @@ INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 -- Warrior Monks +5 Combat Strength
 UPDATE Units SET Combat=40 WHERE UnitType='UNIT_WARRIOR_MONK';
 -- Work Ethic now provides production equal to base yield for Shrine and Temple
+/*
 DELETE From BeliefModifiers WHERE ModifierId='WORK_ETHIC_FOLLOWER_PRODUCTION';
 INSERT INTO Modifiers 
 	(ModifierId                              , ModifierType                          , SubjectRequirementSetId)
@@ -1155,6 +1156,7 @@ INSERT INTO BeliefModifiers
 	VALUES 
 	('BELIEF_WORK_ETHIC' , 'WORK_ETHIC_TEMPLE_PRODUCTION'),
 	('BELIEF_WORK_ETHIC' , 'WORK_ETHIC_SHRINE_PRODUCTION');
+*/
 -- Dar E Mehr provides +2 culture instead of faith from eras
 DELETE FROM Building_YieldsPerEra WHERE BuildingType='BUILDING_DAR_E_MEHR';
 INSERT INTO Building_YieldChanges 

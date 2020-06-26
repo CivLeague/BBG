@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_ABILITY_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="ja_JP">
+			<Text>丘陵地形での戦闘時に [ICON_Strength] 戦闘力+5。[NEWLINE][ICON_Bullet]丘陵でも [ICON_Movement] 移動ペナルティが発生しない。</Text>
+		</Replace>
 		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_DESCRIPTION" Language="ja_JP">
 			<Text>3タイルの自然遺産。この自然遺産に進入したユニットはマップ上のいずれかの海洋タイルにワープするが、代わりに固有昇進「神秘の海流」（[ICON_Movement]移動力+1）を得る。</Text>
 		</Replace>

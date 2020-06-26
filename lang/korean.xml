@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-	
+		<Replace Tag="LOC_ABILITY_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="ko_KR">
+			<Text>언덕 지형에서 전투 시 [ICON_Strength] 전투력이 +5 증가합니다.[NEWLINE][ICON_Bullet]언덕 지형 [ICON_Movement] 이동력 페널티가 없습니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_DESCRIPTION" Language="ko_KR">
 			<Text>3타일 자연경관입니다. 이 지역에 들어오는 유닛은 멀리 떨어진 바다로 순간 이동합니다. 하지만 해상 유닛의 경우 '신비한 해류' 능력([ICON_Movement] 이동력 +1)을 얻습니다.</Text>
 		</Replace>

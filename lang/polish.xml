@@ -130,6 +130,9 @@
 			</Replace>
 
 			<!-- ================ Georgia ================ -->
+			<Replace Tag="LOC_ABILITY_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="pl_PL">
+				<Text>+5 do [ICON_STRENGTH] siły bojowej podczas walki na wzgórzach. Brak kar do [ICON_MOVEMENT] ruchu na polach ze wzgórzami.</Text>
+			</Replace>
 			<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION" Language="pl_PL">
 				<Text>Unikalna budowla Gruzji. Koszt produkcji niższy od renesansowych murów. Zwiększa siłę twoich zewnętrznych umocnień do najwyższego możliwego poziomu. Zapewnia +3 do [ICON_TOURISM] turystyki po opracowaniu idei ochrony przyrody. Zapewnia +3 do [ICON_Faith] wiary. PPodczas złotej ery daje +100% do [ICON_TOURISM] turystyki i [ICON_FAITH] wiary.</Text>
 			</Replace>
