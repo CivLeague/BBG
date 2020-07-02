@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="ru_RU">
+            <Text>Позволяет строить храмы огня (+3 [ICON_Faith] веры, +2 [ICON_CULTURE] культуры. Не разрушается стихийными бедствиями).</Text>
+        </Replace>
+        <Replace Tag="LOC_BUILDING_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="ru_RU">
+            <Text>+2 [ICON_CULTURE] культуры. Не разрушается стихийными бедствиями.</Text>
+		</Replace>
+		
 		<Replace Tag="LOC_ABILITY_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="ru_RU">
 			<Text>+5 [ICON_Strength] к боевой мощи в сражениях на холмах.[NEWLINE][ICON_Bullet]Нет штрафа за [ICON_Movement] передвижение по холмам.</Text>
 		</Replace>

@@ -5,8 +5,7 @@
 --==================
 -- Nubia
 --==================
--- no extra Nubia ranged production and experience cut to 25% (from %50) ... Also, Pitati Archers have same ranged strength as regular Archers (25 instead of 30)
-UPDATE Units SET RangedCombat=25 WHERE UnitType='UNIT_NUBIAN_PITATI';
+-- no extra Nubia ranged production and experience cut to 25% (from %50)
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_ANCIENT_RANGED_UNIT_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_CLASSICAL_RANGED_UNIT_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_MEDIEVAL_RANGED_UNIT_PRODUCTION' and Name='Amount';
@@ -17,7 +16,7 @@ UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_ATOMIC_RANGED_UNI
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_INFORMATION_RANGED_UNIT_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RANGED_EXPERIENCE_MODIFIER' and Name='Amount';
 -- Nubian Pyramid can also be built on flat plains, but not adjacent to each other
-INSERT INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
+INSERT OR IGNORE INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
 	VALUES
 	('IMPROVEMENT_PYRAMID' , 'TERRAIN_PLAINS'),
 	('IMPROVEMENT_PYRAMID' , 'TERRAIN_GRASS');
@@ -40,7 +39,7 @@ DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_NUBIA' AND Te
 DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_NUBIA' AND TerrainType='TERRAIN_DESERT';
 --UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_NUBIA' AND TerrainType='TERRAIN_DESERT_HILLS';
 --UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_NUBIA' AND TerrainType='TERRAIN_DESERT';
-INSERT INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
+INSERT OR IGNORE INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
 	VALUES
 	('CIVILIZATION_NUBIA' , 'TERRAIN_PLAINS'  , 3),
 	('CIVILIZATION_NUBIA' , 'TERRAIN_PLAINS_HILLS' , 3);

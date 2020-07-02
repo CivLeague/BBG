@@ -667,6 +667,9 @@
 			<Replace Tag="LOC_BELIEF_DAR_E_MEHR_DESCRIPTION" Language="pl_PL">
 				<Text>Umożliwia budowę dar-e mehr (+3 do [ICON_FAITH] wiary, +2 do [ICON_CULTURE] kultury).</Text>
 			</Replace>
+			<Replace Tag="LOC_BELIEF_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>Pozwala konstruować Dar-e Mehr (+3 do [ICON_Faith] Wiary, +2 do [ICON_CULTURE] kultury. Nie może być zniszczone w wyniku katastrofy naturalnej).</Text>
+			</Replace>
 			<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="pl_PL">
 				<Text>Wszystkie cuda świata zapewniają premię +6 do [ICON_FAITH] wiary.</Text>
 			</Replace>
@@ -699,6 +702,9 @@
 			</Replace>
 			<Replace Tag="LOC_BUILDING_DAR_E_MEHR_DESCRIPTION" Language="pl_PL">
 				<Text>+2 do [ICON_FAITH] kultury.</Text>
+			</Replace>
+			<Replace Tag="LOC_BUILDING_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>+2 do [ICON_CULTURE] kultury. Nie może być zniszczone w wyniku katastrofy naturalnej.</Text>
 			</Replace>
 
 			<!-- ================ Pantheons ================ -->

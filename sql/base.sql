@@ -10,26 +10,26 @@ UPDATE ModifierArguments SET Value='50' WHERE ModifierId='FILMSTUDIO_ENHANCEDLAT
 -- American Rough Riders will now be a cav replacement
 UPDATE Units SET Combat=62, Cost=340, PromotionClass='PROMOTION_CLASS_LIGHT_CAVALRY', PrereqTech='TECH_MILITARY_SCIENCE' WHERE UnitType='UNIT_AMERICAN_ROUGH_RIDER';
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_HELICOPTER' WHERE Unit='UNIT_AMERICAN_ROUGH_RIDER';
-INSERT INTO UnitReplaces VALUES ('UNIT_AMERICAN_ROUGH_RIDER' , 'UNIT_CAVALRY');
+INSERT OR IGNORE INTO UnitReplaces VALUES ('UNIT_AMERICAN_ROUGH_RIDER' , 'UNIT_CAVALRY');
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='ROUGH_RIDER_BONUS_ON_HILLS';
 -- Continent combat bonus: +5 attack on foreign continent, +5 defense on home continent
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
 	('TRAIT_COMBAT_BONUS_FOREIGN_CONTINENT_BBG',    'MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER', 'UNIT_IS_DOMAIN_LAND'),
 	('COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('TRAIT_COMBAT_BONUS_FOREIGN_CONTINENT_BBG', 'ModifierId', 'COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG'),
 	('COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG', 'Amount', '5');
-INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES
+INSERT OR IGNORE INTO ModifierStrings (ModifierId, Context, Text) VALUES
 	('COMBAT_BONUS_FOREIGN_CONTINENT_MODIFIER_BBG', 'Preview', 'LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION');
-INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES
+INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId) VALUES
 	('TRAIT_LEADER_ROOSEVELT_COROLLARY', 'TRAIT_COMBAT_BONUS_FOREIGN_CONTINENT_BBG');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
 	('REQUIREMENTS_UNIT_ON_HOME_CONTINENT',    'PLAYER_IS_DEFENDER_REQUIREMENTS'),
 	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'PLAYER_IS_ATTACKER_REQUIREMENTS'),
 	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIRES_UNIT_ON_FOREIGN_CONTINENT_BBG');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
 	('REQUIREMENTS_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO Requirements (RequirementId, RequirementType, Inverse) VALUES
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES
 	('REQUIRES_UNIT_ON_FOREIGN_CONTINENT_BBG', 'REQUIREMENT_UNIT_ON_HOME_CONTINENT', 1);
 
 
@@ -41,21 +41,21 @@ UPDATE ModifierArguments SET Value='20' WHERE ModifierId='TRAIT_RELIGIOUS_BUILDI
 UPDATE ModifierArguments SET Value='20' WHERE ModifierId='TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_FAITH' AND Name='Multiplier';
 UPDATE ModifierArguments SET Value='20' WHERE ModifierId='TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_SCIENCE' AND Name='Multiplier';
 -- Arabia gets +1 Great Prophet point per turn after researching astrology
-INSERT INTO Modifiers (ModifierId , ModifierType, SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType, SubjectRequirementSetId)
     VALUES ('TRAIT_BONUS_GREAT_PROPHET_POINT_CPLMOD' , 'MODIFIER_PLAYER_ADJUST_GREAT_PERSON_POINTS' , 'PLAYER_HAS_ASTROLOGY_REQUIREMENTS_CPLMOD');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('TRAIT_BONUS_GREAT_PROPHET_POINT_CPLMOD' , 'GreatPersonClassType' , 'GREAT_PERSON_CLASS_PROPHET');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
     VALUES ('TRAIT_BONUS_GREAT_PROPHET_POINT_CPLMOD' , 'Amount' , '1');
 --UPDATE TraitModifiers SET ModifierId='TRAIT_BONUS_GREAT_PROPHET_POINT_CPLMOD' WHERE ModifierId='TRAIT_GUARANTEE_ONE_PROPHET';
-INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES ('TRAIT_CIVILIZATION_LAST_PROPHET', 'TRAIT_BONUS_GREAT_PROPHET_POINT_CPLMOD');
-INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId) VALUES ('TRAIT_CIVILIZATION_LAST_PROPHET', 'TRAIT_BONUS_GREAT_PROPHET_POINT_CPLMOD');
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType)
 	VALUES ('PLAYER_HAS_ASTROLOGY_REQUIREMENTS_CPLMOD' , 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('PLAYER_HAS_ASTROLOGY_REQUIREMENTS_CPLMOD' , 'REQUIRES_PLAYER_HAS_ASTROLOGY_CPLMOD');
-INSERT INTO Requirements (RequirementId , RequirementType)
+INSERT OR IGNORE INTO Requirements (RequirementId , RequirementType)
 	VALUES ('REQUIRES_PLAYER_HAS_ASTROLOGY_CPLMOD' , 'REQUIREMENT_PLAYER_HAS_TECHNOLOGY');
-INSERT INTO RequirementArguments (RequirementId , Name , Value)
+INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('REQUIRES_PLAYER_HAS_ASTROLOGY_CPLMOD' , 'TechnologyType' , 'TECH_ASTROLOGY');
 
 
@@ -63,34 +63,81 @@ INSERT INTO RequirementArguments (RequirementId , Name , Value)
 --==================
 -- China
 --==================
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
+	('TRAIT_ATTACH_WONDER_FOOD_BBG', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER'),
+	('TRAIT_ATTACH_WONDER_PROD_BBG', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER'),
+	('TRAIT_ATTACH_WONDER_FAITH_BBG', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER'),
+	('TRAIT_ATTACH_WONDER_GOLD_BBG', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER'),
+	('TRAIT_ATTACH_WONDER_SCI_BBG', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER'),
+	('TRAIT_ATTACH_WONDER_CUL_BBG', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('TRAIT_ATTACH_WONDER_FOOD_BBG', 'ModifierId', 'TRAIT_WONDER_FOOD_BBG'),
+	('TRAIT_ATTACH_WONDER_PROD_BBG', 'ModifierId', 'TRAIT_WONDER_PROD_BBG'),
+	('TRAIT_ATTACH_WONDER_FAITH_BBG', 'ModifierId', 'TRAIT_WONDER_FAITH_BBG'),
+	('TRAIT_ATTACH_WONDER_GOLD_BBG', 'ModifierId', 'TRAIT_WONDER_GOLD_BBG'),
+	('TRAIT_ATTACH_WONDER_SCI_BBG', 'ModifierId', 'TRAIT_WONDER_SCI_BBG'),
+	('TRAIT_ATTACH_WONDER_CUL_BBG', 'ModifierId', 'TRAIT_WONDER_CUL_BBG');
+-- +1 all yields per wonder
+INSERT OR IGNORE INTO TraitModifiers VALUES
+	('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_FOOD_BBG'),
+	('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_PROD_BBG'),
+	('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_FAITH_BBG'),
+	('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_GOLD_BBG'),
+	('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_SCI_BBG'),
+	('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_CUL_BBG');
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
+	('TRAIT_WONDER_FOOD_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE'),
+	('TRAIT_WONDER_PROD_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE'),
+	('TRAIT_WONDER_FAITH_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE'),
+	('TRAIT_WONDER_GOLD_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE'),
+	('TRAIT_WONDER_SCI_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE'),
+	('TRAIT_WONDER_CUL_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_WONDER_YIELD_CHANGE');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('TRAIT_WONDER_FOOD_BBG', 'Amount', '1'),
+	('TRAIT_WONDER_FOOD_BBG', 'YieldType', 'YIELD_FOOD'),
+	('TRAIT_WONDER_PROD_BBG', 'Amount', '1'),
+	('TRAIT_WONDER_PROD_BBG', 'YieldType', 'YIELD_PRODUCTION'),
+	('TRAIT_WONDER_FAITH_BBG', 'Amount', '1'),
+	('TRAIT_WONDER_FAITH_BBG', 'YieldType', 'YIELD_FAITH'),
+	('TRAIT_WONDER_GOLD_BBG', 'Amount', '1'),
+	('TRAIT_WONDER_GOLD_BBG', 'YieldType', 'YIELD_GOLD'),
+	('TRAIT_WONDER_SCI_BBG', 'Amount', '1'),
+	('TRAIT_WONDER_SCI_BBG', 'YieldType', 'YIELD_SCIENCE'),
+	('TRAIT_WONDER_CUL_BBG', 'Amount', '1'),
+	('TRAIT_WONDER_CUL_BBG', 'YieldType', 'YIELD_CULTURE');
+-- great wall gets +1 prod per adj
+INSERT OR IGNORE INTO Improvement_Adjacencies VALUES ('IMPROVEMENT_GREAT_WALL', 'GreatWall_Prod');
+INSERT OR IGNORE INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentImprovement, PrereqTech) VALUES
+	('GreatWall_Prod', 'Placeholder', 'YIELD_PRODUCTION', 1, 1, 'IMPROVEMENT_GREAT_WALL', 'TECH_MASONRY');
+INSERT OR IGNORE INTO Improvement_YieldChanges VALUES ('IMPROVEMENT_GREAT_WALL', 'YIELD_PRODUCTION', 0);
 -- Crouching Tiger now a crossbowman replacement that gets +7 when adjacent to an enemy unit
-INSERT INTO UnitReplaces (CivUniqueUnitType , ReplacesUnitType)
+INSERT OR IGNORE INTO UnitReplaces (CivUniqueUnitType , ReplacesUnitType)
 	VALUES ('UNIT_CHINESE_CROUCHING_TIGER' , 'UNIT_CROSSBOWMAN');
 UPDATE Units SET Cost=190 , RangedCombat=40 , Range=2 WHERE UnitType='UNIT_CHINESE_CROUCHING_TIGER';
 
-INSERT INTO Tags (Tag , Vocabulary)
+INSERT OR IGNORE INTO Tags (Tag , Vocabulary)
 	VALUES ('CLASS_CROUCHING_TIGER' , 'ABILITY_CLASS');
-INSERT INTO TypeTags (Type , Tag)
+INSERT OR IGNORE INTO TypeTags (Type , Tag)
 	VALUES ('UNIT_CHINESE_CROUCHING_TIGER' , 'CLASS_CROUCHING_TIGER');
-INSERT INTO Types (Type , Kind)
+INSERT OR IGNORE INTO Types (Type , Kind)
 	VALUES ('ABILITY_TIGER_ADJACENCY_DAMAGE_CPLMOD' , 'KIND_ABILITY');
-INSERT INTO TypeTags (Type , Tag)
+INSERT OR IGNORE INTO TypeTags (Type , Tag)
 	VALUES ('ABILITY_TIGER_ADJACENCY_DAMAGE_CPLMOD' , 'CLASS_CROUCHING_TIGER');
-INSERT INTO UnitAbilities (UnitAbilityType , Name , Description)
+INSERT OR IGNORE INTO UnitAbilities (UnitAbilityType , Name , Description)
 	VALUES ('ABILITY_TIGER_ADJACENCY_DAMAGE_CPLMOD' , 'LOC_ABILITY_TIGER_ADJACENCY_NAME' , 'LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION');
-INSERT INTO UnitAbilityModifiers (UnitAbilityType , ModifierId)
+INSERT OR IGNORE INTO UnitAbilityModifiers (UnitAbilityType , ModifierId)
 	VALUES ('ABILITY_TIGER_ADJACENCY_DAMAGE_CPLMOD' , 'TIGER_ADJACENCY_DAMAGE');
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES ('TIGER_ADJACENCY_DAMAGE' , 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH' , 'TIGER_ADJACENCY_REQUIREMENTS');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('TIGER_ADJACENCY_DAMAGE', 'Amount' , '7'); 
-INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType)
 	VALUES ('TIGER_ADJACENCY_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('TIGER_ADJACENCY_REQUIREMENTS' , 'PLAYER_IS_ATTACKER_REQUIREMENTS');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('TIGER_ADJACENCY_REQUIREMENTS' , 'ADJACENT_UNIT_REQUIREMENT');
-INSERT INTO ModifierStrings (ModifierId , Context , Text)
+INSERT OR IGNORE INTO ModifierStrings (ModifierId , Context , Text)
     VALUES ('TIGER_ADJACENCY_DAMAGE' , 'Preview' , 'LOC_ABILITY_TIGER_ADJACENCY_DESCRIPTION');
 
 --==================
@@ -100,82 +147,82 @@ INSERT INTO ModifierStrings (ModifierId , Context , Text)
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RIVER_FASTER_BUILDTIME_WONDER';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RIVER_FASTER_BUILDTIME_DISTRICT';
 --
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType)
 	VALUES ('REQUIRES_PLOT_HAS_FLOODPLAINS_CPL', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 	VALUES ('REQUIRES_PLOT_HAS_FLOODPLAINS_CPL', 'REQUIRES_PLOT_HAS_FLOODPLAINS');
 -- Sphinx base Faith Increased to 2 (from 1)
 UPDATE Improvement_YieldChanges SET YieldChange=2 WHERE ImprovementType='IMPROVEMENT_SPHINX' AND YieldType='YIELD_FAITH';
 -- +1 Faith and +1 Culture if adjacent to a wonder, instead of 2 Faith.
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='SPHINX_WONDERADJACENCY_FAITH' AND Name='Amount';
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES ('SPHINX_WONDERADJACENCY_CULTURE_CPLMOD' , 'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS' , 'PLOT_ADJACENT_TO_WONDER_REQUIREMENTS');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('SPHINX_WONDERADJACENCY_CULTURE_CPLMOD' , 'YieldType' , 'YIELD_CULTURE');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('SPHINX_WONDERADJACENCY_CULTURE_CPLMOD' , 'Amount' , 1);
-INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
+INSERT OR IGNORE INTO ImprovementModifiers (ImprovementType , ModifierId)
 	VALUES ('IMPROVEMENT_SPHINX' , 'SPHINX_WONDERADJACENCY_CULTURE_CPLMOD');
 -- Increased +1 Culture moved to Diplomatic Service (Was Natural History)
 UPDATE Improvement_BonusYieldChanges SET PrereqCivic = 'CIVIC_DIPLOMATIC_SERVICE' WHERE Id = 18;
 -- Now grants 1 food and 1 production on desert tiles without floodplains. Go Go Gadget bad-start fixer.
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES ('SPHINX_DESERT_FOOD_MODIFIER' , 'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS', 'SPHINX_FOOD_PLOT_HAS_DESERT_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES ('SPHINX_DESERT_HILLS_FOOD_MODIFIER' , 'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS', 'SPHINX_FOOD_PLOT_HAS_DESERT_HILLS_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES ('SPHINX_DESERT_PRODUCTION_MODIFIER' , 'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS' ,'SPHINX_PRODUCTION_PLOT_HAS_DESERT_REQUIREMENTS');
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES ('SPHINX_DESERT_HILLS_PRODUCTION_MODIFIER' , 'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS' ,'SPHINX_PRODUCTION_PLOT_HAS_DESERT_HILLS_REQUIREMENTS');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('SPHINX_DESERT_FOOD_MODIFIER' , 'YieldType' , 'YIELD_FOOD');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('SPHINX_DESERT_FOOD_MODIFIER' , 'Amount' , '1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('SPHINX_DESERT_HILLS_FOOD_MODIFIER' , 'YieldType' , 'YIELD_FOOD');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('SPHINX_DESERT_HILLS_FOOD_MODIFIER' , 'Amount' , '1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('SPHINX_DESERT_PRODUCTION_MODIFIER' , 'YieldType' , 'YIELD_PRODUCTION');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('SPHINX_DESERT_PRODUCTION_MODIFIER' , 'Amount' , '1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('SPHINX_DESERT_HILLS_PRODUCTION_MODIFIER' , 'YieldType' , 'YIELD_PRODUCTION');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('SPHINX_DESERT_HILLS_PRODUCTION_MODIFIER' , 'Amount' , '1');
-INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType)
 	VALUES ('SPHINX_FOOD_PLOT_HAS_DESERT_HILLS_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType)
 	VALUES ('SPHINX_FOOD_PLOT_HAS_DESERT_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType)
 	VALUES ('SPHINX_PRODUCTION_PLOT_HAS_DESERT_HILLS_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType)
 	VALUES ('SPHINX_PRODUCTION_PLOT_HAS_DESERT_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
+INSERT OR IGNORE INTO ImprovementModifiers (ImprovementType , ModifierId)
 	VALUES ('IMPROVEMENT_SPHINX' , 'SPHINX_DESERT_FOOD_MODIFIER');
-INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
+INSERT OR IGNORE INTO ImprovementModifiers (ImprovementType , ModifierId)
 	VALUES ('IMPROVEMENT_SPHINX' , 'SPHINX_DESERT_HILLS_FOOD_MODIFIER');
-INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
+INSERT OR IGNORE INTO ImprovementModifiers (ImprovementType , ModifierId)
 	VALUES ('IMPROVEMENT_SPHINX' , 'SPHINX_DESERT_PRODUCTION_MODIFIER');
-INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
+INSERT OR IGNORE INTO ImprovementModifiers (ImprovementType , ModifierId)
 	VALUES ('IMPROVEMENT_SPHINX' , 'SPHINX_DESERT_HILLS_PRODUCTION_MODIFIER');
 -- No prod nor food bonus on Floodplains
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('SPHINX_FOOD_PLOT_HAS_DESERT_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_NO_FLOODPLAINS');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('SPHINX_FOOD_PLOT_HAS_DESERT_HILLS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_NO_FLOODPLAINS');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('SPHINX_PRODUCTION_PLOT_HAS_DESERT_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_NO_FLOODPLAINS');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('SPHINX_PRODUCTION_PLOT_HAS_DESERT_HILLS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_NO_FLOODPLAINS');
 -- Requires Desert or Desert Hills
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('SPHINX_FOOD_PLOT_HAS_DESERT_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_DESERT');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('SPHINX_FOOD_PLOT_HAS_DESERT_HILLS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_DESERT_HILLS');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('SPHINX_PRODUCTION_PLOT_HAS_DESERT_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_DESERT');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('SPHINX_PRODUCTION_PLOT_HAS_DESERT_HILLS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_DESERT_HILLS');
 
 
@@ -196,13 +243,13 @@ UPDATE TraitModifiers SET TraitType='TRAIT_CIVILIZATION_WONDER_TOURISM' WHERE Tr
 -- Reduce tourism bonus for wonders
 UPDATE ModifierArguments SET Value='150' WHERE ModifierId='TRAIT_WONDER_DOUBLETOURISM' AND Name='ScalingFactor';
 -- Chateau now gives 1 housing at Feudalism, and ajacent luxes now give stacking food in addition to stacking gold 
-INSERT INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
+INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
 	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_FOOD' , '0');
 
-INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
+INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
 	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Food');
 
-INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
+INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
 	VALUES ('Chateau_Luxury_Food' , 'Placeholder' , 'YIELD_FOOD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
 
 UPDATE Improvements SET Housing='1' , PreReqCivic='CIVIC_FEUDALISM' WHERE ImprovementType='IMPROVEMENT_CHATEAU';
@@ -212,13 +259,13 @@ UPDATE Improvements SET Housing='1' , PreReqCivic='CIVIC_FEUDALISM' WHERE Improv
 -- Germany
 --==================
 -- Extra district comes at Guilds
-INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType)
     VALUES ('PLAYER_HAS_GUILDS_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO Requirements (RequirementId, RequirementType)
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType)
     VALUES ('REQUIRES_PLAYER_HAS_GUILDS' , 'REQUIREMENT_PLAYER_HAS_CIVIC');
-INSERT INTO RequirementArguments (RequirementId , Name , Value)
+INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
     VALUES ('REQUIRES_PLAYER_HAS_GUILDS' , 'CivicType' , 'CIVIC_GUILDS');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
     VALUES ('PLAYER_HAS_GUILDS_REQUIREMENTS' , 'REQUIRES_PLAYER_HAS_GUILDS');
 UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_GUILDS_REQUIREMENTS' WHERE ModifierId='TRAIT_EXTRA_DISTRICT_EACH_CITY';
 
@@ -228,33 +275,33 @@ UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_GUILDS_REQUIREMENTS' WH
 --==================
 -- Greece gets their extra envoy at amphitheater instead of acropolis
 DELETE FROM DistrictModifiers WHERE DistrictType='DISTRICT_ACROPOLIS';
-INSERT INTO TraitModifiers
+INSERT OR IGNORE INTO TraitModifiers
 	VALUES ('TRAIT_CIVILIZATION_PLATOS_REPUBLIC' , 'AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType)
 	VALUES ('BUILDING_IS_AMPHITHEATER_CPLMOD', 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 	VALUES ('BUILDING_IS_AMPHITHEATER_CPLMOD', 'REQUIRES_CITY_HAS_AMPHITHEATER_CPLMOD');
-INSERT INTO Requirements (RequirementId, RequirementType)
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType)
 	VALUES ('REQUIRES_CITY_HAS_AMPHITHEATER_CPLMOD', 'REQUIREMENT_CITY_HAS_BUILDING');
-INSERT INTO RequirementArguments (RequirementId, Name, Value)
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value)
 	VALUES ('REQUIRES_CITY_HAS_AMPHITHEATER_CPLMOD', 'BuildingType', 'BUILDING_AMPHITHEATER');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
     VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN' , 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER', 'BUILDING_IS_AMPHITHEATER_CPLMOD');
-INSERT INTO ModifierArguments (ModifierId, Name, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
     VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN' , 'ModifierId' , 'AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN_MOD');
-INSERT INTO Modifiers (ModifierId, ModifierType)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType)
     VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN_MOD' , 'MODIFIER_PLAYER_GRANT_INFLUENCE_TOKEN');
-INSERT INTO ModifierArguments (ModifierId, Name, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
     VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN_MOD' , 'Amount' , '1');
 --Wildcard delayed to Political Philosophy
 UPDATE Modifiers SET OwnerRequirementSetId='PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD' WHERE ModifierId='TRAIT_WILDCARD_GOVERNMENT_SLOT';
-INSERT INTO Requirements (RequirementId, RequirementType)
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType)
 	VALUES ('REQUIRES_PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD', 'REQUIREMENT_PLAYER_HAS_CIVIC');
-INSERT INTO RequirementArguments (RequirementId, Name, Value)
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value)
 	VALUES ('REQUIRES_PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD', 'CivicType', 'CIVIC_POLITICAL_PHILOSOPHY');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 	VALUES ('PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD', 'REQUIRES_PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType)
 	VALUES ('PLAYER_HAS_POLITICAL_PHILOSOPHY_CPLMOD', 'REQUIREMENTSET_TEST_ALL');
 
 --==================
@@ -270,9 +317,9 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_STEPWELL' AND YieldType='YIELD_FAITH'; 
 UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_FEUDALISM' WHERE Id='20';
 -- Stepwells get +1 food per adajacent farm
-INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentImprovement)
+INSERT OR IGNORE INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentImprovement)
 	VALUES ('STEPWELL_FOOD', 'Placeholder', 'YIELD_FOOD', 1, 1, 'IMPROVEMENT_FARM');
-INSERT INTO Improvement_Adjacencies (ImprovementType, YieldChangeId)
+INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType, YieldChangeId)
 	VALUES ('IMPROVEMENT_STEPWELL', 'STEPWELL_FOOD');
 DELETE FROM ImprovementModifiers WHERE ModifierId='STEPWELL_FARMADJACENCY_FOOD';
 
@@ -281,46 +328,46 @@ DELETE FROM ImprovementModifiers WHERE ModifierId='STEPWELL_FARMADJACENCY_FOOD';
 -- India (Gandhi)
 --==================
 -- Extra belief when founding a Religion
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
     VALUES ('EXTRA_BELIEF_MODIFIER', 'MODIFIER_PLAYER_ADD_BELIEF', 'HAS_A_RELIGION_BBG');
-INSERT INTO TraitModifiers (TraitType, ModifierId)
+INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId)
     VALUES ('TRAIT_LEADER_SATYAGRAHA', 'EXTRA_BELIEF_MODIFIER');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType)
     VALUES ('HAS_A_RELIGION_BBG', 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId)
     VALUES ('HAS_A_RELIGION_BBG', 'REQUIRES_FOUNDED_RELIGION_BBG');
-INSERT INTO Requirements (RequirementId, RequirementType, Inverse)
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType, Inverse)
 	VALUES ('REQUIRES_FOUNDED_RELIGION_BBG', 'REQUIREMENT_FOUNDED_NO_RELIGION', 1);
 -- +1 movement to builders
-INSERT INTO TraitModifiers (TraitType , ModifierId)
+INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
 	VALUES ('TRAIT_LEADER_SATYAGRAHA' , 'GANDHI_FAST_BUILDERS');
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES ('GANDHI_FAST_BUILDERS' , 'MODIFIER_PLAYER_UNITS_ADJUST_MOVEMENT' , 'UNIT_IS_BUILDER');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('GANDHI_FAST_BUILDERS' , 'Amount' , '1');
 -- +1 movement to settlers
-INSERT INTO TraitModifiers (TraitType , ModifierId)
+INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
 	VALUES ('TRAIT_LEADER_SATYAGRAHA' , 'GANDHI_FAST_SETTLERS');
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES ('GANDHI_FAST_SETTLERS' , 'MODIFIER_PLAYER_UNITS_ADJUST_MOVEMENT' , 'UNIT_IS_SETTLER');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('GANDHI_FAST_SETTLERS' , 'Amount' , '1');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('UNIT_IS_SETTLER' , 'REQUIREMENT_UNIT_IS_SETTLER');
-INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType)
 	VALUES ('UNIT_IS_SETTLER' , 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO Requirements (RequirementId , RequirementType)
+INSERT OR IGNORE INTO Requirements (RequirementId , RequirementType)
 	VALUES ('REQUIREMENT_UNIT_IS_SETTLER' , 'REQUIREMENT_UNIT_TYPE_MATCHES');
-INSERT INTO RequirementArguments (RequirementId , Name , Value)
+INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('REQUIREMENT_UNIT_IS_SETTLER' , 'UnitType' , 'UNIT_SETTLER');
 -- +50% production to shrines and temples
-INSERT INTO TraitModifiers (TraitType , ModifierId)
+INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
 	VALUES 
 	('TRAIT_LEADER_SATYAGRAHA' , 'SATYAGRAHA_HOLY_SITE_BUILDING_BOOST' );
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES 
 	('SATYAGRAHA_HOLY_SITE_BUILDING_BOOST' , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION' , null);
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra , SecondExtra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra , SecondExtra)
 	VALUES 
 	('SATYAGRAHA_HOLY_SITE_BUILDING_BOOST' , 'DistrictType' , 'DISTRICT_HOLY_SITE' , null , null),
 	('SATYAGRAHA_HOLY_SITE_BUILDING_BOOST' , 'Amount'       , '50'                 , null , null);
@@ -330,7 +377,7 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra , SecondExtra)
 -- Japan
 --==================
 -- Commercial Hubs no longer get adjacency from rivers
-INSERT INTO ExcludedAdjacencies (TraitType , YieldChangeId)
+INSERT OR IGNORE INTO ExcludedAdjacencies (TraitType , YieldChangeId)
     VALUES
     ('TRAIT_CIVILIZATION_ADJACENT_DISTRICTS' , 'River_Gold');
 -- Samurai come at Feudalism now
@@ -341,11 +388,11 @@ UPDATE Units SET PrereqCivic='CIVIC_FEUDALISM' , PrereqTech=NULL WHERE UnitType=
 -- Kongo
 --==================
 -- +100% prod towards archealogists
-INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES
+INSERT OR IGNORE INTO TraitModifiers (TraitType, ModifierId) VALUES
 	('TRAIT_CIVILIZATION_NKISI', 'TRAIT_ARCHAEOLOGIST_PROD_BBG');
-INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
 	('TRAIT_ARCHAEOLOGIST_PROD_BBG', 'MODIFIER_PLAYER_UNITS_ADJUST_UNIT_PRODUCTION');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('TRAIT_ARCHAEOLOGIST_PROD_BBG', 'UnitType', 'UNIT_ARCHAEOLOGIST'),
 	('TRAIT_ARCHAEOLOGIST_PROD_BBG', 'Amount', '100');
 
@@ -359,62 +406,62 @@ UPDATE ModifierArguments SET Value='15' WHERE ModifierId='UNIT_STRONG_WHEN_ATTAC
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='UNIT_WEAK_WHEN_DEFENDING';
 -- Berserker unit now gets unlocked at Feudalism instead of Military Tactics, and can be purchased with Faith
 UPDATE Units SET Combat=35 , PrereqTech=NULL , PrereqCivic='CIVIC_FEUDALISM' WHERE UnitType='UNIT_NORWEGIAN_BERSERKER';
-INSERT INTO TraitModifiers (TraitType , ModifierId)
+INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
 	VALUES ('TRAIT_CIVILIZATION_UNIT_NORWEGIAN_BERSERKER' , 'BERSERKER_FAITH_PURCHASE_CPLMOD');
-INSERT INTO Modifiers (ModifierId , ModifierType)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('BERSERKER_FAITH_PURCHASE_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ENABLE_UNIT_FAITH_PURCHASE');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('BERSERKER_FAITH_PURCHASE_CPLMOD' , 'Tag' , 'CLASS_MELEE_BERSERKER');
 --Berserker Movement bonus extended to all water tiles
 UPDATE RequirementSets SET RequirementSetType='REQUIREMENTSET_TEST_ANY' WHERE RequirementSetId='BERSERKER_PLOT_IS_ENEMY_TERRITORY';
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES
 	('BERSERKER_PLOT_IS_ENEMY_TERRITORY' , 'REQUIRES_PLOT_HAS_COAST'),
 	('BERSERKER_PLOT_IS_ENEMY_TERRITORY' , 'REQUIRES_TERRAIN_OCEAN' );
 -- Stave Church now gives +1 Faith to resource tiles in the city, instead of standard adjacency bonus for woods
-INSERT INTO Modifiers (ModifierID , ModifierType , SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierID , ModifierType , SubjectRequirementSetId)
 	VALUES ('STAVECHURCH_RESOURCE_FAITH' , 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD' , 'STAVE_CHURCH_RESOURCE_REQUIREMENTS');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('STAVECHURCH_RESOURCE_FAITH' , 'YieldType' , 'YIELD_FAITH');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('STAVECHURCH_RESOURCE_FAITH' , 'Amount' , '1');
-INSERT INTO BuildingModifiers (BuildingType , ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType , ModifierId)
 	VALUES ('BUILDING_STAVE_CHURCH' , 'STAVECHURCH_RESOURCE_FAITH');
-INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType)
 	VALUES ('STAVE_CHURCH_RESOURCE_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('STAVE_CHURCH_RESOURCE_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_VISIBLE_RESOURCE');
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='STAVE_CHURCH_FAITHWOODSADJACENCY' AND Name='Amount';
 
 -- +2 gold harbor adjacency if adjacent to holy sites
-INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
+INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
     VALUES
     ('District_HS_Gold_Positive' , 'LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION' , 'YIELD_GOLD' , '2'  , '1' , 'DISTRICT_HOLY_SITE'),
     ('District_HS_Gold_Negative' , 'LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION' , 'YIELD_GOLD' , '-2' , '1' , 'DISTRICT_HOLY_SITE');
-INSERT INTO District_Adjacencies (DistrictType , YieldChangeId)
+INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
     VALUES
     ('DISTRICT_HARBOR' , 'District_HS_Gold_Positive'),
     ('DISTRICT_HARBOR' , 'District_HS_Gold_Negative');
-INSERT INTO ExcludedAdjacencies (YieldChangeId , TraitType)
+INSERT OR IGNORE INTO ExcludedAdjacencies (YieldChangeId , TraitType)
     VALUES
     ('District_HS_Gold_Negative' , 'TRAIT_LEADER_MELEE_COASTAL_RAIDS');
 /*
-INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
+INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
     VALUES
     ('District_HS_Gold_Positive' , 'LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION' , 'YIELD_GOLD' , '2'  , '1' , 'DISTRICT_HOLY_SITE');
-INSERT INTO District_Adjacencies (DistrictType , YieldChangeId)
+INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
     VALUES
     ('DISTRICT_HARBOR' , 'District_HS_Gold_Positive');
-INSERT INTO ExcludedAdjacencies 
+INSERT OR IGNORE INTO ExcludedAdjacencies 
 	SELECT DISTINCT TraitType, 'District_HS_Gold_Positive'
 	FROM (SELECT * FROM LeaderTraits WHERE TraitType LIKE 'TRAIT_LEADER_%' GROUP BY LeaderType) 
 	WHERE LeaderType!='LEADER_HARDRADA' AND TraitType!='TRAIT_LEADER_MAJOR_CIV';
 */
 -- Holy Sites coastal adjacency
-INSERT INTO Modifiers (ModifierId , ModifierType)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES
 	('TRAIT_LEADER_THUNDERBOLT_HOLYSITE_COASTAL_ADJACENCY' , 'MODIFIER_PLAYER_CITIES_TERRAIN_ADJACENCY');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES
 	('TRAIT_LEADER_THUNDERBOLT_HOLYSITE_COASTAL_ADJACENCY' , 'DistrictType' , 'DISTRICT_HOLY_SITE'             			 ),
 	('TRAIT_LEADER_THUNDERBOLT_HOLYSITE_COASTAL_ADJACENCY' , 'TerrainType'  , 'TERRAIN_COAST'                  			 ),
@@ -422,19 +469,19 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	('TRAIT_LEADER_THUNDERBOLT_HOLYSITE_COASTAL_ADJACENCY' , 'Amount'       , '1'                              			 ),
 	('TRAIT_LEADER_THUNDERBOLT_HOLYSITE_COASTAL_ADJACENCY' , 'TilesRequired', '1'                              			 ),
 	('TRAIT_LEADER_THUNDERBOLT_HOLYSITE_COASTAL_ADJACENCY' , 'Description'  , 'LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH');
-INSERT INTO TraitModifiers (TraitType , ModifierId)
+INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
 	VALUES
 	('TRAIT_LEADER_MELEE_COASTAL_RAIDS' , 'TRAIT_LEADER_THUNDERBOLT_HOLYSITE_COASTAL_ADJACENCY');
 -- +50% production towards Holy Sites and associated Buildings
-INSERT INTO TraitModifiers (TraitType , ModifierId)
+INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
 	VALUES
 	('TRAIT_LEADER_MELEE_COASTAL_RAIDS'          , 'THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'              ),
 	('TRAIT_LEADER_MELEE_COASTAL_RAIDS'          , 'THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'              );
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES
 	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION'                 , null),
 	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION'                 , null);
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra , SecondExtra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra , SecondExtra)
 	VALUES
 	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'DistrictType' , 'DISTRICT_HOLY_SITE' , null , null),
 	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'Amount'       , '50'                 , null , null),
@@ -446,7 +493,7 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra , SecondExtra)
 -- Rome
 --==================
 -- Baths get Culture minor adjacency bonus added
-INSERT INTO District_Adjacencies (DistrictType , YieldChangeId)
+INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
 	VALUES ('DISTRICT_BATH' , 'District_Culture');
 
 
@@ -463,22 +510,22 @@ UPDATE Units SET Combat=62 WHERE UnitType='UNIT_RUSSIAN_COSSACK';
 UPDATE District_GreatPersonPoints SET PointsPerTurn='0' WHERE DistrictType='DISTRICT_LAVRA' AND GreatPersonClassType='GREAT_PERSON_CLASS_ARTIST';
 UPDATE District_GreatPersonPoints SET PointsPerTurn='0' WHERE DistrictType='DISTRICT_LAVRA' AND GreatPersonClassType='GREAT_PERSON_CLASS_MUSICIAN';
 UPDATE District_GreatPersonPoints SET PointsPerTurn='0' WHERE DistrictType='DISTRICT_LAVRA' AND GreatPersonClassType='GREAT_PERSON_CLASS_WRITER';
-INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType)
     VALUES ('DELAY_LAVRA_GPP_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
     VALUES
 	('DELAY_LAVRA_GPP_REQUIREMENTS' , 'REQUIRES_DISTRICT_IS_LAVRA'),
 	('DELAY_LAVRA_GPP_REQUIREMENTS' , 'REQUIRES_CITY_HAS_THEATER_DISTRICT');
-INSERT INTO Requirements (RequirementId, RequirementType)
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType)
 	VALUES ('REQUIRES_DISTRICT_IS_LAVRA' , 'REQUIREMENT_DISTRICT_TYPE_MATCHES');
-INSERT INTO RequirementArguments (RequirementId, Name, Value)
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value)
 	VALUES ('REQUIRES_DISTRICT_IS_LAVRA', 'DistrictType', 'DISTRICT_LAVRA');
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
     VALUES
 	('DELAY_LAVRA_ARTIST_GPP_MODIFIER' , 'MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS' , 'DELAY_LAVRA_GPP_REQUIREMENTS'),
     ('DELAY_LAVRA_MUSICIAN_GPP_MODIFIER' , 'MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS' , 'DELAY_LAVRA_GPP_REQUIREMENTS'),
 	('DELAY_LAVRA_WRITER_GPP_MODIFIER' , 'MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS' , 'DELAY_LAVRA_GPP_REQUIREMENTS');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
     VALUES
 	('DELAY_LAVRA_ARTIST_GPP_MODIFIER' , 'GreatPersonClassType' , 'GREAT_PERSON_CLASS_ARTIST'),
     ('DELAY_LAVRA_MUSICIAN_GPP_MODIFIER' , 'GreatPersonClassType' , 'GREAT_PERSON_CLASS_MUSICIAN'),
@@ -486,7 +533,7 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	('DELAY_LAVRA_ARTIST_GPP_MODIFIER' , 'Amount' , '1'),
     ('DELAY_LAVRA_MUSICIAN_GPP_MODIFIER' , 'Amount' , '1'),
     ('DELAY_LAVRA_WRITER_GPP_MODIFIER' , 'Amount' , '1');
-INSERT INTO DistrictModifiers ( DistrictType , ModifierId )
+INSERT OR IGNORE INTO DistrictModifiers ( DistrictType , ModifierId )
 	VALUES
 	( 'DISTRICT_LAVRA' , 'DELAY_LAVRA_ARTIST_GPP_MODIFIER' ),
 	( 'DISTRICT_LAVRA' , 'DELAY_LAVRA_MUSICIAN_GPP_MODIFIER' ),
@@ -503,59 +550,53 @@ UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_EXTRALIGHTCAVALRY
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_CROSSBOWMAN' WHERE Unit='UNIT_SCYTHIAN_HORSE_ARCHER';
 UPDATE Units SET Range=2, Cost=70 WHERE UnitType='UNIT_SCYTHIAN_HORSE_ARCHER';
 -- Adjacent Pastures now give +1 production in addition to faith
-INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
+INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
 	VALUES ('IMPROVEMENT_KURGAN' , 'KURGAN_PASTURE_PRODUCTION');
-INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentImprovement)
+INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentImprovement)
 	VALUES ('KURGAN_PASTURE_PRODUCTION' , 'Placeholder' , 'YIELD_PRODUCTION' , 1 , 1 , 'IMPROVEMENT_PASTURE');
-INSERT INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
+INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
 	VALUES ('IMPROVEMENT_KURGAN' , 'YIELD_PRODUCTION' , 0);
+INSERT OR IGNORE INTO Improvement_ValidTerrains (ImprovementType, TerrainType) VALUES
+	('IMPROVEMENT_KURGAN', 'TERRAIN_PLAINS_HILLS'),
+	('IMPROVEMENT_KURGAN', 'TERRAIN_GRASS_HILLS'),
+	('IMPROVEMENT_KURGAN', 'TERRAIN_DESERT_HILLS'),
+	('IMPROVEMENT_KURGAN', 'TERRAIN_SNOW_HILLS'),
+	('IMPROVEMENT_KURGAN', 'TERRAIN_TUNDRA_HILLS');
+
 -- Can now purchase cavalry units with faith
-INSERT INTO TraitModifiers (TraitType , ModifierId)
+INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
 	VALUES ('TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY' , 'SCYTHIA_FAITH_PURCHASE_LCAVALRY_CPLMOD');
-INSERT INTO TraitModifiers (TraitType , ModifierId)
+INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
 	VALUES ('TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY' , 'SCYTHIA_FAITH_PURCHASE_HCAVALRY_CPLMOD');
-INSERT INTO TraitModifiers (TraitType , ModifierId)
+INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
 	VALUES ('TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY' , 'SCYTHIA_FAITH_PURCHASE_RCAVALRY_CPLMOD');
-INSERT INTO Modifiers (ModifierId , ModifierType)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('SCYTHIA_FAITH_PURCHASE_LCAVALRY_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ENABLE_UNIT_FAITH_PURCHASE');
-INSERT INTO Modifiers (ModifierId , ModifierType)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('SCYTHIA_FAITH_PURCHASE_HCAVALRY_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ENABLE_UNIT_FAITH_PURCHASE');
-INSERT INTO Modifiers (ModifierId , ModifierType)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('SCYTHIA_FAITH_PURCHASE_RCAVALRY_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ENABLE_UNIT_FAITH_PURCHASE');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('SCYTHIA_FAITH_PURCHASE_LCAVALRY_CPLMOD' , 'Tag' , 'CLASS_LIGHT_CAVALRY'); 
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('SCYTHIA_FAITH_PURCHASE_HCAVALRY_CPLMOD' , 'Tag' , 'CLASS_HEAVY_CAVALRY');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('SCYTHIA_FAITH_PURCHASE_RCAVALRY_CPLMOD' , 'Tag' , 'CLASS_RANGED_CAVALRY'); 
 
 
 --==================
 -- Spain
 --==================
+-- Missions cannot be placed next to each other
+UPDATE Improvements SET SameAdjacentValid=0 WHERE ImprovementType='IMPROVEMENT_MISSION';
 -- Missions moved to Theology
 UPDATE Improvements SET PrereqCivic='CIVIC_THEOLOGY' WHERE ImprovementType='IMPROVEMENT_MISSION';
--- Missions get +1 housing at Civil Service
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
-	VALUES ('PLAYER_HAS_CIVIL_SERVICE_REQUIREMENTS_BBG', 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
-	VALUES ('PLAYER_HAS_CIVIL_SERVICE_REQUIREMENTS_BBG', 'REQUIRES_PLAYER_HAS_CIVIL_SERVICE_BBG');
-INSERT INTO Requirements (RequirementId, RequirementType)
-	VALUES ('REQUIRES_PLAYER_HAS_CIVIL_SERVICE_BBG', 'REQUIREMENT_PLAYER_HAS_CIVIC');
-INSERT INTO RequirementArguments (RequirementId, Name, Value)
-	VALUES ('REQUIRES_PLAYER_HAS_CIVIL_SERVICE_BBG', 'CivicType', 'CIVIC_CIVIL_SERVICE');
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
-	VALUES ('MISSION_HOUSING_WITH_CIVIL_SERVICE' , 'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_HOUSING', 'PLAYER_HAS_CIVIL_SERVICE_REQUIREMENTS_BBG');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES ('MISSION_HOUSING_WITH_CIVIL_SERVICE' , 'Amount' , 1);
-INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
-	VALUES ('IMPROVEMENT_MISSION' , 'MISSION_HOUSING_WITH_CIVIL_SERVICE');
--- Missions get bonus yields at Enlightenment
+-- Missions get bonus science at Enlightenment instead of cultural heritage
 UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_THE_ENLIGHTENMENT' WHERE Id='17';
 -- Early Fleets moved to Mercenaries
 UPDATE ModifierArguments SET Value='CIVIC_MERCENARIES' WHERE Name='CivicType' AND ModifierId='TRAIT_NAVAL_CORPS_EARLY';
 -- 30% discount on missionaries
-INSERT INTO TraitModifiers ( TraitType , ModifierId )
+INSERT OR IGNORE INTO TraitModifiers ( TraitType , ModifierId )
 	VALUES ('TRAIT_LEADER_EL_ESCORIAL' , 'HOLY_ORDER_MISSIONARY_DISCOUNT_MODIFIER');
 
 	
@@ -564,37 +605,37 @@ INSERT INTO TraitModifiers ( TraitType , ModifierId )
 --==================
 -- replace bugged shared xp and pillage rewards with double pillage rewards
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU' AND ModifierId='TRAIT_ADJUST_JOINTWAR_EXPERIENCE';
-INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
 	('TRAIT_ADJUST_PILLAGE_BBG', 'MODIFIER_PLAYER_ADJUST_IMPROVEMENT_PILLAGE');
-INSERT INTO ModifierArguments (ModifierId, Name, Value, Extra) VALUES
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value, Extra) VALUES
 	('TRAIT_ADJUST_PILLAGE_BBG', 'Amount', '2', '-1');
 UPDATE TraitModifiers SET ModifierId='TRAIT_ADJUST_PILLAGE_BBG' WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU' AND ModifierId='TRAIT_ADJUST_JOINTWAR_PLUNDER';
 -- Sumerian War Carts are no longer free to maintain so that you cannot have unlimited and are heavy chariot replacement with 32 combat
 UPDATE Units SET Maintenance=1, Combat=32, PrereqTech='TECH_THE_WHEEL', MandatoryObsoleteTech='TECH_BALLISTICS' WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SUMERIAN_WAR_CART', 'UNIT_HEAVY_CHARIOT');
+INSERT OR IGNORE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SUMERIAN_WAR_CART', 'UNIT_HEAVY_CHARIOT');
 -- war carts have a chance to steal defeated barbs and city state units
-INSERT INTO Types (Type , Kind)
+INSERT OR IGNORE INTO Types (Type , Kind)
 	VALUES ('ABILITY_WAR_CART_CAPTURE' , 'KIND_ABILITY');
-INSERT INTO TypeTags (Type, Tag)
+INSERT OR IGNORE INTO TypeTags (Type, Tag)
 	VALUES ('ABILITY_WAR_CART_CAPTURE', 'CLASS_WAR_CART');
-INSERT INTO UnitAbilities (UnitAbilityType, Name, Description)
+INSERT OR IGNORE INTO UnitAbilities (UnitAbilityType, Name, Description)
 	VALUES ('ABILITY_WAR_CART_CAPTURE', 'Placeholder', 'Placeholder');
-INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
+INSERT OR IGNORE INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
 	VALUES ('ABILITY_WAR_CART_CAPTURE', 'WAR_CART_CAPTURE_CS_BARBS');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
 	VALUES ('WAR_CART_CAPTURE_CS_BARBS', 'MODIFIER_UNIT_ADJUST_COMBAT_UNIT_CAPTURE', 'OPP_IS_CS_OR_BARB');
-INSERT INTO ModifierArguments (ModifierId, Name, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
 	VALUES ('WAR_CART_CAPTURE_CS_BARBS', 'CanCapture', '1');
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId, RequirementSetType)
 	VALUES ('OPP_IS_CS_OR_BARB', 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 	VALUES
 	('OPP_IS_CS_OR_BARB', 'REQUIRES_OPPONENT_IS_BARBARIAN'),
 	('OPP_IS_CS_OR_BARB', 'REQUIRES_OPPONENT_IS_MINOR_CIV');
 -- Sumeria's Ziggurat gets +1 Culture at Diplomatic Service instead of Natural History
 UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_DIPLOMATIC_SERVICE' WHERE ImprovementType='IMPROVEMENT_ZIGGURAT';
 -- zigg gets +1 science and culture at enlightenment
-INSERT INTO Improvement_BonusYieldChanges (ImprovementType, YieldType, BonusYieldChange, PrereqCivic)
+INSERT OR IGNORE INTO Improvement_BonusYieldChanges (ImprovementType, YieldType, BonusYieldChange, PrereqCivic)
 	VALUES
 	('IMPROVEMENT_ZIGGURAT', 'YIELD_CULTURE', 1, 'CIVIC_THE_ENLIGHTENMENT'),
 	('IMPROVEMENT_ZIGGURAT', 'YIELD_SCIENCE', 1, 'CIVIC_THE_ENLIGHTENMENT');
@@ -617,7 +658,7 @@ UPDATE Building_GreatPersonPoints SET PointsPerTurn=3 WHERE BuildingType='BUILDI
 --******			  C I T Y - S T A T E S				  ******
 --==============================================================
 -- nan-modal culture per district no longer applies to city center or wonders
-INSERT INTO Requirements ( RequirementId, RequirementType, Inverse )
+INSERT OR IGNORE INTO Requirements ( RequirementId, RequirementType, Inverse )
 	VALUES
 		( 'REQUIRES_DISTRICT_IS_NOT_CITY_CENTER_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
 		( 'REQUIRES_DISTRICT_IS_NOT_AQUEDUCT_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
@@ -626,7 +667,7 @@ INSERT INTO Requirements ( RequirementId, RequirementType, Inverse )
 		( 'REQUIRES_DISTRICT_IS_NOT_NEIGHBORHOOD_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
 		( 'REQUIRES_DISTRICT_IS_NOT_SPACEPORT_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 ),
 		( 'REQUIRES_DISTRICT_IS_NOT_WORLD_WONDER_BBG', 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES', 1 );
-INSERT INTO RequirementArguments ( RequirementId, Name, Value )
+INSERT OR IGNORE INTO RequirementArguments ( RequirementId, Name, Value )
 	VALUES
 		( 'REQUIRES_DISTRICT_IS_NOT_CITY_CENTER_BBG', 'DistrictType', 'DISTRICT_CITY_CENTER' ),
 		( 'REQUIRES_DISTRICT_IS_NOT_AQUEDUCT_BBG', 'DistrictType', 'DISTRICT_AQUEDUCT' ),
@@ -635,9 +676,9 @@ INSERT INTO RequirementArguments ( RequirementId, Name, Value )
 		( 'REQUIRES_DISTRICT_IS_NOT_NEIGHBORHOOD_BBG', 'DistrictType', 'DISTRICT_NEIGHBORHOOD' ),
 		( 'REQUIRES_DISTRICT_IS_NOT_SPACEPORT_BBG', 'DistrictType', 'DISTRICT_SPACEPORT' ),
 		( 'REQUIRES_DISTRICT_IS_NOT_WORLD_WONDER_BBG', 'DistrictType', 'DISTRICT_WONDER' );
-INSERT INTO RequirementSets ( RequirementSetId, RequirementSetType )
+INSERT OR IGNORE INTO RequirementSets ( RequirementSetId, RequirementSetType )
 	VALUES ( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIREMENTSET_TEST_ALL' );
-INSERT INTO RequirementSetRequirements ( RequirementSetId, RequirementId )
+INSERT OR IGNORE INTO RequirementSetRequirements ( RequirementSetId, RequirementId )
 	VALUES
 		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_PLOT_IS_ADJACENT_TO_COAST' ),
 		( 'SPECIAL_DISTRICT_ON_COAST_BBG', 'REQUIRES_DISTRICT_IS_NOT_CITY_CENTER_BBG' ),
@@ -833,14 +874,14 @@ UPDATE ModifierArguments SET Value='50' WHERE ModifierId='CITY_PATRON_GODDESS_DI
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='DANCE_OF_THE_AURORA_FAITHTUNDRAHILLSADJACENCY' AND Name='Amount';
 -- stone circles -1 faith and +1 prod
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='STONE_CIRCLES_QUARRY_FAITH_MODIFIER' and Name='Amount';
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
 	('STONE_CIRCLES_QUARRY_PROD_BBG', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS'),
 	('STONE_CIRCLES_QUARRY_PROD_MODIFIER_BBG', 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD', 'PLOT_HAS_QUARRY_REQUIREMENTS');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('STONE_CIRCLES_QUARRY_PROD_BBG', 'ModifierId', 'STONE_CIRCLES_QUARRY_PROD_MODIFIER_BBG'),
 	('STONE_CIRCLES_QUARRY_PROD_MODIFIER_BBG', 'YieldType', 'YIELD_PRODUCTION'),
 	('STONE_CIRCLES_QUARRY_PROD_MODIFIER_BBG', 'Amount', '1');
-INSERT INTO BeliefModifiers (BeliefType, ModifierID) VALUES
+INSERT OR IGNORE INTO BeliefModifiers (BeliefType, ModifierID) VALUES
 	('BELIEF_STONE_CIRCLES', 'STONE_CIRCLES_QUARRY_PROD_BBG');
 -- religious idols +1 faith
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='RELIGIOUS_IDOLS_BONUS_MINE_FAITH_MODIFIER' and Name='Amount';
@@ -852,7 +893,7 @@ UPDATE ModifierArguments SET Value='50' WHERE ModifierId='GODDESS_OF_THE_HARVEST
 UPDATE ModifierArguments SET Value='ERA_INFORMATION' WHERE ModifierId='MONUMENT_TO_THE_GODS_ANCIENTCLASSICALWONDER_MODIFIER' AND Name='EndEra';
 -- God of War now God of War and Plunder (similar to divine spark)
 DELETE FROM BeliefModifiers WHERE BeliefType='BELIEF_GOD_OF_WAR';
-INSERT INTO Modifiers  ( ModifierId , ModifierType , SubjectRequirementSetId )
+INSERT OR IGNORE INTO Modifiers  ( ModifierId , ModifierType , SubjectRequirementSetId )
 	VALUES
 	( 'GOD_OF_WAR_AND_PLUNDER_COMHUB' , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER' , 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS' ),
 	( 'GOD_OF_WAR_AND_PLUNDER_HARBOR' , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER' , 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS' ),
@@ -860,7 +901,7 @@ INSERT INTO Modifiers  ( ModifierId , ModifierType , SubjectRequirementSetId )
 	( 'GOD_OF_WAR_AND_PLUNDER_COMHUB_MODIFIER' , 'MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS' , 'DISTRICT_IS_COMMERCIAL_HUB' ),
 	( 'GOD_OF_WAR_AND_PLUNDER_HARBOR_MODIFIER' , 'MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS' , 'DISTRICT_IS_HARBOR' 		),
 	( 'GOD_OF_WAR_AND_PLUNDER_ENCAMP_MODIFIER' , 'MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS' , 'DISTRICT_IS_ENCAMPMENT' 	);
-INSERT INTO ModifierArguments ( ModifierId , Name , Type , Value )
+INSERT OR IGNORE INTO ModifierArguments ( ModifierId , Name , Type , Value )
 	VALUES
 	( 'GOD_OF_WAR_AND_PLUNDER_COMHUB' , 'ModifierId' , 'ARGTYPE_IDENTITY' , 'GOD_OF_WAR_AND_PLUNDER_COMHUB_MODIFIER' ),
 	( 'GOD_OF_WAR_AND_PLUNDER_HARBOR' , 'ModifierId' , 'ARGTYPE_IDENTITY' , 'GOD_OF_WAR_AND_PLUNDER_HARBOR_MODIFIER' ),
@@ -871,58 +912,58 @@ INSERT INTO ModifierArguments ( ModifierId , Name , Type , Value )
 	( 'GOD_OF_WAR_AND_PLUNDER_COMHUB_MODIFIER' , 'Amount' , 'ARGTYPE_IDENTITY' , '1' ),
 	( 'GOD_OF_WAR_AND_PLUNDER_HARBOR_MODIFIER' , 'Amount' , 'ARGTYPE_IDENTITY' , '1' ),
 	( 'GOD_OF_WAR_AND_PLUNDER_ENCAMP_MODIFIER' , 'Amount' , 'ARGTYPE_IDENTITY' , '1' );
-INSERT INTO BeliefModifiers ( BeliefType , ModifierId )
+INSERT OR IGNORE INTO BeliefModifiers ( BeliefType , ModifierId )
 	VALUES
 	( 'BELIEF_GOD_OF_WAR' , 'GOD_OF_WAR_AND_PLUNDER_COMHUB' ),
 	( 'BELIEF_GOD_OF_WAR' , 'GOD_OF_WAR_AND_PLUNDER_HARBOR' ),
 	( 'BELIEF_GOD_OF_WAR' , 'GOD_OF_WAR_AND_PLUNDER_ENCAMP' );
 -- Fertility Rites gives +1 food for rice and wheat, and +1 prod for sheep and cattle
-INSERT INTO Tags 
+INSERT OR IGNORE INTO Tags 
 	(Tag                                , Vocabulary)
 	VALUES 
 	('CLASS_FERTILITY_RITES_FOOD'       , 'RESOURCE_CLASS');
-INSERT INTO TypeTags 
+INSERT OR IGNORE INTO TypeTags 
 	(Type              , Tag)
 	VALUES
 	('RESOURCE_SHEEP'  , 'CLASS_FERTILITY_RITES_FOOD'),
 	('RESOURCE_WHEAT'  , 'CLASS_FERTILITY_RITES_FOOD'),
 	('RESOURCE_CATTLE' , 'CLASS_FERTILITY_RITES_FOOD'),
 	('RESOURCE_RICE'   , 'CLASS_FERTILITY_RITES_FOOD');
-INSERT INTO Modifiers 
+INSERT OR IGNORE INTO Modifiers 
 	(ModifierId                                         , ModifierType                                                , SubjectRequirementSetId)
 	VALUES
 	('FERTILITY_RITES_TAG_FOOD'                         , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER'                       , 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS'      ),
 	('FERTILITY_RITES_TAG_FOOD_MODIFIER'                , 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD'               , 'PLOT_HAS_FERTILITY_TAG_FOOD_REQUIREMENTS');
-INSERT INTO ModifierArguments 
+INSERT OR IGNORE INTO ModifierArguments 
 	(ModifierId                                         , Name                       , Value)
 	VALUES
 	('FERTILITY_RITES_TAG_FOOD'                         , 'ModifierId'                , 'FERTILITY_RITES_TAG_FOOD_MODIFIER'             ),
 	('FERTILITY_RITES_TAG_FOOD_MODIFIER'                , 'YieldType'                 , 'YIELD_FOOD'                                    ),
 	('FERTILITY_RITES_TAG_FOOD_MODIFIER'                , 'Amount'                    , '1'                                             );
-INSERT INTO Requirements 
+INSERT OR IGNORE INTO Requirements 
 	(RequirementId                                , RequirementType)
 	VALUES 
 	('REQUIRES_PLOT_HAS_TAG_FERTILITY_FOOD'       , 'REQUIREMENT_PLOT_RESOURCE_TAG_MATCHES');
-INSERT INTO RequirementArguments 
+INSERT OR IGNORE INTO RequirementArguments 
 	(RequirementId                                , Name  , Value)
 	VALUES 
 	('REQUIRES_PLOT_HAS_TAG_FERTILITY_FOOD'       , 'Tag'         , 'CLASS_FERTILITY_RITES_FOOD');
-INSERT INTO RequirementSets 
+INSERT OR IGNORE INTO RequirementSets 
 	(RequirementSetId                                 , RequirementSetType)
 	VALUES 
 	('PLOT_HAS_FERTILITY_TAG_FOOD_REQUIREMENTS'       , 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSetRequirements 
+INSERT OR IGNORE INTO RequirementSetRequirements 
 	(RequirementSetId                                 , RequirementId)
 	VALUES 
 	('PLOT_HAS_FERTILITY_TAG_FOOD_REQUIREMENTS'       , 'REQUIRES_PLOT_HAS_TAG_FERTILITY_FOOD');
 UPDATE BeliefModifiers SET ModifierID='FERTILITY_RITES_TAG_FOOD' WHERE BeliefType='BELIEF_FERTILITY_RITES' AND ModifierID='FERTILITY_RITES_GROWTH';
 -- Initiation Rites gives 25% faith for each military land unit produced
-INSERT INTO Modifiers 
+INSERT OR IGNORE INTO Modifiers 
 	(ModifierId                                         , ModifierType                                                , SubjectRequirementSetId)
 	VALUES
 	('INITIATION_RITES_FAITH_YIELD_CPL_MOD'             , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER'                       , 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS'),
 	('INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD'    , 'MODIFIER_SINGLE_CITY_GRANT_YIELD_PER_UNIT_COST'            , NULL                                );
-INSERT INTO ModifierArguments 
+INSERT OR IGNORE INTO ModifierArguments 
 	(ModifierId                                         , Name                       , Value)
 	VALUES
 	('INITIATION_RITES_FAITH_YIELD_CPL_MOD'             , 'ModifierId'                , 'INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD' ),
@@ -930,32 +971,32 @@ INSERT INTO ModifierArguments
 	('INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD'    , 'UnitProductionPercent'     , '25'                                            );
 UPDATE BeliefModifiers SET ModifierID='INITIATION_RITES_FAITH_YIELD_CPL_MOD' WHERE BeliefType='BELIEF_INITIATION_RITES' AND ModifierID='INITIATION_RITES_FAITH_DISPERSAL';
 -- Sacred Path +1 Faith Holy Site adjacency now applies to both Woods and Rainforest
-INSERT INTO BeliefModifiers 
+INSERT OR IGNORE INTO BeliefModifiers 
 	(BeliefType                   , ModifierId)
 	VALUES
 	('BELIEF_SACRED_PATH'         , 'SACRED_PATH_WOODS_FAITH_ADJACENCY');
-INSERT INTO Modifiers 
+INSERT OR IGNORE INTO Modifiers 
 	(ModifierId                                         , ModifierType                                                , SubjectRequirementSetId)
 	VALUES
 	('SACRED_PATH_WOODS_FAITH_ADJACENCY'                , 'MODIFIER_ALL_CITIES_FEATURE_ADJACENCY'                     , 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS');
-INSERT INTO ModifierArguments 
+INSERT OR IGNORE INTO ModifierArguments 
 	(ModifierId                                         , Name                       , Value)
 	VALUES
 	('SACRED_PATH_WOODS_FAITH_ADJACENCY'                , 'DistrictType'              , 'DISTRICT_HOLY_SITE'                            ),
 	('SACRED_PATH_WOODS_FAITH_ADJACENCY'                , 'FeatureType'               , 'FEATURE_FOREST'                                ),
 	('SACRED_PATH_WOODS_FAITH_ADJACENCY'                , 'YieldType'                 , 'YIELD_FAITH'                                   ),
-	('SACRED_PATH_WOODS_FAITH_ADJACENCY'                , 'Amount'                    , '1'                                             ),
+	('SACRED_PATH_WOODS_FAITH_ADJACENCY'                , 'Amount'                    , '0.5'                                           ),
 	('SACRED_PATH_WOODS_FAITH_ADJACENCY'                , 'Description'               , 'LOC_DISTRICT_SACREDPATH_WOODS_FAITH'           );
 -- Lady of the Reeds and Marshes now applies pantanal
-INSERT INTO RequirementSetRequirements 
+INSERT OR IGNORE INTO RequirementSetRequirements 
     (RequirementSetId              , RequirementId)
     VALUES 
     ('PLOT_HAS_REEDS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_PANTANAL'          );
-INSERT INTO Requirements 
+INSERT OR IGNORE INTO Requirements 
     (RequirementId                          , RequirementType)
     VALUES 
     ('REQUIRES_PLOT_HAS_PANTANAL'           , 'REQUIREMENT_PLOT_FEATURE_TYPE_MATCHES');
-INSERT INTO RequirementArguments 
+INSERT OR IGNORE INTO RequirementArguments 
     (RequirementId                          , Name          , Value)
     VALUES 
     ('REQUIRES_PLOT_HAS_PANTANAL'           , 'FeatureType' , 'FEATURE_PANTANAL'             );
@@ -968,94 +1009,94 @@ INSERT INTO RequirementArguments
 -- Limes should not become obselete
 DELETE FROM ObsoletePolicies WHERE PolicyType='POLICY_LIMES';
 -- Adds +100% Siege Unit Production to Limes Policy Card
-INSERT INTO Modifiers (ModifierId , ModifierType)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('LIMES_SIEGE_ANCIENT_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
-INSERT INTO Modifiers (ModifierId , ModifierType)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('LIMES_SIEGE_CLASSICAL_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
-INSERT INTO Modifiers (ModifierId , ModifierType)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('LIMES_SIEGE_MEDIEVAL_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
-INSERT INTO Modifiers (ModifierId , ModifierType)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('LIMES_SIEGE_RENAISSANCE_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
-INSERT INTO Modifiers (ModifierId , ModifierType)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('LIMES_SIEGE_INDUSTRIAL_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
-INSERT INTO Modifiers (ModifierId , ModifierType)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('LIMES_SIEGE_MODERN_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
-INSERT INTO Modifiers (ModifierId , ModifierType)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('LIMES_SIEGE_ATOMIC_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
-INSERT INTO Modifiers (ModifierId , ModifierType)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('LIMES_SIEGE_INFORMATION_ERA_CPLMOD' , 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
 --
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_ANCIENT_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_ANCIENT_ERA_CPLMOD' , 'EraType' , 'ERA_ANCIENT' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_ANCIENT_ERA_CPLMOD' , 'Amount' , '100' , '-1');
 	
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_CLASSICAL_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_CLASSICAL_ERA_CPLMOD' , 'EraType' , 'ERA_CLASSICAL' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_CLASSICAL_ERA_CPLMOD' , 'Amount' , '100' , '-1');
 	
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_MEDIEVAL_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_MEDIEVAL_ERA_CPLMOD' , 'EraType' , 'ERA_MEDIEVAL' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_MEDIEVAL_ERA_CPLMOD' , 'Amount' , '100' , '-1');
 	
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_RENAISSANCE_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_RENAISSANCE_ERA_CPLMOD' , 'EraType' , 'ERA_RENAISSANCE' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_RENAISSANCE_ERA_CPLMOD' , 'Amount' , '100' , '-1');
 	
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_INDUSTRIAL_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_INDUSTRIAL_ERA_CPLMOD' , 'EraType' , 'ERA_INDUSTRIAL' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_INDUSTRIAL_ERA_CPLMOD' , 'Amount' , '100' , '-1');
 	
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_MODERN_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_MODERN_ERA_CPLMOD' , 'EraType' , 'ERA_MODERN' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_MODERN_ERA_CPLMOD' , 'Amount' , '100' , '-1');
 	
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_ATOMIC_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_ATOMIC_ERA_CPLMOD' , 'EraType' , 'ERA_ATOMIC' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_ATOMIC_ERA_CPLMOD' , 'Amount' , '100' , '-1');
 	
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_INFORMATION_ERA_CPLMOD' , 'UnitPromotionClass' , 'PROMOTION_CLASS_SIEGE' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_INFORMATION_ERA_CPLMOD' , 'EraType' , 'ERA_INFORMATION' , '-1');
-INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra)
 	VALUES ('LIMES_SIEGE_INFORMATION_ERA_CPLMOD' , 'Amount' , '100' , '-1');
 
-INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
 	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_ANCIENT_ERA_CPLMOD');
-INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
 	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_CLASSICAL_ERA_CPLMOD');
-INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
 	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_MEDIEVAL_ERA_CPLMOD');
-INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
 	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_RENAISSANCE_ERA_CPLMOD');
-INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
 	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_INDUSTRIAL_ERA_CPLMOD');
-INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
 	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_MODERN_ERA_CPLMOD');
-INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
 	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_ATOMIC_ERA_CPLMOD');
-INSERT INTO PolicyModifiers (PolicyType , ModifierId)
+INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
 	VALUES ('POLICY_LIMES' , 'LIMES_SIEGE_INFORMATION_ERA_CPLMOD');
 
 
@@ -1079,13 +1120,13 @@ UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_COMBAT_VIC
 UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_UNIT_CAPTURE';*/
 
 -- give monks wall breaker ability
-INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
 	('ENABLE_WALL_ATTACK_WHOLE_GAME_MONK_BBG', 'MODIFIER_PLAYER_UNITS_ADJUST_ENABLE_WALL_ATTACK_WHOLE_GAME_PROMOTION_CLASS');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('ENABLE_WALL_ATTACK_WHOLE_GAME_MONK_BBG', 'PromotionClass', 'PROMOTION_CLASS_MONK');
-INSERT INTO UnitAbilities (UnitAbilityType) VALUES
+INSERT OR IGNORE INTO UnitAbilities (UnitAbilityType) VALUES
 	('WARRIOR_MONK_WALL_BREAKER_BBG');
-INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES
+INSERT OR IGNORE INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES
 	('WARRIOR_MONK_WALL_BREAKER_BBG', 'ENABLE_WALL_ATTACK_WHOLE_GAME_MONK_BBG');
 -- Nerf Inquisitors
 UPDATE Units SET ReligionEvictPercent=50, SpreadCharges=2 WHERE UnitType='UNIT_INQUISITOR';
@@ -1112,54 +1153,52 @@ UPDATE ModifierArguments SET Value='3' WHERE ModifierId='WORLD_CHURCH_CULTURE_FO
 -- Zen Meditation now only requires 1 District to get the +1 Amentity
 UPDATE RequirementArguments SET Value='1' WHERE RequirementId='REQUIRES_CITY_HAS_2_SPECIALTY_DISTRICTS' AND Name='Amount';
 -- Religious Communities now gives +1 Housing to Holy Sites, like it does for Shines and Temples
-INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
 	VALUES ('RELIGIOUS_COMMUNITY_HOLY_SITE_HOUSING' , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER' , 'CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE');
-INSERT INTO Modifiers (ModifierId , ModifierType)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES ('RELIGIOUS_COMMUNITY_HOLY_SITE_HOUSING_MODIFIER' , 'MODIFIER_SINGLE_CITY_ADJUST_BUILDING_HOUSING');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('RELIGIOUS_COMMUNITY_HOLY_SITE_HOUSING' , 'ModifierId' , 'RELIGIOUS_COMMUNITY_HOLY_SITE_HOUSING_MODIFIER');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('RELIGIOUS_COMMUNITY_HOLY_SITE_HOUSING_MODIFIER' , 'Amount' , '1');
-INSERT INTO BeliefModifiers (BeliefType , ModifierId)
+INSERT OR IGNORE INTO BeliefModifiers (BeliefType , ModifierId)
 	VALUES ('BELIEF_RELIGIOUS_COMMUNITY' , 'RELIGIOUS_COMMUNITY_HOLY_SITE_HOUSING');
-INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType)
 	VALUES ('CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE' , 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
     VALUES ('CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE' , 'REQUIRES_CITY_FOLLOWS_RELIGION');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE' , 'REQUIRES_CITY_HAS_HOLY_SITE');
 -- Warrior Monks +5 Combat Strength
 UPDATE Units SET Combat=40 WHERE UnitType='UNIT_WARRIOR_MONK';
 -- Work Ethic now provides production equal to base yield for Shrine and Temple
-/*
 DELETE From BeliefModifiers WHERE ModifierId='WORK_ETHIC_FOLLOWER_PRODUCTION';
-INSERT INTO Modifiers 
+INSERT OR IGNORE INTO Modifiers 
 	(ModifierId                              , ModifierType                          , SubjectRequirementSetId)
 	VALUES 
-	('WORK_ETHIC_SHRINE_PRODUCTION'          , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER' , 'CITY_FOLLOWS_RELIGION_HAS_SHRINE'),--<
+	('WORK_ETHIC_SHRINE_PRODUCTION'          , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER' , 'CITY_FOLLOWS_RELIGION_HAS_SHRINE'),
 	('WORK_ETHIC_TEMPLE_PRODUCTION'          , 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER' , 'CITY_FOLLOWS_RELIGION_HAS_TEMPLE'),
-	('WORK_ETHIC_SHRINE_PRODUCTION_MODIFIER' , 'MODIFIER_BUILDING_YIELD_CHANGE'      , null                              ),--<
+	('WORK_ETHIC_SHRINE_PRODUCTION_MODIFIER' , 'MODIFIER_BUILDING_YIELD_CHANGE'      , null                              ),
 	('WORK_ETHIC_TEMPLE_PRODUCTION_MODIFIER' , 'MODIFIER_BUILDING_YIELD_CHANGE'      , null                              );
-INSERT INTO ModifierArguments 
+INSERT OR IGNORE INTO ModifierArguments 
 	(ModifierId                              , Name           , Value)
 	VALUES 
-	('WORK_ETHIC_SHRINE_PRODUCTION'          , 'ModifierId'   , 'WORK_ETHIC_SHRINE_PRODUCTION_MODIFIER'),--<
+	('WORK_ETHIC_SHRINE_PRODUCTION'          , 'ModifierId'   , 'WORK_ETHIC_SHRINE_PRODUCTION_MODIFIER'),
 	('WORK_ETHIC_TEMPLE_PRODUCTION'          , 'ModifierId'   , 'WORK_ETHIC_TEMPLE_PRODUCTION_MODIFIER'),
-	('WORK_ETHIC_SHRINE_PRODUCTION_MODIFIER' , 'BuildingType' , 'BUILDING_SHRINE'                      ),--<
+	('WORK_ETHIC_SHRINE_PRODUCTION_MODIFIER' , 'BuildingType' , 'BUILDING_SHRINE'                      ),
 	('WORK_ETHIC_SHRINE_PRODUCTION_MODIFIER' , 'YieldType'    , 'YIELD_PRODUCTION'                     ),
 	('WORK_ETHIC_SHRINE_PRODUCTION_MODIFIER' , 'Amount'       , '2'                                    ),
-	('WORK_ETHIC_TEMPLE_PRODUCTION_MODIFIER' , 'BuildingType' , 'BUILDING_TEMPLE'                      ),--<
+	('WORK_ETHIC_TEMPLE_PRODUCTION_MODIFIER' , 'BuildingType' , 'BUILDING_TEMPLE'                      ),
 	('WORK_ETHIC_TEMPLE_PRODUCTION_MODIFIER' , 'YieldType'    , 'YIELD_PRODUCTION'                     ),
 	('WORK_ETHIC_TEMPLE_PRODUCTION_MODIFIER' , 'Amount'       , '4'                                    );
-INSERT INTO BeliefModifiers 
+INSERT OR IGNORE INTO BeliefModifiers 
 	(BeliefType          , ModifierId)
 	VALUES 
 	('BELIEF_WORK_ETHIC' , 'WORK_ETHIC_TEMPLE_PRODUCTION'),
 	('BELIEF_WORK_ETHIC' , 'WORK_ETHIC_SHRINE_PRODUCTION');
-*/
 -- Dar E Mehr provides +2 culture instead of faith from eras
 DELETE FROM Building_YieldsPerEra WHERE BuildingType='BUILDING_DAR_E_MEHR';
-INSERT INTO Building_YieldChanges 
+INSERT OR IGNORE INTO Building_YieldChanges 
 	(BuildingType          , YieldType       , YieldChange)
 	VALUES 
 	('BUILDING_DAR_E_MEHR' , 'YIELD_CULTURE' , '2');
@@ -1202,7 +1241,7 @@ UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_ENGLAND
 UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_NORWAY' AND TerrainType='TERRAIN_COAST';
 -- t2 must haves
 UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_SPAIN' AND TerrainType='TERRAIN_COAST';
-INSERT INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
+INSERT OR IGNORE INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
 	VALUES ('CIVILIZATION_JAPAN' , 'TERRAIN_COAST' , 2);
 UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_RUSSIA' AND TerrainType='TERRAIN_TUNDRA_HILLS';
 UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_RUSSIA' AND TerrainType='TERRAIN_TUNDRA';
@@ -1219,7 +1258,7 @@ UPDATE StartBiasFeatures SET Tier=4 WHERE CivilizationType='CIVILIZATION_KONGO' 
 UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_GREECE' AND TerrainType='TERRAIN_GRASS_HILLS';
 UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_GREECE' AND TerrainType='TERRAIN_PLAINS_HILLS';
 -- t4 resource mechanics
-INSERT INTO StartBiasResources (CivilizationType , ResourceType , Tier)
+INSERT OR IGNORE INTO StartBiasResources (CivilizationType , ResourceType , Tier)
 	VALUES
 	('CIVILIZATION_SCYTHIA' , 'RESOURCE_SHEEP'  , 4),
 	('CIVILIZATION_SCYTHIA' , 'RESOURCE_CATTLE' , 4);
@@ -1239,7 +1278,7 @@ UPDATE Units SET Cost=310 WHERE UnitType='UNIT_CAVALRY';
 UPDATE Units SET PrereqTech='TECH_STIRRUPS' WHERE UnitType='UNIT_PIKEMAN';
 UPDATE Units SET Combat=72 , BaseMoves=3 WHERE UnitType='UNIT_INFANTRY';
 UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_PRIVATEER';
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 	VALUES
 	('GRAPE_SHOT_REQUIREMENTS',			'PLAYER_IS_ATTACKER_REQUIREMENTS'),
 	('SHRAPNEL_REQUIREMENTS',			'PLAYER_IS_ATTACKER_REQUIREMENTS');
@@ -1260,43 +1299,43 @@ UPDATE ModifierArguments SET Value='300' WHERE ModifierId='STEEL_UNLOCK_URBAN_DE
 --******			W O N D E R S  (MAN-MADE)			  ******
 --==============================================================
 -- Huey gives +2 culture to lake tiles
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 	VALUES ('BUILDING_HUEY_TEOCALLI', 'HUEY_LAKE_CULTURE');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
 	VALUES
 	('HUEY_LAKE_CULTURE', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'FOODHUEY_PLAYER_REQUIREMENTS'),
 	('HUEY_LAKE_CULTURE_MODIFIER', 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD', 'FOODHUEY_PLOT_IS_LAKE_REQUIREMENTS');
-INSERT INTO ModifierArguments (ModifierId, Name, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
 	VALUES
 	('HUEY_LAKE_CULTURE', 'ModifierId', 'HUEY_LAKE_CULTURE_MODIFIER'),
 	('HUEY_LAKE_CULTURE_MODIFIER', 'Amount', '2'),
 	('HUEY_LAKE_CULTURE_MODIFIER', 'YieldType', 'YIELD_CULTURE');
 -- cristo gets 1 relic
-INSERT INTO Modifiers (ModifierId , ModifierType , RunOnce , Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , RunOnce , Permanent)
 	VALUES ('WONDER_GRANT_RELIC_BBG' , 'MODIFIER_PLAYER_GRANT_RELIC' , 1 , 1);	
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('WONDER_GRANT_RELIC_BBG' , 'Amount' , '1');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId) VALUES
 	('BUILDING_CRISTO_REDENTOR', 'WONDER_GRANT_RELIC_BBG');
 -- Hanging Gardens gives +1 housing to cities within 6 tiles
 UPDATE Buildings SET Housing='1' WHERE BuildingType='BUILDING_HANGING_GARDENS';
-INSERT INTO BuildingModifiers (BuildingType , ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType , ModifierId)
 	VALUES ('BUILDING_HANGING_GARDENS' , 'HANGING_GARDENS_REGIONAL_HOUSING');
-INSERT INTO Modifiers (ModifierId , ModifierType, SubjectRequirementSetId)
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType, SubjectRequirementSetId)
 	VALUES ('HANGING_GARDENS_REGIONAL_HOUSING' , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_HOUSING' , 'HANGING_GARDENS_REGIONAL_HOUSING_REQUIREMENTS');
-INSERT INTO ModifierArguments (ModifierId , Name , Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES ('HANGING_GARDENS_REGIONAL_HOUSING' , 'Amount' , '1');
-INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType)
 	VALUES ('HANGING_GARDENS_REGIONAL_HOUSING_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ANY');
-INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('HANGING_GARDENS_REGIONAL_HOUSING_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_HANGING_GARDENS_WITHIN_6');
-INSERT INTO Requirements (RequirementId , RequirementType)
+INSERT OR IGNORE INTO Requirements (RequirementId , RequirementType)
 	VALUES ('REQUIRES_PLOT_HAS_HANGING_GARDENS_WITHIN_6' , 'REQUIREMENT_PLOT_ADJACENT_BUILDING_TYPE_MATCHES');
-INSERT INTO RequirementArguments (RequirementId , Name , Value)
+INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('REQUIRES_PLOT_HAS_HANGING_GARDENS_WITHIN_6' , 'BuildingType' ,'BUILDING_HANGING_GARDENS');
-INSERT INTO RequirementArguments (RequirementId , Name , Value)
+INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('REQUIRES_PLOT_HAS_HANGING_GARDENS_WITHIN_6' , 'MaxRange' ,'6');
-INSERT INTO RequirementArguments (RequirementId , Name , Value)
+INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('REQUIRES_PLOT_HAS_HANGING_GARDENS_WITHIN_6' , 'MinRange' ,'0');
 
 -- Great Library unlocks at Drama & Poetry instead of Recorded History
@@ -1305,332 +1344,332 @@ UPDATE Buildings SET PrereqCivic='CIVIC_DRAMA_POETRY' WHERE BuildingType='BUILDI
 -- Venetian Arsenal gives 100% production boost to all naval units in all cities instead of an extra naval unit in its city each time you build one
 DELETE FROM BuildingModifiers WHERE	BuildingType='BUILDING_VENETIAN_ARSENAL';
 
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('ANCIENT_NAVAL_MELEE_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ANCIENT_NAVAL_MELEE_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_ANCIENT');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ANCIENT_NAVAL_MELEE_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_MELEE');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ANCIENT_NAVAL_MELEE_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('ATOMIC_NAVAL_MELEE_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ATOMIC_NAVAL_MELEE_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_ATOMIC');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ATOMIC_NAVAL_MELEE_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_MELEE');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ATOMIC_NAVAL_MELEE_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('CLASSICAL_NAVAL_MELEE_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('CLASSICAL_NAVAL_MELEE_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_CLASSICAL');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('CLASSICAL_NAVAL_MELEE_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_MELEE');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('CLASSICAL_NAVAL_MELEE_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('INDUSTRIAL_NAVAL_MELEE_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INDUSTRIAL_NAVAL_MELEE_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_INDUSTRIAL');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INDUSTRIAL_NAVAL_MELEE_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_MELEE');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INDUSTRIAL_NAVAL_MELEE_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('INFORMATION_NAVAL_MELEE_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INFORMATION_NAVAL_MELEE_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_INFORMATION');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INFORMATION_NAVAL_MELEE_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_MELEE');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INFORMATION_NAVAL_MELEE_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('MEDIEVAL_NAVAL_MELEE_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MEDIEVAL_NAVAL_MELEE_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_MEDIEVAL');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MEDIEVAL_NAVAL_MELEE_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_MELEE');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MEDIEVAL_NAVAL_MELEE_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('MODERN_NAVAL_MELEE_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MODERN_NAVAL_MELEE_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_MODERN');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MODERN_NAVAL_MELEE_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_MELEE');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MODERN_NAVAL_MELEE_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('RENAISSANCE_NAVAL_MELEE_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('RENAISSANCE_NAVAL_MELEE_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_RENAISSANCE');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('RENAISSANCE_NAVAL_MELEE_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_MELEE');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('RENAISSANCE_NAVAL_MELEE_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
 
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('ANCIENT_NAVAL_RANGED_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ANCIENT_NAVAL_RANGED_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_ANCIENT');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ANCIENT_NAVAL_RANGED_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RANGED');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ANCIENT_NAVAL_RANGED_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('ATOMIC_NAVAL_RANGED_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ATOMIC_NAVAL_RANGED_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_ATOMIC');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ATOMIC_NAVAL_RANGED_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RANGED');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ATOMIC_NAVAL_RANGED_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('CLASSICAL_NAVAL_RANGED_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('CLASSICAL_NAVAL_RANGED_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_CLASSICAL');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('CLASSICAL_NAVAL_RANGED_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RANGED');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('CLASSICAL_NAVAL_RANGED_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('INDUSTRIAL_NAVAL_RANGED_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INDUSTRIAL_NAVAL_RANGED_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_INDUSTRIAL');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INDUSTRIAL_NAVAL_RANGED_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RANGED');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INDUSTRIAL_NAVAL_RANGED_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('INFORMATION_NAVAL_RANGED_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INFORMATION_NAVAL_RANGED_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_INFORMATION');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INFORMATION_NAVAL_RANGED_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RANGED');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INFORMATION_NAVAL_RANGED_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('MEDIEVAL_NAVAL_RANGED_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MEDIEVAL_NAVAL_RANGED_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_MEDIEVAL');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MEDIEVAL_NAVAL_RANGED_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RANGED');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MEDIEVAL_NAVAL_RANGED_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('MODERN_NAVAL_RANGED_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MODERN_NAVAL_RANGED_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_MODERN');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MODERN_NAVAL_RANGED_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RANGED');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MODERN_NAVAL_RANGED_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('RENAISSANCE_NAVAL_RANGED_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('RENAISSANCE_NAVAL_RANGED_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_RENAISSANCE');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('RENAISSANCE_NAVAL_RANGED_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RANGED');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('RENAISSANCE_NAVAL_RANGED_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
 
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('ANCIENT_NAVAL_RAIDER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ANCIENT_NAVAL_RAIDER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_ANCIENT');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ANCIENT_NAVAL_RAIDER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RAIDER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ANCIENT_NAVAL_RAIDER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('ATOMIC_NAVAL_RAIDER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ATOMIC_NAVAL_RAIDER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_ATOMIC');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ATOMIC_NAVAL_RAIDER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RAIDER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ATOMIC_NAVAL_RAIDER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('CLASSICAL_NAVAL_RAIDER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('CLASSICAL_NAVAL_RAIDER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_CLASSICAL');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('CLASSICAL_NAVAL_RAIDER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RAIDER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('CLASSICAL_NAVAL_RAIDER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('INDUSTRIAL_NAVAL_RAIDER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INDUSTRIAL_NAVAL_RAIDER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_INDUSTRIAL');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INDUSTRIAL_NAVAL_RAIDER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RAIDER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INDUSTRIAL_NAVAL_RAIDER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('INFORMATION_NAVAL_RAIDER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INFORMATION_NAVAL_RAIDER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_INFORMATION');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INFORMATION_NAVAL_RAIDER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RAIDER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INFORMATION_NAVAL_RAIDER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('MEDIEVAL_NAVAL_RAIDER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MEDIEVAL_NAVAL_RAIDER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_MEDIEVAL');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MEDIEVAL_NAVAL_RAIDER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RAIDER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MEDIEVAL_NAVAL_RAIDER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('MODERN_NAVAL_RAIDER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MODERN_NAVAL_RAIDER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_MODERN');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MODERN_NAVAL_RAIDER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RAIDER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MODERN_NAVAL_RAIDER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('RENAISSANCE_NAVAL_RAIDER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('RENAISSANCE_NAVAL_RAIDER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_RENAISSANCE');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('RENAISSANCE_NAVAL_RAIDER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_RAIDER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('RENAISSANCE_NAVAL_RAIDER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
 
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('ANCIENT_NAVAL_CARRIER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ANCIENT_NAVAL_CARRIER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_ANCIENT');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ANCIENT_NAVAL_CARRIER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_CARRIER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ANCIENT_NAVAL_CARRIER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('ATOMIC_NAVAL_CARRIER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ATOMIC_NAVAL_CARRIER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_ATOMIC');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ATOMIC_NAVAL_CARRIER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_CARRIER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('ATOMIC_NAVAL_CARRIER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('CLASSICAL_NAVAL_CARRIER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('CLASSICAL_NAVAL_CARRIER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_CLASSICAL');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('CLASSICAL_NAVAL_CARRIER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_CARRIER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('CLASSICAL_NAVAL_CARRIER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('INDUSTRIAL_NAVAL_CARRIER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INDUSTRIAL_NAVAL_CARRIER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_INDUSTRIAL');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INDUSTRIAL_NAVAL_CARRIER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_CARRIER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INDUSTRIAL_NAVAL_CARRIER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('INFORMATION_NAVAL_CARRIER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INFORMATION_NAVAL_CARRIER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_INFORMATION');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INFORMATION_NAVAL_CARRIER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_CARRIER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('INFORMATION_NAVAL_CARRIER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('MEDIEVAL_NAVAL_CARRIER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MEDIEVAL_NAVAL_CARRIER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_MEDIEVAL');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MEDIEVAL_NAVAL_CARRIER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_CARRIER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MEDIEVAL_NAVAL_CARRIER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('MODERN_NAVAL_CARRIER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MODERN_NAVAL_CARRIER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_MODERN');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MODERN_NAVAL_CARRIER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_CARRIER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('MODERN_NAVAL_CARRIER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, NewOnly, Permanent)
 VALUES ('RENAISSANCE_NAVAL_CARRIER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION', 0, 0, 0);
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('RENAISSANCE_NAVAL_CARRIER_PRODUCTION', 'EraType', 'ARGTYPE_IDENTITY', 'ERA_RENAISSANCE');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('RENAISSANCE_NAVAL_CARRIER_PRODUCTION', 'UnitPromotionClass', 'ARGTYPE_IDENTITY', 'PROMOTION_CLASS_NAVAL_CARRIER');
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Type, Value)
 VALUES ('RENAISSANCE_NAVAL_CARRIER_PRODUCTION', 'Amount', 'ARGTYPE_IDENTITY', '100');
 
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'ANCIENT_NAVAL_MELEE_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'ATOMIC_NAVAL_MELEE_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'CLASSICAL_NAVAL_MELEE_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'INDUSTRIAL_NAVAL_MELEE_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'INFORMATION_NAVAL_MELEE_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'MEDIEVAL_NAVAL_MELEE_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'MODERN_NAVAL_MELEE_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'RENAISSANCE_NAVAL_MELEE_PRODUCTION');
 
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'ANCIENT_NAVAL_RANGED_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'ATOMIC_NAVAL_RANGED_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'CLASSICAL_NAVAL_RANGED_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'INDUSTRIAL_NAVAL_RANGED_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'INFORMATION_NAVAL_RANGED_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'MEDIEVAL_NAVAL_RANGED_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'MODERN_NAVAL_RANGED_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'RENAISSANCE_NAVAL_RANGED_PRODUCTION');
 
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'ANCIENT_NAVAL_RAIDER_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'ATOMIC_NAVAL_RAIDER_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'CLASSICAL_NAVAL_RAIDER_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'INDUSTRIAL_NAVAL_RAIDER_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'INFORMATION_NAVAL_RAIDER_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'MEDIEVAL_NAVAL_RAIDER_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'MODERN_NAVAL_RAIDER_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'RENAISSANCE_NAVAL_RAIDER_PRODUCTION');
 
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'ANCIENT_NAVAL_CARRIER_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'ATOMIC_NAVAL_CARRIER_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'CLASSICAL_NAVAL_CARRIER_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'INDUSTRIAL_NAVAL_CARRIER_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'INFORMATION_NAVAL_CARRIER_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'MEDIEVAL_NAVAL_CARRIER_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'MODERN_NAVAL_CARRIER_PRODUCTION');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId)
 VALUES ('BUILDING_VENETIAN_ARSENAL', 'RENAISSANCE_NAVAL_CARRIER_PRODUCTION');
 
 
@@ -1640,16 +1679,16 @@ VALUES ('BUILDING_VENETIAN_ARSENAL', 'RENAISSANCE_NAVAL_CARRIER_PRODUCTION');
 --==============================================================
 -- Several lack-luster wonders improved
 UPDATE Features SET Settlement=1 WHERE FeatureType='FEATURE_CLIFFS_DOVER';
-INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
+INSERT OR IGNORE INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_PANTANAL', 'YIELD_SCIENCE', 2);
-INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
+INSERT OR IGNORE INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_CLIFFS_DOVER', 'YIELD_FOOD', 2);
-INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
+INSERT OR IGNORE INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_DEAD_SEA', 'YIELD_FOOD', 2);
-INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
+INSERT OR IGNORE INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_CRATER_LAKE', 'YIELD_FOOD', 2);
 UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_CRATER_LAKE' AND YieldType='YIELD_SCIENCE'; 
-INSERT INTO Feature_AdjacentYields (FeatureType, YieldType, YieldChange)
+INSERT OR IGNORE INTO Feature_AdjacentYields (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_GALAPAGOS', 'YIELD_FOOD', 1);
 
 
@@ -1658,10 +1697,10 @@ INSERT INTO Feature_AdjacentYields (FeatureType, YieldType, YieldChange)
 --******				    O T H E R					  ******
 --==============================================================
 -- oil can be found on flat plains
-INSERT INTO Resource_ValidTerrains (ResourceType, TerrainType)
+INSERT OR IGNORE INTO Resource_ValidTerrains (ResourceType, TerrainType)
 	VALUES ('RESOURCE_OIL', 'TERRAIN_PLAINS');
 -- incense +1 food
-INSERT INTO Resource_YieldChanges (ResourceType, YieldType, YieldChange)
+INSERT OR IGNORE INTO Resource_YieldChanges (ResourceType, YieldType, YieldChange)
 	VALUES ('RESOURCE_INCENSE', 'YIELD_FOOD', 1);
 -- add 1 production to fishing boat improvement
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_FISHING_BOATS' AND YieldType='YIELD_PRODUCTION';
@@ -1680,14 +1719,14 @@ UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_GOL
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_CULTURE' 		AND DistrictType="DISTRICT_THEATER";
 
 --****		REQUIREMENTS		****--
-INSERT INTO Requirements
+INSERT OR IGNORE INTO Requirements
 	(RequirementId , RequirementType)
 	VALUES
 	('PLAYER_HAS_MEDIEVAL_FAIRES_CPLMOD', 	'REQUIREMENT_PLAYER_HAS_CIVIC'),
 	('PLAYER_HAS_URBANIZATION_CPLMOD', 		'REQUIREMENT_PLAYER_HAS_CIVIC'),
 	('PLAYER_HAS_BANKING_CPLMOD'   , 		'REQUIREMENT_PLAYER_HAS_TECHNOLOGY'),
 	('PLAYER_HAS_ECONOMICS_CPLMOD' , 		'REQUIREMENT_PLAYER_HAS_TECHNOLOGY');
-INSERT INTO RequirementArguments
+INSERT OR IGNORE INTO RequirementArguments
 	(RequirementId , Name , Value)
 	VALUES
 	('PLAYER_HAS_MEDIEVAL_FAIRES_CPLMOD',	'CivicType', 		'CIVIC_MEDIEVAL_FAIRES'  ),

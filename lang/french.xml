@@ -471,6 +471,12 @@
 		<Replace Tag="LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Science] Science +1 par groupe de 3 fidèles de cette religion dans d'autres civilisations.</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Permet la construction du Dar-e Mehr ([ICON_Faith] Foi +3, et +2 [ICON_CULTURE] Culture. Pillage impossible par les catastrophes naturelles.).</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>+2 [ICON_CULTURE] Culture. Pillage impossible par les catastrophes naturelles.</Text>
+		</Replace>
 		
 		<!-- =============== M E R V E I L L E S === N A T U R E L L E S =============== -->
 		

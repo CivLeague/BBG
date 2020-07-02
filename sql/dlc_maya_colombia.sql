@@ -1,19 +1,22 @@
-UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' AND DistrictType="DISTRICT_OBSERVATORY";
-
-UPDATE Feature_AdjacentYields SET YieldChange=1 WHERE FeatureType='FEATURE_PAITITI' AND YieldType='YIELD_GOLD';
-UPDATE Feature_AdjacentYields SET YieldChange=1 WHERE FeatureType='FEATURE_PAITITI' AND YieldType='YIELD_CULTURE';
-DELETE FROM Feature_AdjacentYields WHERE FeatureType='FEATURE_BERMUDA_TRIANGLE';
-
-
+--==================
+-- Colombia
+--==================
 --DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_EJERCITO_PATRIOTA_EXTRA_MOVEMENT';
 UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_UNIT_ADJUST_SIGHT' WHERE ModifierId='EJERCITO_PATRIOTA_EXTRA_MOVEMENT';
-INSERT INTO ExcludedGreatPersonClasses (GreatPersonClassType, TraitType) VALUES
+INSERT OR IGNORE INTO ExcludedGreatPersonClasses (GreatPersonClassType, TraitType) VALUES
     ( 'GREAT_PERSON_CLASS_GENERAL', 'TRAIT_LEADER_CAMPANA_ADMIRABLE' );
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='LLANERO_ADJACENCY_STRENGTH' AND Name='Amount';
 UPDATE Improvements SET PrereqCivic='CIVIC_MEDIEVAL_FAIRES' WHERE ImprovementType='IMPROVEMENT_HACIENDA';
+DELETE FROM Improvement_ValidTerrains WHERE ImprovementType='IMPROVEMENT_HACIENDA' AND TerrainType='TERRAIN_PLAINS_HILLS';
+DELETE FROM Improvement_ValidTerrains WHERE ImprovementType='IMPROVEMENT_HACIENDA' AND TerrainType='TERRAIN_GRASS_HILLS';
 
 
--- Mayan start biases: after coastals and tundra and desert; delete non-plantation lux biases; add banana bias; make flat land bias last priority
+--==================
+-- Maya
+--==================
+-- set citizen yields to same as other campuses
+UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' AND DistrictType="DISTRICT_OBSERVATORY";
+-- start biases: after coastals and tundra and desert; delete non-plantation lux biases; add banana bias; make flat land bias last priority
 UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_CITRUS';
 UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_COFFEE';
 UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_COCOA';
@@ -36,3 +39,20 @@ DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND Re
 DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_MERCURY';
 DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_SALT';
 DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND ResourceType='RESOURCE_IVORY';
+
+
+
+--==================
+-- City-States
+--==================
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='NIHANG_BARRACKS_STRENGTH' AND Name='Amount';
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='NIHANG_ARMORY_STRENGTH' AND Name='Amount';
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='NIHANG_ACADEMY_STRENGTH' AND Name='Amount';
+
+
+--==================
+-- Wonders
+--==================
+UPDATE Feature_AdjacentYields SET YieldChange=1 WHERE FeatureType='FEATURE_PAITITI' AND YieldType='YIELD_GOLD';
+UPDATE Feature_AdjacentYields SET YieldChange=1 WHERE FeatureType='FEATURE_PAITITI' AND YieldType='YIELD_CULTURE';
+DELETE FROM Feature_AdjacentYields WHERE FeatureType='FEATURE_BERMUDA_TRIANGLE';

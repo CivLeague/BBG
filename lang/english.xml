@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<!-- delete
+		LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION -->
+		<!-- newly added to file-->
+		<Replace Tag="LOC_BELIEF_HOLY_WATERS_DESCRIPTION" Language="en_US">
+			<Text>Increases Healing of your units by +10 within the borders of cities that follow your religion.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct the Great Wall, unique to China.[NEWLINE][NEWLINE]Provides an increase to [ICON_Strength] Defense. Bonus to [ICON_Gold] Gold and [ICON_PRODUCTION] Production if adjacent to other segments. Additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology Tree for adjacent segments. Must be built in a line along the borders of your empire.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct the Great Wall, unique to China.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold. Provides an increase to [ICON_Strength] Defense. Bonus to [ICON_Gold] Gold and [ICON_PRODUCTION] Production if adjacent to other segments. Additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology Tree for adjacent segments. Must be built in a line along the borders of your empire. Can only be pillaged (never destroyed) by natural disasters.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="en_US">
+			<Text>[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 60% of civics and technologies instead of 50%.[NEWLINE][NEWLINE]Constructed Wonders provide +1 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production, +1 [ICON_FAITH] Faith, +1 [ICON_GOLD] Gold, +1 [ICON_SCIENCE] Science, and +1 [ICON_CULTURE] Culture.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION1_DESCRIPTION" Language="en_US">
+			<Text>[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 50% of civics and technologies instead of 40%.[NEWLINE][NEWLINE]Constructed Wonders provide +1 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production, +1 [ICON_FAITH] Faith, +1 [ICON_GOLD] Gold, +1 [ICON_SCIENCE] Science, and +1 [ICON_CULTURE] Culture.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 50% of civics and technologies instead of 40%.[NEWLINE][NEWLINE]Constructed Wonders provide +1 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production, +1 [ICON_FAITH] Faith, +1 [ICON_GOLD] Gold, +1 [ICON_SCIENCE] Science, and +1 [ICON_CULTURE] Culture.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="en_US">
+			<Text>Land combat or Support units are 10% cheaper to purchase with [ICON_GOLD] Gold for each Encampment district building in that city.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="en_US">
+			<Text>A district unique to Phoenicia for naval activity in your city. Replaces the Harbor district and cheaper to build. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+25% [ICON_PRODUCTION] Production towards naval units and Settlers in this city. All wounded naval units in this city’s borders heal +100 HP each turn.</Text>
+		</Replace>
+		<!-- replaced, alrdy in file -->
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. +2 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital.[NEWLINE][NEWLINE]+2 [ICON_Science] Science if built next to a Campus district. +2 Science at The Enlightenment. Cannot be built next to another Mission</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. +2 [ICON_Faith] Faith, +1 [ICON_PRODUCTION] Production, and +1 [ICON_FOOD] Food if on a different continent than your [ICON_Capital] Capital.[NEWLINE][NEWLINE]+1 [ICON_Science] Science for every adjacent Campus and Holy Site district. +2 Science at The Enlightenment. Cannot be built next to another Mission</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct a Hacienda, unique to Gran Colombia.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, and +1 [Icon_Housing] Housing. +1 [ICON_Food] Food for every two adjacent Plantations (increased to every Plantation with Replaceable Parts). Plantations and Haciendas receive +1 [ICON_Production] Production for every two adjacent Haciendas (increased to every Hacienda with Rapid Deployment). Can only be built on Plains and Grassland.</Text>
+		</Replace>	
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_Production] Production on the city's revealed resources.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_HOUSING] Housing for every district and wonder in the city.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>Allows construction of Dar-e Mehrs (+3 [ICON_Faith] Faith, +2 [ICON_CULTURE] Culture. Cannot be pillaged by natural disasters).</Text>
 		</Replace>
@@ -16,9 +60,6 @@
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="en_US">
 			<Text>Three tile impassable natural wonder. Provides +1 [ICON_Gold] Gold and +1 [ICON_Culture] Culture to adjacent tiles. Major adjacency bonus to Theater Square and Commercial Hub districts.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_Production] Production per turn for each [ICON_CITIZEN] Citizen in the city.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_PRODUCTION] Production for Floodplain and Volcanic Soil tiles in the city. The city’s improvements, buildings, and districts cannot be damaged by Environmental Effects.</Text>
@@ -68,9 +109,6 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="en_US">
 			<Text>A building unique to Khmer that replace the Temple. Grants a free Missionary when built (if a Religion has been founded). Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith.</Text>
-		</Replace>		
-		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="en_US">
-			<Text>Holy Sites provide +2 [ICON_FOOD] Food, +2 [ICON_FAITH] Faith as adjacency, and +1 [ICON_HOUSING] Housing if placed on a river. Holy Sites trigger a Culture Bomb.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_Science] Science for every 3 followers of this Religion in other civilizations.</Text>
@@ -216,9 +254,6 @@
 		</Row>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_NAME" Language="en_US">
 			<Text>Housing Boom</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_HOUSING] Housing and +1 [ICON_AMENITIES] Amenity for every district and wonder in the city.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="en_US">
 			<Text>Can construct the City Park improvement on flat land in the city once Games and Recreation is unlocked. One per city. +3 [ICON_SCIENCE] Science, +3 [ICON_Culture] Culture, +3 [ICON_GOLD] Gold, +1 [ICON_HOUSING] Housing, +1 [ICON_Amenities] Amenity, and +2 Appeal.</Text>
@@ -507,9 +542,6 @@
 		<Replace Tag="LOC_CIVIC_ENVIRONMENTALISM_DESCRIPTION" Language="en_US">
 			<Text>+50% [ICON_Tourism] Tourism across your empire.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. +2 [ICON_Faith] Faith, +1 [ICON_PRODUCTION] Production, and +1 [ICON_FOOD] Food if on a different continent than your [ICON_Capital] Capital.[NEWLINE][NEWLINE]+1 [ICON_Science] Science for every adjacent Campus and Holy Site district. +1 Housing at Civil Service and +2 Science at The Enlightenment.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Chateau, unique to France.[NEWLINE][NEWLINE]+2 [ICON_Culture] Culture and +1 Appeal. +1 [ICON_Culture] Culture for each adjacent Wonder. +1 [ICON_Gold] Gold and +1 [ICON_Food] Food for each adjacent Luxury resource. Provides +1 [ICON_HOUSING] Housing at Feudalism and [ICON_TOURISM] Tourism after researching Flight. Can only be built adjacent to Rivers.</Text>
 		</Replace>
@@ -670,9 +702,6 @@
 			<Text>Scythian unique Classical Era ranged unit with 4 [ICON_Movement] Movement and a [ICON_Range] Range of 2.</Text>
 		</Replace>
 		<!-- Spain -->
-		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. +2 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital.[NEWLINE][NEWLINE]+2 [ICON_Science] Science if built next to a Campus district. +1 Housing at Civil Service.[NEWLINE][NEWLINE]+2 Science at The Enlightenment.</Text>
-		</Replace>
 		<!---->
 		<!---->
 		<!--===============   D E D I C A T I O N S   ===============-->

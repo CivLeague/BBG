@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="ko_KR">
+            <Text>다르-에 메르흐([ICON_Faith] 신앙 +3, [ICON_CULTURE] 문화 +2, 자연재해에 약탈당하지 않음)를 건설할 수 있게 됩니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_BUILDING_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="ko_KR">
+            <Text>[ICON_Faith] 신앙 +3, [ICON_CULTURE] 문화 +2를 제공합니다. 자연재해로 인해 약탈당할 수 없습니다.</Text>
+		</Replace>
+		
 		<Replace Tag="LOC_ABILITY_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="ko_KR">
 			<Text>언덕 지형에서 전투 시 [ICON_Strength] 전투력이 +5 증가합니다.[NEWLINE][ICON_Bullet]언덕 지형 [ICON_Movement] 이동력 페널티가 없습니다.</Text>
 		</Replace>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="bdffd1bc-49e5-4dd6-81b2-aab1eb55563f" version="3.12.3">
+<Mod id="bdffd1bc-49e5-4dd6-81b2-aab1eb55563f" version="3.13.1">
 	<Properties>
-		<Name>Better Balanced Game 3.12.3</Name>
+		<Name>Better Balanced Game 3.13.1</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
@@ -195,6 +195,7 @@
 			<Properties>
 				<LoadOrder>11629</LoadOrder>
 			</Properties>
+			<File>sql/xp2_poland.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_dlc_maya_colombia" criteria="dlc_maya_colombia">
 			<Properties>
@@ -225,6 +226,7 @@
 		<File>sql/xp2_indo_khmer.sql</File>
 		<File>sql/xp2_macedon_persia.sql</File>
 		<File>sql/xp2_nubia.sql</File>
+		<File>sql/xp2_poland.sql</File>
 		<File>sql/xp2_rise_and_fall.sql</File>
 		<File>exploits/culture_fix.lua</File>
 		<File>sql/dlc_maya_colombia.sql</File>
