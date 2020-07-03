@@ -94,9 +94,6 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ja_JP">
 			<Text>寺院を代替するクメール固有の建造物。宗教を創始している場合、建設時に伝道師を1体獲得する。使徒や審問官を[ICON_Faith]信仰力で購入できるようになる。</Text>
-		</Replace>		
-		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ja_JP">
-			<Text>河川に隣接している場合、聖地が[ICON_FOOD]食糧+2、[ICON_FAITH]信仰力+2、[ICON_HOUSING]住宅+1を供給する。聖地によって文化爆弾が発動する。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION" Language="ja_JP">
 			<Text>他文明に存在するこの宗教の信徒3人ごとに[ICON_Science]科学力+1。</Text>
