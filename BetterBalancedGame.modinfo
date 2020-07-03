@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="bdffd1bc-49e5-4dd6-81b2-aab1eb55563f" version="3.13.2">
+<Mod id="bdffd1bc-49e5-4dd6-81b2-aab1eb55563f" version="3.13.3">
 	<Properties>
-		<Name>Better Balanced Game 3.13.2</Name>
+		<Name>Better Balanced Game 3.13.3</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
@@ -60,6 +60,14 @@
 			<LeaderPlayable>Players:Expansion2_Players::LEADER_JADWIGA</LeaderPlayable>
 		</Criteria>
 		<Criteria id="dlc_maya_colombia">
+			<ModInUse>9DE86512-DE1A-400D-8C0A-AB46EBBF76B9</ModInUse>
+		</Criteria>
+		<Criteria id="nfp_macedon_persia_maya_colombia">
+			<ModInUse>E2749E9A-8056-45CD-901B-C368C8E83DEB</ModInUse>
+			<ModInUse>9DE86512-DE1A-400D-8C0A-AB46EBBF76B9</ModInUse>
+		</Criteria>
+		<Criteria id="nfp_xp1_maya_colombia">
+			<ModInUse>1B28771A-C749-434B-9053-D1380C553DE9</ModInUse>
 			<ModInUse>9DE86512-DE1A-400D-8C0A-AB46EBBF76B9</ModInUse>
 		</Criteria>
 	</ActionCriteria>
@@ -202,6 +210,18 @@
 				<LoadOrder>11630</LoadOrder>
 			</Properties>
 			<File>sql/dlc_maya_colombia.sql</File>
+		</UpdateDatabase>		
+		<UpdateDatabase id="bbg_nfp_macedon_persia_maya_colombia" criteria="nfp_macedon_persia_maya_colombia">
+			<Properties>
+				<LoadOrder>11631</LoadOrder>
+			</Properties>
+			<File>sql/nfp_macedon_persia_maya_colombia.sql</File>
+		</UpdateDatabase>		
+		<UpdateDatabase id="bbg_nfp_xp1_maya_colombia" criteria="nfp_xp1_maya_colombia">
+			<Properties>
+				<LoadOrder>11632</LoadOrder>
+			</Properties>
+			<File>sql/nfp_xp1_maya_colombia.sql</File>
 		</UpdateDatabase>
 	</InGameActions>
 	
@@ -230,5 +250,7 @@
 		<File>sql/xp2_rise_and_fall.sql</File>
 		<File>exploits/culture_fix.lua</File>
 		<File>sql/dlc_maya_colombia.sql</File>
+		<File>sql/nfp_macedon_persia_maya_colombia.sql</File>
+		<File>sql/nfp_xp1_maya_colombia.sql</File>
 	</Files>
 </Mod>

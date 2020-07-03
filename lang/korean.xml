@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BELIEF_HOLY_WATERS_DESCRIPTION" Language="ko_KR">
+			<Text>플레이어의 종교를 믿는 도시 영토 내 유닛에게 치유 효과가 +10 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="ko_KR">
+			<Text>중국 특유의 만리장성을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_PRODUCTION] 생산력 +1을 제공합니다. 만리장성 타일 2개마다 [Icon_Housing] 주거공간 +1을 제공합니다. [ICON_Strength] 방어력이 증가합니다. 서로 연결된 만리장성 타일에는 [ICON_Food] 식량 및 [ICON_Gold] 금 보너스를 제공합니다. 기술 발전표의 진전에 따라, 연결된 만리장성 타일에 [ICON_Culture] 문화 및 [ICON_Tourism] 관광이 추가로 부여됩니다. 제국 국경을 따라 일렬로 지어야 합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>중국 특유의 만리장성을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_PRODUCTION] 생산력 +1을 제공합니다. 만리장성 타일 2개마다 [Icon_Housing] 주거공간 +1을 제공합니다. [ICON_Strength] 방어력이 증가합니다. 서로 연결된 만리장성 타일에는 [ICON_Food] 식량 및 [ICON_Gold] 금 보너스를 제공합니다. 기술 발전표의 진전에 따라, 연결된 만리장성 타일에 [ICON_Culture] 문화 및 [ICON_Tourism] 관광이 추가로 부여됩니다. 제국 국경을 따라 일렬로 지어야 합니다. 자연재해로 인해 약탈당할 수 있지만, 파괴되지는 않습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_TechBoosted] 유레카와 [ICON_CivicBoosted] 영감은 사회 제도 및 기술에 50%가 아닌 60%의 상승효과를 제공합니다.[NEWLINE][NEWLINE]완성된 세계 불가사의마다 지어진 도시에 [ICON_Food] 식량, [ICON_PRODUCTION] 생산력, [ICON_FAITH] 신앙, [ICON_GOLD] 금, [ICON_SCIENCE] 과학, [ICON_CULTURE] 문화 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION1_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_TechBoosted] 유레카와 [ICON_CivicBoosted] 영감은 사회 제도 및 기술에 40%가 아닌 50%의 상승효과를 제공합니다.[NEWLINE][NEWLINE]완성된 세계 불가사의마다 지어진 도시에 [ICON_Food] 식량, [ICON_PRODUCTION] 생산력, [ICON_FAITH] 신앙, [ICON_GOLD] 금, [ICON_SCIENCE] 과학, [ICON_CULTURE] 문화 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_TechBoosted] 유레카와 [ICON_CivicBoosted] 영감은 사회 제도 및 기술에 40%가 아닌 50%의 상승효과를 제공합니다.[NEWLINE][NEWLINE]완성된 세계 불가사의마다 지어진 도시에 [ICON_Food] 식량, [ICON_PRODUCTION] 생산력, [ICON_FAITH] 신앙, [ICON_GOLD] 금, [ICON_SCIENCE] 과학, [ICON_CULTURE] 문화 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="ko_KR">
+			<Text>지상 전투 또는 지원 유닛 구입에 드는 [ICON_GOLD] 금 및 [ICON_FAITH] 신앙이 해당 도시의 각 주둔지 특수지구 건물마다 10% 더 감소합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="ko_KR">
+			<Text>도시의 해군 활동을 위한 페니키아 특유의 특수지구입니다. 항만 특수지구를 대체하며 건설 비용이 훨씬 저렴합니다. 육지 옆 해안 또는 호수 지형에 건설해야 합니다.[NEWLINE][NEWLINE]이 도시의 해군 유닛 및 개척자 생성에 대한 [ICON_PRODUCTION] 생산력 +25%를 부여합니다. 부상당한 모든 해군 유닛이 이 도시의 경계 내에서 턴당 체력 +100을 회복합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="ko_KR">
+			<Text>스페인 특유의 전도관을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2를 제공합니다. [ICON_Capital] 수도와 다른 대륙에 있으면 추가 [ICON_Faith] 신앙 +2를 제공합니다. [NEWLINE][NEWLINE]캠퍼스 특수지구 옆에 지으면 [ICON_Science] 과학 +2를 제공합니다. 계몽주의 사회 제도를 획득하면 [ICON_Science] 과학 +2를 추가 제공합니다. 다른 전도관 옆에 지을 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>스페인 특유의 전도관을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2를 제공합니다. [ICON_Capital] 수도와 다른 대륙에 있으면 [ICON_Faith] 신앙 +2, [ICON_PRODUCTION] 생산력 +1 및 [ICON_FOod] 식량 +1을 제공합니다.[NEWLINE][NEWLINE]모든 인접한 캠퍼스 및 성지 특수지구에 대해 [ICON_Science] 과학 +1을 제공합니다. 계몽주의 사회 제도를 획득하면 [ICON_Science] 과학 +2를 추가 제공합니다. 다른 전도관 옆에 지을 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="ko_KR">
+			<Text>그란 콜롬비아 특유 건물인 하시엔다를 건설할 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_GOLD] 금 +2, [ICON_PRODUCTION] 생산력 +1, [Icon_Housing] 주거공간 +1을 부여합니다. 2개의 인접한 재배지마다 [ICON_Food] 식량 +1을 얻습니다(교환부품 연구 이후 모든 재배지마다 획득). 재배지와 하시엔다가 인접한 2개의 하시엔다마다 [ICON_Production] 생산력 +1을 얻습니다(신속한 배치 연구 이후 모든 하시엔다마다 획득). 언덕이 아닌, 평원과 초원에만 건설할 수 있습니다.</Text>
+		</Replace>	
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="ko_KR">
+			<Text>도시 내 자원에 [ICON_PRODUCTION] 생산력 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시의 특수지구 및 불가사의마다 [ICON_HOUSING] 주거공간 +1을 얻습니다.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="ko_KR">
             <Text>다르-에 메르흐([ICON_Faith] 신앙 +3, [ICON_CULTURE] 문화 +2, 자연재해에 약탈당하지 않음)를 건설할 수 있게 됩니다.</Text>
         </Replace>
@@ -16,9 +56,6 @@
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="ko_KR">
 			<Text>통과할 수 없는 3타일 자연경관입니다. 인접 타일에 [ICON_Gold] 금 +1과 [ICON_Culture] 문화 +1을 제공합니다. 극장가와 상업 중심지 특수지구에 많은 인접 보너스를 제공합니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="ko_KR">
-			<Text>도시의 [ICON_Citizen] 시민 한 명당 턴당 [ICON_PRODUCTION] 생산력 +1을 획득합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="ko_KR">
 			<Text>이 도시의 범람원 및 화산토 타일에 [ICON_PRODUCTION] 생산력 +1을 제공합니다. 이 도시의 시설, 건물 및 특수지구는 환경 효과에 의해 피해를 입지 않습니다.</Text>
@@ -68,9 +105,6 @@
         </Replace>
 		<Replace Tag="LOC_BUILDING_PRASAT_DESCRIPTION" Language="ko_KR">
             <Text>사원을 대체하는 크메르 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하는 데 필요합니다. 지어질 때 무료 선교사 1명을 제공합니다. (종교 창시 필요)</Text>
-        </Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="ko_KR">
-            <Text>성지를 강에 배치할 경우 [ICON_FOOD] 식량 +2, [ICON_FAITH] 신앙 +2 및 [ICON_HOUSING] 주거공간 +1을 제공합니다. 성지는 문화 폭탄을 유발합니다.</Text>
         </Replace>
 
 		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="ko_KR">
@@ -206,9 +240,6 @@
 		</Row>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_NAME" Language="ko_KR">
 			<Text>건축 붐</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_DESCRIPTION" Language="ko_KR">
-			<Text>이 도시의 특수지구 및 불가사의마다 [ICON_HOUSING] 주거 +1과 [ICON_AMENITIES] 쾌적도 +1을 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="ko_KR">
 			<Text>오락과 여가 사회제도가 잠금 해제되면, 도시 공원을 도시의 평지 타일에 건설할 수 있습니다. 도시당 하나만 건설 가능합니다. [ICON_SCIENCE] 과학 +3, [ICON_Culture] 문화 +3, [ICON_GOLD] 금 +3, [ICON_HOUSING] 주거 +1, [ICON_Amenities] 쾌적도 +1과 매력도 +2를 제공합니다.</Text>
@@ -498,9 +529,6 @@
 	    <Replace Tag="LOC_CIVIC_ENVIRONMENTALISM_DESCRIPTION" Language="ko_KR">
 			<Text>제국 전체에 [ICON_Tourism] 관광이 +50% 증가합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>스페인 특유의 전도관을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2를 제공합니다. [ICON_Capital] 수도와 다른 대륙에 있으면 [ICON_Faith] 신앙 +2, [ICON_PRODUCTION] 생산력 +1 및 [ICON_FOod] 식량 +1을 제공합니다. 모든 인접한 캠퍼스 및 성지 특수지구에 대해 [ICON_Science] 과학 +1을 제공합니다.  공공 행정 사회 제도를 획득하면 [ICON_HOUSING] 주거공간 +1을 추가 제공하며, 계몽주의 사회 제도를 획득하면 [ICON_Science] 과학 +2를 추가 제공합니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="ko_KR">
 			<Text>프랑스 특유의 샤토를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Culture] 문화 +2를 제공합니다. 매력도 +1을 제공합니다. 인접한 모든 불가사의마다 [ICON_Culture] 문화 +1을 제공합니다. 인접한 모든 사치 자원마다 [ICON_Food] 식량 +1과 [ICON_Gold] 금 +1을 제공합니다. 봉건제 사회 제도를 획득하면 [ICON_HOUSING] 주거공간 +1을 추가 제공하며, 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 강 근처에만 지을 수 있습니다.</Text>
 		</Replace>
@@ -660,9 +688,6 @@
 			<Text>스키타이 특유의 고전 시대 유닛입니다. [ICON_Movement] 이동력 4와 [ICON_Range] 사정거리 2를 보유한 원거리 유닛입니다.</Text>
 		</Replace>
 		<!-- Spain -->
-		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="ko_KR">
-			<Text>스페인 특유의 전도관을 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2를 제공합니다. [ICON_Capital] 수도와 다른 대륙에 있으면 추가 [ICON_Faith] 신앙 +2를 제공합니다. [NEWLINE][NEWLINE]캠퍼스 특수지구 옆에 지으면 [ICON_Science] 과학 +2를 제공합니다. 공공 행정 사회 제도를 획득하면 [ICON_HOUSING] 주거공간 +1을 추가 제공합니다. [NEWLINE][NEWLINE]계몽주의 사회 제도를 획득하면 [ICON_Science] 과학 +2를 추가 제공합니다.</Text>
-		</Replace>
 		<!---->
 		<!---->
 		<!--===============   D E D I C A T I O N S   ===============-->
