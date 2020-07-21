@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-	<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="en_US">
+	<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="ja_JP">
 			<Text>労働者が大コロンビア固有の改善であるハシエンダを建設できるようになる。[NEWLINE][NEWLINE]隣接するプランテーション2つごとに[ICON_GOLD]ゴールド+2、[ICON_PRODUCTION]生産力+1、[Icon_Housing]住宅+1、[ICON_Food]食糧+1。(共通規格の研究完了で1つごとに改良)プランテーションとハシエンダは隣接するハシエンダ2つごとに[ICON_Production]生産力+1。(早期展開の発明完了で1つごとに改良). 草原化平原に検察されなければならない。</Text>
 		</Replace>	
 			<Replace Tag="LOC_BELIEF_HOLY_WATERS_DESCRIPTION" Language="ja_JP">

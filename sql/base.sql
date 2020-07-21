@@ -63,6 +63,7 @@ INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 --==================
 -- China
 --==================
+-- +1 all yields per wonder
 INSERT OR IGNORE INTO RequirementSetRequirements VALUES
 	('DYNASTIC_CYCLE_TRAIT_REQUIREMENTS_BBG', 'REQUIRES_PLAYER_HAS_DYNASTIC_CYCLE_TRAIT_BBG');
 INSERT OR IGNORE INTO RequirementSets VALUES
@@ -85,7 +86,6 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('TRAIT_ATTACH_WONDER_GOLD_BBG', 'ModifierId', 'TRAIT_WONDER_GOLD_BBG'),
 	('TRAIT_ATTACH_WONDER_SCI_BBG', 'ModifierId', 'TRAIT_WONDER_SCI_BBG'),
 	('TRAIT_ATTACH_WONDER_CUL_BBG', 'ModifierId', 'TRAIT_WONDER_CUL_BBG');
--- +1 all yields per wonder
 INSERT OR IGNORE INTO TraitModifiers VALUES
 	('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_FOOD_BBG'),
 	('TRAIT_CIVILIZATION_DYNASTIC_CYCLE', 'TRAIT_ATTACH_WONDER_PROD_BBG'),
@@ -113,16 +113,8 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('TRAIT_WONDER_SCI_BBG', 'YieldType', 'YIELD_SCIENCE'),
 	('TRAIT_WONDER_CUL_BBG', 'Amount', '1'),
 	('TRAIT_WONDER_CUL_BBG', 'YieldType', 'YIELD_CULTURE');
--- great wall gets +1 prod half housing, +1 food and gold per adj, lowered culture per adj after castles
-INSERT OR IGNORE INTO Improvement_Adjacencies VALUES ('IMPROVEMENT_GREAT_WALL', 'GreatWall_Food');
-INSERT OR IGNORE INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentImprovement, PrereqTech) VALUES
-	('GreatWall_Food', 'Placeholder', 'YIELD_FOOD', 1, 1, 'IMPROVEMENT_GREAT_WALL', 'TECH_MASONRY');
+-- great wall gets +1 prod, lowered initial gold, lowered culture per adj after castles
 INSERT OR IGNORE INTO Improvement_YieldChanges VALUES ('IMPROVEMENT_GREAT_WALL', 'YIELD_PRODUCTION', 1);
-INSERT OR IGNORE INTO Improvement_YieldChanges VALUES ('IMPROVEMENT_GREAT_WALL', 'YIELD_FOOD', 0);
-UPDATE Improvement_YieldChanges SET YieldChange=0 WHERE ImprovementType='IMPROVEMENT_GREAT_WALL' AND YieldType='YIELD_GOLD';
-UPDATE Adjacency_YieldChanges SET YieldChange=1 WHERE ID='GreatWall_Culture';
-UPDATE Adjacency_YieldChanges SET YieldChange=1 WHERE ID='GreatWall_Gold';
-UPDATE Improvements SET Housing=1, TilesRequired=2 WHERE ImprovementType='IMPROVEMENT_GREAT_WALL';
 -- Crouching Tiger now a crossbowman replacement that gets +7 when adjacent to an enemy unit
 INSERT OR IGNORE INTO UnitReplaces (CivUniqueUnitType , ReplacesUnitType)
 	VALUES ('UNIT_CHINESE_CROUCHING_TIGER' , 'UNIT_CROSSBOWMAN');

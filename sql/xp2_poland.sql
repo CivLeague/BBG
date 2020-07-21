@@ -20,7 +20,7 @@ INSERT OR IGNORE INTO Requirements (RequirementId , RequirementType)
 --RequirementArguments
 --FOUNDER	
 INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
-	VALUES('REQUIRES_BELIEF_SACRED_PLACES_CPLMOD' , 'BeliefType' , 'BELIEF_SACRED_PATH');
+	VALUES('REQUIRES_BELIEF_SACRED_PLACES_CPLMOD' , 'BeliefType' , 'BELIEF_SACRED_PLACES');
 --ENHANCER
 INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('REQUIRES_BELIEF_HOLY_WATERS_CPLMOD' , 'BeliefType' , 'BELIEF_HOLY_WATERS');
