@@ -113,8 +113,11 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('TRAIT_WONDER_SCI_BBG', 'YieldType', 'YIELD_SCIENCE'),
 	('TRAIT_WONDER_CUL_BBG', 'Amount', '1'),
 	('TRAIT_WONDER_CUL_BBG', 'YieldType', 'YIELD_CULTURE');
--- great wall gets +1 prod, lowered initial gold, lowered culture per adj after castles
+-- great wall gets +1 prod, no initial gold, lowered gold and lowered culture per adj after castles
 INSERT OR IGNORE INTO Improvement_YieldChanges VALUES ('IMPROVEMENT_GREAT_WALL', 'YIELD_PRODUCTION', 1);
+UPDATE Improvement_YieldChanges SET YieldChange=0 WHERE ImprovementType='IMPROVEMENT_GREAT_WALL' AND YieldType='YIELD_GOLD';
+UPDATE Adjacency_YieldChanges SET YieldChange=1 WHERE ID='GreatWall_Culture';
+UPDATE Adjacency_YieldChanges SET YieldChange=1 WHERE ID='GreatWall_Gold';
 -- Crouching Tiger now a crossbowman replacement that gets +7 when adjacent to an enemy unit
 INSERT OR IGNORE INTO UnitReplaces (CivUniqueUnitType , ReplacesUnitType)
 	VALUES ('UNIT_CHINESE_CROUCHING_TIGER' , 'UNIT_CROSSBOWMAN');

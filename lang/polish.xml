@@ -101,10 +101,10 @@
 
 				<!-- Improvements -->
 				<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="pl_PL">
-					<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść Wielki Mur dostępny tylko w Chinach.[NEWLINE][NEWLINE]+1 do [ICON_PRODUCTION] produkcji za segment. +1 do [ICON_HOUSING] obszarów mieszkalnych za każde dwa segmenty. Zwiększa [ICON_Strength] obronę. Zapewnia premię do [ICON_Gold] złota, jeśli sąsiaduje z innymi segmentami. Premia do [ICON_Culture] kultury i [ICON_Tourism] turystyki za sąsiadujące segmenty rośnie w miarę przechodzenia do kolejnych elementów drzewa technologii. Mur musi być budowany w linii wzdłuż granicy imperium.</Text>
+					<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść Wielki Mur dostępny tylko w Chinach.[NEWLINE][NEWLINE]+1 do [ICON_PRODUCTION] produkcji za segment. Zwiększa [ICON_Strength] obronę. Zapewnia premię do [ICON_Gold] złota, jeśli sąsiaduje z innymi segmentami. Premia do [ICON_Culture] kultury i [ICON_Tourism] turystyki za sąsiadujące segmenty rośnie w miarę przechodzenia do kolejnych elementów drzewa technologii. Mur musi być budowany w linii wzdłuż granicy imperium.</Text>
 				</Replace>
 				<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="pl_PL">
-					<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść Wielki Mur dostępny tylko w Chinach.[NEWLINE][NEWLINE]+1 do [ICON_PRODUCTION] produkcji za segment. +1 do [ICON_HOUSING] obszarów mieszkalnych za każde dwa segmenty. Zwiększa [ICON_Strength] obronę. Zapewnia premię do [ICON_Gold] złota, jeśli sąsiaduje z innymi segmentami. Premia do [ICON_Culture] kultury i [ICON_Tourism] turystyki za sąsiadujące segmenty rośnie w miarę przechodzenia do kolejnych elementów drzewa technologii. Mur musi być budowany w linii wzdłuż granicy imperium. Katastrofy naturalne mogą go jedynie splądrować.</Text>
+					<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść Wielki Mur dostępny tylko w Chinach.[NEWLINE][NEWLINE]+1 do [ICON_PRODUCTION] produkcji za segment. Zwiększa [ICON_Strength] obronę. Zapewnia premię do [ICON_Gold] złota, jeśli sąsiaduje z innymi segmentami. Premia do [ICON_Culture] kultury i [ICON_Tourism] turystyki za sąsiadujące segmenty rośnie w miarę przechodzenia do kolejnych elementów drzewa technologii. Mur musi być budowany w linii wzdłuż granicy imperium. Katastrofy naturalne mogą go jedynie splądrować.</Text>
 				</Replace>
 
 			<!-- ================ Cree ================ -->
