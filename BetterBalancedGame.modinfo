@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="bdffd1bc-49e5-4dd6-81b2-aab1eb55563f" version="3.13.5">
+<Mod id="bdffd1bc-49e5-4dd6-81b2-aab1eb55563f" version="3.13.6">
 	<Properties>
-		<Name>Better Balanced Game 3.13.5</Name>
+		<Name>Better Balanced Game 3.13.6</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
@@ -69,6 +69,15 @@
 		<Criteria id="nfp_xp1_maya_colombia">
 			<ModInUse>1B28771A-C749-434B-9053-D1380C553DE9</ModInUse>
 			<ModInUse>9DE86512-DE1A-400D-8C0A-AB46EBBF76B9</ModInUse>
+		</Criteria>
+		<Criteria id="nfp_ethiopia">
+			<ModInUse>1B394FE9-23DC-4868-8F0A-5220CB8FB427</ModInUse>
+		</Criteria>
+		<Criteria id="nfp_teddy_persona">
+			<ModInUse>113D9459-0A3B-4FCB-A49C-483F40303575</ModInUse>
+		</Criteria>
+		<Criteria id="nfp_catherine_persona">
+			<ModInUse>CE5876CD-6900-46D1-9C9C-8DBA1F28872E</ModInUse>
 		</Criteria>
 	</ActionCriteria>
 	
@@ -223,6 +232,24 @@
 			</Properties>
 			<File>sql/nfp_xp1_maya_colombia.sql</File>
 		</UpdateDatabase>
+		<UpdateDatabase id="bbg_nfp_ethiopia" criteria="nfp_ethiopia">
+			<Properties>
+				<LoadOrder>11633</LoadOrder>
+			</Properties>
+			<File>sql/nfp_ethiopia.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_nfp_teddy_persona" criteria="nfp_teddy_persona">
+			<Properties>
+				<LoadOrder>11634</LoadOrder>
+			</Properties>
+			<File>sql/nfp_teddy_persona.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_nfp_catherine_persona" criteria="nfp_catherine_persona">
+			<Properties>
+				<LoadOrder>11635</LoadOrder>
+			</Properties>
+			<File>sql/nfp_catherine_persona.sql</File>
+		</UpdateDatabase>
 	</InGameActions>
 	
 	<!-- defines file dependencies -->
@@ -252,5 +279,8 @@
 		<File>sql/dlc_maya_colombia.sql</File>
 		<File>sql/nfp_macedon_persia_maya_colombia.sql</File>
 		<File>sql/nfp_xp1_maya_colombia.sql</File>
+		<File>sql/nfp_ethiopia.sql</File>
+		<File>sql/nfp_teddy_persona.sql</File>
+		<File>sql/nfp_catherine_persona.sql</File>
 	</Files>
 </Mod>

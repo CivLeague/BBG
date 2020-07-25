@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="ko_KR">
+			<Text>자연경관 또는 산맥 근처에 있는 놀라운 매력도 타일이 [ICON_SCIENCE] 과학 +1을 얻습니다. 천문학 기술 연구 완료시 추가로 [ICON_SCIENCE] 과학 +1을 얻습니다. 불가사의 또는 숲 근처에 있는 놀라운 매력도 타일이 [ICON_CULTURE] 문화 +1을 얻습니다. 계몽주의 사회 제도 완료시 추가로 [ICON_CULTURE] 문화 +1을 얻습니다. 국립공원이 있는 도시의 모든 타일이 매력도 +1을 얻습니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_BELIEF_HOLY_WATERS_DESCRIPTION" Language="ko_KR">
 			<Text>플레이어의 종교를 믿는 도시 영토 내 유닛에게 치유 효과가 +10 증가합니다.</Text>
 		</Replace>
