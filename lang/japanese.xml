@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="ja_JP">
 			<Text>自文明の首都と同じ大陸に位置するタイルで防衛する際、あるいは他の大陸で攻撃する際にユニットの[ICON_Strength]戦闘力+5。[ICON_TradeRoute]交易路を確立している都市国家に送った[ICON_Envoy]代表団が2つ分としてカウントされる。ライフリングの研究を完了すると固有ユニットであるラフライダーが解禁される。</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="ja_JP">
 			<Text>自文明の首都と同じ大陸に位置するタイルで防衛する際、あるいは他の大陸で攻撃する際にユニットの[ICON_Strength]戦闘力+5。国立公園のある都市は全タイルのアピール+1。ライフリングの研究を完了すると固有ユニットであるラフライダーが解禁される。</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="ja_JP">
 			<Text>アピールが最高で自然遺産または山岳に隣接しているタイルから[ICON_SCIENCE]科学力+1。天文学を研究後、さらに[ICON_SCIENCE]科学力+1。アピールが最高で遺産または森林に隣接しているタイルから[ICON_CULTURE]文化力+1。啓蒙思想の発明後、さらに[ICON_CULTURE]文化力+1。国立公園のある都市は全タイルのアピール+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="ja_JP">
