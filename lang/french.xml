@@ -26,7 +26,14 @@
 			<Text>Octroit une croyance supplémentaire à la fondation d'une Religion. [ICON_Movement] PM +1 pour les bâtisseurs et les colons. [ICON_PRODUCTION] Production +50% pour les bâtiments des Lieux Saints. [ICON_Faith] Foi +5 pour chaque civilisation rencontrée (y compris l'Inde) ayant fondé une religion et n'étant pas en guerre. L'usure de la guerre est doublée pour les civilisations qui combattent Gandhi.</Text>
 		</Replace>
 		<!-- ========== GORGÔ ========== -->
-		
+		<!-- ========== THEODORE ROOSEVELT ELAN ========== -->
+		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_SCIENCE] Science +1 pour les cases à l'attrait époustouflant adjacentes à une merveille naturelle ou une montagne, doublé après avoir recherché l'Astronomie. [ICON_CULTURE] Culture +1 pour les cases à l'attrait époustouflant adjacentes à une merveille naturelle ou des bois, doublé au dogme des Lumières. Attrait +1 pour toutes les cases d'une ville dotée d'un parc national.</Text>
+		</Replace>
+		<!-- ========== THEODORE ROOSEVELT TEXAS RANGER ========== -->
+		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Strength] Puissance de combat bonus pour les unités militaires :[NEWLINE]+5 en défense sur leur continent d'origine[NEWLINE]+5 en attaque sur un continent étranger. Les émissaires envoyés vers les cités-états avec lesquelles vous avez une [ICON_TradeRoute] route commerciale comptent pour deux. Le Rough Rider, unité exclusive, est débloqué avec la Science militaire.</Text>
+		</Replace>
 		<!-- =============== C I V I L I S A T I O N S =============== -->
 		
 		<!-- ========== ALLEMAGNE ========== -->
@@ -194,6 +201,14 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire une mission, exclusive à l'Espagne.[NEWLINE][NEWLINE][ICON_Faith] Foi +2. [ICON_Faith] Foi +2 en cas de construction sur un autre continent que celui de votre [ICON_Capital] capitale.[NEWLINE][NEWLINE][ICON_Science] Science +2 si adjacente à un campus.[NEWLINE][NEWLINE][ICON_Science] Science +2 avoir adopté les Lumières. Ne peut pas être construite adjacente à une autre Mission.</Text>
+		</Replace>
+		<!-- ========== ÉTHIOPIE ========== -->
+		<!-- Correction traduction Firaxis : +1 base, pas +2 -->
+		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="fr_FR">
+			<Text>Débloque la compétence de bâtisseur permettant de construire une église rupestre, un bâtiment exclusif à l'Éthiopie.[NEWLINE][NEWLINE][ICON_Faith] Foi +1. [ICON_Faith] Foi +1 pour chaque case de montagnes ou de collines adjacente. La [ICON_FAITH] foi génère du [ICON_TOURISM] tourisme après la découverte de l'aviation. Attrait +1. Ne peut être construite que sur des collines qui ne sont pas adjacentes à un quartier spécialisé ou à une autre église rupestre.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Débloque la compétence de bâtisseur permettant de construire une église rupestre, un bâtiment exclusif à l'Éthiopie.[NEWLINE][NEWLINE][ICON_Faith] Foi +1. [ICON_Faith] Foi +1 pour chaque case de montagnes ou de collines adjacente. La [ICON_FAITH] foi génère du [ICON_TOURISM] tourisme après la découverte de l'aviation. Attrait +1. Peut uniquement être pillée (jamais détruite) par les catastrophes naturelles. Ne peut être construite que sur une colline ou un sol volcanique n'étant pas adjacent à un quartier spécialisé ou à une autre église rupestre.</Text>
 		</Replace>
 		<!-- ========== FRANCE ========== -->
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="fr_FR">
@@ -798,6 +813,9 @@
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="fr_FR">
 			<Text>Le prix en [ICON_GOLD] Or et en [ICON_FAITH] Foi des unités militaires ou de soutien terrestres baisse de 10 % par bâtiment du campement construit dans cette ville.</Text>
 		</Replace>
-		
+		<!-- Correction traduction Firaxis suite au DLC Ethiopie -->
+		<Replace Tag="LOC_MINOR_CIV_TRADE_TRAIT_SMALL_INFLUENCE_BONUS" Language="fr_FR">
+			<Text>[ICON_Gold] Or +1 dans la [ICON_Capital] capitale et pour chaque marché et phare construits.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData

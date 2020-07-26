@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="ko_KR">
+            <Text>본 대륙에 있는 유닛이 방어시, 또는 타 대륙에 있는 유닛이 공격시 [ICON_Strength] 전투력 +5를 획득합니다. 국립공원을 보유한 도시의 모든 타일에 매력도 +1을 제공합니다. [ICON_TradeRoute] 교역로를 보유한 도시 국가에 보낸 한 명 사절이 두 명의 [ICON_Envoy] 사절로 계산됩니다. 군사 과학 기술을 연구하면 특유 유닛인 의용 기병대를 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION " Language="ko_KR">
+            <Text>본 대륙에 있는 유닛이 방어시, 또는 타 대륙에 있는 유닛이 공격시 [ICON_Strength] 전투력 +5를 획득합니다. 국립공원을 보유한 도시의 모든 타일에 매력도 +1을 제공합니다. [ICON_TradeRoute] 교역로를 보유한 도시 국가에 보낸 한 명 사절이 두 명의 [ICON_Envoy] 사절로 계산됩니다. 군사 과학 기술을 연구하면 특유 유닛인 의용 기병대를 얻습니다.</Text>
+        </Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="ko_KR">
 			<Text>자연경관 또는 산맥 근처에 있는 놀라운 매력도 타일이 [ICON_SCIENCE] 과학 +1을 얻습니다. 천문학 기술 연구 완료시 추가로 [ICON_SCIENCE] 과학 +1을 얻습니다. 불가사의 또는 숲 근처에 있는 놀라운 매력도 타일이 [ICON_CULTURE] 문화 +1을 얻습니다. 계몽주의 사회 제도 완료시 추가로 [ICON_CULTURE] 문화 +1을 얻습니다. 국립공원이 있는 도시의 모든 타일이 매력도 +1을 얻습니다.</Text>
 		</Replace>

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="ru_RU">
+            <Text>Клетки с потрясающим престижем, находящиеся рядом с чудом природы или горой, получают +2 к [ICON_SCIENCE] науке. Дополнительная 1 [ICON_SCIENCE] наука после изучения технологии "Астрономия". Клетки с потрясающим престижем, находящиеся рядом с чудом или лесом, получают +1 к [ICON_CULTURE] культуре. Дополнительно получают +1 [ICON_CULTURE] культуры после открытия "Просвещения". Все клетки в городе с национальным парком имеют +1 к престижу.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="ru_RU">
+            <Text>>Юниты получают +5 к [ICON_Strength] боевой мощи при защите на родном континенте континенте или при атаке на чужом. Послы в городах-государствах, с которыми у вас есть [ICON_TradeRoute] торговые пути, считаются за двух [ICON_Envoy] послов. Вы получаете уникального юнита "Мужественный всадник" с технологией "Нарезные стволы".</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="ru_RU">
+            <Text>Юниты получают +5 к [ICON_Strength] боевой мощи при защите на родном континенте континенте или при атаке на чужом. Все клетки в городе с национальным парком имеют +1 к престижу. Вы получаете уникального юнита "Мужественный всадник" с технологией "Нарезные стволы".</Text>
+		</Replace>
 		<Replace Tag="LOC_BELIEF_HOLY_WATERS_DESCRIPTION" Language="ru_RU">
 			<Text>+10 к лечению на клетках города, обращенного в вашу религию.</Text>
 		</Replace>
