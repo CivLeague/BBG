@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-	<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="ja_JP">
+		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="ja_JP">
+			<Text>自文明の首都と同じ大陸に位置するタイルで防衛する際、あるいは他の大陸で攻撃する際にユニットの[ICON_Strength]戦闘力+5。[ICON_TradeRoute]交易路を確立している都市国家に送った[ICON_Envoy]代表団が2つ分としてカウントされる。ライフリングの研究を完了すると固有ユニットであるラフライダーが解禁される。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="ja_JP">
+			<Text>自文明の首都と同じ大陸に位置するタイルで防衛する際、あるいは他の大陸で攻撃する際にユニットの[ICON_Strength]戦闘力+5。国立公園のある都市は全タイルのアピール+1。ライフリングの研究を完了すると固有ユニットであるラフライダーが解禁される。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="ja_JP">
+			<Text>アピールが最高で自然遺産または山岳に隣接しているタイルから[ICON_SCIENCE]科学力+1。天文学を研究後、さらに[ICON_SCIENCE]科学力+1。アピールが最高で遺産または森林に隣接しているタイルから[ICON_CULTURE]文化力+1。啓蒙思想の発明後、さらに[ICON_CULTURE]文化力+1。国立公園のある都市は全タイルのアピール+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="ja_JP">
 			<Text>労働者が大コロンビア固有の改善であるハシエンダを建設できるようになる。[NEWLINE][NEWLINE]隣接するプランテーション2つごとに[ICON_GOLD]ゴールド+2、[ICON_PRODUCTION]生産力+1、[Icon_Housing]住宅+1、[ICON_Food]食糧+1。(共通規格の研究完了で1つごとに改良)プランテーションとハシエンダは隣接するハシエンダ2つごとに[ICON_Production]生産力+1。(早期展開の発明完了で1つごとに改良). 草原化平原に検察されなければならない。</Text>
 		</Replace>	
 			<Replace Tag="LOC_BELIEF_HOLY_WATERS_DESCRIPTION" Language="ja_JP">
 			<Text>この宗教を信奉する都市のタイルでのユニット回復寮+10。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION" Language="ja_JP">
-			<Text>労働者が中国固有の改善である万里の長城を建設できるようになる。[NEWLINE][NEWLINE]1タイルにつき[ICON_PRODUCTION]生産力+1、2タイルにつき[ICON_HOUSING]住宅+1。このタイルで防衛するユニットの[ICON_Strength]戦闘力にボーナス。他の長城に隣接するごとに追加の[ICON_FOOD]食糧と[ICON_Gold]ゴールドを与える。テクノロジーツリーを進展させると[ICON_Culture]文化力および[ICON_Tourism]観光力も隣接のボーナスとして現れるようになる。自文明の国境に建設されなければならない。</Text>
+			<Text>労働者が中国固有の改善である万里の長城を建設できるようになる。[NEWLINE][NEWLINE]1タイルにつき[ICON_PRODUCTION]生産力+1。このタイルで防衛するユニットの[ICON_Strength]戦闘力にボーナス。他の長城に隣接するごとに追加の[ICON_Gold]ゴールドを与える。テクノロジーツリーを進展させると[ICON_Culture]文化力および[ICON_Tourism]観光力も隣接のボーナスとして現れるようになる。自文明の国境に建設されなければならない。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>労働者が中国固有の改善である万里の長城を建設できるようになる。[NEWLINE][NEWLINE]1タイルにつき[ICON_PRODUCTION]生産力+1、2タイルにつき[ICON_HOUSING]住宅+1。このタイルで防衛するユニットの[ICON_Strength]戦闘力にボーナス。他の長城に隣接するごとに追加の[ICON_FOOD]食糧と[ICON_Gold]ゴールドを与える。テクノロジーツリーを進展させると[ICON_Culture]文化力および[ICON_Tourism]観光力も隣接のボーナスとして現れるようになる。自文明の国境に建設されなければならない。災害によってのみ略奪されうる。</Text>
+			<Text>労働者が中国固有の改善である万里の長城を建設できるようになる。[NEWLINE][NEWLINE]1タイルにつき[ICON_PRODUCTION]生産力+1。このタイルで防衛するユニットの[ICON_Strength]戦闘力にボーナス。他の長城に隣接するごとに追加の[ICON_Gold]ゴールドを与える。テクノロジーツリーを進展させると[ICON_Culture]文化力および[ICON_Tourism]観光力も隣接のボーナスとして現れるようになる。自文明の国境に建設されなければならない。災害によってのみ略奪されうる。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION" Language="ja_JP">
 			<Text>[ICON_TechBoosted]ひらめきと[ICON_CivicBoosted]天啓が50%ではなく60%のボーナスを与える。[NEWLINE][NEWLINE]すべての遺産が[ICON_FOOD]食糧+1、[ICON_PRODUCTION]生産力+1、[ICON_FAITH]信仰力+1、[ICON_GOLD]ゴールド+1、[ICON_SCIENCE]科学力+1、[ICON_CULTURE]文化力+1を建設された都市で生み出す。</Text>
