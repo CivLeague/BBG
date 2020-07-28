@@ -462,6 +462,14 @@
 				<Text>Szwecja zyskuje 50 [ICON_Favor] względów dyplomatycznych, gdy zdobywa wielką osobę (przy standardowej prędkości). Szwecja zyskuje +1 punkt [ICON_GreatEngineer] wielkiego inżyniera dzięki fabrykom i +1 punkt [ICON_GreatScientist] wielkiego naukowca dzięki uniwersytetom oraz +50% do [ICON_PRODUCTION] produkcji przy budownie tych budynków. Udział Szwecji w rozgrywce dodaje trzy unikalne rywalizacje Kongresu Światowego dostępne od epoki przemysłowej.</Text>
 			</Replace>
 
+			<!-- ================ United States ================ -->
+			<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="pl_PL">
+				<Text>Pola o niesamowitym poziomie atrakcyjności sąsiadujące z cudem natury lub górą zyskują +1 do [ICON_SCIENCE] nauki oraz dodatkowe +1 do [ICON_SCIENCE] po opracowaniu technologii astronomii. Pola o niesamowitym poziomie atrakcyjności sąsiadujące z cudem lub lasem zyskują +1 do [ICON_CULTURE] kultury oraz dodatkowe +1 do [ICON_CULTURE] kultury po ukończeniu ideii oświecenia. Wszystkie pola w mieście z parkiem narodowym zyskują +1 do atrakcyjności.</Text>
+			</Replace>
+			<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="pl_PL">
+				<Text>Jednostki otrzymują +5 do [ICON_Strength] siły bojowej podczas obrony na ojczystym kontynencie oraz podczas ataku na obcym kontynencie. Emisariusze wysłani do miast-państw, z którymi łączą cię [ICON_TradeRoute] szlaki handlowe, liczą się podwójnie. Po odkryciu technologii nauk militarnych otrzymujesz unikalną jednostkę rough ridera.</Text>
+			</Replace>
+
 			<!-- ================ Zulu ================ -->
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="pl_PL">
 				<Text>Miasta ze stacjonującą w nich jednostką zyskują +3 do lojalności na turę lub +5, jeśli stacjonuje w nich korpus bądź armia. Podbicie miasta jednostką sprawia, że zostaje ona awansowana do korpusu lub armii, jeśli wcześniej odblokowano odpowiednie idee. Budynki Ikandy dają +1 do [ICON_CULTURE] kultury i +1 złota [ICON_GOLD] każdy.</Text>
