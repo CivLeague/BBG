@@ -177,8 +177,46 @@ UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_ROMAN_LEGION';
 
 
 --==================
+-- Sumeria
+--==================
+INSERT OR IGNORE INTO Units_XP2 (UnitType, ResourceCost) VALUES
+	('UNIT_SUMERIAN_WAR_CART', 10);
+
+
+
+--==================
 -- Sweden
 --==================
+-- +1 to all yields in cap
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
+	('SWEDEN_CAPITAL_CULTURE_BBG', 'MODIFIER_PLAYER_CAPITAL_CITY_ADJUST_CITY_YIELD_CHANGE'),
+	('SWEDEN_CAPITAL_SCIENCE_BBG', 'MODIFIER_PLAYER_CAPITAL_CITY_ADJUST_CITY_YIELD_CHANGE'),
+	('SWEDEN_CAPITAL_FAITH_BBG', 'MODIFIER_PLAYER_CAPITAL_CITY_ADJUST_CITY_YIELD_CHANGE'),
+	('SWEDEN_CAPITAL_GOLD_BBG', 'MODIFIER_PLAYER_CAPITAL_CITY_ADJUST_CITY_YIELD_CHANGE'),
+	('SWEDEN_CAPITAL_FOOD_BBG', 'MODIFIER_PLAYER_CAPITAL_CITY_ADJUST_CITY_YIELD_CHANGE'),
+	('SWEDEN_CAPITAL_PRODUCTION_BBG', 'MODIFIER_PLAYER_CAPITAL_CITY_ADJUST_CITY_YIELD_CHANGE');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('SWEDEN_CAPITAL_CULTURE_BBG', 'YieldType', 'YIELD_CULTURE'),
+	('SWEDEN_CAPITAL_CULTURE_BBG', 'Amount', '1'),
+	('SWEDEN_CAPITAL_SCIENCE_BBG', 'YieldType', 'YIELD_SCIENCE'),
+	('SWEDEN_CAPITAL_SCIENCE_BBG', 'Amount', '1'),
+	('SWEDEN_CAPITAL_FAITH_BBG', 'YieldType', 'YIELD_FAITH'),
+	('SWEDEN_CAPITAL_FAITH_BBG', 'Amount', '1'),
+	('SWEDEN_CAPITAL_GOLD_BBG', 'YieldType', 'YIELD_GOLD'),
+	('SWEDEN_CAPITAL_GOLD_BBG', 'Amount', '1'),
+	('SWEDEN_CAPITAL_FOOD_BBG', 'YieldType', 'YIELD_FOOD'),
+	('SWEDEN_CAPITAL_FOOD_BBG', 'Amount', '1'),
+	('SWEDEN_CAPITAL_PRODUCTION_BBG', 'YieldType', 'YIELD_PRODUCTION'),
+	('SWEDEN_CAPITAL_PRODUCTION_BBG', 'Amount', '1');
+INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
+	VALUES
+	('TRAIT_CIVILIZATION_NOBEL_PRIZE' , 'SWEDEN_CAPITAL_CULTURE_BBG' ),
+	('TRAIT_CIVILIZATION_NOBEL_PRIZE' , 'SWEDEN_CAPITAL_SCIENCE_BBG' ),
+	('TRAIT_CIVILIZATION_NOBEL_PRIZE' , 'SWEDEN_CAPITAL_FAITH_BBG' ),
+	('TRAIT_CIVILIZATION_NOBEL_PRIZE' , 'SWEDEN_CAPITAL_GOLD_BBG' ),
+	('TRAIT_CIVILIZATION_NOBEL_PRIZE' , 'SWEDEN_CAPITAL_FOOD_BBG' ),
+	('TRAIT_CIVILIZATION_NOBEL_PRIZE' , 'SWEDEN_CAPITAL_PRODUCTION_BBG' );
+-- +50% prod towards universities and factories
 INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
 	VALUES
 	('TRAIT_CIVILIZATION_NOBEL_PRIZE' , 'NOBEL_PRIZE_UNIVERISTY_BOOST' ),
@@ -199,6 +237,16 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra , Sec
 --==============================================================
 --******				  BUILDINGS						  ******
 --==============================================================
+-- flood barriers unlocked at steam power
+UPDATE Buildings SET PrereqTech='TECH_STEAM_POWER' WHERE BuildingType='BUILDING_FLOOD_BARRIER';
+-- +1 coal for seaports
+INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId) VALUES
+	('BUILDING_SEAPORT', 'COAL_FROM_SEAPORT_BBG');
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+	('COAL_FROM_SEAPORT_BBG', 'MODIFIER_PLAYER_ADJUST_FREE_RESOURCE_IMPORT_EXTRACTION', 'PLAYER_CAN_SEE_COAL_CPLMOD');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('COAL_FROM_SEAPORT_BBG', 'ResourceType', 'RESOURCE_COAL'),
+	('COAL_FROM_SEAPORT_BBG', 'Amount', '1');
 -- +1 niter from armories
 INSERT OR IGNORE INTO BuildingModifiers (BuildingType, ModifierId) VALUES
 	('BUILDING_ARMORY', 'NITER_FROM_ARMORY_BBG');
@@ -232,9 +280,7 @@ UPDATE Building_YieldChanges SET YieldChange=6 WHERE BuildingType='BUILDING_POWE
 --==============================================================
 --******				 CITY_STATES					  ******
 --==============================================================
-UPDATE ModifierArguments SET Value='10' WHERE ModifierId='MINOR_CIV_NGAZARGAMU_BARRACKS_STABLE_PURCHASE_BONUS' AND Name='Amount';
-UPDATE ModifierArguments SET Value='10' WHERE ModifierId='MINOR_CIV_NGAZARGAMU_ARMORY_PURCHASE_BONUS' AND Name='Amount';
-UPDATE ModifierArguments SET Value='10' WHERE ModifierId='MINOR_CIV_NGAZARGAMU_MILITARY_ACADEMY_PURCHASE_BONUS' AND Name='Amount';
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='MINOR_CIV_FEZ_INITIATION_SCIENCE_POPULATION' AND Name='Amount';
 
 
 
@@ -349,7 +395,7 @@ UPDATE Units SET Cost=200 WHERE UnitType='UNIT_KNIGHT';
 UPDATE Units SET Cost=180 WHERE UnitType='UNIT_COURSER';
 UPDATE Units SET StrategicResource='RESOURCE_NITER' WHERE UnitType='UNIT_INFANTRY';
 UPDATE Units_XP2 SET ResourceMaintenanceType='RESOURCE_NITER' WHERE UnitType='UNIT_INFANTRY';
-UPDATE Units SET PrereqTech='TECH_STEEL' WHERE UnitType='UNIT_ANTIAIR_GUN';
+UPDATE Units SET PrereqTech='TECH_COMBUSTION' WHERE UnitType='UNIT_ANTIAIR_GUN';
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
 	VALUES ('SIEGE_DEFENSE_BONUS_VS_RANGED_COMBAT', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'SIEGE_DEFENSE_REQUIREMENTS');
 INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)

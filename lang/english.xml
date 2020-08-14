@@ -1,12 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="en_US">
+			<Text>Sumerian unique Classical era unit that replaces the Heavy Chariot and is unlocked at Horseback Riding. Has a chance to capture defeated City-State units. No penalties against anti-cavalry units and ignores Zone of Control. +1 [ICON_Movement] Movement if this unit starts on flat terrain.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="en_US">
+			<Text>All units have +1 sight. Promoting Light Cavalry units do not end their turn.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="en_US">
+			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build. Awards 1 [ICON_Envoy] Envoy when Amphitheater is completed.[NEWLINE][NEWLINE]. +1 [ICON_Culture] Culture bonus for each adjacent district. Can only be built on Hills.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="en_US">
+			<Text>Adjacency: Standard [ICON_Culture] Culture bonus for each adjacent district. Can only be built on Hills.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="en_US">
+			<Text>+1 to all yields in Sweden's capital city. Sweden gains 50 [ICON_Favor] Diplomatic Favor when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards these buildings. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. +2 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital. +1 [ICON_HOUSING] Housing if built on home continent.[NEWLINE][NEWLINE]+2 [ICON_Science] Science if built next to a Campus district. +2 Science at The Enlightenment. Cannot be built next to another Mission</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. +2 [ICON_Faith] Faith, +1 [ICON_PRODUCTION] Production, and +1 [ICON_FOOD] Food if on a different continent than your [ICON_Capital] Capital. +1 [ICON_HOUSING] Housing if built on home continent.[NEWLINE][NEWLINE]+1 [ICON_Science] Science for every adjacent Campus and Holy Site district. +2 Science at The Enlightenment. Cannot be built next to another Mission</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Rivers give +2 [ICON_FAITH] Faith adjacency to Holy Site Districts. +1 [ICON_Amenities] Amenities and +1 [ICON_Housing] Housing to cities if they have a Holy Site district adjacent to a River.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="en_US">
+			<Text>Rivers give +2 [ICON_FAITH] Faith adjacency to Holy Site Districts. +1 [ICON_Amenities] Amenity to cities if they have a Holy Site district adjacent to a River.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="en_US">
 			<Text>Units receive +5 [ICON_Strength] Combat Strength when defending on their home continent or attacking on a foreign continent. Envoys sent to City-States you have a [ICON_TradeRoute] Trade-Route to count as two [ICON_Envoy] Envoys. Gain the Rough Rider unique when they research the Military Science technology.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="en_US">
 			<Text>Units receive a +5 [ICON_Strength] Combat Strength when defending on their home continent or attacking on a foreign continent. +1 Appeal to all tiles in a city with a National Park. Gain the Rough Rider unique unit when they research the Military Science technology.</Text>
 		</Replace>
+		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="en_US">
+			<Text>+25% combat experience for all naval units trained in this city. Allows Fleets and Armadas to be trained directly. Fleet and Armada training costs reduced 25%.  +2 [ICON_GOLD] Gold on all Coast tiles for this city. +1 [ICON_RESOURCE_COAL] Coal per turn.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="en_US">
+			<Text>When complete, this project awards 60 [ICON_CULTURE] Culture and 60 [ICON_TOURISM] Tourism (on Standard speed) based on the number of excess copies of Luxury resources France possesses.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="en_US">
+			<Text>Ethiopia’s International Trade Routes grant +0.5 [ICON_Faith] Faith per resource at the origin. Resources provide +1 [ICON_Faith] Faith. Can purchase Archaeological Museums and Archaeologists with [ICON_Faith] Faith.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MENELIK_DESCRIPTION" Language="en_US">
+			<Text>Receive [ICON_SCIENCE] Science and [ICON_CULTURE] Culture equal to 15% of your [ICON_FAITH] Faith generation in cities founded on Hills.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_DESCRIPTION" Language="en_US">
+			<Text>Ethiopian unique Medieval era light cavalry unit. Has additional sight and receives no [ICON_Movement] Movement penalty from moving in Hills and gains +4 [ICON_STRENGTH] Combat Strength when fighting in Hills.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Ethiopian unique Medieval era light cavalry unit. Stronger and greater sight than the Courser that it replaces. Receives no [ICON_Movement] Movement penalty from movement in Hills and gains +4 [ICON_STRENGTH] Combat Strength when fighting in Hills.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ETHIOPIAN_OROMO_CAVALRY_DESCRIPTION" Language="en_US">
+			<Text>Receives no movement penalty from movement in Hills and gains +4 [ICON_STRENGTH] Combat Strength when fighting in Hills.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="en_US">
+			<Text>Spend Builder charges to complete 20% of the original district cost. +50% [ICON_PRODUCTION] Production towards land melee units.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_MUTAL_COMBAT_STRENGTH_NEAR_CAPITAL_DESCRIPTION" Language="en_US">
+			<Text>+3 [ICON_Strength] Combat Strength to units within 6 tiles of the [ICON_Capital] Capital (Ix Mutal Ajaw)</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="en_US">
+			<Text>Two tile natural wonder that can be found on coastal terrain and provides +3 [ICON_Food] Food and +2 [ICON_Science] Science. Provides major adjacency for Campus districts.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="en_US">
+			<Text>When you use a religious unit to convert a city for the first time earn 10 [ICON_SCIENCE] Science per [ICON_Citizen] Population of that city.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="en_US">
 			<Text>Breathtaking tiles adjacent to either a Natural Wonder or a Mountain receive +1 [ICON_SCIENCE] Science, and an additional +1 [ICON_SCIENCE] Science after researching Astronomy. Breathtaking tiles adjacent to either a Wonder or Woods receive +1 [ICON_CULTURE] Culture, and an additional +1 [ICON_CULTURE] Culture after finishing the Enlightenment Civic. All tiles in a city with a National Park are +1 Appeal.</Text>
 		</Replace>
@@ -34,13 +95,7 @@
 		<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="en_US">
 			<Text>A district unique to Phoenicia for naval activity in your city. Replaces the Harbor district and cheaper to build. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+25% [ICON_PRODUCTION] Production towards naval units and Settlers in this city. All wounded naval units in this city’s borders heal +100 HP each turn.</Text>
 		</Replace>
-		<!-- replaced, alrdy in file -->
-		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. +2 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital.[NEWLINE][NEWLINE]+2 [ICON_Science] Science if built next to a Campus district. +2 Science at The Enlightenment. Cannot be built next to another Mission</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. +2 [ICON_Faith] Faith, +1 [ICON_PRODUCTION] Production, and +1 [ICON_FOOD] Food if on a different continent than your [ICON_Capital] Capital.[NEWLINE][NEWLINE]+1 [ICON_Science] Science for every adjacent Campus and Holy Site district. +2 Science at The Enlightenment. Cannot be built next to another Mission</Text>
-		</Replace>
+
 		<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Hacienda, unique to Gran Colombia.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Production, and +1 [Icon_Housing] Housing. +1 [ICON_Food] Food for every two adjacent Plantations (increased to every Plantation with Replaceable Parts). Plantations and Haciendas receive +1 [ICON_Production] Production for every two adjacent Haciendas (increased to every Hacienda with Rapid Deployment). Can only be built on Plains and Grassland.</Text>
 		</Replace>	
@@ -69,9 +124,6 @@
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_PRODUCTION] Production for Floodplain and Volcanic Soil tiles in the city. The city’s improvements, buildings, and districts cannot be damaged by Environmental Effects.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="en_US">
-			<Text>All units have +1 sight. Promoting a unit does not end that unit’s turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="en_US">
 			<Text>+1 Sight to all units (Ejército Patriota)</Text>
@@ -323,17 +375,8 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_GARRISON_COMMANDER_DESCRIPTION" Language="en_US">
 			<Text>Units within the city's territory get +3 [ICON_Strength] Combat Strength. Your other cities within 9 tiles gain +4 Loyalty per turn towards your civilization.</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="en_US">
-			<Text>Sumerian unique Ancient era unit that replaces the Heavy Chariot. Has a chance to capture defeated City-State units. No penalties against anti-cavalry units. 4 [ICON_Movement] Movement if this unit starts in open terrain.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="en_US">
-			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build. Awards 1 [ICON_Envoy] Envoy when an Amphitheater is completed.[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for adjacent City Center. +1 [ICON_Culture] Culture bonus for each adjacent wonder and district. Can only be built on Hills.</Text>
-		</Replace>
 		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="en_US">
 			<Text>Norwegian unique Medieval era unit. +2 [ICON_Movement] Movement if this unit starts in enemy territory or is embarked. +15 [ICON_Strength] Combat Strength when attacking. Can be purchased with [ICON_FAITH] Faith.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="en_US">
-			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards these buildings. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_FILM_STUDIO_DESCRIPTION" Language="en_US">
 			<Text>A building unique to America. +50% [ICON_Tourism] Tourism pressure from this city towards other civilizations in the Modern era.</Text>

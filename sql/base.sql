@@ -61,6 +61,20 @@ INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 
 
 --==================
+-- Aztec
+--==================
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
+	('TRAIT_MELEE_PRODUCTION_BBG', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('TRAIT_MELEE_PRODUCTION_BBG', 'UnitPromotionClass', 'PROMOTION_CLASS_MELEE'),
+	('TRAIT_MELEE_PRODUCTION_BBG', 'EraType', 'NO_ERA'),
+	('TRAIT_MELEE_PRODUCTION_BBG', 'Amount', '50');
+INSERT OR IGNORE INTO TraitModifiers VALUES
+	('TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS', 'TRAIT_MELEE_PRODUCTION_BBG');
+
+
+
+--==================
 -- China
 --==================
 -- +1 all yields per wonder
@@ -281,6 +295,8 @@ UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_GUILDS_REQUIREMENTS' WH
 --==================
 -- Greece
 --==================
+-- acropolis only +1 culture when adj to city center
+DELETE FROM District_Adjacencies WHERE DistrictType='DISTRICT_ACROPOLIS' AND YieldChangeId='DISTRICT_CULTURE_CITY_CENTER';
 -- Greece gets their extra envoy at amphitheater instead of acropolis
 DELETE FROM DistrictModifiers WHERE DistrictType='DISTRICT_ACROPOLIS';
 INSERT OR IGNORE INTO TraitModifiers
@@ -595,6 +611,17 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 --==================
 -- Spain
 --==================
+-- missions get +1 housing on home continent
+INSERT OR IGNORE INTO RequirementSets VALUES
+	('PLOT_CAPITAL_CONTINENT_REQUIREMENTS_BBG', 'REQUIREMENTSET_TEST_ALL');
+INSERT OR IGNORE INTO RequirementSetRequirements VALUES
+	('PLOT_CAPITAL_CONTINENT_REQUIREMENTS_BBG', 'REQUIRES_PLOT_IS_OWNER_CAPITAL_CONTINENT');
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
+	VALUES ('MISSION_HOMECONTINENT_HOUSING_BBG' , 'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_HOUSING', 'PLOT_CAPITAL_CONTINENT_REQUIREMENTS_BBG');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
+	VALUES ('MISSION_HOMECONTINENT_HOUSING_BBG' , 'Amount' , 1);
+INSERT OR IGNORE INTO ImprovementModifiers (ImprovementType , ModifierId)
+	VALUES ('IMPROVEMENT_MISSION' , 'MISSION_HOMECONTINENT_HOUSING_BBG');
 -- Missions cannot be placed next to each other
 UPDATE Improvements SET SameAdjacentValid=0 WHERE ImprovementType='IMPROVEMENT_MISSION';
 -- Missions moved to Theology
@@ -618,8 +645,8 @@ INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
 INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value, Extra) VALUES
 	('TRAIT_ADJUST_PILLAGE_BBG', 'Amount', '2', '-1');
 UPDATE TraitModifiers SET ModifierId='TRAIT_ADJUST_PILLAGE_BBG' WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU' AND ModifierId='TRAIT_ADJUST_JOINTWAR_PLUNDER';
--- Sumerian War Carts are no longer free to maintain so that you cannot have unlimited and are heavy chariot replacement with 32 combat
-UPDATE Units SET Maintenance=1, Combat=32, PrereqTech='TECH_THE_WHEEL', MandatoryObsoleteTech='TECH_BALLISTICS' WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
+-- Sumerian War Carts are now unlocked at horseback riding and buffed
+UPDATE Units SET Cost=80, Maintenance=2, BaseMoves=4, Combat=36, StrategicResource='RESOURCE_HORSES', PrereqTech='TECH_HORSEBACK_RIDING', MandatoryObsoleteTech='TECH_BALLISTICS' WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
 INSERT OR IGNORE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SUMERIAN_WAR_CART', 'UNIT_HEAVY_CHARIOT');
 -- war carts have a chance to steal defeated barbs and city state units
 INSERT OR IGNORE INTO Types (Type , Kind)
@@ -876,6 +903,21 @@ UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='FASCISM_LEGA
 --==============================================================
 --******				P A N T H E O N S				  ******
 --==============================================================
+-- river goddess +2 HS adj on rivers, -1 housing and -1 amentiy tho
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId='RIVER_GODDESS_HOLY_SITE_HOUSING_MODIFIER' AND Name='Amount';
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId='RIVER_GODDESS_HOLY_SITE_AMENITIES_MODIFIER' AND Name='Amount';
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType, SubjectRequirementSetId)
+	VALUES ('RIVER_GODDESS_HOLY_SITE_FAITH_BBG' , 'MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER', 'PLAYER_HAS_PANTHEON_REQUIREMENTS');
+INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
+	VALUES ('RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG' , 'MODIFIER_PLAYER_CITIES_RIVER_ADJACENCY');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value) VALUES
+('RIVER_GODDESS_HOLY_SITE_FAITH_BBG', 'ModifierId', 'RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG'),
+('RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG' , 'Amount' , '2'),
+('RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG' , 'DistrictType' , 'DISTRICT_HOLY_SITE'),
+('RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG' , 'YieldType' , 'YIELD_FAITH'),
+('RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG' , 'Description' , 'LOC_DISTRICT_HOLY_SITE_RIVER_FAITH');
+INSERT OR IGNORE INTO BeliefModifiers VALUES
+	('BELIEF_RIVER_GODDESS', 'RIVER_GODDESS_HOLY_SITE_FAITH_BBG');
 -- city patron buff
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='CITY_PATRON_GODDESS_DISTRICT_PRODUCTION_MODIFIER' AND Name='Amount';
 -- Dance of Aurora yields reduced... only work for flat tundra
@@ -1254,13 +1296,13 @@ INSERT OR IGNORE INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
 UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_RUSSIA' AND TerrainType='TERRAIN_TUNDRA_HILLS';
 UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_RUSSIA' AND TerrainType='TERRAIN_TUNDRA';
 -- t3 identities
+UPDATE StartBiasFeatures SET Tier=3 WHERE CivilizationType='CIVILIZATION_BRAZIL' AND FeatureType='FEATURE_JUNGLE';
 UPDATE StartBiasFeatures SET Tier=3 WHERE CivilizationType='CIVILIZATION_EGYPT' AND FeatureType='FEATURE_FLOODPLAINS';
 UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_SCYTHIA' AND ResourceType='RESOURCE_HORSES';
 -- t4 river mechanics
 UPDATE StartBiasRivers SET Tier=4 WHERE CivilizationType='CIVILIZATION_SUMERIA';
 UPDATE StartBiasRivers SET Tier=4 WHERE CivilizationType='CIVILIZATION_FRANCE';
 -- t4 feature mechanics
-UPDATE StartBiasFeatures SET Tier=4 WHERE CivilizationType='CIVILIZATION_BRAZIL' AND FeatureType='FEATURE_JUNGLE';
 UPDATE StartBiasFeatures SET Tier=4 WHERE CivilizationType='CIVILIZATION_KONGO' AND FeatureType='FEATURE_JUNGLE';
 -- t4 terrain mechanics
 UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_GREECE' AND TerrainType='TERRAIN_GRASS_HILLS';
@@ -1685,6 +1727,11 @@ VALUES ('BUILDING_VENETIAN_ARSENAL', 'RENAISSANCE_NAVAL_CARRIER_PRODUCTION');
 --==============================================================
 --******			W O N D E R S  (NATURAL)			  ******
 --==============================================================
+-- great barrier reef gives +2 science adj
+INSERT OR IGNORE INTO District_Adjacencies VALUES
+	('DISTRICT_CAMPUS', 'BarrierReef_Science');
+INSERT OR IGNORE INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentFeature) VALUES
+	('BarrierReef_Science', 'LOC_DISTRICT_REEF_SCIENCE', 'YIELD_SCIENCE', 2, 1, 'FEATURE_BARRIER_REEF');
 -- Several lack-luster wonders improved
 UPDATE Features SET Settlement=1 WHERE FeatureType='FEATURE_CLIFFS_DOVER';
 INSERT OR IGNORE INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)

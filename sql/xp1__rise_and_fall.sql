@@ -249,6 +249,19 @@ UPDATE ModifierArguments SET Value='6' WHERE ModifierId='SHOPPING_MALL_TOURISM';
 
 
 --==============================================================
+--******			 	  CITY-STATES		 		  	  ******
+--==============================================================
+DELETE FROM Modifiers WHERE ModifierId='MINOR_CIV_PRESLAV_UNIQUE_INFLUENCE_ARMORY_IDENTITY_BONUS';
+DELETE FROM Modifiers WHERE ModifierId='MINOR_CIV_PRESLAV_ARMORY_IDENTITY_BONUS';
+DELETE FROM Modifiers WHERE ModifierId='MINOR_CIV_PRESLAV_UNIQUE_INFLUENCE_MILITARY_ACADEMY_IDENTITY_BONUS';
+DELETE FROM Modifiers WHERE ModifierId='MINOR_CIV_PRESLAV_MILITARY_ACADEMY_IDENTITY_BONUS';
+UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='MINOR_CIV_PRESLAV_BARRACKS_STABLE_IDENTITY_BONUS';
+UPDATE ModifierArguments SET Value='40' WHERE ModifierId='MINOR_CIV_PRESLAV_BARRACKS_STABLE_IDENTITY_BONUS' AND Name='Amount';
+
+
+
+
+--==============================================================
 --******			  D E D I C A T I O N S				  ******
 --==============================================================
 -- To Arms +10 vs cities
