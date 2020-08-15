@@ -55,6 +55,9 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="ja_JP">
 			<Text>労働者の労働コストを使用することで区域建設コストの20%を賄うことができる。陸上白兵ユニットに対する[ICON_PRODUCTION]生産力+50%。</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="ja_JP">
+			<Text>[ICON_Capital] 首都から6タイル以内にある首都以外の都市は、すべての産出量+10%。その他の首都以外の都市は産出量-15%。 [ICON_Capital] 首都から6タイル以内にいるユニットの [ICON_Strength] 戦闘力+3。</Text>
+		</Replace>
 		<Replace Tag="LOC_ABILITY_MUTAL_COMBAT_STRENGTH_NEAR_CAPITAL_DESCRIPTION" Language="ja_JP">
 			<Text>[ICON_Capital]首都から6タイル以内のユニットの[ICON_Strength]戦闘力+3。(イシュ・ムタル・アハウ)</Text>
 		</Replace>
@@ -184,9 +187,6 @@
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ja_JP">
 			<Text>この都市の[ICON_Culture]文化力+15%。この都市から他都市に与える宗教的圧力+50%。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="ja_JP">
-			<Text>異大陸で攻撃する際、または自大陸で防衛する際にユニットの[ICON_Strength]戦闘力+5。国立公園をもつ都市において全タイルのアピール+1。軍事科学の研究を完了すると固有ユニットであるラフライダーが解禁される。</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="ja_JP">
 			<Text>採石場から[ICON_Production]生産力+1、[ICON_Faith]信仰力+1。</Text>
