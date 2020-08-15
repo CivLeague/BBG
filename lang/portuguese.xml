@@ -1,11 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="pt_BR">
+			<Text>Unidade da Era Antiga exclusiva da Suméria que substitui a Cavalaria Pesada e é desbloqueada em Cavalgar. Tem uma chance de capturar unidades derrotadas de Cidades Estado. Sem penalidades contra unidades anti-cavalaria e ignora zona de controle. +1 [ICON_Movement] Movimento se começar o turno em terreno plano.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="pt_BR">
+			<Text>Todas as unidades tem +1 de visão. Promover unidades de Cavalaria Leve não encerra o turno delas.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="pt_BR">
+			<Text>Distrito único da Grécia para pontos culturais. Substitui o Teatro e é mais barato de ser construído. Concede 1 [ICON_Envoy] Emissário quando o Anfiteatro é construído. [NEWLINE][NEWLINE]. Bônus de +1 de [ICON_Culture] Cultura pra cada distrito adjacente. Só pode ser construído em colinas.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="pt_BR">
+			<Text>Adjacência: Bônus padrão de [ICON_Culture] Cultura pra cada distrito adjacente. Só pode ser construído em colinas.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="pt_BR">
+			<Text>+1 pra todos os rendimentos na capital da Suécia. Ganha 50 de [ICON_Favor] Favor Diplomático quando recruta uma Grande Pessoa. A Suécia recebe +1 ponto de  [ICON_GreatEngineer] Grande Engenheiro de cada Fábrica e +1 ponto de [ICON_GreatScientist] Grande Cientista de Universidades além de +50% de [ICON_PRODUCTION] Produção pra esses edifícios. Ter a Suécia no jogo adiciona três competições únicas no Congresso Mundial, a começar na Era Industrial.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="pt_BR">
+			<Text>Desbloqueia a habilidade de Construtores para construir uma Missão, exclusiva da Espanha.[NEWLINE][NEWLINE]+2 de [ICON_Faith] Fé. +2 de [ICON_Faith] Fé se estiver em um continente diferente da sua [ICON_Capital] Capital.[NEWLINE][NEWLINE]+2 de [ICON_Science] Ciência se construído adjacente a um distrito de Campus. +1 de [ICON_HOUSING] Habitação se construída no continente natal. +2 de [ICON_Science] Ciência Science no Cívico de Iluminismo. Não pode ser construído adjacente a outra Missão.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>Desbloqueia a habilidade de Construtores para construir uma Missão, exclusiva da Espanha.[NEWLINE][NEWLINE]+2 de [ICON_FAITH] Fé. +2 de [ICON_FAITH] Fé, +1 de [ICON_PRODUCTION] Produção, e +1 de [ICON_FOOD] Alimento se estiver em um continente diferente do de sua [ICON_Capital] Capital.+1 de [ICON_HOUSING] Habitação se construída no continente natal.[NEWLINE][NEWLINE]+1 de [ICON_SCIENCE] Ciência por cada Campus e Local Sagrado Adjacente. +2 de [ICON_SCIENCE] Ciência com o Iluminismo. Não pode ser construído adjacente a outra Missão.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>Rios dão adjacência de +2 de [ICON_FAITH] Fé aos Distritos de Local Sagrado. +1 de [ICON_Amenities] Serviços e +1 de [ICON_Housing] Habitação pra cidades se elas possuírem um Local Sagrado adjacente ao um Rio.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="pt_BR">
+			<Text>Rios dão adjacência de +2 de [ICON_FAITH] Fé aos Distritos de Local Sagrado. +1 de [ICON_Amenities] Serviço pra cidades se elas possuírem um Local Sagrado adjacente ao um Rio.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="pt_BR">
-			<Text>Unidades recebem +5 de [ICON_Strength] Força de Combate quando defendendo no seu continente natal ou atacando em outro continente. Emissários enviados para Cidades Estado com as quais você tem uma [ICON_TradeRoute] Rota de Comércio contam como dois [ICON_Envoy] Emissários. Ganha a unidade única Rough Rider quando pesquisa a tecnologia de Ciência Militar.</Text>
+			<Text>Unidades recebem +5 de [ICON_Strength] Força de Combate quando defendendo no seu continente natal, ou atacando em um continente estrangeiro. Emissários enviados a uma Cidade Estado com a qual você tenha uma rota comercial contam como dois emissários. Recebe a unidade exclusiva Rough Rider quando pesquisa a tecnologia de Ciência Militar.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="pt_BR">
-			<Text>Unidades recebem +5 de [ICON_Strength] Força de Combate quando defendendo no seu continente natal ou atacando em outro continente. +1 de Apelo em todos os paineis numa cidade com um Parque Nacional. Ganha a unidade única Rough Rider quando pesquisa a tecnologia de Ciência Militar.</Text>
+			<Text>Unidades recebem +5 de [ICON_Strength] Força de Combate quando defendendo no seu continente natal, ou atacando em um continente estrangeiro. +1 de Apelo a todos os paineis numa cidade com parque nacional. Recebe a unidade exclusiva Rough Rider quando pesquisa a tecnologia de Ciência Militar.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="pt_BR">
+			<Text>+25% de experiência de combate para todas as unidades navais treinadas nessa cidade. Permite o treinamento direto de Frotas e Armadas. Custo de treinamento de Frotas e Armadas reduzido em 25%. +2 de [ICON_GOLD] Ouro em todos os paineis costeiros dessa cidade. +1 de [ICON_RESOURCE_COAL] Carvão por turno.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="pt_BR">
+			<Text>Quando finalizado, esse projeto concede 60 de [ICON_CULTURE] Cultura e 60 de [ICON_TOURISM] Turismo (na velocidade padrão) baseado no número de cópias em excesso que a França possui.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="pt_BR">
+			<Text>Rotas comerciais concedem +0.5 de [ICON_FAITH] por recurso na origem. Recursos concedem +1 de [ICON_FAITH] Fé. Pode comprar Museus arqueológicos e Arqueológos com [ICON_FAITH] Fé.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MENELIK_DESCRIPTION" Language="pt_BR">
+			<Text>Recebe [ICON_SCIENCE] Ciência e [ICON_CULTURE] Cultura igual a 15% da sua geração de [ICON_FAITH] Fé em cidades fundadas em colinas.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_DESCRIPTION" Language="pt_BR">
+			<Text>Unidade exclusiva da Etiópia da Era Medieval. Tem visibilidade adicional e não recebe penalidade de [ICON_Movement] movimento em colinas, além de ganhar +4 de [ICON_STRENGTH] Força de Combate quando lutando em colinas.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>Unidade exclusiva da Etiópia da Era Medieval. Tem mais visibilidade e Força de Combate do que a Cavalaria especial a quem ele substitui. Não recebe penalidade de [ICON_Movement] movimento em colinas, além de ganhar +4 de [ICON_STRENGTH] Força de Combate quando lutando em colinas.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ETHIOPIAN_OROMO_CAVALRY_DESCRIPTION" Language="pt_BR">
+			<Text>Não recebe penalidade de [ICON_Movement] movimento em colinas, além de ganhar +4 de [ICON_STRENGTH] Força de Combate quando lutando em colinas.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="pt_BR">
+			<Text>Gasta cargas de construtores pra completar 20% do custo original do distrito. +50% de [ICON_PRODUCTION] Produção pra unidades terrestres de corpo a corpo.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="pt_BR">
+			<Text>Cidades que não sejam a Capital dentro de 6 painéis da [ICON_Capital] Capital recebem +10% para todas as produções. Outras cidades que não sejam a Capital recebem -15% para todas as produções. +3 de [ICON_Strength] força de combate para unidades dentro de 6 painéis da [ICON_Capital] Capital.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_MUTAL_COMBAT_STRENGTH_NEAR_CAPITAL_DESCRIPTION" Language="pt_BR">
+			<Text>+3 de [ICON_Strength] Força de Combate pra unidades que estejam em até 6 paineis da [ICON_Capital] Capital (Ix Mutal Ajaw)</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="pt_BR">
+			<Text>Maravilha natural de dois paineis que pode aparecer em terreno costeiro e concede +3 de [ICON_Food] Comida e +2 de [ICON_Science] Ciência. Concede grande bônus de adjacência para distritos de Campus.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="pt_BR">
+			<Text>Quando você usa uma unidade religiosa pra converter uma cidade pela primeira vez, ganhe 10 de [ICON_SCIENCE] Ciência por [ICON_Citizen] População daquela cidade.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="pt_BR">
 			<Text>Paineis com apelo de Tirar o Fôlego adjacentes a uma Maravilha Natural ou Montanha recebem +1 de [ICON_SCIENCE] Ciência, e um adicional de +1 de [ICON_SCIENCE] Ciência depois de pesquisar Astronomia. Paineis com apelo de Tirar o Fôlego adjacentes a uma Maravilha ou um Bosque recebem +1 de [ICON_CULTURE] Cultura, e um adicional de +1 de  [ICON_CULTURE] Cultura depois de pesquisar o Cívico do Iluminismo. Todos os paineis numa cidade com um Parque Nacional recebem +1 de Apelo.</Text>
@@ -35,12 +98,6 @@
 			<Text>Um distrito exclusivo da Fenícia que concentra a atividade naval na sua cidade. Substitui o Porto e é mais barato de construir. Deve ser construído em Paineis Costeiros  ou de Lago adjacentes à terra.[NEWLINE][NEWLINE]+25% de [ICON_PRODUCTION] Produção pra unidades navais e Colonos nessa cidade. Todas as unidades navais dentro da fronteira dessa cidade curam +100 PV a cada turno.</Text>
 		</Replace>
 		<!-- replaced, alrdy in file -->
-		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="pt_BR">
-			<Text>Desbloqueia a habilidade de Construtores para construir uma Missão, exclusiva da Espanha.[NEWLINE][NEWLINE]+2 de [ICON_Faith] Fé. +2 de [ICON_Faith] Fé se estiver em um continente diferente da sua [ICON_Capital] Capital.[NEWLINE][NEWLINE]+2 de [ICON_Science] Ciência se construído adjacente a um distrito de Campus. +2 de [ICON_Science] Ciência Science no Cívico de Iluminismo. Não pode ser construído adjacente a outra Missão.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>Desbloqueia a habilidade de Construtores para construir uma Missão, exclusiva da Espanha.[NEWLINE][NEWLINE]+2 de [ICON_FAITH] Fé. +2 de [ICON_FAITH] Fé, +1 de [ICON_PRODUCTION] Produção, e +1 de [ICON_FOOD] Alimento se estiver em um continente diferente do de sua [ICON_Capital] Capital.[NEWLINE][NEWLINE]+1 de [ICON_SCIENCE] Ciência por cada Campus e Local Sagrado Adjacente. +2 de [ICON_SCIENCE] Ciência com o Iluminismo. Não pode ser construído adjacente a outra Missão.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="pt_BR">
 			<Text>Desbloqueia a habilidade de Construtores para construir uma Hacienda, exclusiva da Gran Colombia.[NEWLINE][NEWLINE]+2 de [ICON_GOLD] Ouro, +1 de [ICON_PRODUCTION] Produção, and +1 de [Icon_Housing] Habitação. +1 de [ICON_Food] Alimento pra cada duas Plantações adjacentes (aumentando pra cada Plantação ao pesquisar Partes Substituíveis). Plantações  e Haciendas recebem +1 de [ICON_Production] Produção pra cada duas Haciendas adjacentes (aumentando pra cada Hacienda com Mobilização Rápida). Só pode ser construída em Planícies e Pradarias, sem colinas.</Text>
 		</Replace>	
@@ -69,9 +126,6 @@
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="pt_BR">
 			<Text>+1 de [ICON_PRODUCTION] produção para painéis de Planíces Aluviais e Solo Vulcânico na cidade. As melhorias de painéis, as construções, e os distritos não poderão ser danificados por desastres naturais.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="pt_BR">
-			<Text>Todas as unidades recebem +1 de alcance de visão. Promover uma unidade não encerra o turno dela.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="pt_BR">
 			<Text>+1 de alcance de visão para todas as unidades (Ejército Patriota)</Text>
@@ -145,19 +199,16 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="pt_BR">
 			<Text>15% de aumento em [ICON_CULTURE] cultura gerada pela cidade e a pressão religiosa advindo desta cidade é 100% em outras cidades.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="pt_BR">
-			<Text>Unidades recebem +5 de [ICON_Strength] força de combate quando atacando em um território estrangeiro ou defendendo no continente natal. +1 de apelo para todos os painéis de uma cidade com um Parque Nacional. Ganha a unidade única Rough Rider quando pesquisar a tecnologia Ciência Militar.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="pt_BR">
 			<Text>+1 de [ICON_PRODUCTION] Produção e +1 de [ICON_FAITH] fé de Pedreiras.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="pt_BR">
 			<Text>Recebe um Espião gratuitamente (e um espaço extra de capacidade) com a tecnologia de Castelo. Todos os espiões começam como Agentes com uma promoção grátis. +20% de [ICON_PRODUCTION] produção para maravilhas da era Medieval, Renascimento, e Industrial. [ICON_Tourism] Turismo de maravilhas de qualquer era é +50% maior.</Text>
 		</Replace>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="pt_BR">
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="pt_BR">
 			<Text>[ICON_TradeRoute] Rotas de troca domésticas para a cidade com o governador Pingala concedem +3 de [ICON_SCIENCE] Ciência.</Text>
-		</Row>
-		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="ru_RU">
+		</Replace>
+		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="pt_BR">
 			<Text>+10 de [ICON_Strength] força de combate quando sitiando distritos e cidades.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION" Language="pt_BR">
@@ -219,43 +270,43 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN_DESCRIPTION" Language="pt_BR">
 			<Text>15% de aumento em [ICON_SCIENCE] ciência gerada pela cidade.</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME' Language="pt_BR">
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME' Language="pt_BR">
 			<Text>Conhecimento Compartilhado</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME' Language="pt_BR">
+		</Replace>
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME' Language="pt_BR">
 			<Text>Eureca</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="pt_BR">
+		</Replace>
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="pt_BR">
 			<Text>Dobra a adjacência do distrito de Campus da cidade.</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE_DESCRIPTION" Language="pt_BR">
 			<Text>Concede o adicional de um recurso estratégico por turno daqueles revelados pela sua civilização.</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="pt_BR">
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="pt_BR">
 			<Text>Negociador</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="pt_BR">
+		</Replace>
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="pt_BR">
 			<Text>A cidade não pode ser posta em cerco e recebe +5 de força de defesa.</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_EMISSARY_DESCRIPTION" Language="pt_BR">
 			<Text>Todas as cidades em um raio de 9 painéis recebem +4 de pressão de lealdade por turno a favor da sua civiliação.</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="pt_BR">
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="pt_BR">
 			<Text>Empresária</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="pt_BR">
+		</Replace>
+		<Replace Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="pt_BR">
 			<Text>50% de desconto em [ICON_GOLD] ouro para a compra de edificações na cidade.</Text>
-		</Row>
+		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="pt_BR">
 			<Text>Recursos estratégicos não são necessários nesta cidade para construir unidades dependentes deles.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST_DESCRIPTION" Language="pt_BR">
 			<Text>+4 de [ICON_PRODUCTION] produção e +4 [ICON_POWER] de eletricidade na cidade para Usinas de Carvão, Petróleo e Nuclear.</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICultura_NAME' Language="pt_BR">
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="pt_BR">
 			<Text>Agricultura</Text>
 		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICultura_DESCRIPTION' Language="pt_BR">
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION' Language="pt_BR">
 			<Text>+1 de [ICON_FOOD] alimento nos recursos revelados pela cidade.</Text>
 		</Row>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_NAME" Language="pt_BR">
@@ -323,17 +374,8 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_GARRISON_COMMANDER_DESCRIPTION" Language="pt_BR">
 			<Text>Unidades dentro do território da cidade recebem +3 de [ICON_Strength] força de combate. As suas outras cidades dentro de 9 painéis recebem +4 de lealdade por turno para a sua civilização.</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="pt_BR">
-			<Text>Unidade da Era Antiga exclusiva da Suméria que substitui a Carruagem Pesada. Possui uma chance de capturar unidades derrotadas das cidades-estados. Sem penalidades contra unidades anticavalarias. 4 de [ICON_Movement] movimento se esta unidade começar o turno em terreno aberto.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="pt_BR">
-			<Text>Um distrito exclusivo da Grécia para pontos culturais. Substitui o distrito de Teatro e é mais barato de se construir. Concede +1 [ICON_Envoy] emissário ao ser concluído.[NEWLINE][NEWLINE]+1 de adjacência de [ICON_CULTURE] cultura se construído adjacente a um centro da cidade. +1 de bônus de [ICON_CULTURE] cultura para cada maravilha e distrito adjacente. Só pode ser construído em colinas.</Text>
-		</Replace>
 		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="pt_BR">
 			<Text>Unidade corpo a corpo exclusiva da Noruega, da Era Medieval. Recebe +2 de [ICON_Movement] movimento se esta unidade começar o turno em território inimigo ou estiver embarcada. +15 de [ICON_Strength] força de combate ao atacar. Pode ser comprada com [ICON_FAITH] fé.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="pt_BR">
-			<Text>A Suécia ganha 50 de [ICON_Favor] Favorecimento Diplomático quando recebe uma Grande Personalidade. Recebe +1 ponto de [ICON_GreatEngineer] Grande Engenheiro das Fábricas e +1 ponto de [ICON_GreatScientist] Grande Cientista de Universidades e +50% de [ICON_PRODUCTION] produção para essas construções. Ter a Suécia no jogo adiciona três competições exclusivas ao Congresso Mundial a partir da Era Industrial.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_FILM_STUDIO_DESCRIPTION" Language="pt_BR">
 			<Text>Uma construção exclusiva para a América. +50% de pressão de [ICON_Tourism] turismo obtidos desta cidade em relação a outras civilização na Era Moderna.</Text>

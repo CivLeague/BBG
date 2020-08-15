@@ -1,14 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="ru_RU">
-            <Text>Клетки с потрясающим престижем, находящиеся рядом с чудом природы или горой, получают +2 к [ICON_SCIENCE] науке. Дополнительная 1 [ICON_SCIENCE] наука после изучения технологии "Астрономия". Клетки с потрясающим престижем, находящиеся рядом с чудом или лесом, получают +1 к [ICON_CULTURE] культуре. Дополнительно получают +1 [ICON_CULTURE] культуры после открытия "Просвещения". Все клетки в городе с национальным парком имеют +1 к престижу.</Text>
+		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный шумерский юнит, мощная тяжелая кавалерия античности, заменяющий тяжелую колесницу. Имеет шанс захвата побежденных юнитов городов-государств. Нет штрафа в сражениях против антикавалерийских юнитов. +1 [ICON_Movement] очко перемещения, если начинает ход на открытой местности.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="ru_RU">
+			<Text>Все юниты получают +1 к радиусу обзора. Повышение юнита класса легкая кавалерия не заканчивает его ход</Text>	
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный район Греции, заменяющий театральную площадь. Дешевле в строительстве. После завершения строительства амфитеатра дает 1 [ICON_Envoy] посла. [NEWLINE][NEWLINE]. +1 [ICON_Culture] к культуре за каждый соседний район. Можно построить только на холмах.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="ru_RU">
+			<Text>Соседство: Стандартный бонус [ICON_Culture] к культуре за каждый соседний район. Можно построить только на холмах.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="ru_RU">
+			<Text>+1 ко всем видам продукции в столице. Швеция получает 50 [ICON_Favor] единиц мирового влияния за каждого нанятого великого человека. Швеция получает +1 [ICON_GreatEngineer] очко великого инженера от каждой фабрики и +1 [ICON_GreatScientist] очко великого ученого от каждого университета, а также +50% [ICON_PRODUCTION] к производству этих зданий. Если Швеция присутствует в игре, то начиная с промышленной эры добавляются 3 уникальных соревнования всемирного конгресса.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальное улучшение Испании.[NEWLINE][NEWLINE]+2 [ICON_Faith] веры. +2 [ICON_Faith] веры, если построено не на том же континенте, что и ваша [ICON_Capital] столица. +1 [ICON_HOUSING] жилье, если построено на том же континенте, что и ваша столица.[NEWLINE][NEWLINE]+2 [ICON_Science] науки, если построено рядом с кампусом. +2 науки после открытия просвещения. Не может быть построено рядом с другой миссией</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальное улучшение Испании.[NEWLINE][NEWLINE]+2 [ICON_Faith] веры. +2 [ICON_Faith] веры, +1 [ICON_PRODUCTION] производство, and +1 [ICON_FOOD] еда, если построено не на том же континенте, что и ваша [ICON_Capital] столица. +1 [ICON_HOUSING] жилье, если построено на том же континенте, что и ваша столица.[NEWLINE][NEWLINE]+1 [ICON_Science] науки за каждый соседний кампус и священное место. +2 науки после открытия просвещения. Не может быть построено рядом с другой миссией</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Священные места, построенные у реки, получают +2 [ICON_FAITH] веры, а также дают городу +1 [ICON_Amenities] довольство и +1 [ICON_Housing] жилье.</Text>
+		</Replace> 
+		<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="ru_RU">
+			<Text>Священные места, построенные у реки, получают +2 [ICON_FAITH] веры, а также дают городу +1 [ICON_Amenities] довольство.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="ru_RU">
-            <Text>>Юниты получают +5 к [ICON_Strength] боевой мощи при защите на родном континенте континенте или при атаке на чужом. Послы в городах-государствах, с которыми у вас есть [ICON_TradeRoute] торговые пути, считаются за двух [ICON_Envoy] послов. Вы получаете уникального юнита "Мужественный всадник" с технологией "Нарезные стволы".</Text>
+			<Text>Юниты получают +5 к [ICON_Strength] боевой мощи в защите на родном континенте и атаке на чужом. Послы в городах-государствах, к которым есть активные [ICON_TradeRoute] торговые пути, считаются за двух [ICON_Envoy] послов. Получает юнита "Мужественный всадник" при открытии технологии "Военная наука".</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="ru_RU">
-            <Text>Юниты получают +5 к [ICON_Strength] боевой мощи при защите на родном континенте континенте или при атаке на чужом. Все клетки в городе с национальным парком имеют +1 к престижу. Вы получаете уникального юнита "Мужественный всадник" с технологией "Нарезные стволы".</Text>
+			<Text>Юниты получают +5 к [ICON_Strength] боевой мощи в защите на родном континенте и атаке на чужом. +1 престижа всем клеткам города с нацпарком. Получает юнита "Мужественный всадник" при открытии технологии "Военная наука".</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="ru_RU">
+			<Text>+25% к опыту всех морских юнитов, произведенных в этом городе. Позволяет строить флоты и армады. Стоимость производства флотов и армад снижена на 25%. +2 [ICON_GOLD] золота всем прибрежным клеткам в этом городе. +1 [ICON_RESOURCE_COAL] уголь в ход.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="ru_RU">
+			<Text>По завершении этот проект дает 60 [ICON_CULTURE] культуры и 60 [ICON_TOURISM] туризма (на стандартной скорости) за каждую лишнюю копию редкого ресурса, которой владеет Франция.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="ru_RU">
+			<Text>Международные торговые пути дают +0.5 [ICON_Faith] веры за каждый ресурс в городе отправления. Ресурсы получают +1 [ICON_Faith] веры. Может приобретать археологические музеи и археологов за [ICON_Faith] веру.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MENELIK_DESCRIPTION" Language="ru_RU">
+			<Text>Получает бонус к [ICON_SCIENCE] науке и [ICON_CULTURE] культуре в размере 15% от производства [ICON_FAITH] веры в городах, построенных на холмах.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_DESCRIPTION" Language="ru_RU">
+			<Text>Эфиопский уникальный легкий кавалерийский юнит эпохи Средневековья. Заменяет летучий отряд. Имеет + 1 к радиусу обзора, нет штрафа к [ICON_Movement] перемещению по холмам. Получает +4 к [ICON_STRENGTH] боевой мощи на холмах.</Text>	
+		</Replace>
+		<Replace Tag="LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Эфиопский уникальный легкий кавалерийский юнит эпохи Средневековья. Заменяет летучий отряд. Имеет повышенную боевую мощь и обзор. Нет штрафа к [ICON_Movement] перемещению по холмам. Получает +4 к [ICON_STRENGTH] боевой мощи на холмах.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ETHIOPIAN_OROMO_CAVALRY_DESCRIPTION" Language="ru_RU">
+			<Text>Нет штрафа к [ICON_Movement] перемещению по холмам. Получает +4 к [ICON_STRENGTH] боевой мощи на холмах.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="ru_RU">
+			<Text>Может израсходовать заряд строителя для компенсации 20% полной стоимости района. +50% к [ICON_PRODUCTION] производству при создании наземных юнитов ближнего боя.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="ru_RU">
+			<Text>Города, не являющиеся столицами и находящиеся в пределах 6 клеток от [ICON_Capital] столицы, получают +10% ко всем доходам. Остальные нестоличные города получают -15% ко всем доходам. +3 [ICON_Strength] к боевой мощи юнитов в пределах 6 клеток от [ICON_Capital] столицы.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_MUTAL_COMBAT_STRENGTH_NEAR_CAPITAL_DESCRIPTION" Language="ru_RU">
+			<Text>+3 к [ICON_Strength] боевой мощи юнитов в пределах 6 клеток от [ICON_Capital] своей столицы</Text>	
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="ru_RU">
+			<Text>Прибрежное чудо света из 2-х клеток, каждая из которых дает +3 [ICON_Food] еды и +2 [ICON_Science] науки. Дает бонус рифа за соседство кампусу.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="ru_RU">
+			<Text>При первом обращении города религиозным юнитом в свою религию вы получаете 10 [ICON_SCIENCE] науки за каждого [ICON_Citizen] жителя.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="ru_RU">
+            <Text>Клетки с потрясающим престижем, находящиеся рядом с чудом природы или горой, получают +2 к [ICON_SCIENCE] науке. Дополнительная 1 [ICON_SCIENCE] наука после изучения технологии "Астрономия". Клетки с потрясающим престижем, находящиеся рядом с чудом или лесом, получают +1 к [ICON_CULTURE] культуре. Дополнительно получают +1 [ICON_CULTURE] культуры после открытия "Просвещения". Все клетки в городе с национальным парком имеют +1 к престижу.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_HOLY_WATERS_DESCRIPTION" Language="ru_RU">
 			<Text>+10 к лечению на клетках города, обращенного в вашу религию.</Text>
@@ -33,12 +97,6 @@
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный район Финикии, база флота в вашем городе. Заменяет собой гавань, дешевле в строительстве. Можно построить только на побережье или клетках озера, прилегающих к суше.[NEWLINE][NEWLINE]+25% к [ICON_PRODUCTION] производству морских юнитов и поселенцев в этом городе. Все поврежденные морские юниты в границах города восстанавливают +100 ОЗ за ход.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет строителям строить миссию (уникально для Испании).[NEWLINE][NEWLINE]+2 [ICON_Faith] веры. +2 [ICON_Faith] веры, если построено не на том же континенте, что и ваша [ICON_Capital] столица.[NEWLINE][NEWLINE]+2 [ICON_Science] науки за каждый соседний кампус. +2 [ICON_Science] науки после открытия "Просвещения". Не может быть построена рядом с другой миссией.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет строителям строить миссию (уникально для Испании).[NEWLINE][NEWLINE]+2 [ICON_Faith] веры. +2 [ICON_Faith] веры, +1 [ICON_PRODUCTION] производства и +1 [ICON_Food] еды, если построено не на том же континенте, что и ваша [ICON_Capital] столица.[NEWLINE][NEWLINE]+1 [ICON_Science] науки за каждый соседний кампус и священное место. +2 [ICON_Science] науки после открытия "Просвещения". Не может быть построена рядом с другой миссией.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям строить асьенду (уникально для Великой Колумбии).[NEWLINE][NEWLINE]+2 [ICON_GOLD] золота, +1 [ICON_PRODUCTION] производства и +1 к [Icon_Housing] жилью. +1 [ICON_Food] пищи за каждые две соседние плантации (повышается до каждой плантации после открытия "Стандартизации"). Плантации и асьенды получают +1 [ICON_Production] производства за каждые две соседние асьенды (повышается до каждой асьенды после открытия "Быстрого развертывания"). Можно строить только на равнинах и лугах.</Text>
@@ -68,9 +126,6 @@
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="ru_RU">
 			<Text>+1 к [ICON_PRODUCTION] производству для клеток пойм и вулканической почвы. Городские улучшения, здания и районы не могут быть повреждены стихийными бедствиями.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="ru_RU">
-			<Text>Все юниты получают +1 к радиусу обзора. Повышение юнита не заканчивает его ход.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="ru_RU">
 			<Text>Все юниты получают +1 к радиусу обзора</Text>
@@ -137,9 +192,6 @@
 
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="ru_RU">
 			<Text>15% увеличение [ICON_Culture] Культуры, вырабатываемой этим городом. Религиозное влияние к соседним городам увеличено на 50%.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="ru_RU">
-			<Text>Юниты получают +5 к [ICON_Strength] боевой моще в атаке на чужом континенте и в защите на родном. +1 престижа для всех клеток города с национальным парком. Получает уникальный юнит «Мужественный всадник» после исследования технологии «Военная наука».</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="ru_RU">
 			<Text>+1 к [ICON_Production] производству и +1 [ICON_Faith] веры от каменоломен.</Text>
@@ -310,12 +362,6 @@
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_GARRISON_COMMANDER_DESCRIPTION" Language="ru_RU">
 			<Text>Обороняющиеся юниты на территории города получают +3 к [ICON_Strength] боевой мощи. Другие ваши города в пределах 9 клеток получают +4 к лояльности за ход в пользу вашей цивилизации.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный шумерский юнит. Мощная тяжелая кавалерия Древнего мира. Имеет шанс захвата побеждённых военных юнитов варваров и городов-государств. Нет штрафа в сражении против антикавалерийских юнитов. 4 [ICON_Movement] ОП, если начинает на открытой местности.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный район Греции для развития культуры. Заменяет театральную площадь, дешевле в строительстве. По завершении строительства амфитеатра дает 1 [ICON_Envoy] посла.[NEWLINE][NEWLINE]Бонус +1 к [ICON_Culture] культуре за соседство с центром города. Бонус +1 к [ICON_Culture] культуре за каждый соседний район и чудо света, кроме центра города. Можно построить только на холмах.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный норвежский юнит ближнего боя Средневековья. +2 [ICON_Movement] ОП, если движение начато на вражеской территории или на воде. +15 [ICON_Strength] к боевой мощи при атаке. Можно покупать юнит за веру.</Text>
