@@ -535,7 +535,7 @@
 				<Text>+25% do [ICON_PRODUCTION] produkcji wszystkich jednostek morskich i lądowych. Zmniejsza koszt utrzymania jednostek o 1 [ICON_GOLD] złota.[NEWLINE]Daje 1 tytuł [Icon_Governor] gubernatora i zwiększa zapasy zasobów strategicznych o 10.</Text>
 			</Replace>
 			<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="pl_PL">
-				<Text>+1 [ICON_AMENITIES] udogodnienie, +3 [ICON_FOOD] żywności i +3 [ICON_HOUSING] obszary mieszkalne w miastach z [ICON_Governor] gubernatorami.[NEWLINE]-2 do lojalności w miastach bez [ICON_Governor] gubernatorów.[NEWLINE]Daje 1 tytuł [Icon_Governor] gubernatora.</Text>
+				<Text>+1 [ICON_AMENITIES] udogodnienie, +3 [ICON_FOOD] żywności i +3 [ICON_HOUSING] obszary mieszkalne w miastach z [ICON_Governor] gubernatorami.[NEWLINE]-2 do lojalności w miastach bez [ICON_Governor] gubernatorów.[NEWLINE]Daje 2 tytuł [Icon_Governor] gubernatora.</Text>
 			</Replace>
 
 

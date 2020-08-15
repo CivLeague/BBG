@@ -361,7 +361,7 @@
 			<Text>펜, 붓과 목소리: [ICON_CivicBoosted] 영감을 발동할 때마다 시대 점수 +1을 얻습니다. 걸작 슬롯이 있는 건물을 건설하면 시대 점수 +1을 얻습니다. 황금기 시작 시점에서 선택하면 [ICON_CivicBoosted] 영감이 사회 제도 비용의 10%를 추가로 제공합니다. 각 도시는 전문 특수지구마다 [ICON_Culture] 문화 +2와 [ICON_Gold] 금 +1을 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="ko_KR">
-			<Text>[ICON_Governor] 총독이 있는 도시에 [ICON_Amenities] 쾌적도 +1, [ICON_Food] 식량 +3 및 [ICON_Housing] 주거공간 +3을 제공합니다.[NEWLINE][ICON_Governor] 총독이 없는 도시는 충성심 -2가 적용됩니다.[NEWLINE]보상으로 [Icon_Governor] 총독 타이틀 +1.</Text>
+			<Text>[ICON_Governor] 총독이 있는 도시에 [ICON_Amenities] 쾌적도 +1, [ICON_Food] 식량 +3 및 [ICON_Housing] 주거공간 +3을 제공합니다.[NEWLINE][ICON_Governor] 총독이 없는 도시는 충성심 -2가 적용됩니다.[NEWLINE]보상으로 [Icon_Governor] 총독 타이틀 +2.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ko_KR">
 			<Text>한국 특유의 과학 발전을 위한 특수지구로 캠퍼스 특수지구를 대체합니다. [ICON_SCIENCE] 과학 +2를 제공하며 인접한 광산 2개마다 [ICON_SCIENCE] 과학 +1의 인접 보너스를 추가로 획득합니다. 인접한 극장가 특수지구에서 [ICON_CULTURE] 문화 +1의 인접 보너스를 획득합니다. 언덕에 지어야 합니다. 서원이 완성되면 인접 타일에 문화 폭탄을 투여합니다.</Text>
