@@ -17,8 +17,8 @@
 			<Text>인접효과: 인접 불가사의 및 특수지구마다 일반적인 [ICON_Culture] 문화 보너스를 부여합니다. 언덕에만 지을 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="ko_KR">
-			<Text>수도의 모든 산출([ICON_Food][ICON_PRODUCTION][ICON_GOLD][ICON_Culture][ICON_SCIENCE][ICON_FAITH])이 +1 증가합니다. 스웨덴이 위인을 영입하면 [ICON_Favor] 외교적 환심 50을 얻습니다(일반 속도 기준). 스웨덴이 공장에서 [ICON_GreatEngineer] 위대한 기술자 점수 +1을, 대학교에서 [ICON_GreatScientist] 위대한 과학자 점수 +1을 얻습니다. 공장 및 대학교 건물을 건설할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 게임에 스웨덴이 있으면 산업 시대부터 3개의 특유한 세계 의회 경쟁이 추가됩니다.</Text>
-		</Replace>
+            <Text>정치 철학 사회제도를 완료하면, 수도의 모든 산출([ICON_Food][ICON_PRODUCTION][ICON_GOLD][ICON_Culture][ICON_SCIENCE][ICON_FAITH])이 +1 증가합니다. 스웨덴이 위인을 영입하면 [ICON_Favor] 외교적 환심 50을 얻습니다(일반 속도 기준). 스웨덴이 공장에서 [ICON_GreatEngineer] 위대한 기술자 점수 +1을, 대학교에서 [ICON_GreatScientist] 위대한 과학자 점수 +1을 얻습니다. 공장 및 대학교 건물을 건설할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 게임에 스웨덴이 있으면 산업 시대부터 3개의 특유한 세계 의회 경쟁이 추가됩니다.</Text>
+        </Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="ko_KR">
 			<Text>스페인 특유의 전도관을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2를 제공합니다. [ICON_Capital] 수도와 다른 대륙에 있으면 추가 [ICON_Faith] 신앙 +2를 제공합니다. 수도와 같은 대륙에 있으면 [ICON_Housing] 주거 +1을 제공합니다.[NEWLINE][NEWLINE]캠퍼스 특수지구 옆에 지으면 [ICON_Science] 과학 +2를 제공합니다. 계몽주의 사회 제도를 획득하면 [ICON_Science] 과학 +2를 추가 제공합니다. 다른 전도관 옆에 지을 수 없습니다.</Text>
 		</Replace>
