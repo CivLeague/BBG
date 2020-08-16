@@ -187,8 +187,8 @@ INSERT OR IGNORE INTO Units_XP2 (UnitType, ResourceCost) VALUES
 --==================
 -- Sweden
 --==================
--- +1 to all yields in cap after code of laws
-INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+-- +1 to all yields in cap
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
 	('SWEDEN_CAPITAL_CULTURE_BBG', 'MODIFIER_PLAYER_CAPITAL_CITY_ADJUST_CITY_YIELD_CHANGE'),
 	('SWEDEN_CAPITAL_SCIENCE_BBG', 'MODIFIER_PLAYER_CAPITAL_CITY_ADJUST_CITY_YIELD_CHANGE'),
 	('SWEDEN_CAPITAL_FAITH_BBG', 'MODIFIER_PLAYER_CAPITAL_CITY_ADJUST_CITY_YIELD_CHANGE'),
