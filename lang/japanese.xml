@@ -14,7 +14,7 @@
 			<Text>隣接ボーナス: 隣接する区域ごとに[ICON_Culture]文化力+1。丘陵タイルに建設されなければならない。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="ja_JP">
-			<Text>首都においてすべての産出+1。偉人を獲得した際に[ICON_Favor]外交的支持50を得る。工場から[ICON_GreatEngineer]大技術者ポイント+1、大学から[ICON_GreatScientist]大科学者ポイント+1。また、これらの建造物に対する[ICON_PRODUCTION]生産力+50%。スウェーデンがゲーム中に存在する場合、世界会議において3つの追加コンペティションが産業時代以降に登場するようになる。</Text>
+			<Text>政治哲学の発明後、首都においてすべての産出+1。偉人を獲得した際に[ICON_Favor]外交的支持50を得る。工場から[ICON_GreatEngineer]大技術者ポイント+1、大学から[ICON_GreatScientist]大科学者ポイント+1。また、これらの建造物に対する[ICON_PRODUCTION]生産力+50%。スウェーデンがゲーム中に存在する場合、世界会議において3つの追加コンペティションが産業時代以降に登場するようになる。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がスペイン固有の施設である修道院を建設できるようになる。[NEWLINE][NEWLINE][ICON_Faith] 信仰力+2、自文明の首都とは異なる大陸に建設された場合さらに[ICON_Faith] 信仰力+2。自文明の首都と同じ大陸に建設された場合は[ICON_HOUSING]住宅+1。[NEWLINE][NEWLINE]キャンパスに隣接している場合[ICON_Science] 科学力+2。[NEWLINE][NEWLINE]啓蒙思想を獲得後[ICON_Science] 科学力+2。他の修道院に隣接することはできない。</Text>
