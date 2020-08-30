@@ -296,7 +296,7 @@ UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_GUILDS_REQUIREMENTS' WH
 -- Greece
 --==================
 -- acropolis only +1 culture when adj to city center
-DELETE FROM District_Adjacencies WHERE DistrictType='DISTRICT_ACROPOLIS' AND YieldChangeId='DISTRICT_CULTURE_CITY_CENTER';
+DELETE FROM District_Adjacencies WHERE DistrictType='DISTRICT_ACROPOLIS' AND YieldChangeId='District_Culture_City_Center';
 -- Greece gets their extra envoy at amphitheater instead of acropolis
 DELETE FROM DistrictModifiers WHERE DistrictType='DISTRICT_ACROPOLIS';
 INSERT OR IGNORE INTO TraitModifiers

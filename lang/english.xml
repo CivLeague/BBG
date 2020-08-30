@@ -14,7 +14,7 @@
 			<Text>Adjacency: Standard [ICON_Culture] Culture bonus for each adjacent district. Can only be built on Hills.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="en_US">
-			<Text>+1 to all yields in Sweden's capital city after unlocking Political Philosophy. Sweden gains 50 [ICON_Favor] Diplomatic Favor when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards these buildings. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.</Text>
+			<Text>+1 to all yields in Sweden's capital city. Sweden gains 50 [ICON_Favor] Diplomatic Favor when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards these buildings. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. +2 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital. +1 [ICON_HOUSING] Housing if built on home continent.[NEWLINE][NEWLINE]+2 [ICON_Science] Science if built next to a Campus district. +2 Science at The Enlightenment. Cannot be built next to another Mission</Text>

@@ -24,8 +24,8 @@ DELETE FROM Improvement_ValidTerrains WHERE ImprovementType='IMPROVEMENT_HACIEND
 --==================
 -- Maya
 --==================
--- reduce combat bonus from 5 to 3
-UPDATE ModifierArguments SET Value='5' WHERE ModifierId='MUTAL_NEAR_CAPITAL_COMBAT' AND Name='Amount';
+-- reduce combat bonus to 3 from 5
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='MUTAL_NEAR_CAPITAL_COMBAT' AND Name='Amount';
 -- set citizen yields to same as other campuses
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' AND DistrictType="DISTRICT_OBSERVATORY";
 -- start biases: after coastals and tundra and desert; delete non-plantation lux biases; add banana bias; make flat land bias last priority
@@ -57,9 +57,6 @@ DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND Re
 --==================
 -- City-States
 --==================
-UPDATE ModifierArguments SET Value='10' WHERE ModifierId='NIHANG_BARRACKS_STRENGTH' AND Name='Amount';
-UPDATE ModifierArguments SET Value='10' WHERE ModifierId='NIHANG_ARMORY_STRENGTH' AND Name='Amount';
-UPDATE ModifierArguments SET Value='10' WHERE ModifierId='NIHANG_ACADEMY_STRENGTH' AND Name='Amount';
 
 
 --==================

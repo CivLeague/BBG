@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="pl_PL">
+			<Text>Gdy po raz pierwszy nawrócisz dane miasto przy użyciu jednostki religijnej, otrzymasz 10 [ICON_SCIENCE] nauki za każdego mieszkającego w nim [ICON_Citizen] obywatela.</Text>
+		</Replace>
 
 
 		<!-- ================ C I T Y   P R O J E C T S ================ -->
@@ -40,8 +43,14 @@
 			<Replace Tag="LOC_PROMOTION_COMBAT_HOME_CONTINENT_DESCRIPTION" Language="pl_PL">
 				<Text>+5 do obrony na ojczystym kontynencie</Text>
 			</Replace>
+			<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="pl_PL">
+				<Text>Pola o niesamowitym poziomie atrakcyjności sąsiadujące z cudem natury lub górą zyskują +1 do [ICON_SCIENCE] nauki oraz dodatkowe +1 do [ICON_SCIENCE] po opracowaniu technologii astronomii. Pola o niesamowitym poziomie atrakcyjności sąsiadujące z cudem lub lasem zyskują +1 do [ICON_CULTURE] kultury oraz dodatkowe +1 do [ICON_CULTURE] kultury po ukończeniu ideii oświecenia. Wszystkie pola w mieście z parkiem narodowym zyskują +1 do atrakcyjności.</Text>
+			</Replace>
 			<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="pl_PL">
-				<Text>Jednostki otrzymują +5 do [ICON_STRENGTH] siły bojowej podczas ataku na obcym kontynencie lub podczas obrony na ojczystym kontynencie. +1 do atrakcyjności wszystkich pól miasta z parkiem narodowym. Po odkryciu nauk militarnych otrzymujesz unikalną jednostkę rough ridera.</Text>
+				<Text>Jednostki otrzymują +5 do [ICON_STRENGTH] siły bojowej podczas ataku na obcym kontynencie lub podczas obrony na ojczystym kontynencie. +1 do atrakcyjności wszystkich pól miasta z parkiem narodowym. Po odkryciu technologii nauk militarnych otrzymujesz unikalną jednostkę rough ridera.</Text>
+			</Replace>
+			<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="pl_PL">
+				<Text>Jednostki otrzymują +5 do [ICON_Strength] siły bojowej podczas obrony na ojczystym kontynencie oraz podczas ataku na obcym kontynencie. Emisariusze wysłani do miast-państw, z którymi łączą cię [ICON_TradeRoute] szlaki handlowe, liczą się podwójnie. Po odkryciu technologii nauk militarnych otrzymujesz unikalną jednostkę rough ridera.</Text>
 			</Replace>
 			<Replace Tag="LOC_UNIT_AMERICAN_ROUGH_RIDER_DESCRIPTION" Language="pl_PL">
 				<Text>Jednostka epoki przemysłowej dostępna wyłącznie dla Ameryki, gdy przywódcą jest Teddy Roosevelt. Zyskują premie do [ICON_CULTURE] kultury za likwidowanie wroga na kontynencie z ich [ICON_CAPITAL] stolicą. +5 do [ICON_STRENGTH] siły bojowej podczas walki na wzgórzach. Niższy koszt utrzymania.</Text>
@@ -63,6 +72,9 @@
 			<!-- ================ Aztec ================ -->
 			<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="pl_PL">
 				<Text>Unikalna budowla Azteków. Zapewnia [ICON_AMENITIES] udogodnienia, +3 do [ICON_CULTURE] kultury i punkt [ICON_GreatGeneral] wielkiego generała.</Text>
+			</Replace>
+			<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="pl_PL">
+				<Text>Używaj potencjału budowniczych, żeby pokryć 20% początkowego kosztu dzielnicy. +50% do produkcji lądowych jednostek walczących w zwarciu.</Text>
 			</Replace>
 
 			<!-- ================ Canada ================ -->
@@ -117,7 +129,7 @@
 
 			<!-- ================ Egypt ================ -->
 			<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="pl_PL">
-				<Text>Odblokowuje zdolność budowniczych pozwalającą wznosić misje, dostępne tylko w Hiszpanii.[NEWLINE][NEWLINE]+2 do [ICON_FAITH] wiary. +2 do [ICON_FAITH] wiary, +1 do [ICON_PRODUCTION] produkcji i +1 do [ICON_FOOD] żywności, jeśli znajduje się na innym kontynencie niż twoja [ICON_CAPITAL] stolica. +1 do [ICON_SCIENCE] nauki za każdy sąsiadujący kampus i dzielnicę świątynną.[NEWLINE][NEWLINE]+2 do [ICON_SCIENCE] nauki po opracowaniu idei oświecenia.</Text>
+				<Text>Odblokowuje zdolność budowniczych pozwalającą wznosić misje, dostępne tylko dla Hiszpanii.[NEWLINE][NEWLINE]+2 do [ICON_FAITH] wiary. +2 do [ICON_FAITH] wiary, +1 do [ICON_PRODUCTION] produkcji i +1 do [ICON_FOOD] żywności, jeśli znajduje się na innym kontynencie niż twoja [ICON_CAPITAL] stolica. +1 do [ICON_SCIENCE] nauki za każdy sąsiadujący kampus i dzielnicę świątynną. +2 do [ICON_SCIENCE] nauki po opracowaniu idei oświecenia. Nie może być wzniesiona obok innej misji.</Text>
 			</Replace>
 			<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="pl_PL">
 				<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść sfinksa, dostępnego tylko dla Egiptu.[NEWLINE][NEWLINE]+1 do [ICON_FAITH] wiary i +1 do [ICON_CULTURE] kultury. +2 do atrakcyjności. +1 do [ICON_FAITH] wiary i +1 do [ICON_CULTURE], jeśli znajduje się obok cudu. +1 do [ICON_FOOD] żywności i +1 do [ICON_PRODUCTION] produkcji jesli znajduje się na pustyni oraz +1 do [ICON_CULTURE] kultury, jeśli znajduje się na równinach zalewowych. Zapewnia dodatkową [ICON_CULTURE] kulturę po odkryciu historii naturalnej. Zapewnia [ICON_TOURISM] turystykę po opracowaniu technologii lotu. Nie można zbudować obok innego sfinksa. Nie można zbudować na śniegu i wzgórzach ze śniegiem.</Text>
@@ -133,6 +145,23 @@
 			</Replace>
 			<Replace Tag="LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_DESCRIPTION" Language="pl_PL">
 				<Text>Starożytna jednostka dystansowa dostępna wyłącznie dla Egiptu. Zastępuje ciężkie rydwany. 4 punkty [ICON_MOVEMENT] ruchu, gdy rozpoczyna na otwartym terenie.</Text>
+			</Replace>
+
+			<!-- ================ Ethiopia ================ -->
+			<Replace Tag="LOC_ABILITY_ETHIOPIAN_OROMO_CAVALRY_DESCRIPTION" Language="pl_PL">
+				<Text>Brak kary do ruchu podczas przemieszczania się na wzgórzach oraz zyskuje +4 do [ICON_STRENGTH] siły bojowej kiedy walczy na wzgórzach.</Text>
+			</Replace>
+			<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="pl_PL">
+				<Text>Międzynarodowe szlaki handlowe Etiopii zapewniają +0,5 do [ICON_Faith] wiary za każdy zasób w mieście startu. Zasoby dają +1 do [ICON_Faith] wiary za każdą kopię należącą do miasta. Etiopia może nabywać muzea archeologiczne i archeologów za [ICON_Faith] wiarę.</Text>
+			</Replace>
+			<Replace Tag="LOC_TRAIT_LEADER_MENELIK_DESCRIPTION" Language="pl_PL">
+				<Text>Otrzymujesz [ICON_SCIENCE] naukę i [ICON_CULTURE] kulturę równą 15% [ICON_FAITH] wiary generowanej w miastach założonych na wzgórzach.</Text>
+			</Replace>
+			<Replace Tag="LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_DESCRIPTION" Language="pl_PL">
+				<Text>Średniowieczna jednostka lekkiej kawalerii dostępna wyłącznie dla Etiopii. Ma zwiększony zasięg widzenia i nie otrzymuje kary do [ICON_Movement] ruchu podczas przemieszczania się na wzgórzach oraz otrzymuje +4 do [ICON_STRENGTH] siły bojowej walcząc na wzgórzach.</Text>
+			</Replace>
+			<Replace Tag="LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>Średniowieczna jednostka lekkiej kawalerii dostępna wyłącznie dla Etiopii. Silniejsza i dysponująca większym zasięgiem widzenia niż kawaleria courserska, którą zastępuje. Nie otrzymuje kary do [ICON_Movement] ruchu podczas przemieszczania się na wzgórzach oraz otrzymuje +4 do [ICON_STRENGTH] siły bojowej walcząc na wzgórzach.</Text>
 			</Replace>
 
 			<!-- ================ France ================ -->
@@ -181,6 +210,9 @@
 			<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="pl_PL">
 				<Text>+2 do [ICON_Strength] siły bojowej za każdą sąsiadującą jednostkę llanero.</Text>
 			</Replace>
+			<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="pl_PL">
+				<Text>Ukończenie projektu daje premię +60 do [ICON_CULTURE] kultury i +60 do [ICON_TOURISM] turystyki (przy standardowej prędkości), uzależnioną od liczby dodatkowych kopii zasobów luksusowych posiadanych przez Francję.</Text>
+			</Replace>
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="pl_PL">
 				<Text>Wszystkie jednostki mają +1 do zsięgu widzenia. Awansowanie jednostki nie kończy jej tury.</Text>
 			</Replace>
@@ -201,7 +233,7 @@
 
 			<!-- ================ Greece ================ -->
 			<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="pl_PL">
-				<Text>Unikalna dzielnica Grecji przeznaczona na obiekty kulturalne. Zastępuje dzielnicę kulturalną, a jej wzniesienie jest tańsze. Po ukończeniu budowy amfiteatru przyznaje 1 [ICON_Envoy] emisariusza.[NEWLINE][NEWLINE]+1 do [ICON_CULTURE] kultury za sąsiadujące centrum miasta. +1 do [ICON_CULTURE] kultury za każdy sąsiadujący cud i dzielnicę. Można budować jedynie na wzgórzach.</Text>
+				<Text>Unikalna dzielnica Grecji przeznaczona na obiekty kulturalne. Zastępuje dzielnicę kulturalną, a jej wzniesienie jest tańsze. Po ukończeniu budowy amfiteatru przyznaje 1 [ICON_Envoy] emisariusza.[NEWLINE][NEWLINE]+1 do [ICON_CULTURE] kultury za każdą sąsiadującą dzielnicę. Można budować jedynie na wzgórzach.</Text>
 			</Replace>
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="pl_PL">
 				<Text>Jedno dodatkowe miejsce na dziką kartę doktryny w dowolnym ustroju.[NEWLINE][NEWLINE]Emisariusz za każdy ukończony amfiteatr.</Text>
@@ -316,6 +348,14 @@
 				<Text>Unikalna renesansowa jednostka Mapuczów. +1 do [ICON_MOVEMENT] ruchu. Plądrowanie kosztuje 1 punkt [ICON_MOVEMENT] ruchu.</Text>
 			</Replace>
 
+			<!-- ================ Maya ================ -->
+			<Replace Tag="LOC_ABILITY_MUTAL_COMBAT_STRENGTH_NEAR_CAPITAL_DESCRIPTION" Language="pl_PL">
+				<Text>+3 do [ICON_Strength] siły bojowej jednostek znajdujących się w promieniu 6 pól od [ICON_Capital] stolicy.</Text>
+			</Replace>
+			<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="pl_PL">
+				<Text>Niebędące stolicą miasta, które znajdują się w promieniu 6 pól od [ICON_Capital] stolicy, zyskują +10% do wszystkich przychodów. Pozostałe miasta niebędące stolicą otrzymują karę -15% do wszystkich przychodów. +3 do [ICON_Strength] siły bojowej jednostek znajdujących się w promieniu 6 pól od [ICON_Capital] stolicy.</Text>
+			</Replace>
+
 			<!-- ================ Mongolia ================ -->
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_MONGOLIAN_ORTOO_DESCRIPTION" Language="pl_PL">
 				<Text>Wszystkie mongolskie jednostki zyskują podwojenie premii do [ICON_STRENGTH] siły bojowej wynikającej z posiadania większego poziomu [ICON_VisLimited] dyplomatycznej widoczności niż ich przeciwnik. Rozpoczęcie budowy [ICON_TradeRoute] szlaku handlowego automatycznie tworzy [ICON_TradingPost] punkt handlowy w mieście docelowym.</Text>
@@ -428,7 +468,7 @@
 				<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść chateau dostępne tylko Francji.[NEWLINE][NEWLINE]+2 do [ICON_CULTURE] kultury. +1 do atrakcyjności. +1 do [ICON_CULTURE] kultury za każdy sąsiadujący cud (+2 po opracowaniu technologii lotu). +1 [ICON_GOLD] złota za każdy sąsiadujący zasób luksusowy. Zapewnia [ICON_TOURISM] turystykę po opracowaniu technologii lotu. Można budować tylko w sąsiedztwie rzek.</Text>
 			</Replace>
 			<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="pl_PL">
-				<Text>Odblokowuje zdolność budowniczych pozwalającą wznosić misje, dostępne tylko w Hiszpanii.[NEWLINE][NEWLINE]+2 do [ICON_FAITH] wiary. +2 do [ICON_FAITH] wiary, jeśli znajduje się na innym kontynencie niż twoja [ICON_CAPITAL] stolica.[NEWLINE][NEWLINE]+2 do [ICON_SCIENCE] nauki, jeżeli zostanie zbudowana obok kampusu. [NEWLINE][NEWLINE]+2 do [ICON_SCIENCE] nauki po opracowaniu idei oświecenia.</Text>
+				<Text>Odblokowuje zdolność budowniczych pozwalającą wznosić misje, dostępne tylko dla Hiszpanii.[NEWLINE][NEWLINE]+2 do [ICON_FAITH] wiary. +2 do [ICON_FAITH] wiary, jeśli znajduje się na innym kontynencie niż twoja [ICON_CAPITAL] stolica.[NEWLINE][NEWLINE]+2 do [ICON_SCIENCE] nauki, jeżeli zostanie zbudowana obok kampusu. [NEWLINE][NEWLINE]+2 do [ICON_SCIENCE] nauki po opracowaniu idei oświecenia. Nie może zostać wzniesiona obok innej misji.</Text>
 			</Replace>
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="pl_PL">
 				<Text>Możliwość budowy flot i armad wcześniej niż zwykle (najemnicy i merkantylizm). [ICON_TradeRoute] Zagraniczne szlaki handlowe biegnące przez wiele kontynentów otrzymują premię [ICON_GOLD] złota, zaś te, które łączą twoje własne miasta na różnych kontynentach – premię [ICON_FOOD] żywności i [ICON_PRODUCTION] produkcji. +2 do lojalności na turę dla miast, które mają misję w sąsiedztwie centrum i które nie znajdują się na kontynencie twojej pierwszej [ICON_CAPITAL] stolicy.</Text>
@@ -459,15 +499,7 @@
 
 			<!-- ================ Sweden ================ -->
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="pl_PL">
-				<Text>Szwecja zyskuje 50 [ICON_Favor] względów dyplomatycznych, gdy zdobywa wielką osobę (przy standardowej prędkości). Szwecja zyskuje +1 punkt [ICON_GreatEngineer] wielkiego inżyniera dzięki fabrykom i +1 punkt [ICON_GreatScientist] wielkiego naukowca dzięki uniwersytetom oraz +50% do [ICON_PRODUCTION] produkcji przy budownie tych budynków. Udział Szwecji w rozgrywce dodaje trzy unikalne rywalizacje Kongresu Światowego dostępne od epoki przemysłowej.</Text>
-			</Replace>
-
-			<!-- ================ United States ================ -->
-			<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="pl_PL">
-				<Text>Pola o niesamowitym poziomie atrakcyjności sąsiadujące z cudem natury lub górą zyskują +1 do [ICON_SCIENCE] nauki oraz dodatkowe +1 do [ICON_SCIENCE] po opracowaniu technologii astronomii. Pola o niesamowitym poziomie atrakcyjności sąsiadujące z cudem lub lasem zyskują +1 do [ICON_CULTURE] kultury oraz dodatkowe +1 do [ICON_CULTURE] kultury po ukończeniu ideii oświecenia. Wszystkie pola w mieście z parkiem narodowym zyskują +1 do atrakcyjności.</Text>
-			</Replace>
-			<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="pl_PL">
-				<Text>Jednostki otrzymują +5 do [ICON_Strength] siły bojowej podczas obrony na ojczystym kontynencie oraz podczas ataku na obcym kontynencie. Emisariusze wysłani do miast-państw, z którymi łączą cię [ICON_TradeRoute] szlaki handlowe, liczą się podwójnie. Po odkryciu technologii nauk militarnych otrzymujesz unikalną jednostkę rough ridera.</Text>
+				<Text>+1 do wszystkich dochodów w stolicy po odblokowaniu ideii filozofii politycznej. Szwecja zyskuje 50 [ICON_Favor] względów dyplomatycznych, gdy zdobywa wielką osobę. Szwecja zyskuje +1 punkt [ICON_GreatEngineer] wielkiego inżyniera dzięki fabrykom i +1 punkt [ICON_GreatScientist] wielkiego naukowca dzięki uniwersytetom oraz +50% do [ICON_PRODUCTION] produkcji przy wznoszeniu tych budowli. Udział Szwecji w rozgrywce dodaje trzy unikalne rywalizacje Kongresu Światowego dostępne od epoki przemysłowej.</Text>
 			</Replace>
 
 			<!-- ================ Zulu ================ -->
@@ -511,6 +543,11 @@
 
 		<!-- ================ D I S T R I C T S ================ -->
 
+			<!-- ================ Acropolis ================ -->
+			<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="pl_PL">
+				<Text>Sąsiedztwo: Standardowa premia do [ICON_Culture] kultury za każdą sąsiadującą dzielnicę. Można budować jedynie na wzgórzach.</Text>
+			</Replace>
+
 			<!-- ================ Airport ================ -->
 			<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="pl_PL">
 				<Text>+50% doświadczenia bojowego dla jednostek powietrznych wyszkolonych w tym mieście. +2 miejsce na jednostki powietrzne w dzielnicy z aerodromem. Po odblokowaniu idei błyskawicznej relokacji umożliwia transportowanie drogą powietrzną jednostek lądowych pomiędzy dzielnicami z aerodromem, w których znajdują się lotniska. +2 do [ICON_RESOURCE_ALUMINUM] aluminium jeżeli zostało odkryte.</Text>
@@ -535,8 +572,15 @@
 				<Text>+25% do [ICON_PRODUCTION] produkcji wszystkich jednostek morskich i lądowych. Zmniejsza koszt utrzymania jednostek o 1 [ICON_GOLD] złota.[NEWLINE]Daje 1 tytuł [Icon_Governor] gubernatora i zwiększa zapasy zasobów strategicznych o 10.</Text>
 			</Replace>
 			<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="pl_PL">
-				<Text>+1 [ICON_AMENITIES] udogodnienie, +3 [ICON_FOOD] żywności i +3 [ICON_HOUSING] obszary mieszkalne w miastach z [ICON_Governor] gubernatorami.[NEWLINE]-2 do lojalności w miastach bez [ICON_Governor] gubernatorów.[NEWLINE]Daje 2 tytuł [Icon_Governor] gubernatora.</Text>
+				<Text>+1 [ICON_AMENITIES] udogodnienie, +3 [ICON_FOOD] żywności i +3 [ICON_HOUSING] obszary mieszkalne w miastach z [ICON_Governor] gubernatorem.[NEWLINE]-2 do lojalności w miastach bez [ICON_Governor] gubernatora.[NEWLINE]Daje 2 tytuł [Icon_Governor] gubernatora.</Text>
 			</Replace>
+
+			<!-- ================ Harbour ================ -->
+
+				<!-- Seaport -->
+				<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="pl_PL">
+					<Text>+25% doświadczenia bojowego dla wszystkich jednostek morskich wyszkolonych w tym mieście. Umożliwia bezpośrednie szkolenie flot i armad. Koszt szkolenia flot i armad zmniejszony o 25%. +2 [ICON_GOLD] złota ze wszystkich pól wybrzeża należących do tego miasta. +1 [ICON_COAL] węgla na turę.</Text>
+				</Replace>
 
 
 		<!-- ================ G O V E R N M E N T S ================ -->
@@ -732,6 +776,12 @@
 			<Replace Tag="LOC_BELIEF_RELIGIOUS_COMMUNITY_DESCRIPTION" Language="pl_PL">
 				<Text>Dzielnica świątynna, Kaplice i świątynie zapewniają +1 [ICON_HOUSING] obszar mieszkalny.</Text>
 			</Replace>
+			<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="pl_PL">
+				<Text>Rzeki dają +2 do [ICON_FAITH] wiary bonus za sąsiedztwo dla dzielnicy świątyynnej. +1 [ICON_Amenities] udogodnienie dla miast mających dzielnicę świątynną sąsiadującą z rzeką.</Text>
+			</Replace>
+			<Replace Tag="LOC_BELIEF_RIVER_GODDESS_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>Rzeki dają +2 do [ICON_FAITH] wiary bonus za sąsiedztwo dla dzielnicy świątyynnej. +1 [ICON_Amenities] udogodnienie orz +1 do [ICON_HOUSING] obszarów mieszkalnych dla miast mających dzielnicę świątynną sąsiadującą z rzeką.</Text>
+			</Replace>
 			<Replace Tag="LOC_BELIEF_TITHE_DESCRIPTION" Language="pl_PL">
 				<Text>+1 do [ICON_GOLD] złota za każdych 3 wyznawców tej religii.</Text>
 			</Replace>
@@ -832,6 +882,9 @@
 		<!-- ================ W O N D E R S ================ -->
 
 			<!-- ================ Natural ================ -->
+			<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="pl_PL">
+				<Text>Zajmujący dwa pola cud natury, który można znaleźć na wybrzeżu. Zapewnia +3 do [ICON_Food] żywności i +2 do [ICON_Science] nauki. Dodatkowa premia za sąsiedztwo dla kampusu.</Text>
+			</Replace>
 			<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_DESCRIPTION" Language="pl_PL">
 				<Text>Zajmujący trzy pola cud natury. Jednostki, które znajdą się we wnętrzu cudu, przenoszone są na odległe pole oceanu, a jednostki morskie zyskują dzięki temu umiejętność „Tajemnicze prądy” (+1 do [ICON_Movement] ruchu).</Text>
 			</Replace>
