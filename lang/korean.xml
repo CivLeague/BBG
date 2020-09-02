@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>턴당 [ICON_Favor] 외교적 환심 +3. 도시 국가의 유닛 징병에 소모되는 [ICON_Gold] 금이 절반으로 감소합니다.[NEWLINE]플레이어가 종주국인 경우 도시 국가의 유닛(징병된 유닛 포함)이 [ICON_Strength] 전투력 +4를 얻습니다.[NEWLINE][Icon_Governor] 총독 타이틀 +1을 부여합니다. [ICON_Envoy] 사절 +2 및 턴당 [ICON_Envoy] 사절 획득을 위한 우호도 점수 +2.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다. 원형극장 건물이 건설되면 [ICON_Envoy] 사절 1명을 획득합니다.[NEWLINE][NEWLINE]인접한 각 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 인접한 각 불가사의, 유흥단지 및 워터 파크에서 보너스 [ICON_Culture] 문화 +2를 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION1_DESCRIPTION" Language="ko_KR">
+			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다. 원형극장 건물이 건설되면 [ICON_Envoy] 사절 1명을 획득합니다.[NEWLINE][NEWLINE]인접한 각 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 인접한 각 불가사의에서 보너스 [ICON_Culture] 문화 +2를 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="ko_KR">
+			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다. 원형극장 건물이 건설되면 [ICON_Envoy] 사절 1명을 획득합니다.[NEWLINE][NEWLINE]인접한 각 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 인접한 각 불가사의에서 보너스 [ICON_Culture] 문화 +2를 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
+		</Replace>		
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="ko_KR">
+			<Text>인접효과: 인접 특수지구마다 일반적인 [ICON_Culture] 문화 보너스를 부여합니다. 인접 불가사의마다 상당한 [ICON_Culture] 문화 보너스를 부여합니다. 언덕에만 지을 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="ko_KR">
+			<Text>스코틀랜드 특유의 골프 코스를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_AMENITIES] 쾌적도 +2, [ICON_GOLD] 금 +2 및 [ICON_CULTURE] 문화 +1을 제공합니다. 도심부 특수지구가 인접해 있으면 [ICON_GOLD] 금 +1 및 [ICON_CULTURE] 문화 +1, 유흥단지 특수지구가 인접해 있으면 [ICON_CULTURE] 문화 +1을 제공합니다. 기술 발전표와 사회 제도 진보에 따라 [ICON_CULTURE] 문화, [ICON_GOLD] 금, [ICON_TOURISM] 관광 및 [ICON_HOUSING] 주거공간이 추가됩니다. 사막이나 사막 언덕에 배치할 수 없으며 도시당 하나만 가능합니다. 골프 코스가 있는 타일은 교체할 수 없습니다. 매력도 +1을 제공합니다.</Text>
+		</Replace>		
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="ko_KR">
+			<Text>스코틀랜드 특유의 골프 코스를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_AMENITIES] 쾌적도 +1, [ICON_GOLD] 금 +2 및 [ICON_CULTURE] 문화 +1을 제공합니다. 도심부 특수지구가 인접해 있으면 [ICON_GOLD] 금 +1 및 [ICON_CULTURE] 문화 +1, 유흥단지 특수지구가 인접해 있으면 [ICON_CULTURE] 문화 +1을 제공합니다. 기술 발전표와 사회 제도 진보에 따라 [ICON_CULTURE] 문화, [ICON_GOLD] 금, [ICON_TOURISM] 관광 및 [ICON_HOUSING] 주거공간이 추가됩니다. 사막이나 사막 언덕에 배치할 수 없으며 도시당 하나만 가능합니다. 골프 코스가 있는 타일은 교체할 수 없습니다. 매력도 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG" Language="ko_KR">
+			<Text>처치한 도시 국가 유닛을 일정한 확률로 포획합니다.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="ko_KR">
 		  <Text>[ICON_Capital] 수도 6타일 이내의 비수도 도시들의 모든 생산량이 +10% 증가합니다. 다른 비수도 도시들의 모든 생산량에는 -15%가 적용됩니다. [ICON_Capital] 수도 6타일 이내의 유닛에 [ICON_Strength] 전투력 +3을 부여합니다.</Text>
 		</Replace>
@@ -9,12 +34,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="ko_KR">
 			<Text>모든 유닛에게 시야 +1을 부여합니다. 경기병 유닛을 진급시킬 때 해당 유닛의 턴이 끝나지 않습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="ko_KR">
-			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다. 원형극장 건물이 건설되면 [ICON_Envoy] 사절 1명을 획득합니다.[NEWLINE][NEWLINE]인접한 각 불가사의 및 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="ko_KR">
-			<Text>인접효과: 인접 불가사의 및 특수지구마다 일반적인 [ICON_Culture] 문화 보너스를 부여합니다. 언덕에만 지을 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="ko_KR">
             <Text>수도의 모든 산출([ICON_Food][ICON_PRODUCTION][ICON_GOLD][ICON_Culture][ICON_SCIENCE][ICON_FAITH])이 +1 증가합니다. 스웨덴이 위인을 영입하면 [ICON_Favor] 외교적 환심 50을 얻습니다(일반 속도 기준). 스웨덴이 공장에서 [ICON_GreatEngineer] 위대한 기술자 점수 +1을, 대학교에서 [ICON_GreatScientist] 위대한 과학자 점수 +1을 얻습니다. 공장 및 대학교 건물을 건설할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 게임에 스웨덴이 있으면 산업 시대부터 3개의 특유한 세계 의회 경쟁이 추가됩니다.</Text>
@@ -397,7 +416,7 @@
 			<Text>도시 성장을 위한 로마 특유의 특수지구입니다. 송수로 특수지구를 대체하며 건설 비용이 더 낮습니다. 인접한 특수지구 타일 2개당 보너스 [ICON_Culture] 문화 +1을 획득합니다.[NEWLINE][NEWLINE]인접한 강, 호수, 오아시스 또는 산으로부터 이 도시에 담수 원천을 제공합니다. 담수를 확보하지 못한 도시에는 [ICON_Housing] 주거공간을 최대 6만큼 제공합니다. 하지만 이미 담수를 확보한 도시에는 [ICON_Housing] 주거공간 +2를 제공합니다. 목욕탕은 위와 관계없이 추가 보너스[ICON_Housing] 주거공간 +2 및 [ICON_Amenities] 쾌적도 +1을 제공합니다. 도심부 옆에 지어야 합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +1을 제공합니다.[NEWLINE][NEWLINE]불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다. 범람원이 아닌 사막에 지으면 [ICON_Food] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다. 범람원에 지으면 [ICON_CULTURE] 문화 +1을 제공합니다.[NEWLINE][NEWLINE]외교부 사회 제도를 발견하면 [ICON_CULTURE] 문화를 추가로 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 다른 스핑크스 옆에 지을 수 없습니다. 설원 또는 설원 언덕에 지을 수 없습니다.</Text>
+			<Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +2을 제공합니다.[NEWLINE][NEWLINE]불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다. 범람원이 아닌 사막에 지으면 [ICON_Food] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다. 범람원에 지으면 [ICON_CULTURE] 문화 +1을 제공합니다.[NEWLINE][NEWLINE]외교부 사회 제도를 발견하면 [ICON_CULTURE] 문화를 추가로 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 다른 스핑크스 옆에 지을 수 없습니다. 설원 또는 설원 언덕에 지을 수 없습니다.</Text>
 		</Replace>				
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ko_KR">
 			<Text>이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2 및 [ICON_Culture] 문화 +1을 제공합니다. 매력도 +1을 제공합니다. 불가사의 옆에 지으면 [ICON_Faith] 신앙 +1 및 [ICON_Culture] 문화 +1을 추가 제공합니다. 범람원이 아닌 사막에 지으면 [ICON_Food] 식량 +1 및 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다. 범람원에 지으면 [ICON_CULTURE] 문화 +1을 제공합니다.[NEWLINE][NEWLINE]외교부 사회 제도를 발견하면 [ICON_CULTURE] 문화를 추가로 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 제공합니다. 다른 스핑크스 옆에 지을 수 없습니다. 설원 또는 설원 언덕에 지을 수 없습니다.</Text>
@@ -735,10 +754,6 @@
 		<!-- Russia -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="ko_KR">
 			<Text>기병대를 대체하는 러시아 특유의 산업 시대 유닛입니다. 고향 영토 내 또는 인근에서 전투할 경우 전투력 +5를 획득합니다. [ICON_Movement] 이동력이 남아있다면 공격 후 이동이 가능합니다.</Text>
-		</Replace>
-		<!-- Scotland -->
-		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="ko_KR">
-			<Text>스코틀랜드 특유의 골프 코스를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_AMENITIES] 쾌적도 +1, [ICON_GOLD] 금 +2 및 [ICON_CULTURE] 문화 +1을 제공합니다. 도심부 특수지구가 인접해 있으면 [ICON_GOLD] 금 +1 및 [ICON_CULTURE] 문화 +1, 유흥단지 특수지구가 인접해 있으면 [ICON_CULTURE] 문화 +1을 제공합니다. 기술 발전표와 사회 제도 진보에 따라 [ICON_CULTURE] 문화, [ICON_GOLD] 금, [ICON_TOURISM] 관광 및 [ICON_HOUSING] 주거공간이 추가됩니다. 사막이나 사막 언덕에 배치할 수 없으며 도시당 하나만 가능합니다. 골프 코스가 있는 타일은 교체할 수 없습니다. 매력도 +1을 제공합니다.</Text>
 		</Replace>
         <!-- Scythia -->
         <Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="ko_KR">

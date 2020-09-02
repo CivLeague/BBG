@@ -646,7 +646,7 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value, Extra) VALUES
 	('TRAIT_ADJUST_PILLAGE_BBG', 'Amount', '2', '-1');
 UPDATE TraitModifiers SET ModifierId='TRAIT_ADJUST_PILLAGE_BBG' WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU' AND ModifierId='TRAIT_ADJUST_JOINTWAR_PLUNDER';
 -- Sumerian War Carts are now unlocked at horseback riding and buffed
-UPDATE Units SET Cost=80, Maintenance=2, BaseMoves=4, Combat=36, StrategicResource='RESOURCE_HORSES', PrereqTech='TECH_HORSEBACK_RIDING', MandatoryObsoleteTech='TECH_BALLISTICS' WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
+UPDATE Units SET Cost=80, Maintenance=2, BaseMoves=4, Combat=36, StrategicResource='RESOURCE_HORSES', PrereqTech='TECH_HORSEBACK_RIDING', MandatoryObsoleteTech='TECH_COMBUSTION' WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
 INSERT OR IGNORE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SUMERIAN_WAR_CART', 'UNIT_HEAVY_CHARIOT');
 -- war carts have a chance to steal defeated barbs and city state units
 INSERT OR IGNORE INTO Types (Type , Kind)
@@ -654,7 +654,7 @@ INSERT OR IGNORE INTO Types (Type , Kind)
 INSERT OR IGNORE INTO TypeTags (Type, Tag)
 	VALUES ('ABILITY_WAR_CART_CAPTURE', 'CLASS_WAR_CART');
 INSERT OR IGNORE INTO UnitAbilities (UnitAbilityType, Name, Description)
-	VALUES ('ABILITY_WAR_CART_CAPTURE', 'Placeholder', 'Placeholder');
+	VALUES ('ABILITY_WAR_CART_CAPTURE', 'Placeholder', 'ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG');
 INSERT OR IGNORE INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
 	VALUES ('ABILITY_WAR_CART_CAPTURE', 'WAR_CART_CAPTURE_CS_BARBS');
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)

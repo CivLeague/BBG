@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>+3 [ICON_Favor] очка дипломатического влияния. Приобретение войск ГГ стоит в 2 раза меньше [ICON_Gold] золота.[NEWLINE]Боевые единицы ГГ получают +4 [ICON_Strength] к боевой мощи, если вы сюзерен (касается и приобретённых у ГГ юнитов).[NEWLINE]Даёт +1 [Icon_Governor] губернаторский титул. +2 посла и +2 влияния в ход на получение послов.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный район Греции, заменяющий театральную площадь. Дешевле в строительстве. После завершения строительства амфитеатра дает 1 [ICON_Envoy] посла.[NEWLINE][NEWLINE]+1 [ICON_Culture] к культуре за каждый соседний район. +2 [ICON_Culture] культуры за каждое соседнее чудо света, развлекательный комплекс и аквапарк. Можно построить только на холмах.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION1_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный район Греции, заменяющий театральную площадь. Дешевле в строительстве. После завершения строительства амфитеатра дает 1 [ICON_Envoy] посла.[NEWLINE][NEWLINE]+1 [ICON_Culture] к культуре за каждый соседний район. +2 [ICON_Culture] культуры за каждое соседнее чудо света. Можно построить только на холмах.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный район Греции, заменяющий театральную площадь. Дешевле в строительстве. После завершения строительства амфитеатра дает 1 [ICON_Envoy] посла.[NEWLINE][NEWLINE]+1 [ICON_Culture] к культуре за каждый соседний район. +2 [ICON_Culture] культуры за каждое соседнее чудо света. Можно построить только на холмах.</Text>
+		</Replace>		
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="ru_RU">
+			<Text>Соседство: Стандартный бонус [ICON_Culture] к культуре за каждый соседний район и увеличенный бонус к [ICON_Culture] культуре за каждое соседнее чудо света. Можно построить только на холмах.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальное улучшение Шотландии.[NEWLINE][NEWLINE]+2 [ICON_AMENITIES] довольства, +2 [ICON_GOLD] золота, and +1 [ICON_CULTURE] культура. +1 [ICON_GOLD] золото и +1 [ICON_CULTURE] культура, если расположено рядом с центром города. +1 [ICON_CULTURE] культура, если расположено рядом с развлекательным комплексом. Дает дополнительные [ICON_CULTURE] культуру, [ICON_GOLD] золото, [ICON_TOURISM] туризм и [ICON_HOUSING] жилье по мере продвижения по дереву технологий и социальных институтов. Не может быть построено на пустыне и пустынном холме. Одно на город. Клетка с полем для гольфа не может быть передана другому городу. +1 престиж.</Text>
+		</Replace>		
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальное улучшение Шотландии.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] довольство, +2 [ICON_GOLD] золота, and +1 [ICON_CULTURE] культура. +1 [ICON_GOLD] золото и +1 [ICON_CULTURE] культура, если расположено рядом с центром города. +1 [ICON_CULTURE] культура, если расположено рядом с развлекательным комплексом. Дает дополнительные [ICON_CULTURE] культуру, [ICON_GOLD] золото, [ICON_TOURISM] туризм и [ICON_HOUSING] жилье по мере продвижения по дереву технологий и социальных институтов. Не может быть построено на пустыне и пустынном холме. Одно на город. Клетка с полем для гольфа не может быть передана другому городу. +1 престиж.</Text>
+		</Replace>
+		<Replace Tag="ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG" Language="ru_RU">
+			<Text>Может захватывать побежденные юниты городов-государств и варваров.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальный шумерский юнит, мощная тяжелая кавалерия античности, заменяющий тяжелую колесницу. Имеет шанс захвата побежденных юнитов городов-государств. Нет штрафа в сражениях против антикавалерийских юнитов. +1 [ICON_Movement] очко перемещения, если начинает ход на открытой местности.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="ru_RU">
 			<Text>Все юниты получают +1 к радиусу обзора. Повышение юнита класса легкая кавалерия не заканчивает его ход</Text>	
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный район Греции, заменяющий театральную площадь. Дешевле в строительстве. После завершения строительства амфитеатра дает 1 [ICON_Envoy] посла. [NEWLINE][NEWLINE]. +1 [ICON_Culture] к культуре за каждый соседний район. Можно построить только на холмах.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="ru_RU">
-			<Text>Соседство: Стандартный бонус [ICON_Culture] к культуре за каждый соседний район. Можно построить только на холмах.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="ru_RU">
 			<Text>+1 ко всем видам продукции в столице. Швеция получает 50 [ICON_Favor] единиц мирового влияния за каждого нанятого великого человека. Швеция получает +1 [ICON_GreatEngineer] очко великого инженера от каждой фабрики и +1 [ICON_GreatScientist] очко великого ученого от каждого университета, а также +50% [ICON_PRODUCTION] к производству этих зданий. Если Швеция присутствует в игре, то начиная с промышленной эры добавляются 3 уникальных соревнования всемирного конгресса.</Text>
@@ -380,7 +399,7 @@
 			<Text>Уникальный район Рима, заменяющий акведук. Стоит меньше производства. +1 [ICON_Culture] культуры за каждые 2 соседние района.[NEWLINE][NEWLINE] Построенный рядом с рекой, озером, оазисом или горой, акведук даёт городу питьевую воду. Города без питьевой воды при постройке получают вплоть до 6 [ICON_Housing] жилья. Города с питьевой водой при постройке получают +2 [ICON_Housing] жилья. Вдобавок к вышеперечисленным бонусам купальня даёт +2 [ICON_Housing] жилья и +1 [ICON_Amenities] довольства. Должна быть построена рядом с центром города.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет египетским рабочим строить сфинксов.[NEWLINE][NEWLINE]+2 [ICON_Faith] веры, +1 [ICON_Culture] Culture и +1 довольства.[NEWLINE][NEWLINE]+1 [ICON_Faith] веры и +1 [ICON_CULTURE] культуры рядом с чудом света. +1 [ICON_FOOD] пищи и +1 [ICON_PRODUCTION] производства в пустыне или +1 [ICON_CULTURE] культуры на пойме.[NEWLINE][NEWLINE]Дополнительная [ICON_CULTURE] культура при открытии Дипломатической службы. Даёт [ICON_TOURISM] туризм после изучения Полёта. Нельзя построить рядом с другим сфинксом, а также на снегу.</Text>
+			<Text>Позволяет египетским рабочим строить сфинксов.[NEWLINE][NEWLINE]+2 [ICON_Faith] веры, +1 [ICON_Culture] Culture и +2 довольства.[NEWLINE][NEWLINE]+1 [ICON_Faith] веры и +1 [ICON_CULTURE] культуры рядом с чудом света. +1 [ICON_FOOD] пищи и +1 [ICON_PRODUCTION] производства в пустыне или +1 [ICON_CULTURE] культуры на пойме.[NEWLINE][NEWLINE]Дополнительная [ICON_CULTURE] культура при открытии Дипломатической службы. Даёт [ICON_TOURISM] туризм после изучения Полёта. Нельзя построить рядом с другим сфинксом, а также на снегу.</Text>
 		</Replace>				
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ru_RU">
 			<Text>Unlocks the Builder ability to construct a Sphinx, unique to Egypt.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith, +1 [ICON_Culture] Culture, and +1 Appeal. +1 [ICON_Faith] Faith and +1 [ICON_CULTURE] Culture if next to a wonder. +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production if built on Desert or +1 [ICON_CULTURE] Culture if built on Floodplains.[NEWLINE][NEWLINE]Additional [ICON_CULTURE] Culture once Diplomatic Service is discovered. Provides [ICON_TOURISM] Tourism after researching Flight. Cannot be built next to another Sphinx or on Snow or Snow Hills.</Text>
@@ -793,9 +812,6 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям строить чемамюль – уникальную постройку мапуче.[NEWLINE][NEWLINE]Производит [ICON_CULTURE] культуру в количестве, равном 75% престижа клетки, а также +1 [ICON_PRODUCTION]. Ещё +1 [ICON_PRODUCTION] производства при изучении Гражданской Службы. Дополнительный [ICON_TOURISM] туризм после исследования авиации. Необходим потрясающий престиж.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет строителям строить поле для гольфа - уникальную постройку Шотландии.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] довольства и +2 [ICON_GOLD] золота и +1 [ICON_CULTURE] культуры. Еще +1 [ICON_CULTURE] культуры и +1 [ICON_GOLD] золота при соседстве с центром города и +1 [ICON_CULTURE] культуры при соседстве с развлекательным комплексом. Дополнительные [ICON_CULTURE] культура, [ICON_GOLD] золото, [ICON_TOURISM] туризм и [ICON_HOUSING] жилье по мере продвижения по дереву технологий и социальных институтов. Нельзя построить в пустыне и на холмах в пустыне. Одна постройка на город. Клетки с полем для гольфа нельзя изменить. +1 престижа.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям создавать рыбацкие суда.[NEWLINE][NEWLINE]+1 [ICON_Food] пищи и +1 [ICON_PRODUCTION] производства. Можно строить только на определенных ресурсах.[NEWLINE][NEWLINE]При постройке на редких ресурсах город получит эти ресурсы.</Text>

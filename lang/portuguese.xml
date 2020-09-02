@@ -1,20 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>+3 de [ICON_Favor] Favor diplomático. Alavancar unidades de Cidades Estado custa metade de [ICON_Gold] Ouro.[NEWLINE]Unidades de Cidades Estado gaham +4 de [ICON_Strength] Força de Combate se você é o Suzerano (inclui unidades alavancadas).[NEWLINE]Concede +1 [Icon_Governor] Título de Governador. +2 emissários e +2 pontos de emissário por turno.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>Distrito único da Grécia para atividade cultural. Substitui o distrito de Teatro, e é mais barato de construir. Concede 1 [ICON_Envoy] Emmissário quando constrói um Anfiteatro.[NEWLINE][NEWLINE]+1 de [ICON_Culture] Cultura bônus pra cada distrito adjacente. +2 de [ICON_Culture] Cultura bônus pra cada Maravilha, Complexo de Entretenimento, e Parque Aquático. Só pode ser construído em colinas.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION1_DESCRIPTION" Language="pt_BR">
+			<Text>Distrito único da Grécia para atividade cultural. Substitui o distrito de Teatro, e é mais barato de construir. Concede 1 [ICON_Envoy] Emmissário quando constrói um Anfiteatro.[NEWLINE][NEWLINE]+1 de [ICON_Culture] Cultura bônus pra cada distrito adjacente. +2 de [ICON_Culture] Cultura bônus pra cada Maravilha. Só pode ser construído em colinas.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="pt_BR">
+			<Text>Distrito único da Grécia para atividade cultural. Substitui o distrito de Teatro, e é mais barato de construir. Concede 1 [ICON_Envoy] Emmissário quando constrói um Anfiteatro.[NEWLINE][NEWLINE]+1 de [ICON_Culture] Cultura bônus pra cada distrito adjacente. +2 de [ICON_Culture] Cultura bônus pra cada Maravilha. Só pode ser construído em colinas.</Text>
+		</Replace>		
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="pt_BR">
+			<Text>Adjacência: Bônus padrão de [ICON_Culture] Cultura pra cada distrito adjacente e bônus maior de [ICON_Culture] Cultura pra cada Maravilha adjacente. Só pode ser construído em colinas.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="pt_BR">
+			<Text>Permite que o Construtor faça um Campo de Golfe, exclusivo da Escócia.[NEWLINE][NEWLINE]+2 de [ICON_AMENITIES] Serviços, +2 de [ICON_GOLD] Ouro, e +1 de [ICON_CULTURE] Cultura. +1 de [ICON_GOLD] Ouro e  +1 de [ICON_CULTURE] Cultura se adjacente a um Centro de Cidade. +1 de [ICON_CULTURE] Cultura se adjacente a um Complexo de Entretenimento. [ICON_CULTURE] Cultura, [ICON_GOLD] Ouro, [ICON_TOURISM] Turismo, e [ICON_HOUSING] Habitação adicionais à medida que avança pelas Árvores Cívica e Tecnológica. Não pode ser construído em Deserto. Um por cidade. Paineis com Campo de Golfe não podem ser trocados. +1 de Apelo.</Text>
+		</Replace>		
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="pt_BR">
+			<Text>Permite que o Construtor faça um Campo de Golfe, exclusivo da Escócia.[NEWLINE][NEWLINE]+1 de [ICON_AMENITIES] Serviço, +2 de [ICON_GOLD] Ouro, e +1 de [ICON_CULTURE] Cultura. +1 de [ICON_GOLD] Ouro e  +1 de [ICON_CULTURE] Cultura se adjacente a um Centro de Cidade. +1 de [ICON_CULTURE] Cultura se adjacente a um Complexo de Entretenimento. [ICON_CULTURE] Cultura, [ICON_GOLD] Ouro, [ICON_TOURISM] Turismo, e [ICON_HOUSING] Habitação adicionais à medida que avança pelas Árvores Cívica e Tecnológica. Não pode ser construído em Deserto. Um por cidade. Paineis com Campo de Golfe não podem ser trocados. +1 de Apelo</Text>
+		</Replace>
+		<Replace Tag="ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG" Language="pt_BR">
+			<Text>Pode capturar unidades de cidades estado e bárbaros ao derrotá-las.</Text>
+		</Replace>
 		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="pt_BR">
 			<Text>Unidade da Era Antiga exclusiva da Suméria que substitui a Cavalaria Pesada e é desbloqueada em Cavalgar. Tem uma chance de capturar unidades derrotadas de Cidades Estado. Sem penalidades contra unidades anti-cavalaria e ignora zona de controle. +1 [ICON_Movement] Movimento se começar o turno em terreno plano.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="pt_BR">
 			<Text>Todas as unidades tem +1 de visão. Promover unidades de Cavalaria Leve não encerra o turno delas.</Text>
 		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="pt_BR">
-			<Text>Distrito único da Grécia para pontos culturais. Substitui o Teatro e é mais barato de ser construído. Concede 1 [ICON_Envoy] Emissário quando o Anfiteatro é construído. [NEWLINE][NEWLINE]. Bônus de +1 de [ICON_Culture] Cultura pra cada distrito adjacente. Só pode ser construído em colinas.</Text>
-		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="pt_BR">
-			<Text>Adjacência: Bônus padrão de [ICON_Culture] Cultura pra cada distrito adjacente. Só pode ser construído em colinas.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="pt_BR">
-			<Text>+1 pra todos os rendimentos na capital da Suécia. Ganha 50 de [ICON_Favor] Favor Diplomático quando recruta uma Grande Pessoa. A Suécia recebe +1 ponto de  [ICON_GreatEngineer] Grande Engenheiro de cada Fábrica e +1 ponto de [ICON_GreatScientist] Grande Cientista de Universidades além de +50% de [ICON_PRODUCTION] Produção pra esses edifícios. Ter a Suécia no jogo adiciona três competições únicas no Congresso Mundial, a começar na Era Industrial.</Text>
+			<Text>+1 pra todos os rendimentos na capital da Suécia depois de desbloquear Filosofia Política. Ganha 50 de [ICON_Favor] Favor Diplomático quando recruta uma Grande Pessoa. A Suécia recebe +1 ponto de  [ICON_GreatEngineer] Grande Engenheiro de cada Fábrica e +1 ponto de [ICON_GreatScientist] Grande Cientista de Universidades além de +50% de [ICON_PRODUCTION] Produção pra esses edifícios. Ter a Suécia no jogo adiciona três competições únicas no Congresso Mundial, a começar na Era Industrial.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="pt_BR">
 			<Text>Desbloqueia a habilidade de Construtores para construir uma Missão, exclusiva da Espanha.[NEWLINE][NEWLINE]+2 de [ICON_Faith] Fé. +2 de [ICON_Faith] Fé se estiver em um continente diferente da sua [ICON_Capital] Capital.[NEWLINE][NEWLINE]+2 de [ICON_Science] Ciência se construído adjacente a um distrito de Campus. +1 de [ICON_HOUSING] Habitação se construída no continente natal. +2 de [ICON_Science] Ciência Science no Cívico de Iluminismo. Não pode ser construído adjacente a outra Missão.</Text>
@@ -92,7 +110,7 @@
 			<Text>[ICON_TechBoosted] Eurecas e [ICON_CivicBoosted] Inspirações concedem 50% das cívicas e tecnologias, ao invés de 40%.[NEWLINE][NEWLINE]Maravilhas construídas dão às suas cidades +1 de [ICON_FOOD] Alimento, +1 de [ICON_PRODUCTION] Produção, +1 de [ICON_FAITH] Fé, +1 de [ICON_GOLD] Ouro, +1 de [ICON_SCIENCE] Ciência, e +1 de [ICON_CULTURE] Cultura.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="pt_BR">
-			<Text>Unidades de Combate terrestres e de Suporte são 10% mais baratas de comprar com  [ICON_GOLD] Ouro ou [ICON_FAITH] Fé pra cada distrito de Acampamento na cidade.</Text>
+			<Text>Unidades de Combate terrestres e de Suporte são 10% mais baratas de comprar com  [ICON_GOLD] Ouro ou [ICON_FAITH] Fé pra cada construção do distrito de Acampamento na cidade.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="pt_BR">
 			<Text>Um distrito exclusivo da Fenícia que concentra a atividade naval na sua cidade. Substitui o Porto e é mais barato de construir. Deve ser construído em Paineis Costeiros  ou de Lago adjacentes à terra.[NEWLINE][NEWLINE]+25% de [ICON_PRODUCTION] Produção pra unidades navais e Colonos nessa cidade. Todas as unidades navais dentro da fronteira dessa cidade curam +100 PV a cada turno.</Text>
@@ -360,7 +378,7 @@
 			<Text>Caneta, Pincel, e Voz: Recebe +1 de pontuação de Era a cada que vez você acionar uma [ICON_CivicBoosted] inspiração. +1 de pontuação de Era por construir uma edificação com um espaço para uma grande obra. Se escolhida no início de uma Era de Ouro, Inspirações concedem um adicional de 10% aos custos de cívico. Cada cidade recebe +2 de [ICON_CULTURE] cultura e +1 de [ICON_GOLD] ouro por cada distrito especializado.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="pt_BR">
-			<Text>+1 de [ICON_AMENITIES] serviço, +3 de [ICON_FOOD] alimento e +3 de [ICON_Housing] habitação em cidades com [ICON_Governor] governadores.[NEWLINE]-2 de lealdade em cidades sem [ICON_Governor] governadores.[NEWLINE]Concede +2 título de [Icon_Governor] governador.</Text>
+			<Text>+1 de [ICON_AMENITIES] serviço, +3 de [ICON_FOOD] alimento e +3 de [ICON_Housing] habitação em cidades com [ICON_Governor] governadores.[NEWLINE]-2 de lealdade em cidades sem [ICON_Governor] governadores.[NEWLINE]Concede +1 título de [Icon_Governor] governador.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="pt_BR">
 			<Text>Um distrito exclusivo da Coreia que substitui o distrito de Campus. +2 de [ICON_SCIENCE] ciência de adjacência base, aumentando por cada duas minas adjacentes. Concede +1 de adjacência de [ICON_CULTURE] cultura a Teatros. Recebe -1 de adjacência por cada distrito adjacente ao Seowon, a exceção dos distritos de Teatro e Administrativo. Completar o distrito ativa explosão cultural.</Text>
@@ -396,7 +414,7 @@
 			<Text>Um distrito exclusivo de Roma. Substitui o distrito de Aqueduto e é mais barato de se construir. +1 de [ICON_CULTURE] cultura para cada dois distritos adjacentes.[NEWLINE][NEWLINE]Dá a esta cidade uma fonte de água doce de um rio, lago, oásis ou montanha adjacente. Cidades sem água doce ganham até 6 de [ICON_Housing] habitação. Cidades que já têm água doce recebem +2 de [ICON_Housing] habitação. Em qualquer um dos casos, a Casa de Banho fornece um bônus adicional de +2 de [ICON_Housing] habitação e +1 de [ICON_AMENITIES] serviço. Evita perda de [ICON_FOOD] alimento durante a seca. Deve ser construído adjacente ao Centro da Cidade.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>Desbloqueia a habilidade de Construtores para construir uma Esfinge, exclusiva do Egito.[NEWLINE][NEWLINE]+2 de [ICON_FAITH] fé, +1 de [ICON_CULTURE] cultura e +1 de apelo.[NEWLINE][NEWLINE]+1 de [ICON_FAITH] fé e +1 de [ICON_CULTURE] cultura se construída ao lado de uma maravilha. +1 de [ICON_FOOD] alimento e +1 de [ICON_PRODUCTION] produção se construída em deserto ou +1 de [ICON_CULTURE] cultura se construída em planície aluvial.[NEWLINE][NEWLINE]Cultura [ICON_CULTURE] adicional quando o cívico Serviço Diplomático for pesquisado. Concede [ICON_TOURISM] turismo após pesquisar Vôo. Não pode ser construída adjacente a outra Esfinge ou em painéis que contenham neve.</Text>
+			<Text>Desbloqueia a habilidade de Construtores para construir uma Esfinge, exclusiva do Egito.[NEWLINE][NEWLINE]+2 de [ICON_FAITH] fé, +1 de [ICON_CULTURE] cultura e +2 de apelo.[NEWLINE][NEWLINE]+1 de [ICON_FAITH] fé e +1 de [ICON_CULTURE] cultura se construída ao lado de uma maravilha. +1 de [ICON_FOOD] alimento e +1 de [ICON_PRODUCTION] produção se construída em deserto ou +1 de [ICON_CULTURE] cultura se construída em planície aluvial.[NEWLINE][NEWLINE]Cultura [ICON_CULTURE] adicional quando o cívico Serviço Diplomático for pesquisado. Concede [ICON_TOURISM] turismo após pesquisar Vôo. Não pode ser construída adjacente a outra Esfinge ou em painéis que contenham neve.</Text>
 		</Replace>				
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="pt_BR">
 			<Text>Desbloqueia a habilidade de Construtores para construir uma Esfinge, exclusiva do Egito.[NEWLINE][NEWLINE]+2 de [ICON_FAITH] fé, +1 de [ICON_CULTURE] cultura e +1 de apelo. +1 de [ICON_FAITH] fé e +1 de [ICON_CULTURE] cultura se construída ao lado de uma maravilha. +1 de [ICON_FOOD] alimento e +1 de [ICON_PRODUCTION] produção se construída em deserto ou +1 de [ICON_CULTURE] cultura se construída em planície aluvial.[NEWLINE][NEWLINE]Cultura [ICON_CULTURE] adicional quando o cívico Serviço Diplomático for pesquisado. Concede [ICON_TOURISM] turismo após pesquisar Voo. Não pode ser construída adjacente a outra Esfinge ou em painéis que contenham neve.</Text>
@@ -736,9 +754,6 @@
 			<Text>Unidade única da Russia na era Industrial, substitui a Cavalaria. +5 [ICON_Strength] de força se estiver em Território russo, ou adjacente. Pode mover depois de atacar se houverem [ICON_Movement] pontos de movimento suficientes.</Text>
 		</Replace>
 		<!-- Scotland -->
-		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="pt_BR">
-			<Text>Desbloqueia a habilidade de construtores construírem o Campo de Golfe, único da Escócia.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Serviço, +2 [ICON_GOLD] Ouro, e +1 [ICON_CULTURE] Cultura. +1 [ICON_GOLD] Ouro e +1 [ICON_CULTURE] Cultura se adjacente a um Centro de Cidade. +1 [ICON_CULTURE] Cultura se adjacente a um Complexo de Entretenimento. [ICON_CULTURE] Cultura, [ICON_GOLD] Ouro, [ICON_TOURISM] Tourismo, e [ICON_HOUSING] Habitação extra conforma você avança nas árvores Cívica e Tecnológica. Não pode ser colocado em Deserto ou Deserto (colinas). Apenas um por cidade. Painéis com Campo de Golfe não podem ser trocados. +1 Apelo.</Text>
-		</Replace>
 		<!-- Scythia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="pt_BR">
 			<Text>Pode comprar unidades de cavalaria Leve, Pesada e Cavalaria Montada com[ICON_FAITH] Fé</Text>
