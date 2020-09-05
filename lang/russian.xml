@@ -1,20 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>+3 [ICON_Favor] очка дипломатического влияния. Приобретение войск ГГ стоит в 2 раза меньше [ICON_Gold] золота.[NEWLINE]Боевые единицы ГГ получают +4 [ICON_Strength] к боевой мощи, если вы сюзерен (касается и приобретённых у ГГ юнитов).[NEWLINE]Даёт +1 [Icon_Governor] губернаторский титул. +2 посла и +2 влияния в ход на получение послов.</Text>
+		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>+2 [ICON_GOLD] золота за каждый город, обращенный в данную религию.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="en_US">
+		  <Text>Уникальное улучшение Эфиопии.[NEWLINE][NEWLINE]+1 [ICON_Faith] веры за каждую соседнюю клетку с холмами. После исследования авиации дает [ICON_TOURISM] туризм, равный [ICON_FAITH] вере. +1 престиж. Может быть только разорено, но не уничтожено стихийными бедствиями. Можно построить только на холмах и вулканической почве. Нельзя построить рядом с другим скальным храмом.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="en_US">
+		  <Text>Уникальное улучшение Эфиопии.[NEWLINE][NEWLINE]+1 [ICON_Faith] веры за каждую соседнюю клетку с холмами. После исследования авиации дает [ICON_TOURISM] туризм, равный [ICON_FAITH] вере. +1 престиж. Можно построить только на холмах. Нельзя построить рядом с другим скальным храмом.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ru_RU">
+			<Text>Счастливые города получают +10% [ICON_SCIENCE] к науке и [ICON_PRODUCTION] производству. Города в экстазе получают +15% [ICON_SCIENCE] к науке и [ICON_PRODUCTION] производству. Счастливые города производят +1 [ICON_GreatScientist] очко великих ученых в кампусах и +1 [ICON_GreatEngineer] очко великих инженеров в промышленных зонах. Бонус удваивается у городов в состоянии экстаза.</Text>
+		</Replace>		
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ru_RU">
+			<Text>+1 [ICON_FOOD] пищи на клетках с [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE] и [ICON_RESOURCE_WHEAT].</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Дает бесплатного рабочего, который появляется в столице. +1 [ICON_FOOD] пищи на клетках с [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT] и [ICON_RESOURCE_MAIZE].</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="ru_RU">
+			<Text>Границы расширяются на 50% быстрее.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Границы расширяются на 50% быстрее.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="ru_RU">
+			<Text>После открытия свода законов все города при основании получают дополнительное здание в центре города. (В Древнем мире это монумент).</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальное улучшение Голландии.[NEWLINE][NEWLINE]+1 [ICON_FOOD] пищи, +1 [ICON_Production] произвлдство и +0.5 [ICON_Housing] жилья. +1 [ICON_FOOD] пищи за соседство с польдером. Дополнительные [ICON_PRODUCTION] производство, [ICON_GOLD] золото и [ICON_FOOD] пища по мере продвижения по дереву технологий и социальных институтов. Можно построить только на клетках побережья или озера рядом с 2-мя и более проходимыми клетками суши. Увеличивает стоимость [ICON_Movement] перемещения по клетке до 3.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_KUPES_VOYAGE_DESCRIPTION" Language="ru_RU">
+			<Text>Игра начинается на клетке океана. Получает +1 [ICON_Citizen] население при основании первого города. Дворец получает +3 [ICON_HOUSING] жилья и +1 [ICON_AMENITIES] довольство. +2 [ICON_SCIENCE] науки и +2 [ICON_CULTURE] культуры в ход до основания первого города.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный район Греции, заменяющий театральную площадь. Дешевле в строительстве. После завершения строительства амфитеатра дает 1 [ICON_Envoy] посла.[NEWLINE][NEWLINE]+1 [ICON_Culture] к культуре за каждый соседний район. +2 [ICON_Culture] культуры за каждое соседнее чудо света, развлекательный комплекс и аквапарк. Можно построить только на холмах.</Text>
+			<Text>Уникальный район Греции, заменяющий театральную площадь. После завершения строительства амфитеатра дает 1 [ICON_Envoy] посла.[NEWLINE][NEWLINE]+1 [ICON_Culture] культура за каждый соседний район и дополнительно +1 [ICON_Culture] культура за соседство с центром города. +2 [ICON_Culture] культуры за каждое соседнее чудо света, развлекательный комплекс и аквапарк. Можно построить только на холмах.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION1_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный район Греции, заменяющий театральную площадь. Дешевле в строительстве. После завершения строительства амфитеатра дает 1 [ICON_Envoy] посла.[NEWLINE][NEWLINE]+1 [ICON_Culture] к культуре за каждый соседний район. +2 [ICON_Culture] культуры за каждое соседнее чудо света. Можно построить только на холмах.</Text>
+			<Text>Уникальный район Греции, заменяющий театральную площадь. После завершения строительства амфитеатра дает 1 [ICON_Envoy] посла.[NEWLINE][NEWLINE]+1 [ICON_Culture] культура за каждый соседний район и дополнительно +1 [ICON_Culture] культура за соседство с центром города. +2 [ICON_Culture] культуры за каждое соседнее чудо света. Можно построить только на холмах.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный район Греции, заменяющий театральную площадь. Дешевле в строительстве. После завершения строительства амфитеатра дает 1 [ICON_Envoy] посла.[NEWLINE][NEWLINE]+1 [ICON_Culture] к культуре за каждый соседний район. +2 [ICON_Culture] культуры за каждое соседнее чудо света. Можно построить только на холмах.</Text>
+			<Text>Уникальный район Греции, заменяющий театральную площадь. После завершения строительства амфитеатра дает 1 [ICON_Envoy] посла.[NEWLINE][NEWLINE]+1 [ICON_Culture] культура за каждый соседний район и дополнительно +1 [ICON_Culture] культура за соседство с центром города. +2 [ICON_Culture] культуры за каждое соседнее чудо света. Можно построить только на холмах.</Text>
 		</Replace>		
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="ru_RU">
-			<Text>Соседство: Стандартный бонус [ICON_Culture] к культуре за каждый соседний район и увеличенный бонус к [ICON_Culture] культуре за каждое соседнее чудо света. Можно построить только на холмах.</Text>
+			<Text>Соседство: Стандартный бонус к [ICON_Culture] культуре за соседство с центром города и каждый соседний район. Повышенный бонус к [ICON_Culture] культуре за каждое соседнее чудо света. Можно построить только на холмах.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="ru_RU">
+		  <Text>Уникальный шумерский юнит, мощная тяжелая кавалерия античности, заменяющая тяжелую колесницу. Имеет шанс захвата побежденных юнитов городов-государств. Нет штрафа в сражениях против антикавалерийских юнитов. +1 [ICON_Movement] очко перемещения, если начинает ход на открытой местности.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>+3 [ICON_Favor] очка дипломатического влияния. Приобретение войск ГГ стоит в 2 раза меньше [ICON_Gold] золота.[NEWLINE]Боевые единицы ГГ получают +4 [ICON_Strength] к боевой мощи, если вы сюзерен (касается и приобретённых у ГГ юнитов).[NEWLINE]Даёт +1 [Icon_Governor] губернаторский титул. +2 посла и +2 влияния в ход на получение послов.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="ru_RU">
 			<Text>Уникальное улучшение Шотландии.[NEWLINE][NEWLINE]+2 [ICON_AMENITIES] довольства, +2 [ICON_GOLD] золота, and +1 [ICON_CULTURE] культура. +1 [ICON_GOLD] золото и +1 [ICON_CULTURE] культура, если расположено рядом с центром города. +1 [ICON_CULTURE] культура, если расположено рядом с развлекательным комплексом. Дает дополнительные [ICON_CULTURE] культуру, [ICON_GOLD] золото, [ICON_TOURISM] туризм и [ICON_HOUSING] жилье по мере продвижения по дереву технологий и социальных институтов. Не может быть построено на пустыне и пустынном холме. Одно на город. Клетка с полем для гольфа не может быть передана другому городу. +1 престиж.</Text>
@@ -26,9 +63,6 @@
 			<Text>Может захватывать побежденные юниты городов-государств и варваров.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный шумерский юнит, мощная тяжелая кавалерия античности, заменяющий тяжелую колесницу. Имеет шанс захвата побежденных юнитов городов-государств. Нет штрафа в сражениях против антикавалерийских юнитов. +1 [ICON_Movement] очко перемещения, если начинает ход на открытой местности.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="ru_RU">
 			<Text>Все юниты получают +1 к радиусу обзора. Повышение юнита класса легкая кавалерия не заканчивает его ход</Text>	
 		</Replace>
@@ -488,12 +522,6 @@
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="ru_RU">
             <Text>При постройке военного юнита получайте [ICON_FAITH] веру в размере 25% от стоимости постройки.</Text>
         </Replace>
-		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ru_RU">
-            <Text>Даёт бесплатного рабочего, который появляется в столице. +1 [ICON_FOOD] пищи на клетках с [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], и[ICON_RESOURCE_WHEAT].</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="ru_RU">
-            <Text>Даёт бесплатного рабочего, который появляется в столице. +1 [ICON_FOOD] пищи на клетках с [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE], и [ICON_RESOURCE_WHEAT].</Text>
-		</Replace>
         <Replace Tag="LOC_POLICY_RETINUES_DESCRIPTION" Language="ru_RU">
             <Text>Уменьшение стоимости в ресурсах на 50% при постройке или улучшении юнитов.</Text>
         </Replace>

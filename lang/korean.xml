@@ -17,8 +17,8 @@
 			<Text>[ICON_RESOURCE_CATTLE] 소, [ICON_RESOURCE_RICE] 쌀 및 [ICON_RESOURCE_WHEAT] 밀 자원에서 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>이 교리를 채택하면 수도에 건설자 유닛을 제공합니다. [ICON_RESOURCE_CATTLE] 소, [ICON_RESOURCE_RICE] 쌀, [ICON_RESOURCE_WHEAT] 밀 및 [ICON_RESOURCE_MAIZE] 자원에서 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
-		</Replace>
+            <Text>이 교리를 채택하면 수도에 건설자 유닛을 제공합니다. [ICON_RESOURCE_CATTLE] 소, [ICON_RESOURCE_RICE] 쌀, [ICON_RESOURCE_WHEAT] 밀 및 [ICON_RESOURCE_MAIZE] 옥수수 자원에서 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
+        </Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="ko_KR">
 			<Text>영토 확장 속도가 50% 증가합니다.</Text>
 		</Replace>
