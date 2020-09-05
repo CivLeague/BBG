@@ -1,20 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>턴당 [ICON_Favor] 외교적 환심 +3. 도시 국가의 유닛 징병에 소모되는 [ICON_Gold] 금이 절반으로 감소합니다.[NEWLINE]플레이어가 종주국인 경우 도시 국가의 유닛(징병된 유닛 포함)이 [ICON_Strength] 전투력 +4를 얻습니다.[NEWLINE][Icon_Governor] 총독 타이틀 +1을 부여합니다. [ICON_Envoy] 사절 +2 및 턴당 [ICON_Envoy] 사절 획득을 위한 우호도 점수 +2.</Text>
+		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>이 종교를 믿는 각 도시마다 [ICON_GOLD] 금 +2를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="ko_KR">
+			<Text>에티오피아 특유 건물인 암굴 교회를 건설할 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +1을 제공합니다. 인접한 산 및 언덕 2개마다 [ICON_Faith] 신앙 +1을 제공합니다. 비행 연구 후 [ICON_FAITH] 신앙으로 [ICON_TOURISM] 관광을 제공합니다. 매력도 +1을 제공합니다. 다른 암굴 교회에 인접하지 않은 언덕에만 건설할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>에티오피아 특유 건물인 암굴 교회를 건설할 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +1을 제공합니다. 인접한 산 및 언덕 2개마다 [ICON_Faith] 신앙 +1을 제공합니다. 비행 연구 후 [ICON_FAITH] 신앙으로 [ICON_TOURISM] 관광을 제공합니다. 매력도 +1을 제공합니다. 자연재해로 인해서만 약탈당할 수 있으며 파괴되지 않습니다. 다른 암굴 교회에 인접하지 않은 언덕 또는 화산토에만 건설할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ko_KR">
+			<Text>행복한 도시에 [ICON_SCIENCE] 과학 +10%, [ICON_PRODUCTION] 생산력 +10%를 제공합니다. 황홀한 도시에는 [ICON_SCIENCE] 과학 +5%, [ICON_PRODUCTION] 생산력 +5%가 추가로 제공됩니다. 행복한 도시는 캠퍼스마다 [ICON_GreatScientist] 위대한 과학자 점수 +1, 산업구역마다 [ICON_GreatEngineer] 위대한 기술자 점수 +1을 제공합니다. 황홀한 도시에는 과학자 및 기술자 점수 효과가 +1씩 추가로 제공됩니다.</Text>
+		</Replace>		
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ko_KR">
+			<Text>[ICON_RESOURCE_CATTLE] 소, [ICON_RESOURCE_RICE] 쌀 및 [ICON_RESOURCE_WHEAT] 밀 자원에서 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>이 교리를 채택하면 수도에 건설자 유닛을 제공합니다. [ICON_RESOURCE_CATTLE] 소, [ICON_RESOURCE_RICE] 쌀, [ICON_RESOURCE_WHEAT] 밀 및 [ICON_RESOURCE_MAIZE] 자원에서 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="ko_KR">
+			<Text>영토 확장 속도가 50% 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>영토 확장 속도가 50% 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="ko_KR">
+			<Text>법전 사회 제도를 획득한 후에 새로 건설된 도시가 추가적인 도심부 건물을 가지고 시작합니다. (고대 시대부터 시작할 경우 기념비 건물을 가지고 시작)</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="ko_KR">
+			<Text>네덜란드 특유 시설물인 간척지를 건설할 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_FOOD] 식량 +1, [ICON_Production] 생산력 +1, [ICON_Housing] 주거공간 +0.5를 제공합니다. 다른 간척지 시설에 인접해 있으면 [ICON_FOOD] 식량 +1을 추가 제공합니다. 기술 발전표와 사회 제도 진보에 따라 [ICON_PRODUCTION] 생산력과 [ICON_GOLD] 금, [ICON_FOOD] 식량이 추가됩니다. 2개 이상의 지나갈 수 있는 지상 타일에 인접한 해안이나 호수에 배치해야 합니다. 타일의 [ICON_Movement] 이동 비용이 3으로 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_KUPES_VOYAGE_DESCRIPTION" Language="ko_KR">
+			<Text>해양 타일 위에서 게임을 시작합니다. 첫 도시를 건설할 때 [ICON_Citizen] 인구 +1을 얻습니다. 궁전이 [ICON_HOUSING] 주거공간 +3과 [ICON_AMENITIES] 쾌적도 +1을 얻습니다. 첫 도시를 건설하기 전에 턴당 [ICON_SCIENCE] 과학 +2와 [ICON_CULTURE] 문화 +2를 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다. 원형극장 건물이 건설되면 [ICON_Envoy] 사절 1명을 획득합니다.[NEWLINE][NEWLINE]인접한 각 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 인접한 각 불가사의, 유흥단지 및 워터 파크에서 보너스 [ICON_Culture] 문화 +2를 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
+			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다. 원형극장 건물이 건설되면 [ICON_Envoy] 사절 1명을 획득합니다.[NEWLINE][NEWLINE]인접한 각 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 도심부에 인접시 추가 [ICON_Culture] 문화 +1을 획득합니다. 인접한 각 불가사의, 유흥단지 및 워터 파크에서 보너스 [ICON_Culture] 문화 +2를 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION1_DESCRIPTION" Language="ko_KR">
-			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다. 원형극장 건물이 건설되면 [ICON_Envoy] 사절 1명을 획득합니다.[NEWLINE][NEWLINE]인접한 각 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 인접한 각 불가사의에서 보너스 [ICON_Culture] 문화 +2를 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
+			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다. 원형극장 건물이 건설되면 [ICON_Envoy] 사절 1명을 획득합니다.[NEWLINE][NEWLINE]인접한 각 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 도심부에 인접시 추가 [ICON_Culture] 문화 +1을 획득합니다. 인접한 각 불가사의에서 보너스 [ICON_Culture] 문화 +2를 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="ko_KR">
-			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다. 원형극장 건물이 건설되면 [ICON_Envoy] 사절 1명을 획득합니다.[NEWLINE][NEWLINE]인접한 각 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 인접한 각 불가사의에서 보너스 [ICON_Culture] 문화 +2를 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
+			<Text>그리스 특유의 문화 특수지구입니다. 극장가 특수지구를 대체하며 건설 비용이 더 낮습니다. 원형극장 건물이 건설되면 [ICON_Envoy] 사절 1명을 획득합니다.[NEWLINE][NEWLINE]인접한 각 특수지구에서 보너스 [ICON_Culture] 문화 +1을 획득합니다. 도심부에 인접시 추가 [ICON_Culture] 문화 +1을 획득합니다. 인접한 각 불가사의에서 보너스 [ICON_Culture] 문화 +2를 획득합니다. 언덕에만 건설할 수 있습니다.</Text>
 		</Replace>		
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="ko_KR">
-			<Text>인접효과: 인접 특수지구마다 일반적인 [ICON_Culture] 문화 보너스를 부여합니다. 인접 불가사의마다 상당한 [ICON_Culture] 문화 보너스를 부여합니다. 언덕에만 지을 수 있습니다.</Text>
+			<Text>인접효과: 인접 도심부마다 일반적인 [ICON_Culture] 문화 보너스를 부여합니다. 인접 특수지구마다 일반적인 [ICON_Culture] 문화 보너스를 부여합니다. 인접 불가사의마다 상당한 [ICON_Culture] 문화 보너스를 부여합니다. 언덕에만 지을 수 있습니다.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>턴당 [ICON_Favor] 외교적 환심 +3. 도시 국가의 유닛 징병에 소모되는 [ICON_Gold] 금이 절반으로 감소합니다.[NEWLINE]플레이어가 종주국인 경우 도시 국가의 유닛(징병된 유닛 포함)이 [ICON_Strength] 전투력 +4를 얻습니다.[NEWLINE][Icon_Governor] 총독 타이틀 +1을 부여합니다. [ICON_Envoy] 사절 +2 및 턴당 [ICON_Envoy] 사절 획득을 위한 우호도 점수 +2.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="ko_KR">
 			<Text>스코틀랜드 특유의 골프 코스를 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_AMENITIES] 쾌적도 +2, [ICON_GOLD] 금 +2 및 [ICON_CULTURE] 문화 +1을 제공합니다. 도심부 특수지구가 인접해 있으면 [ICON_GOLD] 금 +1 및 [ICON_CULTURE] 문화 +1, 유흥단지 특수지구가 인접해 있으면 [ICON_CULTURE] 문화 +1을 제공합니다. 기술 발전표와 사회 제도 진보에 따라 [ICON_CULTURE] 문화, [ICON_GOLD] 금, [ICON_TOURISM] 관광 및 [ICON_HOUSING] 주거공간이 추가됩니다. 사막이나 사막 언덕에 배치할 수 없으며 도시당 하나만 가능합니다. 골프 코스가 있는 타일은 교체할 수 없습니다. 매력도 +1을 제공합니다.</Text>
@@ -501,12 +535,6 @@
         </Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="ko_KR">
             <Text>지상 군사 유닛이 생산되면 해당 유닛 비용의 25%에 준하는 [ICON_FAITH] 신앙이 제공됩니다.</Text>
-        </Replace>
-		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ko_KR">
-            <Text>이 교리를 채택하면 수도에 건설자 유닛을 제공합니다. [ICON_RESOURCE_CATTLE] 소, [ICON_RESOURCE_SHEEP] 양, [ICON_RESOURCE_RICE] 쌀 및 [ICON_RESOURCE_WHEAT] 밀 자원에서 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
-        </Replace>
-        <Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="ko_KR">
-            <Text>이 교리를 채택하면 수도에 건설자 유닛을 제공합니다. [ICON_RESOURCE_CATTLE] 소, [ICON_RESOURCE_SHEEP] 양, [ICON_RESOURCE_RICE] 쌀 및 [ICON_RESOURCE_WHEAT] 밀 자원에서 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
         </Replace>
 		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="ko_KR">
 			<Text>성공적으로 달에 인간을 상륙시켰습니다! 플레이어의 턴당 [ICON_Science] 과학 생산량의 5배인 [ICON_Culture] 문화 보너스를 일회성으로 부여하며, 과학 승리로의 두 번째 단계를 표시합니다.</Text>
