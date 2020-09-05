@@ -61,20 +61,6 @@ INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 
 
 --==================
--- Aztec
---==================
-INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
-	('TRAIT_MELEE_PRODUCTION_BBG', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
-INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
-	('TRAIT_MELEE_PRODUCTION_BBG', 'UnitPromotionClass', 'PROMOTION_CLASS_MELEE'),
-	('TRAIT_MELEE_PRODUCTION_BBG', 'EraType', 'NO_ERA'),
-	('TRAIT_MELEE_PRODUCTION_BBG', 'Amount', '50');
-INSERT OR IGNORE INTO TraitModifiers VALUES
-	('TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS', 'TRAIT_MELEE_PRODUCTION_BBG');
-
-
-
---==================
 -- China
 --==================
 -- +1 all yields per wonder
@@ -295,8 +281,6 @@ UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_GUILDS_REQUIREMENTS' WH
 --==================
 -- Greece
 --==================
--- acropolis only +1 culture when adj to city center
-DELETE FROM District_Adjacencies WHERE DistrictType='DISTRICT_ACROPOLIS' AND YieldChangeId='District_Culture_City_Center';
 -- Greece gets their extra envoy at amphitheater instead of acropolis
 DELETE FROM DistrictModifiers WHERE DistrictType='DISTRICT_ACROPOLIS';
 INSERT OR IGNORE INTO TraitModifiers
@@ -516,6 +500,14 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra , Sec
 --==================
 -- Rome
 --==================
+-- free city center building after code of laws
+UPDATE Modifiers SET SubjectRequirementSetId='HAS_CODE_OF_LAWS_SET_BBG' WHERE ModifierId='TRAIT_ADJUST_NON_CAPITAL_FREE_CHEAPEST_BUILDING';
+INSERT OR IGNORE INTO RequirementSets VALUES ('HAS_CODE_OF_LAWS_SET_BBG', 'REQUIREMENTSET_TEST_ALL');
+INSERT OR IGNORE INTO RequirementSetRequirements VALUES ('HAS_CODE_OF_LAWS_SET_BBG', 'HAS_CODE_OF_LAWS_BBG');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES
+	('HAS_CODE_OF_LAWS_BBG', 'REQUIREMENT_PLAYER_HAS_CIVIC');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES
+	('HAS_CODE_OF_LAWS_BBG', 'CivicType', 'CIVIC_CODE_OF_LAWS');
 -- Baths get Culture minor adjacency bonus added
 INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
 	VALUES ('DISTRICT_BATH' , 'District_Culture');
@@ -646,7 +638,7 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value, Extra) VALUES
 	('TRAIT_ADJUST_PILLAGE_BBG', 'Amount', '2', '-1');
 UPDATE TraitModifiers SET ModifierId='TRAIT_ADJUST_PILLAGE_BBG' WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU' AND ModifierId='TRAIT_ADJUST_JOINTWAR_PLUNDER';
 -- Sumerian War Carts are now unlocked at horseback riding and buffed
-UPDATE Units SET Cost=80, Maintenance=2, BaseMoves=4, Combat=36, StrategicResource='RESOURCE_HORSES', PrereqTech='TECH_HORSEBACK_RIDING', MandatoryObsoleteTech='TECH_BALLISTICS' WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
+UPDATE Units SET Cost=80, Maintenance=2, BaseMoves=4, Combat=36, StrategicResource='RESOURCE_HORSES', PrereqTech='TECH_HORSEBACK_RIDING', MandatoryObsoleteTech='TECH_COMBUSTION' WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
 INSERT OR IGNORE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) VALUES ('UNIT_SUMERIAN_WAR_CART', 'UNIT_HEAVY_CHARIOT');
 -- war carts have a chance to steal defeated barbs and city state units
 INSERT OR IGNORE INTO Types (Type , Kind)
@@ -654,7 +646,7 @@ INSERT OR IGNORE INTO Types (Type , Kind)
 INSERT OR IGNORE INTO TypeTags (Type, Tag)
 	VALUES ('ABILITY_WAR_CART_CAPTURE', 'CLASS_WAR_CART');
 INSERT OR IGNORE INTO UnitAbilities (UnitAbilityType, Name, Description)
-	VALUES ('ABILITY_WAR_CART_CAPTURE', 'Placeholder', 'Placeholder');
+	VALUES ('ABILITY_WAR_CART_CAPTURE', 'Placeholder', 'ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG');
 INSERT OR IGNORE INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
 	VALUES ('ABILITY_WAR_CART_CAPTURE', 'WAR_CART_CAPTURE_CS_BARBS');
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
@@ -903,6 +895,8 @@ UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='FASCISM_LEGA
 --==============================================================
 --******				P A N T H E O N S				  ******
 --==============================================================
+-- religious settlements more border growth since settler removed
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='RELIGIOUS_SETTLEMENTS_CULTUREBORDER';
 -- river goddess +2 HS adj on rivers, -1 housing and -1 amentiy tho
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='RIVER_GODDESS_HOLY_SITE_HOUSING_MODIFIER' AND Name='Amount';
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='RIVER_GODDESS_HOLY_SITE_AMENITIES_MODIFIER' AND Name='Amount';
@@ -967,15 +961,14 @@ INSERT OR IGNORE INTO BeliefModifiers ( BeliefType , ModifierId )
 	( 'BELIEF_GOD_OF_WAR' , 'GOD_OF_WAR_AND_PLUNDER_COMHUB' ),
 	( 'BELIEF_GOD_OF_WAR' , 'GOD_OF_WAR_AND_PLUNDER_HARBOR' ),
 	( 'BELIEF_GOD_OF_WAR' , 'GOD_OF_WAR_AND_PLUNDER_ENCAMP' );
--- Fertility Rites gives +1 food for rice and wheat, and +1 prod for sheep and cattle
-INSERT OR IGNORE INTO Tags 
+-- Fertility Rites gives +1 food for rice and wheat and cattle
+INSERT OR IGNORE INTO Tags
 	(Tag                                , Vocabulary)
 	VALUES 
 	('CLASS_FERTILITY_RITES_FOOD'       , 'RESOURCE_CLASS');
 INSERT OR IGNORE INTO TypeTags 
 	(Type              , Tag)
 	VALUES
-	('RESOURCE_SHEEP'  , 'CLASS_FERTILITY_RITES_FOOD'),
 	('RESOURCE_WHEAT'  , 'CLASS_FERTILITY_RITES_FOOD'),
 	('RESOURCE_CATTLE' , 'CLASS_FERTILITY_RITES_FOOD'),
 	('RESOURCE_RICE'   , 'CLASS_FERTILITY_RITES_FOOD');
@@ -1194,8 +1187,6 @@ UPDATE ModifierArguments SET Value='2' WHERE ModifierId='LAY_MINISTRY_FAITH_DIST
 UPDATE ModifierArguments SET Value='4' WHERE ModifierId='ITINERANT_PREACHERS_SPREAD_DISTANCE';
 -- Cross-Cultural Dialogue is now +1 Science for every 3 foreign followers
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='CROSS_CULTURAL_DIALOGUE_SCIENCE_FOREIGN_FOLLOWER_MODIFIER' AND Name='PerXItems';
--- Pilgrimmage now gives 3 Faith instead of 2 for each foreign city converted
-UPDATE ModifierArguments SET Value='3' WHERE ModifierId='PILGRIMAGE_FAITH_FOREIGN_CITY_MODIFIER' AND Name='Amount';
 -- Tithe is now +1 Gold for every 3 followers
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='TITHE_GOLD_FOLLOWER_MODIFIER' AND Name='PerXItems';
 -- World Church is now +1 Culture for every 3 foreign followers
@@ -1332,6 +1323,19 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementI
 	VALUES
 	('GRAPE_SHOT_REQUIREMENTS',			'PLAYER_IS_ATTACKER_REQUIREMENTS'),
 	('SHRAPNEL_REQUIREMENTS',			'PLAYER_IS_ATTACKER_REQUIREMENTS');
+-- anticav exert ZoC upon light and heavy cav
+INSERT OR IGNORE INTO RequirementSets VALUES ('NOT_ANTICAV_REQUIREMENTS_BBG', 'REQUIREMENTSET_TEST_ALL');
+INSERT OR IGNORE INTO RequirementSetRequirements VALUES
+	('NOT_ANTICAV_REQUIREMENTS_BBG', 'REQUIRES_LAND_DOMAIN'),
+	('NOT_ANTICAV_REQUIREMENTS_BBG', 'REQUIREMENT_UNIT_IS_NOT_ANTICAV_BBG'),
+	('NOT_ANTICAV_REQUIREMENTS_BBG', 'REQUIREMENT_OPPONENT_IS_NOT_A_SHIP');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES
+	('REQUIREMENT_UNIT_IS_NOT_ANTICAV_BBG', 'REQUIREMENT_OPPONENT_UNIT_TAG_MATCHES', 1),
+	('REQUIREMENT_OPPONENT_IS_NOT_A_SHIP', 'REQUIREMENT_OPPONENT_UNIT_DOMAIN_MATCHES', 1);
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES
+	('REQUIREMENT_UNIT_IS_NOT_ANTICAV_BBG', 'Tag', 'CLASS_ANTI_CAVALRY'),
+	('REQUIREMENT_OPPONENT_IS_NOT_A_SHIP', 'DomainType', 'DOMAIN_SEA');
+UPDATE Modifiers SET SubjectRequirementSetId='NOT_ANTICAV_REQUIREMENTS_BBG' WHERE ModifierId='IGNOREZOC_IGNORE_ZOC';
 
 
 

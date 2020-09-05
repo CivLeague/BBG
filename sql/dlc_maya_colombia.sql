@@ -57,6 +57,8 @@ DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND Re
 --==================
 -- City-States
 --==================
+INSERT OR IGNORE INTO TypeTags (Type, Tag) VALUES
+	('RESOURCE_MAIZE'  , 'CLASS_FERTILITY_RITES_FOOD');
 
 
 --==================
