@@ -20,7 +20,7 @@ UPDATE Improvement_Adjacencies SET YieldChangeId='Mountain_Faith13' WHERE Improv
 UPDATE Improvement_Adjacencies SET YieldChangeId='Mountain_Faith14' WHERE ImprovementType='IMPROVEMENT_ROCK_HEWN_CHURCH' AND YieldChangeId='Mountain_Faith4';
 UPDATE Improvement_Adjacencies SET YieldChangeId='Mountain_Faith15' WHERE ImprovementType='IMPROVEMENT_ROCK_HEWN_CHURCH' AND YieldChangeId='Mountain_Faith5';
 */
-DELETE FROM Improvement_YieldChanges WHERE ImprovementType='IMPROVEMENT_ROCK_HEWN_CHURCH';
+UPDATE Improvement_YieldChanges SET YieldChange=0 WHERE ImprovementType='IMPROVEMENT_ROCK_HEWN_CHURCH' AND YieldType='YIELD_FAITH';
 DELETE FROM Improvement_Adjacencies WHERE ImprovementType='IMPROVEMENT_ROCK_HEWN_CHURCH' AND YieldChangeId='Mountain_Faith1';
 DELETE FROM Improvement_Adjacencies WHERE ImprovementType='IMPROVEMENT_ROCK_HEWN_CHURCH' AND YieldChangeId='Mountain_Faith2';
 DELETE FROM Improvement_Adjacencies WHERE ImprovementType='IMPROVEMENT_ROCK_HEWN_CHURCH' AND YieldChangeId='Mountain_Faith3';

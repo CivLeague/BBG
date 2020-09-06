@@ -5,11 +5,11 @@
 			<Text>이 종교를 믿는 각 도시마다 [ICON_GOLD] 금 +2를 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="ko_KR">
-			<Text>에티오피아 특유 건물인 암굴 교회를 건설할 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +1을 제공합니다. 인접한 산 및 언덕 2개마다 [ICON_Faith] 신앙 +1을 제공합니다. 비행 연구 후 [ICON_FAITH] 신앙으로 [ICON_TOURISM] 관광을 제공합니다. 매력도 +1을 제공합니다. 다른 암굴 교회에 인접하지 않은 언덕에만 건설할 수 있습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>에티오피아 특유 건물인 암굴 교회를 건설할 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +1을 제공합니다. 인접한 산 및 언덕 2개마다 [ICON_Faith] 신앙 +1을 제공합니다. 비행 연구 후 [ICON_FAITH] 신앙으로 [ICON_TOURISM] 관광을 제공합니다. 매력도 +1을 제공합니다. 자연재해로 인해서만 약탈당할 수 있으며 파괴되지 않습니다. 다른 암굴 교회에 인접하지 않은 언덕 또는 화산토에만 건설할 수 있습니다.</Text>
-		</Replace>
+            <Text>에티오피아 특유 건물인 암굴 교회를 건설할 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +1을 제공합니다. 인접한 언덕 2개마다 [ICON_Faith] 신앙 +1을 제공합니다. 비행 연구 후 [ICON_FAITH] 신앙으로 [ICON_TOURISM] 관광을 제공합니다. 매력도 +1을 제공합니다. 다른 암굴 교회에 인접하지 않은 언덕에만 건설할 수 있습니다.</Text>
+        </Replace>
+        <Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="ko_KR">
+            <Text>에티오피아 특유 건물인 암굴 교회를 건설할 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +1을 제공합니다. 인접한 언덕 2개마다 [ICON_Faith] 신앙 +1을 제공합니다. 비행 연구 후 [ICON_FAITH] 신앙으로 [ICON_TOURISM] 관광을 제공합니다. 매력도 +1을 제공합니다. 자연재해로 인해서만 약탈당할 수 있으며 파괴되지 않습니다. 다른 암굴 교회에 인접하지 않은 언덕 또는 화산토에만 건설할 수 있습니다.</Text>
+        </Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ko_KR">
 			<Text>행복한 도시에 [ICON_SCIENCE] 과학 +10%, [ICON_PRODUCTION] 생산력 +10%를 제공합니다. 황홀한 도시에는 [ICON_SCIENCE] 과학 +5%, [ICON_PRODUCTION] 생산력 +5%가 추가로 제공됩니다. 행복한 도시는 캠퍼스마다 [ICON_GreatScientist] 위대한 과학자 점수 +1, 산업구역마다 [ICON_GreatEngineer] 위대한 기술자 점수 +1을 제공합니다. 황홀한 도시에는 과학자 및 기술자 점수 효과가 +1씩 추가로 제공됩니다.</Text>
 		</Replace>		
