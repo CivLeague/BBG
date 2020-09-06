@@ -222,10 +222,10 @@
 		<!-- ========== ÉTHIOPIE ========== -->
 		<!-- Correction traduction Firaxis : +1 base, pas +2 -->
 		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire une église rupestre, un bâtiment exclusif à l'Éthiopie.[NEWLINE][NEWLINE][ICON_Faith] Foi +1. [ICON_Faith] Foi +1 toutes les deux cases de montagnes ou de collines adjacente. La [ICON_FAITH] foi génère du [ICON_TOURISM] tourisme après la découverte de l'aviation. Attrait +1. Ne peut être construite que sur des collines qui ne sont pas adjacentes à un quartier spécialisé ou à une autre église rupestre.</Text>
+			<Text>Débloque la compétence de bâtisseur permettant de construire une église rupestre, un bâtiment exclusif à l'Éthiopie.[NEWLINE][NEWLINE][ICON_Faith] Foi +1 pour chaque case de colline adjacente. La [ICON_FAITH] foi génère du [ICON_TOURISM] tourisme après la découverte de l'aviation. Attrait +1. Ne peut être construite que sur des collines qui ne sont pas adjacentes à une autre église rupestre.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire une église rupestre, un bâtiment exclusif à l'Éthiopie.[NEWLINE][NEWLINE][ICON_Faith] Foi +1. [ICON_Faith] Foi +1 toutes les deux cases de montagnes ou de collines adjacente. La [ICON_FAITH] foi génère du [ICON_TOURISM] tourisme après la découverte de l'aviation. Attrait +1. Peut uniquement être pillée (jamais détruite) par les catastrophes naturelles. Ne peut être construite que sur une colline ou un sol volcanique n'étant pas adjacent à un quartier spécialisé ou à une autre église rupestre.</Text>
+			<Text>Débloque la compétence de bâtisseur permettant de construire une église rupestre, un bâtiment exclusif à l'Éthiopie.[NEWLINE][NEWLINE][ICON_Faith] Foi +1 pour chaque case de colline adjacente. La [ICON_FAITH] foi génère du [ICON_TOURISM] tourisme après la découverte de l'aviation. Attrait +1. Peut uniquement être pillée (jamais détruite) par les catastrophes naturelles. Ne peut être construite que sur une colline ou un sol volcanique n'étant pas adjacent à une autre église rupestre.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Faith] Foi +0.5 par ressource à l'origine de vos routes commerciales internationales de l'Éthiopie. [ICON_Faith] Foi +1 pour toutes les ressources. Peut acheter des musées archéologiques et des archéologues avec de la [ICON_Faith] foi.</Text>
@@ -337,6 +337,10 @@
 			<Text>Chaque victoire en combat rapporte une quantité de [ICON_Science] science égale à 25 % de la [ICON_Strength] puissance de combat de l'unité vaincue. Les villes ne génèrent pas d'usure de guerre. Toutes les unités militaires sont entièrement soignées si le joueur capture une ville dotée d'une merveille mondiale.</Text>
 		</Replace>
 		<!-- ========== MALI ========== -->
+		<!-- Correction traduction Firaxis : desert plat, pas terrain plat -->
+		<Replace Tag="LOC_TRAIT_LEADER_SAHEL_MERCHANTS_DESCRIPTION" Language="fr_FR">
+			<Text>Les [ICON_TradeRoute] routes commerciales internationales gagnent 1 unité d'[ICON_GOLD] or pour chaque case de désert plat de la ville d'origine. Capacité des [ICON_TradeRoute] routes commerciales +1 chaque fois que vous entrez dans un âge d'or.</Text>
+		</Replace>
 		<!-- ========== MAORI ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_KUPES_VOYAGE_DESCRIPTION" Language="fr_FR">
 			<Text>Commencez la partie sur une case océanique. [ICON_Citizen] Citoyens +1 à la fondation de votre première ville. [ICON_HOUSING] Habitations +3 et [ICON_Amenities] activités +1 pour le palais. [ICON_SCIENCE] Science +2 et [ICON_CULTURE] culture +2 par tour avant la fondation de votre première ville.</Text>
@@ -418,6 +422,9 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PAIRIDAEZA_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire un pairidaēza, exclusif à la Perse. [NEWLINE][NEWLINE][ICON_CULTURE] Culture +1 et [ICON_GOLD] or +2. Attrait +2. [ICON_CULTURE] Culture +1 pour chaque Lieu Saint, Campus et Place du Théâtre adjacent. [ICON_GOLD] Or +1 pour chaque Plateforme Commerciale, Port, Zone Industrielle et Centre-Ville adjacent. [ICON_Culture] Culture et [ICON_Tourism] tourisme additionnels à mesure que vous progressez dans l'arbre des technologies et celui des dogmes. Construction impossible sur une case de neige, de toundra, de colline enneigée ou de colline de toundra, ou adjacent à un autre pairidaēza.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_FALLBABYLON_COMBAT_BONUS_DESCRIPTION" Language="fr_FR">
+			<Text>+{1_Value} en attaque</Text>
 		</Replace>
 		<!-- ========== ROME ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="fr_FR">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>この宗教を信奉している都市1つごとに[ICON_GOLD]ゴールド+2。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="en_US">
@@ -10,52 +10,52 @@
 		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="en_US">
 			<Text>労働者がエチオピアに固有の改善である岩窟教会を建設できるようになる。[NEWLINE][NEWLINE]隣接する丘陵タイル1つごとに[ICON_Faith]信仰力+1。飛行機の技術を研究後、[ICON_FAITH]信仰力に基づいた[ICON_TOURISM]観光力を産出するようになる。アピール+1。自然災害によってのみ略奪されうる。丘陵あるいは火山灰タイル、かつほかの岩窟教会に隣接していないタイルにしか建設できない。</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ja_JP">
 			<Text>幸せである都市は追加で10%の[ICON_SCIENCE]科学力および[ICON_PRODUCTION]生産力ボーナスを得る。興奮状態である都市はこのボーナスが+15%になる。幸せである都市はキャンパスから[ICON_GreatScientist]大科学者ポイント+1、工業区域から[ICON_GreatEngineer]大技術者ポイント+1を毎ターン得る。興奮状態である都市はこのボーナスが毎ターン+2になる。</Text>
 		</Replace>		
-		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="ja_JP">
 			<Text>[ICON_RESOURCE_CATTLE]家畜、[ICON_RESOURCE_RICE]米、および[ICON_RESOURCE_WHEAT]小麦タイルの[ICON_FOOD]食糧+1。</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>自文明の首都で労働者を1体得る。[ICON_RESOURCE_CATTLE]家畜、[ICON_RESOURCE_RICE]米、[ICON_RESOURCE_WHEAT]小麦および[ICON_RESOURCE_MAIZE]タイルの[ICON_FOOD]食糧+1。</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="ja_JP">
 			<Text>国境拡大速度+50%。</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>国境拡大速度+50%。</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="ja_JP">
 			<Text>法典の発明後すべての都市が都心の建造物を一つ持った状態で建設されるようになる。（太古時代ではモニュメント）.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がオランダに固有の改善であるポルダーを建設できるようになる。[NEWLINE][NEWLINE][ICON_FOOD]食糧+1、[ICON_Production]生産力+1、[ICON_Housing]住宅+0.5。ほかのポルダーに隣接している場合、追加で[ICON_FOOD]食糧+1。社会制度およびテクノロジーツリーを進めると追加の[ICON_PRODUCTION]生産力、[ICON_GOLD]ゴールドおよび[ICON_FOOD]食糧を産出するようになる。2タイル以上の通行可能な陸上タイルに隣接している近海あるいは湖にしか建設できない。このタイルの地形[ICON_Movement]移動コストが3になる。</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_KUPES_VOYAGE_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_TRAIT_LEADER_KUPES_VOYAGE_DESCRIPTION" Language="ja_JP">
 			<Text>遠洋のどこかでゲームを開始する。最初の都市を建設した際、その都市の[ICON_Citizen]人口+1。宮殿が[ICON_HOUSING]住宅+3と[ICON_AMENITIES]快適性+1を与える。最初の都市を建設するまで毎ターン[ICON_SCIENCE]科学力および[ICON_CULTURE]文化力+2。</Text>
 		</Replace>
-				<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="en_US">
+				<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>劇場区域を低コストに代替するギリシャ固有の区域。円形競技場を建設すると[ICON_Envoy]代表団1人を得る。[NEWLINE][NEWLINE]都心に隣接していれば[ICON_Culture]文化力+1、隣接する（都心を含む）区域1つごとに[ICON_Culture]文化力+1、遺産、総合娯楽区域およびウォーターパーク1つごとに[ICON_Culture]文化力+2。丘陵タイルに建設されなければならない。</Text>
 		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION1_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION1_DESCRIPTION" Language="ja_JP">
 			<Text>劇場区域を低コストに代替するギリシャ固有の区域。円形競技場を建設すると[ICON_Envoy]代表団1人を得る。[NEWLINE][NEWLINE]都心に隣接していれば[ICON_Culture]文化力+1、隣接する（都心を含む）区域1つごとに[ICON_Culture]文化力+1、遺産1つごとに[ICON_Culture]文化力+2。丘陵タイルに建設されなければならない。</Text>
 		</Replace>
-		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="ja_JP">
 			<Text>劇場区域を低コストに代替するギリシャ固有の区域。円形競技場を建設すると[ICON_Envoy]代表団1人を得る。[NEWLINE][NEWLINE]都心に隣接していれば[ICON_Culture]文化力+1、隣接する（都心を含む）区域1つごとに[ICON_Culture]文化力+1、遺産1つごとに[ICON_Culture]文化力+2。丘陵タイルに建設されなければならない。</Text>
 		</Replace>		
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="ja_JP">
 			<Text>都心に隣接していれば[ICON_Culture]文化力+1、隣接する（都心を含む）区域1つごとに[ICON_Culture]文化力+1、遺産1つごとに[ICON_Culture]文化力+2。丘陵タイルに建設されなければならない。</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>[ICON_Favor]外交的支持+3. 都市国家からの徴用にかかる[ICON_Gold]ゴールドが半分になる。[NEWLINE]自文明が宗主国である場合、都市国家ユニットの[ICON_Strength]戦闘力+4。（徴用されたユニットを含む）。[NEWLINE][Icon_Governor]総督の昇進+1。代表団+2、代表団を得るためのターンごとの影響力+2。</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がスコットランドに固有の改善であるゴルフコースを建設できるようになる。[NEWLINE][NEWLINE][ICON_AMENITIES]快適性+2、[ICON_GOLD]ゴールド+2、[ICON_CULTURE]文化力+1。都心に隣接している場合、[ICON_GOLD]ゴールド+1、[ICON_CULTURE]文化力+1。総合娯楽施設に隣接している場合、[ICON_CULTURE]文化力+1。社会制度およびテクノロジーツリーを進めると追加の[ICON_CULTURE]文化力、[ICON_GOLD]ゴールド、[ICON_TOURISM]観光力および[ICON_HOUSING]住宅を産出するようになる。（丘陵を含む）砂漠には建設できず、1都市に1つまで（ゴルフコースが存在するタイルを他の都市と交換することはできない）。アピール+1。</Text>
 		</Replace>		
-		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がスコットランドに固有の改善であるゴルフコースを建設できるようになる。[NEWLINE][NEWLINE][ICON_AMENITIES]快適性+1、[ICON_GOLD]ゴールド+2、[ICON_CULTURE]文化力+1。都心に隣接している場合、[ICON_GOLD]ゴールド+1、[ICON_CULTURE]文化力+1。総合娯楽施設に隣接している場合、[ICON_CULTURE]文化力+1。社会制度およびテクノロジーツリーを進めると追加の[ICON_CULTURE]文化力、[ICON_GOLD]ゴールド、[ICON_TOURISM]観光力および[ICON_HOUSING]住宅を産出するようになる。（丘陵を含む）砂漠には建設できず、1都市に1つまで（ゴルフコースが存在するタイルを他の都市と交換することはできない）。アピール+1。</Text>
 		</Replace>
-		<Replace Tag="ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG" Language="en_US">
+		<Replace Tag="ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG" Language="ja_JP">
 			<Text>都市国家や蛮族のユニットを拿捕できる可能性がある。</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="ja_JP">

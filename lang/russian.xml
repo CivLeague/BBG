@@ -4,10 +4,10 @@
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="ru_RU">
 			<Text>+2 [ICON_GOLD] золота за каждый город, обращенный в данную религию.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="ru_RU">
 		  <Text>Уникальное улучшение Эфиопии.[NEWLINE][NEWLINE]+1 [ICON_Faith] веры за каждую соседнюю клетку с холмами. После исследования авиации дает [ICON_TOURISM] туризм, равный [ICON_FAITH] вере. +1 престиж. Может быть только разорено, но не уничтожено стихийными бедствиями. Можно построить только на холмах и вулканической почве. Нельзя построить рядом с другим скальным храмом.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="ru_RU">
 		  <Text>Уникальное улучшение Эфиопии.[NEWLINE][NEWLINE]+1 [ICON_Faith] веры за каждую соседнюю клетку с холмами. После исследования авиации дает [ICON_TOURISM] туризм, равный [ICON_FAITH] вере. +1 престиж. Можно построить только на холмах. Нельзя построить рядом с другим скальным храмом.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ru_RU">
