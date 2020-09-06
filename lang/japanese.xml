@@ -5,10 +5,10 @@
 			<Text>この宗教を信奉している都市1つごとに[ICON_GOLD]ゴールド+2。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>労働者がエチオピアに固有の改善である岩窟教会を建設できるようになる。[NEWLINE][NEWLINE]隣接する給料タイル1つごとに[ICON_Faith]信仰力+1。飛行機の技術を研究後、[ICON_FAITH]信仰力に基づいた[ICON_TOURISM]観光力を産出するようになる。アピール+1。自然災害によってのみ略奪されうる。丘陵あるいは火山灰タイル、かつほかの岩窟教会に隣接していないタイルにしか建設できない。</Text>
+			<Text>労働者がエチオピアに固有の改善である岩窟教会を建設できるようになる。[NEWLINE][NEWLINE]隣接する丘陵タイル1つごとに[ICON_Faith]信仰力+1。飛行機の技術を研究後、[ICON_FAITH]信仰力に基づいた[ICON_TOURISM]観光力を産出するようになる。アピール+1。自然災害によってのみ略奪されうる。丘陵あるいは火山灰タイル、かつほかの岩窟教会に隣接していないタイルにしか建設できない。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="en_US">
-			<Text>労働者がエチオピアに固有の改善である岩窟教会を建設できるようになる。[NEWLINE][NEWLINE]隣接する給料タイル1つごとに[ICON_Faith]信仰力+1。飛行機の技術を研究後、[ICON_FAITH]信仰力に基づいた[ICON_TOURISM]観光力を産出するようになる。アピール+1。自然災害によってのみ略奪されうる。丘陵あるいは火山灰タイル、かつほかの岩窟教会に隣接していないタイルにしか建設できない。</Text>
+			<Text>労働者がエチオピアに固有の改善である岩窟教会を建設できるようになる。[NEWLINE][NEWLINE]隣接する丘陵タイル1つごとに[ICON_Faith]信仰力+1。飛行機の技術を研究後、[ICON_FAITH]信仰力に基づいた[ICON_TOURISM]観光力を産出するようになる。アピール+1。自然災害によってのみ略奪されうる。丘陵あるいは火山灰タイル、かつほかの岩窟教会に隣接していないタイルにしか建設できない。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="en_US">
 			<Text>幸せである都市は追加で10%の[ICON_SCIENCE]科学力および[ICON_PRODUCTION]生産力ボーナスを得る。興奮状態である都市はこのボーナスが+15%になる。幸せである都市はキャンパスから[ICON_GreatScientist]大科学者ポイント+1、工業区域から[ICON_GreatEngineer]大技術者ポイント+1を毎ターン得る。興奮状態である都市はこのボーナスが毎ターン+2になる。</Text>
