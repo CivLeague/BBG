@@ -4,10 +4,10 @@
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>この宗教を信奉している都市1つごとに[ICON_GOLD]ゴールド+2。</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がエチオピアに固有の改善である岩窟教会を建設できるようになる。[NEWLINE][NEWLINE]隣接する丘陵タイル1つごとに[ICON_Faith]信仰力+1。飛行機の技術を研究後、[ICON_FAITH]信仰力に基づいた[ICON_TOURISM]観光力を産出するようになる。アピール+1。自然災害によってのみ略奪されうる。丘陵あるいは火山灰タイル、かつほかの岩窟教会に隣接していないタイルにしか建設できない。</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がエチオピアに固有の改善である岩窟教会を建設できるようになる。[NEWLINE][NEWLINE]隣接する丘陵タイル1つごとに[ICON_Faith]信仰力+1。飛行機の技術を研究後、[ICON_FAITH]信仰力に基づいた[ICON_TOURISM]観光力を産出するようになる。アピール+1。自然災害によってのみ略奪されうる。丘陵あるいは火山灰タイル、かつほかの岩窟教会に隣接していないタイルにしか建設できない。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="ja_JP">
