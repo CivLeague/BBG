@@ -1,20 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>+3 de [ICON_Favor] Favor diplomático. Alavancar unidades de Cidades Estado custa metade de [ICON_Gold] Ouro.[NEWLINE]Unidades de Cidades Estado gaham +4 de [ICON_Strength] Força de Combate se você é o Suzerano (inclui unidades alavancadas).[NEWLINE]Concede +1 [Icon_Governor] Título de Governador. +2 emissários e +2 pontos de emissário por turno.</Text>
+		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>+2 de [ICON_GOLD] Ouro pra cada cidade seguindo essa religião.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>Permite construir uma Igreja Escavada na Rocha, melhoria única da Etiopia. [NEWLINE][NEWLINE]+1 de [ICON_Faith] Fé pra cada painel de colina adjacente. Concede [ICON_TOURISM] Turismo por [ICON_FAITH] Fé depois de pesquisar Vôo. +1 de Apelo. Não pode ser destruída por desastres naturais, apenas danificadas. Só pode ser construída em Solo Vulcânico ou Colinas que não estejam adjacentes a outra Igreja Escavada na Rocha.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="pt_BR">
+			<Text>Permite construir uma Igreja Escavada na Rocha, melhoria única da Etiopia. [NEWLINE][NEWLINE]+1 de [ICON_Faith] Fé. +1 de [ICON_Faith] Fé pra cada painel de colina adjacente. Concede [ICON_TOURISM] Turismo por [ICON_FAITH] Fé depois de pesquisar Vôo. +1 de Apelo. Só pode ser construída em Colinas que não estejam adjacentes a outra Igreja Escavada na Rocha.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="pt_BR">
+			<Text>Cidades Felizes recebem um adicional de +10% de [ICON_SCIENCE] Ciência e [ICON_PRODUCTION] Produção. Cidades Eufóricas recebem um adicional de +15%  de [ICON_SCIENCE] Ciência e [ICON_PRODUCTION] Produção. Cidades Felizes geram +1  pontos de [ICON_GreatScientist] Grande Cientista por Campus e +1 ponto de  [ICON_GreatEngineer] Grande Engenheiro por Zona Industrial. Cidades Eufóricas dobram essas quantidades.</Text>
+		</Replace>		
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="pt_BR">
+			<Text>+1 de [ICON_FOOD] comida em paineis com [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], e [ICON_RESOURCE_WHEAT].</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>Quando escolhido, recebe um Construtor na sua capital. +1 de [ICON_FOOD] Comida em paineis com [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT], e [ICON_RESOURCE_MAIZE].</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="pt_BR">
+			<Text>Velocidade de expansão de fronteiras é 50% maior.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>Velocidade de expansão de fronteiras é 50% maior.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="pt_BR">
+			<Text>Todas as cidades começam com uma edificação a mais no Centro de Cidade depois de desbloquear Código de Leis. (Começa com um monumento na Era Antiga).</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="pt_BR">
+			<Text>Permite construir um Pôlder, exclusivo dos Países Baixos.[NEWLINE][NEWLINE]+1 de [ICON_FOOD] Comida, +1 de [ICON_Production] Produção, e +0.5 de [ICON_Housing] Habitação. +1 de [ICON_FOOD] Comida se estiver adjacente a um Pôlder. [ICON_PRODUCTION] Produção, [ICON_GOLD] Ouro, e [ICON_FOOD] Comida adicionais à medida que avança nas Árvores Cívica e Tecnológica. Deve ser colocado em um painel de Costa ou Lago adjacentes a 2 ou mais paineis de terra atravessáveis. Aumenta o custo de [ICON_Movement] Movimento pra 3.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_KUPES_VOYAGE_DESCRIPTION" Language="pt_BR">
+			<Text>Começa o jogo em um painel de Oceano. Recebe +1 de [ICON_Citizen] População quando estabelecer sua primeira cidade. O Palácio recebe +3 de [ICON_HOUSING] Habitação e +1 de [ICON_AMENITIES] Serviço. +2 de [ICON_SCIENCE] Ciência e  +2 de [ICON_CULTURE] Cultura por turno antes de estabelecer a primeira cidade.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>Distrito único da Grécia para atividade cultural. Substitui o distrito de Teatro, e é mais barato de construir. Concede 1 [ICON_Envoy] Emmissário quando constrói um Anfiteatro.[NEWLINE][NEWLINE]+1 de [ICON_Culture] Cultura bônus pra cada distrito adjacente. +2 de [ICON_Culture] Cultura bônus pra cada Maravilha, Complexo de Entretenimento, e Parque Aquático. Só pode ser construído em colinas.</Text>
+			<Text>Distrito único da Grécia pra atividades culturais. Substitui o Teatro e é mais barato de construir. Concede 1 [ICON_Envoy] Emissário quando o Anfiteatro é construído.[NEWLINE][NEWLINE]Bônus de +1 de [ICON_Culture] Cultura pra cada distrito adjacente e um adicional de +1 de [ICON_Culture] Cultura pra cada Centro de Cidade adjacente. Bônus de +2 de [ICON_Culture] pra cada maravilha, Complexo de Entretenimento, e Parque Aquático adjacente. Só pode ser construído em colinas.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION1_DESCRIPTION" Language="pt_BR">
-			<Text>Distrito único da Grécia para atividade cultural. Substitui o distrito de Teatro, e é mais barato de construir. Concede 1 [ICON_Envoy] Emmissário quando constrói um Anfiteatro.[NEWLINE][NEWLINE]+1 de [ICON_Culture] Cultura bônus pra cada distrito adjacente. +2 de [ICON_Culture] Cultura bônus pra cada Maravilha. Só pode ser construído em colinas.</Text>
+			<Text>Distrito único da Grécia pra atividades culturais. Substitui o Teatro e é mais barato de construir. Concede 1 [ICON_Envoy] Emissário quando o Anfiteatro é construído.[NEWLINE][NEWLINE]Bônus de +1 de [ICON_Culture] Cultura pra cada distrito adjacente e um adicional de +1 de [ICON_Culture] Cultura pra cada Centro de Cidade adjacente. Bônus de +2 de [ICON_Culture] pra cada maravilha. Só pode ser construído em colinas.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="pt_BR">
-			<Text>Distrito único da Grécia para atividade cultural. Substitui o distrito de Teatro, e é mais barato de construir. Concede 1 [ICON_Envoy] Emmissário quando constrói um Anfiteatro.[NEWLINE][NEWLINE]+1 de [ICON_Culture] Cultura bônus pra cada distrito adjacente. +2 de [ICON_Culture] Cultura bônus pra cada Maravilha. Só pode ser construído em colinas.</Text>
+			<Text>Distrito único da Grécia pra atividades culturais. Substitui o Teatro e é mais barato de construir. Concede 1 [ICON_Envoy] Emissário quando o Anfiteatro é construído.[NEWLINE][NEWLINE]Bônus de +1 de [ICON_Culture] Cultura pra cada distrito adjacente e um adicional de +1 de [ICON_Culture] Cultura pra cada Centro de Cidade adjacente. Bônus de +2 de [ICON_Culture] pra cada maravilha. Só pode ser construído em colinas.</Text>
 		</Replace>		
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="pt_BR">
-			<Text>Adjacência: Bônus padrão de [ICON_Culture] Cultura pra cada distrito adjacente e bônus maior de [ICON_Culture] Cultura pra cada Maravilha adjacente. Só pode ser construído em colinas.</Text>
+			<Text>Adjacência: Bônus padrão de [ICON_Culture] Cultura pra cada Centro de cidade adjacente. Bônus padrão de [ICON_Culture] Cultura pra cada distrito adjacente. Bônus maior de [ICON_Culture] Cultura pra cada maravilha adjacente. Só pode ser construída em colinas.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>+3 de [ICON_Favor] Favor diplomático. Alavancar unidades de Cidades Estado custa metade de [ICON_Gold] Ouro.[NEWLINE]Unidades de Cidades Estado gaham +4 de [ICON_Strength] Força de Combate se você é o Suzerano (inclui unidades alavancadas).[NEWLINE]Concede +1 [Icon_Governor] Título de Governador. +2 emissários e +2 pontos de emissário por turno.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="pt_BR">
 			<Text>Permite que o Construtor faça um Campo de Golfe, exclusivo da Escócia.[NEWLINE][NEWLINE]+2 de [ICON_AMENITIES] Serviços, +2 de [ICON_GOLD] Ouro, e +1 de [ICON_CULTURE] Cultura. +1 de [ICON_GOLD] Ouro e  +1 de [ICON_CULTURE] Cultura se adjacente a um Centro de Cidade. +1 de [ICON_CULTURE] Cultura se adjacente a um Complexo de Entretenimento. [ICON_CULTURE] Cultura, [ICON_GOLD] Ouro, [ICON_TOURISM] Turismo, e [ICON_HOUSING] Habitação adicionais à medida que avança pelas Árvores Cívica e Tecnológica. Não pode ser construído em Deserto. Um por cidade. Paineis com Campo de Golfe não podem ser trocados. +1 de Apelo.</Text>
@@ -499,12 +532,6 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="pt_BR">
 			<Text>Recebe 25% do custo em Produção de unidades militares terrestres em [ICON_FAITH] Fé ao produzir unidades.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="pt_BR">
-			<Text>Ao escolher, recebe um Construtor em sua Capital. +1 de [ICON_FOOD] alimento em painéis com [ICON_RESOURCE_CATTLE] gado, [ICON_RESOURCE_SHEEP] ovelha, [ICON_RESOURCE_RICE] arroz, e [ICON_RESOURCE_WHEAT] trigo.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>Ao escolher, recebe um Construtor em sua Capital. +1 de [ICON_FOOD] alimento em painéis com [ICON_RESOURCE_CATTLE] gado, [ICON_RESOURCE_SHEEP] ovelha, [ICON_RESOURCE_RICE] arroz, e [ICON_RESOURCE_WHEAT] trigo.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="pt_BR">
 			<Text>Você enviou, com êxito, uma pessoa à Lua! Recebe um Bônus de [ICON_CULTURE] cultura equivalente a 5 vezes a sua [ICON_SCIENCE] ciência por turno, marcando a segunda etapa rumo à Vitória Científica!</Text>

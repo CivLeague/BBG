@@ -63,6 +63,8 @@
 			<ModInUse>9DE86512-DE1A-400D-8C0A-AB46EBBF76B9</ModInUse>
 		</Criteria>
 		<Criteria id="nfp_macedon_persia_maya_colombia">
+			<!-- for some reason, requires xp1 as well -->
+			<ModInUse>1B28771A-C749-434B-9053-D1380C553DE9</ModInUse>
 			<ModInUse>E2749E9A-8056-45CD-901B-C368C8E83DEB</ModInUse>
 			<ModInUse>9DE86512-DE1A-400D-8C0A-AB46EBBF76B9</ModInUse>
 		</Criteria>
@@ -72,6 +74,10 @@
 		</Criteria>
 		<Criteria id="nfp_ethiopia">
 			<ModInUse>1B394FE9-23DC-4868-8F0A-5220CB8FB427</ModInUse>
+		</Criteria>
+		<Criteria id="nfp_xp2_ethiopia">
+			<ModInUse>1B394FE9-23DC-4868-8F0A-5220CB8FB427</ModInUse>
+			<ModInUse>4873eb62-8ccc-4574-b784-dda455e74e68</ModInUse>
 		</Criteria>
 		<Criteria id="nfp_teddy_persona">
 			<ModInUse>113D9459-0A3B-4FCB-A49C-483F40303575</ModInUse>
@@ -240,15 +246,21 @@
 			</Properties>
 			<File>sql/nfp_ethiopia.sql</File>
 		</UpdateDatabase>
-		<UpdateDatabase id="bbg_nfp_teddy_persona" criteria="nfp_teddy_persona">
+		<UpdateDatabase id="bbg_nfp_xp2_ethiopia" criteria="nfp_xp2_ethiopia">
 			<Properties>
 				<LoadOrder>11634</LoadOrder>
+			</Properties>
+			<File>sql/nfp_xp2_ethiopia.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_nfp_teddy_persona" criteria="nfp_teddy_persona">
+			<Properties>
+				<LoadOrder>11635</LoadOrder>
 			</Properties>
 			<File>sql/nfp_teddy_persona.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_nfp_catherine_persona" criteria="nfp_catherine_persona">
 			<Properties>
-				<LoadOrder>11635</LoadOrder>
+				<LoadOrder>11636</LoadOrder>
 			</Properties>
 			<File>sql/nfp_catherine_persona.sql</File>
 		</UpdateDatabase>
@@ -283,6 +295,7 @@
 		<File>sql/nfp_macedon_persia_maya_colombia.sql</File>
 		<File>sql/nfp_xp1_maya_colombia.sql</File>
 		<File>sql/nfp_ethiopia.sql</File>
+		<File>sql/nfp_xp2_ethiopia.sql</File>
 		<File>sql/nfp_teddy_persona.sql</File>
 		<File>sql/nfp_catherine_persona.sql</File>
 	</Files>

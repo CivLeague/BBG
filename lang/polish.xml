@@ -151,6 +151,12 @@
 			<Replace Tag="LOC_ABILITY_ETHIOPIAN_OROMO_CAVALRY_DESCRIPTION" Language="pl_PL">
 				<Text>Brak kary do ruchu podczas przemieszczania się na wzgórzach oraz zyskuje +4 do [ICON_STRENGTH] siły bojowej kiedy walczy na wzgórzach.</Text>
 			</Replace>
+			<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="pl_PL">
+				<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść kościół skalny, dostępny tylko dla Etiopii.[NEWLINE][NEWLINE]+1 do [ICON_Faith] wiary za każde sąsiadujące pole z górą lub wzgórzami. Po opracowaniu technologii lotu zapewnia [ICON_TOURISM] turystykę dzięki [ICON_FAITH] wierze. +1 do atrakcyjności. Można wznieść tylko na wzgórzach, które nie sąsiadują z innym kościołem skalnym.</Text>
+			</Replace>
+			<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść kościół skalny, dostępny tylko dla Etiopii.[NEWLINE][NEWLINE]+1 do [ICON_Faith] wiary za każde sąsiadujące pole z górą lub wzgórzami. Po opracowaniu technologii lotu zapewnia [ICON_TOURISM] turystykę dzięki [ICON_FAITH] wierze. +1 do atrakcyjności. Może być jedynie splądrowany (nigdy zniszczony) przez katastrofy naturalne. Można wznieść tylko na polach ze wzgórzami lub wulkaniczną glebą, które nie sąsiadują z innym kościołem skalnym.</Text>
+			</Replace>
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="pl_PL">
 				<Text>Międzynarodowe szlaki handlowe Etiopii zapewniają +0,5 do [ICON_Faith] wiary za każdy zasób w mieście startu. Zasoby dają +1 do [ICON_Faith] wiary za każdą kopię należącą do miasta. Etiopia może nabywać muzea archeologiczne i archeologów za [ICON_Faith] wiarę.</Text>
 			</Replace>
@@ -233,7 +239,13 @@
 
 			<!-- ================ Greece ================ -->
 			<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION" Language="pl_PL">
-				<Text>Unikalna dzielnica Grecji przeznaczona na obiekty kulturalne. Zastępuje dzielnicę kulturalną, a jej wzniesienie jest tańsze. Po ukończeniu budowy amfiteatru przyznaje 1 [ICON_Envoy] emisariusza.[NEWLINE][NEWLINE]+1 do [ICON_CULTURE] kultury za każdą sąsiadującą dzielnicę. Można budować jedynie na wzgórzach.</Text>
+				<Text>Unikalna dzielnica Grecji przeznaczona na obiekty kulturalne. Zastępuje dzielnicę kulturalną, a jej wzniesienie jest tańsze. Po ukończeniu budowy amfiteatru przyznaje 1 [ICON_Envoy] emisariusza.[NEWLINE][NEWLINE]+1 do [ICON_CULTURE] kultury za każdą sąsiadującą dzielnicę i dodatkowo +1 [ICON_CULTIRE] kultury za sąsiedztwo z centrum miasta. +2 [ICON_CULTURE] kultury za sąsiedzwto z cudem. Można budować jedynie na wzgórzach.</Text>
+			</Replace>
+			<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION1_DESCRIPTION" Language="pl_PL">
+				<Text>Unikalna dzielnica Grecji przeznaczona na obiekty kulturalne. Zastępuje dzielnicę kulturalną, a jej wzniesienie jest tańsze. Po ukończeniu przyznaje 1 [ICON_Envoy] emisariusza.[NEWLINE][NEWLINE]+1 do [ICON_Culture] kultury za każdy sąsiadującą dzielnicę i dodatkowo +1 do [ICON_Culture] kultury za sąsiedztwo z centrum miasta. +2 do [ICON_Culture] kultry za każdy sąsiadujący cud świata. Można budować jedynie na wzgórzach.</Text>
+			</Replace>
+			<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>Unikalna dzielnica Grecji przeznaczona na obiekty kulturalne. Zastępuje dzielnicę kulturalną, a jej wzniesienie jest tańsze. Po ukończeniu przyznaje 1 [ICON_Envoy] emisariusza.[NEWLINE][NEWLINE]+1 do [ICON_Culture] kultury za każdy sąsiadującą dzielnicę i dodatkowo +1 do [ICON_Culture] kultury za sąsiedztwo z centrum miasta. +2 do [ICON_Culture] kultry za każdy sąsiadujący cud świata, dzielnicę rozrywkową i park wodny. Można budować jedynie na wzgórzach.</Text>
 			</Replace>
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="pl_PL">
 				<Text>Jedno dodatkowe miejsce na dziką kartę doktryny w dowolnym ustroju.[NEWLINE][NEWLINE]Emisariusz za każdy ukończony amfiteatr.</Text>
@@ -285,9 +297,6 @@
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="pl_PL">
 				<Text>+2 do [ICON_FAITH] wiary do każdego przychodzącego i wychodzącego międzynarodowego szklaku handlowego. Szlak handlowy źródłowej cywilizacji otrzymuje Dodatkowo +2 do [ICON_FAITH] wiary. +3 do [ICON_FAITH] wiary i +1 [ICON_AMENITIES] udogodnienie z rozrywki dla każdego miasta z akweduktem. Farmy dają +2 do [ICON_FOOD] żywności, jeśli sąsiadują z akweduktem.</Text>
 			</Replace>
-			<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION" Language="pl_PL">
-				<Text>Dzielnice świątynne zapewniają +2 do [ICON_FOOD] żywności, +2 do [ICON_FAITH] wiary i +1 do [ICON_HOUSING] obszarów mieszkalnych, jeśli zostaną umieszczone na polu z rzeką. Dzielnice świątynne uruchamiają bombę kulturową.</Text>
-			</Replace>
 			<Replace Tag="LOC_UNIT_KHMER_DOMREY_DESCRIPTION" Language="pl_PL">
 				<Text>Średniowieczna jednostka oblężnicza dostępna wyłącznie dla Khmeru. Jest w stanie poruszać się i strzelać w tej samej turze oraz generuje strefę kontroli.</Text>
 			</Replace>
@@ -337,6 +346,11 @@
 				<Text>Dostępna wyłącznie dla Macedonii jednostka walcząca w zwarciu zastępująca zbrojnych. +10 do [ICON_STRENGTH] siły bojowej podczas oblegania dzielnic. 50% dodatkowej premii wsparcia.</Text>
 			</Replace>
 
+			<!-- ================ Maori ================ -->
+			<Replace Tag="LOC_TRAIT_LEADER_KUPES_VOYAGE_DESCRIPTION" Language="pl_PL">
+				<Text>Rozpoczyna grę na polu oceanu. Zyskuje +1 [ICON_Citizen] obywatela, gdy zakłada swoje pierwsze miasto. Pałac otrzymuje +3 [ICON_HOUSING] obszary mieszkalne i +1 [ICON_AMENITIES] udogodnienie. +2 do [ICON_SCIENCE] nauki i +2 do [ICON_CULTURE] kultury na turę przed założeniem pierwszego miasta.</Text>
+			</Replace>
+
 			<!-- ================ Mapuche ================ -->
 			<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="pl_PL">
 				<Text>Odblokowuje zdolność budowniczych pozwalającą tworzyć chemamull dostępny wyłącznie dla Mapuczów.[NEWLINE][NEWLINE]Zapewnia [ICON_CULTURE] kulturę równą 75% atrakcyjności pola, na którym się znajduje i +1 do [ICON_PRODUCTION] produkcji. Dodatkowo +1 do [ICON_PRODUCTION] produkcji po opracowaniu idei służby cywilnej. Dodatkowa [ICON_TOURISM] turystyka po opracowaniu technologii lotu. Można umieścić wyłącznie na polach o co najmniej niesamowitym poziomie atrakcyjności.</Text>
@@ -359,6 +373,11 @@
 			<!-- ================ Mongolia ================ -->
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_MONGOLIAN_ORTOO_DESCRIPTION" Language="pl_PL">
 				<Text>Wszystkie mongolskie jednostki zyskują podwojenie premii do [ICON_STRENGTH] siły bojowej wynikającej z posiadania większego poziomu [ICON_VisLimited] dyplomatycznej widoczności niż ich przeciwnik. Rozpoczęcie budowy [ICON_TradeRoute] szlaku handlowego automatycznie tworzy [ICON_TradingPost] punkt handlowy w mieście docelowym.</Text>
+			</Replace>
+
+			<!-- ================ Netherlands ================ -->
+			<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="pl_PL">
+				<Text>Odblokowuje zdolność budowniczych pozwalającą tworzyć polder dostępny wyłącznie dla Holandii.[NEWLINE][NEWLINE]+1 [ICON_FOOD] żywności, +1 do [ICON_Production] produkcji i +0,5 do [ICON_Housing] obszarów mieszkalnych. +1 do [ICON_FOOD] żywności, jeśli sąsiaduje z polderem. Dodatkowa [ICON_PRODUCTION] produkcja, [ICON_GOLD] złoto i [ICON_FOOD] żywność wraz z postępami na drzewach idei i technologii. Można umieścić wyłącznie na polu wybrzeża lub jeziora sąsiadującego co najmniej z 2 polami terenu umożliwiającego ruch. Zwiększa koszt [ICON_Movement] ruchu na polu do 3.</Text>
 			</Replace>
 
 			<!-- ================ Norway ================ -->
@@ -438,6 +457,9 @@
 			<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_DESCRIPTION" Language="pl_PL">
 				<Text>Unikalna dzielnica Rzymu wspomagająca rozwój miasta. Zastępuje dzielnicę akweduktu, a jej wzniesienie jest tańsze. +1 do [ICON_CULTURE] kultury za każde 2 sąsiadujące dzielnice.[NEWLINE][NEWLINE]Dostarcza miastu świeżą wodę ze źródła w postaci sąsiadującej rzeki, jeziora, oazy albo gór. Miasto, które nie posiada jeszcze słodkiej wody, otrzymuje z tego tytułu do 6 [ICON_HOUSING] obszarów mieszkalnych. Miasta, które mają już taką wodę, otrzymają zamiast tego +2 [ICON_HOUSING] obszary mieszkalne. +1 [ICON_AMENITIES] udogodnienie, jeśli sąsiaduje ze szczeliną geotermalną. We wszystkich przypadkach łaźnia zapewnia dodatkowe +2 [ICON_HOUSING] obszary mieszkalne i +1 [ICON_AMENITIES] udogodnienie. Zapobiega utracie [ICON_FOOD] żywności podczas suszy. Musi powstać w sąsiedztwie centrum miasta.</Text>
 			</Replace>
+			<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="pl_PL">
+				<Text>Po odkryciu kodaksu praw wszystkie miasta zaczynają z dodatkową budowlą centrum (w starożytności jest to pomnik).</Text>
+			</Replace>
 
 			<!-- ================ Russia ================ -->
 			<Replace Tag="LOC_DISTRICT_LAVRA_DESCRIPTION" Language="pl_PL">
@@ -450,6 +472,12 @@
 			<!-- ================ Scotland ================ -->
 			<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="pl_PL">
 				<Text>Odblokowuje zdolność budowniczych pozwalającą tworzyć pole golfowe dostępne wyłącznie dla Szkocji.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] udogodnienie i +2 do [ICON_GOLD] złota i +1 do [ICON_CULTURE]. +1 do [ICON_GOLD] i +1 do [ICON_CULTURE] kultury, jeśli sąsiaduje z centrum miasta. +1 do [ICON_CULTURE] kultury, jeśli sąsiaduje z dzielnicą rozrywkową. Dodatkowa [ICON_CULTURE] kultura, [ICON_GOLD] złoto, [ICON_TOURISM] turystyka i [ICON_HOUSING] obszary mieszkalne wraz z postępami na drzewach idei i technologii. Nie można umieścić na polach z pustynią i pustynią ze wzgórzami. Tylko jedno na miasto. Pól z polem golfowym nie można wymieniać. +1 do atrakcyjności.</Text>
+			</Replace>
+			<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="pl_PL">
+				<Text>Odblokowuje zdolność budowniczych do wznoszenia Pola Golfowego, unikalne dla Szkocji.[NEWLINE][NEWLINE]+2 do [ICON_AMENITIES] udogodnień, +2 do [ICON_GOLD] złota i +1 do [ICON_CULTURE] kultury. +1 do ICON_GOLD] złota i +1 do [ICON_CULTURE] kultury jeżeli sąsiaduje z centrum miasta. +1 do [ICON_CULTURE] kultury jeżeli sąsiaduje z dzielnicą rozrywkową. Dodatkowa [ICON_CULTURE] kultura, [ICON_GOLD] złoto, [ICON_TOURISM] turystyka i [ICON_HOUSING] obszary mieszkalne wraz postępem w drzewie technologii i ideii. Nie może być wybudowane na pustyni albo wzgórzach pustynnych. Jedno na miasto. Obszaru z polem golfowym nie może zmienić przynależności do miasta. +1 do atrakcyjności.</Text>
+			</Replace>
+			<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="pl_PL">
+				<Text>Miasta z zadowolonymi mieszkańcami zyskują +10% do [ICON_SCIENCE] nauki i +10% do [ICON_PRODUCTION] produkcji. Miasta w stanie zachwytu otrzymują dodatkowe +15% do [ICON_SCIENCE] nauki i [ICON_PRODUCTION] produkcji. Miasta z zadowolonymi mieszkańcami generują +1 punkt [ICON_GreatScientist] wielkiego naukowca za każdy kampus i +1 punkt [ICON_GreatEngineer] wielkiego inżyniera za każdą dzielnicę przemysłową. W miastach w stanie zachwytu premie te ulegają podwojeniu.</Text>
 			</Replace>
 
 			<!-- ================ Scyth ================ -->
@@ -478,6 +506,9 @@
 			</Replace>
 
 			<!-- ================ Sumer ================ -->
+			<Replace Tag="ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG" Language="pl_PL">
+				<Text>Ma szansę schwytać pokonaną jednostkę barbarzyńców bądź państwa-miasta.</Text>
+			</Replace>
 			<Replace Tag="LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION" Language="pl_PL">
 				<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść ziggurat, dostępny tylko w Sumerii.[NEWLINE][NEWLINE]+2 do [ICON_SCIENCE] nauki. +1 do [ICON_CULTURE] kultury, jeśli znajduje się nad rzeką. +1 [ICON_CULTURE] do kultury po opracowaniu idei służba dyplomatyczna. +1 do [ICON_CULTURE] kultury i +1 do [ICON_SCIENCE] nauki po opracowaniu idei oświecenia. Nie można zbudować go na wzgórzu, ale można wznieść go na równinach zalewowych.</Text>
 			</Replace>
@@ -499,7 +530,7 @@
 
 			<!-- ================ Sweden ================ -->
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="pl_PL">
-				<Text>+1 do wszystkich dochodów w stolicy po odblokowaniu ideii filozofii politycznej. Szwecja zyskuje 50 [ICON_Favor] względów dyplomatycznych, gdy zdobywa wielką osobę. Szwecja zyskuje +1 punkt [ICON_GreatEngineer] wielkiego inżyniera dzięki fabrykom i +1 punkt [ICON_GreatScientist] wielkiego naukowca dzięki uniwersytetom oraz +50% do [ICON_PRODUCTION] produkcji przy wznoszeniu tych budowli. Udział Szwecji w rozgrywce dodaje trzy unikalne rywalizacje Kongresu Światowego dostępne od epoki przemysłowej.</Text>
+				<Text>+1 do wszystkich dochodów w stolicy. Szwecja zyskuje 50 [ICON_Favor] względów dyplomatycznych, gdy zdobywa wielką osobę. Szwecja zyskuje +1 punkt [ICON_GreatEngineer] wielkiego inżyniera dzięki fabrykom i +1 punkt [ICON_GreatScientist] wielkiego naukowca dzięki uniwersytetom oraz +50% do [ICON_PRODUCTION] produkcji przy wznoszeniu tych budowli. Udział Szwecji w rozgrywce dodaje trzy unikalne rywalizacje Kongresu Światowego dostępne od epoki przemysłowej.</Text>
 			</Replace>
 
 			<!-- ================ Zulu ================ -->
@@ -545,7 +576,7 @@
 
 			<!-- ================ Acropolis ================ -->
 			<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="pl_PL">
-				<Text>Sąsiedztwo: Standardowa premia do [ICON_Culture] kultury za każdą sąsiadującą dzielnicę. Można budować jedynie na wzgórzach.</Text>
+				<Text>Sąsiedztwo: Standardowa premia do [ICON_Culture] kultury za każdą sąsiedztwo z centrym miasta. Standardowa premia do [ICON_Culture] kultury za każdą sąsiadującą dzielnicę. Dodatkowa premia do [ICON_CULTURE] za sąsiedztwo z cudem. Można budować jedynie na wzgórzach.</Text>
 			</Replace>
 
 			<!-- ================ Airport ================ -->
@@ -564,6 +595,11 @@
 				<Text>+25% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości).[NEWLINE]+1 [ICON_RESOURCE_NITER] saletry na turę (jeżeli odkryta).</Text>
 			</Replace>
 
+			<!-- ================ Diplomatic ================ -->
+			<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>+3 [ICON_Favor] Diplomatic Favor. Leveraging City States costs half [ICON_Gold] Gold.[NEWLINE]City State units gain +4 [ICON_Strength] Combat Strength if you are the City State's Suzerain (including Leveraged Units).[NEWLINE]Awards +1 [Icon_Governor] Governor Title. +2 envoys and +2 influence per turn towards envoys.</Text>
+			</Replace>
+
 			<!-- ================ Government ================ -->
 			<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="pl_PL">
 				<Text>Pozyskiwanie miast-państw kosztuje o połowę mniej [ICON_GOLD] złota.[NEWLINE]Jednostki miasta-państwa zyskują premię +4 do [ICON_STRENGTH] siły bojowej, jeśli jesteś suzerenem tego miasta-państwa (premia obejmuje też pozyskane jednostki).[NEWLINE]Daje 1 tytuł [Icon_Governor] gubernatora. +2 emisariuszy i +2 punkty wpływu na turę.</Text>
@@ -579,7 +615,7 @@
 
 				<!-- Seaport -->
 				<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="pl_PL">
-					<Text>+25% doświadczenia bojowego dla wszystkich jednostek morskich wyszkolonych w tym mieście. Umożliwia bezpośrednie szkolenie flot i armad. Koszt szkolenia flot i armad zmniejszony o 25%. +2 [ICON_GOLD] złota ze wszystkich pól wybrzeża należących do tego miasta. +1 [ICON_COAL] węgla na turę.</Text>
+					<Text>+25% doświadczenia bojowego dla wszystkich jednostek morskich wyszkolonych w tym mieście. Umożliwia bezpośrednie szkolenie flot i armad. Koszt szkolenia flot i armad zmniejszony o 25%. +2 [ICON_GOLD] złota ze wszystkich pól wybrzeża należących do tego miasta. +1 [ICON_RESOURCE_COAL] węgla na turę.</Text>
 				</Replace>
 
 
@@ -776,6 +812,12 @@
 			<Replace Tag="LOC_BELIEF_RELIGIOUS_COMMUNITY_DESCRIPTION" Language="pl_PL">
 				<Text>Dzielnica świątynna, Kaplice i świątynie zapewniają +1 [ICON_HOUSING] obszar mieszkalny.</Text>
 			</Replace>
+			<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="pl_PL">
+				<Text>Tempo rozszerzania się granic jest o 50% większe.</Text>
+			</Replace>
+			<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>Tempo rozszerzania się granic jest o 50% większe.</Text>
+			</Replace>
 			<Replace Tag="LOC_BELIEF_RIVER_GODDESS_DESCRIPTION" Language="pl_PL">
 				<Text>Rzeki dają +2 do [ICON_FAITH] wiary bonus za sąsiedztwo dla dzielnicy świątyynnej. +1 [ICON_Amenities] udogodnienie dla miast mających dzielnicę świątynną sąsiadującą z rzeką.</Text>
 			</Replace>
@@ -784,6 +826,9 @@
 			</Replace>
 			<Replace Tag="LOC_BELIEF_TITHE_DESCRIPTION" Language="pl_PL">
 				<Text>+1 do [ICON_GOLD] złota za każdych 3 wyznawców tej religii.</Text>
+			</Replace>
+			<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>+2 do [ICON_GOLD] złota za każde miasto wyznającę tą religię.</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="pl_PL">
 				<Text>Kaplice i świątynie dają bonus do [ICON_PRODUCTION] produkcji równy ilości [ICON_FAITH] wiary jakie generują.</Text>
@@ -809,10 +854,10 @@
 				<Text>Dzielnice świątynne otrzymują +1 do [ICON_FAITH] wiary z sąsiednich pól z tundrą.</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="pl_PL">
-				<Text>Po wybraniu otrzymasz budowniczego w swojej stolicy. +1 do [ICON_FOOD] żywności na polach z [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE] i [ICON_RESOURCE_WHEAT].</Text>
+				<Text>+1 do [ICON_FOOD] żywności na polach z [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE] i [ICON_RESOURCE_WHEAT].</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="pl_PL">
-				<Text>Po wybraniu otrzymasz budowniczego w swojej stolicy. +1 do [ICON_FOOD] żywności na polach z [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_SHEEP], [ICON_RESOURCE_RICE] i [ICON_RESOURCE_WHEAT].</Text>
+				<Text>Po wybraniu otrzymasz budowniczego w swojej stolicy. +1 do [ICON_FOOD] żywności na polach z [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT] i [ICON_RESOURCE_MAIZE].</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION" Language="pl_PL">
 				<Text>+4 do [ICON_FAITH] wiary dzięki szczelinom geotermalnym i wulkanicznej glebie.</Text>
