@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="bdffd1bc-49e5-4dd6-81b2-aab1eb55563f" version="3.15.1">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.15.2">
 	<Properties>
-		<Name>Better Balanced Game 3.15.1</Name>
+		<Name>Better Balanced Game 3.15.2</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
@@ -51,7 +51,8 @@
 			<ModInUse>643EA320-8E1A-4CF1-A01C-00D88DDD131A</ModInUse>
 		</Criteria>
 		<Criteria id="xp2_nubia">
-			<LeaderPlayable>Players:Expansion2_Players::LEADER_AMANITORE</LeaderPlayable>
+			<ModInUse>643EA320-8E1A-4CF1-A01C-00D88DDD131A</ModInUse>
+			<ModInUse>4873eb62-8ccc-4574-b784-dda455e74e68</ModInUse>
 		</Criteria>
 		<Criteria id="dlc_poland">
 			<ModInUse>3809975F-263F-40A2-A747-8BFB171D821A</ModInUse>

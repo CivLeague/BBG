@@ -334,6 +334,8 @@ UPDATE ModifierArguments SET Value='4' WHERE ModifierId='GODDESS_OF_FIRE_FEATURE
 --==============================================================
 --******				 RELIGIOUS						  ******
 --==============================================================
+--delete their new work ethic
+DELETE From BeliefModifiers WHERE ModifierId='WORK_ETHIC_ADJACENCY_PRODUCTION_2';
 -- nerf tithe
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TITHE_GOLD_CITY_MODIFIER' AND Name='Amount';
 /*--revert feed the world to pre-GS version
