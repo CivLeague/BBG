@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.15.2">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.16.1">
 	<Properties>
-		<Name>Better Balanced Game 3.15.2</Name>
+		<Name>Better Balanced Game 3.16.1</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
@@ -85,6 +85,9 @@
 		</Criteria>
 		<Criteria id="nfp_catherine_persona">
 			<ModInUse>CE5876CD-6900-46D1-9C9C-8DBA1F28872E</ModInUse>
+		</Criteria>
+		<Criteria id="nfp_byzantium_gaul">
+			<ModInUse>A1100FC4-70F2-4129-AC27-2A65A685ED08</ModInUse>
 		</Criteria>
 	</ActionCriteria>
 	
@@ -265,6 +268,12 @@
 			</Properties>
 			<File>sql/nfp_catherine_persona.sql</File>
 		</UpdateDatabase>
+		<UpdateDatabase id="bbg_nfp_byzantium_gaul" criteria="nfp_byzantium_gaul">
+			<Properties>
+				<LoadOrder>11637</LoadOrder>
+			</Properties>
+			<File>sql/nfp_byzantium_gaul.sql</File>
+		</UpdateDatabase>
 	</InGameActions>
 	
 	<!-- defines file dependencies -->
@@ -299,5 +308,6 @@
 		<File>sql/nfp_xp2_ethiopia.sql</File>
 		<File>sql/nfp_teddy_persona.sql</File>
 		<File>sql/nfp_catherine_persona.sql</File>
+		<File>sql/nfp_byzantium_gaul.sql</File>
 	</Files>
 </Mod>

@@ -368,17 +368,6 @@ INSERT OR IGNORE INTO Requirements (RequirementId , RequirementType)
 	VALUES ('REQUIREMENT_UNIT_IS_SETTLER' , 'REQUIREMENT_UNIT_TYPE_MATCHES');
 INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('REQUIREMENT_UNIT_IS_SETTLER' , 'UnitType' , 'UNIT_SETTLER');
--- +50% production to shrines and temples
-INSERT OR IGNORE INTO TraitModifiers (TraitType , ModifierId)
-	VALUES 
-	('TRAIT_LEADER_SATYAGRAHA' , 'SATYAGRAHA_HOLY_SITE_BUILDING_BOOST' );
-INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
-	VALUES 
-	('SATYAGRAHA_HOLY_SITE_BUILDING_BOOST' , 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION' , null);
-INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra , SecondExtra)
-	VALUES 
-	('SATYAGRAHA_HOLY_SITE_BUILDING_BOOST' , 'DistrictType' , 'DISTRICT_HOLY_SITE' , null , null),
-	('SATYAGRAHA_HOLY_SITE_BUILDING_BOOST' , 'Amount'       , '50'                 , null , null);
 
 
 --==================
@@ -518,8 +507,8 @@ INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
 --==================
 -- Lavra only gets 1 Great Prophet Point per turn
 UPDATE District_GreatPersonPoints SET PointsPerTurn=1 WHERE DistrictType='DISTRICT_LAVRA' AND GreatPersonClassType='GREAT_PERSON_CLASS_PROPHET';
--- Only gets 4 extra tiles when founding a new city instead of 8 
-UPDATE ModifierArguments SET Value='4' WHERE ModifierId='TRAIT_INCREASED_TILES';
+-- Only gets 2 extra tiles when founding a new city instead of 8 
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TRAIT_INCREASED_TILES';
 -- Cossacks have same base strength as cavalry instead of +5
 UPDATE Units SET Combat=62 WHERE UnitType='UNIT_RUSSIAN_COSSACK';
 -- Lavra district does not acrue Great Person Points unless city has a theater
@@ -929,9 +918,22 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('STONE_CIRCLES_QUARRY_PROD_MODIFIER_BBG', 'Amount', '1');
 INSERT OR IGNORE INTO BeliefModifiers (BeliefType, ModifierID) VALUES
 	('BELIEF_STONE_CIRCLES', 'STONE_CIRCLES_QUARRY_PROD_BBG');
--- religious idols +1 faith
-UPDATE ModifierArguments SET Value='3' WHERE ModifierId='RELIGIOUS_IDOLS_BONUS_MINE_FAITH_MODIFIER' and Name='Amount';
-UPDATE ModifierArguments SET Value='3' WHERE ModifierId='RELIGIOUS_IDOLS_LUXURY_MINE_FAITH_MODIFIER' and Name='Amount';
+-- religious idols +2 gold
+INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+	('RELIGIOUS_IDOLS_BONUS_MINE_GOLD_BBG', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS'),
+	('RELIGIOUS_IDOLS_LUXURY_MINE_GOLD_BBG', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS'),
+	('RELIGIOUS_IDOLS_BONUS_MINE_GOLD_MODIFIER_BBG', 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD', 'PLOT_HAS_BONUS_MINE_REQUIREMENTS'),
+	('RELIGIOUS_IDOLS_LUXURY_MINE_GOLD_MODIFIER_BBG', 'MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD', 'PLOT_HAS_LUXURY_MINE_REQUIREMENTS');
+INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('RELIGIOUS_IDOLS_BONUS_MINE_GOLD_BBG', 'ModifierId', 'RELIGIOUS_IDOLS_BONUS_MINE_GOLD_MODIFIER_BBG'),
+	('RELIGIOUS_IDOLS_BONUS_MINE_GOLD_MODIFIER_BBG', 'Amount', '2'),
+	('RELIGIOUS_IDOLS_BONUS_MINE_GOLD_MODIFIER_BBG', 'YieldType', 'YIELD_GOLD'),
+	('RELIGIOUS_IDOLS_LUXURY_MINE_GOLD_BBG', 'ModifierId', 'RELIGIOUS_IDOLS_LUXURY_MINE_GOLD_MODIFIER_BBG'),
+	('RELIGIOUS_IDOLS_LUXURY_MINE_GOLD_MODIFIER_BBG', 'Amount', '2'),
+	('RELIGIOUS_IDOLS_LUXURY_MINE_GOLD_MODIFIER_BBG', 'YieldType', 'YIELD_GOLD');
+INSERT OR IGNORE INTO BeliefModifiers VALUES
+	('BELIEF_RELIGIOUS_IDOLS', 'RELIGIOUS_IDOLS_BONUS_MINE_GOLD_BBG'),
+	('BELIEF_RELIGIOUS_IDOLS', 'RELIGIOUS_IDOLS_LUXURY_MINE_GOLD_BBG');
 -- Goddess of the Harvest is +50% faith from chops instead of +100%
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='GODDESS_OF_THE_HARVEST_HARVEST_MODIFIER' and Name='Amount';
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='GODDESS_OF_THE_HARVEST_REMOVE_FEATURE_MODIFIER' and Name='Amount';
@@ -1325,19 +1327,6 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementI
 	VALUES
 	('GRAPE_SHOT_REQUIREMENTS',			'PLAYER_IS_ATTACKER_REQUIREMENTS'),
 	('SHRAPNEL_REQUIREMENTS',			'PLAYER_IS_ATTACKER_REQUIREMENTS');
--- anticav exert ZoC upon light and heavy cav
-INSERT OR IGNORE INTO RequirementSets VALUES ('NOT_ANTICAV_REQUIREMENTS_BBG', 'REQUIREMENTSET_TEST_ALL');
-INSERT OR IGNORE INTO RequirementSetRequirements VALUES
-	('NOT_ANTICAV_REQUIREMENTS_BBG', 'REQUIRES_LAND_DOMAIN'),
-	('NOT_ANTICAV_REQUIREMENTS_BBG', 'REQUIREMENT_UNIT_IS_NOT_ANTICAV_BBG'),
-	('NOT_ANTICAV_REQUIREMENTS_BBG', 'REQUIREMENT_OPPONENT_IS_NOT_A_SHIP');
-INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES
-	('REQUIREMENT_UNIT_IS_NOT_ANTICAV_BBG', 'REQUIREMENT_OPPONENT_UNIT_TAG_MATCHES', 1),
-	('REQUIREMENT_OPPONENT_IS_NOT_A_SHIP', 'REQUIREMENT_OPPONENT_UNIT_DOMAIN_MATCHES', 1);
-INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES
-	('REQUIREMENT_UNIT_IS_NOT_ANTICAV_BBG', 'Tag', 'CLASS_ANTI_CAVALRY'),
-	('REQUIREMENT_OPPONENT_IS_NOT_A_SHIP', 'DomainType', 'DOMAIN_SEA');
-UPDATE Modifiers SET SubjectRequirementSetId='NOT_ANTICAV_REQUIREMENTS_BBG' WHERE ModifierId='IGNOREZOC_IGNORE_ZOC';
 
 
 
@@ -1757,6 +1746,8 @@ INSERT OR IGNORE INTO Feature_AdjacentYields (FeatureType, YieldType, YieldChang
 --==============================================================
 --******				    O T H E R					  ******
 --==============================================================
+-- chancery science from captured spies increased
+UPDATE ModifierArguments SET Value='200' WHERE ModifierId='CHANCERY_COUNTERYSPY_SCIENCE' AND Name='Amount';
 -- oil can be found on flat plains
 INSERT OR IGNORE INTO Resource_ValidTerrains (ResourceType, TerrainType)
 	VALUES ('RESOURCE_OIL', 'TERRAIN_PLAINS');

@@ -57,6 +57,12 @@ DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND Re
 --==================
 -- City-States
 --==================
+UPDATE Units SET CostProgressionModel='COST_PROGRESSION_PREVIOUS_COPIES', CostProgressionParam1=10 WHERE UnitType='UNIT_LAHORE_NIHANG';
+
+
+--==================
+-- Other
+--==================
 INSERT OR IGNORE INTO TypeTags (Type, Tag) VALUES
 	('RESOURCE_MAIZE'  , 'CLASS_FERTILITY_RITES_FOOD');
 

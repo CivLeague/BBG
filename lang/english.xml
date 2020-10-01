@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="en_US">
+			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards libraries, workshops, universities, and factories. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="en_US">
+			<Text>+2 [ICON_Faith] Faith and +2 [ICON_GOLD] Gold from Mines over Luxury and Bonus resources.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="en_US">
+			<Text>Grants an extra belief when founding a Religion. Settlers and Builders receive +1 [ICON_Movement] Movement. +5 [ICON_Faith] Faith for each civilization (including India) they have met that has founded a Religion and is not currently at war. Opposing civilizations receive double the war weariness for fighting against Gandhi.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Grants an extra belief when founding a Religion. Settlers and Builders receive +1 [ICON_Movement] Movement. +5 [ICON_Faith] Faith and +1 [ICON_Favor] Diplomatic Favor per turn for each civilization (including India) they have met that has founded a Religion and is not currently at war. Opposing civilizations receive double the war weariness for fighting against Gandhi.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="en_US">
+			<Text>50% [ICON_GOLD] Gold discount on purchasing buildings, districts, and combat units in the city.</Text>
+		</Row>
+		<!---->
+		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Shrines and Temple provide +3 [ICON_FOOD] Food and +1 [ICON_HOUSING] Housing each.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_AMBIORIX_DESCRIPTION" Language="en_US">
+			<Text>Melee and anti-cavalry units receive +1 [ICON_Strength] Combat Strength for every adjacent combat unit.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_AMBIORIX_NEIGHBOR_COMBAT_BONUS_DESCRIPTION" Language="en_US">
+			<Text>Receive +1 [ICON_Strength] Combat Strength for each adjacent unit (King of the Eburones)</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_LAND_ACQUISITION_DESCRIPTION" Language="en_US">
+			<Text>Acquire new tiles in city faster. +3 [ICON_Gold] Gold per turn from each foreign [ICON_TradeRoute] Trade Route passing through the city.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_FORESTRY_MANAGEMENT_DESCRIPTION" Language="en_US">
+			<Text>This city receives +2 [ICON_Gold] Gold from each unimproved feature and each breathtaking tile. Tiles adjacent to unimproved features receive +1 Appeal in this city.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="en_US">
+			<Text>+2 [ICON_Gold] Gold per turn for each [ICON_Citizen] Citizen in the city and +1 Trade Route capacity while established in any city.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION" Language="en_US">
+			<Text>Byzantine unique Classical Era unit that replaces the Quadrireme and has additional range.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="en_US">
+			<Text>Receive +2 [ICON_Strength] Combat Strength for each Holy City converted to your Religion and Byzantium's Religion is spread to nearby cities when a major civilization's unit is defeated (Taxis)</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BYZANTIUM_RELIGIOUS_UNITS_DESCRIPTION" Language="en_US">
+			<Text>Receive +2 [ICON_RELIGION] Religious Strength for each Holy City converted to your Religion.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BYZANTIUM_DESCRIPTION" Language="en_US">
+			<Text>Units receive +2 [ICON_Strength] Combat Strength or [ICON_Religion] Religious Strength for each Holy City converted to Byzantium's Religion (including Byzantium's Holy City). Byzantium's Religion is spread to nearby cities when an enemy civilization or city-state unit is defeated. +1 [ICON_GreatProphet] Great Prophet point from cities with a Holy Site district.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>+2 [ICON_GOLD] Gold for each city following the Religion.</Text>
 		</Replace>
@@ -47,7 +94,6 @@
 			<Text>Adjacency: Standard [ICON_Culture] Culture bonus for adjacent City Center. Standard [ICON_Culture] Culture bonus for each adjacent district. Major [ICON_Culture] Culture bonus for each adjacent wonder. Can only be built on Hills.</Text>
 		</Replace>
 
-		<!-- LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION needs appeal changed from 1 to 2 -->
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>+3 [ICON_Favor] Diplomatic Favor. Leveraging City States costs half [ICON_Gold] Gold.[NEWLINE]City State units gain +4 [ICON_Strength] Combat Strength if you are the City State's Suzerain (including Leveraged Units).[NEWLINE]Awards +1 [Icon_Governor] Governor Title. +2 envoys and +2 influence per turn towards envoys.</Text>
 		</Replace>
@@ -66,9 +112,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="en_US">
 			<Text>All units have +1 sight. Promoting Light Cavalry units do not end their turn.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="en_US">
-			<Text>+1 to all yields in Sweden's capital city. Sweden gains 50 [ICON_Favor] Diplomatic Favor when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards these buildings. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. +2 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital. +1 [ICON_HOUSING] Housing if built on home continent.[NEWLINE][NEWLINE]+2 [ICON_Science] Science if built next to a Campus district. +2 Science at The Enlightenment. Cannot be built next to another Mission</Text>
@@ -263,7 +306,7 @@
 		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="en_US">
 			<Text>Domestic [ICON_TradeRoute] Trade Routes to Pingala's city provide +3 [ICON_SCIENCE] Science.</Text>
 		</Row>
-		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="ru_RU">
+		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="en_US">
 			<Text>+10 [ICON_Strength] when besieging a district</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION" Language="en_US">
@@ -349,9 +392,6 @@
 		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="en_US">
 			<Text>Deal Maker</Text>
 		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="en_US">
-			<Text>50% [ICON_GOLD] Gold discount on all building purchases in the city.</Text>
-		</Row>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="en_US">
 			<Text>Strategic resources are not required in the city in order to build resource dependent units.</Text>
 		</Replace>
@@ -395,12 +435,6 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="en_US">
 			<Text>Hungarian unique Industrial era unit that replaces Cavalry. +1 [ICON_Strength] Combat Strength for every active Alliance.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="en_US">
-			<Text>Grants an extra belief when founding a Religion. Settlers and Builders receive +1 [ICON_Movement] Movement. +5 [ICON_Faith] Faith for each civilization (including India) they have met that has founded a Religion and is not currently at war. +50% [ICON_PRODUCTION] Production towards Holy Site buildings. Opposing civilizations receive double the war weariness for fighting against Gandhi.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>Grants an extra belief when founding a Religion. Settlers and Builders receive +1 [ICON_Movement] Movement. +5 [ICON_Faith] Faith and +1 [ICON_Favor] Diplomatic Favor per turn for each civilization (including India) they have met that has founded a Religion and is not currently at war. +50% [ICON_PRODUCTION] Production towards Holy Site buildings. Opposing civilizations receive double the war weariness for fighting against Gandhi.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Stepwell, unique to India.[NEWLINE][NEWLINE]+1 [ICON_Food] Food, +1 [ICON_FAITH] Faith, and +1 [ICON_Housing] Housing. +1 [ICON_Faith] Faith if adjacent to a Holy Site district. +1 [ICON_Food] Food for each adjacent Farm. Cannot be built on Hills or adjacent to another Stepwell.</Text>
@@ -806,9 +840,6 @@
 		<!---->
 		<!---->
 		<!--===============   P A N T H E O N S   ===============-->
-		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="en_US">
-			<Text>+3 [ICON_Faith] Faith from Mines over Luxury and Bonus resources.</Text>
-		</Replace>
 		<!---->
 		<!---->
 		<!--===============   P O L I C Y   C A R D S   ===============-->
