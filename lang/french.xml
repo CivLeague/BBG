@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
 	
@@ -24,10 +24,10 @@
 		</Replace>
 		<!-- ========== GANDHI ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Octroit une croyance supplémentaire à la fondation d'une Religion. [ICON_Movement] PM +1 pour les bâtisseurs et les colons. [ICON_PRODUCTION] Production +50% pour les bâtiments des Lieux Saints. [ICON_Faith] Foi +5 et [ICON_Favor] Ferveur Diplomatique +1 pour chaque civilisation rencontrée (y compris l'Inde) ayant fondé une religion et n'étant pas en guerre. L'usure de la guerre est doublée pour les civilisations qui combattent Gandhi.</Text>
+			<Text>Octroit une croyance supplémentaire à la fondation d'une Religion. [ICON_Movement] PM +1 pour les bâtisseurs et les colons. [ICON_Faith] Foi +5 et [ICON_Favor] Ferveur Diplomatique +1 pour chaque civilisation rencontrée (y compris l'Inde) ayant fondé une religion et n'étant pas en guerre. L'usure de la guerre est doublée pour les civilisations qui combattent Gandhi.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="fr_FR">
-			<Text>Octroit une croyance supplémentaire à la fondation d'une Religion. [ICON_Movement] PM +1 pour les bâtisseurs et les colons. [ICON_PRODUCTION] Production +50% pour les bâtiments des Lieux Saints. [ICON_Faith] Foi +5 pour chaque civilisation rencontrée (y compris l'Inde) ayant fondé une religion et n'étant pas en guerre. L'usure de la guerre est doublée pour les civilisations qui combattent Gandhi.</Text>
+			<Text>Octroit une croyance supplémentaire à la fondation d'une Religion. [ICON_Movement] PM +1 pour les bâtisseurs et les colons. [ICON_Faith] Foi +5 pour chaque civilisation rencontrée (y compris l'Inde) ayant fondé une religion et n'étant pas en guerre. L'usure de la guerre est doublée pour les civilisations qui combattent Gandhi.</Text>
 		</Replace>
 		<!-- ========== GORGÔ ========== -->
 		<!-- ========== THEODORE ROOSEVELT ELAN ========== -->
@@ -81,6 +81,9 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="fr_FR">
 			<Text>Vous pouvez dépenser des charges de bâtisseur pour compléter 20 % du coût initial du quartier. [ICON_PRODUCTION] Production +50% pour les unités de combat rapproché.</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_GIFTS_FOR_TLATOANI_DESCRIPTION" Language="fr_FR">
+			<Text>Les ressources de luxe sur son territoire fournissent une [ICON_Amenities] activité à deux villes supplémentaires. [ICON_Strength] Puissance de combat en attaque +1 pour les unités militaires pour chaque ressource de luxe différente aménagée en territoire aztèque.</Text>
+		</Replace>
 		<!-- ========== BRÉSIL ========== -->
 		<!-- Correction de la traduction officielle : ne gagne pas que +1 point de personnage illustre -->
 		<Replace Tag="LOC_PROJECT_CARNIVAL_DESCRIPTION" Language="fr_FR">
@@ -89,6 +92,22 @@
 		<!-- Texte sur les attraits précisé -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_AMAZON_DESCRIPTION" Language="fr_FR">
 			<Text>Bonus de proximité +1 pour les campus, plateformes commerciales, lieux saints et places du théâtre adjacents à une forêt tropicale. [NEWLINE] Les cases de forêt tropicale dans votre territoire appliquent un attrait de +1 sur les cases adjacentes, au lieu de l'habituel -1. </Text>
+		</Replace>
+		<!-- ========== BYZANCE ========== -->
+		<Replace Tag="LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION" Language="fr_FR">
+			<Text>Unité de l'ère classique exclusive aux Byzantins qui remplace la quadrirème et a une plus grande portée.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Strength] Puissance de combat +2 pour chaque ville sainte convertie à votre religion, et la religion byzantine se propage aux villes voisines quand une unité d'une civilisation majeure est vaincue (taxis).</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BYZANTIUM_RELIGIOUS_UNITS_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_RELIGION] Puissance religieuse +2 pour chaque ville sainte convertie à votre religion.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BYZANTIUM_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Strength] Puissance de combat ou [ICON_Religion] puissance religieuse +2 pour les unités pour chaque ville sainte convertie à la religion byzantine (y compris la ville sainte de Byzance). La religion de Byzance se propage aux villes voisines lorsque l'unité d'une civilisation ou d'une cité-état ennemie est vaincue. Points de [ICON_GreatProphet] prophète illustre +1 pour les villes possédant un lieu saint.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_HIPPODROME_CULTURE" Language="fr_FR">
+			<Text>[ICON_Culture] Culture +{1_num} de la part de l'Hippodrome adjacent.</Text>
 		</Replace>
 		<!-- ========== CANADA ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="fr_FR">
@@ -252,12 +271,19 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="fr_FR">
 			<Text>Reçoit un espion gratuit (et la possibilité d'en accueillir plus) quand les Châteaux sont découverts. Tous les espions commencent agents, avec une promotion gratuite. [ICON_Production] Production +20 % pour la construction de merveilles du Moyen-âge, de la Renaissance et de l'ère industrielle. [ICON_Tourism] Tourisme +50 % pour toutes les merveilles, quelle que soit l'ère.</Text>
 		</Replace>
+		<!-- ========== GAULE ========== -->
+		<Replace Tag="LOC_TRAIT_LEADER_AMBIORIX_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Strength] Puissance de combat +1 pour les unités de combat rapproché et anti-cavalerie pour chaque unité adjacente.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_AMBIORIX_NEIGHBOR_COMBAT_BONUS_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Strength] Puissance de combat +1 pour chaque unité adjacente (Roi des Éburons).</Text>
+		</Replace>
 		<!-- ========== GÉORGIE ========== -->
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="fr_FR">
-			<Text>Bâtiment exclusif à la Géorgie. Défense plus importante que les remparts Antiques. [ICON_TOURISM] Tourisme +3 après l'adoption du dogme de la conservation. [ICON_Faith] Foi +3. [ICON_TOURISM] Tourisme et [ICON_FAITH] foi doublés lors d'un âge d'or.</Text>
+			<Text>Bâtiment exclusif à la Géorgie. Défense plus importante que les remparts Antiques. [ICON_TOURISM] Tourisme +1 après l'adoption du dogme de la conservation. [ICON_Faith] Foi +4. [ICON_TOURISM] Tourisme et [ICON_FAITH] foi doublés lors d'un âge d'or.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION" Language="fr_FR">
-			<Text>Bâtiment exclusif à la Géorgie qui remplace les Remparts Antiques. [ICON_TOURISM] Tourisme +3 après l'adoption du dogme de la conservation. [ICON_Faith] Foi +3. </Text>
+			<Text>Bâtiment exclusif à la Géorgie qui remplace les Remparts Antiques. [ICON_TOURISM] Tourisme +1 après l'adoption du dogme de la conservation. [ICON_Faith] Foi +4. </Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_GEORGIAN_KHEVSURETI_DESCRIPTION" Language="fr_FR">
 			<Text>Unité de l'ère classique exclusive à la Géorgie qui remplace le Spadassin. [ICON_Strength] Puissance de combat +5 sur les cases de collines. Pas de pénalité de [ICON_Movement] mouvement sur les collines.</Text>
@@ -364,7 +390,7 @@
 			<Text>[ICON_Strength] Puissance de combat +3 pour les unités dans un rayon de 6 cases de votre [ICON_Capital] capitale (Ix Mutal Ajaw).</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="fr_FR">
-			<Text>Rendements des villes dans un rayon de 6 cases de la [ICON_Capital] capitale +10%. Rendements des autres villes -15%. [ICON_Strength] Puissance de combat +3 pour les unités dans un rayon de moins de 6 cases de la [ICON_Capital] capitale.</Text>
+			<Text>Rendements des villes dans un rayon de 6 cases autour de la [ICON_Capital] capitale +10%. Rendements des autres villes -15%. [ICON_Strength] Puissance de combat +3 pour les unités dans un rayon de 6 cases autour de la [ICON_Capital] capitale.</Text>
 		</Replace>
 		<!-- ========== NORVÈGE ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="fr_FR">
@@ -461,7 +487,7 @@
 		</Replace>
 		<!-- ========== SUÈDE ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="fr_FR">
-			<Text>+1 à tous les rendements dans la Capitale. La Suède gagne 25 [ICON_Favor] faveurs diplomatiques lorsqu'elle obtient un personnage illustre (en vitesse en ligne). [NEWLINE] Les usines génèrent 1 point d'[ICON_GreatEngineer] ingénieur illustre supplémentaire et les universités 1 point de [ICON_GreatScientist] savant illustre supplémentaire. Ces bâtiments recoivent un bonus en [ICON_PRODUCTION] Production de 50% lors de leur construction. [NEWLINE] La présence de la Suède dans une partie ajoute trois compétitions exclusives au Congrès mondial à partir de l'ère industrielle.</Text>
+			<Text>La Suède gagne 25 [ICON_Favor] faveurs diplomatiques lorsqu'elle obtient un personnage illustre (en vitesse en ligne). [NEWLINE] Les usines génèrent 1 point d'[ICON_GreatEngineer] ingénieur illustre supplémentaire et les universités 1 point de [ICON_GreatScientist] savant illustre supplémentaire. [ICON_PRODUCTION] Production +50% pour la construction des ateliers, usines, bibliothèques et universités. [NEWLINE] La présence de la Suède dans une partie ajoute trois compétitions exclusives au Congrès mondial à partir de l'ère industrielle.</Text>
 		</Replace>
 		<!-- ========== SUMER ========== -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="fr_FR">
@@ -538,7 +564,7 @@
 			<Text>[ICON_Production] Production +1 et [ICON_Faith] Foi +1 pour les carrières.</Text>
 		</Replace>		
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Faith] Foi +3 pour les mines construites sur des ressources de luxe et bonus.</Text>
+			<Text>[ICON_Faith] Foi +2 et [ICON_GOLD] Or +2 pour les mines construites sur des ressources de luxe et bonus.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_FAITH] Foi +4 pour les fissures géothermiques et les sols volcaniques.</Text>
@@ -610,6 +636,9 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_GOLD] Or +2 pour chaque ville convertie à cette religion.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Les autels et les temples octroient +3 [ICON_FOOD] nourriture et +1 [ICON_HOUSING] habitation chacun.</Text>
 		</Replace>
 		
 		<!-- =============== M E R V E I L L E S === N A T U R E L L E S =============== -->
@@ -795,8 +824,17 @@
 			<Text>Négociatrice</Text>
 		</Row>
 		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="fr_FR">
-			<Text>50% de réduction pour l'achat en [ICON_GOLD] Or des bâtiments de la ville.</Text>
-		</Row>
+            		<Text>50% de réduction pour l'achat en [ICON_GOLD] Or des quartiers et bâtiments dans la ville.</Text>
+        	</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_LAND_ACQUISITION_DESCRIPTION" Language="fr_FR">
+			<Text>Acquisition de nouvelles cases plus rapide dans la ville. [ICON_Gold] Or par tour +4 pour chaque [ICON_TradeRoute] route commerciale étrangère passant par la ville.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_FORESTRY_MANAGEMENT_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Gold] Or +2 dans la ville pour chaque caractéristique non aménagée et chaque case d'attrait époustouflant. Attrait +1 pour les cases adjacentes aux caractéristiques non aménagées de la ville.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Gold] Or +2 par tour pour chaque [ICON_Citizen] citoyen dans la ville. Capacité de routes commerciales +1.</Text>
+		</Replace>
 		<!-- Liang -->
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Production] Production +1 sur toutes les ressources révélées dans la ville.</Text>
@@ -880,12 +918,26 @@
 		
 		<!-- =============== D I V E R S =============== -->
 		
-		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire des bateaux de pêche. [NEWLINE][NEWLINE][ICON_Food] Nourriture +1 [ICON_PRODUCTION] Production +1. Ne peut être construit que sur une ressource valide. [NEWLINE][NEWLINE]Construit sur une ressource de luxe, permet à la ville d'exploiter cette ressource.</Text>
+		<!-- Campement, port, aérodrome -->
+		<Replace Tag="LOC_BUILDING_STABLE_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +25 % pour toutes les unités de cavalerie et de siège formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][NEWLINE]Construction impossible dans un campement possédant déjà une caserne.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_FISHERY_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de bâtisseur permettant de construire des Aquacultures. [ICON_Food] Nourriture +1 et [ICON_Food] Nourriture bonus +1 par ressource maritime adjacente. Doit être construite sur la côte.</Text>
+		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
 		</Replace>
+		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_OIL] Pétrole +2 par tour une fois qu'il est découvert. [NEWLINE]Permet la formation immédiate de régiments et d'armées. Coûts d'entraînement des régiments et des armées -25 %.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +25 % pour toutes les unités navales formées dans cette ville. Permet la formation immédiate de flottes et d'armadas. Coûts d'entraînement des flottes et des armadas -25 %. [ICON_GOLD] Or +2 pour toutes les cases côtières de la ville. Génère une unité de [ICON_RESOURCE_COAL] Charbon par tour.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +50 % pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +2 dans les aérodromes. [ICON_RESOURCE_ALUMINUM] Aluminium +2 par tour. Permet le transport aérien des unités entre les aérodromes équipés d'un aéroport une fois le déploiement rapide découvert.</Text>
+		</Replace>
+		<!-- Promotions d'unités militaires -->
 		<Replace Tag="LOC_PROMOTION_GRAPE_SHOT_DESCRIPTION" Language="fr_FR">
             <Text>+7 [ICON_Bombard] Puissance de Bombardement en attaquant des unités terrestres.</Text>
         </Replace>
@@ -898,37 +950,36 @@
         <Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="fr_FR">
             <Text>+7 [ICON_Strength] Puissance de Combat en attaquant des unités de Mêlée ou de Combat à Distance.</Text>
         </Replace>
-		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +50 % pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +2 dans les aérodromes. [ICON_RESOURCE_ALUMINUM] Aluminium +2 par tour. Permet le transport aérien des unités entre les aérodromes équipés d'un aéroport une fois le déploiement rapide découvert.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_OIL] Pétrole +2 par tour une fois qu'il est découvert. [NEWLINE]Permet la formation immédiate de régiments et d'armées. Coûts d'entraînement des régiments et des armées -25 %.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_SHOPPING_MALL_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Tourism] Tourisme +6. Ne peut être construit qu'une seule fois dans une ville, même si elle dispose de plusieurs quartiers résidentiels.</Text>
-		</Replace>
-		<!-- Correction traduction Firaxis suite au DLC Maya Grande Colombie -->
+		<!-- Cités-états -->
 		<Replace Tag="LOC_LEADER_TRAIT_TARUGA_DESCRIPTION" Language="fr_FR">
 			<Text>+5% de [ICON_SCIENCE] Science dans vos villes pour chaque type de ressource stratégique aménagée qu'elles possèdent.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
-		</Replace>
-		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="fr_FR">
-			<Text>Le prix en [ICON_GOLD] Or et en [ICON_FAITH] Foi des unités militaires ou de soutien terrestres baisse de 10 % par bâtiment du campement construit dans cette ville.</Text>
+		<Replace Tag="LOC_LEADER_TRAIT_VILNIUS_DESCRIPTION" Language="fr_FR">
+			<Text>Toutes les places du théâtre reçoivent +50 % de bonus de proximité si vous possédez une alliance de niveau 1, augmenté à 100% pour une alliance de niveau 2 et à 150% pour une alliance de niveau 3. Non cumulable avec plusieurs alliances.</Text>
 		</Replace>
 		<!-- Correction traduction Firaxis suite au DLC Ethiopie -->
 		<Replace Tag="LOC_MINOR_CIV_TRADE_TRAIT_SMALL_INFLUENCE_BONUS" Language="fr_FR">
 			<Text>[ICON_Gold] Or +1 dans la [ICON_Capital] capitale et pour chaque marché et phare construits.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +25 % pour toutes les unités navales formées dans cette ville. Permet la formation immédiate de flottes et d'armadas. Coûts d'entraînement des flottes et des armadas -25 %. [ICON_GOLD] Or +2 pour toutes les cases côtières de la ville. Génère une unité de [ICON_RESOURCE_COAL] Charbon par tour.</Text>
+		<!-- Autres -->
+		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="fr_FR">
+			<Text>Débloque la compétence de bâtisseur permettant de construire des bateaux de pêche. [NEWLINE][NEWLINE][ICON_Food] Nourriture +1 [ICON_PRODUCTION] Production +1. Ne peut être construit que sur une ressource valide. [NEWLINE][NEWLINE]Construit sur une ressource de luxe, permet à la ville d'exploiter cette ressource.</Text>
 		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_FISHERY_DESCRIPTION" Language="fr_FR">
+			<Text>Débloque la compétence de bâtisseur permettant de construire des Aquacultures. [ICON_Food] Nourriture +1 et [ICON_Food] Nourriture bonus +1 par ressource maritime adjacente. Doit être construite sur la côte.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SHOPPING_MALL_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Tourism] Tourisme +6. Ne peut être construit qu'une seule fois dans une ville, même si elle dispose de plusieurs quartiers résidentiels.</Text>
+		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="fr_FR">
+			<Text>Le prix en [ICON_GOLD] Or et en [ICON_FAITH] Foi des unités militaires ou de soutien terrestres baisse de 10 % par bâtiment du campement construit dans cette ville.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="fr_FR">
 			<Text>Lorsque l'une de vos unités religieuses convertit une ville pour la première fois, vous gagnez 10 points de [ICON_SCIENCE] science par [ICON_Citizen] habitant de cette ville.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="fr_FR">
+			<Text>Points d'influence par tour +3. Lorsque cette civilisation capture ou tue un espion ennemi, vous recevez 100 points de [ICON_Science] Science pour chaque niveau de l'espion ennemi. (vitesse en ligne).</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

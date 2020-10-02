@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="ko_KR">
+			<Text>스웨덴이 위인을 영입하면 [ICON_Favor] 외교적 환심 50을 얻습니다(일반 속도 기준). 스웨덴이 공장에서 [ICON_GreatEngineer] 위대한 기술자 점수 +1을, 대학교에서 [ICON_GreatScientist] 위대한 과학자 점수 +1을 얻습니다. 도서관, 작업장, 공장 및 대학교 건물을 건설할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 게임에 스웨덴이 있으면 산업 시대부터 3개의 특유한 세계 의회 경쟁이 추가됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="ko_KR">
+			<Text>사치 자원과 보너스 자원 위에 건설된 광산에서 [ICON_Faith] 신앙 +2, [ICON_GOLD] 금 +2를 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ko_KR">
+			<Text>종교를 창시할 때 교리를 한 개 더 고를 수 있습니다. 개척자와 건설자의 [ICON_Movement] 이동력이 1 증가합니다. 종교를 창시했고 현재 전쟁에 참여하지 않는 각 문명(인도 포함)을 접할 때마다 [ICON_Faith] 신앙 +5를 제공합니다. 상대 문명은 간디와 전투 시 전쟁 피로도가 2배 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>종교를 창시할 때 교리를 한 개 더 고를 수 있습니다. 개척자와 건설자의 [ICON_Movement] 이동력이 1 증가합니다. 종교를 창시했고 현재 전쟁에 참여하지 않는 각 문명(인도 포함)을 접할 때마다 [ICON_Faith] 신앙 +5와 [ICON_Favor] 외교적 환심 +1을 제공합니다. 상대 문명은 간디와 전투 시 전쟁 피로도가 2배 증가합니다.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="ko_KR">
+			<Text>이 도시에서 [ICON_GOLD] 금으로 건물 및 특수지구(구매가 가능할 시)를 구매하는 비용이 50% 저렴합니다.</Text>
+		</Row>
+		<!---->
+		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>성소와 사원은 [ICON_FOOD] 식량 +3 및 [ICON_HOUSING] 주거공간 +1을 각각 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_AMBIORIX_DESCRIPTION" Language="ko_KR">
+			<Text>인접 전투 유닛마다 근접, 대기병 유닛이 [ICON_Strength] 전투력 +1을 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_AMBIORIX_NEIGHBOR_COMBAT_BONUS_DESCRIPTION" Language="ko_KR">
+			<Text>인접한 각 유닛마다 [ICON_Strength] 전투력 +1을 제공합니다(에부로네스의 왕).</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_LAND_ACQUISITION_DESCRIPTION" Language="ko_KR">
+			<Text>도시의 새 타일을 더 빠르게 확보합니다. 도시를 지나는 모든 다른 문명 [ICON_TradeRoute] 교역로에서 턴당 [ICON_Gold] 금 +4를 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_FORESTRY_MANAGEMENT_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시는 각 미개발 지형 타일마다, 놀라운 매력도 타일마다 각각 [ICON_Gold] 금 +2를 획득합니다. 이 도시에서 미개발 지형에 인접한 타일은 매력도 +1을 획득합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="ko_KR">
+			<Text>도시의 [ICON_Citizen] 시민 한 명당 턴당 [ICON_Gold] 금 +2를 획득합니다. 도시에 배치된 동안 [ICON_TradeRoute] 교역로 1개를 추가로 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION" Language="ko_KR">
+			  <Text>사단노선을 대체하는 비잔티움 특유의 고전 시대 유닛으로, [ICON_Range] 사정거리가 1 높습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="ko_KR">
+			<Text>플레이어 종교로 개종한 각 성도마다 [ICON_Strength] 전투력 +2를 제공하며 주요 문명 및 도시국가의 유닛이 패배하면 비잔티움 종교가 인근 도시로 전파됩니다(탁시스).</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BYZANTIUM_RELIGIOUS_UNITS_DESCRIPTION" Language="ko_KR">
+			<Text>플레이어 종교로 개종한 각 성도마다 [ICON_RELIGION] 신앙력 +2를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BYZANTIUM_DESCRIPTION" Language="ko_KR">
+			<Text>유닛이 비잔티움 종교로 개종한 성도(비잔티움 성도 포함)마다 [ICON_Strength] 전투력 또는 [ICON_Religion] 신앙력 +2를 얻습니다. 적 문명 또는 도시 국가 유닛을 처치하면 비잔티움 종교가 인근 도시로 전파됩니다. 성지 특수지구가 있는 도시에서 [ICON_GreatProphet] 위대한 선지자 점수 +1을 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="ko_KR">
+			<Text>턴마다 우호도 점수 +3을 얻습니다. 이 문명이 적 스파이를 체포하거나 죽이면 적 스파이의 레벨당 [ICON_Science] 과학 +200을 획득합니다.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="ko_KR">
 			<Text>이 종교를 믿는 각 도시마다 [ICON_GOLD] 금 +2를 제공합니다.</Text>
 		</Replace>
@@ -68,9 +118,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="ko_KR">
 			<Text>모든 유닛에게 시야 +1을 부여합니다. 경기병 유닛을 진급시킬 때 해당 유닛의 턴이 끝나지 않습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="ko_KR">
-            <Text>수도의 모든 산출([ICON_Food][ICON_PRODUCTION][ICON_GOLD][ICON_Culture][ICON_SCIENCE][ICON_FAITH])이 +1 증가합니다. 스웨덴이 위인을 영입하면 [ICON_Favor] 외교적 환심 50을 얻습니다(일반 속도 기준). 스웨덴이 공장에서 [ICON_GreatEngineer] 위대한 기술자 점수 +1을, 대학교에서 [ICON_GreatScientist] 위대한 과학자 점수 +1을 얻습니다. 공장 및 대학교 건물을 건설할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 게임에 스웨덴이 있으면 산업 시대부터 3개의 특유한 세계 의회 경쟁이 추가됩니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="ko_KR">
 			<Text>스페인 특유의 전도관을 지을 수 있는 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Faith] 신앙 +2를 제공합니다. [ICON_Capital] 수도와 다른 대륙에 있으면 추가 [ICON_Faith] 신앙 +2를 제공합니다. 수도와 같은 대륙에 있으면 [ICON_Housing] 주거 +1을 제공합니다.[NEWLINE][NEWLINE]캠퍼스 특수지구 옆에 지으면 [ICON_Science] 과학 +2를 제공합니다. 계몽주의 사회 제도를 획득하면 [ICON_Science] 과학 +2를 추가 제공합니다. 다른 전도관 옆에 지을 수 없습니다.</Text>
@@ -348,9 +395,6 @@
 		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="ko_KR">
 			<Text>딜메이커</Text>
 		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="ko_KR">
-			<Text>이 도시에서 [ICON_GOLD] 금으로 건물을 구매하는 비용이 50% 저렴합니다.</Text>
-		</Row>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="ko_KR">
 			<Text>도시에서 전략 자원이 없어도 전략 자원을 요구하는 유닛을 생산할 수 있습니다.</Text>
 		</Replace>
@@ -394,12 +438,6 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ko_KR">
 			<Text>기병대를 대체하는 헝가리 특유의 산업 시대 유닛입니다. 각 활성 동맹에서 [ICON_Strength] 전투력 +1을 획득합니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ko_KR">
-			<Text>종교를 창시할 때 교리를 한 개 더 고를 수 있습니다. 개척자와 건설자의 [ICON_Movement] 이동력이 1 증가합니다. 종교를 창시했고 현재 전쟁에 참여하지 않는 각 문명(인도 포함)을 접할 때마다 [ICON_Faith] 신앙 +5를 제공합니다. 성지 특수지구 내 건물을 생산할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 상대 문명은 간디와 전투 시 전쟁 피로도가 2배 증가합니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>종교를 창시할 때 교리를 한 개 더 고를 수 있습니다. 개척자와 건설자의 [ICON_Movement] 이동력이 1 증가합니다. 종교를 창시했고 현재 전쟁에 참여하지 않는 각 문명(인도 포함)을 접할 때마다 [ICON_Faith] 신앙 +5와 [ICON_Favor] 외교적 환심 +1을 제공합니다. 성지 특수지구 내 건물을 생산할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 상대 문명은 간디와 전투 시 전쟁 피로도가 2배 증가합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="ko_KR">
 			<Text>인도 특유의 계단식 우물을 건설할 수 있도록 건설자 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Food] 식량 +1, [ICON_Faith] 신앙 +1, [ICON_Housing] 주거공간 +1을 제공합니다. 성지 특수지구에 인접한 경우 [ICON_Faith] 신앙 +1, 인접한 농장마다 [ICON_Food] 식량 +1을 추가 제공합니다. 언덕이나 다른 계단식 우물에 인접하게 지을 수 없습니다.</Text>
@@ -793,25 +831,6 @@
 		<Replace Tag="LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION" Language="ko_KR">
 			<Text>스키타이 특유의 고전 시대 유닛입니다. [ICON_Movement] 이동력 4와 [ICON_Range] 사정거리 2를 보유한 원거리 유닛입니다.</Text>
 		</Replace>
-		<!-- Spain -->
-		<!---->
-		<!---->
-		<!--===============   D E D I C A T I O N S   ===============-->
-		<!-- Pen, Brush and Voice -->
-		<!---->
-		<!---->
-		<!--===============   G O V E R N M E N T   ===============-->
-		<!---->
-		<!---->
-		<!--===============   P A N T H E O N S   ===============-->
-		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="ko_KR">
-			<Text>사치 자원과 보너스 자원 위에 건설된 광산에서 [ICON_Faith] 신앙 +3을 획득합니다.</Text>
-		</Replace>
-		<!---->
-		<!---->
-		<!--===============   P O L I C Y   C A R D S   ===============-->
-		<!---->
-		<!---->
 		<!--===============   R E L I G I O N S   ===============-->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ko_KR">

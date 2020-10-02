@@ -14,7 +14,7 @@
 			<Text>Grants an extra belief when founding a Religion. Settlers and Builders receive +1 [ICON_Movement] Movement. +5 [ICON_Faith] Faith and +1 [ICON_Favor] Diplomatic Favor per turn for each civilization (including India) they have met that has founded a Religion and is not currently at war. Opposing civilizations receive double the war weariness for fighting against Gandhi.</Text>
 		</Replace>
 		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="en_US">
-			<Text>50% [ICON_GOLD] Gold discount on purchasing buildings, districts, and combat units in the city.</Text>
+			<Text>50% [ICON_GOLD] Gold discount on purchasing buildings and districts (if able) in the city.</Text>
 		</Row>
 		<!---->
 		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="en_US">
@@ -27,7 +27,7 @@
 			<Text>Receive +1 [ICON_Strength] Combat Strength for each adjacent unit (King of the Eburones)</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_LAND_ACQUISITION_DESCRIPTION" Language="en_US">
-			<Text>Acquire new tiles in city faster. +3 [ICON_Gold] Gold per turn from each foreign [ICON_TradeRoute] Trade Route passing through the city.</Text>
+			<Text>Acquire new tiles in city faster. +4 [ICON_Gold] Gold per turn from each foreign [ICON_TradeRoute] Trade Route passing through the city.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_FORESTRY_MANAGEMENT_DESCRIPTION" Language="en_US">
 			<Text>This city receives +2 [ICON_Gold] Gold from each unimproved feature and each breathtaking tile. Tiles adjacent to unimproved features receive +1 Appeal in this city.</Text>
@@ -46,6 +46,9 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BYZANTIUM_DESCRIPTION" Language="en_US">
 			<Text>Units receive +2 [ICON_Strength] Combat Strength or [ICON_Religion] Religious Strength for each Holy City converted to Byzantium's Religion (including Byzantium's Holy City). Byzantium's Religion is spread to nearby cities when an enemy civilization or city-state unit is defeated. +1 [ICON_GreatProphet] Great Prophet point from cities with a Holy Site district.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="en_US">
+			<Text>+3 Influence Points per turn. When this civilization captures or kills an enemy Spy, receive 200 [ICON_Science] Science (on Standard Speed) for every level of the enemy Spy.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="en_US">

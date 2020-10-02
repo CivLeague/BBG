@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="pt_BR">
+			<Text>+3 Pontos de Influência por turno. Quando essa civilização captura ou mata um espião inimigo, receba 200 de [ICON_Science] Ciência (na velocidade padrão) pra cada nível do espião inimigo.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="pt_BR">
+			<Text>Ganha 50 de [ICON_Favor] Favor Diplomático quando recruta uma Grande Pessoa. A Suécia recebe +1 ponto de  [ICON_GreatEngineer] Grande Engenheiro de cada Fábrica e +1 ponto de [ICON_GreatScientist] Grande Cientista de Universidades além de +50% de [ICON_PRODUCTION] Produção pra bibliotecas, universidades, oficinas, e fábricas. Ter a Suécia no jogo adiciona três competições únicas no Congresso Mundial, a começar na Era Industrial.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="pt_BR">
+			<Text>+2 de [ICON_Faith] Fé e +2 de [ICON_GOLD] Ouro por Minas em recursos de Luxo ou Bonus.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="pt_BR">
+			<Text>Pode escolher uma crença adicional ao fundar religião. Colonos e construtores possuem +1 de [ICON_Movement] movimento. +5 de [ICON_FAITH] fé por cada civilização (incluindo a Índia) encontrada e que já fundou uma religião e não esteja em guerra. Civilizações inimigas recebem o dobro de fadiga de guerra contra Gandhi.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>Pode escolher uma crença adicional ao fundar religião. Colonos e construtores possuem +1 de [ICON_Movement] movimento. +5 de [ICON_FAITH] fé e +1 de [ICON_Favor] Favorecimento Diplomático por turno por cada civilização (incluindo a Índia) encontrada e que já fundou uma religião e não esteja em guerra. Civilizações inimigas recebem o dobro de fadiga de guerra contra Gandhi.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="pt_BR">
+			<Text>50% de desconto em [ICON_GOLD] ouro para a compra de edificações, distritos e unidades de combate na cidade.</Text>
+		</Row>
+		<!---->
+		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>Santuários e Templos concedem +3 de [ICON_FOOD] Comida e +1 de [ICON_HOUSING] Habitação cada.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_AMBIORIX_DESCRIPTION" Language="pt_BR">
+			<Text>Unidades corpo a corpo e anti-cavalaria recebem +1 de [ICON_Strength] Força de Combate  pra cada unidade adjacente.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_AMBIORIX_NEIGHBOR_COMBAT_BONUS_DESCRIPTION" Language="pt_BR">
+			<Text>Recebe +1 de [ICON_Strength] Força de Combate pra cada unidade adjacente (Rei dos Eburões)</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_LAND_ACQUISITION_DESCRIPTION" Language="pt_BR">
+			<Text>Adquire novos paineis na cidade mais rapidamente. +4 de [ICON_Gold] Ouro por turno pra cada [ICON_TradeRoute] Rota Comercial internacional passando pela cidade.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_FORESTRY_MANAGEMENT_DESCRIPTION" Language="pt_BR">
+			<Text>Esta cidade recebe +2 de [ICON_Gold] Ouro pra cada característica de terreno não melhorado e cada painel com apelo De Tirar o Fôlego. Paineis adjacentes a uma característica de terreno não melhorado recebem +1 de Apelo nessa cidade.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="pt_BR">
+			<Text>+2 de [ICON_Gold] Ouro por turno pra cada [ICON_Citizen] Cidadão na cidade e +1 capacidade de Rota de comércio quando estabelecida em qualquer cidade.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION" Language="pt_BR">
+			<Text>Unidade da Era Clássica, exclusiva de Bizâncio, que substitui o Quadrireme e tem alcance de ataque adicional.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="pt_BR">
+			<Text>Recebe +2 de [ICON_Strength] Força de Combate pra cada Cidade Sagrada convertida pra Religião de Bizâncio. A Religião de Bizâncio se espalha para cidades próximas quando uma unidade de uma civilização é derrotada (Táxis)</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BYZANTIUM_RELIGIOUS_UNITS_DESCRIPTION" Language="pt_BR">
+			<Text>Recebe +2 de [ICON_Religion] Força religiosa pra cada Cidade Sagrada convertida pra Religião de Bizâncio.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BYZANTIUM_DESCRIPTION" Language="pt_BR">
+			<Text>Unidades recebem +2 de [ICON_Strength] Força de Combate ou [ICON_Religion] força religiosa pra cada Cidade Sagrada convertida pra Religião de Bizâncio (incluindo a Cidade Sagrada de Bizâncio). A Religião de Bizâncio se espalha para cidades próximas quando uma unidade de uma civilização ou de cidade estado é derrotada. +1 ponto de [ICON_GreatProphet] Grande Profeta de cidades com um distrito de Local Sagrado.</Text>
+		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="pt_BR">
 			<Text>+2 de [ICON_GOLD] Ouro pra cada cidade seguindo essa religião.</Text>
 		</Replace>
@@ -63,9 +112,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="pt_BR">
 			<Text>Todas as unidades tem +1 de visão. Promover unidades de Cavalaria Leve não encerra o turno delas.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="pt_BR">
-			<Text>+1 pra todos os rendimentos na capital da Suécia depois de desbloquear Filosofia Política. Ganha 50 de [ICON_Favor] Favor Diplomático quando recruta uma Grande Pessoa. A Suécia recebe +1 ponto de  [ICON_GreatEngineer] Grande Engenheiro de cada Fábrica e +1 ponto de [ICON_GreatScientist] Grande Cientista de Universidades além de +50% de [ICON_PRODUCTION] Produção pra esses edifícios. Ter a Suécia no jogo adiciona três competições únicas no Congresso Mundial, a começar na Era Industrial.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="pt_BR">
 			<Text>Desbloqueia a habilidade de Construtores para construir uma Missão, exclusiva da Espanha.[NEWLINE][NEWLINE]+2 de [ICON_Faith] Fé. +2 de [ICON_Faith] Fé se estiver em um continente diferente da sua [ICON_Capital] Capital.[NEWLINE][NEWLINE]+2 de [ICON_Science] Ciência se construído adjacente a um distrito de Campus. +1 de [ICON_HOUSING] Habitação se construída no continente natal. +2 de [ICON_Science] Ciência Science no Cívico de Iluminismo. Não pode ser construído adjacente a outra Missão.</Text>
@@ -346,7 +392,7 @@
 			<Text>Empresária</Text>
 		</Replace>
 		<Replace Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="pt_BR">
-			<Text>50% de desconto em [ICON_GOLD] ouro para a compra de edificações na cidade.</Text>
+			<Text>50% de desconto em [ICON_GOLD] ouro para a compra de edificações, distritos e unidades de combate na cidade.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="pt_BR">
 			<Text>Recursos estratégicos não são necessários nesta cidade para construir unidades dependentes deles.</Text>
@@ -391,12 +437,6 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="pt_BR">
 			<Text>Unidade exclusiva dos húngaros da Era Industrial. +1 de [ICON_Strength] força de combate para cada aliança ativa.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="pt_BR">
-			<Text>Pode escolher uma crença adicional ao fundar religião. Colonos e construtores possuem +1 de [ICON_Movement] movimento. +5 de [ICON_FAITH] fé por cada civilização (incluindo a Índia) que encontraram e que já fundou uma religião e não esteja em guerra. +50% de [ICON_PRODUCTION] produção para Locais Sagrados. Civilizações inimigas recebem o dobro de fadiga de guerra contra Gandhi.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>Pode escolher uma crença adicional ao fundar religião. Colonos e construtores possuem +1 de [ICON_Movement] movimento. +5 de [ICON_FAITH] fé e +1 de [ICON_Favor] Favorecimento Diplomático por turno por cada civilização (incluindo a Índia) que encontraram e que já fundou uma religião e não esteja em guerra. +50% de [ICON_PRODUCTION] produção para Locais Sagrados. Civilizações inimigas recebem o dobro de fadiga de guerra contra Gandhi.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="pt_BR">
 			<Text>Desbloqueia a habilidade de Construtores para construir um Poço com Degraus, exclusivo da Índia.[NEWLINE][NEWLINE]+1 de [ICON_FOOD] alimento, +1 de [ICON_FAITH] fé e +1 de [ICON_Housing] habitação. +1 de [ICON_FAITH] fé se adjacente a um Local Sagrado. +1 de [ICON_FOOD] alimento por cada Fazenda adjacente. Não pode ser construído em colinas ou adjacente a outro Poço com Degraus.</Text>
@@ -802,9 +842,6 @@
 		<!---->
 		<!---->
 		<!--===============   P A N T H E O N S   ===============-->
-		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="pt_BR">
-			<Text>+3 [ICON_FAITH] Fé por Minas em recursos de Luxo ou Bonus.</Text>
-		</Replace>
 		<!---->
 		<!---->
 		<!--===============   P O L I C Y   C A R D S   ===============-->
