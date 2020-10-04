@@ -14,40 +14,40 @@
 			<Text>宗教を創始した際に追加の信仰を1つ得る。開拓者と労働者の[ICON_Movement]移動力+1。自文明を含む主要文明のうち、戦争状態でなくすでに宗教を創始している文明1つごとに[ICON_Faith]信仰力+5、[ICON_Favor]外交的支持+1。聖地区域の建設に対する生産力+50%。自文明と戦争している文明はその戦争における疲労が2倍になる。</Text>
 		</Replace>
 		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="ja_JP">
-			<Text></Text>
+			<Text>この都市における建造物と（可能であれば）区域の購入[ICON_GOLD]費用-50%。</Text>
 		</Row>
 		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text></Text>
+			<Text>神殿と寺院からそれぞれ[ICON_FOOD]食糧+3、[ICON_HOUSING]住宅+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_AMBIORIX_DESCRIPTION" Language="ja_JP">
-			<Text></Text>
+			<Text>白兵および対騎兵ユニットは隣接するユニット1体ごとに[ICON_Strength]戦闘力+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_AMBIORIX_NEIGHBOR_COMBAT_BONUS_DESCRIPTION" Language="ja_JP">
-			<Text></Text>
+			<Text>隣接するユニット1体ごとに[ICON_Strength]戦闘力+1。（エブロネスの王）</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_LAND_ACQUISITION_DESCRIPTION" Language="ja_JP">
-			<Text></Text>
+			<Text>都市のタイル獲得が早くなる。この都市を通過する他文明の[ICON_TradeRoute]交易路1本ごとに[ICON_Gold]ゴールド+4。</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_FORESTRY_MANAGEMENT_DESCRIPTION" Language="ja_JP">
-			<Text></Text>
+			<Text>この都市の未改善およびアピールが最高のタイルから[ICON_Gold]ゴールド+2、この都市の未改善の特徴に隣接するタイルのアピール+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="ja_JP">
-			<Text></Text>
+			<Text>この都市の[ICON_Citizen]人口1人につき[ICON_Gold]ゴールド+2、また（文明としての）交易路の上限+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION" Language="ja_JP">
-			<Text></Text>
+			<Text>ビザンチンに固有のカドリレームを代替する古典のユニット。攻撃範囲が広い。</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="ja_JP">
-			<Text></Text>
+			<Text>ビザンチンの宗教に改宗された聖都1つごとに全ユニットの[ICON_Strength]戦闘力+2。他文明あるいは都市国家のユニットを撃破するごとに自文明の宗教が伝播されていく。（位階）</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_RELIGIOUS_UNITS_DESCRIPTION" Language="ja_JP">
-			<Text></Text>
+			<Text>ビザンチンの宗教に改宗された聖都1つごとに全ユニットの[ICON_Strength]戦闘力+2。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BYZANTIUM_DESCRIPTION" Language="ja_JP">
-			<Text></Text>
+			<Text>ビザンチンの宗教に改宗された聖都1つごとに全ユニットの[ICON_Strength]戦闘力+2。他文明あるいは都市国家のユニットを撃破するごとに自文明の宗教が伝播されていく。聖地を持つ都市1つごとに[ICON_GreatProphet]大預言者ポイント+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="ja_JP">
-			<Text></Text>
+			<Text>代表団の獲得に必要なターンごとの影響力+3。敵のスパイを確保あるいは殺害した際にそのスパイのレベルごとに[ICON_Science]科学力200を得る。（スタンダード速度）</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>この宗教を信奉している都市1つごとに[ICON_GOLD]ゴールド+2。</Text>
