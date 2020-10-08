@@ -1161,7 +1161,7 @@ UPDATE ModifierArguments SET Value='10' WHERE ModifierId='APOSTLE_DEBATER' AND N
 UPDATE ModifierArguments SET Value='100' WHERE ModifierId='APOSTLE_FOREIGN_SPREAD' AND Name='Amount';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='APOSTLE_EVICT_ALL' AND Name='Amount';
 -- remove spread from condemning and defeating
-UPDATE GlobalParameters SET Value=150 WHERE Name='RELIGION_SPREAD_RANGE_COMBAT_VICTORY';
+UPDATE GlobalParameters SET Value=150 WHERE Name='RELIGION_SPREAD_COMBAT_VICTORY';
 UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_UNIT_CAPTURE';
 
 -- give monks wall breaker ability

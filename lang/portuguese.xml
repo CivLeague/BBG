@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_PROMOTION_PROSELYTIZER_DESCRIPTION" Language="pt_BR">
+			<Text>Disseminação religiosa elimia 25% da pressão de outras Religiões existentes na cidade alvo.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_TRANSLATOR_DESCRIPTION" Language="pt_BR">
+			<Text>Disseminação religiosa tem o dobro da Força em cidades de outras civilizações.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_DEBATER_DESCRIPTION" Language="pt_BR">
+			<Text>+10 de [ICON_Religion] Força Religiosa em Combate Teológico.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>Pode reduzir a presença de outra Religiões no seu território em 25%, e iniciar combate teológico com unidades de outras Religiões.</Text>
+		</Replace>
+		
 		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="pt_BR">
             <Text>50% de desconto em [ICON_GOLD] Ouro ao comprar unidades e distritos na cidade.</Text>
         </Row>
