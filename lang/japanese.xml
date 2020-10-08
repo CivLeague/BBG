@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="ja_JP">
+			<Text>偉人を獲得した際に[ICON_Favor]外交的支持50を得る。工場から[ICON_GreatEngineer]大技術者ポイント+1、大学から[ICON_GreatScientist]大科学者ポイント+1。また、図書館、工房、大学、工場に対する[ICON_PRODUCTION]生産力+50%。スウェーデンがゲーム中に存在する場合、世界会議において3つの追加コンペティションが産業時代以降に登場するようになる。</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="ja_JP">
+			<Text>高級資源とボーナス資源を扱う鉱山による [ICON_Faith] 信仰力+2、[ICON_GOLD]ゴールド+2。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ja_JP">
+			<Text>宗教を創始した際に追加の信仰を1つ得る。開拓者と労働者の[ICON_Movement]移動力+1。自文明を含む主要文明のうち、戦争状態でなくすでに宗教を創始している文明1つごとに[ICON_Faith]信仰力+5。聖地区域の建設に対する生産力+50%。自文明と戦争している文明はその戦争における疲労が2倍になる。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>宗教を創始した際に追加の信仰を1つ得る。開拓者と労働者の[ICON_Movement]移動力+1。自文明を含む主要文明のうち、戦争状態でなくすでに宗教を創始している文明1つごとに[ICON_Faith]信仰力+5、[ICON_Favor]外交的支持+1。聖地区域の建設に対する生産力+50%。自文明と戦争している文明はその戦争における疲労が2倍になる。</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="ja_JP">
+			<Text>この都市における建造物と（可能であれば）区域の購入[ICON_GOLD]費用-50%。</Text>
+		</Row>
+		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="ja_JP">
+			<Text>神殿と寺院からそれぞれ[ICON_FOOD]食糧+3、[ICON_HOUSING]住宅+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_AMBIORIX_DESCRIPTION" Language="ja_JP">
+			<Text>白兵および対騎兵ユニットは隣接するユニット1体ごとに[ICON_Strength]戦闘力+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_AMBIORIX_NEIGHBOR_COMBAT_BONUS_DESCRIPTION" Language="ja_JP">
+			<Text>隣接するユニット1体ごとに[ICON_Strength]戦闘力+1。（エブロネスの王）</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_LAND_ACQUISITION_DESCRIPTION" Language="ja_JP">
+			<Text>都市のタイル獲得が早くなる。この都市を通過する他文明の[ICON_TradeRoute]交易路1本ごとに[ICON_Gold]ゴールド+4。</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_FORESTRY_MANAGEMENT_DESCRIPTION" Language="ja_JP">
+			<Text>この都市の未改善およびアピールが最高のタイルから[ICON_Gold]ゴールド+2、この都市の未改善の特徴に隣接するタイルのアピール+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="ja_JP">
+			<Text>この都市の[ICON_Citizen]人口1人につき[ICON_Gold]ゴールド+2、また（文明としての）交易路の上限+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION" Language="ja_JP">
+			<Text>ビザンチンに固有のカドリレームを代替する古典のユニット。攻撃範囲が広い。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="ja_JP">
+			<Text>ビザンチンの宗教に改宗された聖都1つごとに全ユニットの[ICON_Strength]戦闘力+2。他文明あるいは都市国家のユニットを撃破するごとに自文明の宗教が伝播されていく。（位階）</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BYZANTIUM_RELIGIOUS_UNITS_DESCRIPTION" Language="ja_JP">
+			<Text>ビザンチンの宗教に改宗された聖都1つごとに全ユニットの[ICON_Strength]戦闘力+2。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BYZANTIUM_DESCRIPTION" Language="ja_JP">
+			<Text>ビザンチンの宗教に改宗された聖都1つごとに全ユニットの[ICON_Strength]戦闘力+2。他文明あるいは都市国家のユニットを撃破するごとに自文明の宗教が伝播されていく。聖地を持つ都市1つごとに[ICON_GreatProphet]大預言者ポイント+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="ja_JP">
+			<Text>代表団の獲得に必要なターンごとの影響力+3。敵のスパイを確保あるいは殺害した際にそのスパイのレベルごとに[ICON_Science]科学力200を得る。（スタンダード速度）</Text>
+		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>この宗教を信奉している都市1つごとに[ICON_GOLD]ゴールド+2。</Text>
 		</Replace>
@@ -63,9 +111,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="ja_JP">
 			<Text>すべてのユニットの視界+1。軽騎兵の昇進がユニットのターンを終了しない。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="ja_JP">
-			<Text>政治哲学の発明後、首都においてすべての産出+1。偉人を獲得した際に[ICON_Favor]外交的支持50を得る。工場から[ICON_GreatEngineer]大技術者ポイント+1、大学から[ICON_GreatScientist]大科学者ポイント+1。また、これらの建造物に対する[ICON_PRODUCTION]生産力+50%。スウェーデンがゲーム中に存在する場合、世界会議において3つの追加コンペティションが産業時代以降に登場するようになる。</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MISSION_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がスペイン固有の施設である修道院を建設できるようになる。[NEWLINE][NEWLINE][ICON_Faith] 信仰力+2、自文明の首都とは異なる大陸に建設された場合さらに[ICON_Faith] 信仰力+2。自文明の首都と同じ大陸に建設された場合は[ICON_HOUSING]住宅+1。[NEWLINE][NEWLINE]キャンパスに隣接している場合[ICON_Science] 科学力+2。[NEWLINE][NEWLINE]啓蒙思想を獲得後[ICON_Science] 科学力+2。他の修道院に隣接することはできない。</Text>
@@ -326,9 +371,6 @@
 		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="ja_JP">
 			<Text>折衝者</Text>
 		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="ja_JP">
-			<Text>この都市における建造物の購入[ICON_GOLD]費用-50%。</Text>
-		</Row>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="ja_JP">
 			<Text>この都市では戦略資源を必要とするユニットの生産に対応する資源を必要としなくなる。</Text>
 		</Replace>
@@ -381,12 +423,6 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="ja_JP">
 			<Text>騎兵を代替するハンガリーに固有のユニット。有効な同盟1つごとに[ICON_Strength]戦闘力+1。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="ja_JP">
-			<Text>宗教を創始した際に追加の信仰を1つ得る。開拓者と労働者の[ICON_Movement]移動力+1。自文明を含む主要文明のうち、戦争状態でなくすでに宗教を創始している文明1つごとに[ICON_Faith]信仰力+5。聖地区域の建設に対する生産力+50%。自文明と戦争している文明はその戦争における疲労が2倍になる。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>宗教を創始した際に追加の信仰を1つ得る。開拓者と労働者の[ICON_Movement]移動力+1。自文明を含む主要文明のうち、戦争状態でなくすでに宗教を創始している文明1つごとに[ICON_Faith]信仰力+5・[ICON_Favor]外交的支持+1。聖地区域の建設に対する生産力+50%。自文明と戦争している文明はその戦争における疲労が2倍になる。.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がインド固有の改善である階段井戸を建設できるようになる。[NEWLINE][NEWLINE][ICON_Food]食料+1、[ICON_FAITH]信仰力+1[ICON_Housing]住宅+1。聖地区域に隣接している場合、さらに[ICON_Faith]信仰力+1。隣接している農場1つごとに[ICON_Food]食料+1。丘陵タイル上や他の階段井戸と隣接するタイルには建設できない。</Text>
@@ -819,9 +855,6 @@
 		</Row>
 		<Replace Tag="LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION" Language="ja_JP">
 			<Text>攻撃時に [ICON_Strength] 戦闘力+15。</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="ja_JP">
-			<Text>高級資源とボーナス資源を扱う鉱山による [ICON_Faith] 信仰力+3。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HANGING_GARDENS_DESCRIPTION" Language="ja_JP">
 			<Text>全都市の成長率が15%上昇。建設した都市に[ICON_HOUSING]住宅+2、空中庭園から6タイル以内にある都市の[ICON_HOUSING]住宅+1。川の隣にのみ建設可能。</Text>
