@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="pt_BR">
+            <Text>50% de desconto em [ICON_GOLD] Ouro ao comprar unidades e distritos na cidade.</Text>
+        </Row>
 		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="pt_BR">
 			<Text>+3 Pontos de Influência por turno. Quando essa civilização captura ou mata um espião inimigo, receba 200 de [ICON_Science] Ciência (na velocidade padrão) pra cada nível do espião inimigo.</Text>
 		</Replace>
@@ -16,9 +19,6 @@
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="pt_BR">
 			<Text>Pode escolher uma crença adicional ao fundar religião. Colonos e construtores possuem +1 de [ICON_Movement] movimento. +5 de [ICON_FAITH] fé e +1 de [ICON_Favor] Favorecimento Diplomático por turno por cada civilização (incluindo a Índia) encontrada e que já fundou uma religião e não esteja em guerra. Civilizações inimigas recebem o dobro de fadiga de guerra contra Gandhi.</Text>
 		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="pt_BR">
-			<Text>50% de desconto em [ICON_GOLD] ouro para a compra de edificações, distritos e unidades de combate na cidade.</Text>
-		</Row>
 		<!---->
 		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="pt_BR">
 			<Text>Santuários e Templos concedem +3 de [ICON_FOOD] Comida e +1 de [ICON_HOUSING] Habitação cada.</Text>

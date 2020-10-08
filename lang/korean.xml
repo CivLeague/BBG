@@ -30,7 +30,7 @@
 			<Text>도시의 새 타일을 더 빠르게 확보합니다. 도시를 지나는 모든 다른 문명 [ICON_TradeRoute] 교역로에서 턴당 [ICON_Gold] 금 +4를 획득합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_FORESTRY_MANAGEMENT_DESCRIPTION" Language="ko_KR">
-			<Text>이 도시는 각 미개발 지형 타일마다, 놀라운 매력도 타일마다 각각 [ICON_Gold] 금 +2를 획득합니다. 이 도시에서 미개발 지형에 인접한 타일은 매력도 +1을 획득합니다.</Text>
+			<Text>이 도시는 각 미개발 지형 또는 놀라운 매력도 지형 타일마다 [ICON_Gold] 금 +2를 획득합니다. 이 도시에서 미개발 지형에 인접한 타일은 매력도 +1을 획득합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="ko_KR">
 			<Text>도시의 [ICON_Citizen] 시민 한 명당 턴당 [ICON_Gold] 금 +2를 획득합니다. 도시에 배치된 동안 [ICON_TradeRoute] 교역로 1개를 추가로 얻습니다.</Text>
