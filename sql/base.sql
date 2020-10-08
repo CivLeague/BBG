@@ -1151,20 +1151,18 @@ INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
 --==============================================================
 --******				R E L I G I O N					  ******
 --==============================================================
-/*UPDATE UnitCommands SET VisibleInUI=0 WHERE CommandType='UNITCOMMAND_CONDEMN_HERETIC';
+UPDATE UnitCommands SET VisibleInUI=0 WHERE CommandType='UNITCOMMAND_CONDEMN_HERETIC';
 UPDATE Map_GreatPersonClasses SET MaxWorldInstances=6 WHERE MapSizeType='MAPSIZE_STANDARD';
 UPDATE Map_GreatPersonClasses SET MaxWorldInstances=8 WHERE MapSizeType='MAPSIZE_LARGE';
 UPDATE Map_GreatPersonClasses SET MaxWorldInstances=9 WHERE MapSizeType='MAPSIZE_HUGE';
 UPDATE Units SET BaseSightRange=1 WHERE UnitType='UNIT_MISSIONARY';
--- remove marytr ability from prasat missionaries
-DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_PRASAT' AND ModifierId='PRASAT_GRANT_MARTYR'; --DLC
 -- reduce debator promotion
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='APOSTLE_DEBATER' AND Name='Amount';
 UPDATE ModifierArguments SET Value='100' WHERE ModifierId='APOSTLE_FOREIGN_SPREAD' AND Name='Amount';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='APOSTLE_EVICT_ALL' AND Name='Amount';
 -- remove spread from condemning and defeating
-UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_COMBAT_VICTORY';
-UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_UNIT_CAPTURE';*/
+UPDATE GlobalParameters SET Value=150 WHERE Name='RELIGION_SPREAD_RANGE_COMBAT_VICTORY';
+UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_UNIT_CAPTURE';
 
 -- give monks wall breaker ability
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
@@ -1176,7 +1174,7 @@ INSERT OR IGNORE INTO UnitAbilities (UnitAbilityType) VALUES
 INSERT OR IGNORE INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES
 	('WARRIOR_MONK_WALL_BREAKER_BBG', 'ENABLE_WALL_ATTACK_WHOLE_GAME_MONK_BBG');
 -- Nerf Inquisitors
-UPDATE Units SET ReligionEvictPercent=50, SpreadCharges=2 WHERE UnitType='UNIT_INQUISITOR';
+UPDATE Units SET ReligionEvictPercent=25, SpreadCharges=2, CostProgressionParam1=10 WHERE UnitType='UNIT_INQUISITOR';
 -- Religious spread from trade routes increased
 UPDATE GlobalParameters SET Value='2.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_PRESSURE_FOR_DESTINATION';
 UPDATE GlobalParameters SET Value='1.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_PRESSURE_FOR_ORIGIN'     ;

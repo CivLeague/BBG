@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_PROMOTION_PROSELYTIZER_DESCRIPTION" Language="en_US">
+			<Text>Religious spread eliminates 25% of existing pressure from other Religions in the target city.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_TRANSLATOR_DESCRIPTION" Language="en_US">
+			<Text>Religious spread is double strength in cities of other civilizations.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_DEBATER_DESCRIPTION" Language="en_US">
+			<Text>+10 [ICON_Religion] Religious Strength in Theological Combat.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>May reduce the presence of other Religions in their territory by 25%, and initiate theological combat with units of other Religions.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="en_US">
+			<Text>Combat units gain +5 [ICON_Strength] Combat Strength near foreign cities that follow this Religion.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="en_US">
 			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards libraries, workshops, universities, and factories. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.</Text>
 		</Replace>
@@ -34,9 +50,6 @@
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="en_US">
 			<Text>+2 [ICON_Gold] Gold per turn for each [ICON_Citizen] Citizen in the city and +1 Trade Route capacity while established in any city.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION" Language="en_US">
-			<Text>Byzantine unique Classical Era unit that replaces the Quadrireme and has additional range.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="en_US">
 			<Text>Receive +2 [ICON_Strength] Combat Strength for each Holy City converted to your Religion and Byzantium's Religion is spread to nearby cities when a major civilization's unit is defeated (Taxis)</Text>
@@ -850,9 +863,6 @@
 		<!---->
 		<!--===============   R E L I G I O N S   ===============-->
 		<!-- Crusader Religion -->
-		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="en_US">
-			<Text>Combat units gain +7 [ICON_Strength] Combat Strength near foreign cities that follow this Religion.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="en_US">
 			<Text>Each Holy Site or Theater Square district in a city following this Religion provides +2 [ICON_Faith] Faith or +2 [ICON_Culture] Culture respectively.</Text>
 		</Replace>

@@ -38,9 +38,6 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="pt_BR">
 			<Text>+2 de [ICON_Gold] Ouro por turno pra cada [ICON_Citizen] Cidadão na cidade e +1 capacidade de Rota de comércio quando estabelecida em qualquer cidade.</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION" Language="pt_BR">
-			<Text>Unidade da Era Clássica, exclusiva de Bizâncio, que substitui o Quadrireme e tem alcance de ataque adicional.</Text>
-		</Replace>
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="pt_BR">
 			<Text>Recebe +2 de [ICON_Strength] Força de Combate pra cada Cidade Sagrada convertida pra Religião de Bizâncio. A Religião de Bizâncio se espalha para cidades próximas quando uma unidade de uma civilização é derrotada (Táxis)</Text>
 		</Replace>
@@ -850,7 +847,7 @@
 		<!--===============   R E L I G I O N S   ===============-->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="pt_BR">
-			<Text>Unidades de Combate tem +7 [ICON_Strength] de Força de Combate próximo a cidades estrangeiras que sigam esta religião.</Text>
+			<Text>Unidades de Combate tem +5 [ICON_Strength] de Força de Combate próximo a cidades estrangeiras que sigam esta religião.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="pt_BR">
 			<Text>Cada distrito de Local Sagrado ou Teatro em uma cidade seguindo esta Religião gera +2 de [ICON_FAITH] Fé ou +2 [ICON_CULTURE] de Cultura respectivamente</Text>

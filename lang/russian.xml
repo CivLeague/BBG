@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_PROMOTION_PROSELYTIZER_DESCRIPTION" Language="ru_RU">
+			<Text>Распространение религии снижает на 25% влияние других религий в выбранном городе.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_TRANSLATOR_DESCRIPTION" Language="ru_RU">
+			<Text>В городах других цивилизаций религия распространяется с удвоенной силой.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_DEBATER_DESCRIPTION" Language="ru_RU">
+			<Text>+10 [ICON_Religion] к религиозной силе в теологической баталии.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="ru_RU">
+			<Text>Может сократить на 25% присутствие чужих религий на своей территории. Вступает в теологические баталии с юнитами других религий.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="ru_RU">
 			<Text>Швеция получает 50 [ICON_Favor] единиц мирового влияния за каждого нанятого великого человека. Швеция получает +1 [ICON_GreatEngineer] очко великого инженера от каждой фабрики и +1 [ICON_GreatScientist] очко великого ученого от каждого университета, а также +50% [ICON_PRODUCTION] к производству библиотек, мастерских, университетов и фабрик. Если Швеция присутствует в игре, то начиная с промышленной эры добавляются 3 уникальных соревнования всемирного конгресса.</Text>
 		</Replace>
@@ -34,9 +47,6 @@
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="ru_RU">
 			<Text>+2 [ICON_Gold] золота в ход за каждого [ICON_Citizen] жителя в городе и +1 доступный [ICON_TradeRoute] торговый путь, пока находится в любом городе.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный византийский юнит Античности, заменяющий квадрирему и имеющий повышенную дальность.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="ru_RU">
 			<Text>Юниты получают +2 [ICON_Strength] к боевой мощи за каждый священный город, обращенный в религию Византии. Византия распространяет свою религию на ближайшие города при убийстве вражеского юнита (Таксис).</Text>
@@ -731,7 +741,7 @@
 		<!-- -->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ru_RU">
-			<Text>Военные юниты получают +7 [ICON_Strength] боевой мощи на территории иностранных городов, исповедующими эту религию.</Text>
+			<Text>Военные юниты получают +5 [ICON_Strength] боевой мощи на территории иностранных городов, исповедующими эту религию.</Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ru_RU">

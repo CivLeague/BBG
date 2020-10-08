@@ -34,9 +34,6 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="ja_JP">
 			<Text>この都市の[ICON_Citizen]人口1人につき[ICON_Gold]ゴールド+2、また（文明としての）交易路の上限+1。</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION" Language="ja_JP">
-			<Text>ビザンチンに固有のカドリレームを代替する古典のユニット。攻撃範囲が広い。</Text>
-		</Replace>
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="ja_JP">
 			<Text>ビザンチンの宗教に改宗された聖都1つごとに全ユニットの[ICON_Strength]戦闘力+2。他文明あるいは都市国家のユニットを撃破するごとに自文明の宗教が伝播されていく。（位階）</Text>
 		</Replace>
@@ -730,7 +727,7 @@
 		<!-- -->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ja_JP">
-			<Text>軍事ユニットはこの宗教を信仰している他文明の近くで戦闘力[ICON_Strength]+7 を得る。</Text>
+			<Text>軍事ユニットはこの宗教を信仰している他文明の近くで戦闘力[ICON_Strength]+5 を得る。</Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ja_JP">

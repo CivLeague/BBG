@@ -801,7 +801,7 @@
 				<Text>Religia rozprzestrzenia się do miast odleglejszych o 40%.</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="pl_PL">
-				<Text>Jednostki bojowe otrzymują +7 do [ICON_STRENGTH] siły bojowej w granicach obcych miast wyznających tę religię.</Text>
+				<Text>Jednostki bojowe otrzymują +5 do [ICON_STRENGTH] siły bojowej w granicach obcych miast wyznających tę religię.</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="pl_PL">
 				<Text>Każda dzielnica świątynna i kulturalna w mieście wyznającym tę religię zapewnia odpowiednio +2 do [ICON_FAITH] wiary lub +2 do [ICON_CULTURE] kultury.</Text>

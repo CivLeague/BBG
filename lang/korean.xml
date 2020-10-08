@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_PROMOTION_PROSELYTIZER_DESCRIPTION" Language="ko_KR">
+			<Text>종교 전파로 목표 도시의 타 종교 영향력을 25% 제거합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_TRANSLATOR_DESCRIPTION" Language="ko_KR">
+			<Text>다른 문명의 도시에서 종교 전파력이 2배로 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_DEBATER_DESCRIPTION" Language="ko_KR">
+			<Text>신학 전투 시 [ICON_Religion] 신앙력 +10.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>해당 영토에 퍼진 다른 종교를 25% 감소시킬 수 있으며 다른 종교의 유닛과 신학 전투를 시작할 수 있습니다.</Text>
+		</Replace>
+		
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="ko_KR">
 			<Text>스웨덴이 위인을 영입하면 [ICON_Favor] 외교적 환심 50을 얻습니다(일반 속도 기준). 스웨덴이 공장에서 [ICON_GreatEngineer] 위대한 기술자 점수 +1을, 대학교에서 [ICON_GreatScientist] 위대한 과학자 점수 +1을 얻습니다. 도서관, 작업장, 공장 및 대학교 건물을 건설할 때 [ICON_PRODUCTION] 생산력 +50%를 제공합니다. 게임에 스웨덴이 있으면 산업 시대부터 3개의 특유한 세계 의회 경쟁이 추가됩니다.</Text>
 		</Replace>
@@ -34,9 +47,6 @@
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="ko_KR">
 			<Text>도시의 [ICON_Citizen] 시민 한 명당 턴당 [ICON_Gold] 금 +2를 획득합니다. 도시에 배치된 동안 [ICON_TradeRoute] 교역로 1개를 추가로 얻습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION" Language="ko_KR">
-			  <Text>사단노선을 대체하는 비잔티움 특유의 고전 시대 유닛으로, [ICON_Range] 사정거리가 1 높습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="ko_KR">
 			<Text>플레이어 종교로 개종한 각 성도마다 [ICON_Strength] 전투력 +2를 제공하며 주요 문명 및 도시국가의 유닛이 패배하면 비잔티움 종교가 인근 도시로 전파됩니다(탁시스).</Text>
@@ -834,7 +844,7 @@
 		<!--===============   R E L I G I O N S   ===============-->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ko_KR">
-			<Text>전투 유닛은 이 종교를 믿는 외국 도시 근처에서 [ICON_Strength] 전투력 +7을 획득합니다.</Text>
+			<Text>전투 유닛은 이 종교를 믿는 외국 도시 근처에서 [ICON_Strength] 전투력 +5을 획득합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="ko_KR">
 			<Text>이 종교를 믿는 도시의 각 성지 또는 극장가 특수지구에서 [ICON_Faith] 신앙 +2 또는[ICON_Culture] 문화 +2를 제공합니다.</Text>

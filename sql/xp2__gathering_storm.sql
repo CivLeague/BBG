@@ -97,6 +97,13 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 UPDATE Units_XP2 SET ResourceCost=10 WHERE UnitType='UNIT_FRENCH_GARDE_IMPERIALE';
 
 
+--==========
+-- GEORGIA
+--==========
+UPDATE Building_YieldChanges SET YieldChange=3 WHERE BuildingType='BUILDING_TSIKHE' AND YieldType='YIELD_FAITH';
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='TSIKHE_FAITH_GOLDEN_AGE' AND Name='Amount';
+
+
 --==================
 -- Hungary
 --==================
@@ -320,8 +327,8 @@ DELETE From BeliefModifiers WHERE ModifierId='WORK_ETHIC_ADJACENCY_PRODUCTION_2'
 -- nerf tithe
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TITHE_GOLD_CITY_MODIFIER' AND Name='Amount';
 -- feed the world housing reduced
-UPDATE ModifierArguments SET Value='1' WHERE ModifierId='FEED_THE_WORLD_SHRINE_HOUSING' AND Name='Amount';
-UPDATE ModifierArguments SET Value='1' WHERE ModifierId='FEED_THE_WORLD_TEMPLE_HOUSING' AND Name='Amount';
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId='FEED_THE_WORLD_SHRINE_HOUSING_MODIFIER' AND Name='Amount';
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId='FEED_THE_WORLD_TEMPLE_HOUSING_MODIFIER' AND Name='Amount';
 /*--revert feed the world to pre-GS version
 DELETE FROM BeliefModifiers WHERE BeliefType='BELIEF_FEED_THE_WORLD' AND ModifierID='FEED_THE_WORLD_SHRINE_HOUSING';
 DELETE FROM BeliefModifiers WHERE BeliefType='BELIEF_FEED_THE_WORLD' AND ModifierID='FEED_THE_WORLD_TEMPLE_HOUSING';
