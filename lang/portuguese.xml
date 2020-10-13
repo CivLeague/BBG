@@ -13,10 +13,6 @@
 		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="pt_BR">
 			<Text>Pode reduzir a presença de outra Religiões no seu território em 25%, e iniciar combate teológico com unidades de outras Religiões.</Text>
 		</Replace>
-		
-		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="pt_BR">
-            <Text>50% de desconto em [ICON_GOLD] Ouro ao comprar unidades e distritos na cidade.</Text>
-        </Row>
 		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="pt_BR">
 			<Text>+3 Pontos de Influência por turno. Quando essa civilização captura ou mata um espião inimigo, receba 200 de [ICON_Science] Ciência (na velocidade padrão) pra cada nível do espião inimigo.</Text>
 		</Replace>
@@ -32,6 +28,9 @@
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="pt_BR">
 			<Text>Pode escolher uma crença adicional ao fundar religião. Colonos e construtores possuem +1 de [ICON_Movement] movimento. +5 de [ICON_FAITH] fé e +1 de [ICON_Favor] Favorecimento Diplomático por turno por cada civilização (incluindo a Índia) encontrada e que já fundou uma religião e não esteja em guerra. Civilizações inimigas recebem o dobro de fadiga de guerra contra Gandhi.</Text>
 		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="pt_BR">
+			<Text>50% de desconto em [ICON_GOLD] ouro para a compra de edificações, distritos e unidades de combate na cidade.</Text>
+		</Row>
 		<!---->
 		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="pt_BR">
 			<Text>Santuários e Templos concedem +3 de [ICON_FOOD] Comida e +1 de [ICON_HOUSING] Habitação cada.</Text>
@@ -58,7 +57,7 @@
 			<Text>Recebe +2 de [ICON_Religion] Força religiosa pra cada Cidade Sagrada convertida pra Religião de Bizâncio.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BYZANTIUM_DESCRIPTION" Language="pt_BR">
-			<Text>Unidades recebem +2 de [ICON_Strength] Força de Combate ou [ICON_Religion] força religiosa pra cada Cidade Sagrada convertida pra Religião de Bizâncio (incluindo a Cidade Sagrada de Bizâncio). A Religião de Bizâncio se espalha para cidades próximas quando uma unidade de uma civilização ou de cidade estado é derrotada. +1 ponto de [ICON_GreatProphet] Grande Profeta de cidades com um distrito de Local Sagrado.</Text>
+			<Text>Unidades recebem +2 de [ICON_Strength] Força de Combate ou [ICON_Religion] força religiosa pra cada Cidade Sagrada convertida pra Religião de Bizâncio (incluindo a Cidade Sagrada de Bizâncio). A Religião de Bizâncio se espalha para cidades próximas quando uma unidade de uma civilização é derrotada. +1 ponto de [ICON_GreatProphet] Grande Profeta de cidades com um distrito de Local Sagrado.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="pt_BR">
 			<Text>+2 de [ICON_GOLD] Ouro pra cada cidade seguindo essa religião.</Text>
@@ -250,11 +249,11 @@
 			<Text>Receba um Grande General quando a partida entrar em uma nova era. Não pode recrutar [ICON_GreatGeneral] Grandes Generais.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="pt_BR">
-			<Text>Permite saques navais por todas as unidades navais de curto alcance e +50% de [ICON_PRODUCTION] produção para todas as unidades navais de curto alcance.[NEWLINE][NEWLINE]Recebe +50% de [ICON_PRODUCTION] produção para Locais Sagrados e todas as suas construções. Locais Sagrados recebem bônus de adjacência padrão por painéis costeiros.[NEWLINE][NEWLINE]Portos próximos a Locais Sagrados recebem bônus adicional de +2 de adjacência de [ICON_GOLD] ouro.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>Permite saques navais por todas as unidades navais de curto alcance e +50% de [ICON_PRODUCTION] produção para todas as unidades navais de curto alcance.[NEWLINE][NEWLINE]Recebe +50% de [ICON_PRODUCTION] produção para Locais Sagrados e todas as suas construções. Locais Sagrados recebem bônus de adjacência padrão por painéis costeiros.[NEWLINE][NEWLINE]Portos próximos a Locais Sagrados recebem bônus adicional de +2 de adjacência de [ICON_GOLD] ouro.</Text>
-		</Replace>
+            <Text>Permite saques costeiros por todas as unidades navais de curto alcance e +50% de [ICON_PRODUCTION] produção para todas as unidades navais de curto alcance.[NEWLINE][NEWLINE]Locais Sagrados recebem bônus de adjacência padrão por painéis costeiros.[NEWLINE][NEWLINE]Portos próximos a Locais Sagrados recebem bônus adicional de +2 de adjacência de [ICON_GOLD] ouro.</Text>
+        </Replace>
+        <Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_EXPANSION2_DESCRIPTION" Language="pt_BR">
+            <Text>Permite saques costeiros por todas as unidades navais de curto alcance e +50% de [ICON_PRODUCTION] produção para todas as unidades navais de curto alcance.[NEWLINE][NEWLINE]Locais Sagrados recebem bônus de adjacência padrão por painéis costeiros.[NEWLINE][NEWLINE]Portos próximos a Locais Sagrados recebem bônus adicional de +2 de adjacência de [ICON_GOLD] ouro.</Text>
+        </Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="pt_BR">
 			<Text>+25% de experiência de combate para todas as unidades terrestres treinadas nesta cidade.[NEWLINE]+1 de [ICON_RESOURCE_NITER] nitro por turno, uma vez descoberto.</Text>
 		</Replace>
@@ -596,7 +595,7 @@
 			<Text>50% de desconto em [ICON_GOLD] ouro para melhorar unidades. 50% de desconto em recursos para melhorias e produção de unidades .</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="pt_BR">
-			<Text>+1 ponto [ICON_GreatProphet] de Grande Profeta per turno após pesquisar Astrologia. O último [ICON_GreatProphet] Grande Profeta irá automaticamente para a Arabia, se ela já não tiver recrutado algum. +1 de [ICON_SCIENCE] Ciência por cada cidade estrangeira seguindo a Religião da Arabia. </Text>
+			<Text>+1 ponto [ICON_GreatProphet] de Grande Profeta por turno após pesquisar Astrologia. O último [ICON_GreatProphet] Grande Profeta irá automaticamente para a Arabia, se ela já não tiver recrutado algum. +1 de [ICON_SCIENCE] Ciência por cada cidade estrangeira seguindo a Religião da Arabia. </Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="pt_BR">
 			<Text>Todas as maravilhas do mundo provêm de +6 [ICON_FAITH] Fé.</Text>
@@ -743,7 +742,7 @@
 		</Replace>
 		<!-- Arabia -->
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="pt_BR">
-			<Text>A edificação única de Culto da Religião da Arabia pode ser comprada por qualuqer jogador por apenas um décimo do padrão do custo em [ICON_FAITH] Fé. Essa edificação de Culto é melhorada para adicionar mais 20% [ICON_SCIENCE] Ciência, [ICON_FAITH] Fé, e [ICON_CULTURE] Cultura para as cidades Árabes.</Text>
+			<Text>A edificação única de Culto da Religião da Arabia pode ser comprada por qualquer jogador por apenas um décimo do padrão do custo em [ICON_FAITH] Fé. Essa edificação de Culto é melhorada para adicionar mais 20% [ICON_SCIENCE] Ciência, [ICON_FAITH] Fé, e [ICON_CULTURE] Cultura para as cidades Árabes.</Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="pt_BR">
