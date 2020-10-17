@@ -845,7 +845,7 @@
 		<!--===============   R E L I G I O N S   ===============-->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ko_KR">
-			<Text>전투 유닛은 이 종교를 믿는 외국 도시 근처에서 [ICON_Strength] 전투력 +5을 획득합니다.</Text>
+			<Text>전투 유닛은 이 종교를 믿는 외국 도시 근처에서 [ICON_Strength] 전투력 +3을 획득합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="ko_KR">
 			<Text>이 종교를 믿는 도시의 각 성지 또는 극장가 특수지구에서 [ICON_Faith] 신앙 +2 또는[ICON_Culture] 문화 +2를 제공합니다.</Text>

@@ -727,7 +727,7 @@
 		<!-- -->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ja_JP">
-			<Text>軍事ユニットはこの宗教を信仰している他文明の近くで戦闘力[ICON_Strength]+5 を得る。</Text>
+			<Text>軍事ユニットはこの宗教を信仰している他文明の近くで戦闘力[ICON_Strength]+3 を得る。</Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ja_JP">

@@ -14,7 +14,7 @@
 			<Text>May reduce the presence of other Religions in their territory by 25%, and initiate theological combat with units of other Religions.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="en_US">
-			<Text>Combat units gain +5 [ICON_Strength] Combat Strength near foreign cities that follow this Religion.</Text>
+			<Text>Combat units gain +3 [ICON_Strength] Combat Strength near foreign cities that follow this Religion.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="en_US">

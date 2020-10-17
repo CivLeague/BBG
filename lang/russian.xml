@@ -741,7 +741,7 @@
 		<!-- -->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ru_RU">
-			<Text>Военные юниты получают +5 [ICON_Strength] боевой мощи на территории иностранных городов, исповедующими эту религию.</Text>
+			<Text>Военные юниты получают +3 [ICON_Strength] боевой мощи на территории иностранных городов, исповедующими эту религию.</Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ru_RU">

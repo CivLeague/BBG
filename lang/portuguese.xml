@@ -859,7 +859,7 @@
 		<!--===============   R E L I G I O N S   ===============-->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="pt_BR">
-			<Text>Unidades de Combate tem +5 [ICON_Strength] de Força de Combate próximo a cidades estrangeiras que sigam esta religião.</Text>
+			<Text>Unidades de Combate tem +3 [ICON_Strength] de Força de Combate próximo a cidades estrangeiras que sigam esta religião.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="pt_BR">
 			<Text>Cada distrito de Local Sagrado ou Teatro em uma cidade seguindo esta Religião gera +2 de [ICON_FAITH] Fé ou +2 [ICON_CULTURE] de Cultura respectivamente</Text>

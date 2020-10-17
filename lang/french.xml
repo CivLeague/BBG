@@ -587,7 +587,7 @@
 			<Text>Les Autels et les Temples fournissent une quantité de [ICON_PRODUCTION] Production égale à leur génération de [ICON_Faith] Foi intrinsèque.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Strength] Puissance de combat +5 pour les unités militaires proches des villes étrangères converties à cette religion.</Text>
+			<Text>[ICON_Strength] Puissance de combat +3 pour les unités militaires proches des villes étrangères converties à cette religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Amenities] Activités +1 dans les villes abritant un quartier spécialisé.</Text>
