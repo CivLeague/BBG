@@ -2,133 +2,83 @@
 <GameData>
 	<LocalizedText>
 		<Replace Tag="LOC_PROMOTION_PROSELYTIZER_DESCRIPTION" Language="de_DE">
-			<Text>
-				Religiöse Verbreitung eliminiert 25% des existierenden Drucks durch andere Religionen in der Zielstadt.
-			</Text>
+			<Text>Religiöse Verbreitung eliminiert 25% des existierenden Drucks durch andere Religionen in der Zielstadt.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROMOTION_TRANSLATOR_DESCRIPTION" Language="de_DE">
-			<Text>
-				Die religiöse Verbreitung hat in den Städten anderer Zivilisationen die doppelte Stärke.
-			</Text>
+			<Text>Die religiöse Verbreitung hat in den Städten anderer Zivilisationen die doppelte Stärke.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROMOTION_DEBATER_DESCRIPTION" Language="de_DE">
-			<Text>
-				+10 [ICON_Religion] religiöse Stärke im theologischen Kampf.
-			</Text>
+			<Text>+10 [ICON_Religion] religiöse Stärke im theologischen Kampf.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>
-				Kann die Anwesenheit anderer Religionen auf seinem Gebiet um 25 % reduzieren und den theologischen Kampf mit Einheiten anderer Religionen einleiten.
-			</Text>
+			<Text>Kann die Anwesenheit anderer Religionen auf seinem Gebiet um 25 % reduzieren und den theologischen Kampf mit Einheiten anderer Religionen einleiten.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="de_DE">
-			<Text>
-				Kampfeinheiten erhalten +3 [ICON_Strength] Kampfstärke innerhalb der Grenzen fremder Städte mit dieser Religion.
-			</Text>
+			<Text>Kampfeinheiten erhalten +3 [ICON_Strength] Kampfstärke innerhalb der Grenzen fremder Städte mit dieser Religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="de_DE">
-			<Text>
-				Schweden erhält 50 [ICON_Favor] diplomatische Gunst, wenn es eine Große Persönlichkeit verdient (auf Standardgeschwindigkeit). Schweden erhält +1 [ICON_GreatEngineer] Großer-Ingenieur-Punkt durch Fabriken und +1 [ICON_GreatScientist] Großer-Wissenschafter-Punkt durch Universitäten. Außerdem erhält Schweden +50% [ICON_Production] auf Bibliotheken, Werkstätten, Universitäten und Fabriken. Wenn Schweden mit im Spiel ist,beginnen im Industriezeitalter drei zusätzliche einzigartige Weltkongress-Wettkämpfe.
-			</Text>
+			<Text>Schweden erhält 50 [ICON_Favor] diplomatische Gunst, wenn es eine Große Persönlichkeit verdient (auf Standardgeschwindigkeit). Schweden erhält +1 [ICON_GreatEngineer] Großer-Ingenieur-Punkt durch Fabriken und +1 [ICON_GreatScientist] Großer-Wissenschafter-Punkt durch Universitäten. Außerdem erhält Schweden +50% [ICON_Production] auf Bibliotheken, Werkstätten, Universitäten und Fabriken. Wenn Schweden mit im Spiel ist,beginnen im Industriezeitalter drei zusätzliche einzigartige Weltkongress-Wettkämpfe.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="de_DE">
-			<Text>
-				+2 [ICON_Faith] Glauben und +2 [ICON_Gold] Gold durch Minen bei Luxusgütern und Bonusressourcen.
-			</Text>
+			<Text>+2 [ICON_Faith] Glauben und +2 [ICON_Gold] Gold durch Minen bei Luxusgütern und Bonusressourcen.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION" Language="de_DE">
-			<Text>
-				Erhält einen zusätzlichen Glaubenssatz bei Religionsgründung. Siedler und Handwerker +1 [ICON_Movement] Fortbewegung. +5 [ICON_Faith] Glauben für jede getroffene Zivilisation (einschließlich Indien), welche eine Religion gegründet hat und nicht im Krieg ist. Feindliche Zivilisationen erhalten die doppelte Kriegsmüdigkeit beim Kampf gegen Gandhi.
-			</Text>
+			<Text>Erhält einen zusätzlichen Glaubenssatz bei Religionsgründung. Siedler und Handwerker +1 [ICON_Movement] Fortbewegung. +5 [ICON_Faith] Glauben für jede getroffene Zivilisation (einschließlich Indien), welche eine Religion gegründet hat und nicht im Krieg ist. Feindliche Zivilisationen erhalten die doppelte Kriegsmüdigkeit beim Kampf gegen Gandhi.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SATYAGRAHA_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>
-				Erhält einen zusätzlichen Glaubenssatz bei Religionsgründung. Siedler und Handwerker +1 [ICON_Movement] Fortbewegung. +5 [ICON_Faith] Glauben und +1 [ICON_Favor] Diplomatische Gunst pro Runde für jede getroffene Zivilisation (einschließlich Indien), welche eine Religion gegründet hat und nicht im Krieg ist. Feindliche Zivilisationen erhalten die doppelte Kriegsmüdigkeit beim Kampf gegen Gandhi.
-			</Text>
+			<Text>Erhält einen zusätzlichen Glaubenssatz bei Religionsgründung. Siedler und Handwerker +1 [ICON_Movement] Fortbewegung. +5 [ICON_Faith] Glauben und +1 [ICON_Favor] Diplomatische Gunst pro Runde für jede getroffene Zivilisation (einschließlich Indien), welche eine Religion gegründet hat und nicht im Krieg ist. Feindliche Zivilisationen erhalten die doppelte Kriegsmüdigkeit beim Kampf gegen Gandhi.</Text>
 		</Replace>
 		<Row Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION" Language="de_DE">
-			<Text>
-				50% [ICON_Gold] geringere Goldkosten beim Kauf von Gebäuden und Distrikten (sofern möglich) in der Stadt.
-			</Text>
+			<Text>50% [ICON_Gold] geringere Goldkosten beim Kauf von Gebäuden und Distrikten (sofern möglich) in der Stadt.</Text>
 		</Row>
 		<!---->
 		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>
-				Schreine und Tempel bringen je +3 [ICON_Food] Nahrung und +1 [ICON_Housing] Wohnraum.
-			</Text>
+			<Text>Schreine und Tempel bringen je +3 [ICON_Food] Nahrung und +1 [ICON_Housing] Wohnraum.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_AMBIORIX_DESCRIPTION" Language="de_DE">
-			<Text>
-				Nahkampf-, Kavallerie-Abwehr- und Fernkampfeinheiten erhalten +2 [ICON_Strength] Kampfstärke für jede angrenzende Kampfeinheit.
-			</Text>
+			<Text>Nahkampf-, Kavallerie-Abwehr- und Fernkampfeinheiten erhalten +2 [ICON_Strength] Kampfstärke für jede angrenzende Kampfeinheit.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_AMBIORIX_NEIGHBOR_COMBAT_BONUS_DESCRIPTION" Language="de_DE">
-			<Text>
-				Erhaltet +1 [ICON_Strength] Kampfstärke für jede angrenzende Kampfeinheit (King of the Eburones)
-			</Text>
+			<Text>Erhaltet +1 [ICON_Strength] Kampfstärke für jede angrenzende Kampfeinheit (King of the Eburones)</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_LAND_ACQUISITION_DESCRIPTION" Language="de_DE">
-			<Text>
-				Die Stadt erwirbt schneller neue Geländefelder. +4 [ICON_Gold] Gold pro Runde für jeden fremden [ICON_TradeRoute] Handelsweg, der die Stadt durchquert.
-			</Text>
+			<Text>Die Stadt erwirbt schneller neue Geländefelder. +4 [ICON_Gold] Gold pro Runde für jeden fremden [ICON_TradeRoute] Handelsweg, der die Stadt durchquert.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_FORESTRY_MANAGEMENT_DESCRIPTION" Language="de_DE">
-			<Text>
-				TDie Stadt erhält +2 [ICON_Gold] Gold von jeder nicht modernisierten Geländeart und Feldern mit der Anziehunkraft "Atemberaubend". An nicht modernisierte Geländearten angrenzende Felder erhalten in der Stadt +1 Anziehungskraft.
-			</Text>
+			<Text>TDie Stadt erhält +2 [ICON_Gold] Gold von jeder nicht modernisierten Geländeart und Feldern mit der Anziehunkraft "Atemberaubend". An nicht modernisierte Geländearten angrenzende Felder erhalten in der Stadt +1 Anziehungskraft.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="de_DE">
-			<Text>
-				+2 [ICON_Gold] Gold pro Zug für jeden [ICON_Citizen] Bürger in der Stadt und +1 Handelsrouten-Kapazität solange Reyna in der Stadt stationiert ist.
-			</Text>
+			<Text>+2 [ICON_Gold] Gold pro Zug für jeden [ICON_Citizen] Bürger in der Stadt und +1 Handelsrouten-Kapazität solange Reyna in der Stadt stationiert ist.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="de_DE">
-			<Text>
-				Erhaltet +2 [ICON_Strength] Kampfstärke für jede heilige Stadt, die zur Religion von Byzanz bekehrt wird (einschließlich der byzantinischen heiligen Stadt). Die byzantinische Religion wird außerdem in nahegelegenen Städten verbreitet, sobald die Einheit einer anderen Zivilisation besiegt wird. (Taxis)
-			</Text>
+			<Text>Erhaltet +2 [ICON_Strength] Kampfstärke für jede heilige Stadt, die zur Religion von Byzanz bekehrt wird (einschließlich der byzantinischen heiligen Stadt). Die byzantinische Religion wird außerdem in nahegelegenen Städten verbreitet, sobald die Einheit einer anderen Zivilisation besiegt wird. (Taxis)</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_RELIGIOUS_UNITS_DESCRIPTION" Language="de_DE">
-			<Text>
-				Erhaltet +2 [ICON_RELIGION] Religiöse Kampfstärke für jede zu Eurer Religion bekehrte heilige Stadt.
-			</Text>
+			<Text>Erhaltet +2 [ICON_RELIGION] Religiöse Kampfstärke für jede zu Eurer Religion bekehrte heilige Stadt.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BYZANTIUM_DESCRIPTION" Language="de_DE">
-			<Text>
-				Einheiten erhalten +2 [ICON_Strength] Kampfstärke oder [ICON_Religion] religiöse Kampfstärke für jede zur Religion von Byzanz bekehrte heilige Stadt (einschließlich der byzantinischen heiligen Stadt). Die byzantinische Religion wird außerdem in nahegelegenen Städten verbreitet, sobald die Einheit einer anderen Zivilisation besiegt wird. +1 [ICON_GreatProphet] Großer-Prophet-Punkt in Städten mit einer heiligen Stätte.
-			</Text>
+			<Text>Einheiten erhalten +2 [ICON_Strength] Kampfstärke oder [ICON_Religion] religiöse Kampfstärke für jede zur Religion von Byzanz bekehrte heilige Stadt (einschließlich der byzantinischen heiligen Stadt). Die byzantinische Religion wird außerdem in nahegelegenen Städten verbreitet, sobald die Einheit einer anderen Zivilisation besiegt wird. +1 [ICON_GreatProphet] Großer-Prophet-Punkt in Städten mit einer heiligen Stätte.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="de_DE">
-			<Text>
-				+3 Einflusspunkte pro Runde. Wenn diese Zivilisation einen feindlichen Spion gefangen nimmt oder tötet, erhält sie 200 [ICON_Science] Wissenschaft (auf Standard-Geschwindigkeit) pro Stufe des feindlichen Spions. .
-			</Text>
+			<Text>+3 Einflusspunkte pro Runde. Wenn diese Zivilisation einen feindlichen Spion gefangen nimmt oder tötet, erhält sie 200 [ICON_Science] Wissenschaft (auf Standard-Geschwindigkeit) pro Stufe des feindlichen Spions. .</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>+3 [ICON_GOLD]für jede Stadt mit dieser Religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>
-				Schaltet die Handwerker-Fähigkeit frei, eine Felskirche zu bauen, die einzigartig für Äthiopien ist.[NEWLINE][NEWLINE]+1 [ICON_Faith] für jedes angrenzende Hügel-Feld. Gewährt nach Erforschung der Luftfahrt [ICON_TOURISM] durch Glauben. +1 Anziehungskraft. Kann nur von Naturkatastrophen geplündert (niemals zerstört) werden. Kann nur auf Hügeln oder Vulkanerde gebaut werden und darf nicht an eine weitere Felskirche angrenzen.
-			</Text>
+			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Felskirche zu bauen, die einzigartig für Äthiopien ist.[NEWLINE][NEWLINE]+1 [ICON_Faith] für jedes angrenzende Hügel-Feld. Gewährt nach Erforschung der Luftfahrt [ICON_TOURISM] durch Glauben. +1 Anziehungskraft. Kann nur von Naturkatastrophen geplündert (niemals zerstört) werden. Kann nur auf Hügeln oder Vulkanerde gebaut werden und darf nicht an eine weitere Felskirche angrenzen.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="de_DE">
-			<Text>
-				Schaltet die Handwerker-Fähigkeit frei, eine Felskirche zu bauen, die einzigartig für Äthiopien ist.[NEWLINE][NEWLINE]+1 [ICON_Faith] für jedes angrenzende Hügel-Feld. Gewährt nach Erforschung der Luftfahrt [ICON_TOURISM] durch Glauben. +1 Anziehungskraft. Kann nur von Naturkatastrophen geplündert (niemals zerstört) werden. Kann nur auf Hügeln gebaut werden und darf nicht an eine weitere Felskirche angrenzen.
-			</Text>
+			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Felskirche zu bauen, die einzigartig für Äthiopien ist.[NEWLINE][NEWLINE]+1 [ICON_Faith] für jedes angrenzende Hügel-Feld. Gewährt nach Erforschung der Luftfahrt [ICON_TOURISM] durch Glauben. +1 Anziehungskraft. Kann nur von Naturkatastrophen geplündert (niemals zerstört) werden. Kann nur auf Hügeln gebaut werden und darf nicht an eine weitere Felskirche angrenzen.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="de_DE">
-			<Text>
-				Zufriedene Städte erhalten zusätzliche +10% [ICON_SCIENCE] Wissenschaft und [ICON_PRODUCTION] Produktion. Begeisterte Städte erhalten zusätzliche +15% [ICON_SCIENCE] Wissenschaft und [ICON_PRODUCTION] Produktion. Zufriedene Städte generieren +1 [ICON_GreatScientist] Großer-Wissenschaftler-Punkt pro Campus und +1 [ICON_GreatEngineer] Großer-Ingenieur-Punkt pro Industriebezirk. Begeisterte Städte verdoppeln dies jeweils.
-			</Text>
+			<Text>Zufriedene Städte erhalten zusätzliche +10% [ICON_SCIENCE] Wissenschaft und [ICON_PRODUCTION] Produktion. Begeisterte Städte erhalten zusätzliche +15% [ICON_SCIENCE] Wissenschaft und [ICON_PRODUCTION] Produktion. Zufriedene Städte generieren +1 [ICON_GreatScientist] Großer-Wissenschaftler-Punkt pro Campus und +1 [ICON_GreatEngineer] Großer-Ingenieur-Punkt pro Industriebezirk. Begeisterte Städte verdoppeln dies jeweils.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="de_DE">
-			<Text>
-				+1 [ICON_FOOD] Nahrung für [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], und [ICON_RESOURCE_WHEAT]-Felder.
-			</Text>
+			<Text>+1 [ICON_FOOD] Nahrung für [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], und [ICON_RESOURCE_WHEAT]-Felder.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>
-				Ihr erhaltet bei Auswahl einen Handwerker in Eurer Hauptstadt. +1 [ICON_FOOD] Nahrung für [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT], und [ICON_RESOURCE_MAIZE]-Felder.
-			</Text>
+			<Text>Ihr erhaltet bei Auswahl einen Handwerker in Eurer Hauptstadt. +1 [ICON_FOOD] Nahrung für [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT], und [ICON_RESOURCE_MAIZE]-Felder.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="de_DE">
 			<Text>Die Grenzerweiterung geschieht 50% schneller.</Text>
@@ -137,19 +87,13 @@
 			<Text>Die Grenzerweiterung geschieht 50% schneller.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="de_DE">
-			<Text>
-				Alle Städte starten mit einem zusätzlichen Stadtzentrum-Gebäude, sobald die Ausrichtung Gesetzgebung freigeschaltet worden ist. (Beginnt mit einem Monument in der Antike).
-			</Text>
+			<Text>Alle Städte starten mit einem zusätzlichen Stadtzentrum-Gebäude, sobald die Ausrichtung Gesetzgebung freigeschaltet worden ist. (Beginnt mit einem Monument in der Antike).</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Language="de_DE">
-			<Text>
-				Schaltet die Handwerker-Fähigkeit frei, einen Koog, die einzigartige Modernisierung der Niederlande, zu bauen..[NEWLINE][NEWLINE]+1 [ICON_FOOD] Nahrung, +1 [ICON_Production] Produktion, und +0.5 [ICON_Housing] Wohnraum. +1 [ICON_FOOD] Nahrung, wenn er an eine Koog-Modernisierung angrenzt. Zusätzlich [ICON_PRODUCTION] Produktion, [ICON_GOLD] Gold, und [ICON_FOOD] Nahrung für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Muss auf einem Küsten- oder See-Geländefeld gebaut werden, das an zwei oder mehr passierbare Land-Geländefelder angrenzt. Erhöht die [ICON_Movement] Fortbewegungskosten des Geländefelds auf 3.
-			</Text>
+			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Koog, die einzigartige Modernisierung der Niederlande, zu bauen..[NEWLINE][NEWLINE]+1 [ICON_FOOD] Nahrung, +1 [ICON_Production] Produktion, und +0.5 [ICON_Housing] Wohnraum. +1 [ICON_FOOD] Nahrung, wenn er an eine Koog-Modernisierung angrenzt. Zusätzlich [ICON_PRODUCTION] Produktion, [ICON_GOLD] Gold, und [ICON_FOOD] Nahrung für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Muss auf einem Küsten- oder See-Geländefeld gebaut werden, das an zwei oder mehr passierbare Land-Geländefelder angrenzt. Erhöht die [ICON_Movement] Fortbewegungskosten des Geländefelds auf 3.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_KUPES_VOYAGE_DESCRIPTION" Language="de_DE">
-			<Text>
-				Beginnt das Spiel in einem Ozean-Geländefeld. Erhaltet +1 [ICON_Citizen] Bewohner beim Ansieden der ersten Stadt. Der Palast erhält +3 [ICON_HOUSING] Wohnraum and +1 [ICON_AMENITIES] Annehmlichkeit. +2 [ICON_SCIENCE] Wissenschaft and +2 [ICON_CULTURE] Kultur pro Runde, bevor ihr Eure erste Stadt gründet.
-			</Text>
+			<Text>Beginnt das Spiel in einem Ozean-Geländefeld. Erhaltet +1 [ICON_Citizen] Bewohner beim Ansieden der ersten Stadt. Der Palast erhält +3 [ICON_HOUSING] Wohnraum and +1 [ICON_AMENITIES] Annehmlichkeit. +2 [ICON_SCIENCE] Wissenschaft and +2 [ICON_CULTURE] Kultur pro Runde, bevor ihr Eure erste Stadt gründet.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Ein ausschließlich Griechenland zur Verfügung stehender Bezirk für Kulturstätten. Ersetzt den Theaterplatz-Bezirk und ist günstiger im Bau.
@@ -172,8 +116,7 @@
 			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_AMENITIES] Annehmlichkeiten, +2 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="de_DE">
-			<Text>
-				Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +2 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
+			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +2 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
 		</Replace>
 		<Replace Tag="ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG" Language="de_DE">
 			<Text>Kann besiegte Einheiten von Stadtstaaten und Barbaren gefangennehmen.</Text>
@@ -680,8 +623,7 @@
 			<Text>+{1_num} [ICON_Faith] Glaube von angrenzenden Wald-Geländefeldern.</Text>
 		</Row>
 		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="de_DE">
-			<Text>Ungarische einzigartige Einheit des Mittelalters, die den Renner ersetzt. +2 [ICON_Strength] Kampfstärke für jede angrenzende ausgehobene Einheit.
-			</Text>
+			<Text>Ungarische einzigartige Einheit des Mittelalters, die den Renner ersetzt. +2 [ICON_Strength] Kampfstärke für jede angrenzende ausgehobene Einheit.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY" Language="de_DE">
 			<Text>Nachbarschaftsbonus: +1 [ICON_Sciene] Wissenschaft für jede 2. Mine. -1 [ICON_Sciene] Wissenschaft für jeden angrenzenden Bezirk außer Theater Plätzen. Gewährt +1 [ICON_Culture] Kultur für angrenzende Theaterbezirke.</Text>
@@ -714,8 +656,7 @@
 			<Text>Naturwunder über vier Geländefelder. Es erscheint als Sumpf und bietet +3 [ICON_Food] Nahrung, +3 [ICON_Production] Produktion und +1 [ICON_Science] Wissenschaft.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_DEVILSTOWER_DESCRIPTION" Language="de_DE">
-			<Text>Unpassierbares Naturwunder über ein Geländefeld. Bietet +2 [ICON_Faith] Glauben und +1 [ICON_Production] Produktion für angrenzende Geländefelder.
-			</Text>
+			<Text>Unpassierbares Naturwunder über ein Geländefeld. Bietet +2 [ICON_Faith] Glauben und +1 [ICON_Production] Produktion für angrenzende Geländefelder.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="de_DE">
 			<Text>Alle militärischen Landeinheiten und religiösen Einheiten erhalten +1 [ICON_Movement] Movement.</Text>
