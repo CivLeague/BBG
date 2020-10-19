@@ -23,7 +23,7 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="de_DE">
 			<Text>
-				Kampfeinheiten erhalten +5 [ICON_Strength] Kampfstärke innerhalb der Grenzen fremder Städte mit dieser Religion.
+				Kampfeinheiten erhalten +3 [ICON_Strength] Kampfstärke innerhalb der Grenzen fremder Städte mit dieser Religion.
 			</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="de_DE">
