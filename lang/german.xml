@@ -714,10 +714,10 @@
 			<Text>+{1_num} [ICON_Gold] Gold für eine benachbarte Heilige Stätte.</Text>
 		</Row>
 		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="de_DE">
-			<Text>Erhält Boni nach einer Stadteroberung: +20% [ICON_Production] Produktion in allen Städten für 10 Runden, außerdem ein [ICON_TechBoosted] Heureka für jedes Lager oder Campus in der eroberten Stadt und eine [ICON_CivicBoosted] Eingebung für jede Heiliege Stätte oder Theaterplatz.</Text>
+			<Text>Erhält Boni nach einer Stadteroberung: +20% [ICON_Production] Produktion in allen Städten für 10 Runden, außerdem ein [ICON_TechBoosted] Heureka für jedes Lager oder Campus in der eroberten Stadt und eine [ICON_CivicBoosted] Eingebung für jede Heilige Stätte oder Theaterplatz.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION" Language="de_DE">
-			<Text>Erhält Boni nach einer Stadteroberung: +20% [ICON_Production] Produktion in allen Städten für 10 Runden, außerdem ein [ICON_TechBoosted] Heureka für jedes Lager oder Campus in der eroberten Stadt und eine [ICON_CivicBoosted] Eingebung für jede Heiliege Stätte oder Theaterplatz.</Text>
+			<Text>Erhält Boni nach einer Stadteroberung: +20% [ICON_Production] Produktion in allen Städten für 10 Runden, außerdem ein [ICON_TechBoosted] Heureka für jedes Lager oder Campus in der eroberten Stadt und eine [ICON_CivicBoosted] Eingebung für jede Heilige Stätte oder Theaterplatz.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="de_DE">
 			<Text>Einizgartige Schwere Kavallerie des Mazedonischen Reiches. Erhält zusätzlich +5 [ICON_Strength] Kampfstärke wenn neben einem [ICON_GREATGENERAL] Großen General. +5 [ICON_GREATGENERAL] Große Persönlichkeits Punkte des Typs "Großer General" beim Ausschalten einer feindlichen Einheit. Startet mit 1 Beförderung.</Text>
