@@ -931,7 +931,7 @@
 
 			<!-- ================ Units ================ -->
 			<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="pl_PL">
-				<Text>Możliwość eliminacji innych religii na swoim terenie o 50% i rozpoczynania walki teologicznej z jednostkami innego wyznania.</Text>
+				<Text>Możliwość eliminacji innych religii na swoim terenie o 25% i rozpoczynania walki teologicznej z jednostkami innego wyznania.</Text>
 			</Replace>
 			<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="pl_PL">
 				<Text>Możliwość zmniejszenia obecności innych religii na swoim terenie o 25% i rozpoczynania walki teologicznej z jednostkami innego wyznania.</Text>

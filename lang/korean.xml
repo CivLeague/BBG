@@ -432,10 +432,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="ko_KR">
-			<Text>해당 영토에 퍼진 다른 종교를 50% 감소시킬 수 있으며 다른 종교의 유닛과 신학 전투를 시작할 수 있습니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>해당 영토에 퍼진 다른 종교를 50% 감소시킬 수 있으며 다른 종교의 유닛과 신학 전투를 시작할 수 있습니다.</Text>
+			<Text>해당 영토에 퍼진 다른 종교를 25% 감소시킬 수 있으며 다른 종교의 유닛과 신학 전투를 시작할 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="ko_KR">
             <Text>징병된 유닛이 능력을 획득하여 [ICON_Movement] 이동력 +1을 얻습니다. 징병된 유닛 업그레이드 시 [ICON_GOLD] 금 및 자원 소비량이 75% 감소합니다. 도시 국가의 군대를 징병하면 해당 도시 국가의 [ICON_ENVOY] 사절 1명을 얻습니다. 성 기술을 연구하면 특유 유닛인 검은 군대를 생산할 수 있습니다.</Text>

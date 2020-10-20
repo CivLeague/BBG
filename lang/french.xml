@@ -578,10 +578,10 @@
 		
 		<!-- =============== C R O Y A N C E S === DE === R E L I G I O N =============== -->
 		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="fr_FR">
-			<Text>Peut réduire la présence d'autres religions sur son territoire de 50 %, et lancer un combat théologique contre les unités d'autres religions.</Text>
+			<Text>Peut réduire la présence d'autres religions sur son territoire de 25 %, et lancer un combat théologique contre les unités d'autres religions.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Peut réduire la présence d'autres religions sur son territoire de 50 %, et lancer un combat théologique contre les unités d'autres religions.</Text>
+			<Text>Peut réduire la présence d'autres religions sur son territoire de 25 %, et lancer un combat théologique contre les unités d'autres religions.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_WORK_ETHIC_DESCRIPTION" Language="fr_FR">
 			<Text>Les Autels et les Temples fournissent une quantité de [ICON_PRODUCTION] Production égale à leur génération de [ICON_Faith] Foi intrinsèque.</Text>

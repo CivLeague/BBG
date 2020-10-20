@@ -428,10 +428,7 @@
 
 		
 		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="ru_RU">
-			<Text>Может сократить на 50% присутствие чужих религий на своей территории. Вступает в теологические баталии с юнитами других религий.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>Может сократить на 50% присутствие чужих религий на своей территории. Вступает в теологические баталии с юнитами других религий.</Text>
+			<Text>Может сократить на 25% присутствие чужих религий на своей территории. Вступает в теологические баталии с юнитами других религий.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="ru_RU">

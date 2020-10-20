@@ -429,10 +429,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="pt_BR">
-			<Text>Pode reduzir a presença de outras religiões em seu território em 50% e iniciar um combate teológico com unidades de outras religões.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>Pode reduzir a presença de outras religiões em seu território em 50% e iniciar um combate teológico com unidades de outras religões.</Text>
+			<Text>Pode reduzir a presença de outras religiões em seu território em 25% e iniciar um combate teológico com unidades de outras religões.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="pt_BR">
 			<Text>Unidades recrutadas ganham uma habilidade dando a eles +1 de [ICON_Movement] movimento. Custa 75% menos [ICON_GOLD] ouro e recursos estratégicos para melhorar unidades recrutadas. Se você recrutar tropas de uma cidade-estado, receberá 1 [ICON_ENVOY] emissário com aquela cidade-estado. Ganhe a unidade exclusiva Exército Negro quando pesquisar a tecnologia Castelos.</Text>

@@ -10,6 +10,9 @@
 		<Replace Tag="LOC_PROMOTION_DEBATER_DESCRIPTION" Language="en_US">
 			<Text>+10 [ICON_Religion] Religious Strength in Theological Combat.</Text>
 		</Replace>
+		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="en_US">
+			<Text>May reduce the presence of other Religions in their territory by 25%, and initiate theological combat with units of other Religions.</Text>
+		</Replace>
 		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>May reduce the presence of other Religions in their territory by 25%, and initiate theological combat with units of other Religions.</Text>
 		</Replace>
@@ -433,12 +436,7 @@
 			<Text>+50% [ICON_Production] Production toward districts in cities without a specialty district.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_UNIT_INQUISITOR_DESCRIPTION" Language="en_US">
-			<Text>May reduce the presence of other Religions in their territory by 50%, and initiate theological combat with units of other Religions.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>May reduce the presence of other Religions in their territory by 50%, and initiate theological combat with units of other Religions.</Text>
-		</Replace>
+
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="en_US">
 			<Text>Levied units gain an ability giving them +1 [ICON_Movement] Movement. It cost 75% less [ICON_GOLD] Gold and resources to upgrade Levied units. If you Levy troops from a City-State, receive 1 [ICON_ENVOY] Envoys with that City-State. Gain the Black Army unique unit when the Castles technology is researched.</Text>
 		</Replace>
