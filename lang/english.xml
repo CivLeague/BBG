@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="en_US">
+			<Text>You receive +40 Loyalty in all cities, ensuring full Loyalty throughout your empire.</Text>
+		</Replace>
 		<Replace Tag="LOC_PROMOTION_PROSELYTIZER_DESCRIPTION" Language="en_US">
 			<Text>Religious spread eliminates 25% of existing pressure from other Religions in the target city.</Text>
 		</Replace>
