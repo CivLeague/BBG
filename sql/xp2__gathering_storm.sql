@@ -269,7 +269,6 @@ UPDATE Building_YieldChanges SET YieldChange=6 WHERE BuildingType='BUILDING_POWE
 --==============================================================
 --******				 CITY_STATES					  ******
 --==============================================================
-UPDATE ModifierArguments SET Value='10' WHERE ModifierId='MINOR_CIV_FEZ_INITIATION_SCIENCE_POPULATION' AND Name='Amount';
 
 
 

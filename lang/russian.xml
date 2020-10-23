@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="ru_RU">
+			<Text>Вы получаете +40 лояльности во всех городах вашей империи.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="ru_RU">
             <Text>Все морские юниты ближнего боя получают способность осуществлять рейды на прибрежные территории. +50% [ICON_PRODUCTION] производства при создании всех морских юнитов ближнего боя.[NEWLINE][NEWLINE]Священные места получают стандартный бонус соседства от клеток побережья.[NEWLINE][NEWLINE]Гавани рядом со священными местами имеют +2 к [ICON_GOLD] золоту (считается как бонус соседства)</Text>
 		</Replace>
@@ -183,9 +186,6 @@
 		<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="ru_RU">
 			<Text>Прибрежное чудо света из 2-х клеток, каждая из которых дает +3 [ICON_Food] еды и +2 [ICON_Science] науки. Дает бонус рифа за соседство кампусу.</Text>
 		</Replace>
-		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="ru_RU">
-			<Text>При первом обращении города религиозным юнитом в свою религию вы получаете 10 [ICON_SCIENCE] науки за каждого [ICON_Citizen] жителя.</Text>
-		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="ru_RU">
             <Text>Клетки с потрясающим престижем, находящиеся рядом с чудом природы или горой, получают +1 к [ICON_SCIENCE] науке. Дополнительная 1 [ICON_SCIENCE] наука после изучения технологии "Астрономия". Клетки с потрясающим престижем, находящиеся рядом с чудом или лесом, получают +1 к [ICON_CULTURE] культуре. Дополнительно получают +1 [ICON_CULTURE] культуры после открытия "Просвещения". Все клетки в городе с национальным парком имеют +1 к престижу.</Text>
@@ -245,12 +245,6 @@
 		</Replace>
 		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="ru_RU">
 			<Text>Все юниты получают +1 к радиусу обзора</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальный кавалерийский юнит Великой Колумбии в Промышленную эру. Малые расходы на содержание. +2 к [ICON_Strength] боевой мощи за каждый соседний юнит льянеро в соседней клетке. Полностью исцеляется, если находится в радиусе активированной способности главнокомандующего "Отойти от дел".</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="ru_RU">
-			<Text>+2 к [ICON_Strength] боевой мощи за каждый юнит льянеро в соседней клетке.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION" Language="ru_RU">
 			<Text>Получает главнокомандующего при переходе в новую эпоху. Не может нанимать [ICON_GreatGeneral] великих генералов.</Text>

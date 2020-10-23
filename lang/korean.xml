@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="ko_KR">
+			<Text>모든 도시에 턴당 충성심 +40을 제공하여 충성심을 잃지 않도록 합니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="ko_KR">
             <Text>모든 해상 근접 유닛이 해안 강습을 감행할 수 있게 되며, [ICON_PRODUCTION] 생산력 +50%를 제공합니다.[NEWLINE][NEWLINE]성지는 인접한 해안 타일에서 일반적인 신앙 인접 보너스를 획득합니다.[NEWLINE]성지 특수지구와 인접한 항만 특수지구에서 [ICON_GOLD] 금 +2의 인접 보너스를 획득합니다.</Text>
         </Replace>
@@ -184,9 +187,6 @@
 		<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="ko_KR">
 			<Text>해안 지형에서 발견할 수 있는 타일 두 개의 자연경관입니다. [ICON_Food] 식량 +3, [ICON_Science] 과학 +2를 제공합니다. 캠퍼스 특수지구에 상당한 인접 보너스를 제공합니다.</Text>
 		</Replace>
-		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="ko_KR">
-			<Text>종교 유닛을 사용하여 도시를 처음 개종시킬 때 해당 도시의 [ICON_Citizen] 인구당 [ICON_SCIENCE] 과학 10을 얻습니다.</Text>
-		</Replace>
 	
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="ko_KR">
 			<Text>자연경관 또는 산맥 근처에 있는 놀라운 매력도 타일이 [ICON_SCIENCE] 과학 +1을 얻습니다. 천문학 기술 연구 완료시 추가로 [ICON_SCIENCE] 과학 +1을 얻습니다. 불가사의 또는 숲 근처에 있는 놀라운 매력도 타일이 [ICON_CULTURE] 문화 +1을 얻습니다. 계몽주의 사회 제도 완료시 추가로 [ICON_CULTURE] 문화 +1을 얻습니다. 국립공원이 있는 도시의 모든 타일이 매력도 +1을 얻습니다.</Text>
@@ -247,12 +247,6 @@
 		</Replace>
 		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="ko_KR">
 			<Text>모든 유닛에게 시야 +1을 부여합니다(애국자 군대).</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="ko_KR">
-			<Text>기병대를 대체하는 그란 콜롬비아 특유의 산업 시대 유닛입니다. 유지 비용이 낮습니다. 인접한 각 야네로에게서 [ICON_Strength] 전투력 +2를 얻습니다. 퇴각 능력을 활성화하는 사령관의 범위 내에 있으면 체력을 모두 회복합니다.</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="ko_KR">
-			<Text>인접한 야네로 유닛마다 [ICON_Strength] 전투력 +2를 제공합니다..</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION" Language="ko_KR">
 			<Text>새 시대에 진입하면 사령관을 얻습니다. [ICON_GreatGeneral] 위대한 장군을 영입할 수 없습니다.</Text>

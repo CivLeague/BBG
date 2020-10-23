@@ -151,12 +151,6 @@
 		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="fr_FR">
 			<Text>Champ de vision +1 pour toutes les unités (Ejército Patriota).</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="fr_FR">
-			<Text>Unité exclusive à l'ère industrielle de la Grande Colombie remplaçant la cavalerie. Coût d'entretien réduit. [ICON_Strength] Puissance de combat +2 pour chaque llanero adjacent. Se soigne entièrement si elle est proche d'un Comandante General qui active sa compétence de retraite.</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Strength] Puissance de combat +2 pour chaque unité de llaneros adjacente.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION_XP1" Language="fr_FR">
 			<Text>Obtenez un Comandante General quand le jeu entre dans une nouvelle ère, mais recrutement des [ICON_GreatGeneral] Généraux illustres impossible.</Text>
 		</Replace>
@@ -887,6 +881,9 @@
 		<Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="fr_FR">
 			<Text>Octroie un espion gratuit si vous jouez la France. Bonus de [ICON_Culture] culture pour la Grande Muraille quand plusieurs segments sont adjacents.</Text>
 		</Replace>
+		<Replace Tag="LOC_TECH_STEEL_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Production] Production +1 pour les scieries. Débloque les défenses urbaines, octroyant à toutes vos villes 400 points de puissance de retranchement et la possibilité d'attaquer une fois à distance. Tous les remparts précédents deviennent obsolètes et les unités de siège de soutien ne sont plus efficaces.</Text>
+		</Replace>
 		
 		<!-- =============== D O G M E S =============== -->
 		
@@ -911,6 +908,10 @@
 		<!-- Correction traduction Firaxis : unités navales d'Assaut en mer, pas de combat rapproché -->
 		<Replace Tag="LOC_POLICY_LETTERS_OF_MARQUE_DESCRIPTION" Language="fr_FR">
 			<Text>Unités navales d'Assaut en mer : [ICON_Production] production +100 %, [ICON_Movement] PM +2. Rendement doublé lors du pillage de route commerciale. [NEWLINE]MAIS : [ICON_TradeRoute] routes commerciales -2.</Text>
+		</Replace>
+		<!-- Correction Firaxis -->
+		<Replace Tag="LOC_POLICY_MARKET_ECONOMY_DESCRIPTION" Language="fr_FR">
+			<Text>Vos [ICON_TradeRoute] routes commerciales internationales génèrent + 2 [ICON_Culture] Culture et +2 [ICON_Science] Science, ainsi que +1 [ICON_Gold] Or par ressource de luxe ou stratégique aménagée dans la ville de destination.</Text>
 		</Replace>
 		
 		<!-- =============== D I V E R S =============== -->
@@ -954,6 +955,9 @@
 		<Replace Tag="LOC_LEADER_TRAIT_VILNIUS_DESCRIPTION" Language="fr_FR">
 			<Text>Toutes les places du théâtre reçoivent +50 % de bonus de proximité si vous possédez une alliance de niveau 1, augmenté à 100% pour une alliance de niveau 2 et à 150% pour une alliance de niveau 3. Non cumulable avec plusieurs alliances.</Text>
 		</Replace>
+		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="fr_FR">
+			<Text>Loyauté +40 dans toutes vos villes, vous assurant une loyauté sans faille dans tout votre empire.</Text>
+		</Replace>
 		<!-- Correction traduction Firaxis suite au DLC Ethiopie -->
 		<Replace Tag="LOC_MINOR_CIV_TRADE_TRAIT_SMALL_INFLUENCE_BONUS" Language="fr_FR">
 			<Text>[ICON_Gold] Or +1 dans la [ICON_Capital] capitale et pour chaque marché et phare construits.</Text>
@@ -970,11 +974,7 @@
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="fr_FR">
 			<Text>Le prix en [ICON_GOLD] Or et en [ICON_FAITH] Foi des unités militaires ou de soutien terrestres baisse de 10 % par bâtiment du campement construit dans cette ville.</Text>
-		</Replace>
-
-		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="fr_FR">
-			<Text>Lorsque l'une de vos unités religieuses convertit une ville pour la première fois, vous gagnez 10 points de [ICON_SCIENCE] science par [ICON_Citizen] habitant de cette ville.</Text>
-		</Replace>
+		</Replace>		
 		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="fr_FR">
 			<Text>Points d'influence par tour +3. Lorsque cette civilisation capture ou tue un espion ennemi, vous recevez 100 points de [ICON_Science] Science pour chaque niveau de l'espion ennemi. (vitesse en ligne).</Text>
 		</Replace>

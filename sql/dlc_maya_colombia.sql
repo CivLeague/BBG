@@ -13,8 +13,6 @@ UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_UNIT_ADJUST_SIGHT' WHERE Modi
 -- cannot produce great generals
 INSERT OR IGNORE INTO ExcludedGreatPersonClasses (GreatPersonClassType, TraitType) VALUES
     ( 'GREAT_PERSON_CLASS_GENERAL', 'TRAIT_LEADER_CAMPANA_ADMIRABLE' );
--- llanero support nerf
-UPDATE ModifierArguments SET Value='2' WHERE ModifierId='LLANERO_ADJACENCY_STRENGTH' AND Name='Amount';
 -- hacienda comes sooner, but can only be built on flat tiles
 UPDATE Improvements SET PrereqCivic='CIVIC_MEDIEVAL_FAIRES' WHERE ImprovementType='IMPROVEMENT_HACIENDA';
 DELETE FROM Improvement_ValidTerrains WHERE ImprovementType='IMPROVEMENT_HACIENDA' AND TerrainType='TERRAIN_PLAINS_HILLS';
@@ -57,7 +55,6 @@ DELETE FROM StartBiasResources WHERE CivilizationType='CIVILIZATION_MAYA' AND Re
 --==================
 -- City-States
 --==================
-UPDATE Units SET CostProgressionModel='COST_PROGRESSION_PREVIOUS_COPIES', CostProgressionParam1=10 WHERE UnitType='UNIT_LAHORE_NIHANG';
 
 
 --==================

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="pt_BR">
+            <Text>Você recebe +40 de lealdade em todas as cidades, garantindo lealdade completa no seu império.</Text>
+        </Replace>
 		<Replace Tag="LOC_PROMOTION_PROSELYTIZER_DESCRIPTION" Language="pt_BR">
 			<Text>Disseminação religiosa elimia 25% da pressão de outras Religiões existentes na cidade alvo.</Text>
 		</Replace>
@@ -173,9 +176,6 @@
 		<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="pt_BR">
 			<Text>Maravilha natural de dois paineis que pode aparecer em terreno costeiro e concede +3 de [ICON_Food] Comida e +2 de [ICON_Science] Ciência. Concede grande bônus de adjacência para distritos de Campus.</Text>
 		</Replace>
-		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="pt_BR">
-			<Text>Quando você usa uma unidade religiosa pra converter uma cidade pela primeira vez, ganhe 10 de [ICON_SCIENCE] Ciência por [ICON_Citizen] População daquela cidade.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="pt_BR">
 			<Text>Paineis com apelo de Tirar o Fôlego adjacentes a uma Maravilha Natural ou Montanha recebem +1 de [ICON_SCIENCE] Ciência, e um adicional de +1 de [ICON_SCIENCE] Ciência depois de pesquisar Astronomia. Paineis com apelo de Tirar o Fôlego adjacentes a uma Maravilha ou um Bosque recebem +1 de [ICON_CULTURE] Cultura, e um adicional de +1 de  [ICON_CULTURE] Cultura depois de pesquisar o Cívico do Iluminismo. Todos os paineis numa cidade com um Parque Nacional recebem +1 de Apelo.</Text>
 		</Replace>
@@ -235,12 +235,6 @@
 		</Replace>
 		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="pt_BR">
 			<Text>+1 de alcance de visão para todas as unidades (Ejército Patriota)</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="pt_BR">
-			<Text>Unidade da Era Industrial exclusiva da Grande Colômbia. Baixo custo de manutenção. +2 de [ICON_Strength] força de combate por cada Llanero adjacente. Cura-se totalmente quando estiver no alcance de um Comandante General que ative sua habilidade de retirada.</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="pt_BR">
-			<Text>+2 de [ICON_Strength] força de combate por cada unidade Llanero adjacente.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION" Language="pt_BR">
 			<Text>Receba um Grande General quando a partida entrar em uma nova era. Não pode recrutar [ICON_GreatGeneral] Grandes Generais.</Text>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-
+		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="pl_PL">
+			<Text>Otrzymujesz +40 do lojalności we wszystkich miastach, zapewniając pełną lojalność w całym swoim imperium.</Text>
+		</Replace>
 
 		<!-- ================ C I T Y   P R O J E C T S ================ -->
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="pl_PL">
@@ -18,9 +20,6 @@
 
 
 		<!-- ================ C I T Y S T A T E ================ -->
-		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="pl_PL">
-			<Text>Gdy po raz pierwszy nawrócisz dane miasto przy użyciu jednostki religijnej, otrzymasz 10 [ICON_SCIENCE] nauki za każdego mieszkającego w nim [ICON_Citizen] obywatela.</Text>
-		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="pl_PL">
 			<Text>Lądowe jednostki bojowe i wsparcia kosztują o 10% mniej [ICON_GOLD] złota i [ICON_FAITH] wiwry za każdą budowlę w dzielnicy wojskowej w mieście.</Text>
 		</Replace>
@@ -235,9 +234,6 @@
 			<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="pl_PL">
 				<Text>+1 do zasięgu widzenia wszystkich jednostek (Ejército Patriota)</Text>
 			</Replace>
-			<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="pl_PL">
-				<Text>+2 do [ICON_Strength] siły bojowej za każdą sąsiadującą jednostkę llanero.</Text>
-			</Replace>
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="pl_PL">
 				<Text>Wszystkie jednostki mają +1 do zsięgu widzenia. Awansowanie jednostki nie kończy jej tury.</Text>
 			</Replace>
@@ -246,9 +242,6 @@
 			</Replace>
 			<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION_XP1" Language="pl_PL">
 				<Text>Gdy rozgrywka wkracza w nową epokę, zyskujesz komendanta generalnego. Nie może zatrudnić [ICON_GreatGeneral] wielkiego generała.</Text>
-			</Replace>
-			<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="pl_PL">
-				<Text>Jednostka epoki przemysłowej dostępna wyłącznie dla Wielkiej Kolumbii zastępująca kawalerię. Niskie koszty utrzymania. +2 do [ICON_Strength] siły bojowej za każdą sąsiadującą jednostkę llanero. Odzyskuje pełnię zdrowia, gdy znajduje się w zasięgu komendanta generalnego, który aktywował swoją jednorazową umiejętność związaną z zakończeniem kariery.</Text>
 			</Replace>
 
 				<!-- Improvements -->

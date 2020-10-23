@@ -186,9 +186,6 @@
 		<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="en_US">
 			<Text>Two tile natural wonder that can be found on coastal terrain and provides +3 [ICON_Food] Food and +2 [ICON_Science] Science. Provides major adjacency for Campus districts.</Text>
 		</Replace>
-		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="en_US">
-			<Text>When you use a religious unit to convert a city for the first time earn 10 [ICON_SCIENCE] Science per [ICON_Citizen] Population of that city.</Text>
-		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="en_US">
 			<Text>Breathtaking tiles adjacent to either a Natural Wonder or a Mountain receive +1 [ICON_SCIENCE] Science, and an additional +1 [ICON_SCIENCE] Science after researching Astronomy. Breathtaking tiles adjacent to either a Wonder or Woods receive +1 [ICON_CULTURE] Culture, and an additional +1 [ICON_CULTURE] Culture after finishing the Enlightenment Civic. All tiles in a city with a National Park are +1 Appeal.</Text>
@@ -249,12 +246,6 @@
 		</Replace>
 		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="en_US">
 			<Text>+1 Sight to all units (Ejército Patriota)</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="en_US">
-			<Text>Gran Colombian Industrial era unique unit that replaces the Cavalry. Low maintenance cost. +2 [ICON_Strength] Combat Strength for every adjacent Llanero. Fully heals when in range of a Comandante General that activates its retire ability.</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="en_US">
-			<Text>+2 [ICON_Strength] Combat Strength from each adjacent Llanero unit.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION" Language="en_US">
 			<Text>Earn a Comandante General when entering a new era. May not recruit [ICON_GreatGeneral] Great Generals.</Text>

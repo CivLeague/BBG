@@ -157,9 +157,6 @@
 		<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="ja_JP">
 			<Text>近海地形で見つけられる2タイルの自然遺産。[ICON_Food]食糧+3、[ICON_Science]科学力+2.キャンパス区域に対して隣接ボーナス+2を与える。</Text>
 		</Replace>
-		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="ja_JP">
-			<Text>初めてその宗教ユニットが都市を改宗する際、その都市の[ICON_Citizen]人口の10倍に等しい[ICON_SCIENCE]科学力を得る。</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="ja_JP">
 			<Text>アピールが最高で自然遺産または山岳に隣接しているタイルから[ICON_SCIENCE]科学力+1。天文学を研究後、さらに[ICON_SCIENCE]科学力+1。アピールが最高で遺産または森林に隣接しているタイルから[ICON_CULTURE]文化力+1。啓蒙思想の発明後、さらに[ICON_CULTURE]文化力+1。国立公園のある都市は全タイルのアピール+1。</Text>
 		</Replace>
@@ -213,12 +210,6 @@
 		</Replace>
 		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="ja_JP">
 			<Text>すべてのユニットの視界+1。（愛国軍）</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="ja_JP">
-			<Text>騎兵を代替する大コロンビアに固有の産業時代のユニット。低維持費。隣接するリャネロ1体につき[ICON_Strength]戦闘力+2。大司令官の退職能力を受けると体力が全回復する。</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="ja_JP">
-			<Text>隣接するリャネロ1体につき[ICON_Strength]戦闘力+2。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION" Language="ja_JP">
 			<Text>新たな時代に入った際に大司令官1体を得る。[ICON_GreatGeneral]大将軍を採用できない。</Text>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="de_DE">
+            <Text>Zur Sicherung der Loyalität in eurem Reich erhaltet ihr +40 Loyalität in allen Städten.</Text>
+        </Replace>
 		<Replace Tag="LOC_PROMOTION_PROSELYTIZER_DESCRIPTION" Language="de_DE">
 			<Text>Religiöse Verbreitung eliminiert 25% des existierenden Drucks durch andere Religionen in der Zielstadt.</Text>
 		</Replace>
@@ -179,9 +182,6 @@
 		<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="de_DE">
 			<Text>Naturwunder über zwei Geländefelder, das in Küstengebieten gefunden werden kann und +3 [ICON_Food] Nahrung und +2 [ICON_Science] Wissenschaft bietet. Gewährt einen großen Nachbarschaftbonus für angrenzende Campus-Bezirke.	</Text>
 		</Replace>
-		<Replace Tag="LOC_LEADER_TRAIT_FEZ_DESCRIPTION" Language="de_DE">
-			<Text>Wenn Ihr eine religiöse Einheit erstmals zur Bekehrung einer Stadt einsetzt, erhaltet Ihr 10 [ICON_SCIENCE] Wissenschaft pro [ICON_Citizen] Bevölkerung der Stadt.</Text>
-		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="de_DE">
 			<Text>Atemberaubende Geländefelder, die entweder an ein Naturwunder oder einen Berg angrenzen, erhalten +1 [ICON_SCIENCE] Wissenschaft, und zusätzlich +1 [ICON_SCIENCE] Wissenschaft nach der Erforschung von 'Astronomie'. Atemberaubende Geländefelder, die entweder an ein Naturwunder oder an Wälder angrenzen, erhalten +1 [ICON_CULTURE] Kultur, und zusätzlich +1 [ICON_CULTURE] Kultur nach dem Erlangen der Ausrichtung 'Aufklärung'. Alle Felder in Städten mit einen Nationalpark haben +1 Anziehungskraft.</Text>
@@ -242,12 +242,6 @@
 		</Replace>
 		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="de_DE">
 			<Text>+1 Sichtweite für alle Einheiten (Ejército Patriota)</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="de_DE">
-			<Text>Großkolumbianische Spezialeinheit des Industriezeitalters, welche die Kavallerie ersetzt. Niedrige Unterhaltskosten. +2 [ICON_Strength] Kampfstärke für jeden angrenzenden Llanero. Wird in Reichweite eines Comandante General, der seine Ruhestand-Fähigkeit aktiviert, vollständig geheilt.</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION" Language="de_DE">
-			<Text>+2 [ICON_Strength] Kampfstärke für jeden angrenzenden Llanero.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION" Language="de_DE">
 			<Text>Erhaltet einen Commandante General beim Eintritt in ein neues Zeitalter. Kann keinen [ICON_GreatGeneral] Großen General erhalten.</Text>
