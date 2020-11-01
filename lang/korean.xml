@@ -1,6 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_BARRACKS_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 근접, 대기병 및 원거리 지상 유닛이 얻는 전투 경험치가 +50% 증가합니다.[NEWLINE][NEWLINE]마구간이 있는 주둔지 특수지구에는 지을 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_STABLE_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 부류의 기병 유닛 및 공성 유닛이 얻는 전투 경험치가 +50% 증가합니다. 병영이 있는 주둔지 특수지구에는 지을 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 지상 유닛은 전투 경험치 +50%를 획득합니다. 군단 및 군대를 직접 훈련시킬 수 있습니다. 군단 및 군대 훈련 비용이 25% 감소합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_BARRACKS_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 근접, 대기병 및 원거리 지상 유닛이 얻는 전투 경험치가 +50% 증가합니다.[NEWLINE]전략 자원 비축력이 +10 증가합니다(일반 속도 기준).[NEWLINE][NEWLINE]마구간이 있는 주둔지 특수지구에는 지을 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_STABLE_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 부류의 기병 유닛 및 공성 유닛이 얻는 전투 경험치가 +50% 증가합니다.[NEWLINE]전략 자원 비축력이 +10 증가합니다(일반 속도 기준).[NEWLINE][NEWLINE]병영이 있는 주둔지 특수지구에는 지을 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HANGAR_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 공중 유닛이 얻는 전투 경험치가 +50% 증가합니다. 비행장 특수지구에 공중 유닛 슬롯 +2를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_LIGHTHOUSE_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 해상 유닛은 전투 경험치 +50%를 획득합니다. 이 도시의 모든 해안 타일에 [ICON_FOOD] 식량 +1을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SHIPYARD_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 해상 유닛이 얻는 전투 경험치가 +50% 증가합니다. 항만 특수지구의 인접 보너스만큼 [ICON_Production] 생산력 보너스가 부여됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_LIGHTHOUSE_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 해상 유닛이 얻는 전투 경험치가 +50% 증가합니다. 이 도시의 모든 해안 타일에 [ICON_FOOD] 식량 +1을 제공합니다. 이 도시가 해안가 또는 호수와 인접한 경우 [ICON_HOUSING] 주거공간이 +2 증가합니다. 이 도시에 시장 건물이 없는 경우 [ICON_TradeRoute] 교역로 최대치가 +1 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SHIPYARD_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>이 도시에서 훈련된 모든 해상 유닛이 얻는 전투 경험치가 +50% 증가합니다. 항만 특수지구의 인접 보너스만큼 [ICON_Production] 생산력 보너스가 부여됩니다. 이 도시의 모든 해안 및 호수 타일에 [ICON_PRODUCTION] 생산력 +1을 제공합니다. </Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_BASILIKOI_PAIDES_DESCRIPTION" Language="ko_KR">
+			<Text>마케도니아 특유의 건물입니다. 이 도시에서 훈련된 모든 근접, 대기병 및 원거리 지상 유닛과 헤타이로이는 전투 경험치 +50%를 획득합니다. 이 도시에서 비시민 유닛이 생성되면 해당 유닛 비용의 25%에 준하는 [ICON_SCIENCE] 과학이 제공됩니다.[NEWLINE][NEWLINE]이미 마구간을 보유한 주둔지 특수지구에 지을 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_BASILIKOI_PAIDES_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>마케도니아 특유의 건물입니다. 이 도시에서 훈련된 모든 근접, 대기병 및 원거리 지상 유닛과 헤타이로이는 전투 경험치 +50%를 획득합니다. 이 도시에서 비민간 유닛이 생성되면 해당 유닛 비용의 25%에 준하는 [ICON_SCIENCE] 과학이 제공됩니다.[NEWLINE][NEWLINE]전략 자원 비축력이 +10 증가합니다(일반 속도 기준).[NEWLINE][NEWLINE]이미 마구간을 보유한 주둔지 특수지구에 지을 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ORDU_DESCRIPTION" Language="ko_KR">
+			<Text>몽골 특유의 건물입니다. 이 도시에서 훈련된 경기병과 중기병에게 [ICON_MOVEMENT] 이동력 +1을 제공하는 능력을 부여합니다. 도시에서 훈련된 모든 부류의 기병 유닛 및 공성 유닛이 얻는 전투 경험치가 +50% 증가합니다. 병영이 있는 주둔지 특수지구에는 지을 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ORDU_EXPANSION2_DESCRIPTION" Language="ko_KR">
+			<Text>몽골 특유의 건물입니다. 이 도시에서 훈련된 경기병과 중기병에게 [ICON_MOVEMENT] 이동력 +1을 제공하는 능력을 부여합니다. 이 도시에서 훈련된 모든 부류의 기병 유닛 및 공성 유닛이 얻는 전투 경험치가 +50% 증가합니다.[NEWLINE]전략 자원 비축력이 +10 증가합니다(일반 속도 기준).[NEWLINE][NEWLINE]병영이 있는 주둔지 특수지구에는 지을 수 없습니다.</Text>
+		</Replace>	
+		
+		<Replace Tag="LOC_ABILITY_BARRACKS_TRAINED_UNIT_XP_DESCRIPTION" Language="ko_KR">
+			<Text>병영에서 경험치 +50% 획득</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_STABLE_TRAINED_UNIT_XP_DESCRIPTION" Language="ko_KR">
+			<Text>마구간에서 경험치 +50% 획득</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ARMORY_TRAINED_UNIT_XP_DESCRIPTION" Language="ko_KR">
+			<Text>무기고에서 경험치 +50% 획득</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_MILITARY_ACADEMY_TRAINED_UNIT_XP_DESCRIPTION" Language="ko_KR">
+			<Text>사관 학교에서 경험치 +50% 획득</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_LIGHTHOUSE_TRAINED_UNIT_XP_DESCRIPTION" Language="ko_KR">
+			<Text>등대에서 경험치 +50% 획득</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_SHIPYARD_TRAINED_UNIT_XP_DESCRIPTION" Language="ko_KR">
+			<Text>조선소에서 경험치 +50% 획득</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_SEAPORT_TRAINED_UNIT_XP_DESCRIPTION" Language="ko_KR">
+			<Text>항구에서 경험치 +50% 획득</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_HANGAR_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="ko_KR">
+			<Text>격납고에서 경험치 +50% 획득</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_AIRPORT_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="ko_KR">
+			<Text>공항에서 경험치 +75% 획득</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BASILIKOI_TRAINED_UNIT_XP_DESCRIPTION" Language="ko_KR">
+			<Text>바실리코이 파이데스에서 전투 경험치 +50%</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ORDU_TRAINED_UNIT_XP_DESCRIPTION" Language="ko_KR">
+			<Text>오르두에서 전투 경험치 +50%</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="en_US">
+			<Text>야만인과 전투 시 [ICON_Strength] 유닛 전투력 +10.</Text>
+		</Replace>
+
 		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="ko_KR">
 			<Text>모든 도시에 턴당 충성심 +40을 제공하여 충성심을 잃지 않도록 합니다.</Text>
 		</Replace>
