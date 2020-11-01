@@ -634,17 +634,17 @@ INSERT OR IGNORE INTO Improvement_BonusYieldChanges (ImprovementType, YieldType,
 --==============================================================
 --******				B U I L D I N G S			  	  ******
 --==============================================================
-UPDATE ModifierArguements SET Value='50' WHERE ModifierId='BARRACKS_TRAINED_UNIT_XP';
-UPDATE ModifierArguements SET Value='50' WHERE ModifierId='STABLE_TRAINED_UNIT_XP';
-UPDATE ModifierArguements SET Value='50' WHERE ModifierId='ARMORY_TRAINED_UNIT_XP';
-UPDATE ModifierArguements SET Value='50' WHERE ModifierId='MILITARY_ACADEMY_TRAINED_UNIT_XP';
-UPDATE ModifierArguements SET Value='50' WHERE ModifierId='LIGHTHOUSE_TRAINED_UNIT_XP';
-UPDATE ModifierArguements SET Value='50' WHERE ModifierId='SHIPYARD_TRAINED_UNIT_XP';
-UPDATE ModifierArguements SET Value='50' WHERE ModifierId='SEAPORT_TRAINED_UNIT_XP';
-UPDATE ModifierArguements SET Value='50' WHERE ModifierId='HANGAR_TRAINED_AIRCRAFT_XP';
-UPDATE ModifierArguements SET Value='75' WHERE ModifierId='AIRPORT_TRAINED_AIRCRAFT_XP';
-UPDATE ModifierArguements SET Value='50' WHERE ModifierId='BASILIKOI_TRAINED_UNIT_XP';
-UPDATE ModifierArguements SET Value='50' WHERE ModifierId='ORDU_TRAINED_XP';
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='BARRACKS_TRAINED_UNIT_XP';
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='STABLE_TRAINED_UNIT_XP';
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='ARMORY_TRAINED_UNIT_XP';
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='MILITARY_ACADEMY_TRAINED_UNIT_XP';
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='LIGHTHOUSE_TRAINED_UNIT_XP';
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='SHIPYARD_TRAINED_UNIT_XP';
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='SEAPORT_TRAINED_UNIT_XP';
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='HANGAR_TRAINED_AIRCRAFT_XP';
+UPDATE ModifierArguments SET Value='75' WHERE ModifierId='AIRPORT_TRAINED_AIRCRAFT_XP';
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='BASILIKOI_TRAINED_UNIT_XP';
+UPDATE ModifierArguments SET Value='50' WHERE ModifierId='ORDU_TRAINED_XP';
 UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_BARRACKS';
 UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_STABLE';
 UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_BASILIKOI_PAIDES';

@@ -21,7 +21,7 @@
 			<Text>+50% combat experience for all melee and ranged land units trained in this city.[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Stable.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_STABLE_DESCRIPTION" Language="en_US">
-			<Text>+50% combat experience for all cavalry class units trained in this city. May not be built in an Encampment district that already has a Barracks.</Text>
+			<Text>+50% combat experience for all cavalry and siege class units trained in this city. May not be built in an Encampment district that already has a Barracks.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_DESCRIPTION" Language="en_US">
 			<Text>+50% combat experience for all land units trained in this city. Allows Corps and Armies to be trained directly. Corps and Army training costs reduced 25%.</Text>
@@ -30,7 +30,7 @@
 			<Text>+50% combat experience for all melee and ranged land units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed).[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Stable.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_STABLE_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>+50% combat experience for all cavalry class units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed).[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Barracks.</Text>
+			<Text>+50% combat experience for all cavalry and siege class units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed).[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Barracks.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HANGAR_DESCRIPTION" Language="en_US">
 			<Text>+50% combat experience for air units trained in this city. +1 air unit slot in Aerodrome district.</Text>

@@ -232,7 +232,7 @@
 			<Text>Débloque la compétence de bâtisseur permettant de construire une église rupestre, un bâtiment exclusif à l'Éthiopie.[NEWLINE][NEWLINE][ICON_Faith] Foi +1 pour chaque case de colline adjacente. La [ICON_FAITH] foi génère du [ICON_TOURISM] tourisme après la découverte de l'aviation. Attrait +1. Peut uniquement être pillée (jamais détruite) par les catastrophes naturelles. Ne peut être construite que sur une colline ou un sol volcanique n'étant pas adjacent à une autre église rupestre.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Faith] Foi +0.5 par ressource à l'origine de vos routes commerciales internationales de l'Éthiopie. [ICON_Faith] Foi +1 pour toutes les ressources. Peut acheter des musées archéologiques et des archéologues avec de la [ICON_Faith] foi.</Text>
+			<Text>[ICON_Faith] Foi +1 pour toutes les ressources. Vos routes commerciales internationales génèrent +0,5 [ICON_Faith] Foi par ressource présente dans la ville d'origine. Peut acheter des musées archéologiques et des archéologues avec de la [ICON_Faith] foi.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MENELIK_DESCRIPTION" Language="fr_FR">
 			<Text>Vous gagnez une quantité de [ICON_SCIENCE] science et de [ICON_CULTURE] culture égale à 15% de la [ICON_FAITH] foi générée dans les villes fondées sur des collines.</Text>
@@ -908,11 +908,20 @@
 			<Text>Vos [ICON_TradeRoute] routes commerciales internationales génèrent + 2 [ICON_Culture] Culture et +2 [ICON_Science] Science, ainsi que +1 [ICON_Gold] Or par ressource de luxe ou stratégique aménagée dans la ville de destination.</Text>
 		</Replace>
 		
-		<!-- =============== D I V E R S =============== -->
+		<!-- =============== B A T I M E N T S === M I I L I T A I R E S =============== -->
 		
-		<!-- Campement, port, aérodrome -->
+		<!-- campement -->
+		<Replace Tag="LOC_BUILDING_BARRACKS_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +50 % pour toutes les unités de combat rapproché et à distance terrestres formées dans cette ville. [NEWLINE][NEWLINE]Construction impossible dans un campement possédant déjà une écurie.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_BARRACKS_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +50 % pour toutes les unités de combat rapproché et à distance terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +5 (en vitesse en ligne). [NEWLINE][NEWLINE]Construction impossible dans un campement possédant déjà une écurie.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_STABLE_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +50 % pour toutes les unités de cavalerie formées dans cette ville. [NEWLINE][NEWLINE]Construction impossible dans un campement possédant déjà une caserne.</Text>
+		</Replace>
 		<Replace Tag="LOC_BUILDING_STABLE_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +50 % pour toutes les unités de cavalerie et de siège formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][NEWLINE]Construction impossible dans un campement possédant déjà une caserne.</Text>
+			<Text>Expérience au combat +50 % pour toutes les unités de cavalerie et de siège formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +5 (en vitesse en ligne). [NEWLINE][NEWLINE]Construction impossible dans un campement possédant déjà une caserne.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="fr_FR">
 			<Text>Expérience au combat +50 % pour toutes les unités terrestres formées dans cette ville. [ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
@@ -920,15 +929,88 @@
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Expérience au combat +50 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
 		</Replace>
+		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +50 % pour toutes les unités terrestres formées dans cette ville. Permet la formation immédiate de régiments et d'armées. Coûts d'entraînement des régiments et des armées -25 %.</Text>
+		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Expérience au combat +50 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_OIL] Pétrole +2 par tour une fois qu'il est découvert. [NEWLINE]Permet la formation immédiate de régiments et d'armées. Coûts d'entraînement des régiments et des armées -25 %.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_BASILIKOI_PAIDES_DESCRIPTION" Language="fr_FR">
+			<Text>Bâtiment exclusif à la Macédoine. Expérience au combat +50 % pour toutes les unités de combat rapproché, d'attaque à distance terrestres et Hétairoi formés dans cette ville. Bonus de [ICON_SCIENCE] science égal à 25 % du coût de l'unité lorsqu'une unité civile est formée dans cette ville. [NEWLINE][NEWLINE]Construction impossible dans un campement possédant déjà une écurie.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_BASILIKOI_PAIDES_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Bâtiment exclusif à la Macédoine. Expérience au combat +50 % pour toutes les unités de combat rapproché, d'attaque à distance terrestres et Hétairoi formés dans cette ville. Bonus de [ICON_SCIENCE] science égal à 25 % du coût de l'unité lorsqu'une unité non civile est formée dans cette ville. [NEWLINE][NEWLINE]Réserve de ressources stratégiques +5 (en vitesse en ligne). [NEWLINE][NEWLINE]Construction impossible dans un campement possédant déjà une écurie.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ORDU_DESCRIPTION" Language="fr_FR">
+			<Text>Bâtiment exclusif à la Mongolie. +1 [ICON_MOVEMENT] PM pour les unités de cavalerie légères et lourdes formées dans cette ville. Expérience de combat +50 % pour toutes les unités de cavalerie formées dans cette ville. Construction impossible dans un campement possédant déjà une caserne.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ORDU_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Bâtiment exclusif à la Mongolie. +1 [ICON_MOVEMENT] PM pour les unités de cavalerie légères et lourdes formées dans cette ville. Expérience au combat +50 % pour toutes les unités de cavalerie formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +5 (en vitesse en ligne). [NEWLINE][NEWLINE]Construction impossible dans un campement possédant déjà une caserne.</Text>
+		</Replace>
+		
+		<!-- port -->
+		<Replace Tag="LOC_BUILDING_LIGHTHOUSE_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +50 % pour toutes les unités navales formées dans la ville. [ICON_FOOD] Nourriture +1 pour toutes les cases côtières de la ville.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SHIPYARD_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +50 % pour toutes les unités navales formées dans cette ville. Bonus de [ICON_Production] production équivalent au bonus de proximité du port.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_LIGHTHOUSE_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +50 % pour toutes les unités navales formées dans cette ville. [ICON_FOOD] Nourriture +1 pour toutes les cases côtières de la ville. [ICON_HOUSING] Habitations +2 si la ville est adjacente à la côte. [ICON_TradeRoute] Routes commerciales +1 si la ville ne possède pas encore de marché.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SHIPYARD_EXPANSION2_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +50 % pour toutes les unités navales formées dans cette ville. Bonus de [ICON_Production] production équivalent au bonus de proximité du port. [ICON_PRODUCTION] Production +1 pour toutes les cases côtières ou lacustres non aménagées de la ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="fr_FR">
 			<Text>Expérience au combat +50 % pour toutes les unités navales formées dans cette ville. Permet la formation immédiate de flottes et d'armadas. Coûts d'entraînement des flottes et des armadas -25 %. [ICON_GOLD] Or +2 pour toutes les cases côtières de la ville. Génère une unité de [ICON_RESOURCE_COAL] Charbon par tour.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +75 % pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +2 dans les aérodromes. [ICON_RESOURCE_ALUMINUM] Aluminium +2 par tour. Permet le transport aérien des unités entre les aérodromes équipés d'un aéroport une fois le déploiement rapide découvert.</Text>
+		
+		<!-- aéroport -->
+		<Replace Tag="LOC_BUILDING_HANGAR_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +50 % pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +1 dans les aérodromes.</Text>
 		</Replace>
+		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="fr_FR">
+			<Text>Expérience au combat +75 % pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +1 dans les aérodromes. [ICON_RESOURCE_ALUMINUM] Aluminium +2 par tour. Permet le transport aérien des unités entre les aérodromes équipés d'un aéroport une fois le déploiement rapide découvert.</Text>
+		</Replace>
+		
+		<!-- tooltips -->
+		<Replace Tag="LOC_ABILITY_BARRACKS_TRAINED_UNIT_XP_DESCRIPTION" Language="fr_FR">
+			<Text>Caserne : expérience gagnée +50 %.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_STABLE_TRAINED_UNIT_XP_DESCRIPTION" Language="fr_FR">
+			<Text>Écurie : expérience gagnée +50 %.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ARMORY_TRAINED_UNIT_XP_DESCRIPTION" Language="fr_FR">
+			<Text>Armurerie : expérience gagnée +50 %.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_MILITARY_ACADEMY_TRAINED_UNIT_XP_DESCRIPTION" Language="fr_FR">
+			<Text>École militaire : expérience gagnée +50 %.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_LIGHTHOUSE_TRAINED_UNIT_XP_DESCRIPTION" Language="fr_FR">
+			<Text>Phare : expérience gagnée +50 %.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_SHIPYARD_TRAINED_UNIT_XP_DESCRIPTION" Language="fr_FR">
+			<Text>Chantier naval : expérience gagnée +50 %.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_SEAPORT_TRAINED_UNIT_XP_DESCRIPTION" Language="fr_FR">
+			<Text>Complexe portuaire : expérience gagnée +50 %.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_HANGAR_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="fr_FR">
+			<Text>Hangar : expérience gagnée +50 %.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_AIRPORT_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="fr_FR">
+			<Text>Aéroport : expérience gagnée +75 %.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BASILIKOI_TRAINED_UNIT_XP_DESCRIPTION" Language="fr_FR">
+			<Text>Basilikoi Paides : expérience gagnée +50 %.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ORDU_TRAINED_UNIT_XP_DESCRIPTION" Language="fr_FR">
+			<Text>Ordo : expérience gagnée +25 %.</Text>
+		</Replace>
+
+		<!-- =============== D I V E R S =============== -->
+		
 		<!-- Promotions d'unités militaires -->
 		<Replace Tag="LOC_PROMOTION_GRAPE_SHOT_DESCRIPTION" Language="fr_FR">
             <Text>+7 [ICON_Bombard] Puissance de Bombardement en attaquant des unités terrestres.</Text>
@@ -971,6 +1053,9 @@
 		</Replace>		
 		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="fr_FR">
 			<Text>Points d'influence par tour +3. Lorsque cette civilisation capture ou tue un espion ennemi, vous recevez 100 points de [ICON_Science] Science pour chaque niveau de l'espion ennemi. (vitesse en ligne).</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Strength] Puissance de combat +10 contre les barbares.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

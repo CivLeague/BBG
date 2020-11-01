@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="pt_BR">
+			<Text>Unidades recebem +10 de [ICON_Strength] Força de Combate quando lutando contra Bárbaros.</Text>
+		</Replace>
+		
 		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="pt_BR">
             <Text>Você recebe +40 de lealdade em todas as cidades, garantindo lealdade completa no seu império.</Text>
         </Replace>
