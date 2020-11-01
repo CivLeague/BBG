@@ -125,10 +125,10 @@
 			<Text>自文明の首都と同じ大陸に位置するタイルで防衛する際、あるいは他の大陸で攻撃する際にユニットの[ICON_Strength]戦闘力+5。国立公園のある都市は全タイルのアピール+1。ライフリングの研究を完了すると固有ユニットであるラフライダーが解禁される。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="ja_JP">
-			<Text>この都市で訓練されたすべての海上ユニットの経験値取得速度+25%。艦隊と大艦隊を直接訓練できるようになり、それらのコストが25%削減される。この都市のすべての沿岸タイルで[ICON_GOLD]ゴールド+2。毎ターン[ICON_RESOURCE_COAL]石炭+1。</Text>
+			<Text>この都市で訓練されたすべての海上ユニットの経験値取得速度+50%。艦隊と大艦隊を直接訓練できるようになり、それらのコストが25%削減される。この都市のすべての沿岸タイルで[ICON_GOLD]ゴールド+2。毎ターン[ICON_RESOURCE_COAL]石炭+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="ja_JP">
-			<Text>このプロジェクトが完了したとき、重複している高級資源1つごとに[ICON_CULTURE]文化力60と[ICON_TOURISM]観光力60(スタンダード速度)をフランスに与える。</Text>
+			<Text>このプロジェクトが完了したとき、重複している高級資源1つごとに[ICON_CULTURE]文化力25と[ICON_TOURISM]観光力25(スタンダード速度)をフランスに与える。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="ja_JP">
 			<Text>エチオピアの国際交易路は起点となる都市における資源1つごとに[ICON_Faith]信仰力+0.5を与える。資源1つごとに[ICON_Faith]信仰力+1。考古博物館と考古学者を[ICON_Faith]信仰力で購入できる。</Text>
@@ -224,10 +224,10 @@
 			<Text>すべての海洋近接ユニットに対する[ICON_PRODUCTION]生産力が+50%され、それらは沿岸タイルを襲撃できる。鉱山を略奪または沿岸襲撃した際、通常の[ICON_GOLD]ゴールドに加えて[ICON_SCIENCE]科学力を得る。採石場、牧草地、プランテーション、またはキャンプを略奪または沿岸襲撃した際、通常の[ICON_FAITH]信仰力に加えて[ICON_CULTURE]文化力を得る。[NEWLINE][NEWLINE]聖地とその建造物に対する[ICON_PRODUCTION]生産力+50%。聖地が沿岸から隣接ボーナスを得る。[NEWLINE][NEWLINE]聖地に隣接する港は隣接ボーナスとして[ICON_GOLD]ゴールド+2を得る。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="ja_JP">
-			<Text>この都市で訓練されたすべての陸上ユニットの経験値取得速度+25%[NEWLINE]発見されていれば、毎ターン[ICON_RESOURCE_NITER]硝石を1つ供給する。</Text>
+			<Text>この都市で訓練されたすべての陸上ユニットの経験値取得速度+50%[NEWLINE]発見されていれば、毎ターン[ICON_RESOURCE_NITER]硝石を1つ供給する。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>この都市で訓練されたすべての陸上ユニットの経験値取得速度+25%[NEWLINE]戦略資源の備蓄量+10（スタンダード速度）。発見されていれば、毎ターン[ICON_RESOURCE_NITER]硝石を1つ供給する。</Text>
+			<Text>この都市で訓練されたすべての陸上ユニットの経験値取得速度+50%[NEWLINE]戦略資源の備蓄量+10（スタンダード速度）。発見されていれば、毎ターン[ICON_RESOURCE_NITER]硝石を1つ供給する。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="ja_JP">
 			<Text>河川に隣接する区域と遺産に対する[ICON_Production]生産力+25%。氾濫原が区域と遺産の建設を妨げない。</Text>
@@ -327,10 +327,10 @@
 			<Text>接触済みの全文明に対して、通常より1レベル高い[ICON_VisLimited]外交的視野をもつ。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="ja_JP">
-			<Text>この都市で生産された航空ユニットの経験値+50%。飛行場の航空ユニット格納スロット+2。早期展開を発明後、空港を持つ飛行場間で陸上ユニットを空輸できるようになる。発見されていれば、毎ターン[ICON_RESOURCE_ALUMINUM]アルミニウム+2を供給する。</Text>
+			<Text>この都市で生産された航空ユニットの経験値+75%。飛行場の航空ユニット格納スロット+2。早期展開を発明後、空港を持つ飛行場間で陸上ユニットを空輸できるようになる。発見されていれば、毎ターン[ICON_RESOURCE_ALUMINUM]アルミニウム+2を供給する。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>この都市で生産された陸上ユニットの経験値+25%。[NEWLINE]備蓄の上限量+10(スタンダード速度)。[NEWLINE]軍団、大軍団を直接生産できるようになる、またそれらのコスト-25％。発見されていれば、毎ターン[ICON_RESOURCE_ALUMINUM]石油+2を供給する。</Text>
+			<Text>この都市で生産された陸上ユニットの経験値+50%。[NEWLINE]備蓄の上限量+10(スタンダード速度)。[NEWLINE]軍団、大軍団を直接生産できるようになる、またそれらのコスト-25％。発見されていれば、毎ターン[ICON_RESOURCE_ALUMINUM]石油+2を供給する。</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN_DESCRIPTION" Language="ja_JP">
 			<Text>この都市が産出する[ICON_Science]科学力+15%。</Text>
@@ -529,12 +529,6 @@
 		<Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="ja_JP">
 			<Text>白兵または遠隔戦闘ユニットを攻撃する際の[ICON_Bombard]砲撃戦闘力+10。</Text>
 		</Replace>
-		<Replace Tag="LOC_ABILITY_CREE_OKIHTCITAW_DESCRIPTION" Language="ja_JP">
-			<Text>森林及びジャングルでの移動力が高い。</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="ja_JP">
-			<Text>斥候を代替するクリー固有のユニット。斥候よりも強力で、森林及びジャングルでの[ICON_Movement]移動力が高い。</Text>
-		</Replace>
 		<Replace Tag="LOC_TECH_STEEL_DESCRIPTION" Language="ja_JP">
 			<Text>製材所の施設の [ICON_Production] 生産力+1。都市防衛を解除し、すべての都市に自動的に防衛力300と長距離攻撃能力をもたらす。これまでの防壁施設はすべて廃れ、攻城支援ユニットは有効性を失う。</Text>
 		</Replace>
@@ -718,7 +712,7 @@
 		<!-- -->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ja_JP">
-			<Text>軍事ユニットはこの宗教を信仰している他文明の近くで戦闘力[ICON_Strength]+3 を得る。</Text>
+			<Text>軍事ユニットはこの宗教を信仰している他文明の近くで戦闘力[ICON_Strength]+5 を得る。</Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ja_JP">

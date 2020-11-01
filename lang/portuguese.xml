@@ -144,10 +144,10 @@
 			<Text>Unidades recebem +5 de [ICON_Strength] Força de Combate quando defendendo no seu continente natal, ou atacando em um continente estrangeiro. +1 de Apelo a todos os paineis numa cidade com parque nacional. Recebe a unidade exclusiva Rough Rider quando pesquisa a tecnologia de Ciência Militar.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="pt_BR">
-			<Text>+25% de experiência de combate para todas as unidades navais treinadas nessa cidade. Permite o treinamento direto de Frotas e Armadas. Custo de treinamento de Frotas e Armadas reduzido em 25%. +2 de [ICON_GOLD] Ouro em todos os paineis costeiros dessa cidade. +1 de [ICON_RESOURCE_COAL] Carvão por turno.</Text>
+			<Text>+50% de experiência de combate para todas as unidades navais treinadas nessa cidade. Permite o treinamento direto de Frotas e Armadas. Custo de treinamento de Frotas e Armadas reduzido em 25%. +2 de [ICON_GOLD] Ouro em todos os paineis costeiros dessa cidade. +1 de [ICON_RESOURCE_COAL] Carvão por turno.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="pt_BR">
-			<Text>Quando finalizado, esse projeto concede 60 de [ICON_CULTURE] Cultura e 60 de [ICON_TOURISM] Turismo (na velocidade padrão) baseado no número de cópias em excesso que a França possui.</Text>
+			<Text>Quando finalizado, esse projeto concede 25 de [ICON_CULTURE] Cultura e 25 de [ICON_TOURISM] Turismo (na velocidade padrão) baseado no número de cópias em excesso que a França possui.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="pt_BR">
 			<Text>Rotas comerciais concedem +0.5 de [ICON_FAITH] por recurso na origem. Recursos concedem +1 de [ICON_FAITH] Fé. Pode comprar Museus arqueológicos e Arqueológos com [ICON_FAITH] Fé.</Text>
@@ -249,10 +249,10 @@
             <Text>Permite saques costeiros por todas as unidades navais de curto alcance e +50% de [ICON_PRODUCTION] produção para todas as unidades navais de curto alcance.[NEWLINE][NEWLINE]Locais Sagrados recebem bônus de adjacência padrão por painéis costeiros.[NEWLINE][NEWLINE]Portos próximos a Locais Sagrados recebem bônus adicional de +2 de adjacência de [ICON_GOLD] ouro.</Text>
         </Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="pt_BR">
-			<Text>+25% de experiência de combate para todas as unidades terrestres treinadas nesta cidade.[NEWLINE]+1 de [ICON_RESOURCE_NITER] nitro por turno, uma vez descoberto.</Text>
+			<Text>+50% de experiência de combate para todas as unidades terrestres treinadas nesta cidade.[NEWLINE]+1 de [ICON_RESOURCE_NITER] nitro por turno, uma vez descoberto.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>+25% de experiência de combate para todas as unidades terrestres treinadas nesta cidade.[NEWLINE]+1 de [ICON_RESOURCE_NITER] nitro por turno, uma vez descoberto.</Text>
+			<Text>+50% de experiência de combate para todas as unidades terrestres treinadas nesta cidade.[NEWLINE]+1 de [ICON_RESOURCE_NITER] nitro por turno, uma vez descoberto.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="pt_BR">
 			<Text>+25% de [ICON_PRODUCTION] produção para distritos e maravilhas se colocados ao lado de um rio. Planices aluviais não bloqueiam o posicionamento de maravilhas e distritos.</Text>
@@ -354,10 +354,10 @@
 			<Text>Possui 1 nível de [ICON_VisLimited] Visibilidade Diplomática maior do que o normal com cada civilização que ela encontrou.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="pt_BR">
-			<Text>+50% de experiência de combate para unidades aéreas treinadas nesta cidade. +2 de capacidade de guarnição para unidades aéreas no distrito de Aeródromo. Permite a habilidade de transportar unidades entre Aeródromos uma vez pesquisada a cívica Mobilização Rápida. +2 de [ICON_RESOURCE_ALUMINUM] alumínio por turno, uma vez descoberto.</Text>
+			<Text>+75% de experiência de combate para unidades aéreas treinadas nesta cidade. +2 de capacidade de guarnição para unidades aéreas no distrito de Aeródromo. Permite a habilidade de transportar unidades entre Aeródromos uma vez pesquisada a cívica Mobilização Rápida. +2 de [ICON_RESOURCE_ALUMINUM] alumínio por turno, uma vez descoberto.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>+25% de experiência de combate para todas as unidades terrestres treinadas nesta cidade.[NEWLINE]Estoques de recurso estratégico aumentados em +10 (na velocidade padrão).[NEWLINE]Permite o treinamento direto de Corporações e Exércitos. Custo de treinamento de Corporações e Exércitos reduzido em 25%. +2 de [ICON_RESOURCE_OIL] petróleo, uma vez descoberto.</Text>
+			<Text>+50% de experiência de combate para todas as unidades terrestres treinadas nesta cidade.[NEWLINE]Estoques de recurso estratégico aumentados em +10 (na velocidade padrão).[NEWLINE]Permite o treinamento direto de Corporações e Exércitos. Custo de treinamento de Corporações e Exércitos reduzido em 25%. +2 de [ICON_RESOURCE_OIL] petróleo, uma vez descoberto.</Text>
 		</Replace>
 		
 
@@ -551,12 +551,6 @@
 		</Replace>
 		<Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="pt_BR">
 			<Text>+7 [ICON_Strength] de força de combate quando atacando unidades corpo-a-corpo e de ataque à distância.</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_CREE_OKIHTCITAW_DESCRIPTION" Language="pt_BR">
-			<Text>Movimento extra em Bosques e Florestas tropicais </Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="pt_BR">
-			<Text>Unidade única dos Cree na era antiga, mais forte e Substitui o Batedor. Movimento [ICON_Movement] extra em terreno de Bosques e Florestas Tropicais.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="pt_BR">
 			<Text>Alavancar Cidades Estados custa metade do [ICON_GOLD] Ouro.[NEWLINE]Unidades de Cidade Estado recebem +4 [ICON_Strength] de Força de combate se você tiver a Suserania da Cidade Estado (Inclui Unidades Alavancadas).[NEWLINE]Recebe +1 Título de [Icon_Governor] Governador Title. +2 emissários e +2 pontos de inflência por turno.</Text>
@@ -850,7 +844,7 @@
 		<!--===============   R E L I G I O N S   ===============-->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="pt_BR">
-			<Text>Unidades de Combate tem +3 [ICON_Strength] de Força de Combate próximo a cidades estrangeiras que sigam esta religião.</Text>
+			<Text>Unidades de Combate tem +5 [ICON_Strength] de Força de Combate próximo a cidades estrangeiras que sigam esta religião.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="pt_BR">
 			<Text>Cada distrito de Local Sagrado ou Teatro em uma cidade seguindo esta Religião gera +2 de [ICON_FAITH] Fé ou +2 [ICON_CULTURE] de Cultura respectivamente</Text>

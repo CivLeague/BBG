@@ -158,10 +158,10 @@
 			<Text>본 대륙에 있는 유닛이 방어시, 또는 타 대륙에 있는 유닛이 공격시 [ICON_Strength] 전투력 +5를 획득합니다. 국립공원을 보유한 도시의 모든 타일에 매력도 +1을 제공합니다. 군사 과학 기술을 연구하면 특유 유닛인 의용 기병대를 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="ko_KR">
-			<Text>이 도시에서 훈련된 모든 해상 유닛은 전투 경험치 +25%를 획득합니다. 선단 및 함대를 직접 훈련시킬 수 있습니다. 선단 및 함대 훈련 비용이 25% 감소합니다. 이 도시의 모든 해안 타일에 [ICON_GOLD] 금 +2를 제공합니다. [ICON_RESOURCE_COAL] 석탄 자원을 매턴 1개씩 제공합니다.</Text>
+			<Text>이 도시에서 훈련된 모든 해상 유닛은 전투 경험치 +50%를 획득합니다. 선단 및 함대를 직접 훈련시킬 수 있습니다. 선단 및 함대 훈련 비용이 25% 감소합니다. 이 도시의 모든 해안 타일에 [ICON_GOLD] 금 +2를 제공합니다. [ICON_RESOURCE_COAL] 석탄 자원을 매턴 1개씩 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="ko_KR">
-			<Text>완료 시 이 프로젝트는 프랑스가 소유한 사치 자원의 초과 개수에 따라 (일반 속도에서) [ICON_CULTURE] 문화 60 및 [ICON_TOURISM] 관광 60을 부여합니다.</Text>
+			<Text>완료 시 이 프로젝트는 프랑스가 소유한 사치 자원의 초과 개수에 따라 (일반 속도에서) [ICON_CULTURE] 문화 25 및 [ICON_TOURISM] 관광 25을 부여합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="ko_KR">
 			<Text>에티오피아의 국제 교역로가 출발지의 자원당 [ICON_Faith] 신앙 +0.5를 부여합니다. 도시가 소유한 자원에 [ICON_Faith] 신앙 +1을 제공합니다. [ICON_Faith] 신앙으로 고고학 박물관과 고고학자를 구매할 수 있습니다.</Text>
@@ -255,10 +255,10 @@
 			<Text>게임이 새 시대에 진입하면 사령관을 얻습니다. [ICON_GreatGeneral] 위대한 장군을 영입할 수 없습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="ko_KR">
-			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +25% 증가합니다.[NEWLINE][ICON_RESOURCE_NITER] 질산칼륨 자원을 발견하였다면, [ICON_RESOURCE_NITER] 질산칼륨 자원을 매턴 1개씩 제공합니다.</Text>
+			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +50% 증가합니다.[NEWLINE][ICON_RESOURCE_NITER] 질산칼륨 자원을 발견하였다면, [ICON_RESOURCE_NITER] 질산칼륨 자원을 매턴 1개씩 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +25% 증가합니다.[NEWLINE]전략 자원 비축력이 +10 증가합니다(일반 속도 기준). [ICON_RESOURCE_NITER] 질산칼륨 자원을 발견하였다면, [ICON_RESOURCE_NITER] 질산칼륨 자원을 매턴 1개씩 제공합니다.</Text>
+			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +50% 증가합니다.[NEWLINE]전략 자원 비축력이 +10 증가합니다(일반 속도 기준). [ICON_RESOURCE_NITER] 질산칼륨 자원을 발견하였다면, [ICON_RESOURCE_NITER] 질산칼륨 자원을 매턴 1개씩 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="ko_KR">
             <Text>특수지구와 불가사의를 강 옆에 배치할 경우 이들의 건설에 대한 [ICON_Production] 생산력 +25%를 제공합니다. 범람원은 특수지구 및 불가사의 배치를 방해하지 않습니다.</Text>
@@ -360,10 +360,10 @@
 			<Text>접하는 모든 문명마다 [ICON_VisLimited] 외교 시정 레벨이 평소보다 1 높아집니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="ko_KR">
-			<Text>이 도시에서 훈련된 모든 공중 유닛이 얻는 전투 경험치가 +50% 증가합니다. 비행장 특수지구에 공중 유닛 슬롯 +2를 제공합니다. 신속한 배치 사회 제도가 잠금 해제되면, 지상 유닛을 공항이 있는 비행장 특수지구 사이에서 공수할 수 있게 됩니다. [ICON_RESOURCE_ALUMINUM] 알루미늄 자원을 발견하였다면, [ICON_RESOURCE_ALUMINUM] 알루미늄 자원을 매턴 2개씩 제공합니다.</Text>
+			<Text>이 도시에서 훈련된 모든 공중 유닛이 얻는 전투 경험치가 +75% 증가합니다. 비행장 특수지구에 공중 유닛 슬롯 +2를 제공합니다. 신속한 배치 사회 제도가 잠금 해제되면, 지상 유닛을 공항이 있는 비행장 특수지구 사이에서 공수할 수 있게 됩니다. [ICON_RESOURCE_ALUMINUM] 알루미늄 자원을 발견하였다면, [ICON_RESOURCE_ALUMINUM] 알루미늄 자원을 매턴 2개씩 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +25% 증가합니다.[NEWLINE]전략 자원 비축력이 +10 증가합니다(일반 속도 기준).[NEWLINE]군단 및 군대를 직접 훈련시킬 수 있습니다. 군단 및 군대 훈련 비용이 25% 감소합니다. [ICON_RESOURCE_OIL] 석유 자원을 발견하였다면, [ICON_RESOURCE_OIL] 석유 자원을 매턴 2개씩 제공합니다.</Text>
+			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +50% 증가합니다.[NEWLINE]전략 자원 비축력이 +10 증가합니다(일반 속도 기준).[NEWLINE]군단 및 군대를 직접 훈련시킬 수 있습니다. 군단 및 군대 훈련 비용이 25% 감소합니다. [ICON_RESOURCE_OIL] 석유 자원을 발견하였다면, [ICON_RESOURCE_OIL] 석유 자원을 매턴 2개씩 제공합니다.</Text>
 		</Replace>
 
 
@@ -555,12 +555,6 @@
         <Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="ko_KR">
             <Text>근접 및 원거리 유닛을 공격 시 [ICON_Strength] 전투력 +7.</Text>
         </Replace>
-		<Replace Tag="LOC_ABILITY_CREE_OKIHTCITAW_DESCRIPTION" Language="ko_KR">
-            <Text>숲 및 열대우림 지형에서 이동력이 빨라집니다.</Text>
-        </Replace>
-		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="ko_KR">
-			<Text>크리 특유의 고대 시대 유닛으로 정찰병을 대체합니다. 강력한 정찰 유닛이며 숲 및 열대우림 지형에서 [ICON_Movement] 이동력이 빨라집니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="ko_KR">
 			<Text>도시 국가의 유닛 징병에 소모되는 [ICON_Gold] 금이 절반으로 감소합니다.[NEWLINE]플레이어가 종주국인 경우 도시 국가의 유닛(징병된 유닛 포함)이 [ICON_Strength] 전투력 +4를 얻습니다.[NEWLINE][Icon_Governor] 총독 타이틀 +1을 부여합니다. [ICON_Envoy] 사절 +2 및 턴당 [ICON_Envoy] 사절 획득을 위한 우호도 점수 +2.</Text>
 		</Replace>
@@ -836,7 +830,7 @@
 		<!--===============   R E L I G I O N S   ===============-->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ko_KR">
-			<Text>전투 유닛은 이 종교를 믿는 외국 도시 근처에서 [ICON_Strength] 전투력 +3을 획득합니다.</Text>
+			<Text>전투 유닛은 이 종교를 믿는 외국 도시 근처에서 [ICON_Strength] 전투력 +5을 획득합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="ko_KR">
 			<Text>이 종교를 믿는 도시의 각 성지 또는 극장가 특수지구에서 [ICON_Faith] 신앙 +2 또는[ICON_Culture] 문화 +2를 제공합니다.</Text>

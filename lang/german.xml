@@ -17,7 +17,7 @@
 			<Text>Kann die Anwesenheit anderer Religionen auf seinem Gebiet um 25 % reduzieren und den theologischen Kampf mit Einheiten anderer Religionen einleiten.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="de_DE">
-			<Text>Kampfeinheiten erhalten +3 [ICON_Strength] Kampfstärke innerhalb der Grenzen fremder Städte mit dieser Religion.</Text>
+			<Text>Kampfeinheiten erhalten +5 [ICON_Strength] Kampfstärke innerhalb der Grenzen fremder Städte mit dieser Religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="de_DE">
 			<Text>Schweden erhält 50 [ICON_Favor] diplomatische Gunst, wenn es eine Große Persönlichkeit verdient (auf Standardgeschwindigkeit). Schweden erhält +1 [ICON_GreatEngineer] Großer-Ingenieur-Punkt durch Fabriken und +1 [ICON_GreatScientist] Großer-Wissenschafter-Punkt durch Universitäten. Außerdem erhält Schweden +50% [ICON_Production] auf Bibliotheken, Werkstätten, Universitäten und Fabriken. Wenn Schweden mit im Spiel ist,beginnen im Industriezeitalter drei zusätzliche einzigartige Weltkongress-Wettkämpfe.</Text>
@@ -150,10 +150,10 @@
 			<Text>Einheiten erhalten +5 [ICON_Strength] Kampfstärke bei Verteidigung auf ihrem Heimatkontinent und bei Angriff auf jedem fremden Kontinent. +1 Anziehungskraft für alle Geländefelder einer Stadt mit einem Nationalpark. Erhaltet die Spezialeinheit Rough Rider durch die Technologie 'Militärwissenschaft'.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="de_DE">
-			<Text>+25 % Kampferfahrung für alle Marineeinheiten, die in dieser Stadt ausgebildet werden. Ermöglicht die unmittelbare Ausbildung von Flotten und Armadas. ie Ausbildungskosten von Flotten und Armadas sinken um 25 %.  +2 [ICON_GOLD] Gold auf allen Küsten-Geländefeldern für diese Stadt. +1 [ICON_RESOURCE_COAL] Kohle pro Runde.</Text>
+			<Text>+50 % Kampferfahrung für alle Marineeinheiten, die in dieser Stadt ausgebildet werden. Ermöglicht die unmittelbare Ausbildung von Flotten und Armadas. ie Ausbildungskosten von Flotten und Armadas sinken um 25 %.  +2 [ICON_GOLD] Gold auf allen Küsten-Geländefeldern für diese Stadt. +1 [ICON_RESOURCE_COAL] Kohle pro Runde.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="de_DE">
-			<Text>Bei Abschluss gewährt dieses Projekt 60 [ICON_CULTURE] Kultur und 60 [ICON_TOURISM] Tourismus (auf Standardgeschwindigkeit) basierend auf der Zahl überschüssiger Luxusgüter in Besitz Frankreichs</Text>
+			<Text>Bei Abschluss gewährt dieses Projekt 25 [ICON_CULTURE] Kultur und 25 [ICON_TOURISM] Tourismus (auf Standardgeschwindigkeit) basierend auf der Zahl überschüssiger Luxusgüter in Besitz Frankreichs</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="de_DE">
 			<Text>Äthiopiens internationale Handelswege gewähren +0.5 [ICON_Faith] Glauben pro Ressource am Ausgangsort. Verbesserte Ressourcen liefern +1 [ICON_Faith] Glauben. Kauf von Archäologischen Museen und Archäologen mit [ICON_Faith] Glauben möglich.</Text>
@@ -256,10 +256,10 @@
 			<Text>Gewährt Küstenraubzüge und +50 % [ICON_PRODUCTION] Produktion für alle Nahkampf-Marineeinheiten. Erhaltet [ICON_SCIENCE] Wissenschaft durch Plündern von und Küstenraubzügen auf Minen zusätzlich zu [ICON_GOLD] Gold. Plündern von und Küstenraubzüge auf Steinbrüche, Weiden, Plantagen und Jagdlager gewähren zusätzlich zu [ICON_FAITH] Glauben auch [ICON_CULTURE]  Kultur.[NEWLINE][NEWLINE]Heilige Stätten erhalten einen Standard-Nachbarschaftsbonus durch Küstenfelder.[NEWLINE][NEWLINE]Hafen-Bezirke neben einem Heilige-Stätte-Bezirk erhalten zusätzlich einen Nachbarschaftsbonus von +2 [ICON_GOLD] Gold .</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="de_DE">
-			<Text>+25 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]+1 [ICON_RESOURCE_NITER] Salpeter pro Runde nach Erforschung der Technologie 'Militärtechnik".</Text>
+			<Text>+50 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]+1 [ICON_RESOURCE_NITER] Salpeter pro Runde nach Erforschung der Technologie 'Militärtechnik".</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+25 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]Strategisches Ressourcen-Vorratslager +10 (auf Standardgeschwindigkeit). +1 [ICON_RESOURCE_NITER] Salpeter pro Runde nach Erforschung der Technologie 'Militärtechnik".</Text>
+			<Text>+50 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]Strategisches Ressourcen-Vorratslager +10 (auf Standardgeschwindigkeit). +1 [ICON_RESOURCE_NITER] Salpeter pro Runde nach Erforschung der Technologie 'Militärtechnik".</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="de_DE">
 			<Text>+25% [ICON_Production] Produktion für Bezirke und Wunder, wenn sie neben einem Fluss platziert werden. Erleidet keinen Schaden durch Überschwemmungen.</Text>
@@ -361,10 +361,10 @@
 			<Text>Hat 1 Stufe [ICON_VisLimited] diplomatische Sichtbarkeit mehr als normal bei jeder Zivilisation, die sie getroffen hat.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für Lufteinheiten aus dieser Stadt. +2 Lufteinheit-Platz im Flugplatz-Bezirk. Ermöglicht den Lufttransport von Landeinheiten zwischen Flugplatz-Bezirken mit Flughäfen, wenn die Ausrichtung 'Schnelle Entwicklung' freigeschaltet wurde. +2 [ICON_RESOURCE_ALUMINUM] Aluminum pro Runde nach Erforschung von 'Funkwesen'.</Text>
+			<Text>+75 % Kampferfahrung für Lufteinheiten aus dieser Stadt. +2 Lufteinheit-Platz im Flugplatz-Bezirk. Ermöglicht den Lufttransport von Landeinheiten zwischen Flugplatz-Bezirken mit Flughäfen, wenn die Ausrichtung 'Schnelle Entwicklung' freigeschaltet wurde. +2 [ICON_RESOURCE_ALUMINUM] Aluminum pro Runde nach Erforschung von 'Funkwesen'.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>++25 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]Strategisches Ressourcen-Vorratslager +10 (auf Standardgeschwindigkeit).[NEWLINE]Ermöglicht die unmittelbare Ausbildung von Korps und Armeen. Die Ausbildungskosten von Korps und Armeen sinken um 25%. +2 [ICON_RESOURCE_OIL] Öl pro Runde nach Erforschung von 'Raffinerie'.</Text>
+			<Text>+50 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]Strategisches Ressourcen-Vorratslager +10 (auf Standardgeschwindigkeit).[NEWLINE]Ermöglicht die unmittelbare Ausbildung von Korps und Armeen. Die Ausbildungskosten von Korps und Armeen sinken um 25%. +2 [ICON_RESOURCE_OIL] Öl pro Runde nach Erforschung von 'Raffinerie'.</Text>
 		</Replace>
 
 
@@ -558,12 +558,6 @@
 		</Replace>
 		<Replace Tag="LOC_PROMOTION_BATTLECRY_DESCRIPTION" Language="de_DE">
 			<Text>+7 [ICON_Strength] Kampfstärke beim Angriff auf Nah- und Fernkampfeinheiten.</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_CREE_OKIHTCITAW_DESCRIPTION" Language="de_DE">
-			<Text>Schnellere [ICON_Movement] Bewegung in Wald und Regenwald.</Text>
-		</Replace>
-		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="de_DE">
-			<Text>Cree-Spezialeinheit der Antike, die den Späher ersetzt. Starke Aufklärungseinheit. Schnellere [ICON_Movement] Bewegung in Wald und Regenwald.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="de_DE">
 			<Text>Leveraging City States costs half [ICON_Gold] Gold.[NEWLINE]City State units gain +4 [ICON_Strength] Combat Strength if you are the City State's Suzerain (including Leveraged Units).[NEWLINE]Awards +1 [Icon_Governor] Governor Title. +2 envoys and +2 influence per turn towards envoys.</Text>

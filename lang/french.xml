@@ -16,7 +16,7 @@
 		</Replace>
 		<!-- ========== CATHERINE DE MEDICIS AU BAL MASQUÉ OHÉ OHÉ ========== -->
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="fr_FR">
-			<Text>Une fois terminé, ce projet rapporte 30 points de [ICON_CULTURE] et de [ICON_TOURISM] tourisme (en vitesse en ligne) en fonction du nombre de copies en surplus que la France possède de ses ressources de luxe.</Text>
+			<Text>Une fois terminé, ce projet rapporte 25 points de [ICON_CULTURE] et de [ICON_TOURISM] tourisme (en vitesse en ligne) en fonction du nombre de copies en surplus que la France possède de ses ressources de luxe.</Text>
 		</Replace>
 		<!-- ========== CHANDRAGUPTA ========== -->
 		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="fr_FR">
@@ -184,12 +184,6 @@
 			<Text>[ICON_SCIENCE] Science bonus +{1_num} de la part {1_Num : plural 1?de la mine adjacente; other?des mines adjacentes;}.</Text>
 		</Row>
 		<!-- ========== CRIS ========== -->
-		<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="fr_FR">
-			<Text>Exclusive au peuple Cri, cette unité de l'Antiquité remplace les éclaireurs. Unité de reconnaissance puissante. [ICON_Movement] Déplacement rapide dans les bois et forêts tropicales.</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_CREE_OKIHTCITAW_DESCRIPTION" Language="fr_FR">
-			<Text>Déplacement rapide dans les bois et forêts tropicales.</Text>
-		</Replace>
 		<!-- ========== ÉCOSSE ========== -->
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de bâtisseur permettant de construire un terrain de golf, exclusif à l'Écosse.[NEWLINE][NEWLINE][ICON_AMENITIES] Activités +1, [ICON_GOLD] or +2 et [ICON_CULTURE] culture +1. [ICON_GOLD] Or +1 et [ICON_CULTURE] culture +1 si adjacent à un centre-ville. [ICON_CULTURE] culture +1 si adjacent à un complexe de loisirs. Bonus de [ICON_CULTURE] culture, d' [ICON_GOLD] or, de [ICON_TOURISM] tourisme et d' [ICON_HOUSING] habitations à mesure que vous progressez dans l'arbre des technologies et celui des dogmes. Ne peut pas être construit sur un désert ou sur une colline désertique. Limité à un par ville. Les cases contenant un terrain de golf ne peuvent pas être attribuées à une autre ville. Attrait +1.</Text>
@@ -581,7 +575,7 @@
 			<Text>Les Autels et les Temples fournissent une quantité de [ICON_PRODUCTION] Production égale à leur génération de [ICON_Faith] Foi intrinsèque.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Strength] Puissance de combat +3 pour les unités militaires proches des villes étrangères converties à cette religion.</Text>
+			<Text>[ICON_Strength] Puissance de combat +5 pour les unités militaires proches des villes étrangères converties à cette religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Amenities] Activités +1 dans les villes abritant un quartier spécialisé.</Text>
@@ -918,22 +912,22 @@
 		
 		<!-- Campement, port, aérodrome -->
 		<Replace Tag="LOC_BUILDING_STABLE_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +25 % pour toutes les unités de cavalerie et de siège formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][NEWLINE]Construction impossible dans un campement possédant déjà une caserne.</Text>
+			<Text>Expérience au combat +50 % pour toutes les unités de cavalerie et de siège formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][NEWLINE]Construction impossible dans un campement possédant déjà une caserne.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
+			<Text>Expérience au combat +50 % pour toutes les unités terrestres formées dans cette ville. [ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
+			<Text>Expérience au combat +50 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_OIL] Pétrole +2 par tour une fois qu'il est découvert. [NEWLINE]Permet la formation immédiate de régiments et d'armées. Coûts d'entraînement des régiments et des armées -25 %.</Text>
+			<Text>Expérience au combat +50 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_OIL] Pétrole +2 par tour une fois qu'il est découvert. [NEWLINE]Permet la formation immédiate de régiments et d'armées. Coûts d'entraînement des régiments et des armées -25 %.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +25 % pour toutes les unités navales formées dans cette ville. Permet la formation immédiate de flottes et d'armadas. Coûts d'entraînement des flottes et des armadas -25 %. [ICON_GOLD] Or +2 pour toutes les cases côtières de la ville. Génère une unité de [ICON_RESOURCE_COAL] Charbon par tour.</Text>
+			<Text>Expérience au combat +50 % pour toutes les unités navales formées dans cette ville. Permet la formation immédiate de flottes et d'armadas. Coûts d'entraînement des flottes et des armadas -25 %. [ICON_GOLD] Or +2 pour toutes les cases côtières de la ville. Génère une unité de [ICON_RESOURCE_COAL] Charbon par tour.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +50 % pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +2 dans les aérodromes. [ICON_RESOURCE_ALUMINUM] Aluminium +2 par tour. Permet le transport aérien des unités entre les aérodromes équipés d'un aéroport une fois le déploiement rapide découvert.</Text>
+			<Text>Expérience au combat +75 % pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +2 dans les aérodromes. [ICON_RESOURCE_ALUMINUM] Aluminium +2 par tour. Permet le transport aérien des unités entre les aérodromes équipés d'un aéroport une fois le déploiement rapide découvert.</Text>
 		</Replace>
 		<!-- Promotions d'unités militaires -->
 		<Replace Tag="LOC_PROMOTION_GRAPE_SHOT_DESCRIPTION" Language="fr_FR">

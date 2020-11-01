@@ -634,6 +634,17 @@ INSERT OR IGNORE INTO Improvement_BonusYieldChanges (ImprovementType, YieldType,
 --==============================================================
 --******				B U I L D I N G S			  	  ******
 --==============================================================
+UPDATE ModifierArguements SET Value='50' WHERE ModifierId='BARRACKS_TRAINED_UNIT_XP';
+UPDATE ModifierArguements SET Value='50' WHERE ModifierId='STABLE_TRAINED_UNIT_XP';
+UPDATE ModifierArguements SET Value='50' WHERE ModifierId='ARMORY_TRAINED_UNIT_XP';
+UPDATE ModifierArguements SET Value='50' WHERE ModifierId='MILITARY_ACADEMY_TRAINED_UNIT_XP';
+UPDATE ModifierArguements SET Value='50' WHERE ModifierId='LIGHTHOUSE_TRAINED_UNIT_XP';
+UPDATE ModifierArguements SET Value='50' WHERE ModifierId='SHIPYARD_TRAINED_UNIT_XP';
+UPDATE ModifierArguements SET Value='50' WHERE ModifierId='SEAPORT_TRAINED_UNIT_XP';
+UPDATE ModifierArguements SET Value='50' WHERE ModifierId='HANGAR_TRAINED_AIRCRAFT_XP';
+UPDATE ModifierArguements SET Value='75' WHERE ModifierId='AIRPORT_TRAINED_AIRCRAFT_XP';
+UPDATE ModifierArguements SET Value='50' WHERE ModifierId='BASILIKOI_TRAINED_UNIT_XP';
+UPDATE ModifierArguements SET Value='50' WHERE ModifierId='ORDU_TRAINED_XP';
 UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_BARRACKS';
 UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_STABLE';
 UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_BASILIKOI_PAIDES';
@@ -1024,6 +1035,8 @@ INSERT OR IGNORE INTO RequirementArguments
 --==============================================================
 --******			P O L I C Y   C A R D S				  ******
 --==============================================================
+-- destroy barbs
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='DISCIPLINE_BARBARIANCOMBAT';
 -- Limes should not become obselete
 DELETE FROM ObsoletePolicies WHERE PolicyType='POLICY_LIMES';
 -- Adds +100% Siege Unit Production to Limes Policy Card
@@ -1122,11 +1135,6 @@ INSERT OR IGNORE INTO PolicyModifiers (PolicyType , ModifierId)
 --==============================================================
 --******				R E L I G I O N					  ******
 --==============================================================
-UPDATE UnitCommands SET VisibleInUI=0 WHERE CommandType='UNITCOMMAND_CONDEMN_HERETIC';
-UPDATE Map_GreatPersonClasses SET MaxWorldInstances=6 WHERE MapSizeType='MAPSIZE_STANDARD';
-UPDATE Map_GreatPersonClasses SET MaxWorldInstances=8 WHERE MapSizeType='MAPSIZE_LARGE';
-UPDATE Map_GreatPersonClasses SET MaxWorldInstances=9 WHERE MapSizeType='MAPSIZE_HUGE';
-UPDATE Units SET BaseSightRange=1 WHERE UnitType='UNIT_MISSIONARY';
 -- reduce debator promotion
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='APOSTLE_DEBATER' AND Name='Amount';
 UPDATE ModifierArguments SET Value='100' WHERE ModifierId='APOSTLE_FOREIGN_SPREAD' AND Name='Amount';
@@ -1151,8 +1159,8 @@ UPDATE GlobalParameters SET Value='2.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_
 UPDATE GlobalParameters SET Value='1.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_PRESSURE_FOR_ORIGIN'     ;
 -- Divine Inspiration yield increased
 UPDATE ModifierArguments SET Value='6' WHERE ModifierId='DIVINE_INSPIRATION_WONDER_FAITH_MODIFIER' AND Name='Amount';
--- Crusader +3 instead of +10
-UPDATE ModifierArguments SET Value='3' WHERE ModifierId='JUST_WAR_COMBAT_BONUS_MODIFIER';
+-- Crusader +5 instead of +10
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='JUST_WAR_COMBAT_BONUS_MODIFIER';
 -- Lay Ministry now +2 Culture and +2 Faith per Theater and Holy Site
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='LAY_MINISTRY_CULTURE_DISTRICTS_MODIFIER' AND Name='Amount';
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='LAY_MINISTRY_FAITH_DISTRICTS_MODIFIER' AND Name='Amount';

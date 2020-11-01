@@ -7,7 +7,7 @@
 
 		<!-- ================ C I T Y   P R O J E C T S ================ -->
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="pl_PL">
-			<Text>Ukończenie projektu daje premię +60 do [ICON_CULTURE] kultury i +60 do [ICON_TOURISM] turystyki (przy standardowej prędkości), uzależnioną od liczby dodatkowych kopii zasobów luksusowych posiadanych przez Francję.</Text>
+			<Text>Ukończenie projektu daje premię +25 do [ICON_CULTURE] kultury i +25 do [ICON_TOURISM] turystyki (przy standardowej prędkości), uzależnioną od liczby dodatkowych kopii zasobów luksusowych posiadanych przez Francję.</Text>
 		</Replace>
 
 			<!-- ================ Moon Landing ================ -->
@@ -142,12 +142,6 @@
 				</Replace>
 
 			<!-- ================ Cree ================ -->
-			<Replace Tag="LOC_ABILITY_CREE_OKIHTCITAW_DESCRIPTION" Language="pl_PL">
-				<Text>Szybszy ruch w lesie i lesie deszczowym.</Text>
-			</Replace>
-			<Replace Tag="LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION" Language="pl_PL">
-				<Text>Unikalna starożytna jednostka Kri zastępująca zwiadowców. Silna jednostka zwiadowcza. Szybszy [ICON_MOVEMENT] ruch w lesie i lesie deszczowym.</Text>
-			</Replace>
 
 			<!-- ================ Egypt ================ -->
 			<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="pl_PL">
@@ -593,18 +587,18 @@
 
 			<!-- ================ Airport ================ -->
 			<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="pl_PL">
-				<Text>+50% doświadczenia bojowego dla jednostek powietrznych wyszkolonych w tym mieście. +2 miejsce na jednostki powietrzne w dzielnicy z aerodromem. Po odblokowaniu idei błyskawicznej relokacji umożliwia transportowanie drogą powietrzną jednostek lądowych pomiędzy dzielnicami z aerodromem, w których znajdują się lotniska. +2 do [ICON_RESOURCE_ALUMINUM] aluminium jeżeli zostało odkryte.</Text>
+				<Text>+75% doświadczenia bojowego dla jednostek powietrznych wyszkolonych w tym mieście. +2 miejsce na jednostki powietrzne w dzielnicy z aerodromem. Po odblokowaniu idei błyskawicznej relokacji umożliwia transportowanie drogą powietrzną jednostek lądowych pomiędzy dzielnicami z aerodromem, w których znajdują się lotniska. +2 do [ICON_RESOURCE_ALUMINUM] aluminium jeżeli zostało odkryte.</Text>
 			</Replace>
 			<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="pl_PL">
-				<Text>+25% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości).[NEWLINE]Umożliwia bezpośrednie szkolenie korpusów i armii. Koszt szkolenia korpusów i armii zmniejszony o 25%. +2 [ICON_RESOURCE_OIL] ropy na turę jeżeli została odkryta.</Text>
+				<Text>+50% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości).[NEWLINE]Umożliwia bezpośrednie szkolenie korpusów i armii. Koszt szkolenia korpusów i armii zmniejszony o 25%. +2 [ICON_RESOURCE_OIL] ropy na turę jeżeli została odkryta.</Text>
 			</Replace>
 
 			<!-- ================ Armory ================ -->
 			<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="pl_PL">
-				<Text>+25% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]+1 [ICON_RESOURCE_NITER] saletry na turę (jeżeli odkryta).</Text>
+				<Text>+50% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]+1 [ICON_RESOURCE_NITER] saletry na turę (jeżeli odkryta).</Text>
 			</Replace>
 			<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="pl_PL">
-				<Text>+25% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości).[NEWLINE]+1 [ICON_RESOURCE_NITER] saletry na turę (jeżeli odkryta).</Text>
+				<Text>+50% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości).[NEWLINE]+1 [ICON_RESOURCE_NITER] saletry na turę (jeżeli odkryta).</Text>
 			</Replace>
 
 			<!-- ================ Government ================ -->
@@ -623,7 +617,7 @@
 
 			<!-- ================ Harbour ================ -->
 			<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="pl_PL">
-				<Text>+25% doświadczenia bojowego dla wszystkich jednostek morskich wyszkolonych w tym mieście. Umożliwia bezpośrednie szkolenie flot i armad. Koszt szkolenia flot i armad zmniejszony o 25%. +2 [ICON_GOLD] złota ze wszystkich pól wybrzeża należących do tego miasta. +1 [ICON_RESOURCE_COAL] węgla na turę.</Text>
+				<Text>+50% doświadczenia bojowego dla wszystkich jednostek morskich wyszkolonych w tym mieście. Umożliwia bezpośrednie szkolenie flot i armad. Koszt szkolenia flot i armad zmniejszony o 25%. +2 [ICON_GOLD] złota ze wszystkich pól wybrzeża należących do tego miasta. +1 [ICON_RESOURCE_COAL] węgla na turę.</Text>
 			</Replace>
 
 
@@ -830,7 +824,7 @@
 				<Text>Religia rozprzestrzenia się do miast odleglejszych o 40%.</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="pl_PL">
-				<Text>Jednostki bojowe otrzymują +3 do [ICON_STRENGTH] siły bojowej w granicach obcych miast wyznających tę religię.</Text>
+				<Text>Jednostki bojowe otrzymują +5 do [ICON_STRENGTH] siły bojowej w granicach obcych miast wyznających tę religię.</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="pl_PL">
 				<Text>Każda dzielnica świątynna i kulturalna w mieście wyznającym tę religię zapewnia odpowiednio +2 do [ICON_FAITH] wiary lub +2 do [ICON_CULTURE] kultury.</Text>
