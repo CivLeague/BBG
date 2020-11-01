@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.17.2">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.17.3">
 	<Properties>
-		<Name>Better Balanced Game 3.17.2</Name>
+		<Name>Better Balanced Game 3.17.3</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>
@@ -276,12 +276,17 @@
 			</Properties>
 			<File>sql/nfp_byzantium_gaul.sql</File>
 		</UpdateDatabase>
+		
 		<AddGameplayScripts id="CondemnHeretic_AddScript">
 			<File>UnitPanel_CondemnCommand.lua</File>
 		</AddGameplayScripts>
-		<ImportFiles id="CondemnHeretic_Import">
-			<File>UnitPanel.lua</File>
-		</ImportFiles>
+		<ReplaceUIScript id="CondemnHeretic_Import">
+			<Properties>
+				<LoadOrder>11699</LoadOrder>
+				<LuaContext>UnitPanel</LuaContext>
+				<LuaReplace>UnitPanelBBG.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
 	</InGameActions>
 	
 	<!-- defines file dependencies -->
@@ -318,7 +323,7 @@
 		<File>sql/nfp_teddy_persona.sql</File>
 		<File>sql/nfp_catherine_persona.sql</File>
 		<File>sql/nfp_byzantium_gaul.sql</File>
-		<File>UnitPanel.lua</File>
+		<File>UnitPanelBBG.lua</File>
 		<File>UnitPanel_CondemnCommand.lua</File>
 	</Files>
 </Mod>
