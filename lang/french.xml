@@ -1006,7 +1006,7 @@
 			<Text>Basilikoi Paides : expérience gagnée +50 %.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_ORDU_TRAINED_UNIT_XP_DESCRIPTION" Language="fr_FR">
-			<Text>Ordo : expérience gagnée +25 %.</Text>
+			<Text>Ordo : expérience gagnée +50 %.</Text>
 		</Replace>
 
 		<!-- =============== D I V E R S =============== -->

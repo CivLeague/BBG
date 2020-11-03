@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.17.3">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.17.4">
 	<Properties>
-		<Name>Better Balanced Game 3.17.3</Name>
+		<!-- This mod is the sole intellectual property (IP) of Cody Lanier, a.k.a. codenaugh, and any attempts to re-use the partial or full code found within without explicit consent is a violation of the Steam™ Online Conduct Agreement that all subscribers are subject to. Any explicit permission received to use the partial or full code may be revoked by codenaugh at his discresion. --> 
+		<Name>Better Balanced Game 3.17.4</Name>
 		<Description>
 			If you're interested in joining the Civilization Players' League, follow this link:  https://discord.gg/ubwTNdd
 		</Description>

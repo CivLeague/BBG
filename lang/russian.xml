@@ -475,10 +475,10 @@
 			<Text>Уникальный район Рима, заменяющий акведук. Стоит меньше производства. +1 [ICON_Culture] культуры за каждые 2 соседние района.[NEWLINE][NEWLINE] Построенный рядом с рекой, озером, оазисом или горой, акведук даёт городу питьевую воду. Города без питьевой воды при постройке получают вплоть до 6 [ICON_Housing] жилья. Города с питьевой водой при постройке получают +2 [ICON_Housing] жилья. Вдобавок к вышеперечисленным бонусам купальня даёт +2 [ICON_Housing] жилья и +1 [ICON_Amenities] довольства. Должна быть построена рядом с центром города.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="ru_RU">
-			<Text>Позволяет египетским рабочим строить сфинксов.[NEWLINE][NEWLINE]+2 [ICON_Faith] веры, +1 [ICON_Culture] Culture и +2 довольства.[NEWLINE][NEWLINE]+1 [ICON_Faith] веры и +1 [ICON_CULTURE] культуры рядом с чудом света. +1 [ICON_FOOD] пищи и +1 [ICON_PRODUCTION] производства в пустыне или +1 [ICON_CULTURE] культуры на пойме.[NEWLINE][NEWLINE]Дополнительная [ICON_CULTURE] культура при открытии Дипломатической службы. Даёт [ICON_TOURISM] туризм после изучения Полёта. Нельзя построить рядом с другим сфинксом, а также на снегу.</Text>
+			<Text>Позволяет египетским рабочим строить сфинксов.[NEWLINE][NEWLINE]+2 [ICON_Faith] веры, +1 [ICON_Culture] культура и +2 престижа.[NEWLINE][NEWLINE]+1 [ICON_Faith] веры и +1 [ICON_CULTURE] культуры рядом с чудом света. +1 [ICON_FOOD] пищи и +1 [ICON_PRODUCTION] производства в пустыне или +1 [ICON_CULTURE] культуры на пойме.[NEWLINE][NEWLINE]Дополнительная [ICON_CULTURE] культура при открытии Дипломатической службы. Даёт [ICON_TOURISM] туризм после изучения авиации. Нельзя построить рядом с другим сфинксом, а также на снегу.</Text>
 		</Replace>				
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_DESCRIPTION" Language="ru_RU">
-			<Text>Unlocks the Builder ability to construct a Sphinx, unique to Egypt.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith, +1 [ICON_Culture] Culture, and +1 Appeal. +1 [ICON_Faith] Faith and +1 [ICON_CULTURE] Culture if next to a wonder. +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production if built on Desert or +1 [ICON_CULTURE] Culture if built on Floodplains.[NEWLINE][NEWLINE]Additional [ICON_CULTURE] Culture once Diplomatic Service is discovered. Provides [ICON_TOURISM] Tourism after researching Flight. Cannot be built next to another Sphinx or on Snow or Snow Hills.</Text>
+			<Text>Позволяет египетским рабочим строить сфинксов.[NEWLINE][NEWLINE]+2 [ICON_Faith] веры, +1 [ICON_Culture] культура и +1 престиж.[NEWLINE][NEWLINE] +1 [ICON_Faith] веры и +1 [ICON_CULTURE] культуры рядом с чудом света. +1 [ICON_FOOD] пищи и +1 [ICON_PRODUCTION] производства в пустыне или +1 [ICON_CULTURE] культуры на пойме.[NEWLINE][NEWLINE]Дополнительная [ICON_CULTURE] культура при открытии Дипломатической службы. Даёт [ICON_TOURISM] туризм после изучения авиации. Нельзя построить рядом с другим сфинксом, а также на снегу.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS_DESCRIPTION" Language="ru_RU">
 			<Text>+20% [ICON_Food] прирост в городе. Ваши [ICON_TradeRoute] торговые пути в город с Магнусом приносят +2 [ICON_Food] пищи и +2 [ICON_PRODUCTION] производства городу, из которого они направлены.</Text>
@@ -880,5 +880,83 @@
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="ru_RU">
 			<Text>Позволяет строителям создавать рыбацкие суда.[NEWLINE][NEWLINE]+1 [ICON_Food] пищи и +1 [ICON_PRODUCTION] производства. Можно строить только на определенных ресурсах.[NEWLINE][NEWLINE]При постройке на редких ресурсах город получит эти ресурсы.</Text>
 		</Replace>
+    <Replace Tag="LOC_BUILDING_BARRACKS_DESCRIPTION" Language="ru_RU">
+      <Text>+50% боевого опыта сухопутным войскам ближнего и дальнего боя, созданным в этом городе.[NEWLINE][NEWLINE]Нельзя построить в военном лагере, где уже есть конюшня.</Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_STABLE_DESCRIPTION" Language="ru_RU">
+      <Text>+50% боевого опыта всем кавалерийским юнитам, созданным в этом городе.[NEWLINE][NEWLINE]Нельзя построить в военном лагере, где уже есть казармы.</Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_DESCRIPTION" Language="ru_RU">
+      <Text>+50% боевого опыта всем сухопутным юнитам, созданным в этом городе.[NEWLINE]Позволяет создавать сразу корпуса и армии. Стоимость подготовки корпусов и армий уменьшается на 25%.</Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_BARRACKS_EXPANSION2_DESCRIPTION" Language="ru_RU">
+      <Text>+50% боевого опыта сухопутным войскам ближнего и дальнего боя, созданным в этом городе.[NEWLINE]Увеличивает запасы стратегических ресурсов на 10 (на стандартной скорости).[NEWLINE][NEWLINE]Нельзя построить в военном лагере, где уже есть конюшня.</Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_STABLE_EXPANSION2_DESCRIPTION" Language="ru_RU">
+      <Text>+50% боевого опыта всем кавалерийским юнитам, созданным в этом городе.[NEWLINE]Увеличивает запасы стратегических ресурсов на 10 (на стандартной скорости).[NEWLINE][NEWLINE]Нельзя построить в военном лагере, где уже есть казармы.</Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_HANGAR_DESCRIPTION" Language="ru_RU">
+      <Text>+50% опыта всем воздушным юнитам, созданным в этом городе. +1 ячейка для воздушных юнитов на аэродроме.</Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_LIGHTHOUSE_DESCRIPTION" Language="ru_RU">
+      <Text>+50% опыта всем морским юнитам, созданным в этом городе. +1 [ICON_FOOD] пиши на всех клетках побережья в городе.</Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_SHIPYARD_DESCRIPTION" Language="ru_RU">
+      <Text>+50% опыта всем морским юнитам, созданным в этом городе. Дополнительное [ICON_Production] производство в размере бонуса за соседство гавани.</Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_LIGHTHOUSE_EXPANSION2_DESCRIPTION" Language="ru_RU">
+      <Text>+50% опыта всем морским юнитам, созданным в этом городе. +1 [ICON_FOOD] пиши на всех клетках побережья в городе. +2 [ICON_HOUSING] жилья, если город стоит у побережья. +1 [ICON_TradeRoute] доступный торговый путь, если в городе нет рынка .</Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_SHIPYARD_EXPANSION2_DESCRIPTION" Language="ru_RU">
+      <Text>+50% опыта всем морским юнитам, созданным в этом городе. Дополнительное [ICON_Production] производство в размере бонуса за соседство гавани. +1 [ICON_PRODUCTION] производство на всех необраотанных клетках побережья и озер в городе. </Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_BASILIKOI_PAIDES_DESCRIPTION" Language="ru_RU">
+      <Text>Уникальное здание Македонии, заменяющее казармы. +50% боевого опыта гетайрам, сухопутным юнитам ближнего и дальнего боя, созданным в этом городе. Дает [ICON_SCIENCE] науку в размере 25% от стоимости созданных в этом городе негражданских юнитов.[NEWLINE][NEWLINE]Нельзя построить в военном лагере, где уже есть конюшня.</Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_BASILIKOI_PAIDES_EXPANSION2_DESCRIPTION" Language="ru_RU">
+      <Text>Уникальное здание Македонии, заменяющее казармы. +50% боевого опыта гетайрам, сухопутным юнитам ближнего и дальнего боя, созданным в этом городе. Дает [ICON_SCIENCE] науку в размере 25% от стоимости созданных в этом городе негражданских юнитов.[NEWLINE][NEWLINE]Увеличивает запасы стратегических ресурсов на 10 (на стандартной скорости).[NEWLINE][NEWLINE]Нельзя построить в военном лагере, где уже есть конюшня.</Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_ORDU_DESCRIPTION" Language="ru_RU">
+      <Text>Уникальное здание Монголии, заменяющее конюшни. +1 [ICON_MOVEMENT] ОП юнитам легкой и тяжелой кавалерии, созданным в этом городе. +50% боевого опыта всем кавалерийским юнитам, созданным в этом городе.[NEWLINE][NEWLINE]Нельзя построить в военном лагере, где уже есть казармы.</Text>
+    </Replace>
+    <Replace Tag="LOC_BUILDING_ORDU_EXPANSION2_DESCRIPTION" Language="ru_RU">
+      <Text>Уникальное здание Монголии, заменяющее конюшни. +1 [ICON_MOVEMENT] ОП юнитам легкой и тяжелой кавалерии, созданным в этом городе. +50% боевого опыта всем кавалерийским юнитам, созданным в этом городе.[NEWLINE][NEWLINE]Увеличивает запасы стратегических ресурсов на 10 (на стандартной скорости).[NEWLINE][NEWLINE]Нельзя построить в военном лагере, где уже есть казармы.</Text>
+    </Replace>
+    <Replace Tag="LOC_ABILITY_BARRACKS_TRAINED_UNIT_XP_DESCRIPTION" Language="ru_RU">
+      <Text>+50% опыта от казарм</Text>
+    </Replace>
+    <Replace Tag="LOC_ABILITY_STABLE_TRAINED_UNIT_XP_DESCRIPTION" Language="ru_RU">
+      <Text>+50% опыта от конюшни</Text>
+    </Replace>
+    <Replace Tag="LOC_ABILITY_ARMORY_TRAINED_UNIT_XP_DESCRIPTION" Language="ru_RU">
+      <Text>+50% опыта от оружейной</Text>
+    </Replace>
+    <Replace Tag="LOC_ABILITY_MILITARY_ACADEMY_TRAINED_UNIT_XP_DESCRIPTION" Language="ru_RU">
+      <Text>+50% опыта от военной академии</Text>
+    </Replace>
+    <Replace Tag="LOC_ABILITY_LIGHTHOUSE_TRAINED_UNIT_XP_DESCRIPTION" Language="ru_RU">
+      <Text>+50% опыта от маяка</Text>
+    </Replace>
+    <Replace Tag="LOC_ABILITY_SHIPYARD_TRAINED_UNIT_XP_DESCRIPTION" Language="ru_RU">
+      <Text>+50% опыта от верфи</Text>
+    </Replace>
+    <Replace Tag="LOC_ABILITY_SEAPORT_TRAINED_UNIT_XP_DESCRIPTION" Language="ru_RU">
+      <Text>+50% опыта от морского порта</Text>
+    </Replace>
+    <Replace Tag="LOC_ABILITY_HANGAR_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="ru_RU">
+      <Text>+50% опыта от ангара</Text>
+    </Replace>
+    <Replace Tag="LOC_ABILITY_AIRPORT_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="ru_RU">
+      <Text>+75% опыта от аэропорта</Text>
+    </Replace>
+    <Replace Tag="LOC_ABILITY_BASILIKOI_TRAINED_UNIT_XP_DESCRIPTION" Language="ru_RU">
+      <Text>+50% опыта от Школы Царский Пажей</Text>
+    </Replace>
+    <Replace Tag="LOC_ABILITY_ORDU_TRAINED_UNIT_XP_DESCRIPTION" Language="ru_RU">
+      <Text>+50% опыта от Орды</Text>
+    </Replace>
+    <Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="ru_RU">
+      <Text>+10 [ICON_Strength] к боевой мощи юнита против варваров</Text>
+    </Replace>
 	</LocalizedText>
 </GameData>

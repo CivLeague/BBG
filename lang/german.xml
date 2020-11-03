@@ -1,6 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_BARRACKS_DESCRIPTION" Language="de_DE">
+			<Text>+50 % Kampferfahrung für alle Nahkampf- und Fernkampfeinheiten an Land, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Kann nicht in einem Lagerbezirk gebaut werden, in dem bereits Stallungen sind.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_STABLE_DESCRIPTION" Language="de_DE">
+			<Text>+50 % Kampferfahrung für alle Einheiten der Kavallerie-Klasse, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Kann nicht in einem Lagerbezirk gebaut werden, in dem schon eine Kaserne ist.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_DESCRIPTION" Language="de_DE">
+			<Text>+50 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Ermöglicht die unmittelbare Ausbildung von Korps und Armeen. Die Ausbildungskosten von Korps und Armeen sinken um 25%.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_BARRACKS_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>+50 % Kampferfahrung für alle Nahkampf- und Fernkampfeinheiten an Land, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Kann nicht in einem Lagerbezirk gebaut werden, in dem bereits Stallungen sind.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_STABLE_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>+50 % Kampferfahrung für alle Einheiten der Kavallerie-Klasse, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Kann nicht in einem Lagerbezirk gebaut werden, in dem schon eine Kaserne ist.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HANGAR_DESCRIPTION" Language="de_DE">
+			<Text>+50 % Kampferfahrung für Lufteinheiten aus dieser Stadt. +1 Lufteinheit-Platz im Flugplatz-Bezirk. </Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_LIGHTHOUSE_DESCRIPTION" Language="de_DE">
+			<Text>+50 % Kampferfahrung für alle in dieser Stadt ausgebildeten Marineeinheiten. +1 [ICON_Food] Nahrung auf allen Küsten-Geländefeldern dieser Stadt. </Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SHIPYARD_DESCRIPTION" Language="de_DE">
+			<Text>+50 % Kampferfahrung für alle in dieser Stadt ausgebildeten Marineeinheiten. [ICON_Production] Produktionsbonus in Höhe des Nachbarschaftsbonus des Hafenbezirks.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_LIGHTHOUSE_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>+50 % Kampferfahrung für alle in dieser Stadt ausgebildeten Marineeinheiten. +1 [ICON_Food] Nahrung auf allen Küsten-Geländefeldern dieser Stadt. +2 [ICON_Housing] Wohnraum, wenn diese Stadt an die Küste angrenzt. +1 [ICON_Handelsweg] Handelsweg-Kapazität, wenn diese Stadt noch nicht über ein Marktgebäude verfügt.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SHIPYARD_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>+50 % Kampferfahrung für alle in dieser Stadt ausgebildeten Marineeinheiten. [ICON_Production] Produktionsbonus in Höhe des Nachbarschaftsbonus des Hafenbezirks. +1 Produktion [ICON_Proudction] für alle nicht modernisierten Küsten- und See-Geländefelder dieser Stadt. </Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_BASILIKOI_PAIDES_DESCRIPTION" Language="de_DE">
+			<Text>Einzigartiges Gebäude von Makedonien. +50 % Kampferfahrung für alle Landnahkampf- und -Fernkampfeinheiten, und Hetairoi, die in dieser Stadt ausgebildet werden. Erhalt von +25 % Wissenschaft gemessen an den Kosten der Einheit, wenn in dieser Stadt eine militärische Einheit erschaffen wird.[NEWLINE][NEWLINE]Kann nicht in einem Lagerbezirk gebaut werden, in dem bereits Stallungen sind.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ORDU_DESCRIPTION" Language="de_DE">
+			<Text>Einzigartiges Gebäude der Mongolei. Gewährt eine Fähigkeit, die in dieser Stadt ausgebildeter schwerer und leichter Kavallerie +1 Fortbewegung ermöglicht. +50 % Kampferfahrung für alle Einheiten der Kavallerie-Klasse, die in dieser Stadt ausgebildet werden. Kann nicht in einem Lager mit Kaserne gebaut werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ORDU_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>Einzigartiges Gebäude der Mongolei. Gewährt eine Fähigkeit, die in dieser Stadt ausgebildeter schwerer und leichter Kavallerie +1 Fortbewegung ermöglicht. +50 % Kampferfahrung für alle Einheiten der Kavallerie-Klasse, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Kann nicht in einem Lager mit Kaserne gebaut werden.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_ABILITY_BARRACKS_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
+			<Text>+50% Kampferfahrung durch Kaserne</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_STABLE_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
+			<Text>+50% Kampferfahrung durch Stallungen</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ARMORY_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
+			<Text>+50% Kampferfahrung durch Waffenkammer</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_MILITARY_ACADEMY_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
+			<Text>+50% Kampferfahrung durch Militärakademie</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_LIGHTHOUSE_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
+			<Text>+50% Kampferfahrung durch Leuchtturm</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_SHIPYARD_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
+			<Text>+50% Kampferfahrung durch Schiffswerft</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_SEAPORT_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
+			<Text>+50% Kampferfahrung durch Seehafen</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_HANGAR_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="de_DE">
+			<Text>+50% Kampferfahrung durch Hangar</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_AIRPORT_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="de_DE">
+			<Text>+75% Kampferfahrung durch Flugplatz</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BASILIKOI_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
+			<Text>+50% experience in Combat from Basilikoi Paides.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ORDU_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
+			<Text>+50% Kampferfahrung durch Ordu.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="de_DE">
+			<Text>+10 [ICON_Strength] Kampfstärke gegen Barbaren.</Text>
+		</Replace>
+		
 		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="de_DE">
             <Text>Zur Sicherung der Loyalität in eurem Reich erhaltet ihr +40 Loyalität in allen Städten.</Text>
         </Replace>
@@ -69,10 +146,10 @@
 			<Text>+3 [ICON_GOLD]für jede Stadt mit dieser Religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Felskirche zu bauen, die einzigartig für Äthiopien ist.[NEWLINE][NEWLINE]+1 [ICON_Faith] für jedes angrenzende Hügel-Feld. Gewährt nach Erforschung der Luftfahrt [ICON_TOURISM] durch Glauben. +1 Anziehungskraft. Kann nur von Naturkatastrophen geplündert (niemals zerstört) werden. Kann nur auf Hügeln oder Vulkanerde gebaut werden und darf nicht an eine weitere Felskirche angrenzen.</Text>
+			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Felskirche zu bauen, die einzigartig für Äthiopien ist.[NEWLINE][NEWLINE]+1 [ICON_Faith] für jedes angrenzende Hügel-Feld. Gewährt nach Erforschung der Luftfahrt [ICON_TOURISM] Tourismus durch Glauben. +1 Anziehungskraft. Kann nur von Naturkatastrophen geplündert (niemals zerstört) werden. Kann nur auf Hügeln oder Vulkanerde gebaut werden und darf nicht an eine weitere Felskirche angrenzen.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Felskirche zu bauen, die einzigartig für Äthiopien ist.[NEWLINE][NEWLINE]+1 [ICON_Faith] für jedes angrenzende Hügel-Feld. Gewährt nach Erforschung der Luftfahrt [ICON_TOURISM] durch Glauben. +1 Anziehungskraft. Kann nur von Naturkatastrophen geplündert (niemals zerstört) werden. Kann nur auf Hügeln gebaut werden und darf nicht an eine weitere Felskirche angrenzen.</Text>
+			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Felskirche zu bauen, die einzigartig für Äthiopien ist.[NEWLINE][NEWLINE]+1 [ICON_Faith] für jedes angrenzende Hügel-Feld. Gewährt nach Erforschung der Luftfahrt [ICON_TOURISM] Tourismus durch Glauben. +1 Anziehungskraft. Kann nur von Naturkatastrophen geplündert (niemals zerstört) werden. Kann nur auf Hügeln gebaut werden und darf nicht an eine weitere Felskirche angrenzen.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="de_DE">
 			<Text>Zufriedene Städte erhalten zusätzliche +10% [ICON_SCIENCE] Wissenschaft und [ICON_PRODUCTION] Produktion. Begeisterte Städte erhalten zusätzliche +15% [ICON_SCIENCE] Wissenschaft und [ICON_PRODUCTION] Produktion. Zufriedene Städte generieren +1 [ICON_GreatScientist] Großer-Wissenschaftler-Punkt pro Campus und +1 [ICON_GreatEngineer] Großer-Ingenieur-Punkt pro Industriebezirk. Begeisterte Städte verdoppeln dies jeweils.</Text>
@@ -99,8 +176,7 @@
 			<Text>Beginnt das Spiel in einem Ozean-Geländefeld. Erhaltet +1 [ICON_Citizen] Bewohner beim Ansieden der ersten Stadt. Der Palast erhält +3 [ICON_HOUSING] Wohnraum and +1 [ICON_AMENITIES] Annehmlichkeit. +2 [ICON_SCIENCE] Wissenschaft and +2 [ICON_CULTURE] Kultur pro Runde, bevor ihr Eure erste Stadt gründet.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Ein ausschließlich Griechenland zur Verfügung stehender Bezirk für Kulturstätten. Ersetzt den Theaterplatz-Bezirk und ist günstiger im Bau.
-				Gewährt 1 [ICON_Envoy] Gesandten bei Fertigstellung eines Amphitheaters.[NEWLINE][NEWLINE]+1 [ICON_Culture] Kulturbonus für jeden angrenzenden Bezirk sowie +1 [ICON_Culture] für jedes angrenzende Stadttzentrum. +2 [ICON_Culture] Kulturbonus für alle angrenzenden Wunder, den Unterhaltungskomplex und Wasserpark. Kann nur auf Hügeln errichtet werden.</Text>
+			<Text>Ein ausschließlich Griechenland zur Verfügung stehender Bezirk für Kulturstätten. Ersetzt den Theaterplatz-Bezirk und ist günstiger im Bau. Gewährt 1 [ICON_Envoy] Gesandten bei Fertigstellung eines Amphitheaters.[NEWLINE][NEWLINE]+1 [ICON_Culture] Kulturbonus für jeden angrenzenden Bezirk sowie +1 [ICON_Culture] für jedes angrenzende Stadttzentrum. +2 [ICON_Culture] Kulturbonus für alle angrenzenden Wunder, den Unterhaltungskomplex und Wasserpark. Kann nur auf Hügeln errichtet werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION1_DESCRIPTION" Language="de_DE">
 			<Text>Ein ausschließlich Griechenland zur Verfügung stehender Bezirk für Kulturstätten. Ersetzt den Theaterplatz-Bezirk und ist günstiger im Bau. Gewährt 1 [ICON_Envoy] bei Fertigstellung eines Amphitheaters.[NEWLINE][NEWLINE]+1 [ICON_Culture] Kulturbonus für jeden angrenzenden Bezirk sowie +1 [ICON_Culture] Kulturbonus für angrenzendes Stadtzentrum. +2 [ICON_Culture] Kulturbonus für alle angrenzenden Wunder. Kann nur auf Hügeln errichtet werden.</Text>
@@ -150,7 +226,7 @@
 			<Text>Einheiten erhalten +5 [ICON_Strength] Kampfstärke bei Verteidigung auf ihrem Heimatkontinent und bei Angriff auf jedem fremden Kontinent. +1 Anziehungskraft für alle Geländefelder einer Stadt mit einem Nationalpark. Erhaltet die Spezialeinheit Rough Rider durch die Technologie 'Militärwissenschaft'.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Marineeinheiten, die in dieser Stadt ausgebildet werden. Ermöglicht die unmittelbare Ausbildung von Flotten und Armadas. ie Ausbildungskosten von Flotten und Armadas sinken um 25 %.  +2 [ICON_GOLD] Gold auf allen Küsten-Geländefeldern für diese Stadt. +1 [ICON_RESOURCE_COAL] Kohle pro Runde.</Text>
+			<Text>+50 % Kampferfahrung für alle Marineeinheiten, die in dieser Stadt ausgebildet werden. Ermöglicht die unmittelbare Ausbildung von Flotten und Armadas. Die Ausbildungskosten von Flotten und Armadas sinken um 25 %.  +2 [ICON_GOLD] Gold auf allen Küsten-Geländefeldern für diese Stadt. +1 [ICON_RESOURCE_COAL] Kohle pro Runde.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="de_DE">
 			<Text>Bei Abschluss gewährt dieses Projekt 25 [ICON_CULTURE] Kultur und 25 [ICON_TOURISM] Tourismus (auf Standardgeschwindigkeit) basierend auf der Zahl überschüssiger Luxusgüter in Besitz Frankreichs</Text>
@@ -171,7 +247,7 @@
 			<Text>Erhält keinen [ICON_Movement] Fortbewegungsmalus für die Fortbewegung auf Hügeln, und verfügt über +4 [ICON_Strength] Kampfstärke auf Hügeln.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="de_DE">
-			<Text>Gebt Handwerker-Ladungen aus, um 20 % der ursprünglichen Bezirkskosten abzuschließen. +50% [ICON_Production] auf Land-Nahkampf-Einheiten.</Text>
+			<Text>Gebt Handwerker-Ladungen aus, um 20 % der ursprünglichen Bezirkskosten abzuschließen. +50% [ICON_Production] Produktion auf Land-Nahkampf-Einheiten.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="de_DE">
 			<Text> Städte innerhalb von 6 Geländefeldern Entfernung zur [ICON_Capital] Hauptstadt, die selbst keine Hauptstadt sind, erhalten + 10% auf alle Erträge. Andere Städte, die keine Hauptstadt sind, erhalten -15% auf alle Erträge. +3 [ICON_Strength] für Einheiten innerhalb von 6 Geländefeldern Entfernung zur [ICON_Capital] Hauptstadt.</Text>
@@ -446,10 +522,10 @@
 			<Text>Ungarische einzigartige Einheit des Industriezeitalters, die die Kavallerie ersetzt. +1 [ICON_Strength] Kampfstärke für jede aktive Allianz.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Stufenbrunnen, die einzigartige Modernisierung Indiens, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_Food] Nahrung, +1 [ICON_Faith] Glauben und +1 [ICON_Housing] Wohnraum. +1 Glauben, wenn angrenzend an einen Heilige-Stätte-Bezirk. +1 Nahrung für jeden angrenzenden Bauernhof. Kann nicht auf Hügeln oder angrenzend an einen weiteren Stufenbrunnen gebaut werden.</Text>
+			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Stufenbrunnen, die einzigartige Modernisierung Indiens, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_Food] Nahrung, +1 [ICON_Faith] Glauben und +1 [ICON_Housing] Wohnraum. +1 [ICON_Faith] Glauben, wenn angrenzend an einen Heilige-Stätte-Bezirk. +1 [ICON_Food] Nahrung für jeden angrenzenden Bauernhof. Kann nicht auf Hügeln oder angrenzend an einen weiteren Stufenbrunnen gebaut werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Unlocks the Builder ability to construct a Stepwell, unique to India.[NEWLINE][NEWLINE]+1 [ICON_Food] Food, +1 [ICON_Faith] Faith, and +1 [ICON_Housing] Housing. +1 [ICON_Faith] Faith if adjacent to a Holy Site district. +1 [ICON_Food] Food for each adjacent Farm. Cannot be built on Hills or adjacent to another Stepwell.</Text>
+			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Stufenbrunnen, die einzigartige Modernisierung Indiens, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_Food] Nahrung, +1 [ICON_Faith] Glauben, and +1 [ICON_Housing] Wohnraum. +1 [ICON_Faith] Glauben, wenn angrenzend an einen Heilige-Stätte-Bezirk. +1 [ICON_Food] Nahrung für jeden angrenzenden Bauernhof. Kann nicht auf Hügeln oder angrenzend an einen weiteren Stufenbrunnen gebaut werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_CULTURAL_BONUS_GOLDEN_AGE" Language="de_DE">
 			<Text>Stift, Pinsel, and Stimme Goldenes Zeitalter:[NEWLINE][ICON_CivicBoosted] Eingebungen gewähren zusätzliche 10% der Ausrichtungskosten. Jede Stadt erhält +2 [ICON_Culture] Kultur andu +1 [ICON_Gold] Gold pro Spezialbezirk.</Text>
@@ -461,7 +537,7 @@
 			<Text>+1 [ICON_Amenities] Amenity, +3 [ICON_Food] Food, and +3 [ICON_Housing] Housing in Cities with [ICON_Governor] Governors[NEWLINE]-2 Loyalty in Cities without [ICON_Governor] Governors.[NEWLINE]Awards +2 [Icon_Governor] Governor Title.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="de_DE">
-			<Text>Ein ausschließlich Korea zur Verfügung stehender Bezirk für wissenschaftliche Bestrebungen. Ersetzt den Campus-Bezirk. +2 [ICON_Sciene] Wissenschaft. Minen geben einen kleinen Nachbarschaftsbonus. Gewährt +1 [ICON_Culture] wenn neben einem Theaterplatz-Bezirk. Kulturschock auf angrenzen Feldern bei Fertigstellung.</Text>
+			<Text>Ein ausschließlich Korea zur Verfügung stehender Bezirk für wissenschaftliche Bestrebungen. Ersetzt den Campus-Bezirk. +2 [ICON_Science] Wissenschaft. Minen geben einen kleinen Nachbarschaftsbonus. Gewährt +1 [ICON_Culture] wenn neben einem Theaterplatz-Bezirk. Kulturschock auf angrenzen Feldern bei Fertigstellung.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_DANCE_OF_THE_AURORA_DESCRIPTION" Language="de_DE">
 			<Text>Heilige Stätten erhalten +1 [ICON_Faith] Glauben von angrenzenden Tundra-Geländerfeldern.</Text>
@@ -530,7 +606,7 @@
 			<Text>Ein Bezirk für religiöse Aktivitäten. Steht nur Russland zur Verfügung. Ersetzt den Heilige-Stätte-Bezirk und ist günstiger im Bau.[NEWLINE][NEWLINE]Sammelt Große Persönlichkeitspunkte der Typen [ICON_GREATWRITER] "Große Schriftsteller", [ICON_GREATArtist] "Großer Künstler" und [ICON_GREATMusician] "Großer Musiker" in Städten mit einem Theaterplatz. Eure Stadtgrenzen erweitern sich für jede in der Stadt verbrauchte Große Persönlichkeit um ein Geländefeld.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PYRAMID_DESCRIPTION" Language="de_DE">
-			<Text>Improvement that unlocks with Masonry and must be built on Desert, Desert Hills, Floodplains, Plains, or Grassland. +1 [ICON_Faith] Faith. Receives additional yields from adjacent districts. +2 [ICON_Food] Food if adjacent to a city center. For all other districts that award adjacency bonuses: +2 of the appropriate yield if that district is adjacent.</Text>
+			<Text>Modernisierung, die durch Steinmetzkunst freigeschaltet wird und auf Wüste, Wüstenhügeln oder Wüsten-Schwemmland gebaut werden muss. +1 [ICON_Faith] Glauben. Erhält zusätzliche Erträge durch angrenzende Bezirke. +2 [ICON_Food] Nahrung, wenn angrenzend an ein Stadtzentrum. Für alle anderen Bezirke, die Nachbarschaftsboni gewähren: +2 für den entsprechenden Ertrag, wenn der Bezirk angrenzt.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="de_DE">
 			<Text>Erhaltet 3 zusätzliche Einflusspunkte pro Runde.[NEWLINE][NEWLINE]Beim Einnehmen eines Barbaren-Außenpostens eine Stammesdorf-Belohnung zusätzlich zum üblichen [ICON_Gold] Gold erhalten. Ihr zahlt nur noch die Hälfte der Kosten, um Stadtstaat-Einheiten auszuheben.</Text>
@@ -560,7 +636,7 @@
 			<Text>+7 [ICON_Strength] Kampfstärke beim Angriff auf Nah- und Fernkampfeinheiten.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="de_DE">
-			<Text>Leveraging City States costs half [ICON_Gold] Gold.[NEWLINE]City State units gain +4 [ICON_Strength] Combat Strength if you are the City State's Suzerain (including Leveraged Units).[NEWLINE]Awards +1 [Icon_Governor] Governor Title. +2 envoys and +2 influence per turn towards envoys.</Text>
+			<Text>Das Ausheben des Militärs von Stadtstaaten kostet halb so viel [ICON_Gold] Gold.[NEWLINE]Stadtstaat-Einheiten erhalten +4 [ICON_Strength] Kampfstärkebonus, sofern Ihr der Suzerän des Stadtstaats seid (inklusive ausgehobene Einheiten).[NEWLINE]Verleiht +1 [Icon_Governor] Gouverneur-Titel. +2 Gesandte und +3 Einflusspunkte pro Runde für Gesandte in Stadtstaaten.</Text>
 		</Replace>
 		<Replace Tag="LOC_TECH_STEEL_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_Production] Produktion durch die Sägewerk-Modernisierung. Schaltet Urbane Verteidigung frei und gewährt all Euren Städten automatisch 300 Befestigungsstärke und die Fernkampffähigkeit. Alle bisherigen Mauer-Modernisierungen werden veraltet und Belagerungs-Unterstützungseinheiten sind nicht mehr effektiv.</Text>
@@ -638,7 +714,7 @@
 			<Text>Naturwunder über drei Geländefelder. Bietet +4 [ICON_Culture] Kultur und +4 [ICON_Production] Produktion.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_WHITEDESERT_DESCRIPTION" Language="de_DE">
-			<Text>Naturwunder über vier Geländefelder. Bietet +2 [ICON_Sciene] Wissenschaft, +2 Kultur [ICON_Culture] und +6 [ICON_Gold] Gold.</Text>
+			<Text>Naturwunder über vier Geländefelder. Bietet +2 [ICON_Science] Wissenschaft, +2 Kultur [ICON_Culture] und +6 [ICON_Gold] Gold.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CHOCOLATEHILLS_DESCRIPTION" Language="de_DE">
 			<Text>Naturwunder über vier Geländefelder. Es erscheint als Sumpf und bietet +3 [ICON_Food] Nahrung, +3 [ICON_Production] Produktion und +1 [ICON_Science] Wissenschaft.</Text>
@@ -785,14 +861,14 @@
 		</Replace>
 		<!-- Khmer -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="de_DE">
-			<Text>+2 [ICON_Faith] Glaube durch internationale Handelswege. Fremde Handelswege erhalten +2 [ICON_Faith] Glauben. +3 [ICON_Faith] Glauben and +1 [ICON_AMENITIES] Annehmlichkeiten durch Unterhaltungfür jede Stadt mit einem Aquädukt. Bauernhöfe bringen provide +2 [ICON_Food] Nahrung wenn neben einem Aquädukt.</Text>
+			<Text>+2 [ICON_Faith] Glaube durch internationale Handelswege. Fremde Handelswege erhalten +2 [ICON_Faith] Glauben. +3 [ICON_Faith] Glauben and +1 [ICON_AMENITIES] Annehmlichkeiten durch Unterhaltung für jede Stadt mit einem Aquädukt. Bauernhöfe bringen provide +2 [ICON_Food] Nahrung wenn neben einem Aquädukt.</Text>
 		</Replace>
 		<!-- Korea -->
 		<Replace Tag="LOC_DISTRICT_BASE_DISTRICT_SCIENCE" Language="de_DE">
-			<Text>+{1_num} [ICON_Sciene] Wissenschaft Nachbarschaftsbonus.</Text>
+			<Text>+{1_num} [ICON_Science] Wissenschaft Nachbarschaftsbonus.</Text>
 		</Replace>
 		<Row Tag="LOC_DISTRICT_MINE_SCIENCE" Language="de_DE">
-			<Text>+{1_num} [ICON_Sciene] Wissenschaft Nachbarschaftsbonus von {1_Num : plural 1?der; other?den;} angrenzenden {1_Num : plural 1?Mine; other?Minen;}.</Text>
+			<Text>+{1_num} [ICON_Science] Wissenschaft Nachbarschaftsbonus von {1_Num : plural 1?der; other?den;} angrenzenden {1_Num : plural 1?Mine; other?Minen;}.</Text>
 		</Row>
 		<!-- Mapuche -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="de_DE">
@@ -815,7 +891,7 @@
 		<!-- Persia -->
 		<!-- Poland -->
 		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="de_DE">
-			<Text>Die durch Polen gegründete Religion wird die Mehrheitsreligion in einer angrenzden Stadt, wenn diese ein Geländefeld durch einen polnischen Kulturschock verliert.[NEWLINE][NEWLINE]Holy Sites gain standard Faith adjacency bonus from adjacent districts.[NEWLINE][NEWLINE]Alle Relikte erzeugen zusätzlich Glauben (+2), Kultur (+2) und Gold (+4). Erhält ein Relikt bei Gründung und Abschließen einer Religion.</Text>
+			<Text>Die durch Polen gegründete Religion wird die Mehrheitsreligion in einer angrenzden Stadt, wenn diese ein Geländefeld durch einen polnischen Kulturschock verliert.[NEWLINE][NEWLINE]Heilige Stätten erhalten den normalen Glauben-Nachbarschaftsbonus von angrenzenden Bezirken[NEWLINE][NEWLINE]Alle Relikte erzeugen zusätzlich Glauben (+2), Kultur (+2) und Gold (+4). Erhält ein Relikt bei Gründung und Abschließen einer Religion.</Text>
 		</Replace>
 		<!-- Russia -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="de_DE">
@@ -887,7 +963,7 @@
 			<Text>Naturwunder über vier Geländefelder. Es erscheint als Sumpf und bietet +2 [ICON_Food] Nahrung, +2 [ICON_Culture] Kultur und +2 [ICON_Science] Wissenschaft.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="de_DE">
-			<Text>Naturwunder über drei Geländefelder. Biete +2 [ICON_Food] Nahrung, +2 [ICON_Production] Produktion und +2 [ICON_Sciene] Wissenschaft.</Text>
+			<Text>Naturwunder über drei Geländefelder. Biete +2 [ICON_Food] Nahrung, +2 [ICON_Production] Produktion und +2 [ICON_Science] Wissenschaft.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CLIFFS_DOVER_DESCRIPTION" Language="de_DE">
 			<Text>Naturwunder über zwei Geländefelder. Es erscheint mit an Wasser angrenzenden Klippen und bietet +2 [ICON_Food] Nahrung, +3 [ICON_Culture] Kultur und +2 [ICON_Gold] Gold.</Text>
