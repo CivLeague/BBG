@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="pl_PL">
-			<Text>Otrzymujesz +40 do lojalności we wszystkich miastach, zapewniając pełną lojalność w całym swoim imperium.</Text>
-		</Replace>
+
 
 		<!-- ================ C I T Y   P R O J E C T S ================ -->
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="pl_PL">
@@ -17,6 +15,12 @@
 			<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="pl_PL">
 				<Text>Człowiek wylądował na księżycu! Otrzymujesz jednorazową premię do [ICON_CULTURE] kultury równą pięciokrotności [ICON_SCIENCE] nauki generowanej na turę. To drugi krok do zwycięstwa naukowego.</Text>
 			</Replace>
+
+
+		<!-- ================ C I T Y - S T A T E S ================ -->
+		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="pl_PL">
+			<Text>Twoje miasta otrzymują +40 do lojalności, tym samym zapewniając pełną lojalność w całym Twoim imperium.</Text>
+		</Replace>
 
 
 		<!-- ================ C I T Y S T A T E ================ -->
@@ -140,8 +144,6 @@
 				<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="pl_PL">
 					<Text>Odblokowuje zdolność budowniczych pozwalającą wznieść Wielki Mur dostępny tylko w Chinach.[NEWLINE][NEWLINE]+1 do [ICON_PRODUCTION] produkcji za segment. Zwiększa [ICON_Strength] obronę. Zapewnia premię do [ICON_Gold] złota, jeśli sąsiaduje z innymi segmentami. Premia do [ICON_Culture] kultury i [ICON_Tourism] turystyki za sąsiadujące segmenty rośnie w miarę przechodzenia do kolejnych elementów drzewa technologii. Mur musi być budowany w linii wzdłuż granicy imperium. Katastrofy naturalne mogą go jedynie splądrować.</Text>
 				</Replace>
-
-			<!-- ================ Cree ================ -->
 
 			<!-- ================ Egypt ================ -->
 			<Replace Tag="LOC_IMPROVEMENT_MISSION_EXPANSION2_DESCRIPTION" Language="pl_PL">
@@ -589,6 +591,9 @@
 			<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="pl_PL">
 				<Text>+75% doświadczenia bojowego dla jednostek powietrznych wyszkolonych w tym mieście. +2 miejsce na jednostki powietrzne w dzielnicy z aerodromem. Po odblokowaniu idei błyskawicznej relokacji umożliwia transportowanie drogą powietrzną jednostek lądowych pomiędzy dzielnicami z aerodromem, w których znajdują się lotniska. +2 do [ICON_RESOURCE_ALUMINUM] aluminium jeżeli zostało odkryte.</Text>
 			</Replace>
+			<Replace Tag="LOC_BUILDING_HANGAR_DESCRIPTION" Language="pl_PL">
+				<Text>+50% doświadczenia bojowego dla jednostek powietrznych wyszkolonych w tym mieście. +1 miejsca na jednostki powietrzne w dzielnicy z aerodromem.</Text>
+			</Replace>
 			<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="pl_PL">
 				<Text>+50% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości).[NEWLINE]Umożliwia bezpośrednie szkolenie korpusów i armii. Koszt szkolenia korpusów i armii zmniejszony o 25%. +2 [ICON_RESOURCE_OIL] ropy na turę jeżeli została odkryta.</Text>
 			</Replace>
@@ -599,6 +604,32 @@
 			</Replace>
 			<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="pl_PL">
 				<Text>+50% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości).[NEWLINE]+1 [ICON_RESOURCE_NITER] saletry na turę (jeżeli odkryta).</Text>
+			</Replace>
+
+			<!-- ================ Encampment ================ -->
+			<Replace Tag="LOC_BUILDING_BARRACKS_DESCRIPTION" Language="pl_PL">
+				<Text>+50% doświadczenia bojowego dla wszystkich szkolonych w tym mieście jednostek walczących w zwarciu i dystansowych.[NEWLINE][NEWLINE]Nie można zbudować, jeśli dzielnica wojskowa zawiera już stajnię.</Text>
+			</Replace>
+			<Replace Tag="LOC_BUILDING_BARRACKS_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>+50% doświadczenia bojowego dla wszystkich szkolonych w tym mieście jednostek walczących w zwarciu i dystansowych.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości)[NEWLINE]Nie można zbudować, jeśli dzielnica wojskowa zawiera już stajnię.</Text>
+			</Replace>
+			<Replace Tag="LOC_BUILDING_BASILIKOI_PAIDES_DESCRIPTION" Language="pl_PL">
+				<Text>Unikalna budowla Macedonii. +50% doświadczenia bojowego dla wszystkich szkolonych w tym mieście jednostek walczących w zwarciu i dystansowych oraz hetajrów. Daje premię do [ICON_SCIENCE] nauki równą 25% kosztu jednostki, gdy w tym mieście tworzona jest jednostka niecywilna.[NEWLINE][NEWLINE]Nie można zbudować, jeśli dzielnica wojskowa zawiera już stajnię.</Text>
+			</Replace>
+			<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_DESCRIPTION" Language="pl_PL">
+				<Text>+50% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście. Umożliwia bezpośrednie szkolenie korpusów i armii. Koszt szkolenia kosrpusów i armii zmniejszony o 25%.</Text>
+			</Replace>
+			<Replace Tag="LOC_BUILDING_ORDU_DESCRIPTION" Language="pl_PL">
+				<Text>Unikalna budowla Mongolii. Zapewnia umiejętność dającą +1 do [ICON_MOVEMENT] ruchu ciężkiej i lekkiej kawalerii szkolonej w tym mieście. +50% doświadczenia bojowego dla wszystkich jednostek kawaleryjskich szkolonych w tym mieście. Nie można zbudować w dzielnicy wojskowej, w której są już koszary.</Text>
+			</Replace>
+			<Replace Tag="LOC_BUILDING_ORDU_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>Unikalna budowla Mongolii. Zapewnia umiejętność dającą +1 do [ICON_MOVEMENT] ruchu ciężkiej i lekkiej kawalerii szkolonej w tym mieście. +50% doświadczenia bojowego dla wszystkich jednostek kawaleryjskich szkolonych w tym mieście.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości).[NEWLINE][NEWLINE]Nie można zbudować w dzielnicy wojskowej, w której są już koszary.</Text>
+			</Replace>
+			<Replace Tag="LOC_BUILDING_STABLE_DESCRIPTION" Language="pl_PL">
+				<Text>+50% doświadczenia bojowego dla wszystkich jednostek kawaleryjskich szkolonych w tym mieście. Nie można zbudować w dzielnicy wojskowej, w której są już koszary.</Text>
+			</Replace>
+			<Replace Tag="LOC_BUILDING_STABLE_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>+50% doświadczenia bojowego dla wszystkich jednostek kawaleryjskich szkolonych w tym mieście.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości)[NEWLINE]Nie można zbudować w dzielnicy wojskowej, w której są już koszary.</Text>
 			</Replace>
 
 			<!-- ================ Government ================ -->
@@ -616,8 +647,20 @@
 			</Replace>
 
 			<!-- ================ Harbour ================ -->
+			<Replace Tag="LOC_BUILDING_LIGHTHOUSE_DESCRIPTION" Language="pl_PL">
+				<Text>+50% doświadczenia bojowego dla wszystkich jednostek morskich wyszkolonych w tym mieście. +1 [ICON_FOOD] żywności ze wszystkich pól wybrzeża należących do tego miasta.</Text>
+			</Replace>
+			<Replace Tag="LOC_BUILDING_LIGHTHOUSE_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>+50% doświadczenia bojowego dla wszystkich jednostek morskich wyszkolonych w tym mieście. +1 [ICON_FOOD] żywności ze wszystkich pól wybrzeża należących do tego miasta. +2 do [ICON_HOUSING] obszarów mieszkalnych jeżeli miasto sąsiaduje z wybrzeżem. +1 do [ICON_TradeRoute] do maksymalnej liczby szlaków handlowych, jeśli w mieście nie ma jeszcze targowiska.</Text>
+			</Replace>
 			<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="pl_PL">
 				<Text>+50% doświadczenia bojowego dla wszystkich jednostek morskich wyszkolonych w tym mieście. Umożliwia bezpośrednie szkolenie flot i armad. Koszt szkolenia flot i armad zmniejszony o 25%. +2 [ICON_GOLD] złota ze wszystkich pól wybrzeża należących do tego miasta. +1 [ICON_RESOURCE_COAL] węgla na turę.</Text>
+			</Replace>
+			<Replace Tag="LOC_BUILDING_SHIPYARD_DESCRIPTION" Language="pl_PL">
+				<Text>+50% doświadczenia z walki dla wszystkich jednostek morskich wyszkolonych w tym mieście. Dodatkowe punkty [ICON_Production] produkcji w liczbie równej premii za sąsiedztwo dzielnicy portowej.</Text>
+			</Replace>
+			<Replace Tag="LOC_BUILDING_SHIPYARD_EXPANSION2_DESCRIPTION" Language="pl_PL">
+				<Text>+50% doświadczenia z walki dla wszystkich jednostek morskich wyszkolonych w tym mieście. Dodatkowe punkty [ICON_Production] produkcji w liczbie równej premii za sąsiedztwo dzielnicy portowej. +1 do [ICON_PRODUCTION] produkcji na wszystkich nieulepszonych polach wybrzeża i jeziora należących do tego miasta.</Text>
 			</Replace>
 
 
@@ -749,6 +792,11 @@
 
 
 		<!-- ================ P O L I C I E S ================ -->
+
+			<!-- ================ Discipline ================ -->
+			<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="pl_PL">
+				<Text>+10 do [ICON_Strength] siły bojowej jednostki podczas walki z barbarzyńcami.</Text>
+			</Replace>
 
 			<!-- ================ Economic ================ -->
 
@@ -950,6 +998,41 @@
 		<Replace Tag="LOC_UNIT_ANTIAIR_GUN_DESCRIPTION" Language="pl_PL">
 			<Text>Przeciwlotnicza jednostka wsparcia epoki nowożytnej. Zapewnia osłonę przed atakami z powietrza w odległości do 1 pola od niej.</Text>
 		</Replace>
+
+			<!-- ================ Abilities ================ -->
+			<Replace Tag="LOC_ABILITY_AIRPORT_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="pl_PL">
+				<Text>+75% zdobywanego doświadczenia dzięki lotnisku.</Text>
+			</Replace>
+			<Replace Tag="LOC_ABILITY_ARMORY_TRAINED_UNIT_XP_DESCRIPTION" Language="pl_PL">
+				<Text>+50% zdobywanego doświadczenia dzięki zbrojowni.</Text>
+			</Replace>
+			<Replace Tag="LOC_ABILITY_BARRACKS_TRAINED_UNIT_XP_DESCRIPTION" Language="pl_PL">
+				<Text>+50% zdobywanego doświadczenia dzięki koszarom.</Text>
+			</Replace>
+			<Replace Tag="LOC_ABILITY_BASILIKOI_TRAINED_UNIT_XP_DESCRIPTION" Language="pl_PL">
+				<Text>+50% doświadczenia w walce dzięki Basilikoi Paides.</Text>
+			</Replace>
+			<Replace Tag="LOC_ABILITY_HANGAR_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="pl_PL">
+				<Text>+50% zdobywanego doświadczenia dzięki hangarowi.</Text>
+			</Replace>
+			<Replace Tag="LOC_ABILITY_LIGHTHOUSE_TRAINED_UNIT_XP_DESCRIPTION" Language="pl_PL">
+				<Text>+50% zdobywanego doświadczenia dzięki latarni morskiej.</Text>
+			</Replace>
+			<Replace Tag="LOC_ABILITY_MILITARY_ACADEMY_TRAINED_UNIT_XP_DESCRIPTION" Language="pl_PL">
+				<Text>+50% zdobywanego doświadczenia dzięki akademii wojskowej.</Text>
+			</Replace>
+			<Replace Tag="LOC_ABILITY_ORDU_TRAINED_UNIT_XP_DESCRIPTION" Language="pl_PL">
+				<Text>+50% zdobywanego doświadczenia dzięki ordu.</Text>
+			</Replace>
+			<Replace Tag="LOC_ABILITY_SEAPORT_TRAINED_UNIT_XP_DESCRIPTION" Language="pl_PL">
+				<Text>+50% zdobywanego doświadczenia dzięki portowi morskiemu.</Text>
+			</Replace>
+			<Replace Tag="LOC_ABILITY_SHIPYARD_TRAINED_UNIT_XP_DESCRIPTION" Language="pl_PL">
+				<Text>+50% zdobywanego doświadczenia dzięki stoczni.</Text>
+			</Replace>
+			<Replace Tag="LOC_ABILITY_STABLE_TRAINED_UNIT_XP_DESCRIPTION" Language="pl_PL">
+				<Text>+50% zdobywanego doświadczenia dzięki stajni.</Text>
+			</Replace>
 
 
 		<!-- ================ W O N D E R S ================ -->

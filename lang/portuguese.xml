@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_BARRACKS_DESCRIPTION" Language="pt_BR">
+			<Text>+50% de experiência de combate pra todas as unidades corpo a corpo e à distância treinadas nessa cidade.[NEWLINE][NEWLINE]Não pode ser construída em um Acampamento que já possua um Estábulo.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_STABLE_DESCRIPTION" Language="pt_BR">
+			<Text>+50% de experiência de combate pra todas as unidades de cavalaria treinadas nessa cidade. Não pode ser construído em um Acampamento que já possua uma Caserna.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_DESCRIPTION" Language="pt_BR">
+			<Text>+50% de experiência de combate pra todas as unidades de combate terrestres treinadas nessa cidade. Permite o treinamento direto de Corporações e Exércitos. O custo de treinamento de Corporações e Exércitos é reduzido em 25%.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_BARRACKS_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>+50% de experiência de combate pra todas as unidades corpo a corpo e à distância treinadas nessa cidade.[NEWLINE]Estoques máximos de recursos estratégicos aumentado em +10 (na velocidade padrão).[NEWLINE][NEWLINE]Não pode ser construída em um Acampamento que já possua um Estábulo.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_STABLE_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>+50% de experiência de combate pra todas as unidades de cavalaria treinadas nessa cidade.[NEWLINE]Strategic Estoques máximos de recursos estratégicos aumentado em +10 (na velocidade padrão).[NEWLINE][NEWLINE]Não pode ser construído em um Acampamento que já possua uma Caserna.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HANGAR_DESCRIPTION" Language="pt_BR">
+			<Text>+50% de experiência de combate pra todas as unidades aéreas treinadas nessa cidade. +1 espaço de unidade aérea no Aeródromo.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_LIGHTHOUSE_DESCRIPTION" Language="pt_BR">
+			<Text>+50% de experiência de combate pra todas as unidades navais treinadas nessa cidade. +1 de [ICON_FOOD] Comida em todos os paineis costeiros dessa cidade.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SHIPYARD_DESCRIPTION" Language="pt_BR">
+			<Text>+50% de experiência de combate pra todas as unidades navais treinadas nessa cidade. [ICON_Production] Produção bônus igual à adjacência do Distrito de Porto.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_LIGHTHOUSE_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>+50% de experiência de combate pra todas as unidades navais treinadas nessa cidade. +1 de [ICON_FOOD] Comida em todos os paineis costeiros dessa cidade. +2 de [ICON_HOUSING] Habitação se esta cidade estiver na costa. +1 de capacidade de [ICON_TradeRoute] Rotas Comerciais, se esta cidade ainda não possuir um Mercado.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SHIPYARD_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>+50% de experiência de combate pra todas as unidades navais treinadas nessa cidade. [ICON_Production] Produção bônus igual à adjacência do Distrito de Porto. +1 de [ICON_PRODUCTION] Produção em todos os paineis não melhorados de Costa e Lago nessa cidade. </Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_BASILIKOI_PAIDES_DESCRIPTION" Language="pt_BR">
+			<Text>Uma construção única da Macedônia. +50% de experiência de combate pra todas as unidades corpo a corpo, à distância, e Heteros treinados nessa cidade. Ganhe [ICON_SCIENCE] Ciência igual a 25% do custo da unidade quando uma unidade não civil for criada nessa cidade.[NEWLINE][NEWLINE]Não pode ser construída em um Acampamento que já possua um Estábulo.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_BASILIKOI_PAIDES_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>Uma construção única da Macedônia. +50% de experiência de combate pra todas as unidades corpo a corpo, à distância, e Heteros treinados nessa cidade. Ganhe [ICON_SCIENCE] Ciência igual a 25% do custo da unidade quando uma unidade não civil for criada nessa cidade.[NEWLINE]Estoques máximos de recursos estratégicos aumentado em +10 (na velocidade padrão).[NEWLINE][NEWLINE]Não pode ser construída em um Acampamento que já possua um Estábulo.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ORDU_DESCRIPTION" Language="pt_BR">
+			<Text>Uma construção única da Mongolia. Concede uma habilidade que dá +1 de [ICON_MOVEMENT] Movimento para Cavalarias Leve e Pesada treinadas nessa cidade. +50% de experiência de combate pra todas as unidades de cavalaria treinadas nessa cidade. Não pode ser construído em um Acampamento que já possua uma Caserna.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ORDU_EXPANSION2_DESCRIPTION" Language="pt_BR">
+			<Text>Uma construção única da Mongolia. Concede uma habilidade que dá +1 de [ICON_MOVEMENT] Movimento para Cavalarias Leve e Pesada treinadas nessa cidade. +50% de experiência de combate pra todas as unidades de cavalaria treinadas nessa cidade.[NEWLINE]Strategic Estoques máximos de recursos estratégicos aumentado em +10 (na velocidade padrão).[NEWLINE][NEWLINE]Não pode ser construído em um Acampamento que já possua uma Caserna.</Text>
+		</Replace>		
+		
+		<Replace Tag="LOC_ABILITY_BARRACKS_TRAINED_UNIT_XP_DESCRIPTION" Language="pt_BR">
+			<Text>+50% de ganho de experiência de Quartel</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_STABLE_TRAINED_UNIT_XP_DESCRIPTION" Language="pt_BR">
+			<Text>50% de ganho de experiência de Estábulo</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ARMORY_TRAINED_UNIT_XP_DESCRIPTION" Language="pt_BR">
+			<Text>50% de ganho de experiência de Arsenal</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_MILITARY_ACADEMY_TRAINED_UNIT_XP_DESCRIPTION" Language="pt_BR">
+			<Text>50% de ganho de experiência de Academia Militar</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_LIGHTHOUSE_TRAINED_UNIT_XP_DESCRIPTION" Language="pt_BR">
+			<Text>50% de ganho de experiência de Farol</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_SHIPYARD_TRAINED_UNIT_XP_DESCRIPTION" Language="pt_BR">
+			<Text>50% de ganho de experiência de Estaleiro</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_SEAPORT_TRAINED_UNIT_XP_DESCRIPTION" Language="pt_BR">
+			<Text>50% de ganho de experiência de Porto Marítimo</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_HANGAR_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="pt_BR">
+			<Text>50% de ganho de experiência de Hangar</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_AIRPORT_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="pt_BR">
+			<Text>75% de ganho de experiência de Aeroporto</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BASILIKOI_TRAINED_UNIT_XP_DESCRIPTION" Language="pt_BR">
+			<Text>50% de ganho de experiência de Basilikoi Paides.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ORDU_TRAINED_UNIT_XP_DESCRIPTION" Language="pt_BR">
+			<Text>50% de ganho de experiência de Ordu</Text>
+		</Replace>
 		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="pt_BR">
 			<Text>Unidades recebem +10 de [ICON_Strength] Força de Combate quando lutando contra Bárbaros.</Text>
 		</Replace>
