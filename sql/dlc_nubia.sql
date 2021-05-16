@@ -37,8 +37,6 @@ UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_TheaterAdjacen
 --==============================================================
 DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_NUBIA' AND TerrainType='TERRAIN_DESERT_HILLS';
 DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_NUBIA' AND TerrainType='TERRAIN_DESERT';
---UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_NUBIA' AND TerrainType='TERRAIN_DESERT_HILLS';
---UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_NUBIA' AND TerrainType='TERRAIN_DESERT';
 INSERT OR IGNORE INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
 	VALUES
 	('CIVILIZATION_NUBIA' , 'TERRAIN_PLAINS'  , 3),

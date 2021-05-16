@@ -522,8 +522,7 @@ INSERT OR IGNORE INTO DistrictModifiers ( DistrictType , ModifierId )
 -- Scythia no longer gets an extra light cavalry unit when building/buying one
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_EXTRASAKAHORSEARCHER' and NAME='Amount';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_EXTRALIGHTCAVALRY' and NAME='Amount';
--- Scythian Horse Archer gets a little more offense and defense, less maintenance, and can upgrade to Crossbowman before Field Cannon now
-UPDATE UnitUpgrades SET UpgradeUnit='UNIT_CROSSBOWMAN' WHERE Unit='UNIT_SCYTHIAN_HORSE_ARCHER';
+-- Scythian Horse Archer get 1 extra range
 UPDATE Units SET Range=2, Cost=70 WHERE UnitType='UNIT_SCYTHIAN_HORSE_ARCHER';
 -- Adjacent Pastures now give +1 production in addition to faith
 INSERT OR IGNORE INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
@@ -1144,6 +1143,10 @@ UPDATE GlobalParameters SET Value=150 WHERE Name='RELIGION_SPREAD_COMBAT_VICTORY
 UPDATE GlobalParameters SET Value=0 WHERE Name='RELIGION_SPREAD_RANGE_UNIT_CAPTURE';
 
 -- give monks wall breaker ability
+INSERT OR IGNORE INTO Types (Type, Kind) VALUES
+	('WARRIOR_MONK_WALL_BREAKER_BBG', 'KIND_ABILITY');
+INSERT OR IGNORE INTO TypeTags (Type, Tag) VALUES
+	('WARRIOR_MONK_WALL_BREAKER_BBG', 'CLASS_WARRIOR_MONK');
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType) VALUES
 	('ENABLE_WALL_ATTACK_WHOLE_GAME_MONK_BBG', 'MODIFIER_PLAYER_UNITS_ADJUST_ENABLE_WALL_ATTACK_WHOLE_GAME_PROMOTION_CLASS');
 INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
@@ -1191,8 +1194,6 @@ INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , Requirement
     VALUES ('CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE' , 'REQUIRES_CITY_FOLLOWS_RELIGION');
 INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('CITY_FOLLOWS_RELIGION_HAS_HOLY_SITE' , 'REQUIRES_CITY_HAS_HOLY_SITE');
--- Warrior Monks +5 Combat Strength
-UPDATE Units SET Combat=40 WHERE UnitType='UNIT_WARRIOR_MONK';
 -- Work Ethic now provides production equal to base yield for Shrine and Temple
 DELETE From BeliefModifiers WHERE ModifierId='WORK_ETHIC_FOLLOWER_PRODUCTION';
 INSERT OR IGNORE INTO Modifiers 
@@ -1224,16 +1225,6 @@ INSERT OR IGNORE INTO Building_YieldChanges
 	(BuildingType          , YieldType       , YieldChange)
 	VALUES 
 	('BUILDING_DAR_E_MEHR' , 'YIELD_CULTURE' , '2');
--- All worship building production costs reduced	
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_CATHEDRAL'    ;
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_GURDWARA'     ;
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_MEETING_HOUSE';
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_MOSQUE'       ;
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_PAGODA'       ;
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_SYNAGOGUE'    ;
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_WAT'          ;
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_STUPA'        ;
-UPDATE Buildings SET Cost='120' WHERE BuildingType='BUILDING_DAR_E_MEHR'   ;
 
 
 
@@ -1700,17 +1691,10 @@ VALUES ('BUILDING_VENETIAN_ARSENAL', 'RENAISSANCE_NAVAL_CARRIER_PRODUCTION');
 --==============================================================
 --******			W O N D E R S  (NATURAL)			  ******
 --==============================================================
--- great barrier reef gives +2 science adj
-INSERT OR IGNORE INTO District_Adjacencies VALUES
-	('DISTRICT_CAMPUS', 'BarrierReef_Science');
-INSERT OR IGNORE INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentFeature) VALUES
-	('BarrierReef_Science', 'LOC_DISTRICT_REEF_SCIENCE', 'YIELD_SCIENCE', 2, 1, 'FEATURE_BARRIER_REEF');
 -- Several lack-luster wonders improved
 UPDATE Features SET Settlement=1 WHERE FeatureType='FEATURE_CLIFFS_DOVER';
 INSERT OR IGNORE INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_PANTANAL', 'YIELD_SCIENCE', 2);
-INSERT OR IGNORE INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
-	VALUES ('FEATURE_CLIFFS_DOVER', 'YIELD_FOOD', 2);
 INSERT OR IGNORE INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_DEAD_SEA', 'YIELD_FOOD', 2);
 INSERT OR IGNORE INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)

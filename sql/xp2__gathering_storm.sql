@@ -12,11 +12,6 @@ INSERT OR IGNORE INTO Units_XP2 (UnitType , ResourceCost)
 UPDATE Units SET StrategicResource='RESOURCE_HORSES' WHERE UnitType='UNIT_AMERICAN_ROUGH_RIDER';
 
 
---==================
--- Arabia
---==================
-UPDATE UnitUpgrades SET UpgradeUnit='UNIT_CUIRASSIER' WHERE Unit='UNIT_ARABIAN_MAMLUK';
-
 
 --==================
 -- Canada
@@ -51,11 +46,13 @@ UPDATE RequirementArguments SET Value='4' WHERE RequirementId='UNIT_PARK_REQUIRE
 UPDATE RequirementArguments SET Value='4' WHERE RequirementId='UNIT_OWNER_PARK_REQUIREMENT' AND Name='MaxDistance';
 
 
+
 --==================
 -- DIDO
 --==================
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='COTHON_NAVAL_UNIT_PRODUCTION' AND Name='Amount';
 UPDATE ModifierArguments SET Value='25' WHERE ModifierId='COTHON_SETTLER_PRODUCTION' AND Name='Amount';
+
 
 
 --==========
@@ -91,10 +88,12 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 	('THEATER_BUILDING_PRODUCTION_BONUS_CPLMOD' , 'Amount'       , '100'                     );
 
 
+
 --==========
 -- FRANCE
 --==========
 UPDATE Units_XP2 SET ResourceCost=10 WHERE UnitType='UNIT_FRENCH_GARDE_IMPERIALE';
+
 
 
 --==========
@@ -104,6 +103,7 @@ UPDATE Building_YieldChanges SET YieldChange=3 WHERE BuildingType='BUILDING_TSIK
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='TSIKHE_FAITH_GOLDEN_AGE' AND Name='Amount';
 
 
+
 --==================
 -- Hungary
 --==================
@@ -111,12 +111,63 @@ UPDATE ModifierArguments SET Value='3' WHERE ModifierId='TSIKHE_FAITH_GOLDEN_AGE
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='LEVY_MILITARY_TWO_FREE_ENVOYS';
 -- no combat bonus for levied units
 DELETE FROM ModifierArguments WHERE ModifierId='RAVEN_LEVY_COMBAT' AND Name='Amount' AND Value='5';
--- Huszars only +2 combat strength from each alliance instead of 3
-UPDATE ModifierArguments SET Value='1' WHERE ModifierId='HUSZAR_ALLIES_COMBAT_BONUS';
 -- Black Army only +2 combat strength from adjacent levied units
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='BLACK_ARMY_ADJACENT_LEVY';
 -- Only 1 extra movement for levied units
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='RAVEN_LEVY_MOVEMENT';
+-- Huszar +2 by suzed city-states
+INSERT INTO Requirements(RequirementId, RequirementType)
+    SELECT 'BBG_PLAYER_IS_SUZERAIN_OF_' || LeaderType, 'REQUIREMENT_PLAYER_IS_SUZERAIN_OF_X'
+    FROM Leaders
+    WHERE InheritFrom IN
+        ('LEADER_MINOR_CIV_CULTURAL', 'LEADER_MINOR_CIV_INDUSTRIAL', 'LEADER_MINOR_CIV_MILITARISTIC',
+        'LEADER_MINOR_CIV_RELIGIOUS', 'LEADER_MINOR_CIV_SCIENTIFIC', 'LEADER_MINOR_CIV_TRADE');
+
+INSERT INTO RequirementArguments(RequirementId, Name, Type, Value)
+    SELECT 'BBG_PLAYER_IS_SUZERAIN_OF_' || LeaderType, 'LeaderType', 'ARGTYPE_IDENTITY', LeaderType
+    FROM Leaders
+    WHERE InheritFrom IN
+        ('LEADER_MINOR_CIV_CULTURAL', 'LEADER_MINOR_CIV_INDUSTRIAL', 'LEADER_MINOR_CIV_MILITARISTIC',
+        'LEADER_MINOR_CIV_RELIGIOUS', 'LEADER_MINOR_CIV_SCIENTIFIC', 'LEADER_MINOR_CIV_TRADE');
+
+INSERT INTO RequirementSets(RequirementSetId, RequirementSetType)
+    SELECT 'BBG_PLAYER_IS_SUZERAIN_OF_' || LeaderType || '_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL'
+    FROM Leaders
+    WHERE InheritFrom IN
+        ('LEADER_MINOR_CIV_CULTURAL', 'LEADER_MINOR_CIV_INDUSTRIAL', 'LEADER_MINOR_CIV_MILITARISTIC',
+        'LEADER_MINOR_CIV_RELIGIOUS', 'LEADER_MINOR_CIV_SCIENTIFIC', 'LEADER_MINOR_CIV_TRADE');
+
+INSERT INTO RequirementSetRequirements(RequirementSetId, RequirementId)
+    SELECT 'BBG_PLAYER_IS_SUZERAIN_OF_' || LeaderType || '_REQUIREMENTS', 'BBG_PLAYER_IS_SUZERAIN_OF_' || LeaderType
+    FROM Leaders
+    WHERE InheritFrom IN
+        ('LEADER_MINOR_CIV_CULTURAL', 'LEADER_MINOR_CIV_INDUSTRIAL', 'LEADER_MINOR_CIV_MILITARISTIC',
+        'LEADER_MINOR_CIV_RELIGIOUS', 'LEADER_MINOR_CIV_SCIENTIFIC', 'LEADER_MINOR_CIV_TRADE');
+
+
+INSERT INTO Modifiers(ModifierId, ModifierType, SubjectRequirementSetId)
+    SELECT 'BBG_MODIFIER_HUSZAR_SUZ_' || LeaderType, 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'BBG_PLAYER_IS_SUZERAIN_OF_' || LeaderType || '_REQUIREMENTS'
+    FROM Leaders
+    WHERE InheritFrom IN
+        ('LEADER_MINOR_CIV_CULTURAL', 'LEADER_MINOR_CIV_INDUSTRIAL', 'LEADER_MINOR_CIV_MILITARISTIC',
+        'LEADER_MINOR_CIV_RELIGIOUS', 'LEADER_MINOR_CIV_SCIENTIFIC', 'LEADER_MINOR_CIV_TRADE');
+
+INSERT INTO ModifierArguments(ModifierId, Name, Value)
+    SELECT 'BBG_MODIFIER_HUSZAR_SUZ_' || LeaderType, 'Amount', '2'
+    FROM Leaders
+    WHERE InheritFrom IN
+        ('LEADER_MINOR_CIV_CULTURAL', 'LEADER_MINOR_CIV_INDUSTRIAL', 'LEADER_MINOR_CIV_MILITARISTIC',
+        'LEADER_MINOR_CIV_RELIGIOUS', 'LEADER_MINOR_CIV_SCIENTIFIC', 'LEADER_MINOR_CIV_TRADE');
+
+
+INSERT INTO UnitAbilityModifiers(UnitAbilityType, ModifierId)
+    SELECT 'ABILITY_HUSZAR', 'BBG_MODIFIER_HUSZAR_SUZ_' || LeaderType
+    FROM Leaders
+    WHERE InheritFrom IN
+        ('LEADER_MINOR_CIV_CULTURAL', 'LEADER_MINOR_CIV_INDUSTRIAL', 'LEADER_MINOR_CIV_MILITARISTIC',
+        'LEADER_MINOR_CIV_RELIGIOUS', 'LEADER_MINOR_CIV_SCIENTIFIC', 'LEADER_MINOR_CIV_TRADE');
+
+DELETE FROM UnitAbilityModifiers WHERE ModifierId='HUSZAR_ALLIES_COMBAT_BONUS';
 
 
 
@@ -125,13 +176,6 @@ UPDATE ModifierArguments SET Value='1' WHERE ModifierId='RAVEN_LEVY_MOVEMENT';
 --==========
 UPDATE Units SET RangedCombat=30 WHERE UnitType='UNIT_INCA_WARAKAQ';
 
-
-
---==========
--- India
---==========
--- Varu upgrades to 
-UPDATE UnitUpgrades SET UpgradeUnit='UNIT_CUIRASSIER' WHERE Unit='UNIT_INDIAN_VARU';
 
 
 
@@ -269,7 +313,9 @@ UPDATE Building_YieldChanges SET YieldChange=6 WHERE BuildingType='BUILDING_POWE
 --==============================================================
 --******				 CITY_STATES					  ******
 --==============================================================
-
+UPDATE ModifierArguments SET Value=10 WHERE ModifierId='MINOR_CIV_NGAZARGAMU_BARRACKS_STABLE_PURCHASE_BONUS' AND Name='Amount';
+UPDATE ModifierArguments SET Value=10 WHERE ModifierId='MINOR_CIV_NGAZARGAMU_ARMORY_PURCHASE_BONUS' AND Name='Amount';
+UPDATE ModifierArguments SET Value=10 WHERE ModifierId='MINOR_CIV_NGAZARGAMU_MILITARY_ACADEMY_PURCHASE_BONUS' AND Name='Amount';
 
 
 --==============================================================
@@ -349,6 +395,7 @@ UPDATE Beliefs SET Description='LOC_BELIEF_CROSS_CULTURAL_DIALOGUE_DESCRIPTION' 
 UPDATE Beliefs SET Description='LOC_BELIEF_WORLD_CHURCH_DESCRIPTION' WHERE BeliefType='BELIEF_WORLD_CHURCH';
 UPDATE Beliefs SET Description='LOC_BELIEF_LAY_MINISTRY_DESCRIPTION' WHERE BeliefType='BELIEF_LAY_MINISTRY';
 -- holy waters affects mili units instead of religious, and works in all converted city tiles
+UPDATE Modifiers SET ModifierType='MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER' WHERE ModifierId='HOLY_WATERS_HEALING';
 UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_UNITS_ADJUST_HEAL_PER_TURN' WHERE ModifierId='HOLY_WATERS_HEALING_MODIFIER';
 DELETE FROM RequirementSetRequirements WHERE RequirementSetId='HOLY_WATERS_HEALING_REQUIREMENTS';
 DELETE FROM RequirementSetRequirements WHERE RequirementSetId='HOLY_WATERS_HEALING_MODIFIER_REQUIREMENTS';
@@ -357,7 +404,7 @@ INSERT OR IGNORE INTO RequirementSetRequirements VALUES
 	('HOLY_WATERS_HEALING_MODIFIER_REQUIREMENTS', 'REQUIRES_UNIT_NEAR_FRIENDLY_RELIGIOUS_CITY'),
 	('HOLY_WATERS_HEALING_MODIFIER_REQUIREMENTS', 'REQUIRES_UNIT_NEAR_ENEMY_RELIGIOUS_CITY');
 UPDATE RequirementSets SET RequirementSetType='REQUIREMENTSET_TEST_ANY' WHERE RequirementSetId='HOLY_WATERS_HEALING_MODIFIER_REQUIREMENTS';
-UPDATE ModifierArguments SET Value='5' WHERE ModifierId='HOLY_WATERS_HEALING_MODIFIER' AND Name='Amount';
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='HOLY_WATERS_HEALING_MODIFIER' AND Name='Amount';
 
 
 --==============================================================
@@ -560,6 +607,8 @@ UPDATE Improvements SET PrereqTech='TECH_REFINING' WHERE ImprovementType='IMPROV
 --==============================================================
 --******				G O V E R N O R S				  ******
 --==============================================================
+-- bugfix ... might actually be fixed after april 2021 update, but they only explicitly mentioned Ayutthaya
+UPDATE ModifierArguments SET Value=24 WHERE ModifierId="CARDINAL_CITADEL_OF_GOD_FAITH_FINISH_BUILDINGS" AND Name="BuildingProductionPercent";
 -- delete moksha's scrapped abilities
 DELETE FROM GovernorPromotions WHERE GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_GRAND_INQUISITOR' OR GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_LAYING_ON_OF_HANDS';
 DELETE FROM GovernorPromotionSets WHERE GovernorPromotion='GOVERNOR_PROMOTION_CARDINAL_GRAND_INQUISITOR' OR GovernorPromotion='GOVERNOR_PROMOTION_CARDINAL_LAYING_ON_OF_HANDS';

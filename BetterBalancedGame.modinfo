@@ -60,7 +60,7 @@
 		<Criteria id="xp2_poland">
 			<LeaderPlayable>Players:Expansion2_Players::LEADER_JADWIGA</LeaderPlayable>
 		</Criteria>
-		<Criteria id="dlc_maya_colombia">
+		<Criteria id="nfp_maya_colombia">
 			<ModInUse>9DE86512-DE1A-400D-8C0A-AB46EBBF76B9</ModInUse>
 		</Criteria>
 		<Criteria id="nfp_macedon_persia_maya_colombia">
@@ -72,6 +72,10 @@
 		<Criteria id="nfp_xp1_maya_colombia">
 			<ModInUse>1B28771A-C749-434B-9053-D1380C553DE9</ModInUse>
 			<ModInUse>9DE86512-DE1A-400D-8C0A-AB46EBBF76B9</ModInUse>
+		</Criteria>
+		<Criteria id="nfp_xp2_maya_colombia">
+			<ModInUse>9DE86512-DE1A-400D-8C0A-AB46EBBF76B9</ModInUse>
+			<ModInUse>4873eb62-8ccc-4574-b784-dda455e74e68</ModInUse>
 		</Criteria>
 		<Criteria id="nfp_ethiopia">
 			<ModInUse>1B394FE9-23DC-4868-8F0A-5220CB8FB427</ModInUse>
@@ -88,6 +92,15 @@
 		</Criteria>
 		<Criteria id="nfp_byzantium_gaul">
 			<ModInUse>A1100FC4-70F2-4129-AC27-2A65A685ED08</ModInUse>
+		</Criteria>
+		<Criteria id="nfp_babylon">
+			<ModInUse>8424840C-92EF-4426-A9B4-B4E0CB818049</ModInUse>
+		</Criteria>
+		<Criteria id="nfp_vietnam_kublai_khan">
+			<ModInUse>A3F42CD4-6C3E-4F5A-BC81-BE29E0C0B87C</ModInUse>
+		</Criteria>
+		<Criteria id="nfp_portugal">
+			<ModInUse>FFDF4E79-DEE2-47BB-919B-F5739106627A</ModInUse>
 		</Criteria>
 	</ActionCriteria>
 	
@@ -228,11 +241,11 @@
 			</Properties>
 			<File>sql/xp2_poland.sql</File>
 		</UpdateDatabase>
-		<UpdateDatabase id="bbg_dlc_maya_colombia" criteria="dlc_maya_colombia">
+		<UpdateDatabase id="bbg_nfp_maya_colombia" criteria="nfp_maya_colombia">
 			<Properties>
 				<LoadOrder>11630</LoadOrder>
 			</Properties>
-			<File>sql/dlc_maya_colombia.sql</File>
+			<File>sql/nfp_maya_colombia.sql</File>
 		</UpdateDatabase>		
 		<UpdateDatabase id="bbg_nfp_macedon_persia_maya_colombia" criteria="nfp_macedon_persia_maya_colombia">
 			<Properties>
@@ -276,6 +289,30 @@
 			</Properties>
 			<File>sql/nfp_byzantium_gaul.sql</File>
 		</UpdateDatabase>
+		<UpdateDatabase id="bbg_nfp_babylon" criteria="nfp_babylon">
+			<Properties>
+				<LoadOrder>11638</LoadOrder>
+			</Properties>
+			<File>sql/nfp_babylon.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_nfp_xp2_maya_colombia" criteria="nfp_xp2_maya_colombia">
+			<Properties>
+				<LoadOrder>11639</LoadOrder>
+			</Properties>
+			<File>sql/nfp_xp2_maya_colombia.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_nfp_vietnam_kublai_khan" criteria="nfp_vietnam_kublai_khan">
+			<Properties>
+				<LoadOrder>11640</LoadOrder>
+			</Properties>
+			<File>sql/nfp_vietnam_kublai_khan.sql</File>
+		</UpdateDatabase>
+		<UpdateDatabase id="bbg_nfp_portugal" criteria="nfp_portugal">
+			<Properties>
+				<LoadOrder>11641</LoadOrder>
+			</Properties>
+			<File>sql/nfp_portugal.sql</File>
+		</UpdateDatabase>
 		
 		<AddGameplayScripts id="CondemnHeretic_AddScript">
 			<File>UnitPanel_CondemnCommand.lua</File>
@@ -315,14 +352,18 @@
 		<File>sql/xp2_poland.sql</File>
 		<File>sql/xp2_rise_and_fall.sql</File>
 		<File>exploits/culture_fix.lua</File>
-		<File>sql/dlc_maya_colombia.sql</File>
+		<File>sql/nfp_maya_colombia.sql</File>
 		<File>sql/nfp_macedon_persia_maya_colombia.sql</File>
 		<File>sql/nfp_xp1_maya_colombia.sql</File>
+		<File>sql/nfp_xp2_maya_colombia.sql</File>
 		<File>sql/nfp_ethiopia.sql</File>
 		<File>sql/nfp_xp2_ethiopia.sql</File>
 		<File>sql/nfp_teddy_persona.sql</File>
 		<File>sql/nfp_catherine_persona.sql</File>
 		<File>sql/nfp_byzantium_gaul.sql</File>
+		<File>sql/nfp_babylon.sql</File>
+		<File>sql/nfp_vietnam_kublai_khan.sql</File>
+		<File>sql/nfp_portugal.sql</File>
 		<File>UnitPanelBBG.lua</File>
 		<File>UnitPanel_CondemnCommand.lua</File>
 	</Files>
