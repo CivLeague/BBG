@@ -263,6 +263,16 @@
 		<Replace Tag="LOC_ABILITY_AMBIORIX_NEIGHBOR_COMBAT_BONUS_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Strength] Puissance de combat +1 pour chaque unité adjacente (Roi des Éburons).</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_CULTURE] Culture +1 pour les mines une fois le Travail du Bronze découvert, qui offrent un bonus de proximité mineur à tous les quartiers et une bombe culturelle sur les territoires non possédés. Les quartiers spécialisés ne reçoivent pas de bonus de proximité mineur à côté d'un autre quartier et ces quartiers ne peuvent pas être adjacents au centre-ville.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="fr_FR">
+			<Text>Quartier exclusif aux Gaulois remplaçant la zone industrielle à moindre coût et plus tôt dans la partie. Le quartier de l'oppidum peut être défendu par des attaques à distance. [NEWLINE][NEWLINE]Bonus de proximité : [ICON_Production] production +2 s'il est adjacent à une carrière ou une ressource stratégique.</Text>
+		</Replace>
+		<!-- ========== CREE ========== -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="fr_FR">
+			<Text>Capacité de [ICON_TradeRoute] Routes commerciales +1 au moment de découvrir la poterie. Les cases inoccupées se trouvant à 3 cases ou moins d'une ville Cri se retrouvent en sa possession lorsqu'un négociant s'installe dans la ville pour la première fois.</Text>
+		</Replace>
 		<!-- ========== GÉORGIE ========== -->
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="fr_FR">
 			<Text>Bâtiment exclusif à la Géorgie. Défense plus importante que les remparts Antiques. [ICON_TOURISM] Tourisme +1 après l'adoption du dogme de la conservation. [ICON_Faith] Foi +4. [ICON_TOURISM] Tourisme et [ICON_FAITH] foi doublés lors d'un âge d'or.</Text>
@@ -906,6 +916,34 @@
 		<!-- Correction Firaxis -->
 		<Replace Tag="LOC_POLICY_MARKET_ECONOMY_DESCRIPTION" Language="fr_FR">
 			<Text>Vos [ICON_TradeRoute] routes commerciales internationales génèrent + 2 [ICON_Culture] Culture et +2 [ICON_Science] Science, ainsi que +1 [ICON_Gold] Or par ressource de luxe ou stratégique aménagée dans la ville de destination.</Text>
+		</Replace>
+		<!-- Nouvelles cartes d'unités de Siège -->
+		<Replace Tag="LOC_POLICY_SIEGE_NAME" Language="fr_FR">
+			<Text>Artisanat obsidional</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIEGE_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Production] Production +50% pour les unités de siège des ères Antiques et Classiques.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_SIEGE_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
+			<Text>Blablablabla.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_NAME" Language="fr_FR">
+			<Text>Obus explosifs</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Production] Production +50% pour les unités de siège des ères de la Renaissance et précédentes.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_HARD_SHELL_EXPLOSIVES_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
+			<Text>Blablablabla. </Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_TRENCH_WARFARE_NAME" Language="fr_FR">
+			<Text>Guerre de tranchées</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_TRENCH_WARFARE_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_Production] Production +50% pour toutes les unités de siège.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_TRENCH_WARFARE_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
+			<Text>Blablablabla. </Text>
 		</Replace>
 		
 		<!-- =============== B A T I M E N T S === M I I L I T A I R E S =============== -->

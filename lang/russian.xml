@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="ru_RU">
+			<Text>+1 [ICON_TradeRoute] доступный торговый путь после изучения гончарного дела. Ничейные клетки в радиусе 3 клеток вокруг города кри переходят под его контроль при первом посещении их торговцем.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="ru_RU">
+			<Text>Рудники дают небольшой бонус соседним районам, культурный захват клеток без владельца и получают +1 [ICON_CULTURE] культуру после изучения Обработки бронзы. Специализированные районы не получают бонус за соседство с другими районами, а также не могут быть построены рядом с центром города.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный район Галии, заменяющий промышленную зону. Доступен раньше, дешевле в строительстве. Имеет дальнобойную атаку.[NEWLINE][NEWLINE]+2 [ICON_Production] производства за соседство с каменоломнями и стратегическими ресурсами.</Text>
+		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION" Language="ru_RU">
 			<Text>Вы получаете +40 лояльности во всех городах вашей империи.</Text>
 		</Replace>
@@ -958,5 +968,23 @@
     <Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="ru_RU">
       <Text>+10 [ICON_Strength] к боевой мощи юнита против варваров</Text>
     </Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_DESCRIPTION" Language="ru_RU">
+			<Text>+50% [ICON_Production] к производству осадных юнитов эпохи Ренессанса и более ранних эпох.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_NAME" Language="ru_RU">
+			<Text>Взрывоопасность</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIEGE_DESCRIPTION" Language="ru_RU">
+			<Text>+50% [ICON_Production] к производству осадных юнитов Древнего Мира и Античности.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIEGE_NAME" Language="ru_RU">
+			<Text>Искусство осады</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_TRENCH_WARFARE_DESCRIPTION" Language="ru_RU">
+			<Text>+50% [ICON_Production] к производству осадных юнитов.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_TRENCH_WARFARE_NAME" Language="ru_RU">
+			<Text>Окопная война</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>

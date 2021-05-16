@@ -58,7 +58,7 @@
 		</Replace>		
 		<Replace Tag="LOC_BUILDING_ORDU_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>A building unique to Mongolia. Grants an ability that gives +1 [ICON_MOVEMENT] Movement to Heavy and Light Cavalry trained in this city. +50% combat experience for all cavalry class units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed).[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Barracks.</Text>
-		</Replace>		
+		</Replace>
 
 		<Replace Tag="LOC_ABILITY_BARRACKS_TRAINED_UNIT_XP_DESCRIPTION" Language="en_US">
 			<Text>+50% Earned experience from Barracks</Text>
@@ -751,6 +751,12 @@
 		<Replace Tag="LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION" Language="en_US">
 			<Text>Canadian unique Modern era unit. Can create a National Park. +5 [ICON_Strength] Combat Strength when fighting within 4 tiles of a National Park. Additional +5 [ICON_Strength] Combat Strength when fighting within 4 tiles of an Owned National Park.</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="en_US">
+			<Text>Mines provide a minor adjacency bonus for all districts, a Culture Bomb of unowned territory, and receive +1 [ICON_CULTURE] Culture once Bronze working researched. Specialty districts do not receive a minor adjacency for being adjacent to another district and these districts cannot be built adjacent to the City Center.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="en_US">
+			<Text>A district unique to Gaul that is cheaper and available earlier than the district it replaces, the Industrial Zone. The Oppidum district is defensible with a ranged attack.[NEWLINE][NEWLINE]+2 [ICON_Production] Production adjacency bonus from Quarries and strategic resources.</Text>
+		</Replace>
 		<Replace Tag="LOC_TECH_COMPUTERS_DESCRIPTION" Language="en_US">
 			<Text>Grants the ability to construct an additional Spy. +50% [ICON_Tourism] Tourism across your empire.</Text>
 		</Replace>
@@ -762,6 +768,9 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Chateau, unique to France.[NEWLINE][NEWLINE]+2 [ICON_Culture] Culture and +1 Appeal. +1 [ICON_Culture] Culture for each adjacent wonder. +1 [ICON_Gold] Gold and +1 [ICON_Food] Food for each adjacent Luxury resource. Provides +1 [ICON_HOUSING] Housing at Feudalism and [ICON_TOURISM] Tourism after researching Flight. Can only be built adjacent to Rivers.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_TradeRoute] Trade Route capacity with the Pottery technology. Unclaimed tiles within 3 tiles of a Cree city come under Cree control when a Trader first moves into them.</Text>
 		</Replace>
 		<!--======== GATHERING STORM ========-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="en_US">
@@ -925,9 +934,43 @@
 		<!---->
 		<!--===============   P A N T H E O N S   ===============-->
 		<!---->
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_FOOD] Food for [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], and [ICON_RESOURCE_WHEAT] tiles.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>When chosen receive a Builder in your capital. +1 [ICON_FOOD] Food for [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT], and [ICON_RESOURCE_MAIZE] tiles.</Text>
+		</Replace>
 		<!---->
 		<!--===============   P O L I C Y   C A R D S   ===============-->
 		<!---->
+		<!-- new siege policies -->
+		<Replace Tag="LOC_POLICY_SIEGE_NAME" Language="en_US">
+			<Text>Siegecraft</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIEGE_DESCRIPTION" Language="en_US">
+			<Text>+50% [ICON_Production] Production toward Ancient and Classical era siege units.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_SIEGE_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>During the Peloponnesian War, one hundred sieges were attempted and fifty-eight ended with the surrender of the besieged area.[NEWLINE]Alexander the Great's army successfully besieged many powerful cities during his conquests. Two of his most impressive achievements in siegecraft took place in the Siege of Tyre and the Siege of the Sogdian Rock. His engineers built a causeway that was originally 60 m (200 ft) wide and reached the range of his torsion-powered artillery, while his soldiers pushed siege towers housing stone throwers and light catapults to bombard the city walls.[NEWLINE] Most conquerors before him had found Tyre, a Phoenician island-city about 1 km from the mainland, impregnable. The Macedonians built a mole, a raised spit of earth across the water, by piling stones up on a natural land bridge that extended underwater to the island, and although the Tyrians rallied by sending a fire ship to destroy the towers, and captured the mole in a swarming frenzy, the city eventually fell to the Macedonians after a seven-month siege. In complete contrast to Tyre, Sogdian Rock was captured by stealthy attack. Alexander used commando-like tactics to scale the cliffs and capture the high ground, and the demoralized defenders surrendered. </Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_NAME" Language="en_US">
+			<Text>Hard-Shell Explosives</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_DESCRIPTION" Language="en_US">
+			<Text>+50% [ICON_Production] Production toward Renaissance era and earlier siege units.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_HARD_SHELL_EXPLOSIVES_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>According to the story, around the year 1189 Iron Li developed a new method for hunting foxes which used a ceramic explosive to scare foxes into his nets. The explosive consisted of a ceramic bottle with a mouth, stuffed with gunpowder, and attached with a fuse. Explosive and net were placed at strategic points of places such as watering holes frequented by foxes, and when they got near enough, Iron Li would light the fuse, causing the ceramic bottle to explode and scaring the frightened foxes right into his nets. [NEWLINE]While a fanciful tale, it's not exactly certain why this would cause the development of the iron bomb, given the explosive was made using ceramics, and other materials such as bamboo or even leather would have done the same job, assuming they made a loud enough noise. Nonetheless, the iron bomb made its first appearance in 1221 at the siege of Qizhou (in modern Hubei province), and this time it would be the Jin who possessed the technological advantage. The Song commander Zhao Yurong survived and was able to relay his account for posterity. </Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_TRENCH_WARFARE_NAME" Language="en_US">
+			<Text>Trench Warfare</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_TRENCH_WARFARE_DESCRIPTION" Language="en_US">
+			<Text>+50% [ICON_Production] Production toward siege units.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_TRENCH_WARFARE_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>Trench warfare is a type of land warfare using occupied fighting lines largely comprising military trenches, in which troops are well-protected from the enemy's small arms fire and are substantially sheltered from artillery. Trench warfare became archetypically associated with the World War I (1914–1918), when the Race to the Sea rapidly expanded trench use on the Western Front starting in September 1914.[NEWLINE]Trench warfare proliferated when a revolution in firepower was not matched by similar advances in mobility, resulting in a gruelling form of warfare in which the defender held the advantage. On the Western Front in 1914–1918, both sides constructed elaborate trench, underground, and dugout systems opposing each other along a front, protected from assault by barbed wire. The area between opposing trench lines (known as "no man's land") was fully exposed to artillery fire from both sides. Attacks, even if successful, often sustained severe casualties. </Text>
+		</Replace>
 		<!---->
 		<!--===============   R E L I G I O N S   ===============-->
 		<!-- Crusader Religion -->

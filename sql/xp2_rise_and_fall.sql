@@ -15,7 +15,8 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 -- Cree
 --==================
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_SKIRMISHER' WHERE Unit='UNIT_CREE_OKIHTCITAW';
-
+-- Remove free trader at pottery
+DELETE FROM TraitModifiers WHERE ModifierId = 'TRAIT_POTTERY_ADD_TRADER';
 
 --==================
 -- Mapuche

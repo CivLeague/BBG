@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="ko_KR">
+			<Text>도예 기술을 연구하면 [ICON_TradeRoute] 교역로 최대치 +1을 제공합니다. 크리 도시에서 3타일 이내의 주인 없는 타일로 상인이 처음 이동하면 해당 타일은 크리 소유가 됩니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="ko_KR">
+			<Text>광산은 모든 특수지구에 약간의 인접 보너스, 주인이 없는 영토에 문화 폭탄을 제공하고, 청동 기술 보유시 [ICON_CULTURE] 문화 +1을 받습니다. 전문 특수지구는 다른 특수지구와 인접해 있어도 약간의 인접 보너스를 얻지 않으며, 이 특수지구는 도심부 근처에 건설할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="ko_KR">
+			<Text>골 특유의 특수지구입니다. 대체되는 산업구역 특수지구보다 비용이 저렴하고 조기에 건설할 수 있습니다. 오피둠 특수지구는 방어력을 갖추고 원거리 공격을 할 수 있습니다. [NEWLINE][NEWLINE]채석장이나 전략 자원에서 [ICON_Production] 생산력 인접 보너스 +2를 얻습니다.</Text>
+		</Replace>
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="ko_KR">
 			<Text>이 도시에서 훈련된 모든 공중 유닛이 얻는 전투 경험치가 +75% 증가합니다. 비행장 특수지구에 공중 유닛 슬롯 +2를 제공합니다. 신속한 배치 사회 제도가 잠금 해제되면, 지상 유닛을 공항이 있는 비행장 특수지구 사이에서 공수할 수 있게 됩니다. [ICON_RESOURCE_ALUMINUM] 알루미늄 자원을 발견하였다면, [ICON_RESOURCE_ALUMINUM] 알루미늄 자원을 매턴 2개씩 제공합니다.</Text>
 		</Replace>
@@ -736,6 +746,34 @@
 		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="ko_KR">
             <Text>공성 유닛 생성 및 방어 건물 건설에 대한 [ICON_Production] 생산력 +100%.</Text>
         </Replace>
+		<!-- new policies -->
+		<Row Tag="LOC_POLICY_SIEGE_NAME" Language="ko_KR">
+			<Text>공성술</Text>
+		</Row>
+		<Row Tag="LOC_POLICY_SIEGE_DESCRIPTION" Language="ko_KR">
+			<Text>고대 및 고전 시대 공성 유닛 생성에 대한 [ICON_Production] 생산력 +50%.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_SIEGE_CHAPTER_HISTORY_PARA_1" Language="ko_KR">
+			<Text>During the Peloponnesian War, one hundred sieges were attempted and fifty-eight ended with the surrender of the besieged area.[NEWLINE]Alexander the Great's army successfully besieged many powerful cities during his conquests. Two of his most impressive achievements in siegecraft took place in the Siege of Tyre and the Siege of the Sogdian Rock. His engineers built a causeway that was originally 60 m (200 ft) wide and reached the range of his torsion-powered artillery, while his soldiers pushed siege towers housing stone throwers and light catapults to bombard the city walls.[NEWLINE] Most conquerors before him had found Tyre, a Phoenician island-city about 1 km from the mainland, impregnable. The Macedonians built a mole, a raised spit of earth across the water, by piling stones up on a natural land bridge that extended underwater to the island, and although the Tyrians rallied by sending a fire ship to destroy the towers, and captured the mole in a swarming frenzy, the city eventually fell to the Macedonians after a seven-month siege. In complete contrast to Tyre, Sogdian Rock was captured by stealthy attack. Alexander used commando-like tactics to scale the cliffs and capture the high ground, and the demoralized defenders surrendered. </Text>
+		</Row>
+		<Row Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_NAME" Language="ko_KR">
+			<Text>하드쉘 폭약</Text>
+		</Row>
+		<Row Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_DESCRIPTION" Language="ko_KR">
+			<Text>르네상스 및 이전 시대 공성 유닛 생성에 대한 [ICON_Production] 생산력 +50%.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_HARD_SHELL_EXPLOSIVES_CHAPTER_HISTORY_PARA_1" Language="ko_KR">
+			<Text>According to the story, around the year 1189 Iron Li developed a new method for hunting foxes which used a ceramic explosive to scare foxes into his nets. The explosive consisted of a ceramic bottle with a mouth, stuffed with gunpowder, and attached with a fuse. Explosive and net were placed at strategic points of places such as watering holes frequented by foxes, and when they got near enough, Iron Li would light the fuse, causing the ceramic bottle to explode and scaring the frightened foxes right into his nets. [NEWLINE]While a fanciful tale, it's not exactly certain why this would cause the development of the iron bomb, given the explosive was made using ceramics, and other materials such as bamboo or even leather would have done the same job, assuming they made a loud enough noise. Nonetheless, the iron bomb made its first appearance in 1221 at the siege of Qizhou (in modern Hubei province), and this time it would be the Jin who possessed the technological advantage. The Song commander Zhao Yurong survived and was able to relay his account for posterity. </Text>
+		</Row>
+		<Row Tag="LOC_POLICY_TRENCH_WARFARE_NAME" Language="ko_KR">
+			<Text>참호전</Text>
+		</Row>
+		<Row Tag="LOC_POLICY_TRENCH_WARFARE_DESCRIPTION" Language="ko_KR">
+			<Text>모든 공성 유닛 생성에 대한 [ICON_Production] 생산력 +50%.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_TRENCH_WARFARE_CHAPTER_HISTORY_PARA_1" Language="ko_KR">
+			<Text>Trench warfare is a type of land warfare using occupied fighting lines largely comprising military trenches, in which troops are well-protected from the enemy's small arms fire and are substantially sheltered from artillery. Trench warfare became archetypically associated with the World War I (1914–1918), when the Race to the Sea rapidly expanded trench use on the Western Front starting in September 1914.[NEWLINE]Trench warfare proliferated when a revolution in firepower was not matched by similar advances in mobility, resulting in a gruelling form of warfare in which the defender held the advantage. On the Western Front in 1914–1918, both sides constructed elaborate trench, underground, and dugout systems opposing each other along a front, protected from assault by barbed wire. The area between opposing trench lines (known as "no man's land") was fully exposed to artillery fire from both sides. Attacks, even if successful, often sustained severe casualties. </Text>
+		</Row>
 		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="ko_KR">
 			<Text>인접한 {1_Num : plural 1?극장가; other?극장가;}에서 [ICON_Science] 과학 +{1_num}.</Text>
 		</Row>
