@@ -422,7 +422,7 @@
 				<Text>Ulepszenie odblokowywane po wynalezieniu technologii murarstwa, mogące znajdować się na polu z pustynią, pustynią ze wzgórzami, równiną zalewową, równiną i łąką. +1 do [ICON_FAITH] wiary. Otrzymuje dodatkowe dochody z sąsiadujących dzielnic. +2 do [ICON_FOOD] żywności, jeśli sąsiaduje z centrum miasta. Jeśli sąsiadująca dzielnica zapewnia premię za sąsiedztwo, +2 do dochodów związanych z tą premią.</Text>
 			</Replace>
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="pl_PL">
-				<Text>Wszystkie jednostki dystansowe otrzymują o +25% więcej doświadczenia bojowego. Kopalnie na zasobach strategicznych dają +1 do [ICON_PRODUCTION] produkcji. Kopalnie na zasobach luksusowych dają +2 do [ICON_GOLD] złota.</Text>
+				<Text>Wszystkie jednostki dystansowe otrzymują o +30% więcej doświadczenia bojowego. Kopalnie na zasobach strategicznych dają +1 do [ICON_PRODUCTION] produkcji. Kopalnie na zasobach luksusowych dają +2 do [ICON_GOLD] złota.</Text>
 			</Replace>
 
 			<!-- ================ Persia ================ -->
@@ -445,7 +445,7 @@
 				<Text>+3 do [ICON_STRENGTH] siły bojowej jednostek podczas ataku. +5 do lojalności na turę w okupowanych miastach ze stacjonującą w nich jednostką. W kwestii kary za wojowniczość i [ICON_STAT_GRIEVANCE] uraz wojna z zaskoczenia traktowana jest jak wojna formalna.</Text>
 			</Replace>
 
-			<!-- ================ Phenicia ================ -->
+			<!-- ================ Phoenicia ================ -->
 			<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="pl_PL">
 				<Text>Unikalna dzielnica Fenicji specjalizująca się w działalności morskiej. Zastępuje dzielnicę portową, a jej wzniesienie jest tańsze. Można ją wybudować na wybrzeżu lub jeziorze w sąsiedztwie lądu.[NEWLINE][NEWLINE]+25% do [ICON_PRODUCTION] produkcji jednostek morskich i osadników w tym mieście. Wszystkie ranne jednostki morskie znajdujące się w granicach tego miasta leczą 100 PŻ w każdej turze.</Text>
 			</Replace>
