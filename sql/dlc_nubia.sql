@@ -5,7 +5,7 @@
 --==================
 -- Nubia
 --==================
--- no extra Nubia ranged production and experience cut to 25% (from %50)
+-- no extra Nubia ranged production and experience cut to 30% (from %50)
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_ANCIENT_RANGED_UNIT_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_CLASSICAL_RANGED_UNIT_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_MEDIEVAL_RANGED_UNIT_PRODUCTION' and Name='Amount';
@@ -14,7 +14,7 @@ UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_INDUSTRIAL_RANGED
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_MODERN_RANGED_UNIT_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_ATOMIC_RANGED_UNIT_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_INFORMATION_RANGED_UNIT_PRODUCTION' and Name='Amount';
-UPDATE ModifierArguments SET Value='25' WHERE ModifierId='TRAIT_RANGED_EXPERIENCE_MODIFIER' and Name='Amount';
+UPDATE ModifierArguments SET Value='30' WHERE ModifierId='NUBIA_RANGED_EXPERIENCE_MODIFIER' and Name='Amount';
 -- Nubian Pyramid can also be built on flat plains, but not adjacent to each other
 INSERT OR IGNORE INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
 	VALUES
