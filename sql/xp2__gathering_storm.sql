@@ -345,6 +345,15 @@ UPDATE Governments SET OtherGovernmentIntolerance=-40 WHERE GovernmentType='GOVE
 UPDATE Governments SET OtherGovernmentIntolerance=-40 WHERE GovernmentType='GOVERNMENT_SYNTHETIC_TECHNOCRACY';
 UPDATE ModifierArguments SET Value='4' WHERE ModifierId='COLLECTIVIZATION_INTERNAL_TRADE_PRODUCTION' AND Name='Amount';
 
+-- Monarchy give 2 culture for each renaissance wall (instead of 2 diplomatic favor)
+UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE' WHERE ModifierId='MONARCHY_STARFORT_FAVOR';
+UPDATE Modifiers SET SubjectRequirementSetId=0 WHERE ModifierId='MONARCHY_STARFORT_FAVOR';
+DELETE FROM ModifierArguments WHERE ModifierId='MONARCHY_STARFORT_FAVOR';
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('MONARCHY_STARFORT_FAVOR', 'BuildingType', 'BUILDING_STAR_FORT'),
+    ('MONARCHY_STARFORT_FAVOR', 'YieldType', 'YIELD_CULTURE'),
+    ('MONARCHY_STARFORT_FAVOR', 'Amount', '2');
+
 
 
 --==============================================================
