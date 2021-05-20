@@ -59,6 +59,23 @@ INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('REQUIRES_PLAYER_HAS_ASTROLOGY_CPLMOD' , 'TechnologyType' , 'TECH_ASTROLOGY');
 
 
+--==================
+-- Brazil
+--==================
+--Jungle Lumbermill at Construction
+INSERT OR IGNORE INTO Types (Type, Kind) VALUES
+	('IMPROVEMENT_BRAZIL_LUMBER_MILL', 'KIND_IMPROVEMENT');
+INSERT OR IGNORE INTO Improvements (Type, Name, Description, Icon, PlunderType, PlunderAmount, Buildable, PrereqTech, TraitType) VALUES
+	('IMPROVEMENT_BRAZIL_LUMBER_MILL', 'LOC_IMPROVEMENT_BRAZIL_LUMBER_MILL_NAME', 'LOC_IMPROVEMENT_LUMBER_MILL_DESCRIPTION', 'ICON_IMPROVEMENT_LUMBER_MILL', 
+	'PLUNDER_GOLD', '50','true', 'TECH_CONSTRUCTION', 'TRAIT_CIVILIZATION_IMPROVEMENT_BRAZIL_LUMBERMILL');
+INSERT OR IGNORE INTO Improvement_ValidFeatures (ImprovementType, FeatureType) VALUES
+	('IMPROVEMENT_BRAZIL_LUMBER_MILL', 'FEATURE_JUNGLE');
+INSERT OR IGNORE INTO Improvement_ValidBuildUnits (ImprovementType, UnitType) VALUES
+	('IMPROVEMENT_BRAZIL_LUMBER_MILL', 'UNIT_BUILDER');
+INSERT OR IGNORE INTO Improvement_YieldChanges (ImprovementType, YieldType, YieldChange) VALUES
+	('IMPROVEMENT_BRAZIL_LUMBER_MILL', 'YIELD_PRODUCTION', '1');
+INSERT OR IGNORE INTO Improvement_BonusYieldChanges (ImprovementType, YieldType, BonusYieldChange, PrereqTech) VALUES
+	('IMPROVEMENT_BRAZIL_LUMBER_MILL', 'YIELD_PRODUCTION', '1', 'TECH_STEEL');
 
 --==================
 -- China
