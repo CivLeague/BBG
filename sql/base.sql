@@ -62,7 +62,7 @@ INSERT OR IGNORE INTO RequirementArguments (RequirementId , Name , Value)
 --==================
 -- Brazil
 --==================
---Jungle Lumbermill at Construction
+--Jungle Lumbermill at Machinery
 INSERT OR IGNORE INTO Types (Type, Kind) VALUES
 	('IMPROVEMENT_BRAZIL_LUMBER_MILL', 'KIND_IMPROVEMENT');
 INSERT OR IGNORE INTO Types (Type, Kind) VALUES
