@@ -562,27 +562,33 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 --==================
 -- Spain
 --==================
--- missions get +1 housing on home continent
-INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES
-	('REQUIRES_PLOT_IS_OWNER_CAPITAL_CONTINENT_BBG', 'REQUIREMENT_PLOT_IS_OWNER_CAPITAL_CONTINENT');
-INSERT OR IGNORE INTO RequirementSets VALUES
-	('PLOT_CAPITAL_CONTINENT_REQUIREMENTS_BBG', 'REQUIREMENTSET_TEST_ALL');
-INSERT OR IGNORE INTO RequirementSetRequirements VALUES
-	('PLOT_CAPITAL_CONTINENT_REQUIREMENTS_BBG', 'REQUIRES_PLOT_IS_OWNER_CAPITAL_CONTINENT_BBG');
-INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId)
-	VALUES ('MISSION_HOMECONTINENT_HOUSING_BBG' , 'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_HOUSING', 'PLOT_CAPITAL_CONTINENT_REQUIREMENTS_BBG');
-INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES ('MISSION_HOMECONTINENT_HOUSING_BBG' , 'Amount' , 1);
-INSERT OR IGNORE INTO ImprovementModifiers (ImprovementType , ModifierId)
-	VALUES ('IMPROVEMENT_MISSION' , 'MISSION_HOMECONTINENT_HOUSING_BBG');
--- Missions cannot be placed next to each other
-UPDATE Improvements SET SameAdjacentValid=0 WHERE ImprovementType='IMPROVEMENT_MISSION';
--- Missions moved to Theology
-UPDATE Improvements SET PrereqCivic='CIVIC_THEOLOGY' WHERE ImprovementType='IMPROVEMENT_MISSION';
--- Missions get bonus science at Enlightenment instead of cultural heritage
-UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_THE_ENLIGHTENMENT' WHERE Id='17';
+
+--Remove free Builder on other continents
+DELETE FROM TraitModifiers WHERE TraitType = 'TRAIT_CIVILIZATION_TREASURE_FLEET' AND ModifierId = 'TRAIT_INTERCONTINENTAL_BUILDER';
+
+--2x yields cross continents instead of 3x
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId = 'TRAIT_INTERCONTINENTAL_INTERNATIONAL_FAITH' AND Name = 'Amount';
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId = 'TRAIT_INTERCONTINENTAL_DOMESTIC_FAITH' AND Name = 'Amount';
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId = 'TRAIT_INTERCONTINENTAL_INTERNATIONAL_GOLD' AND Name = 'Amount';
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId = 'TRAIT_INTERCONTINENTAL_DOMESTIC_GOLD' AND Name = 'Amount';
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId = 'TRAIT_INTERCONTINENTAL_INTERNATIONAL_PRODUCTION' AND Name = 'Amount';
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId = 'TRAIT_INTERCONTINENTAL_DOMESTIC_PRODUCTION' AND Name = 'Amount';
+
+--Missionary has to be on the same tile, instead of adjacent
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType)
+	VALUES ('RELIGIOUS_ON_SAME_TILE_REQUIREMENT_BBG', 'REQUIREMENT_PLOT_NEARBY_UNIT_TAG_MATCHES');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value)
+	VALUES	('RELIGIOUS_ON_SAME_TILE_REQUIREMENT_BBG', 'Tag', 'CLASS_RELIGIOUS_ALL'),
+		('RELIGIOUS_ON_SAME_TILE_REQUIREMENT_BBG', 'MinDistance', '0'),
+		('RELIGIOUS_ON_SAME_TILE_REQUIREMENT_BBG', 'MaxDistance', '0');
+UPDATE RequirementSetRequirements SET RequirementId = 'RELIGIOUS_ON_SAME_TILE_REQUIREMENT_BBG' WHERE RequirementSetId = 'CONQUISTADOR_SPECIFIC_UNIT_REQUIREMENTS';
+
 -- Early Fleets moved to Mercenaries
 UPDATE ModifierArguments SET Value='CIVIC_MERCENARIES' WHERE Name='CivicType' AND ModifierId='TRAIT_NAVAL_CORPS_EARLY';
+
+--Early Armadas moved to Mercantilism
+UPDATE ModifierArguments SET Value='CIVIC_MERCANTILISM' WHERE Name='CivicType' AND ModifierId='TRAIT_NAVAL_ARMIES_EARLY';
+
 -- 30% discount on missionaries
 INSERT OR IGNORE INTO TraitModifiers ( TraitType , ModifierId )
 	VALUES ('TRAIT_LEADER_EL_ESCORIAL' , 'HOLY_ORDER_MISSIONARY_DISCOUNT_MODIFIER');
