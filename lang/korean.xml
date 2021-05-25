@@ -2,9 +2,6 @@
 <GameData>
 	<LocalizedText>
 
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="ko_KR">
-			<Text>도예 기술을 연구하면 [ICON_TradeRoute] 교역로 최대치 +1을 제공합니다. 크리 도시에서 3타일 이내의 주인 없는 타일로 상인이 처음 이동하면 해당 타일은 크리 소유가 됩니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="ko_KR">
 			<Text>광산은 모든 특수지구에 약간의 인접 보너스, 주인이 없는 영토에 문화 폭탄을 제공하고, 청동 기술 보유시 [ICON_CULTURE] 문화 +1을 받습니다. 전문 특수지구는 다른 특수지구와 인접해 있어도 약간의 인접 보너스를 얻지 않으며, 이 특수지구는 도심부 근처에 건설할 수 없습니다.</Text>
 		</Replace>

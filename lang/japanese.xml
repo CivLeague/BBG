@@ -673,10 +673,6 @@
 		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="ja_JP">
 			<Text>ガリアに固有の工業地帯を代替する区域。元の区域より安価で早期に建設できるようになる。遠距離攻撃を行うことのできる防衛可能な区域。[NEWLINE][NEWLINE]石工所および戦略資源から隣接ボーナスとして[ICON_Production]生産力+2を得る。</Text>
 		</Replace>
-
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="ja_JP">
-			<Text>陶器の技術を開発後、[ICON_TradeRoute]交易路の上限+1。交易ユニットが自文明の都市から3タイル以内の中立地帯を通過することで自文明へと編入させる。</Text>
-		</Replace>
 		<!--=============== GATHERING STORM ==================-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="ja_JP">
 			<Text>通常より早い段階で艦隊と大艦隊を編成できる（傭兵と重商主義）。大陸間にまたがる[ICON_TradeRoute]交易路が存在する場合、他文明と結ばれた交易路には[ICON_Gold]ゴールドのボーナス、自分の都市同士を結ぶ交易路には[ICON_Food]食糧と[ICON_Production]生産力のボーナスが発生する。最初の[ICON_Capital]首都と異なる大陸に位置する都市の都心に隣接していると、その都市でのターン毎の忠誠心+2。</Text>

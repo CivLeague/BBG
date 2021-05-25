@@ -286,10 +286,6 @@
 		<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="de_DE">
 			<Text>Ein ausschließlich Phönizien zur Verfügung stehender Bezirk für Marine-Aktivitäten in Eurer Stadt. Ersetzt den Hafenbezirk und ist günstiger im Bau. Muss an Küste oder See-Geländefeldern neben Land gebaut werden.[NEWLINE][NEWLINE]+25% [ICON_PRODUCTION] Produktion für Marineeinheiten und Siedler in dieser Stadt. Alle verwundeten Marineeinheiten innerhalb der Stadtgrenzen regenerieren 100 Trefferpunkte pro Runde.</Text>
 		</Replace>
-
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_TradeRoute] Handelsweg-Kapazität mit der Keramik-Technologie. Unbeanspruchte Geländefelder innerhalb von 3 Feldern einer Cree-Stadt fallen unter die Kontrolle der Cree, wenn ein Händler sie als Erster betritt.</Text>
-		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_HACIENDA_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Hacienda zu bauen, die einzigartig für Großkolumbien ist.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, +1 [ICON_PRODUCTION] Produktion, und +1 [Icon_Housing] Wohnraum. +1 [ICON_Food] Nahrung für je zwei angrenzende Plantagen (wird für jede Plantage mit Normbauteilen erhöht). Plantagen und Haciendas erhalten +1 [ICON_Production] Production for every two adjacent Haciendas (increased to every Hacienda with Rapid Deployment). Produktion für je zwei angrenzende Haciendas (wird für jede Hacienda mit Schneller Einsatz erhöht). Kann nur auf Ebenen und Grasland.</Text>
 		</Replace>

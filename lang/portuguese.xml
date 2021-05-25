@@ -2,9 +2,6 @@
 <GameData>
 	<LocalizedText>
 
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="pt_BR">
-			<Text>+1 de capacidade de [ICON_TradeRoute] rota comercial com a tecnologia de Cerâmica. Paineis não reinvindicados dentro de um raio de 3 paineis de uma cidade cree caem sob controle dos crees quando um Comerciante se move pra eles pela primeira vez.</Text>
-		</Replace>
 		<Replace Tag="LOC_BUILDING_BARRACKS_DESCRIPTION" Language="pt_BR">
 			<Text>+50% de experiência de combate pra todas as unidades corpo a corpo e à distância treinadas nessa cidade.[NEWLINE][NEWLINE]Não pode ser construída em um Acampamento que já possua um Estábulo.</Text>
 		</Replace>

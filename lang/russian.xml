@@ -2,9 +2,6 @@
 <GameData>
 	<LocalizedText>
 
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="ru_RU">
-			<Text>+1 [ICON_TradeRoute] доступный торговый путь после изучения гончарного дела. Ничейные клетки в радиусе 3 клеток вокруг города кри переходят под его контроль при первом посещении их торговцем.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="ru_RU">
 			<Text>Рудники дают небольшой бонус соседним районам, культурный захват клеток без владельца и получают +1 [ICON_CULTURE] культуру после изучения Обработки бронзы. Специализированные районы не получают бонус за соседство с другими районами, а также не могут быть построены рядом с центром города.</Text>
 		</Replace>
