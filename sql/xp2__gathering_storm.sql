@@ -347,7 +347,7 @@ UPDATE ModifierArguments SET Value='4' WHERE ModifierId='COLLECTIVIZATION_INTERN
 
 -- Monarchy give 2 culture for each renaissance wall (instead of 2 diplomatic favor)
 UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE' WHERE ModifierId='MONARCHY_STARFORT_FAVOR';
-UPDATE Modifiers SET SubjectRequirementSetId=0 WHERE ModifierId='MONARCHY_STARFORT_FAVOR';
+UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='MONARCHY_STARFORT_FAVOR';
 DELETE FROM ModifierArguments WHERE ModifierId='MONARCHY_STARFORT_FAVOR';
 INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
     ('MONARCHY_STARFORT_FAVOR', 'BuildingType', 'BUILDING_STAR_FORT'),
