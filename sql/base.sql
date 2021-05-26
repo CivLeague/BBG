@@ -1036,11 +1036,6 @@ INSERT OR IGNORE INTO RequirementArguments
     (RequirementId                          , Name          , Value)
     VALUES 
     ('REQUIRES_PLOT_HAS_PANTANAL'           , 'FeatureType' , 'FEATURE_PANTANAL'             );
-    
--- Earth goddess pantheon give +1 Faith for each charming tile (from +1 for each breathtaking)
-UPDATE Modifiers SET SubjectRequirementSetId='PLOT_CHARMING_APPEAL' WHERE ModifierId='EARTH_GODDESS_APPEAL_FAITH_MODIFIER';
-
-
 
 --==============================================================
 --******			P O L I C Y   C A R D S				  ******
