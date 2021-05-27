@@ -17,7 +17,7 @@ Better Balanced Game (BBG) - A mod for Civilization 6 by codenaugh
 	For any inquiry please reach out via:
 	https://steamcommunity.com/sharedfiles/filedetails/?id=1368312893
 	or
-	https://github.com/CivPlayersLeague/Better-Balanced-Game
+	https://github.com/CivLeague/Better-Balanced-Game
 	or on Discord: discord.gg/cpl @codenaugh
 
 	Any Derivative Works can be performed on this Work. 

@@ -585,8 +585,33 @@ UPDATE Improvements SET SameAdjacentValid=0 WHERE ImprovementType='IMPROVEMENT_M
 UPDATE Improvements SET PrereqCivic='CIVIC_THEOLOGY' WHERE ImprovementType='IMPROVEMENT_MISSION';
 -- Missions get bonus science at Enlightenment instead of cultural heritage
 UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_THE_ENLIGHTENMENT' WHERE Id='17';
+
+--Remove free Builder on other continents
+DELETE FROM TraitModifiers WHERE TraitType = 'TRAIT_CIVILIZATION_TREASURE_FLEET' AND ModifierId = 'TRAIT_INTERCONTINENTAL_BUILDER';
+
+--2x yields cross continents instead of 3x
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId = 'TRAIT_INTERCONTINENTAL_INTERNATIONAL_FAITH' AND Name = 'Amount';
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId = 'TRAIT_INTERCONTINENTAL_DOMESTIC_FAITH' AND Name = 'Amount';
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId = 'TRAIT_INTERCONTINENTAL_INTERNATIONAL_GOLD' AND Name = 'Amount';
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId = 'TRAIT_INTERCONTINENTAL_DOMESTIC_GOLD' AND Name = 'Amount';
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId = 'TRAIT_INTERCONTINENTAL_INTERNATIONAL_PRODUCTION' AND Name = 'Amount';
+UPDATE ModifierArguments SET Value='1' WHERE ModifierId = 'TRAIT_INTERCONTINENTAL_DOMESTIC_PRODUCTION' AND Name = 'Amount';
+
+--Missionary has to be on the same tile, instead of adjacent
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType)
+	VALUES ('RELIGIOUS_ON_SAME_TILE_REQUIREMENT_BBG', 'REQUIREMENT_PLOT_NEARBY_UNIT_TAG_MATCHES');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value)
+	VALUES	('RELIGIOUS_ON_SAME_TILE_REQUIREMENT_BBG', 'Tag', 'CLASS_RELIGIOUS_ALL'),
+		('RELIGIOUS_ON_SAME_TILE_REQUIREMENT_BBG', 'MinDistance', '0'),
+		('RELIGIOUS_ON_SAME_TILE_REQUIREMENT_BBG', 'MaxDistance', '0');
+UPDATE RequirementSetRequirements SET RequirementId = 'RELIGIOUS_ON_SAME_TILE_REQUIREMENT_BBG' WHERE RequirementSetId = 'CONQUISTADOR_SPECIFIC_UNIT_REQUIREMENTS';
+
 -- Early Fleets moved to Mercenaries
 UPDATE ModifierArguments SET Value='CIVIC_MERCENARIES' WHERE Name='CivicType' AND ModifierId='TRAIT_NAVAL_CORPS_EARLY';
+
+--Early Armadas moved to Mercantilism
+UPDATE ModifierArguments SET Value='CIVIC_MERCANTILISM' WHERE Name='CivicType' AND ModifierId='TRAIT_NAVAL_ARMIES_EARLY';
+
 -- 30% discount on missionaries
 INSERT OR IGNORE INTO TraitModifiers ( TraitType, ModifierId )
 	VALUES ('TRAIT_LEADER_EL_ESCORIAL', 'HOLY_ORDER_MISSIONARY_DISCOUNT_MODIFIER');
@@ -631,6 +656,38 @@ INSERT OR IGNORE INTO Improvement_BonusYieldChanges (ImprovementType, YieldType,
 	VALUES
 	('IMPROVEMENT_ZIGGURAT', 'YIELD_CULTURE', 1, 'CIVIC_THE_ENLIGHTENMENT'),
 	('IMPROVEMENT_ZIGGURAT', 'YIELD_SCIENCE', 1, 'CIVIC_THE_ENLIGHTENMENT');
+
+
+-- Can make Fleets with a shipyard. +25% prod towards fleets/armadas with shipyard
+INSERT INTO Modifiers(ModifierId, ModifierType, OwnerRequirementSetId) 
+	VALUES
+    	('BBG_SPAIN_FLEET_DISCOUNT', 'MODIFIER_CITY_CORPS_ARMY_ADJUST_DISCOUNT', 'BBG_PLAYER_IS_SPAIN');
+
+INSERT INTO ModifierArguments(ModifierId, Name, Value) 
+	VALUES
+    	('BBG_SPAIN_FLEET_DISCOUNT', 'UnitDomain', 'DOMAIN_SEA'),
+    	('BBG_SPAIN_FLEET_DISCOUNT', 'Amount', '25');
+
+INSERT INTO BuildingModifiers(BuildingType, ModifierId) 
+	VALUES
+    	('BUILDING_SHIPYARD', 'BBG_SPAIN_FLEET_DISCOUNT');
+    	
+    -- Spain requirement
+INSERT OR IGNORE INTO RequirementSets(RequirementSetId , RequirementSetType) 
+	VALUES
+	('BBG_PLAYER_IS_SPAIN', 'REQUIREMENTSET_TEST_ANY');
+
+INSERT OR IGNORE INTO RequirementSetRequirements(RequirementSetId , RequirementId) 
+	VALUES
+	('BBG_PLAYER_IS_SPAIN', 'BBG_PLAYER_IS_SPAIN_REQUIREMENT');
+
+INSERT OR IGNORE INTO Requirements(RequirementId , RequirementType) 
+	VALUES
+	('BBG_PLAYER_IS_SPAIN_REQUIREMENT' , 'REQUIREMENT_PLAYER_TYPE_MATCHES');
+
+INSERT OR IGNORE INTO RequirementArguments(RequirementId , Name, Value) 
+	VALUES
+	('BBG_PLAYER_IS_SPAIN_REQUIREMENT' , 'CivilizationType', 'CIVILIZATION_SPAIN');
 
 
 
@@ -873,6 +930,7 @@ UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='FASCISM_LEGA
 --==============================================================
 -- religious settlements more border growth since settler removed
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='RELIGIOUS_SETTLEMENTS_CULTUREBORDER';
+
 -- river goddess +2 HS adj on rivers, -1 housing and -1 amentiy tho
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='RIVER_GODDESS_HOLY_SITE_HOUSING_MODIFIER' AND Name='Amount';
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='RIVER_GODDESS_HOLY_SITE_AMENITIES_MODIFIER' AND Name='Amount';
@@ -888,10 +946,13 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 ('RIVER_GODDESS_HOLY_SITE_FAITH_MODIFIER_BBG', 'Description', 'LOC_DISTRICT_HOLY_SITE_RIVER_FAITH');
 INSERT OR IGNORE INTO BeliefModifiers VALUES
 	('BELIEF_RIVER_GODDESS', 'RIVER_GODDESS_HOLY_SITE_FAITH_BBG');
+	
 -- city patron buff
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='CITY_PATRON_GODDESS_DISTRICT_PRODUCTION_MODIFIER' AND Name='Amount';
+
 -- Dance of Aurora yields reduced... only work for flat tundra
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='DANCE_OF_THE_AURORA_FAITHTUNDRAHILLSADJACENCY' AND Name='Amount';
+
 -- stone circles -1 faith and +1 prod
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='STONE_CIRCLES_QUARRY_FAITH_MODIFIER' and Name='Amount';
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
@@ -903,6 +964,7 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('STONE_CIRCLES_QUARRY_PROD_MODIFIER_BBG', 'Amount', '1');
 INSERT OR IGNORE INTO BeliefModifiers (BeliefType, ModifierID) VALUES
 	('BELIEF_STONE_CIRCLES', 'STONE_CIRCLES_QUARRY_PROD_BBG');
+	
 -- religious idols +2 gold
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
 	('RELIGIOUS_IDOLS_BONUS_MINE_GOLD_BBG', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER', 'CITY_FOLLOWS_PANTHEON_REQUIREMENTS'),
@@ -919,11 +981,10 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 INSERT OR IGNORE INTO BeliefModifiers VALUES
 	('BELIEF_RELIGIOUS_IDOLS', 'RELIGIOUS_IDOLS_BONUS_MINE_GOLD_BBG'),
 	('BELIEF_RELIGIOUS_IDOLS', 'RELIGIOUS_IDOLS_LUXURY_MINE_GOLD_BBG');
--- Goddess of the Harvest is +50% faith from chops instead of +100%
-UPDATE ModifierArguments SET Value='50' WHERE ModifierId='GODDESS_OF_THE_HARVEST_HARVEST_MODIFIER' and Name='Amount';
-UPDATE ModifierArguments SET Value='50' WHERE ModifierId='GODDESS_OF_THE_HARVEST_REMOVE_FEATURE_MODIFIER' and Name='Amount';
+	
 -- Monument to the Gods affects all wonders... not just Ancient and Classical Era
 UPDATE ModifierArguments SET Value='ERA_INFORMATION' WHERE ModifierId='MONUMENT_TO_THE_GODS_ANCIENTCLASSICALWONDER_MODIFIER' AND Name='EndEra';
+
 -- God of War now God of War and Plunder (similar to divine spark)
 DELETE FROM BeliefModifiers WHERE BeliefType='BELIEF_GOD_OF_WAR';
 INSERT OR IGNORE INTO Modifiers  ( ModifierId, ModifierType, SubjectRequirementSetId )
@@ -947,9 +1008,10 @@ INSERT OR IGNORE INTO ModifierArguments ( ModifierId, Name, Type, Value )
 	( 'GOD_OF_WAR_AND_PLUNDER_ENCAMP_MODIFIER', 'Amount', 'ARGTYPE_IDENTITY', '1' );
 INSERT OR IGNORE INTO BeliefModifiers ( BeliefType, ModifierId )
 	VALUES
-	( 'BELIEF_GOD_OF_WAR', 'GOD_OF_WAR_AND_PLUNDER_COMHUB' ),
-	( 'BELIEF_GOD_OF_WAR', 'GOD_OF_WAR_AND_PLUNDER_HARBOR' ),
-	( 'BELIEF_GOD_OF_WAR', 'GOD_OF_WAR_AND_PLUNDER_ENCAMP' );
+	( 'BELIEF_GOD_OF_WAR' , 'GOD_OF_WAR_AND_PLUNDER_COMHUB' ),
+	( 'BELIEF_GOD_OF_WAR' , 'GOD_OF_WAR_AND_PLUNDER_HARBOR' ),
+	( 'BELIEF_GOD_OF_WAR' , 'GOD_OF_WAR_AND_PLUNDER_ENCAMP' );
+
 -- Fertility Rites gives +1 food for rice and wheat and cattle
 INSERT OR IGNORE INTO Tags
 	(Tag, Vocabulary)
@@ -989,6 +1051,7 @@ INSERT OR IGNORE INTO RequirementSetRequirements
 	VALUES 
 	('PLOT_HAS_FERTILITY_TAG_FOOD_REQUIREMENTS', 'REQUIRES_PLOT_HAS_TAG_FERTILITY_FOOD');
 UPDATE BeliefModifiers SET ModifierID='FERTILITY_RITES_TAG_FOOD' WHERE BeliefType='BELIEF_FERTILITY_RITES' AND ModifierID='FERTILITY_RITES_GROWTH';
+
 -- Initiation Rites gives 25% faith for each military land unit produced
 INSERT OR IGNORE INTO Modifiers 
 	(ModifierId, ModifierType, SubjectRequirementSetId)
@@ -1002,6 +1065,7 @@ INSERT OR IGNORE INTO ModifierArguments
 	('INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD', 'YieldType', 'YIELD_FAITH'                                   ),
 	('INITIATION_RITES_FAITH_YIELD_MODIFIER_CPL_MOD', 'UnitProductionPercent', '25'                                            );
 UPDATE BeliefModifiers SET ModifierID='INITIATION_RITES_FAITH_YIELD_CPL_MOD' WHERE BeliefType='BELIEF_INITIATION_RITES' AND ModifierID='INITIATION_RITES_FAITH_DISPERSAL';
+
 -- Sacred Path +1 Faith Holy Site adjacency now applies to both Woods and Rainforest
 INSERT OR IGNORE INTO BeliefModifiers 
 	(BeliefType, ModifierId)
@@ -1014,11 +1078,12 @@ INSERT OR IGNORE INTO Modifiers
 INSERT OR IGNORE INTO ModifierArguments 
 	(ModifierId, Name, Value)
 	VALUES
-	('SACRED_PATH_WOODS_FAITH_ADJACENCY', 'DistrictType', 'DISTRICT_HOLY_SITE'                            ),
-	('SACRED_PATH_WOODS_FAITH_ADJACENCY', 'FeatureType', 'FEATURE_FOREST'                                ),
-	('SACRED_PATH_WOODS_FAITH_ADJACENCY', 'YieldType', 'YIELD_FAITH'                                   ),
-	('SACRED_PATH_WOODS_FAITH_ADJACENCY', 'Amount', '1'                                             ),
-	('SACRED_PATH_WOODS_FAITH_ADJACENCY', 'Description', 'LOC_DISTRICT_SACREDPATH_WOODS_FAITH'           );
+	('SACRED_PATH_WOODS_FAITH_ADJACENCY'                , 'DistrictType'              , 'DISTRICT_HOLY_SITE'                            ),
+	('SACRED_PATH_WOODS_FAITH_ADJACENCY'                , 'FeatureType'               , 'FEATURE_FOREST'                                ),
+	('SACRED_PATH_WOODS_FAITH_ADJACENCY'                , 'YieldType'                 , 'YIELD_FAITH'                                   ),
+	('SACRED_PATH_WOODS_FAITH_ADJACENCY'                , 'Amount'                    , '1'                                             ),
+	('SACRED_PATH_WOODS_FAITH_ADJACENCY'                , 'Description'               , 'LOC_DISTRICT_SACREDPATH_WOODS_FAITH'           );
+
 -- Lady of the Reeds and Marshes now applies pantanal
 INSERT OR IGNORE INTO RequirementSetRequirements 
     (RequirementSetId, RequirementId)
@@ -1032,8 +1097,6 @@ INSERT OR IGNORE INTO RequirementArguments
     (RequirementId, Name, Value)
     VALUES 
     ('REQUIRES_PLOT_HAS_PANTANAL', 'FeatureType', 'FEATURE_PANTANAL'             );
-
-
 
 --==============================================================
 --******			P O L I C Y   C A R D S				  ******
@@ -1297,8 +1360,8 @@ UPDATE Units SET Range=2 WHERE UnitType='UNIT_QUADRIREME';
 UPDATE UnitCommands SET VisibleInUI=0 WHERE CommandType='UNITCOMMAND_PRIORITY_TARGET';
 UPDATE Units SET BaseMoves=3 WHERE UnitType='UNIT_MILITARY_ENGINEER';
 UPDATE Units SET Cost=310 WHERE UnitType='UNIT_CAVALRY';
-UPDATE Units SET PrereqTech='TECH_STIRRUPS' WHERE UnitType='UNIT_PIKEMAN';
-UPDATE Units SET Combat=72, BaseMoves=3 WHERE UnitType='UNIT_INFANTRY';
+UPDATE Units SET PrereqTech='TECH_MILITARY_TACTICS' WHERE UnitType='UNIT_MAN_AT_ARMS';
+UPDATE Units SET BaseMoves=3 WHERE UnitType='UNIT_INFANTRY';
 UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_PRIVATEER';
 INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 	VALUES
@@ -1750,13 +1813,7 @@ INSERT OR IGNORE INTO Requirements
 INSERT OR IGNORE INTO RequirementArguments
 	(RequirementId, Name, Value)
 	VALUES
-	('PLAYER_HAS_MEDIEVAL_FAIRES_CPLMOD',	'CivicType', 'CIVIC_MEDIEVAL_FAIRES'  ),
-	('PLAYER_HAS_URBANIZATION_CPLMOD', 'CivicType', 'CIVIC_URBANIZATION'),
-	('PLAYER_HAS_BANKING_CPLMOD', 'TechnologyType', 'TECH_BANKING'  ),
-	('PLAYER_HAS_ECONOMICS_CPLMOD', 'TechnologyType', 'TECH_ECONOMICS');
-
-
-
-
-
-
+	('PLAYER_HAS_MEDIEVAL_FAIRES_CPLMOD',	'CivicType', 		'CIVIC_MEDIEVAL_FAIRES'  ),
+	('PLAYER_HAS_URBANIZATION_CPLMOD', 	 	'CivicType', 		'CIVIC_URBANIZATION'),
+	('PLAYER_HAS_BANKING_CPLMOD'   , 		'TechnologyType', 	'TECH_BANKING'  ),
+	('PLAYER_HAS_ECONOMICS_CPLMOD' , 		'TechnologyType', 	'TECH_ECONOMICS');

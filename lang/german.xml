@@ -891,7 +891,7 @@
 		</Replace>
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="de_DE">
-			<Text>Alle Fernkampfeinheiten erhalten +25% Erfahrung. Minen auf strategischen Resource bieten +1 [ICON_Production] Produktion. Minen auf Bonus-Ressourcen und Luxusgütern bieten +2 [ICON_Gold] Gold.</Text>
+			<Text>Alle Fernkampfeinheiten erhalten +30% Erfahrung. Minen auf strategischen Resource bieten +1 [ICON_Production] Produktion. Minen auf Bonus-Ressourcen und Luxusgütern bieten +2 [ICON_Gold] Gold.</Text>
 		</Replace>
 		<!-- Persia -->
 		<!-- Poland -->
