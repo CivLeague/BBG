@@ -3,15 +3,15 @@
 	<LocalizedText>
 		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="en_US">
 			<Text>[ICON_HOUSING] Housing per level of Walls. +2 [ICON_CULTURE] Culture for every Renaissance Walls.</Text>
-			
+		</Replace>
 		<Replace Tag="LOC_DISTRICT_THANH_DESCRIPTION" Language="en_US">
 			<Text>A district unique to Vietnam which replaces the Encampment. +1 [ICON_CULTURE] Culture for each adjacent district. After Flight is researched receive [ICON_TOURISM] Tourism equal to the [ICON_CULTURE] Culture output. This district does not require population, is cheaper to build, cannot be built adjacent to the city center, and is not a specialty district, does not generate [ICON_GreatPerson] great people point.</Text>
 		</Replace>
-			
 		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="en_US">
 			<Text>+2 [ICON_Strength] Combat Strength for units fighting in Rainforest, Marsh, or Woods tiles. +1 [ICON_Movement] Movement if they begin their turn there. Both these bonuses are doubled if the tile is your territory.</Text>
 		</Replace>
-			
+
+		<!--prev ver-->
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="en_US">
 			<Text>+75% combat experience for air units trained in this city. +2 air unit slots in Aerodrome district. Allows the ability to airlift land units between Aerodrome districts with Airports after the Rapid Deployment civic is unlocked. +2 [ICON_RESOURCE_ALUMINUM] Aluminum per turn once discovered.</Text>
 		</Replace>
