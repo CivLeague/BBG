@@ -16,7 +16,6 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value)
 --==================
 UPDATE UnitUpgrades SET UpgradeUnit='UNIT_SKIRMISHER' WHERE Unit='UNIT_CREE_OKIHTCITAW';
 
-
 --==================
 -- Mapuche
 --==================

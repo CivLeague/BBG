@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Replace Tag="LOC_POLICY_SIEGE_NAME" Language="ja_JP">
+			<Text>攻城兵器</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIEGE_DESCRIPTION" Language="ja_JP">
+			<Text>太古・古典の攻城兵器に対する[ICON_Production]生産力+50%。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_SIEGE_CHAPTER_HISTORY_PARA_1" Language="ja_JP">
+			<Text>During the Peloponnesian War, one hundred sieges were attempted and fifty-eight ended with the surrender of the besieged area.[NEWLINE]Alexander the Great's army successfully besieged many powerful cities during his conquests. Two of his most impressive achievements in siegecraft took place in the Siege of Tyre and the Siege of the Sogdian Rock. His engineers built a causeway that was originally 60 m (200 ft) wide and reached the range of his torsion-powered artillery, while his soldiers pushed siege towers housing stone throwers and light catapults to bombard the city walls.[NEWLINE] Most conquerors before him had found Tyre, a Phoenician island-city about 1 km from the mainland, impregnable. The Macedonians built a mole, a raised spit of earth across the water, by piling stones up on a natural land bridge that extended underwater to the island, and although the Tyrians rallied by sending a fire ship to destroy the towers, and captured the mole in a swarming frenzy, the city eventually fell to the Macedonians after a seven-month siege. In complete contrast to Tyre, Sogdian Rock was captured by stealthy attack. Alexander used commando-like tactics to scale the cliffs and capture the high ground, and the demoralized defenders surrendered. </Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_NAME" Language="ja_JP">
+			<Text>榴弾</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_DESCRIPTION" Language="ja_JP">
+			<Text>ルネサンス以前の攻城兵器に対する[ICON_Production]生産力+50%。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_HARD_SHELL_EXPLOSIVES_CHAPTER_HISTORY_PARA_1" Language="ja_JP">
+			<Text>According to the story, around the year 1189 Iron Li developed a new method for hunting foxes which used a ceramic explosive to scare foxes into his nets. The explosive consisted of a ceramic bottle with a mouth, stuffed with gunpowder, and attached with a fuse. Explosive and net were placed at strategic points of places such as watering holes frequented by foxes, and when they got near enough, Iron Li would light the fuse, causing the ceramic bottle to explode and scaring the frightened foxes right into his nets. [NEWLINE]While a fanciful tale, it's not exactly certain why this would cause the development of the iron bomb, given the explosive was made using ceramics, and other materials such as bamboo or even leather would have done the same job, assuming they made a loud enough noise. Nonetheless, the iron bomb made its first appearance in 1221 at the siege of Qizhou (in modern Hubei province), and this time it would be the Jin who possessed the technological advantage. The Song commander Zhao Yurong survived and was able to relay his account for posterity. </Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="ja_JP">
 			<Text>偉人を獲得した際に[ICON_Favor]外交的支持50を得る。工場から[ICON_GreatEngineer]大技術者ポイント+1、大学から[ICON_GreatScientist]大科学者ポイント+1。また、図書館、工房、大学、工場に対する[ICON_PRODUCTION]生産力+50%。スウェーデンがゲーム中に存在する場合、世界会議において3つの追加コンペティションが産業時代以降に登場するようになる。</Text>
 		</Replace>
@@ -648,6 +666,12 @@
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="ja_JP">
 			<Text>労働者がフランス固有の改善であるシャトーを建設できるようになる。[NEWLINE][NEWLINE][ICON_Culture]文化力+2、アピール+1。隣接する遺産1つごとに[ICON_Culture]文化力+1。隣接する高級資源1つごとに[ICON_Gold]ゴールド+1、[ICON_Food]食料+1。封建制度の完了で[ICON_HOUSING]住宅+1、飛行機の完了で[ICON_TOURISM]観光力を産出。河川の隣にしか建設できない。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="ja_JP">
+			<Text>鉱山がすべての区域に対して小さな隣接ボーナスを与え、中立地帯に文化爆弾を発動し、青銅器の研究完了後は[ICON_CULTURE]文化力+1を産出する。専門区域が他の区域からの小さな隣接ボーナスを受けられず、都心に隣接することもできない。</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_OPPIDUM_DESCRIPTION" Language="ja_JP">
+			<Text>ガリアに固有の工業地帯を代替する区域。元の区域より安価で早期に建設できるようになる。遠距離攻撃を行うことのできる防衛可能な区域。[NEWLINE][NEWLINE]石工所および戦略資源から隣接ボーナスとして[ICON_Production]生産力+2を得る。</Text>
 		</Replace>
 		<!--=============== GATHERING STORM ==================-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="ja_JP">

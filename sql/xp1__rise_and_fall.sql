@@ -28,11 +28,11 @@ DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_TSIKHE' AND ModifierI
 DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_TSIKHE' AND ModifierId='TSIKHE_PREVENT_BYPASS_OUTER_DEFENSE';
 UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_WALLS' WHERE CivUniqueBuildingType='BUILDING_TSIKHE';
 UPDATE Buildings SET Cost=100, PrereqTech='TECH_MASONRY' , OuterDefenseHitPoints=100 WHERE BuildingType='BUILDING_TSIKHE';
--- Georgia gets 50% faith kills instead of Protectorate War Bonus
+-- Georgia gets 50% faith kills instead of Protectorate War Bonus (online speed)
 INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType)
 	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD');
 INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
-	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'PercentDefeatedStrength' , '50');
+	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'PercentDefeatedStrength' , '100');
 INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value)
 	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'YieldType' , 'YIELD_FAITH');
 UPDATE TraitModifiers SET ModifierId='TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' WHERE ModifierId='TRAIT_PROTECTORATE_WAR_FAITH';
@@ -323,8 +323,6 @@ UPDATE ModifierArguments SET Value='2' WHERE ModifierId='COMMEMORATION_CULTURAL_
 --==============================================================
 --******				G O V E R N M E N T				  ******
 --==============================================================
--- audience chamber +1 gov title
-UPDATE ModifierArguments SET Value='2' WHERE ModifierId='GOV_BUILDING_TALL_GRANT_GOVERNOR_POINTS' AND Name='Delta';
 -- Audience Hall gets +3 Food and +3 Housing instead of +4 Housing
 INSERT OR IGNORE INTO BuildingModifiers (BuildingType , ModifierId)
 	VALUES ('BUILDING_GOV_TALL' , 'GOV_TALL_FOOD_BUFF');

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+
 		<Replace Tag="LOC_BUILDING_BARRACKS_DESCRIPTION" Language="pt_BR">
 			<Text>+50% de experiência de combate pra todas as unidades corpo a corpo e à distância treinadas nessa cidade.[NEWLINE][NEWLINE]Não pode ser construída em um Acampamento que já possua um Estábulo.</Text>
 		</Replace>
@@ -920,6 +921,34 @@
 		<!---->
 		<!--===============   P O L I C Y   C A R D S   ===============-->
 		<!---->
+		<!-- new policies -->
+		<Replace Tag="LOC_POLICY_SIEGE_NAME" Language="pt_BR">
+			<Text>Armas de Cerco</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIEGE_DESCRIPTION" Language="pt_BR">
+			<Text>+50% [ICON_Production] Produção pra unidades de cerco das Eras Antiga e Clássica.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_SIEGE_CHAPTER_HISTORY_PARA_1" Language="pt_BR">
+			<Text>Durante a Guerra do Peloponeso, foram tentados cem cercos e 58 terminaram com a rendição da área sitiada. [NEWLINE] O exército de Alexandre, o Grande, sitiou com sucesso muitas cidades poderosas durante suas conquistas. Duas de suas realizações mais impressionantes no cerco ocorreram no Cerco de Tiro e no Cerco da Rocha Sogdian. Seus engenheiros construíram uma ponte que tinha originalmente 60 m de largura e alcançou o alcance de sua artilharia movida a torção, enquanto seus soldados empurravam torres de cerco que abrigavam lançadores de pedra e catapultas leves para bombardear as muralhas da cidade. [NEWLINE] A maioria dos conquistadores antes dele encontrou Tiro, uma cidade-ilha fenícia a cerca de 1 km do continente, inexpugnável. Os macedônios construíram uma toupeira, uma saliência elevada de terra sobre a água, empilhando pedras em uma ponte de terra natural que se estendia debaixo d'água até a ilha, e embora os tírios se reunissem enviando um navio de bombeiros para destruir as torres e capturassem a toupeira em um frenesi fervilhante, a cidade acabou caindo nas mãos dos macedônios após um cerco de sete meses. Em total contraste com Tiro, Rocha Sogdian foi capturado por um ataque furtivo. Alexandre usou táticas semelhantes a comandos para escalar os penhascos e capturar o terreno elevado, e os desmoralizados defensores se renderam. </Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_NAME" Language="pt_BR">
+			<Text>Explosivos Balísticos</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_HARD_SHELL_EXPLOSIVES_DESCRIPTION" Language="pt_BR">
+			<Text>+50% [ICON_Production] Produção pra unidades de cerco da Era do Renascimento e eras anteriores.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_HARD_SHELL_EXPLOSIVES_CHAPTER_HISTORY_PARA_1" Language="pt_BR">
+			<Text>De acordo com a história, por volta do ano 1189, Iron Li desenvolveu um novo método para caçar raposas que usava um explosivo de cerâmica para assustar as raposas para dentro de suas redes. O explosivo consistia em uma garrafa de cerâmica com boca, recheada com pólvora e fixada por um fusível. Explosivo e rede foram colocados em pontos estratégicos de lugares como bebedouros freqüentados por raposas, e quando eles se aproximassem o suficiente, Iron Li acenderia o pavio, fazendo com que a garrafa de cerâmica explodisse e assustando as raposas assustadas direto para suas redes. [NEWLINE] Embora seja uma história fantasiosa, não se sabe exatamente por que isso causaria o desenvolvimento da bomba de ferro, já que o explosivo foi feito com cerâmica, e outros materiais como bambu ou mesmo couro fariam o mesmo trabalho, presumindo que fossem feitos um barulho alto o suficiente. No entanto, a bomba de ferro fez sua primeira aparição em 1221 no cerco de Qizhou (na moderna província de Hubei), e desta vez seria o Jin que possuía a vantagem tecnológica. O comandante Song Zhao Yurong sobreviveu e foi capaz de retransmitir seu relato para a posteridade. </Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_TRENCH_WARFARE_NAME" Language="pt_BR">
+			<Text>Guerra de Trincheira</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_TRENCH_WARFARE_DESCRIPTION" Language="pt_BR">
+			<Text>+50% de [ICON_Production] Produção pra todas as unidades de cerco.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_TRENCH_WARFARE_CHAPTER_HISTORY_PARA_1" Language="pt_BR">
+			<Text>A guerra de trincheiras é um tipo de guerra terrestre que usa linhas de combate ocupadas, em grande parte compostas por trincheiras militares, nas quais as tropas estão bem protegidas do fogo de armas pequenas do inimigo e substancialmente protegidas da artilharia. A guerra de trincheiras tornou-se arquetipicamente associada à Primeira Guerra Mundial (1914-1918), quando a Race to the Sea rapidamente expandiu o uso de trincheiras na Frente Ocidental a partir de setembro de 1914. [NEWLINE] A guerra de trincheiras proliferou quando uma revolução no poder de fogo não foi acompanhada por avanços semelhantes na mobilidade, resultando em uma forma extenuante de guerra em que o defensor tinha a vantagem. Na Frente Ocidental, em 1914–1918, ambos os lados construíram sistemas elaborados de trincheiras, subterrâneos e de escavações, que se opõem ao longo de uma frente, protegidos de ataques por arame farpado. A área entre as linhas de trincheira opostas (conhecida como "terra de ninguém") foi totalmente exposta ao fogo de artilharia de ambos os lados. Ataques, mesmo que bem-sucedidos, freqüentemente causaram graves baixas. </Text>
+		</Replace>
 		<!---->
 		<!--===============   R E L I G I O N S   ===============-->
 		<!-- Crusader Religion -->
