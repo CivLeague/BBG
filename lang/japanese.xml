@@ -311,9 +311,6 @@
 		<Row Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="ja_JP">
 			<Text>異大陸で攻撃する際にユニットの[ICON_Strength]戦闘力+5。</Text>
 		</Row>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="ja_JP">
-			<Text>ユニットが駐留している都市は毎ターン忠誠度+3を得る。軍団あるいは大軍団が駐留している場合は毎ターン忠誠度+5を得る。対応する社会制度が発明されている場合、都市を征服したユニットは軍団あるいは大軍団にアップグレードされる。固有建造物のイカンダが[ICON_CULTURE]文化力+1、[ICON_GOLD]ゴールド+1を供給する。</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="ja_JP">
 			<Text>タイルを略奪した際の報酬が2倍になる。戦争している文明に対し、同盟国とともに好戦性ペナルティなしで宣戦布告できる。</Text>
 		</Replace>
@@ -695,9 +692,6 @@
 		<Row Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="ja_JP">
 			<Text>隣接する聖地タイル1つごとに+{1_num} [ICON_Gold]</Text>
 		</Row>
-		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="ja_JP">
-            <Text>ノルウェー固有の建造物。[ICON_FAITH]信仰力を使って使徒と審問官を購入するのに必要。この都市の資源タイルに[ICON_FAITH]信仰力+1。この都市内の沿岸資源タイルごとに[ICON_PRODUCTION]生産力+1。</Text>
-        </Replace>
 		<!-- Macedon -->
 		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="ja_JP">
 			<Text>敵の都市を占領すると、10ターンの間、すべての都市の[ICON_PRODUCTION]生産力に20%のボーナスが発生する。兵営かキャンパスを有する都市を占領すると[ICON_TechBoosted]ひらめきが発生する。また、聖地か劇場広場を有する都市を占領すると[ICON_CivicBoosted]天啓が発生する。</Text>
@@ -755,7 +749,7 @@
 		</Replace>
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ja_JP">
-			<Text>すべての長距離戦闘ユニットは戦闘経験値+30%。戦略資源の鉱山の生産力[ICON_Production]+1。ボーナス資源と高級資源の鉱山のゴールド [ICON_Gold] +2。</Text>
+			<Text>すべての長距離戦闘ユニットは戦闘経験値+50%。戦略資源の鉱山の生産力[ICON_Production]+1。ボーナス資源と高級資源の鉱山のゴールド [ICON_Gold] +2。</Text>
 		</Replace>
 		<!-- Russia -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="ja_JP">

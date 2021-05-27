@@ -3,7 +3,9 @@
 --==================
 -- reduce combat bonus for holy cities
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='BYZANTIUM_COMBAT_HOLY_CITIES' AND Name='Amount';
-
+-- tagma nerf from 4
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TAGMA_COMBAT_STRENGTH' AND Name='Amount';
+UPDATE ModifierArguments SET Value='2' WHERE ModifierId='TAGMA_RELIGIOUS_COMBAT' AND Name='Amount';
 
 --==================
 -- Gaul
@@ -21,12 +23,12 @@ DELETE FROM TypeTags WHERE Type='ABILITY_AMBIORIX_NEIGHBOR_COMBAT_BONUS' AND Tag
 -- Remove Apprenticeship free tech
 DELETE FROM DistrictModifiers WHERE DistrictType='DISTRICT_OPPIDUM' AND ModifierId='OPPIDUM_GRANT_TECH_APPRENTICESHIP';
 -- Delay culture to bronze working
-INSERT OR IGNORE INTO RequirementSets(RequirementSetId, RequirementSetType)
+INSERT INTO RequirementSets(RequirementSetId, RequirementSetType)
     VALUES ('BBG_GAUL_HAS_BRONZE_WORKING_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
-INSERT OR IGNORE INTO RequirementSetRequirements(RequirementSetId, RequirementId)
+INSERT INTO RequirementSetRequirements(RequirementSetId, RequirementId)
     VALUES ('BBG_GAUL_HAS_BRONZE_WORKING_REQUIREMENTS', 'BBG_GAUL_HAS_BRONZE_WORKING_REQUIREMENT');
-INSERT OR IGNORE INTO Requirements(RequirementId , RequirementType)
+INSERT INTO Requirements(RequirementId , RequirementType)
     VALUES ('BBG_GAUL_HAS_BRONZE_WORKING_REQUIREMENT', 'REQUIREMENT_PLAYER_HAS_TECHNOLOGY');
-INSERT OR IGNORE INTO RequirementArguments(RequirementId, Name, Value)
+INSERT INTO RequirementArguments(RequirementId, Name, Value)
     VALUES ('BBG_GAUL_HAS_BRONZE_WORKING_REQUIREMENT', 'TechnologyType', 'TECH_BRONZE_WORKING');
 UPDATE Modifiers SET OwnerRequirementSetId='BBG_GAUL_HAS_BRONZE_WORKING_REQUIREMENTS' WHERE ModifierId='GAUL_MINE_CULTURE';

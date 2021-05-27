@@ -402,9 +402,6 @@
 		<Row Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="de_DE">
 			<Text>+5 Kampfstärke bei Angriff auf einen fremden Kontinent.</Text>
 		</Row>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="de_DE">
-			<Text>Städte mit Garnisons-Einheit erhalten +3 Loyalität pro Runde oder +5, wenn es sich um ein Korps oder eine Armee handelt. Eine Einheit, die eine Stadt einnimmt, wird zu einem Korps oder einer Armee verbessert, wenn Ihr die richtigen Ausrichtungen freigeschaltet habt. Gebäude im Ikanda-Bezirk gewähren jeweils +1 [ICON_CULTURE] Kultur und +1 [ICON_GOLD] Gold.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="de_DE">
 			<Text>Erhaltet doppelte Beute durch das Plündern von Feldern. Ihr dürft Krieg ohne Kriegstreiber-Malusse gegen jedweden erklären, der im Krieg mit Euren Verbündeten liegt.</Text>
 		</Replace>
@@ -883,15 +880,12 @@
 			<Text>Schaltet die Handwerker-Fähigkeit frei, ein Chemamüll, die einzigartige Modernisierung der Mapuche, zu bauen.[NEWLINE][NEWLINE]Gewährt [ICON_Culture] Kultur in Höhe von 75 % der Anziehungskraft des Geländefelds und +1 [ICON_Production] Produktion. Gibt zusätzlich +1 [ICON_Production] Production bei der Ausrichtung "Öffentliche Verwaltung". Zusätzlicher [ICON_TOURISM] Tourismus nach Erforschung der Luftfahrt. Mindest-Anziehungskraft "Atemberaubend".</Text>
 		</Replace>
 		<!-- Norway -->
-		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="de_DE">
-            <Text>Einzigartiges Gebäude von Norwegen, dass den Tempel ersetzt. Erforderlich für den Erwerb von Aposteln und Inquisitoren mit Glauben. +1 [ICON_Faith] Glauben für jedes Reesource-Geländefeld in dieser Stadt. +1 [ICON_Production] Produktion für jedes Küstenressourcen-Geländefeld in dieser Stadt.</Text>
-        </Replace>
 		<Replace Tag="LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION" Language="de_DE">
 			<Text>+15 [ICON_Strength] Kampfstärke beim Angriff.</Text>
 		</Replace>
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="de_DE">
-			<Text>Alle Fernkampfeinheiten erhalten +30% Erfahrung. Minen auf strategischen Resource bieten +1 [ICON_Production] Produktion. Minen auf Bonus-Ressourcen und Luxusgütern bieten +2 [ICON_Gold] Gold.</Text>
+			<Text>Alle Fernkampfeinheiten erhalten +50% Erfahrung. Minen auf strategischen Resource bieten +1 [ICON_Production] Produktion. Minen auf Bonus-Ressourcen und Luxusgütern bieten +2 [ICON_Gold] Gold.</Text>
 		</Replace>
 		<!-- Persia -->
 		<!-- Poland -->

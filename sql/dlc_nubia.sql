@@ -15,7 +15,7 @@ UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_MODERN_RANGED_UNI
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_ATOMIC_RANGED_UNIT_PRODUCTION' and Name='Amount';
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='TRAIT_INFORMATION_RANGED_UNIT_PRODUCTION' and Name='Amount';
 -- Nubian Pyramid can also be built on flat plains, but not adjacent to each other
-INSERT OR IGNORE INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
+INSERT INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
 	VALUES
 	('IMPROVEMENT_PYRAMID' , 'TERRAIN_PLAINS'),
 	('IMPROVEMENT_PYRAMID' , 'TERRAIN_GRASS');
@@ -36,7 +36,7 @@ UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID="Pyramid_TheaterAdjacen
 --==============================================================
 DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_NUBIA' AND TerrainType='TERRAIN_DESERT_HILLS';
 DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_NUBIA' AND TerrainType='TERRAIN_DESERT';
-INSERT OR IGNORE INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
+INSERT INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
 	VALUES
 	('CIVILIZATION_NUBIA' , 'TERRAIN_PLAINS'  , 3),
 	('CIVILIZATION_NUBIA' , 'TERRAIN_PLAINS_HILLS' , 3);

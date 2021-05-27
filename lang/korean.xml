@@ -426,9 +426,6 @@
 		<Row Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="ko_KR">
 			<Text>[ICON_Capital] 수도가 위치하지 않은 대륙에서 공격 시 [ICON_Strength] 전투력 +5. (루즈벨트)</Text>
 		</Row>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="ko_KR">
-			<Text>도시에 주둔군을 유닛으로 배치하면 도시는 턴당 충성심 +3을 얻으며, 군단 또는 군대로 배치하면 도시는 턴당 충성심 +5를 얻습니다. 타 도시를 유닛으로 정복하면, 해당 유닛은 군단 또는 군대로 업그레이드됩니다(단, 올바른 사회 제도를 잠금 해제한 경우). 이칸다 특수지구 내부 건물들은 [ICON_Culture] 문화 +1, [ICON_Gold] 금 +1을 제공합니다.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="ko_KR">
 			<Text>타일 약탈을 통해 얻은 수확량이 100% 증가합니다. 자신의 동맹국과 전쟁 중인 모든 세력에 전쟁광 페널티 없이 전쟁을 선포할 수 있습니다.</Text>
 		</Replace>
@@ -918,15 +915,12 @@
 			<Text>마푸체 특유의 체마물을 지을 수 있는 건설자의 능력을 잠금 해제합니다.[NEWLINE][NEWLINE][ICON_Production] 생산력 +1 및 타일 매력도의 75%만큼 [ICON_CULTURE] 문화를 제공합니다. 공공 행정 사회 제도를 획득하면 [ICON_PRODUCTION] 생산력 +1을 추가 제공합니다. 비행을 연구하면 [ICON_TOURISM] 관광을 추가로 제공합니다. 놀라운 매력도 이상의 타일에서 지을 수 있습니다.</Text>
 		</Replace>
 		<!-- Norway -->
-		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="ko_KR">
-            <Text>노르웨이 특유의 건물입니다. [ICON_Faith] 신앙으로 사도와 이단심문관을 구매하기 위해 요구됩니다. 도시 내 각 자원에 [ICON_FAITH] 신앙 +1을 제공하며, 도시 내 각 해안 자원에 [ICON_PRODUCTION] 생산력 +1을 제공합니다.</Text>
-        </Replace>
 		<Replace Tag="LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION" Language="ko_KR">
 			<Text>공격 시 [ICON_Strength] 전투력 +15.</Text>
 		</Replace>	
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ko_KR">
-			<Text>모든 원거리 유닛이 +30%의 전투 경험치를 획득합니다. 전략 자원 위에 있는 광산에서 [ICON_Production] 생산력 +1을 제공합니다. 보너스 자원과 사치 자원 위에 있는 광산에서 [ICON_Gold] 금 +2를 제공합니다.</Text>
+			<Text>모든 원거리 유닛이 +50%의 전투 경험치를 획득합니다. 전략 자원 위에 있는 광산에서 [ICON_Production] 생산력 +1을 제공합니다. 보너스 자원과 사치 자원 위에 있는 광산에서 [ICON_Gold] 금 +2를 제공합니다.</Text>
 		</Replace>
 		<!-- Persia -->
 		<!-- Poland -->

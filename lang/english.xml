@@ -430,9 +430,6 @@
 		<Row Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="en_US">
 			<Text>+5 Combat when attacking on foreign continent.</Text>
 		</Row>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="en_US">
-			<Text>Cities with a garrisoned unit get +3 Loyalty per turn, or +5 if it is a Corps or Army. Conquering a city with a unit will upgrade it into a Corps or Army, if the proper Civics are unlocked. Ikanda buildings provide +1 [ICON_CULTURE] Culture and +1 Gold [ICON_GOLD] each.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="en_US">
 			<Text>Receieve double the rewards from pilliaging tiles. May declare war on anyone at war with their allies without warmonger penalties.</Text>
 		</Replace>
@@ -900,15 +897,12 @@
 			<Text>Unlocks the Builder ability to construct a Chemamull, unique to Mapuche.[NEWLINE][NEWLINE]Provides [ICON_CULTURE] Culture equal to 75% of the tile's Appeal and +1 [ICON_PRODUCTION] Production. Gives an additional +1 [ICON_PRODUCTION] Production at the Civil Service Civic. Additional [ICON_TOURISM] Tourism after researching Flight. Minimum Appeal of Breathtaking.</Text>
 		</Replace>
 		<!-- Norway -->
-		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="en_US">
-            <Text>A building unique to Norway that replaces the Temple. +1 [ICON_FAITH] to each resource tile in this city and +1 [ICON_PRODUCTION] Production for each coastal resource tile in this city. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith.</Text>
-        </Replace>
 		<Replace Tag="LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION" Language="en_US">
 			<Text>+15 [ICON_Strength] Combat Strength when attacking.</Text>
 		</Replace>
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="en_US">
-			<Text>All Ranged units gain +30% combat experience. Mines over strategic resources provide +1 [ICON_Production] Production. Mines over bonus and luxury resources provide +2 [ICON_Gold] Gold.</Text>
+			<Text>All Ranged units gain +50% combat experience. Mines over strategic resources provide +1 [ICON_Production] Production. Mines over bonus and luxury resources provide +2 [ICON_Gold] Gold.</Text>
 		</Replace>
 		<!-- Persia -->
 		<!-- Poland -->
@@ -931,23 +925,6 @@
 			<Text>Scythian unique Classical Era ranged unit with 4 [ICON_Movement] Movement and a [ICON_Range] Range of 2.</Text>
 		</Replace>
 		<!-- Spain -->
-		<!---->
-		<!---->
-		<!--===============   D E D I C A T I O N S   ===============-->
-		<!-- Pen, Brush and Voice -->
-		<!---->
-		<!---->
-		<!--===============   G O V E R N M E N T   ===============-->
-		<!---->
-		<!---->
-		<!--===============   P A N T H E O N S   ===============-->
-		<!---->
-		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_FOOD] Food for [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], and [ICON_RESOURCE_WHEAT] tiles.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>When chosen receive a Builder in your capital. +1 [ICON_FOOD] Food for [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT], and [ICON_RESOURCE_MAIZE] tiles.</Text>
-		</Replace>
 		<!---->
 		<!--===============   P O L I C Y   C A R D S   ===============-->
 		<!---->

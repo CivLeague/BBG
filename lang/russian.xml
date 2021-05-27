@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="ru_RU">
 			<Text>Рудники дают небольшой бонус соседним районам, культурный захват клеток без владельца и получают +1 [ICON_CULTURE] культуру после изучения Обработки бронзы. Специализированные районы не получают бонус за соседство с другими районами, а также не могут быть построены рядом с центром города.</Text>
 		</Replace>
@@ -325,9 +324,6 @@
 		<Row Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="ru_RU">
 			<Text>+5 к боевой мощи в атаке на чужом континенте.</Text>
 		</Row>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="ru_RU">
-			<Text>Города с размещенным юнитом получают +3 лояльности за ход, +5 – с размещенным корпусом или армией. Захват города юнитом повышает его до корпуса или армии, если открыты соответствующие социальные институты. Постройки в Иканде получают +1 [ICON_CULTURE] культуры и +1 золота [ICON_GOLD].</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="ru_RU">
 			<Text>Получает удвоенный бонус при грабеже. Может объявить войну любому, кто находится в войне с его союзником без штрафа за милитаризм.</Text>
 		</Replace>
@@ -755,7 +751,7 @@
 		</Replace>
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ru_RU">
-			<Text>Все дальнобойные получают  на 30% больше боевого опыта. Рудники на стратегических ресурсах дают +1 [ICON_Production] производства. Рудники на бонусных ресурсах и ресурсах роскоши дают +2 [ICON_Gold] золота.</Text>
+			<Text>Все дальнобойные получают  на 50% больше боевого опыта. Рудники на стратегических ресурсах дают +1 [ICON_Production] производства. Рудники на бонусных ресурсах и ресурсах роскоши дают +2 [ICON_Gold] золота.</Text>
 		</Replace>
 		<!-- Russia -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="ru_RU">
@@ -799,9 +795,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION" Language="ru_RU">
 			<Text>Кхмеры получают +2 [ICON_FAITH] за международные торговые пути к своим городам и от них. Цивилизация-отправитель такого торгового пути также имеет с него +2 [ICON_FAITH] веры. +3 [ICON_FAITH] веры и +1 [ICON_AMENITIES] довольства от развлечений в каждом городе с акведуком. Фермы рядом с акведуком дают +2 [ICON_FOOD] еды.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="ru_RU">
-			<Text>Уникальная постройка Норвегии, которая заменяет им храм. +1 к [ICON_FAITH] вере каждому ресурсу в городе и +1 к [ICON_PRODUCTION] производству за каждый прибрежный ресурс. Требуется для приобретения апостолов и инквизиторов за [ICON_Faith] веру.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="ru_RU"> 
 			<Text>Чудо природы на четыре клетки. Представляет собой болото и дает +2 [ICON_Food] пищи, +2 [ICON_Culture] культуры и +2 [ICON_Science] науки.</Text>

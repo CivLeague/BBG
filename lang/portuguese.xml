@@ -401,9 +401,6 @@
 		<Row Tag="LOC_PROMOTION_COMBAT_FOREIGN_CONTINENT_DESCRIPTION" Language="pt_BR">
 			<Text>+5 de força de combate enquando atacando em continente estrangeiro.</Text>
 		</Row>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="pt_BR">
-			<Text>Cidades guarnecidas por unidades obtêm +3 de lealdade por turno (+5 se for uma Corporação ou Exército). Conquistar cidades com unidades as melhoraram para Corporação ou Exército, se os cívicos adequados estiverem desbloqueados. Construções em Ikanda concedem +1 de [ICON_CULTURE] cultura e de [ICON_GOLD] ouro cada.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="pt_BR">
 			<Text>Recebe o dobro de recompensa ao pilhar painéis. Pode declarar guerra em qualquer um que esteja em guerra com seus aliados sem gerar [ICON_STAT_GRIEVANCE] queixas.</Text>
 		</Replace>
@@ -876,15 +873,12 @@
 			<Text>Desbloqueia a habilidade de construtores construírem o Chemamüll, único dos Mapuche.[NEWLINE][NEWLINE] Concede [ICON_CULTURE] Cultura equivalente a 75% do apelo do painel +1 [ICON_PRODUCTION] Produção. Concede +1 [ICON_PRODUCTION] Produção com o cívico de Serviço Público. Turismo [ICON_TOURISM] adicional após pesquisar o Vôo. Apelo mínimo deve ser de Tirar o Fôlego.</Text>
 		</Replace>
 		<!-- Norway -->
-		<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="pt_BR">
-            <Text>Uma edificação única da Noruega que substitui o Templo. +1 [ICON_FAITH] para cada painel de recurso nesta cidade e +1 [ICON_PRODUCTION] Produção para cada painel de recurso costeiro nesta cidade. Necessário para se comprar Apóstolos e Inquisidores com [ICON_FAITH] Fé.</Text>
-        </Replace>
 		<Replace Tag="LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION" Language="pt_BR">
 			<Text>+15 [ICON_Strength] de Força de Combate quando atacando.</Text>
 		</Replace>
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="pt_BR">
-			<Text>Todas unidades à distância ganham +30% de experiência de combate. Minas em recursos Estratégicos geram +1 [ICON_PRODUCTION] de Produção. Minas em recursos de Luxo produzem +2 [ICON_GOLD] Ouro.</Text>
+			<Text>Todas unidades à distância ganham +50% de experiência de combate. Minas em recursos Estratégicos geram +1 [ICON_PRODUCTION] de Produção. Minas em recursos de Luxo produzem +2 [ICON_GOLD] Ouro.</Text>
 		</Replace>
 		<!-- Persia -->
 		<!-- Poland -->

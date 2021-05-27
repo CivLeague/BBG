@@ -1,7 +1,7 @@
 --==========
 -- Nubia
 --==========
-INSERT OR IGNORE INTO Improvement_ValidFeatures (ImprovementType , FeatureType)
+INSERT INTO Improvement_ValidFeatures (ImprovementType , FeatureType)
 	VALUES
 	('IMPROVEMENT_PYRAMID' , 'FEATURE_FLOODPLAINS_GRASSLAND'),
 	('IMPROVEMENT_PYRAMID' , 'FEATURE_FLOODPLAINS_PLAINS');

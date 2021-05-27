@@ -392,9 +392,6 @@
 			<Replace Tag="LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION" Language="pl_PL">
 				<Text>+15 do [ICON_STRENGTH] siły bojowej podczas ataku.</Text>
 			</Replace>
-			<Replace Tag="LOC_BUILDING_STAVE_CHURCH_DESCRIPTION" Language="pl_PL">
-				<Text>Budowla zastępująca świątynię dostępna wyłącznie dla Norwegii. +1 do [ICON_FAITH] wiary i +1 do [ICON_PRODUCTION] produkcji każdego zasobu przybrzeżnego należącego do tego miasta. Wymagana aby móc zakupić jednostki apostółow i inkwizytorów za [ICON_FAITH] wiarę.</Text>
-			</Replace>
 			<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="pl_PL">
 				<Text>+{1_num} do [ICON_FAITH] wiary na wodach przybrzeżnych.</Text>
 			</Row>
@@ -422,7 +419,7 @@
 				<Text>Ulepszenie odblokowywane po wynalezieniu technologii murarstwa, mogące znajdować się na polu z pustynią, pustynią ze wzgórzami, równiną zalewową, równiną i łąką. +1 do [ICON_FAITH] wiary. Otrzymuje dodatkowe dochody z sąsiadujących dzielnic. +2 do [ICON_FOOD] żywności, jeśli sąsiaduje z centrum miasta. Jeśli sąsiadująca dzielnica zapewnia premię za sąsiedztwo, +2 do dochodów związanych z tą premią.</Text>
 			</Replace>
 			<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="pl_PL">
-				<Text>Wszystkie jednostki dystansowe otrzymują o +30% więcej doświadczenia bojowego. Kopalnie na zasobach strategicznych dają +1 do [ICON_PRODUCTION] produkcji. Kopalnie na zasobach luksusowych dają +2 do [ICON_GOLD] złota.</Text>
+				<Text>Wszystkie jednostki dystansowe otrzymują o +50% więcej doświadczenia bojowego. Kopalnie na zasobach strategicznych dają +1 do [ICON_PRODUCTION] produkcji. Kopalnie na zasobach luksusowych dają +2 do [ICON_GOLD] złota.</Text>
 			</Replace>
 
 			<!-- ================ Persia ================ -->
@@ -544,9 +541,6 @@
 			</Replace>
 
 			<!-- ================ Zulu ================ -->
-			<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="pl_PL">
-				<Text>Miasta ze stacjonującą w nich jednostką zyskują +3 do lojalności na turę lub +5, jeśli stacjonuje w nich korpus bądź armia. Podbicie miasta jednostką sprawia, że zostaje ona awansowana do korpusu lub armii, jeśli wcześniej odblokowano odpowiednie idee. Budynki Ikandy dają +1 do [ICON_CULTURE] kultury i +1 złota [ICON_GOLD] każdy.</Text>
-			</Replace>
 			<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="pl_PL">
 				<Text>Umożliwia wcześniejsze tworzenie korpusów (dzięki idei najemników) i armii (dzięki idei nacjonalizmu). Zapewnia +5 do podstawowej [ICON_STRENGTH] siły bojowej korpusów i armii po odkryciu ideii nacjonalizmu. </Text>
 			</Replace>
