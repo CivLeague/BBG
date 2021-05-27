@@ -883,7 +883,7 @@
 		</Replace>
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="pt_BR">
-			<Text>Todas unidades à distância ganham +25% de experiência de combate. Minas em recursos Estratégicos geram +1 [ICON_PRODUCTION] de Produção. Minas em recursos de Luxo produzem +2 [ICON_GOLD] Ouro.</Text>
+			<Text>Todas unidades à distância ganham +30% de experiência de combate. Minas em recursos Estratégicos geram +1 [ICON_PRODUCTION] de Produção. Minas em recursos de Luxo produzem +2 [ICON_GOLD] Ouro.</Text>
 		</Replace>
 		<!-- Persia -->
 		<!-- Poland -->

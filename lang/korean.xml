@@ -891,7 +891,7 @@
 		</Replace>	
 		<!-- Nubia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="ko_KR">
-			<Text>모든 원거리 유닛이 +25%의 전투 경험치를 획득합니다. 전략 자원 위에 있는 광산에서 [ICON_Production] 생산력 +1을 제공합니다. 보너스 자원과 사치 자원 위에 있는 광산에서 [ICON_Gold] 금 +2를 제공합니다.</Text>
+			<Text>모든 원거리 유닛이 +30%의 전투 경험치를 획득합니다. 전략 자원 위에 있는 광산에서 [ICON_Production] 생산력 +1을 제공합니다. 보너스 자원과 사치 자원 위에 있는 광산에서 [ICON_Gold] 금 +2를 제공합니다.</Text>
 		</Replace>
 		<!-- Persia -->
 		<!-- Poland -->
