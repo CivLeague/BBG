@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!--<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.18.0">-->
-<Mod id="158bfbcd-088f-483d-90c5-a2d461fb98a5">
+<Mod id="cb84074d-5007-4207-b662-c35a5f7be217" version="3.18.0">
+<!--<Mod id="158bfbcd-088f-483d-90c5-a2d461fb98a5">-->
 	<Properties>
-		<!--<Name>Legacy Better Balanced Game 3.18.0</Name>-->
-		<Name>Legacy Beta Balanced Game</Name>
+		<Name>Legacy Better Balanced Game 3.18.0</Name>
+		<!--<Name>Legacy Beta Balanced Game</Name>-->
 		<Description>
 			If you're interested in joining the balance discussion, follow this link:  https://discord.gg/xrNvufBqXy
 		</Description>
