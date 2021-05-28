@@ -143,7 +143,7 @@
 			<Text>自文明の首都と同じ大陸に位置するタイルで防衛する際、あるいは他の大陸で攻撃する際にユニットの[ICON_Strength]戦闘力+5。国立公園のある都市は全タイルのアピール+1。ライフリングの研究を完了すると固有ユニットであるラフライダーが解禁される。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="ja_JP">
-			<Text>この都市で訓練されたすべての海上ユニットの経験値取得速度+50%。艦隊と大艦隊を直接訓練できるようになり、それらのコストが25%削減される。この都市のすべての沿岸タイルで[ICON_GOLD]ゴールド+2。毎ターン[ICON_RESOURCE_COAL]石炭+1。</Text>
+			<Text>この都市で訓練されたすべての海上ユニットの経験値取得速度+25%。艦隊と大艦隊を直接訓練できるようになり、それらのコストが25%削減される。この都市のすべての沿岸タイルで[ICON_GOLD]ゴールド+2。毎ターン[ICON_RESOURCE_COAL]石炭+1。</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="ja_JP">
 			<Text>このプロジェクトが完了したとき、重複している高級資源1つごとに[ICON_CULTURE]文化力25と[ICON_TOURISM]観光力25(スタンダード速度)をフランスに与える。</Text>
@@ -245,7 +245,7 @@
 			<Text>この都市で訓練されたすべての陸上ユニットの経験値取得速度+50%[NEWLINE]発見されていれば、毎ターン[ICON_RESOURCE_NITER]硝石を1つ供給する。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>この都市で訓練されたすべての陸上ユニットの経験値取得速度+50%[NEWLINE]戦略資源の備蓄量+10（スタンダード速度）。発見されていれば、毎ターン[ICON_RESOURCE_NITER]硝石を1つ供給する。</Text>
+			<Text>この都市で訓練されたすべての陸上ユニットの経験値取得速度+25%[NEWLINE]戦略資源の備蓄量+10（スタンダード速度）。発見されていれば、毎ターン[ICON_RESOURCE_NITER]硝石を1つ供給する。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="ja_JP">
 			<Text>河川に隣接する区域と遺産に対する[ICON_Production]生産力+25%。氾濫原が区域と遺産の建設を妨げない。</Text>
@@ -342,10 +342,10 @@
 			<Text>接触済みの全文明に対して、通常より1レベル高い[ICON_VisLimited]外交的視野をもつ。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="ja_JP">
-			<Text>この都市で生産された航空ユニットの経験値+75%。飛行場の航空ユニット格納スロット+2。早期展開を発明後、空港を持つ飛行場間で陸上ユニットを空輸できるようになる。発見されていれば、毎ターン[ICON_RESOURCE_ALUMINUM]アルミニウム+2を供給する。</Text>
+			<Text>この都市で生産された航空ユニットの経験値+25%。飛行場の航空ユニット格納スロット+2。早期展開を発明後、空港を持つ飛行場間で陸上ユニットを空輸できるようになる。発見されていれば、毎ターン[ICON_RESOURCE_ALUMINUM]アルミニウム+2を供給する。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="ja_JP">
-			<Text>この都市で生産された陸上ユニットの経験値+50%。[NEWLINE]備蓄の上限量+10(スタンダード速度)。[NEWLINE]軍団、大軍団を直接生産できるようになる、またそれらのコスト-25％。発見されていれば、毎ターン[ICON_RESOURCE_ALUMINUM]石油+2を供給する。</Text>
+			<Text>この都市で生産された陸上ユニットの経験値+25%。[NEWLINE]備蓄の上限量+10(スタンダード速度)。[NEWLINE]軍団、大軍団を直接生産できるようになる、またそれらのコスト-25％。発見されていれば、毎ターン[ICON_RESOURCE_ALUMINUM]石油+2を供給する。</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN_DESCRIPTION" Language="ja_JP">
 			<Text>この都市が産出する[ICON_Science]科学力+15%。</Text>
@@ -440,7 +440,7 @@
 			<Text>ペン・筆・声: [ICON_CivicBoosted]天啓を得るごとに時代スコア+1。傑作スロットを持つ建造物を建設するごとに時代スコア+1。黄金時代の開始時に選択された場合、[ICON_CivicBoosted]天啓による社会制度解禁へのボーナス+10%。すべての都市は専門区域1つごとに[ICON_Culture]文化力+2と[ICON_Gold]ゴールド+1を得る。</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="ja_JP">
-			<Text>[ICON_Governor] 総督が置かれている都市の [ICON_Amenities] 快適性+1、 [ICON_FOOD] 食料+3、 [ICON_Housing] 住宅+3。[NEWLINE][ICON_Governor] 総督が置かれていない都市の忠誠度-2。[NEWLINE][ICON_Governor] 総督の昇進を2つ獲得。</Text>
+			<Text>[ICON_Governor] 総督が置かれている都市の [ICON_Amenities] 快適性+1、 [ICON_FOOD] 食料+3、 [ICON_Housing] 住宅+3。[NEWLINE][ICON_Governor] 総督が置かれていない都市の忠誠度-2。[NEWLINE][ICON_Governor] 総督の昇進を1つ獲得。</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ja_JP">
 			<Text>キャンパスを代替する韓国固有の区域。丘陵タイルに建設されなければならない。基本隣接ボーナスとして[ICON_SCIENCE]科学力+2。隣接する鉱山2つにつき [ICON_SCIENCE] 科学力+1。隣接する劇場区域の [ICON_CULTURE] 文化力+1。建設によって文化爆弾を発動する。</Text>
@@ -730,7 +730,7 @@
 		<!-- -->
 		<!-- Crusader Religion -->
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ja_JP">
-			<Text>軍事ユニットはこの宗教を信仰している他文明の近くで戦闘力[ICON_Strength]+5 を得る。</Text>
+			<Text>軍事ユニットはこの宗教を信仰している他文明の近くで戦闘力[ICON_Strength]+7 を得る。</Text>
 		</Replace>
 		<!-- Australia -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="ja_JP">

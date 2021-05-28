@@ -32,24 +32,41 @@ INSERT INTO Improvement_BonusYieldChanges (Id, ImprovementType, YieldType, Bonus
 --==================
 -- Canada
 --==================
+-- +1 food on tundra city centers
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
+    ('BBG_TOUNDRA_CITY_EXTRA_FOOD', 'MODIFIER_PLAYER_ADJUST_PLOT_YIELD', 'PLOT_IS_TUNDRA_CITY_REQUIREMENTS'),
+    ('BBG_TOUNDRA_HILLS_CITY_EXTRA_FOOD', 'MODIFIER_PLAYER_ADJUST_PLOT_YIELD', 'PLOT_IS_TUNDRA_HILL_CITY_REQUIREMENTS');
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_TOUNDRA_CITY_EXTRA_FOOD', 'YieldType', 'YIELD_FOOD'),
+    ('BBG_TOUNDRA_CITY_EXTRA_FOOD', 'Amount', '1'),
+    ('BBG_TOUNDRA_HILLS_CITY_EXTRA_FOOD', 'YieldType', 'YIELD_FOOD'),
+    ('BBG_TOUNDRA_HILLS_CITY_EXTRA_FOOD', 'Amount', '1');
+INSERT INTO RequirementSets(RequirementSetId, RequirementSetType) VALUES
+    ('PLOT_IS_TUNDRA_CITY_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL'),
+    ('PLOT_IS_TUNDRA_HILL_CITY_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements(RequirementSetId , RequirementId) VALUES
+    ('PLOT_IS_TUNDRA_CITY_REQUIREMENTS', 'REQUIRES_PLOT_HAS_TUNDRA'),
+    ('PLOT_IS_TUNDRA_CITY_REQUIREMENTS', 'BBG_REQUIRES_PLOT_IS_CITY_CENTER'),
+    ('PLOT_IS_TUNDRA_HILL_CITY_REQUIREMENTS', 'REQUIRES_PLOT_HAS_TUNDRA_HILLS'),
+    ('PLOT_IS_TUNDRA_HILL_CITY_REQUIREMENTS', 'BBG_REQUIRES_PLOT_IS_CITY_CENTER');
+INSERT INTO Requirements(RequirementId , RequirementType) VALUES
+	('BBG_REQUIRES_PLOT_IS_CITY_CENTER' , 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES');
+INSERT INTO RequirementArguments(RequirementId , Name, Value) VALUES
+	('BBG_REQUIRES_PLOT_IS_CITY_CENTER' , 'DistrictType', 'DISTRICT_CITY_CENTER');
+INSERT INTO TraitModifiers(TraitType , ModifierId) VALUES
+    ('TRAIT_LEADER_LAST_BEST_WEST', 'BBG_TOUNDRA_CITY_EXTRA_FOOD'),
+    ('TRAIT_LEADER_LAST_BEST_WEST', 'BBG_TOUNDRA_HILLS_CITY_EXTRA_FOOD');
+-- national parks give food and prod
 INSERT INTO TraitModifiers (TraitType , ModifierId)
 	VALUES
-	('TRAIT_LEADER_LAST_BEST_WEST'       , 'TUNDRA_EXTRA_FOOD_CPLMOD'           ),
-	('TRAIT_LEADER_LAST_BEST_WEST'       , 'TUNDRA_HILLS_EXTRA_FOOD_CPLMOD'     ),
 	('TRAIT_LEADER_LAST_BEST_WEST'       , 'NATIONAL_PARK_FOOD_YIELDS_CPLMOD'   ),
 	('TRAIT_LEADER_LAST_BEST_WEST'       , 'NATIONAL_PARK_PROD_YIELDS_CPLMOD'   );
 INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId , OwnerRequirementSetId)
 	VALUES
-	('TUNDRA_EXTRA_FOOD_CPLMOD'            , 'MODIFIER_PLAYER_ADJUST_PLOT_YIELD'               , 'PLOT_HAS_TUNDRA_REQUIREMENTS'        , NULL),
-	('TUNDRA_HILLS_EXTRA_FOOD_CPLMOD'      , 'MODIFIER_PLAYER_ADJUST_PLOT_YIELD'               , 'PLOT_HAS_TUNDRA_HILLS_REQUIREMENTS'  , NULL),
 	('NATIONAL_PARK_FOOD_YIELDS_CPLMOD'    , 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_CHANGE' , 'CITY_HAS_NATIONAL_PARK_REQUREMENTS'  , NULL),
 	('NATIONAL_PARK_PROD_YIELDS_CPLMOD'    , 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_CHANGE' , 'CITY_HAS_NATIONAL_PARK_REQUREMENTS'  , NULL);
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES
-	('TUNDRA_EXTRA_FOOD_CPLMOD'            , 'YieldType' , 'YIELD_FOOD'      ),
-	('TUNDRA_EXTRA_FOOD_CPLMOD'            , 'Amount'    , '1'               ),
-	('TUNDRA_HILLS_EXTRA_FOOD_CPLMOD'      , 'YieldType' , 'YIELD_FOOD'      ),
-	('TUNDRA_HILLS_EXTRA_FOOD_CPLMOD'      , 'Amount'    , '1'               ),
 	('NATIONAL_PARK_FOOD_YIELDS_CPLMOD'    , 'YieldType' , 'YIELD_FOOD'      ),
 	('NATIONAL_PARK_FOOD_YIELDS_CPLMOD'    , 'Amount'    , '4'               ),
 	('NATIONAL_PARK_PROD_YIELDS_CPLMOD'    , 'YieldType' , 'YIELD_PRODUCTION'),
@@ -385,6 +402,8 @@ UPDATE ModifierArguments SET Value='4' WHERE ModifierId='GODDESS_OF_FIRE_FEATURE
 --==============================================================
 --******				 RELIGIOUS						  ******
 --==============================================================
+-- earth goddess reverted to their base game version
+UPDATE Modifiers SET SubjectRequirementSetId='PLOT_CHARMING_APPEAL' WHERE ModifierId='EARTH_GODDESS_APPEAL_FAITH_MODIFIER';
 --delete their new work ethic
 DELETE From BeliefModifiers WHERE ModifierId='WORK_ETHIC_ADJACENCY_PRODUCTION_2';
 -- nerf tithe

@@ -583,13 +583,13 @@
 
 			<!-- ================ Airport ================ -->
 			<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="pl_PL">
-				<Text>+75% doświadczenia bojowego dla jednostek powietrznych wyszkolonych w tym mieście. +2 miejsce na jednostki powietrzne w dzielnicy z aerodromem. Po odblokowaniu idei błyskawicznej relokacji umożliwia transportowanie drogą powietrzną jednostek lądowych pomiędzy dzielnicami z aerodromem, w których znajdują się lotniska. +2 do [ICON_RESOURCE_ALUMINUM] aluminium jeżeli zostało odkryte.</Text>
+				<Text>+25% doświadczenia bojowego dla jednostek powietrznych wyszkolonych w tym mieście. +2 miejsce na jednostki powietrzne w dzielnicy z aerodromem. Po odblokowaniu idei błyskawicznej relokacji umożliwia transportowanie drogą powietrzną jednostek lądowych pomiędzy dzielnicami z aerodromem, w których znajdują się lotniska. +2 do [ICON_RESOURCE_ALUMINUM] aluminium jeżeli zostało odkryte.</Text>
 			</Replace>
 			<Replace Tag="LOC_BUILDING_HANGAR_DESCRIPTION" Language="pl_PL">
 				<Text>+50% doświadczenia bojowego dla jednostek powietrznych wyszkolonych w tym mieście. +1 miejsca na jednostki powietrzne w dzielnicy z aerodromem.</Text>
 			</Replace>
 			<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="pl_PL">
-				<Text>+50% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości).[NEWLINE]Umożliwia bezpośrednie szkolenie korpusów i armii. Koszt szkolenia korpusów i armii zmniejszony o 25%. +2 [ICON_RESOURCE_OIL] ropy na turę jeżeli została odkryta.</Text>
+				<Text>+25% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości).[NEWLINE]Umożliwia bezpośrednie szkolenie korpusów i armii. Koszt szkolenia korpusów i armii zmniejszony o 25%. +2 [ICON_RESOURCE_OIL] ropy na turę jeżeli została odkryta.</Text>
 			</Replace>
 
 			<!-- ================ Armory ================ -->
@@ -597,7 +597,7 @@
 				<Text>+50% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]+1 [ICON_RESOURCE_NITER] saletry na turę (jeżeli odkryta).</Text>
 			</Replace>
 			<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="pl_PL">
-				<Text>+50% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości).[NEWLINE]+1 [ICON_RESOURCE_NITER] saletry na turę (jeżeli odkryta).</Text>
+				<Text>+25% doświadczenia bojowego dla wszystkich jednostek lądowych wyszkolonych w tym mieście.[NEWLINE]Zapasy zasobów strategicznych zwiększone o +10 (przy standardowej prędkości).[NEWLINE]+1 [ICON_RESOURCE_NITER] saletry na turę (jeżeli odkryta).</Text>
 			</Replace>
 
 			<!-- ================ Encampment ================ -->
@@ -637,7 +637,7 @@
 				<Text>+25% do [ICON_PRODUCTION] produkcji wszystkich jednostek morskich i lądowych. Zmniejsza koszt utrzymania jednostek o 1 [ICON_GOLD] złota.[NEWLINE]Daje 1 tytuł [Icon_Governor] gubernatora i zwiększa zapasy zasobów strategicznych o 10.</Text>
 			</Replace>
 			<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="pl_PL">
-				<Text>+1 [ICON_AMENITIES] udogodnienie, +3 [ICON_FOOD] żywności i +3 [ICON_HOUSING] obszary mieszkalne w miastach z [ICON_Governor] gubernatorem.[NEWLINE]-2 do lojalności w miastach bez [ICON_Governor] gubernatora.[NEWLINE]Daje 2 tytuł [Icon_Governor] gubernatora.</Text>
+				<Text>+1 [ICON_AMENITIES] udogodnienie, +3 [ICON_FOOD] żywności i +3 [ICON_HOUSING] obszary mieszkalne w miastach z [ICON_Governor] gubernatorem.[NEWLINE]-2 do lojalności w miastach bez [ICON_Governor] gubernatora.[NEWLINE]Daje 1 tytuł [Icon_Governor] gubernatora.</Text>
 			</Replace>
 
 			<!-- ================ Harbour ================ -->
@@ -648,7 +648,7 @@
 				<Text>+50% doświadczenia bojowego dla wszystkich jednostek morskich wyszkolonych w tym mieście. +1 [ICON_FOOD] żywności ze wszystkich pól wybrzeża należących do tego miasta. +2 do [ICON_HOUSING] obszarów mieszkalnych jeżeli miasto sąsiaduje z wybrzeżem. +1 do [ICON_TradeRoute] do maksymalnej liczby szlaków handlowych, jeśli w mieście nie ma jeszcze targowiska.</Text>
 			</Replace>
 			<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="pl_PL">
-				<Text>+50% doświadczenia bojowego dla wszystkich jednostek morskich wyszkolonych w tym mieście. Umożliwia bezpośrednie szkolenie flot i armad. Koszt szkolenia flot i armad zmniejszony o 25%. +2 [ICON_GOLD] złota ze wszystkich pól wybrzeża należących do tego miasta. +1 [ICON_RESOURCE_COAL] węgla na turę.</Text>
+				<Text>+25% doświadczenia bojowego dla wszystkich jednostek morskich wyszkolonych w tym mieście. Umożliwia bezpośrednie szkolenie flot i armad. Koszt szkolenia flot i armad zmniejszony o 25%. +2 [ICON_GOLD] złota ze wszystkich pól wybrzeża należących do tego miasta. +1 [ICON_RESOURCE_COAL] węgla na turę.</Text>
 			</Replace>
 			<Replace Tag="LOC_BUILDING_SHIPYARD_DESCRIPTION" Language="pl_PL">
 				<Text>+50% doświadczenia z walki dla wszystkich jednostek morskich wyszkolonych w tym mieście. Dodatkowe punkty [ICON_Production] produkcji w liczbie równej premii za sąsiedztwo dzielnicy portowej.</Text>
@@ -866,7 +866,7 @@
 				<Text>Religia rozprzestrzenia się do miast odleglejszych o 40%.</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="pl_PL">
-				<Text>Jednostki bojowe otrzymują +5 do [ICON_STRENGTH] siły bojowej w granicach obcych miast wyznających tę religię.</Text>
+				<Text>Jednostki bojowe otrzymują +7 do [ICON_STRENGTH] siły bojowej w granicach obcych miast wyznających tę religię.</Text>
 			</Replace>
 			<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="pl_PL">
 				<Text>Każda dzielnica świątynna i kulturalna w mieście wyznającym tę religię zapewnia odpowiednio +2 do [ICON_FAITH] wiary lub +2 do [ICON_CULTURE] kultury.</Text>

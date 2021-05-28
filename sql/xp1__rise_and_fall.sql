@@ -4,6 +4,8 @@
 --==================
 -- Australia
 --==================
+-- outback moved to fuedalism
+UPDATE Improvements SET PrereqCivic='CIVIC_FEUDALISM' WHERE ImprovementType='IMPROVEMENT_OUTBACK_STATION';
 -- custom mine that doesn't take away appeal
 INSERT INTO Types (Type, Kind) VALUES
 	('TRAIT_CIV_FAUX_MINE_TRAIT_BBG', 'KIND_TRAIT'),

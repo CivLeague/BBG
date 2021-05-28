@@ -1440,8 +1440,6 @@ UPDATE GlobalParameters SET Value='2.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_
 UPDATE GlobalParameters SET Value='1.0' WHERE Name='RELIGION_SPREAD_TRADE_ROUTE_PRESSURE_FOR_ORIGIN'     ;
 -- defender of faith nerf
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='DEFENDER_OF_FAITH_COMBAT_BONUS_MODIFIER' AND Name='Amount';
--- earth goddess buff
-UPDATE Modifiers SET SubjectRequirementSetId='PLOT_CHARMING_APPEAL' WHERE ModifierId='EARTH_GODDESS_APPEAL_FAITH_MODIFIER';
 -- Divine Inspiration yield increased
 UPDATE ModifierArguments SET Value='6' WHERE ModifierId='DIVINE_INSPIRATION_WONDER_FAITH_MODIFIER' AND Name='Amount';
 -- Crusader +7 instead of +10
@@ -1571,7 +1569,6 @@ UPDATE StartBiasFeatures SET Tier=5 WHERE CivilizationType='CIVILIZATION_KONGO' 
 UPDATE Units SET BaseMoves='4' WHERE  UnitType='UNIT_SUBMARINE';
 UPDATE Units SET BaseMoves='6' WHERE  UnitType='UNIT_DESTROYER';
 UPDATE Units SET BaseMoves='5' WHERE  UnitType='UNIT_AIRCRAFT_CARRIER';
-UPDATE Units SET Range=2 WHERE UnitType='UNIT_QUADRIREME';
 UPDATE UnitCommands SET VisibleInUI=0 WHERE CommandType='UNITCOMMAND_PRIORITY_TARGET';
 UPDATE Units SET BaseMoves=3 WHERE UnitType='UNIT_MILITARY_ENGINEER';
 UPDATE Units SET Cost=310 WHERE UnitType='UNIT_CAVALRY';

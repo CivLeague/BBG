@@ -9,16 +9,16 @@
 			<Text>골 특유의 특수지구입니다. 대체되는 산업구역 특수지구보다 비용이 저렴하고 조기에 건설할 수 있습니다. 오피둠 특수지구는 방어력을 갖추고 원거리 공격을 할 수 있습니다. [NEWLINE][NEWLINE]채석장이나 전략 자원에서 [ICON_Production] 생산력 인접 보너스 +2를 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="ko_KR">
-			<Text>이 도시에서 훈련된 모든 공중 유닛이 얻는 전투 경험치가 +75% 증가합니다. 비행장 특수지구에 공중 유닛 슬롯 +2를 제공합니다. 신속한 배치 사회 제도가 잠금 해제되면, 지상 유닛을 공항이 있는 비행장 특수지구 사이에서 공수할 수 있게 됩니다. [ICON_RESOURCE_ALUMINUM] 알루미늄 자원을 발견하였다면, [ICON_RESOURCE_ALUMINUM] 알루미늄 자원을 매턴 2개씩 제공합니다.</Text>
+			<Text>이 도시에서 훈련된 모든 공중 유닛이 얻는 전투 경험치가 +25% 증가합니다. 비행장 특수지구에 공중 유닛 슬롯 +2를 제공합니다. 신속한 배치 사회 제도가 잠금 해제되면, 지상 유닛을 공항이 있는 비행장 특수지구 사이에서 공수할 수 있게 됩니다. [ICON_RESOURCE_ALUMINUM] 알루미늄 자원을 발견하였다면, [ICON_RESOURCE_ALUMINUM] 알루미늄 자원을 매턴 2개씩 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +50% 증가합니다.[NEWLINE]전략 자원 비축력이 +10 증가합니다(일반 속도 기준).[NEWLINE]군단 및 군대를 직접 훈련시킬 수 있습니다. 군단 및 군대 훈련 비용이 25% 감소합니다. [ICON_RESOURCE_OIL] 석유 자원을 발견하였다면, [ICON_RESOURCE_OIL] 석유 자원을 매턴 2개씩 제공합니다.</Text>
+			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +25% 증가합니다.[NEWLINE]전략 자원 비축력이 +10 증가합니다(일반 속도 기준).[NEWLINE]군단 및 군대를 직접 훈련시킬 수 있습니다. 군단 및 군대 훈련 비용이 25% 감소합니다. [ICON_RESOURCE_OIL] 석유 자원을 발견하였다면, [ICON_RESOURCE_OIL] 석유 자원을 매턴 2개씩 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="ko_KR">
 			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +50% 증가합니다.[NEWLINE][ICON_RESOURCE_NITER] 질산칼륨 자원을 발견하였다면, [ICON_RESOURCE_NITER] 질산칼륨 자원을 매턴 1개씩 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="ko_KR">
-			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +50% 증가합니다.[NEWLINE]전략 자원 비축력이 +10 증가합니다(일반 속도 기준). [ICON_RESOURCE_NITER] 질산칼륨 자원을 발견하였다면, [ICON_RESOURCE_NITER] 질산칼륨 자원을 매턴 1개씩 제공합니다.</Text>
+			<Text>이 도시에서 훈련된 모든 지상 유닛이 얻는 전투 경험치가 +25% 증가합니다.[NEWLINE]전략 자원 비축력이 +10 증가합니다(일반 속도 기준). [ICON_RESOURCE_NITER] 질산칼륨 자원을 발견하였다면, [ICON_RESOURCE_NITER] 질산칼륨 자원을 매턴 1개씩 제공합니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="ko_KR">
 			<Text>이 도시에서 훈련된 모든 해상 유닛은 전투 경험치 +50%를 획득합니다. 선단 및 함대를 직접 훈련시킬 수 있습니다. 선단 및 함대 훈련 비용이 25% 감소합니다. 이 도시의 모든 해안 타일에 [ICON_GOLD] 금 +2를 제공합니다. [ICON_RESOURCE_COAL] 석탄 자원을 매턴 1개씩 제공합니다.</Text>
@@ -124,7 +124,7 @@
 			<Text>해당 영토에 퍼진 다른 종교를 25% 감소시킬 수 있으며 다른 종교의 유닛과 신학 전투를 시작할 수 있습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="ko_KR">
-			<Text>전투 유닛은 이 종교를 믿는 외국 도시 근처에서 [ICON_Strength] 전투력 +5를 획득합니다.</Text>
+			<Text>전투 유닛은 이 종교를 믿는 외국 도시 근처에서 [ICON_Strength] 전투력 +7를 획득합니다.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="ko_KR">
@@ -543,7 +543,7 @@
 			<Text>펜, 붓과 목소리: [ICON_CivicBoosted] 영감을 발동할 때마다 시대 점수 +1을 얻습니다. 걸작 슬롯이 있는 건물을 건설하면 시대 점수 +1을 얻습니다. 황금기 시작 시점에서 선택하면 [ICON_CivicBoosted] 영감이 사회 제도 비용의 10%를 추가로 제공합니다. 각 도시는 전문 특수지구마다 [ICON_Culture] 문화 +2와 [ICON_Gold] 금 +1을 얻습니다.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="ko_KR">
-			<Text>[ICON_Governor] 총독이 있는 도시에 [ICON_Amenities] 쾌적도 +1, [ICON_Food] 식량 +3 및 [ICON_Housing] 주거공간 +3을 제공합니다.[NEWLINE][ICON_Governor] 총독이 없는 도시는 충성심 -2가 적용됩니다.[NEWLINE]보상으로 [Icon_Governor] 총독 타이틀 +2.</Text>
+			<Text>[ICON_Governor] 총독이 있는 도시에 [ICON_Amenities] 쾌적도 +1, [ICON_Food] 식량 +3 및 [ICON_Housing] 주거공간 +3을 제공합니다.[NEWLINE][ICON_Governor] 총독이 없는 도시는 충성심 -2가 적용됩니다.[NEWLINE]보상으로 [Icon_Governor] 총독 타이틀 +1.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="ko_KR">
 			<Text>한국 특유의 과학 발전을 위한 특수지구로 캠퍼스 특수지구를 대체합니다. [ICON_SCIENCE] 과학 +2를 제공하며 인접한 광산 2개마다 [ICON_SCIENCE] 과학 +1의 인접 보너스를 추가로 획득합니다. 인접한 극장가 특수지구에서 [ICON_CULTURE] 문화 +1의 인접 보너스를 획득합니다. 언덕에 지어야 합니다. 서원이 완성되면 인접 타일에 문화 폭탄을 투여합니다.</Text>

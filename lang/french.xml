@@ -576,7 +576,7 @@
 			<Text>Les Autels et les Temples fournissent une quantité de [ICON_PRODUCTION] Production égale à leur génération de [ICON_Faith] Foi intrinsèque.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Strength] Puissance de combat +5 pour les unités militaires proches des villes étrangères converties à cette religion.</Text>
+			<Text>[ICON_Strength] Puissance de combat +7 pour les unités militaires proches des villes étrangères converties à cette religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_Amenities] Activités +1 dans les villes abritant un quartier spécialisé.</Text>
@@ -732,7 +732,7 @@
 		<!-- =============== G O U V E R N E M E N T S =============== -->
 		
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_Amenities] Activités +1, [ICON_FOOD] Nourriture +3 et [ICON_Housing] Habitations +3 pour les villes avec un [ICON_Governor] gouverneur. [NEWLINE]Loyauté -2 dans les villes sans [ICON_Governor] Gouverneur.[NEWLINE]Octroie deux titres de [Icon_Governor] Gouverneur.</Text>
+			<Text>[ICON_Amenities] Activités +1, [ICON_FOOD] Nourriture +3 et [ICON_Housing] Habitations +3 pour les villes avec un [ICON_Governor] gouverneur. [NEWLINE]Loyauté -2 dans les villes sans [ICON_Governor] Gouverneur.[NEWLINE]Octroie 1 titres de [Icon_Governor] Gouverneur.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_DESCRIPTION" Language="fr_FR">
 			<Text>Lever les troupes d'une cité-état coûte deux fois moins d'[ICON_Gold] or. [NEWLINE][ICON_Strength] Puissance de combat +4 pour les unités d'une cité-état si vous en êtes le suzerain (y compris pour les unités levées). [NEWLINE]Octroie un titre de [Icon_Governor] gouverneur. [NEWLINE] Octroie 2 [ICON_ENVOY] Emissaires et +2 Points d'Influence par tour.</Text>
@@ -956,13 +956,13 @@
 			<Text>Expérience au combat +50 % pour toutes les unités terrestres formées dans cette ville. [ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +50 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
+			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_NITER] Salpêtre +1 par tour une fois qu'il est découvert.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_DESCRIPTION" Language="fr_FR">
 			<Text>Expérience au combat +50 % pour toutes les unités terrestres formées dans cette ville. Permet la formation immédiate de régiments et d'armées. Coûts d'entraînement des régiments et des armées -25 %.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +50 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_OIL] Pétrole +2 par tour une fois qu'il est découvert. [NEWLINE]Permet la formation immédiate de régiments et d'armées. Coûts d'entraînement des régiments et des armées -25 %.</Text>
+			<Text>Expérience au combat +25 % pour toutes les unités terrestres formées dans cette ville. [NEWLINE]Réserve de ressources stratégiques +10 (en vitesse normale). [NEWLINE][ICON_RESOURCE_OIL] Pétrole +2 par tour une fois qu'il est découvert. [NEWLINE]Permet la formation immédiate de régiments et d'armées. Coûts d'entraînement des régiments et des armées -25 %.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_BASILIKOI_PAIDES_DESCRIPTION" Language="fr_FR">
@@ -992,7 +992,7 @@
 			<Text>Expérience au combat +50 % pour toutes les unités navales formées dans cette ville. Bonus de [ICON_Production] production équivalent au bonus de proximité du port. [ICON_PRODUCTION] Production +1 pour toutes les cases côtières ou lacustres non aménagées de la ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +50 % pour toutes les unités navales formées dans cette ville. Permet la formation immédiate de flottes et d'armadas. Coûts d'entraînement des flottes et des armadas -25 %. [ICON_GOLD] Or +2 pour toutes les cases côtières de la ville. Génère une unité de [ICON_RESOURCE_COAL] Charbon par tour.</Text>
+			<Text>Expérience au combat +25 % pour toutes les unités navales formées dans cette ville. Permet la formation immédiate de flottes et d'armadas. Coûts d'entraînement des flottes et des armadas -25 %. [ICON_GOLD] Or +2 pour toutes les cases côtières de la ville. Génère une unité de [ICON_RESOURCE_COAL] Charbon par tour.</Text>
 		</Replace>
 		
 		<!-- aéroport -->
@@ -1000,7 +1000,7 @@
 			<Text>Expérience au combat +50 % pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +1 dans les aérodromes.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +75 % pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +1 dans les aérodromes. [ICON_RESOURCE_ALUMINUM] Aluminium +2 par tour. Permet le transport aérien des unités entre les aérodromes équipés d'un aéroport une fois le déploiement rapide découvert.</Text>
+			<Text>Expérience au combat +25 % pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +1 dans les aérodromes. [ICON_RESOURCE_ALUMINUM] Aluminium +2 par tour. Permet le transport aérien des unités entre les aérodromes équipés d'un aéroport une fois le déploiement rapide découvert.</Text>
 		</Replace>
 		
 		<!-- tooltips -->

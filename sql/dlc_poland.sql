@@ -5,7 +5,7 @@
 --==================
 -- Poland
 --==================
--- Poland's Winged Hussar moved to Divine Right
+-- Poland's Winged Hussar moved to Reformed Church
 UPDATE Units SET PrereqCivic='CIVIC_REFORMED_CHURCH' WHERE UnitType='UNIT_POLISH_HUSSAR';
 -- Poland gets a relic when founding and completeing a religion
 --Grants Relic Upon Founding Religion

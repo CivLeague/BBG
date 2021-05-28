@@ -94,7 +94,7 @@
 			<Text>Kann die Anwesenheit anderer Religionen auf seinem Gebiet um 25 % reduzieren und den theologischen Kampf mit Einheiten anderer Religionen einleiten.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="de_DE">
-			<Text>Kampfeinheiten erhalten +5 [ICON_Strength] Kampfstärke innerhalb der Grenzen fremder Städte mit dieser Religion.</Text>
+			<Text>Kampfeinheiten erhalten +7 [ICON_Strength] Kampfstärke innerhalb der Grenzen fremder Städte mit dieser Religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="de_DE">
 			<Text>Schweden erhält 50 [ICON_Favor] diplomatische Gunst, wenn es eine Große Persönlichkeit verdient (auf Standardgeschwindigkeit). Schweden erhält +1 [ICON_GreatEngineer] Großer-Ingenieur-Punkt durch Fabriken und +1 [ICON_GreatScientist] Großer-Wissenschafter-Punkt durch Universitäten. Außerdem erhält Schweden +50% [ICON_Production] auf Bibliotheken, Werkstätten, Universitäten und Fabriken. Wenn Schweden mit im Spiel ist,beginnen im Industriezeitalter drei zusätzliche einzigartige Weltkongress-Wettkämpfe.</Text>
@@ -226,7 +226,7 @@
 			<Text>Einheiten erhalten +5 [ICON_Strength] Kampfstärke bei Verteidigung auf ihrem Heimatkontinent und bei Angriff auf jedem fremden Kontinent. +1 Anziehungskraft für alle Geländefelder einer Stadt mit einem Nationalpark. Erhaltet die Spezialeinheit Rough Rider durch die Technologie 'Militärwissenschaft'.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Marineeinheiten, die in dieser Stadt ausgebildet werden. Ermöglicht die unmittelbare Ausbildung von Flotten und Armadas. Die Ausbildungskosten von Flotten und Armadas sinken um 25 %.  +2 [ICON_GOLD] Gold auf allen Küsten-Geländefeldern für diese Stadt. +1 [ICON_RESOURCE_COAL] Kohle pro Runde.</Text>
+			<Text>+25 % Kampferfahrung für alle Marineeinheiten, die in dieser Stadt ausgebildet werden. Ermöglicht die unmittelbare Ausbildung von Flotten und Armadas. Die Ausbildungskosten von Flotten und Armadas sinken um 25 %.  +2 [ICON_GOLD] Gold auf allen Küsten-Geländefeldern für diese Stadt. +1 [ICON_RESOURCE_COAL] Kohle pro Runde.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="de_DE">
 			<Text>Bei Abschluss gewährt dieses Projekt 25 [ICON_CULTURE] Kultur und 25 [ICON_TOURISM] Tourismus (auf Standardgeschwindigkeit) basierend auf der Zahl überschüssiger Luxusgüter in Besitz Frankreichs</Text>
@@ -334,7 +334,7 @@
 			<Text>+50 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]+1 [ICON_RESOURCE_NITER] Salpeter pro Runde nach Erforschung der Technologie 'Militärtechnik".</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]Strategisches Ressourcen-Vorratslager +10 (auf Standardgeschwindigkeit). +1 [ICON_RESOURCE_NITER] Salpeter pro Runde nach Erforschung der Technologie 'Militärtechnik".</Text>
+			<Text>+25 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]Strategisches Ressourcen-Vorratslager +10 (auf Standardgeschwindigkeit). +1 [ICON_RESOURCE_NITER] Salpeter pro Runde nach Erforschung der Technologie 'Militärtechnik".</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION" Language="de_DE">
 			<Text>+25% [ICON_Production] Produktion für Bezirke und Wunder, wenn sie neben einem Fluss platziert werden. Erleidet keinen Schaden durch Überschwemmungen.</Text>
@@ -433,10 +433,10 @@
 			<Text>Hat 1 Stufe [ICON_VisLimited] diplomatische Sichtbarkeit mehr als normal bei jeder Zivilisation, die sie getroffen hat.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="de_DE">
-			<Text>+75 % Kampferfahrung für Lufteinheiten aus dieser Stadt. +2 Lufteinheit-Platz im Flugplatz-Bezirk. Ermöglicht den Lufttransport von Landeinheiten zwischen Flugplatz-Bezirken mit Flughäfen, wenn die Ausrichtung 'Schnelle Entwicklung' freigeschaltet wurde. +2 [ICON_RESOURCE_ALUMINUM] Aluminum pro Runde nach Erforschung von 'Funkwesen'.</Text>
+			<Text>+25 % Kampferfahrung für Lufteinheiten aus dieser Stadt. +2 Lufteinheit-Platz im Flugplatz-Bezirk. Ermöglicht den Lufttransport von Landeinheiten zwischen Flugplatz-Bezirken mit Flughäfen, wenn die Ausrichtung 'Schnelle Entwicklung' freigeschaltet wurde. +2 [ICON_RESOURCE_ALUMINUM] Aluminum pro Runde nach Erforschung von 'Funkwesen'.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]Strategisches Ressourcen-Vorratslager +10 (auf Standardgeschwindigkeit).[NEWLINE]Ermöglicht die unmittelbare Ausbildung von Korps und Armeen. Die Ausbildungskosten von Korps und Armeen sinken um 25%. +2 [ICON_RESOURCE_OIL] Öl pro Runde nach Erforschung von 'Raffinerie'.</Text>
+			<Text>+25 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]Strategisches Ressourcen-Vorratslager +10 (auf Standardgeschwindigkeit).[NEWLINE]Ermöglicht die unmittelbare Ausbildung von Korps und Armeen. Die Ausbildungskosten von Korps und Armeen sinken um 25%. +2 [ICON_RESOURCE_OIL] Öl pro Runde nach Erforschung von 'Raffinerie'.</Text>
 		</Replace>
 
 
@@ -530,7 +530,7 @@
 			<Text>Pen, Brush, and Voice: Gain +1 Era Score each time you trigger an [ICON_CivicBoosted] Inspiration. +1 Era Score for constructing a building with a Great Work Slot. If chosen at the start of a Golden Age, [ICON_CivicBoosted] Inspirations provide an additional 10% of civic costs. Each city receives +2 [ICON_Culture] Culture and +1 [ICON_Gold] Gold for each specialty district.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_Amenities] Amenity, +3 [ICON_Food] Food, and +3 [ICON_Housing] Housing in Cities with [ICON_Governor] Governors[NEWLINE]-2 Loyalty in Cities without [ICON_Governor] Governors.[NEWLINE]Awards +2 [Icon_Governor] Governor Title.</Text>
+			<Text>+1 [ICON_Amenities] Amenity, +3 [ICON_Food] Food, and +3 [ICON_Housing] Housing in Cities with [ICON_Governor] Governors[NEWLINE]-2 Loyalty in Cities without [ICON_Governor] Governors.[NEWLINE]Awards +1 [Icon_Governor] Governor Title.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SEOWON_DESCRIPTION" Language="de_DE">
 			<Text>Ein ausschließlich Korea zur Verfügung stehender Bezirk für wissenschaftliche Bestrebungen. Ersetzt den Campus-Bezirk. +2 [ICON_Science] Wissenschaft. Minen geben einen kleinen Nachbarschaftsbonus. Gewährt +1 [ICON_Culture] wenn neben einem Theaterplatz-Bezirk. Kulturschock auf angrenzen Feldern bei Fertigstellung.</Text>
