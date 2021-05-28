@@ -89,9 +89,6 @@
 		<Replace Tag="LOC_CIVILIZATION_ARMAGH_BONUS_XP2" Language="en_US">
 			<Text>Your Builders can now make Monastery improvements.[NEWLINE][NEWLINE]Monasteries provide +3 [ICON_Faith] Faith. +15 HP healing for friendly religious unit on this tile that has not attacked this turn. +1 [ICON_FAITH] Faith for every 2 adjacent Districts. Provides +1 [ICON_HOUSING] Housing. Receive an additional [ICON_HOUSING] Housing once Colonialism is discovered. Cannot be built next to another Monastery.</Text>
 		</Replace>
-		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="en_US">
-			<Text>[ICON_HOUSING] Housing per level of Walls. +2 [ICON_CULTURE] Culture for every Renaissance Walls.</Text>
-		</Replace>		
 		<Replace Tag="LOC_BELIEF_DEFENDER_OF_FAITH_DESCRIPTION" Language="en_US">
 			<Text>Combat units gain +3 [ICON_Strength] Combat Strength when within the borders of friendly cities that follow this Religion.</Text>
 		</Replace>		
@@ -139,6 +136,18 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_WARRIOR_MONK_DESCRIPTION" Language="en_US">
 			<Text>Fast-moving land combat unit with a unique promotion tree that gains double experience from combat.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_HUSZAR_DESCRIPTION" Language="en_US">
+			<Text>+2 [ICON_Strength] Combat Strength from each City-State that Hungary is Suzerain of.</Text>
+		</Replace>
+		<Replace Tag="LOC_COMBAT_PREVIEW_NUMBER_ALLIES_BONUS_DESC" Language="en_US">
+			<Text>+{1_Amount} from being Suzerain of a city-state</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_GORGO_POLICY_SLOT_COMBAT_BONUS_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_Strength] Combat Strength for each avaiable Military Policy Slot.</Text>
+		</Replace>
+		<Replace Tag="LOC_COMBAT_PREVIEW_NUMBER_MILITARY_POLICIES_BONUS_DESC" Language="en_US">
+			<Text>+{1_Value} from Military Policy Slots</Text>
 		</Replace>
 		<!-- changed in 3.18.0 -->
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="en_US">

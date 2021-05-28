@@ -308,6 +308,8 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value) VALUES
 	('BBG_ADMIRAL_LIGHTHOUSE_DOCKYARD', 'Amount', '1');
 INSERT INTO DistrictModifiers(DistrictType, ModifierId) VALUES
 	('DISTRICT_ROYAL_NAVY_DOCKYARD', 'BBG_ADMIRAL_LIGHTHOUSE_DOCKYARD');
+-- red coat combat nerf
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='REDCOAT_FOREIGN_COMBAT' AND Name='Amount';
 
 
 --==================
@@ -370,6 +372,7 @@ UPDATE ModifierArguments SET Value=100 WHERE ModifierId='UNIQUE_LEADER_CULTURE_K
 -- credit to ielden for this complicated but elegant solution
 -- combat bonus for military slots in gov, not all mili policy cards in play
 -- Create Modifier for each governments
+DELETE FROM TraitModifiers WHERE TraitType='CULTURE_KILLS_TRAIT' AND ModifierId='UNIQUE_LEADER_CULTURE_KILLS_GRANT_ABILITY';
 INSERT INTO Modifiers(ModifierId, ModifierType, OwnerRequirementSetId)
     SELECT 'BBG_GIVE_MODIFIER_GORGO_' || GovernmentType, 'MODIFIER_PLAYER_UNITS_GRANT_ABILITY', 'BBG_PLAYER_IS_GORGO'
     FROM Government_SlotCounts
@@ -393,11 +396,11 @@ INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
     ('BBG_GIVE_MODIFIER_GORGO_ALHAMBRA', 'AbilityType', 'BBG_MODIFIER_GORGO_ALHAMBRA'),
     ('BBG_MODIFIER_GORGO_ALHAMBRA', 'Amount', '1');
 INSERT INTO ModifierStrings(ModifierId, Context, Text)
-    SELECT 'BBG_MODIFIER_GORGO_' || GovernmentType, 'Preview', 'BBG_GORGO_GOVERNMENT_COMBAT_BONUS'
+    SELECT 'BBG_MODIFIER_GORGO_' || GovernmentType, 'Preview', 'LOC_COMBAT_PREVIEW_NUMBER_MILITARY_POLICIES_BONUS_DESC'
     FROM Government_SlotCounts
     WHERE GovernmentSlotType='SLOT_MILITARY' AND NumSlots > 0;
 INSERT INTO ModifierStrings(ModifierId, Context, Text) VALUES
-    ('BBG_MODIFIER_GORGO_ALHAMBRA', 'Preview', 'BBG_GORGO_ALHAMBRA_COMBAT_BONUS');
+    ('BBG_MODIFIER_GORGO_ALHAMBRA', 'Preview', 'LOC_COMBAT_PREVIEW_NUMBER_MILITARY_POLICIES_BONUS_DESC');
 -- Create Unit Ability
 INSERT INTO Types(Type, Kind)
 	SELECT 'BBG_GORGO_COMBAT_ABILITY_' || GovernmentType, 'KIND_ABILITY'
@@ -412,11 +415,11 @@ INSERT INTO TypeTags(Type, Tag)
 INSERT INTO TypeTags(Type, Tag) VALUES
     ('BBG_GORGO_COMBAT_ABILITY_ALHAMBRA', 'CLASS_ALL_COMBAT_UNITS');
 INSERT INTO UnitAbilities(UnitAbilityType , Name, Description, Inactive)
-	SELECT 'BBG_GORGO_COMBAT_ABILITY_' || GovernmentType, 'LOC_BBG_GORGO_COMBAT_ABILITY_NAME', 'LOC_BBG_GORGO_COMBAT_ABILITY_DESCRIPTION', 1
+	SELECT 'BBG_GORGO_COMBAT_ABILITY_' || GovernmentType, 'LOC_ABILITY_GORGO_POLICY_SLOT_COMBAT_BONUS_NAME', 'LOC_ABILITY_GORGO_POLICY_SLOT_COMBAT_BONUS_DESCRIPTION', 1
     FROM Government_SlotCounts
     WHERE GovernmentSlotType='SLOT_MILITARY' AND NumSlots > 0;
 INSERT INTO UnitAbilities(UnitAbilityType , Name, Description, Inactive) VALUES
-    ('BBG_GORGO_COMBAT_ABILITY_ALHAMBRA', 'LOC_BBG_GORGO_COMBAT_ABILITY_NAME', 'LOC_BBG_GORGO_COMBAT_ABILITY_DESCRIPTION', 1);
+    ('BBG_GORGO_COMBAT_ABILITY_ALHAMBRA', 'LOC_ABILITY_GORGO_POLICY_SLOT_COMBAT_BONUS_NAME', 'LOC_ABILITY_GORGO_POLICY_SLOT_COMBAT_BONUS_DESCRIPTION', 1);
 INSERT INTO UnitAbilityModifiers(UnitAbilityType, ModifierId)
     SELECT 'BBG_GORGO_COMBAT_ABILITY_' || GovernmentType, 'BBG_MODIFIER_GORGO_' || GovernmentType
     FROM Government_SlotCounts
@@ -538,7 +541,7 @@ INSERT INTO ExcludedAdjacencies (TraitType , YieldChangeId)
 INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
     ('TRAIT_CIVILIZATION_NKISI', 'TRAIT_DOUBLE_WRITER_POINTS');
 -- increase faith yields for artifacts and sculptures
-UPDATE ModifierArguments SET Value='4' WHERE Name='YieldChange' AND ModifierId IN ('TRAIT_GREAT_WORK_FAITH_SCULPTURE', 'TRAIT_GREAT_WORK_FAITH_ARTIFACT');
+UPDATE ModifierArguments SET Value='3' WHERE Name='YieldChange' AND ModifierId IN ('TRAIT_GREAT_WORK_FAITH_SCULPTURE', 'TRAIT_GREAT_WORK_FAITH_ARTIFACT');
 -- Grant relic on each gov plaza building (credit to ielden, ty)
 INSERT INTO Modifiers(ModifierId, ModifierType, RunOnce, Permanent, OwnerRequirementSetId) VALUES
     ('BBG_KONGO_RELIC_GOVBUILDING_TALL', 'MODIFIER_PLAYER_GRANT_RELIC', 1, 1, 'PLAYER_HAS_GOV_BUILDING_TALL_REQUIREMENTS'),
@@ -867,11 +870,7 @@ INSERT INTO RequirementArguments(RequirementId , Name, Value)
 --==============================================================
 --******				B U I L D I N G S			  	  ******
 --==============================================================
-INSERT INTO BuildingModifiers VALUES ('BUILDING_SEWER', 'SEWER_AMENITY_BBG');
-INSERT INTO Modifiers (ModifierId, ModifierType)
-	VALUES ('SEWER_AMENITY_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_AMENITY ');
-INSERT INTO ModifierArguments (ModifierId, Name, Value)
-	VALUES ('SEWER_AMENITY_BBG', 'Amount', '1');
+UPDATE Buildings SET Entertainment=1 WHERE BuildingType='BUILDING_SEWER';
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='BARRACKS_TRAINED_UNIT_XP';
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='STABLE_TRAINED_UNIT_XP';
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='ARMORY_TRAINED_UNIT_XP';
@@ -1573,7 +1572,7 @@ UPDATE UnitCommands SET VisibleInUI=0 WHERE CommandType='UNITCOMMAND_PRIORITY_TA
 UPDATE Units SET BaseMoves=3 WHERE UnitType='UNIT_MILITARY_ENGINEER';
 UPDATE Units SET Cost=310 WHERE UnitType='UNIT_CAVALRY';
 UPDATE Units SET PrereqTech='TECH_MILITARY_TACTICS' WHERE UnitType='UNIT_MAN_AT_ARMS';
-UPDATE Units SET PrereqTech='TECH_COMBUSTION' WHERE UnitType='UNIT_ANTIAIR';
+UPDATE Units SET PrereqTech='TECH_COMBUSTION' WHERE UnitType='UNIT_ANTIAIR_GUN';
 UPDATE Units SET BaseMoves=3 WHERE UnitType='UNIT_INFANTRY';
 UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_PRIVATEER';
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)

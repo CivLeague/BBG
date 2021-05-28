@@ -2,77 +2,6 @@
 --******			C I V I L I Z A T I O N S			  ******
 --==============================================================
 --==================
--- Australia
---==================
--- outback moved to fuedalism
-UPDATE Improvements SET PrereqCivic='CIVIC_FEUDALISM' WHERE ImprovementType='IMPROVEMENT_OUTBACK_STATION';
--- custom mine that doesn't take away appeal
-INSERT INTO Types (Type, Kind) VALUES
-	('TRAIT_CIV_FAUX_MINE_TRAIT_BBG', 'KIND_TRAIT'),
-	('IMPROVEMENT_DOWN_UNDER_MINE_BBG', 'KIND_IMPROVEMENT');
-INSERT INTO Traits (TraitType) VALUES ('TRAIT_CIV_FAUX_MINE_TRAIT_BBG');
-CREATE TEMPORARY TABLE tmp AS SELECT * FROM Improvements WHERE ImprovementType='IMPROVEMENT_MINE';
-UPDATE tmp SET ImprovementType='IMPROVEMENT_DOWN_UNDER_MINE_BBG', Appeal=0, TraitType='TRAIT_CIV_FAUX_MINE_TRAIT_BBG';
-INSERT INTO Improvements SELECT * from tmp;
-DROP TABLE tmp;
-INSERT INTO Improvement_ValidBuildUnits VALUES ('IMPROVEMENT_DOWN_UNDER_MINE_BBG', 'UNIT_BUILDER', 1, 0);
-INSERT INTO Improvement_ValidFeatures (ImprovementType, FeatureType) VALUES
-	('IMPROVEMENT_DOWN_UNDER_MINE_BBG', 'FEATURE_VOLCANIC_SOIL');
-INSERT INTO Improvement_ValidResources (ImprovementType, ResourceType, MustRemoveFeature)
-	SELECT 'IMPROVEMENT_DOWN_UNDER_MINE_BBG', ResourceType, MustRemoveFeature
-	FROM Improvement_ValidResources
-	WHERE ImprovementType='IMPROVEMENT_MINE';
-INSERT INTO Improvement_ValidTerrains (ImprovementType, TerrainType) VALUES
-	('IMPROVEMENT_DOWN_UNDER_MINE_BBG', 'TERRAIN_GRASS_HILLS'),
-	('IMPROVEMENT_DOWN_UNDER_MINE_BBG', 'TERRAIN_PLAINS_HILLS'),
-	('IMPROVEMENT_DOWN_UNDER_MINE_BBG', 'TERRAIN_DESERT_HILLS'),
-	('IMPROVEMENT_DOWN_UNDER_MINE_BBG', 'TERRAIN_TUNDRA_HILLS'),
-	('IMPROVEMENT_DOWN_UNDER_MINE_BBG', 'TERRAIN_SNOW_HILLS');
-INSERT INTO Improvement_YieldChanges (ImprovementType, YieldType, YieldChange) VALUES
-	('IMPROVEMENT_DOWN_UNDER_MINE_BBG', 'YIELD_PRODUCTION', 1);
-INSERT INTO Improvement_BonusYieldChanges (Id, ImprovementType, YieldType, BonusYieldChange, PrereqTech) VALUES
-	(924, 'IMPROVEMENT_DOWN_UNDER_MINE_BBG', 'YIELD_PRODUCTION', 1, 'TECH_APPRENTICESHIP'),
-	(925, 'IMPROVEMENT_DOWN_UNDER_MINE_BBG', 'YIELD_PRODUCTION', 1, 'TECH_INDUSTRIALIZATION');
--- boost
-CREATE TEMPORARY TABLE tmp AS SELECT * FROM Boosts WHERE TechnologyType='TECH_APPRENTICESHIP';
-UPDATE tmp SET BoostID=976, ImprovementType='IMPROVEMENT_DOWN_UNDER_MINE_BBG';
-INSERT INTO Boosts SELECT * FROM tmp;
-DROP TABLE tmp;
--- requirements and modifiers
-INSERT INTO RequirementSets(RequirementSetId , RequirementSetType) VALUES
-	('PLAYER_IS_JOHN_CURTIN_AND_HAS_MINING_BBG', 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSetRequirements(RequirementSetId , RequirementId) VALUES
-	('PLAYER_IS_JOHN_CURTIN_AND_HAS_MINING_BBG', 'REQUIREMENT_PLAYER_HAS_MINING_BBG'),
-	('PLAYER_IS_JOHN_CURTIN_AND_HAS_MINING_BBG', 'REQUIREMENT_PLAYER_IS_JOHN_CURTIN_BBG');
-INSERT INTO Requirements(RequirementId , RequirementType) VALUES
-	('REQUIREMENT_PLAYER_HAS_MINING_BBG', 'REQUIREMENT_PLAYER_HAS_TECHNOLOGY'),
-	('REQUIREMENT_PLAYER_IS_JOHN_CURTIN_BBG', 'REQUIREMENT_PLAYER_LEADER_TYPE_MATCHES');
-INSERT INTO RequirementArguments(RequirementId , Name, Value) VALUES
-	('REQUIREMENT_PLAYER_HAS_MINING_BBG', 'TechnologyType', 'TECH_MINING'),
-	('REQUIREMENT_PLAYER_IS_JOHN_CURTIN_BBG' , 'LeaderType', 'LEADER_JOHN_CURTIN');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
-	('CAN_BUILD_IMPROVEMENT_DOWN_UNDER_MINE_BBG', 'MODIFIER_PLAYER_ADJUST_VALID_IMPROVEMENT', 'PLAYER_IS_JOHN_CURTIN_AND_HAS_MINING_BBG');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
-	('CAN_BUILD_IMPROVEMENT_DOWN_UNDER_MINE_BBG', 'ImprovementType', 'IMPROVEMENT_DOWN_UNDER_MINE_BBG');
-INSERT INTO TraitModifiers VALUES ('TRAIT_LEADER_MAJOR_CIV', 'CAN_BUILD_IMPROVEMENT_DOWN_UNDER_MINE_BBG');
--- add regular mines to everyone else only
-UPDATE Improvements SET TraitType='TRAIT_CIV_FAUX_MINE_TRAIT_BBG' WHERE ImprovementType='IMPROVEMENT_LUMBER_MILL';
-INSERT INTO RequirementSets(RequirementSetId , RequirementSetType) VALUES
-	('PLAYER_IS_NOT_JOHN_CURTIN_AND_HAS_CONSTRUCTION_BBG', 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSetRequirements(RequirementSetId , RequirementId) VALUES
-	('PLAYER_IS_NOT_JOHN_CURTIN_AND_HAS_CONSTRUCTION_BBG', 'REQUIREMENT_PLAYER_HAS_MINING_BBG'),
-	('PLAYER_IS_NOT_JOHN_CURTIN_AND_HAS_CONSTRUCTION_BBG', 'REQUIREMENT_PLAYER_IS_NOT_JOHN_CURTIN_BBG');
-INSERT INTO Requirements(RequirementId , RequirementType, Inverse) VALUES
-	('REQUIREMENT_PLAYER_IS_NOT_JOHN_CURTIN_BBG', 'REQUIREMENT_PLAYER_LEADER_TYPE_MATCHES', 1);
-INSERT INTO RequirementArguments(RequirementId , Name, Value) VALUES
-	('REQUIREMENT_PLAYER_IS_NOT_JOHN_CURTIN_BBG' , 'LeaderType', 'LEADER_JOHN_CURTIN');
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
-	('CAN_BUILD_IMPROVEMENT_MINE_BBG', 'MODIFIER_PLAYER_ADJUST_VALID_IMPROVEMENT', 'PLAYER_IS_NOT_JOHN_CURTIN_AND_HAS_CONSTRUCTION_BBG');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
-	('CAN_BUILD_IMPROVEMENT_MINE_BBG', 'ImprovementType', 'IMPROVEMENT_LUMBER_MILL');
-INSERT INTO TraitModifiers VALUES ('TRAIT_LEADER_MAJOR_CIV', 'CAN_BUILD_IMPROVEMENT_MINE_BBG');
-
---==================
 -- Cree
 --==================
 INSERT INTO Requirements (RequirementId, RequirementType)
@@ -104,13 +33,7 @@ DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_TSIKHE' AND ModifierI
 UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_WALLS' WHERE CivUniqueBuildingType='BUILDING_TSIKHE';
 UPDATE Buildings SET Cost=100, PrereqTech='TECH_MASONRY' , OuterDefenseHitPoints=100 WHERE BuildingType='BUILDING_TSIKHE';
 -- Georgia gets 50% faith kills instead of Protectorate War Bonus
-INSERT INTO Modifiers (ModifierId, ModifierType)
-	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD');
-INSERT INTO ModifierArguments (ModifierId, Name, Value)
-	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'PercentDefeatedStrength' , '100');
-INSERT INTO ModifierArguments (ModifierId, Name, Value)
-	VALUES ('TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' , 'YieldType' , 'YIELD_FAITH');
-UPDATE TraitModifiers SET ModifierId='TRAIT_FAITH_KILLS_MODIFIER_CPLMOD' WHERE ModifierId='TRAIT_PROTECTORATE_WAR_FAITH';
+UPDATE ModifierArguments SET Value='100' WHERE ModifierId='TRAIT_LEADER_FAITH_KILLS' AND Name='PercentDefeatedStrength';
 
 
 --==================
@@ -219,7 +142,7 @@ UPDATE ModifierArguments SET Value='15' WHERE ModifierId='TRAIT_PRODUCTION_ECSTA
 UPDATE Improvements SET PrereqCivic='CIVIC_GAMES_RECREATION' WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE';
 -- Golf Course base yields are 1 Culture and 2 Gold... +1 to each if next to City Center
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE' AND YieldType='YIELD_CULTURE';
--- Golf Course extra housing moved to Urbanization
+-- Golf Course extra housing moved to Urbanization (could be possible bug in future... make own req)
 UPDATE RequirementArguments SET Value='CIVIC_URBANIZATION' WHERE RequirementId='REQUIRES_PLAYER_HAS_GLOBALIZATION' AND Name='CivicType';
 INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
 	VALUES ('GOLFCOURSE_CITYCENTERADJACENCY_GOLD' , 'Placeholder' , 'YIELD_GOLD' , 1 , 1 , 'DISTRICT_CITY_CENTER');

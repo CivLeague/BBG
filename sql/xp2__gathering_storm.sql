@@ -138,6 +138,7 @@ UPDATE ModifierArguments SET Value='2' WHERE ModifierId='BLACK_ARMY_ADJACENT_LEV
 -- Only 1 extra movement for levied units
 UPDATE ModifierArguments SET Value='1' WHERE ModifierId='RAVEN_LEVY_MOVEMENT';
 -- Huszar +2 combat per suzed city-states
+DELETE FROM UnitAbilityModifiers WHERE ModifierId='HUSZAR_ALLIES_COMBAT_BONUS';
 INSERT INTO Requirements(RequirementId, RequirementType)
     SELECT 'BBG_PLAYER_IS_SUZERAIN_OF_' || LeaderType, 'REQUIREMENT_PLAYER_IS_SUZERAIN_OF_X'
     FROM Leaders
@@ -168,6 +169,12 @@ INSERT INTO Modifiers(ModifierId, ModifierType, SubjectRequirementSetId)
     WHERE InheritFrom IN
         ('LEADER_MINOR_CIV_CULTURAL', 'LEADER_MINOR_CIV_INDUSTRIAL', 'LEADER_MINOR_CIV_MILITARISTIC',
         'LEADER_MINOR_CIV_RELIGIOUS', 'LEADER_MINOR_CIV_SCIENTIFIC', 'LEADER_MINOR_CIV_TRADE');
+INSERT INTO ModifierStrings(ModifierId, Context, Text)
+	SELECT 'BBG_MODIFIER_HUSZAR_SUZ_' || LeaderType, 'Preview', 'LOC_COMBAT_PREVIEW_NUMBER_ALLIES_BONUS_DESC'
+	FROM Leaders
+    WHERE InheritFrom IN
+        ('LEADER_MINOR_CIV_CULTURAL', 'LEADER_MINOR_CIV_INDUSTRIAL', 'LEADER_MINOR_CIV_MILITARISTIC',
+        'LEADER_MINOR_CIV_RELIGIOUS', 'LEADER_MINOR_CIV_SCIENTIFIC', 'LEADER_MINOR_CIV_TRADE');
 INSERT INTO ModifierArguments(ModifierId, Name, Value)
     SELECT 'BBG_MODIFIER_HUSZAR_SUZ_' || LeaderType, 'Amount', '2'
     FROM Leaders
@@ -180,7 +187,6 @@ INSERT INTO UnitAbilityModifiers(UnitAbilityType, ModifierId)
     WHERE InheritFrom IN
         ('LEADER_MINOR_CIV_CULTURAL', 'LEADER_MINOR_CIV_INDUSTRIAL', 'LEADER_MINOR_CIV_MILITARISTIC',
         'LEADER_MINOR_CIV_RELIGIOUS', 'LEADER_MINOR_CIV_SCIENTIFIC', 'LEADER_MINOR_CIV_TRADE');
-DELETE FROM UnitAbilityModifiers WHERE ModifierId='HUSZAR_ALLIES_COMBAT_BONUS';
 
 
 
@@ -243,7 +249,7 @@ UPDATE Units_XP2 SET ResourceCost=20 WHERE UnitType='UNIT_ROMAN_LEGION';
 -- Scotland
 --==================
 -- golf course gets only 1 amenity (GS made it 2)
-UPDATE ModifierArguments SET Value='1' WHERE ModifierId='GOLFCOURSE_AMENITY' AND Name='Amount';
+DELETE FROM ImprovementModifiers WHERE ModifierId='GOLFCOURSE_AMENITIES';
 
 
 --==================
@@ -288,14 +294,6 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value , Extra , SecondExtra)
 --==============================================================
 --******				  BUILDINGS						  ******
 --==============================================================
--- Replace +2 favor on renaissance wall with monarchy to +2 culture
-UPDATE Modifiers SET ModifierType='MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE' WHERE ModifierId='MONARCHY_STARFORT_FAVOR';
-UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='MONARCHY_STARFORT_FAVOR';
-DELETE FROM ModifierArguments WHERE ModifierId='MONARCHY_STARFORT_FAVOR';
-INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
-    ('MONARCHY_STARFORT_FAVOR', 'BuildingType', 'BUILDING_CASTLE'),
-    ('MONARCHY_STARFORT_FAVOR', 'YieldType', 'YIELD_CULTURE'),
-    ('MONARCHY_STARFORT_FAVOR', 'Amount', '2');
 -- flood barriers unlocked at steam power
 UPDATE Buildings SET PrereqTech='TECH_STEAM_POWER' WHERE BuildingType='BUILDING_FLOOD_BARRIER';
 -- +1 coal for seaports
