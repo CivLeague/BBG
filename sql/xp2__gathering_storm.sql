@@ -13,13 +13,6 @@ UPDATE Units SET StrategicResource='RESOURCE_HORSES' WHERE UnitType='UNIT_AMERIC
 
 
 --==================
--- Australia
---==================
--- custom mines should get the GS change
-INSERT INTO Improvement_BonusYieldChanges (Id, ImprovementType, YieldType, BonusYieldChange, PrereqTech) VALUES
-	(975, 'IMPROVEMENT_DOWN_UNDER_MINE_BBG', 'YIELD_PRODUCTION', 1, 'TECH_SMART_MATERIALS');
-
---==================
 -- Brazil
 --==================
 -- custom lumbermill should get the GS change

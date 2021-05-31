@@ -1,6 +1,3 @@
--- allow custom mines on volcanic soil
-INSERT INTO Improvement_ValidFeatures (ImprovementType, FeatureType) VALUES
-	('IMPROVEMENT_DOWN_UNDER_MINE_BBG', 'FEATURE_VOLCANIC_SOIL');
 -- diggers require niter 
 UPDATE Units SET StrategicResource='RESOURCE_NITER' WHERE UnitType='UNIT_DIGGER';
 -- diggers are niter maint 1
