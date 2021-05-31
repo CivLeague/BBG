@@ -42,7 +42,7 @@
 			<Text>Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit. +1 [ICON_Strength] Combat Strength for every available Military Policy slot.</Text>
 		</Replace>		
 		<Replace Tag="LOC_TRAIT_LEADER_KUBLAI_DESCRIPTION" Language="en_US">
-			<Text>One extra Economic policy slot in any government. Receive a random [ICON_TechBoosted] Eureka and [ICON_CivicBoosted] Inspiration when establishing a [ICON_TradingPost] Trading Post in another Civilization's city for the first time.[NEWLINE][NEWLINE]Domestic [ICON_TradeRoute] Trade Routes gain +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] for each World Wonder in the origin city. International [ICON_TradeRoute] Trade Routes gain +1 [ICON_CULTURE] and +1 [ICON_SCIENCE] for each World Wonder in the origin city.</Text>
+			<Text>One extra Economic policy slot in any government. Receive a random [ICON_TechBoosted] Eureka and [ICON_CivicBoosted] Inspiration when establishing a [ICON_TradingPost] Trading Post in another Civilization's city for the first time.[NEWLINE][NEWLINE]Domestic [ICON_TradeRoute] Trade Routes gain +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] for each World Wonder in the destination city.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAYAB_DESCRIPTION" Language="en_US">
 			<Text>Settling adjacent to Fresh Water and Coast does not provide extra [ICON_HOUSING] Housing, instead each Farm provides an additional +1 [ICON_HOUSING] Housing, +1 [ICON_PRODuction] Production, and +1 [ICON_GOLD] Gold. +1 [ICON_AMENITIES] Amenity for every Luxury adjacent to the City Center.</Text>
