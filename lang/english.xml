@@ -9,7 +9,7 @@
 			<Text>When defeating an enemy unit on your [ICON_Capital] Capital's continent, gain [ICON_Culture] Culture equal to 50% that unit's base [ICON_Strength] Combat Strength.[NEWLINE][ICON_Bullet]+5 [ICON_Strength] Combat Strength when fighting on Hills.</Text>
 		</Replace>	
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION" Language="en_US">
-			<Text>Mines do not affect appeal. +50% [ICON_Production] Production for 10 turns after liberating a city.</Text>
+			<Text>+50% [ICON_Production] Production for 10 turns after liberating a city.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="en_US">
 			<Text>[ICON_TechBoosted] Eurekas provide 85% of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn.</Text>
