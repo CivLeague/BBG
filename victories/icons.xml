@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<IconDefinitions>
+		<Row Name="ICON_VICTORY_TRADITIONAL_DOMINATION" Atlas="ICON_ATLAS_VICTORIES" Index="3"/>
+  	</IconDefinitions>                                                                
+</GameInfo>  
