@@ -115,7 +115,7 @@
     <!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
     <InGameActions>
         <AddGameplayScripts id="ftb_core_script">
-            <File>scripts/ftb_core.lua</File>
+            <File>lua/ftb_core.lua</File>
         </AddGameplayScripts>
 
         <UpdateArt id="ftb_art">
@@ -275,24 +275,26 @@
         <File>Improvements.artdef</File>
         <File>lang/english.xml</File>
         <File>lang/german.xml</File>
+        <File>lua/bbg_stateutils.lua</File>
+        <File>lua/ftb_core.lua</File>
 
         <!-- DB Base -->
         <File>sql/_base.sql</File>
-        <File>_xp1.sql</File>
-        <File>_xp1_xp2.sql</File>
-        <File>_xp2.sql</File>
+        <File>sql/_xp1.sql</File>
+        <File>sql/_xp1_xp2.sql</File>
+        <File>sql/_xp2.sql</File>
 
         <!-- DB Civilizations -->
         <File>sql/america_xp2.sql</File>
         <File>sql/aztecs.sql</File>
-        <File>egypt.sql</File>
-        <File>egypt_xp1.sql</File>
-        <File>egypt_xp2.sql</File>
-        <File>norway.sql</File>
-        <File>sumer.sql</File>
-        <File>sumer_xp1.sql</File>
-        <File>sumer_xp2.sql</File>
-        <File>zulu.sql</File>
+        <File>sql/egypt.sql</File>
+        <File>sql/egypt_xp1.sql</File>
+        <File>sql/egypt_xp2.sql</File>
+        <File>sql/norway.sql</File>
+        <File>sql/sumer.sql</File>
+        <File>sql/sumer_xp1.sql</File>
+        <File>sql/sumer_xp2.sql</File>
+        <File>sql/zulu.sql</File>
 
         <!-- Victories -->
         <File>victories/replacements/endgamemenu.xml</File>
