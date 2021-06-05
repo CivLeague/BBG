@@ -1302,17 +1302,19 @@ INSERT INTO RequirementArguments
 --==============================================================
 --******			P O L I C Y   C A R D S				  ******
 --==============================================================
--- Pathfinder [New Civic] => +50% production to recon units at Mercenaries
+-- Pathfinder [New Civic] => +50% production and Double Experience to recon units at Civil Service
 INSERT INTO Types (Types, Kind) Values ('POLICY_PATHFINDER', 'KIND_POLICY');
 INSERT INTO Policies (PolicyType, Name, Description, PrereqCivic, GovernmentSlotType)
-	Values('POLICY_PATHFINDER', 'LOC_POLICY_PATHFINDER_NAME', 'LOC_POLICY_PATHFINDER_DESCRIPTION', 'CIVIC_MERCENARIES', 'SLOT_MILITARY');
-UPDATE ObsoletePolicies (PolicyType, ObsoletePolicy) Values ('POLICY_SURVEY', 'POLICY_PATHFINDER');
+	Values('POLICY_PATHFINDER', 'LOC_POLICY_PATHFINDER_NAME', 'LOC_POLICY_PATHFINDER_DESCRIPTION', 'CIVIC_CIVIL_SERVICE', 'SLOT_MILITARY');
+INSERT INTO PolicyModifiers (PolicyType, ModifierId) Values ('POLICY_PATHFINDER', 'SURVEY_RECONUNITEXPERIENCE');
 INSERT INTO PolicyModifiers (PolicyType, ModifierId) Values ('POLICY_PATHFINDER', 'PATHFINDER_RECON_UNIT_PRODUCTION');
-INSERT INTO Modifiers (ModifierId, ModifierType) Values ('PATHFINDER_RECON_UNIT_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT INTO Modifiers (ModifierId, ModifierType) Values ('PATHFINDER_RECON_UNIT_PRODUCTION_AND_EXPERIENCE', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
+INSERT INTO Modifiers (ModifierId, ModifierType) Values ('PATHFINDER_RECON_UNIT_PRODUCTION_AND_EXPERIENCE', 'MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION');
 INSERT INTO ModifierArguments (ModifierId, Name, Value, Extra)
 	Values ('PATHFINDER_RECON_UNIT_PRODUCTION', UnitPromotionClass, PROMOTION_CLASS_RECON, -1),
 		('PATHFINDER_RECON_UNIT_PRODUCTION', 'EraType', 'ERA_MEDIEVAL', -1 ),
 		('PATHFINDER_RECON_UNIT_PRODUCTION', 'Amount', 50, -1);
+UPDATE ObsoletePolicies (PolicyType, ObsoletePolicy) Values ('POLICY_SURVEY', 'POLICY_PATHFINDER');
 
 -- destroy barbs
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='DISCIPLINE_BARBARIANCOMBAT';
