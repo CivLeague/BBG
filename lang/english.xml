@@ -144,7 +144,7 @@
 			<Text>+{1_Amount} from being Suzerain of a city-state</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_GORGO_POLICY_SLOT_COMBAT_BONUS_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_Strength] Combat Strength for each avaiable Military Policy Slot.</Text>
+			<Text>+1 [ICON_Strength] Combat Strength for each available Military Policy Slot.</Text>
 		</Replace>
 		<Replace Tag="LOC_COMBAT_PREVIEW_NUMBER_MILITARY_POLICIES_BONUS_DESC" Language="en_US">
 			<Text>+{1_Value} from Military Policy Slots</Text>

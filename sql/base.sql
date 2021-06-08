@@ -393,7 +393,7 @@ INSERT INTO ModifierArguments(ModifierId, Name, Value)
     FROM Government_SlotCounts
     WHERE GovernmentSlotType='SLOT_MILITARY' AND NumSlots > 0;
 INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
-    ('BBG_GIVE_MODIFIER_GORGO_ALHAMBRA', 'AbilityType', 'BBG_MODIFIER_GORGO_ALHAMBRA'),
+    ('BBG_GIVE_MODIFIER_GORGO_ALHAMBRA', 'AbilityType', 'BBG_GORGO_COMBAT_ABILITY_ALHAMBRA'),
     ('BBG_MODIFIER_GORGO_ALHAMBRA', 'Amount', '1');
 INSERT INTO ModifierStrings(ModifierId, Context, Text)
     SELECT 'BBG_MODIFIER_GORGO_' || GovernmentType, 'Preview', 'LOC_COMBAT_PREVIEW_NUMBER_MILITARY_POLICIES_BONUS_DESC'
