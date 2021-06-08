@@ -51,6 +51,18 @@ values ('CIVILIZATION_SCOTLAND', 'TERRAIN_DESERT_HILLS', '1'),
        ('CIVILIZATION_SCOTLAND', 'TERRAIN_PLAINS_HILLS', '1'),
        ('CIVILIZATION_SCOTLAND', 'TERRAIN_TUNDRA_HILLS', '1');
 
+-- Civilization Ability
+/*
+  - Happy Cities gain +10% [+5%] Science and +10% [+5%] Procuktion,
+  - Ecstatic Cities gain +15% [+10%] Science and +15% [+10%] Production
+ */
+update ModifierArguments set Value='10' where ModifierId = 'TRAIT_SCIENCE_HAPPY' and Name = 'Amount';
+update ModifierArguments set Value='15' where ModifierId = 'TRAIT_SCIENCE_ECSTATIC' and Name = 'Amount';
+update ModifierArguments set Value='10' where ModifierId = 'TRAIT_PRODUCTION_HAPPY' and Name = 'Amount';
+update ModifierArguments set Value='15' where ModifierId = 'TRAIT_PRODUCTION_ECSTATIC' and Name = 'Amount';
+
+-- Golf Course
+/*
  (1) Golf courts are now available at Games and Recreation [Reform church].
  (2) New base yields: +1 [+2] Amusement, +1 [0] Culture, +2 Gold [+2].
  (3) If next to City Center, Entertainment Complex or Water Park they yield +1 Culture, +1 Gold [City Center and Entertainment Complex]
