@@ -53,3 +53,40 @@ insert into Requirements (RequirementId, RequirementType) values ('PLAYER_HAS_CI
 insert into RequirementArguments (RequirementId, Name, Value) values ('PLAYER_HAS_CIVIC_PROFESSIONAL_SPORTS_REQUIREMENT', 'CivicType', 'CIVIC_PROFESSIONAL_SPORTS');
 insert into RequirementSetRequirements (RequirementSetId, RequirementId) values ('PLAYER_HAS_CIVIC_PROFESSIONAL_SPORTS', 'PLAYER_HAS_CIVIC_PROFESSIONAL_SPORTS_REQUIREMENT');
 update Modifiers set SubjectRequirementSetId = 'PLAYER_HAS_CIVIC_PROFESSIONAL_SPORTS' where ModifierId = 'GOLFCOURSE_AMENITIES';
+
+-- Highlander
+/*
+ The Higlander now replaces the Pike and Shot, so Highlanders are now available at Metal Casting.
+ The combat strength is raised to 58. Furthermore: Highlanders recieve +5 CS against melee units and like the
+ Georgian Khevsur they do not suffer movement penalties on hills and gain +5 CS on Hills.
+ */
+update Units
+set BaseMoves             = 2,
+    Combat                = 58,
+    RangedCombat          = 0,
+    Range                 = 0,
+    Cost                  = 250,
+    Maintenance           = 4,
+    PromotionClass        = 'PROMOTION_CLASS_ANTI_CAVALRY',
+    PrereqTech            = 'TECH_METAL_CASTING',
+    MandatoryObsoleteTech = 'TECH_COMBINED_ARMS'
+where UnitType = 'UNIT_SCOTTISH_HIGHLANDER';
+update UnitReplaces set ReplacesUnitType = 'UNIT_PIKE_AND_SHOT' where CivUniqueUnitType = 'UNIT_SCOTTISH_HIGHLANDER';
+update UnitUpgrades set UpgradeUnit = 'UNIT_AT_CREW' where Unit = 'UNIT_SCOTTISH_HIGHLANDER';
+-- No movement penalty on hills and +5 CS
+delete from UnitAbilityModifiers where UnitAbilityType = 'ABILITY_SCOTTISH_HIGHLANDER';
+insert into RequirementSetRequirements (RequirementSetId, RequirementId) values ('HIGHLANDER_OPPONENT_IS_MELEE', 'OPPONENT_IS_PROMOTION_CLASS_MELEE');
+insert into RequirementSets (RequirementSetId, RequirementSetType) values ('HIGHLANDER_OPPONENT_IS_MELEE', 'REQUIREMENTSET_TEST_ALL')
+insert or ignore into Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
+values ('HIGHLANDER_HILLS_BUFF', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'KHEVSURETI_HILLS_BUFF_REQUIREMENTS'),
+       ('HIGHLANDER_IGNORE_BUFF', 'MODIFIER_PLAYER_UNIT_ADJUST_IGNORE_TERRAIN_COST', null),
+       ('HIGHLANDER_BUFF_VS_MELEE', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'HIGHLANDER_OPPONENT_IS_MELEE');
+insert or ignore into ModifierArguments (ModifierId, Name, Value)
+values ('HIGHLANDER_HILLS_BUFF', 'Amount', '5'),
+       ('HIGHLANDER_IGNORE_BUFF', 'Ignore', '1'),
+       ('HIGHLANDER_IGNORE_BUFF', 'Type', 'HILLS'),
+       ('HIGHLANDER_BUFF_VS_MELEE', 'Amount', '5');
+insert or ignore into UnitAbilityModifiers (UnitAbilityType, ModifierId)
+values ('ABILITY_SCOTTISH_HIGHLANDER', 'HIGHLANDER_HILLS_BUFF'),
+       ('ABILITY_SCOTTISH_HIGHLANDER', 'HIGHLANDER_HILLS_BUFF'),
+       ('ABILITY_SCOTTISH_HIGHLANDER', 'HIGHLANDER_BUFF_VS_MELEE');
