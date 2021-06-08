@@ -44,6 +44,13 @@ OR IGNORE INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType ,
 INSERT
 OR IGNORE INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqCivic)
 	VALUES ('205' , 'IMPROVEMENT_GOLF_COURSE' , 'YIELD_CULTURE' , '1' , 'CIVIC_THE_ENLIGHTENMENT');/*
+-- T1 to hills
+insert into StartBiasTerrains (CivilizationType, TerrainType, Tier)
+values ('CIVILIZATION_SCOTLAND', 'TERRAIN_DESERT_HILLS', '1'),
+       ('CIVILIZATION_SCOTLAND', 'TERRAIN_GRASS_HILLS', '1'),
+       ('CIVILIZATION_SCOTLAND', 'TERRAIN_PLAINS_HILLS', '1'),
+       ('CIVILIZATION_SCOTLAND', 'TERRAIN_TUNDRA_HILLS', '1');
+
  (1) Golf courts are now available at Games and Recreation [Reform church].
  (2) New base yields: +1 [+2] Amusement, +1 [0] Culture, +2 Gold [+2].
  (3) If next to City Center, Entertainment Complex or Water Park they yield +1 Culture, +1 Gold [City Center and Entertainment Complex]
