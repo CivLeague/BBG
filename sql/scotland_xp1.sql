@@ -51,13 +51,14 @@ values ('IMPROVEMENT_GOLF_COURSE', 'TERRAIN_DESERT', 'CIVIC_CIVIL_ENGINEERING'),
 -- (7)
 insert into Requirements (RequirementId, RequirementType) values ('PLAYER_HAS_CIVIC_PROFESSIONAL_SPORTS_REQUIREMENT', 'REQUIREMENT_PLAYER_HAS_CIVIC');
 insert into RequirementArguments (RequirementId, Name, Value) values ('PLAYER_HAS_CIVIC_PROFESSIONAL_SPORTS_REQUIREMENT', 'CivicType', 'CIVIC_PROFESSIONAL_SPORTS');
+insert into RequirementSets (RequirementSetId, RequirementSetType) values ('PLAYER_HAS_CIVIC_PROFESSIONAL_SPORTS', 'REQUIREMENTSET_TEST_ALL');
 insert into RequirementSetRequirements (RequirementSetId, RequirementId) values ('PLAYER_HAS_CIVIC_PROFESSIONAL_SPORTS', 'PLAYER_HAS_CIVIC_PROFESSIONAL_SPORTS_REQUIREMENT');
 update Modifiers set SubjectRequirementSetId = 'PLAYER_HAS_CIVIC_PROFESSIONAL_SPORTS' where ModifierId = 'GOLFCOURSE_AMENITIES';
 
 -- Highlander
 /*
- The Higlander now replaces the Pike and Shot, so Highlanders are now available at Metal Casting.
- The combat strength is raised to 58. Furthermore: Highlanders recieve +5 CS against melee units and like the
+ The Highlander now replaces the Pike and Shot, so Highlanders are now available at Metal Casting.
+ The combat strength is raised to 58. Furthermore: Highlanders receive +5 CS against melee units and like the
  Georgian Khevsur they do not suffer movement penalties on hills and gain +5 CS on Hills.
  */
 update Units
@@ -76,17 +77,27 @@ update UnitUpgrades set UpgradeUnit = 'UNIT_AT_CREW' where Unit = 'UNIT_SCOTTISH
 -- No movement penalty on hills and +5 CS
 delete from UnitAbilityModifiers where UnitAbilityType = 'ABILITY_SCOTTISH_HIGHLANDER';
 insert into RequirementSetRequirements (RequirementSetId, RequirementId) values ('HIGHLANDER_OPPONENT_IS_MELEE', 'OPPONENT_IS_PROMOTION_CLASS_MELEE');
-insert into RequirementSets (RequirementSetId, RequirementSetType) values ('HIGHLANDER_OPPONENT_IS_MELEE', 'REQUIREMENTSET_TEST_ALL')
+insert into RequirementSets (RequirementSetId, RequirementSetType) values ('HIGHLANDER_OPPONENT_IS_MELEE', 'REQUIREMENTSET_TEST_ALL');
 insert or ignore into Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
 values ('HIGHLANDER_HILLS_BUFF', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'KHEVSURETI_HILLS_BUFF_REQUIREMENTS'),
-       ('HIGHLANDER_IGNORE_BUFF', 'MODIFIER_PLAYER_UNIT_ADJUST_IGNORE_TERRAIN_COST', null),
+       ('HIGHLANDER_IGNORE_HILLS', 'MODIFIER_PLAYER_UNIT_ADJUST_IGNORE_TERRAIN_COST', null),
        ('HIGHLANDER_BUFF_VS_MELEE', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'HIGHLANDER_OPPONENT_IS_MELEE');
 insert or ignore into ModifierArguments (ModifierId, Name, Value)
 values ('HIGHLANDER_HILLS_BUFF', 'Amount', '5'),
-       ('HIGHLANDER_IGNORE_BUFF', 'Ignore', '1'),
-       ('HIGHLANDER_IGNORE_BUFF', 'Type', 'HILLS'),
+       ('HIGHLANDER_IGNORE_HILLS', 'Ignore', '1'),
+       ('HIGHLANDER_IGNORE_HILLS', 'Type', 'HILLS'),
        ('HIGHLANDER_BUFF_VS_MELEE', 'Amount', '5');
 insert or ignore into UnitAbilityModifiers (UnitAbilityType, ModifierId)
 values ('ABILITY_SCOTTISH_HIGHLANDER', 'HIGHLANDER_HILLS_BUFF'),
-       ('ABILITY_SCOTTISH_HIGHLANDER', 'HIGHLANDER_HILLS_BUFF'),
+       ('ABILITY_SCOTTISH_HIGHLANDER', 'HIGHLANDER_IGNORE_HILLS'),
        ('ABILITY_SCOTTISH_HIGHLANDER', 'HIGHLANDER_BUFF_VS_MELEE');
+
+-- Banockburn
+/*
+ All units get +2 movement and +3 combat fpr 10 turns after war was declared.
+ */
+delete from TraitModifiers where ModifierId in ('TRAIT_LIBERATION_WAR_PREREQ_OVERRIDE', 'TRAIT_LIBERATION_WAR_PRODUCTION');
+insert into RequirementSets (RequirementSetId, RequirementSetType) values ('UNIT_IN_OWNER_TERRITORY', 'REQUIREMENTSET_TEST_ALL');
+insert into RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('UNIT_IN_OWNER_TERRITORY', 'UNIT_IN_OWNER_TERRITORY_REQUIREMENT');
+update Modifiers set SubjectRequirementSetId = 'UNIT_IN_OWNER_TERRITORY' where ModifierId = 'TRAIT_LIBERATION_WAR_MOVEMENT';
+update ModifierArguments set Value = 'WAR_DECLARATION_RECEIVED' where ModifierId = 'TRAIT_LIBERATION_WAR_MOVEMENT' and Name = 'DiplomaticYieldSource';
