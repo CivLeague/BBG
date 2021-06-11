@@ -6,6 +6,7 @@
 		</Replace>
 		<Replace Tag="LOC_POLICY_PATHFINDER_DESCRIPTION" Language="en_US">
 			<Text>+50% [ICON_Production] Production toward recon units and double experience for recon units.</Text>
+		</Replace>
 		<!-- added in 3.18.0 -->
 		<Replace Tag="LOC_WORLD_CONGRESS_IMPROVE_TRADE_WTH_PLAYER_DESC" Language="en_US">
 			<Text>[ICON_TradeRoute] Trade Routes sent to the chosen player provide +4 [ICON_Gold] Gold to that player and they receive +1 [ICON_TradeRoute] Trade Route capacity.</Text>
