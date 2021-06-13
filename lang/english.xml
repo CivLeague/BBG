@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<!-- added in 3.19.1 -->
+		<Replace Tag="LOC_WORLD_CONGRESS_BAN_PRODUCTION_YIELD_DESC" Language="en_US">
+			<Text>50% cost increase when producing or purchasing military units using the chosen yield, until the next World Congress.</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_CONGRESS_BUFF_PRODUCTION_YIELD_DESC" Language="en_US">
+			<Text>25% cost discount when producing or purchasing military units using the chosen yield, until the next World Congress.</Text>
+		</Replace>
+		<Replace Tag="LOC_WORLD_CONGRESS_BAN_TRADE_WITH_PLAYER_DESC" Language="en_US">
+			<Text>Foreign [ICON_TradeRoute] Trade Routes between other civilizations and the chosen player, as well as domestic [ICON_TradeRoute] Trade Routes of the chosen player, have their yields cut in half.</Text>
+		</Replace>
+
+
 		<!-- added in 3.18.0 -->
 		<Replace Tag="LOC_WORLD_CONGRESS_IMPROVE_TRADE_WTH_PLAYER_DESC" Language="en_US">
 			<Text>[ICON_TradeRoute] Trade Routes sent to the chosen player provide +4 [ICON_Gold] Gold to that player and they receive +1 [ICON_TradeRoute] Trade Route capacity.</Text>

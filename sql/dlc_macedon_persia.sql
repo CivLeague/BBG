@@ -1,7 +1,8 @@
 --==============================================================
 --******			C I V I L I Z A T I O N S			  ******
 --==============================================================
-
+INSERT INTO Boosts (BoostID, TechnologyType, TriggerDescription, TriggerLongDescription, Boost, BoostClass, BuildingType) VALUES
+	(209, 'TECH_MILITARY_TACTICS', 'LOC_BOOST_TRIGGER_MILITARY_TACTICS', 'LOC_BOOST_TRIGGER_LONGDESC_MILITARY_TACTICS', 40, 'BOOST_TRIGGER_CONSTRUCT_BUILDING', 'BUILDING_BASILIKOI_PAIDES');
 --==========
 -- Macedon
 --==========
@@ -50,9 +51,9 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value)
 INSERT INTO TraitModifiers (TraitType , ModifierId)
 	VALUES
 	('TRAIT_CIVILIZATION_HELLENISTIC_FUSION' , 'TRAIT_CIVILIZATION_HELLENISTIC_FUSION_PRODUCTION_MODIFIER');
-INSERT INTO Modifiers (ModifierId , ModifierType)
+INSERT INTO Modifiers (ModifierId , ModifierType, OwnerRequirementSetId, SubjectRequirementSetId)
 	VALUES
-	('TRAIT_CIVILIZATION_HELLENISTIC_FUSION_PRODUCTION_MODIFIER' , 'MODIFIER_PLAYER_ADD_DIPLOMATIC_YIELD_MODIFIER');
+	('TRAIT_CIVILIZATION_HELLENISTIC_FUSION_PRODUCTION_MODIFIER' , 'MODIFIER_PLAYER_ADD_DIPLOMATIC_YIELD_MODIFIER', 'PLAYER_IS_ALEX_BBG', 'PLAYER_IS_ALEX_BBG');
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES 
 	('TRAIT_CIVILIZATION_HELLENISTIC_FUSION_PRODUCTION_MODIFIER' , 'DiplomaticYieldSource' 				, 'CITY_CAPTURED'   ),
@@ -60,6 +61,14 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	('TRAIT_CIVILIZATION_HELLENISTIC_FUSION_PRODUCTION_MODIFIER' , 'YieldType'             				, 'YIELD_PRODUCTION'),
 	('TRAIT_CIVILIZATION_HELLENISTIC_FUSION_PRODUCTION_MODIFIER' , 'Amount'                				, '20'              ),
 	('TRAIT_CIVILIZATION_HELLENISTIC_FUSION_PRODUCTION_MODIFIER' , 'StackWithOtherDiploYieldModifiers'	, 'true'              );
+INSERT INTO Requirements (RequirementId , RequirementType) VALUES
+	('REQUIRES_PLAYER_IS_ALEX_BBG' , 'REQUIREMENT_PLAYER_LEADER_TYPE_MATCHES');
+INSERT INTO RequirementArguments (RequirementId , Name, Value) VALUES
+	('REQUIRES_PLAYER_IS_ALEX_BBG' , 'LeaderType', 'LEADER_ALEXANDER');
+INSERT INTO RequirementSets (RequirementSetId , RequirementSetType) VALUES
+	('PLAYER_IS_ALEX_BBG', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId) VALUES
+	('PLAYER_IS_ALEX_BBG', 'REQUIRES_PLAYER_IS_ALEX_BBG');
 -- Hetairoi no longer a Horseman replacement
 DELETE FROM UnitReplaces WHERE CivUniqueUnitType='UNIT_MACEDONIAN_HETAIROI';
 

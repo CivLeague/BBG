@@ -100,6 +100,12 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value)
 --==================
 -- Combat bonus against Golden Age Civs set to 5 instead of 10
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='TRAIT_TOQUI_COMBAT_BONUS_VS_GOLDEN_AGE_CIV';
+-- Malon Raiders become Horseman replacement and territory bonus replaced with +1 movement
+UPDATE Units SET Combat=36 , Cost=90 , Maintenance=2 , BaseMoves=5 , PrereqTech='TECH_HORSEBACK_RIDING' , MandatoryObsoleteTech='TECH_SYNTHETIC_MATERIALS' WHERE UnitType='UNIT_MAPUCHE_MALON_RAIDER';
+INSERT OR IGNORE INTO UnitReplaces (CivUniqueUnitType , ReplacesUnitType)
+	VALUES ('UNIT_MAPUCHE_MALON_RAIDER' , 'UNIT_HORSEMAN');
+UPDATE UnitUpgrades SET UpgradeUnit='UNIT_CAVALRY' WHERE Unit='UNIT_MAPUCHE_MALON_RAIDER';
+-- remove +5 near home territory
 DELETE FROM UnitAbilityModifiers WHERE ModifierId='MALON_RAIDER_TERRITORY_COMBAT_BONUS';
 -- Chemamull Unique Improvement gets +1 Production at Civil Service Civic
 INSERT INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqCivic)
@@ -109,6 +115,8 @@ INSERT INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , Bo
 --=========
 --Mongolia
 --=========
+INSERT INTO Boosts (BoostID, TechnologyType, TriggerDescription, TriggerLongDescription, Boost, BoostClass, BuildingType) VALUES
+	(210, 'TECH_MILITARY_TACTICS', 'LOC_BOOST_TRIGGER_MILITARY_TACTICS', 'LOC_BOOST_TRIGGER_LONGDESC_MILITARY_TACTICS', 40, 'BOOST_TRIGGER_CONSTRUCT_BUILDING', 'BUILDING_ORDU');
 -- revert keshigs
 UPDATE Units SET Combat=30, RangedCombat=40, Cost=180 WHERE UnitType='UNIT_MONGOLIAN_KESHIG';
 -- No longer receives +1 diplo visibility for trading post
@@ -124,15 +132,46 @@ UPDATE Buildings SET Cost=60 WHERE BuildingType='BUILDING_ORDU';
 --==================
 -- Netherlands
 --==================
-UPDATE Improvements SET ValidAdjacentTerrainAmount=2 WHERE ImprovementType='IMPROVEMENT_POLDER';
+-- +2 gold adj for harbors anywhere, not +2 from city centers
+INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired)
+    VALUES
+    ('District_Harbor_Gold_Positive_BBG' , 'Placeholder' , 'YIELD_GOLD' ,  2 , 0),
+    ('District_Harbor_Gold_Negative_BBG' , 'Placeholder' , 'YIELD_GOLD' , -2 , 0);
+INSERT INTO District_Adjacencies (DistrictType , YieldChangeId)
+    VALUES
+    ('DISTRICT_HARBOR' , 'District_Harbor_Gold_Positive_BBG'),
+    ('DISTRICT_HARBOR' , 'District_Harbor_Gold_Negative_BBG');
+INSERT INTO ExcludedAdjacencies (YieldChangeId , TraitType) VALUES
+	('Harbor_City_Gold', 'TRAIT_CIVILIZATION_GROTE_RIVIEREN'),
+	('District_Harbor_Gold_Negative_BBG', 'TRAIT_CIVILIZATION_GROTE_RIVIEREN');
+-- +1 support bonus to naval units
+INSERT INTO Types (Type, Kind) VALUES ('ABILITY_DUTCH_NAVAL_EXTRA_SUPPORT_BBG', 'KIND_ABILITY');
+INSERT INTO TypeTags VALUES
+	('ABILITY_DUTCH_NAVAL_EXTRA_SUPPORT_BBG', 'CLASS_NAVAL_RANGED'),
+	('ABILITY_DUTCH_NAVAL_EXTRA_SUPPORT_BBG', 'CLASS_NAVAL_RAIDER'),
+	('ABILITY_DUTCH_NAVAL_EXTRA_SUPPORT_BBG', 'CLASS_NAVAL_MELEE'),
+	('ABILITY_DUTCH_NAVAL_EXTRA_SUPPORT_BBG', 'CLASS_NAVAL_CARRIER');
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
+	('DUTCH_NAVAL_EXTRA_SUPPORT_BBG', 'MODIFIER_PLAYER_UNITS_GRANT_ABILITY'),
+	('DUTCH_NAVAL_EXTRA_SUPPORT_MODIFIER_BBG', 'MODIFIER_PLAYER_UNIT_ADJUST_SUPPORT_BONUS_MODIFIER');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('DUTCH_NAVAL_EXTRA_SUPPORT_BBG', 'AbilityType', 'ABILITY_DUTCH_NAVAL_EXTRA_SUPPORT_BBG'),
+	('DUTCH_NAVAL_EXTRA_SUPPORT_MODIFIER_BBG', 'Percent', '50');
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description) VALUES
+	('ABILITY_DUTCH_NAVAL_EXTRA_SUPPORT_BBG', 'LOC_ABILITY_DUTCH_NAVAL_EXTRA_SUPPORT_NAME_BBG', 'LOC_ABILITY_DUTCH_NAVAL_EXTRA_SUPPORT_DESC_BBG');
+INSERT INTO UnitAbilityModifiers VALUES
+	('ABILITY_DUTCH_NAVAL_EXTRA_SUPPORT_BBG', 'DUTCH_NAVAL_EXTRA_SUPPORT_MODIFIER_BBG');
+INSERT INTO TraitModifiers VALUES ('TRAIT_RADIO_ORANJE', 'DUTCH_NAVAL_EXTRA_SUPPORT_BBG');
+-- reduce needed land tiles for polder
+UPDATE Improvements SET PrereqCivic='CIVIC_FEUDALISM', ValidAdjacentTerrainAmount=2 WHERE ImprovementType='IMPROVEMENT_POLDER';
+-- add niter requirement to UU
 UPDATE Units SET StrategicResource='RESOURCE_NITER' WHERE UnitType='UNIT_DE_ZEVEN_PROVINCIEN';
-
 
 --==================
 -- Scotland
 --==================
--- Highlander gets +10 combat strength (defense)
-UPDATE Units SET Combat=60 WHERE UnitType='UNIT_SCOTTISH_HIGHLANDER';
+-- Highlander gets +10 combat strength (defense) and less prod
+UPDATE Units SET Combat=60, Cost=330 WHERE UnitType='UNIT_SCOTTISH_HIGHLANDER';
 -- happy and ecstatic percentages increased
 UPDATE ModifierArguments SET Value='10'  WHERE ModifierId='TRAIT_SCIENCE_HAPPY' AND Name='Amount';
 UPDATE ModifierArguments SET Value='15' WHERE ModifierId='TRAIT_SCIENCE_ECSTATIC' AND Name='Amount';
