@@ -23,7 +23,7 @@ UPDATE UnitUpgrades SET UpgradeUnit='UNIT_SKIRMISHER' WHERE Unit='UNIT_CREE_OKIH
 INSERT INTO Improvement_ValidFeatures (ImprovementType, FeatureType)
 	VALUES ('IMPROVEMENT_CHEMAMULL','FEATURE_VOLCANIC_SOIL');
 -- Malon Raiders become Courser replacement
-UPDATE Units SET Combat=50 , Cost=200 , Maintenance=3 , BaseMoves=6 , PrereqTech='TECH_CASTLES' , MandatoryObsoleteTech='TECH_SYNTHETIC_MATERIALS' WHERE UnitType='UNIT_MAPUCHE_MALON_RAIDER';
+UPDATE Units SET Combat=48 , Cost=180 , Maintenance=3 , BaseMoves=6 , PrereqTech='TECH_CASTLES' , MandatoryObsoleteTech='TECH_SYNTHETIC_MATERIALS' WHERE UnitType='UNIT_MAPUCHE_MALON_RAIDER';
 DELETE FROM UnitReplaces WHERE CivUniqueUnitType='UNIT_MAPUCHE_MALON_RAIDER';
 INSERT OR IGNORE INTO UnitReplaces (CivUniqueUnitType , ReplacesUnitType)
 	VALUES ('UNIT_MAPUCHE_MALON_RAIDER' , 'UNIT_COURSER');
