@@ -109,7 +109,7 @@ INSERT INTO Traits (TraitType, Name, Description) VALUES
 	('TRAIT_LEADER_ELEANOR_GREAT_WORK_YIELDS_BBG', 'TRAIT_LEADER_ELEANOR_GREAT_WORK_YIELDS_NAME_BBG', 'TRAIT_LEADER_ELEANOR_GREAT_WORK_YIELDS_DESC_BBG');
 INSERT INTO LeaderTraits VALUES ('LEADER_ELEANOR_FRANCE', 'TRAIT_LEADER_ELEANOR_GREAT_WORK_YIELDS_BBG');
 */
-INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
+/*INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
 	('ATTACH_GREAT_WORK_SCI_MODIFIER_BBG',  'MODIFIER_ALL_CITIES_ATTACH_MODIFIER'), --might have to use MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER
 	('ATTACH_GREAT_WORK_GOLD_MODIFIER_BBG', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER'),
 	('GREAT_WORK_SCI_MODIFIER_BBG',  'MODIFIER_SINGLE_CITY_GRANT_YIELD_PER_GREAT_WORK'),
@@ -135,6 +135,51 @@ INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES
 	('THEATER_BUILDING_PRODUCTION_BONUS_CPLMOD' , 'DistrictType' , 'DISTRICT_THEATER'),
 	('THEATER_BUILDING_PRODUCTION_BONUS_CPLMOD' , 'Amount'       , '100');
+*/
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	SELECT GreatWorkObjectType || '_SCIENCE_BBG' , 'MODIFIER_PLAYER_CITIES_ADJUST_GREATWORK_YIELD'
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType NOT LIKE '%RELIC' AND GreatWorkObjectType NOT LIKE '%ARTIFACT';
+INSERT INTO Modifiers (ModifierId , ModifierType)
+	SELECT GreatWorkObjectType || '_GOLD_BBG' , 'MODIFIER_PLAYER_CITIES_ADJUST_GREATWORK_YIELD'
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType NOT LIKE '%RELIC' AND GreatWorkObjectType NOT LIKE '%ARTIFACT';
+
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	SELECT GreatWorkObjectType || '_SCIENCE_BBG' , 'GreatWorkObjectType' , GreatWorkObjectType
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType NOT LIKE '%RELIC' AND GreatWorkObjectType NOT LIKE '%ARTIFACT';
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	SELECT GreatWorkObjectType || '_GOLD_BBG' , 'GreatWorkObjectType' , GreatWorkObjectType
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType NOT LIKE '%RELIC' AND GreatWorkObjectType NOT LIKE '%ARTIFACT';
+
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	SELECT GreatWorkObjectType || '_SCIENCE_BBG' , 'YieldType' , 'YIELD_SCIENCE'
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType NOT LIKE '%RELIC' AND GreatWorkObjectType NOT LIKE '%ARTIFACT';
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	SELECT GreatWorkObjectType || '_GOLD_BBG' , 'YieldType' , 'YIELD_GOLD'
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType NOT LIKE '%RELIC' AND GreatWorkObjectType NOT LIKE '%ARTIFACT';
+
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	SELECT GreatWorkObjectType || '_SCIENCE_BBG' , 'Amount' , 1
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType NOT LIKE '%RELIC' AND GreatWorkObjectType NOT LIKE '%ARTIFACT';
+INSERT INTO ModifierArguments (ModifierId , Name , Value)
+	SELECT GreatWorkObjectType || '_GOLD_BBG' , 'Amount' , 1
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType NOT LIKE '%RELIC' AND GreatWorkObjectType NOT LIKE '%ARTIFACT';
+
+INSERT INTO TraitModifiers (ModifierId , TraitType)
+	SELECT GreatWorkObjectType || '_SCIENCE_BBG' , 'TRAIT_LEADER_ELEANOR_LOYALTY'
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType NOT LIKE '%RELIC' AND GreatWorkObjectType NOT LIKE '%ARTIFACT';
+INSERT INTO TraitModifiers (ModifierId , TraitType)
+	SELECT GreatWorkObjectType || '_GOLD_BBG' , 'TRAIT_LEADER_ELEANOR_LOYALTY'
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType NOT LIKE '%RELIC' AND GreatWorkObjectType NOT LIKE '%ARTIFACT';
 
 
 
