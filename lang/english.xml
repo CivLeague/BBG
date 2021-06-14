@@ -9,22 +9,202 @@
 			<Text>25% cost discount when producing or purchasing military units using the chosen yield, until the next World Congress.</Text>
 		</Replace>
 		<Replace Tag="LOC_WORLD_CONGRESS_BAN_TRADE_WITH_PLAYER_DESC" Language="en_US">
-			<Text>Foreign [ICON_TradeRoute] Trade Routes between other civilizations and the chosen player, as well as domestic [ICON_TradeRoute] Trade Routes of the chosen player, have their yields cut in half.</Text>
+			<Text>All [ICON_TradeRoute] Trade Routes to and from the chosen player have their trade yields cut in half.</Text>
 		</Replace>
-
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION" Language="en_US">
+			<Text>+3 [ICON_Housing] Housing and +1 [ICON_FOOD] Food in coastal cities. Pastures trigger a Culture Bomb. Yields from Campuses, Commercial Hubs, Holy Sites and Theater Squares are +1 in tiles with Charming Appeal, +3 in Breathtaking.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GROTE_RIVIEREN_DESCRIPTION" Language="en_US">
+			<Text>Major adjacency bonus for Campuses, Theater Squares, and Industrial Zones if next to a river. Harbors Culture Bomb adjacent tiles and receive +2 [ICON_GOLD] Gold adjacency no matter where they are placed, but receive no bonus from being next to a City Center.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GROTE_RIVIEREN_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Major adjacency bonus for Campuses, Theater Squares, and Industrial Zones if next to a river. Harbors Culture Bomb adjacent tiles and receive +2 [ICON_GOLD] Gold adjacency no matter where they are placed, but receive no bonus from being next to a City Center. +50% [ICON_Production] Production toward the Dam district and Flood Barrier building.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION" Language="en_US">
+			<Text>+50% Defensive Support Combat Bonus for all Naval units. [ICON_TradeRoute] Trade Routes to foreign cities or from foreign cities provide +2 [ICON_Culture] Culture to you. Your [ICON_TradeRoute] Trade Routes to your own cities provide +2 Loyalty per turn for the starting city. </Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MAGNIFICENCES_DESCRIPTION" Language="en_US">
+			<Text>Improved Luxury resources adjacent to Theater Square districts or Châteaux receive +2 [ICON_CULTURE] Culture. Unique Luxuries provide an [ICON_Amenities] Amenity for up to 8 cities instead of 4. May initiate the Court Festival project in any city with a Theater Square district.</Text>
+		</Replace>		
+		<Replace Tag="LOC_ABILITY_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="en_US">
+			<Text>Pillaging costs 1 [ICON_Movement] Movement.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="en_US">
+			<Text>City Centers gain +1 [ICON_FAITH] Faith and +1 [ICON_FOOD] Food for every adjacent Desert and Desert Hills tiles. Mines receive -1 [ICON_PRODUCTION] Production and +4 [ICON_GOLD] Gold. May purchase Commercial Hub district buildings with [ICON_Faith] Faith. -30% [ICON_PRODUCTION] Production in cities except when building Districts, Wonders, or completing Projects.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_GREAT_TURKISH_BOMBARD_DESCRIPTION" Language="en_US">
+			<Text>+5 [ICON_Strength] Combat Strength vs. district defenses. +1 [ICON_Movement] Movement.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SULEIMAN_GOVERNOR_DESCRIPTION" Language="en_US">
+			<Text>Exclusive unique Governor with military and diplomatic abilities. Gain the Janissary unique unit and a [Icon_Governor] Governor Title when the Gunpowder technology is researched. Each Government Plaza building also awards +1 [ICON_Governor] Governor Title. </Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION" Language="en_US">
+			<Text>Extra territory upon founding cities. +1 [ICON_Production] Production in Tundra as well as +1 [ICON_Faith] Faith for Tundra City Centers.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Extra territory upon founding cities. +1 [ICON_Production] Production in Tundra as well as +1 [ICON_Faith] Faith for Tundra City Centers. Units do not receive damage from Blizzards. Civilizations that are at war with Russia receive +100% unit damage from Blizzards in Russian territory.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_KRISTINA_AUTO_THEME_DESCRIPTION" Language="en_US">
+			<Text>Buildings with at least three Great Work slots and wonders with at least two Great Work slots are automatically themed when they have all their slots filled. She may construct the Queen's Bibliotheque in the Government Plaza.[NEWLINE][NEWLINE]In addition, the Government Plaza provides a major adjacency bonus to adjacenct districts instead of standard adjacency, as well as +50% Great Person points generated in those districts.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_ARCHERY" Language="en_US">
+			<Text>Own 2 Slingers</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_ARCHERY" Language="en_US">
+			<Text>After training with your Slingers, you long for a stronger ranged weapon.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_BRONZE_WORKING" Language="en_US">
+			<Text>Own 3 warriors.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_BRONZE_WORKING" Language="en_US">
+			<Text>Your recent fights highlight the need for stronger weaponry.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_MILITARY_TACTICS" Language="en_US">
+			<Text>Build a Barracks or Stable.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_MILITARY_TACTICS" Language="en_US">
+			<Text>Your training will surely lead to more disciplined units.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_SQUARE_RIGGING" Language="en_US">
+			<Text>Build 2 lighthouses.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_SQUARE_RIGGING" Language="en_US">
+			<Text>What if we upgrade to gunpowder weaponry at sea?</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_BALLISTICS" Language="en_US">
+			<Text>Build Medieval Walls.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_BALLISTICS" Language="en_US">
+			<Text>Your cities have been protected by multiple fortifications, what if they could be defended by cannons?</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_SANITATION" Language="en_US">
+			<Text>Build 1 Neighborhood.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_SANITATION" Language="en_US">
+			<Text>With the introduction of neighborhoods, our cities are growing larger than ever before.  Developing a sanitation plan is crucial.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_GUIDANCE_SYSTEMS" Language="en_US">
+			<Text>Own 2 Fighters.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_GUIDANCE_SYSTEMS" Language="en_US">
+			<Text>Your planes have proven effective, but is there a better defense against enemy aircraft?</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_FOREIGN_TRADE" Language="en_US">
+			<Text>Discover a second continent.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_FOREIGN_TRADE" Language="en_US">
+			<Text>Having discovered another nearby state, your people realize there is a wide world of trading opportunities.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_NAVAL_TRADITION" Language="en_US">
+			<Text>Recruit a Great Admiral.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_NAVAL_TRADITION" Language="en_US">
+			<Text>Your strong leadership at sea inspires your people to strive to become a naval power.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_FEUDALISM" Language="en_US">
+			<Text>Build 4 Farms.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_FEUDALISM" Language="en_US">
+			<Text>A system of lords and vassals is forming to manage all the farmlands of your empire.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ARABIAN_MAMLUK_DESCRIPTION" Language="en_US">
+			<Text>Arabian unique Medieval era unit that replaces the Knight. Stronger and heals at the end of every turn, regardless of moving or attacking.</Text>
+		</Replace>
+		<Row Tag="LOC_HOLY_SITE_HARBOR_POSITIVE_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>+{1_num} [ICON_Gold] Gold from the adjacent Holy Site (Norway bonus).</Text>
+		</Row>
+		<Row Tag="LOC_HOLY_SITE_HARBOR_NEGATIVE_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>{1_num} [ICON_Gold] Gold from the adjacent Holy Site (remove Norway bonus).</Text>
+		</Row>
+		<Row Tag="LOC_HOLY_SITE_CAMPUS_POSITIVE_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>+{1_num} [ICON_Faith] Faith from the adjacent Campus (Arabia bonus).</Text>
+		</Row>
+		<Row Tag="LOC_HOLY_SITE_CAMPUS_NEGATIVE_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>{1_num} [ICON_Faith] Faith from the adjacent Campus (remove Arabia bonus).</Text>
+		</Row>
+		<Row Tag="LOC_CAMPUS_HOLY_SITE_POSITIVE_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>+{1_num} [ICON_Science] Science from the adjacent Holy Site (Arabia bonus).</Text>
+		</Row>
+		<Row Tag="LOC_CAMPUS_HOLY_SITE_NEGATIVE_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>{1_num} [ICON_Science] Science from the adjacent Holy Site (remove Arabia bonus).</Text>
+		</Row>
+		<Row Tag="LOC_HARBOR_BASE_DISTRICT_POSITIVE_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>+{1_num} [ICON_GOLD] Gold base adjacency (add Dutch bonus).</Text>
+		</Row>
+		<Row Tag="LOC_HARBOR_BASE_DISTRICT_NEGATIVE_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>{1_num} [ICON_GOLD] Gold base adjacency (remove Dutch bonus).</Text>
+		</Row>
+		<Row Tag="LOC_GOV_PLAZA_POSITIVE_SCIENCE_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>+{1_num} [ICON_SCIENCE] Science base adjacency (add Sweden bonus).</Text>
+		</Row>
+		<Row Tag="LOC_GOV_PLAZA_NEGATIVE_SCIENCE_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>{1_num} [ICON_SCIENCE] Science base adjacency (remove Sweden bonus).</Text>
+		</Row>
+		<Row Tag="LOC_GOV_PLAZA_POSITIVE_PRODUCTION_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>+{1_num} [ICON_Production] Production base adjacency (add Sweden bonus).</Text>
+		</Row>
+		<Row Tag="LOC_GOV_PLAZA_NEGATIVE_PRODUCTION_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>{1_num} [ICON_Production] Production base adjacency (remove Sweden bonus).</Text>
+		</Row>
+		<Row Tag="LOC_GOV_PLAZA_POSITIVE_GOLD_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>+{1_num} [ICON_Gold] Gold base adjacency (add Sweden bonus).</Text>
+		</Row>
+		<Row Tag="LOC_GOV_PLAZA_NEGATIVE_GOLD_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>{1_num} [ICON_Gold] Gold base adjacency (remove Sweden bonus).</Text>
+		</Row>
+		<Row Tag="LOC_GOV_PLAZA_POSITIVE_FAITH_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>+{1_num} [ICON_Faith] Faith base adjacency (add Sweden bonus).</Text>
+		</Row>
+		<Row Tag="LOC_GOV_PLAZA_NEGATIVE_FAITH_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>{1_num} [ICON_Faith] Faith base adjacency (remove Sweden bonus).</Text>
+		</Row>
+		<Row Tag="LOC_GOV_PLAZA_POSITIVE_CULTURE_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>+{1_num} [ICON_Culture] Culture base adjacency (add Sweden bonus).</Text>
+		</Row>
+		<Row Tag="LOC_GOV_PLAZA_NEGATIVE_CULTURE_ADJACENCY_DESCRIPTION" Language="en_US">
+			<Text>{1_num} [ICON_Culture] Culture base adjacency (remove Sweden bonus).</Text>
+		</Row>
+		<!-- changed in v3.19.1 -->		
+		<Replace Tag="LOC_WORLD_CONGRESS_IMPROVE_TRADE_WTH_PLAYER_DESC" Language="en_US">
+			<Text>The chosen player receives +1 [ICON_TradeRoute] Trade Route capacity and +4 [ICON_GOLD] Gold from incoming international [ICON_TradeRoute] Trade Routes.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="en_US">
+			<Text>The worship building for their Religion can be purchased by any player for just one-tenth of the usual [ICON_Faith] Faith cost. It adds 20% to the [ICON_Science] Science, [ICON_Faith] Faith, and [ICON_Culture] Culture to the city's output.[NEWLINE][NEWLINE]Arabian Holy Site and Campus districts receive an additional standard adjacency bonus whe adjacent to each other.</Text>
+		</Replace>		
+		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="en_US">
+			<Text>A building unique to the Aztecs. Provides an [ICON_Amenities] Amenity and +2 [ICON_CULTURE] Culture to cities within 6 tiles. Also generates 1 [ICON_GreatGeneral] Great General Point per turn.</Text>
+		</Replace>		
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="en_US">
+			<Text>Cities with a Palgum add +1 [ICON_SCIENCE] per population.</Text>
+		</Replace>		
+		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="en_US">
+			<Text>+100% [ICON_PRODUCTION] Production to Theater Square Buildings. Great Works in Eleanor’s cities each provide +1 [ICON_SCIENCE] Science and +1 [ICON_GOLD] Gold, and cause -1 Loyalty per turn in foreign cities within 9 tiles. A city that leaves another civilization due to a loss of Loyalty and is currently receiving the most Loyalty per turn from Eleanor's civilization skips the Free City step to join this civilization.</Text>
+		</Replace>		
+		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="en_US">
+			<Text>Shrines generate 1 [ICON_GreatGeneral] Great General Point per turn. All land combat and religious units receive +1 [ICON_STRENGTH] Combat for each Religious Belief, as well as +1 [ICON_Movement] Movement.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="en_US">
+			<Text>Mapuche unique Medieval Era unit that replaces the Courser. Stronger than its replacement and pillaging only costs 1 [ICON_Movement] Movement.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="en_US">
+			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards Libraries, Workshops, Universities, and Factories. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct a Chateau, unique to France.[NEWLINE][NEWLINE]+2 [ICON_Culture] Culture, +1 [ICON_GOLD] Gold, +1 [ICON_HOUSING] Housing, and +1 Appeal. +1 [ICON_Culture] Culture for each adjacent Wonder (+2 after Flight). +1 [ICON_Gold] Gold and +1 [ICON_Food] Food for each adjacent Luxury resource. [ICON_TOURISM] Tourism after researching Flight. Unlocked at Feudalism and can only be built adjacent to Rivers.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct a Chateau, unique to France.[NEWLINE][NEWLINE]+2 [ICON_Culture] Culture, +1 [ICON_GOLD] Gold, +1 [ICON_HOUSING] Housing, and +1 Appeal. +1 [ICON_Culture] Culture for each adjacent Wonder (+2 after Flight). +1 [ICON_Gold] Gold and +1 [ICON_Food] Food for each adjacent Luxury resource. [ICON_TOURISM] Tourism after researching Flight. Unlocked at Feudalism and can only be built adjacent to Rivers.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="en_US">
+			<Text>The Religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb.[NEWLINE][NEWLINE]Holy Sites gain standard Faith adjacency bonus from adjacent districts.[NEWLINE][NEWLINE]All Relics provide +2 [ICON_FAITH] Faith, +2 [ICON_CULTURE] Culture, and +4 [ICON_GOLD] Gold. Recieve a Relic upon founding and completing a Religion.</Text>
+		</Replace>
 
 		<!-- added in 3.18.0 -->
-		<Replace Tag="LOC_WORLD_CONGRESS_IMPROVE_TRADE_WTH_PLAYER_DESC" Language="en_US">
-			<Text>[ICON_TradeRoute] Trade Routes sent to the chosen player provide +4 [ICON_Gold] Gold to that player and they receive +1 [ICON_TradeRoute] Trade Route capacity.</Text>
-		</Replace>
 		<Replace Tag="LOC_ABILITY_ROUGH_RIDER_DESCRIPTION" Language="en_US">
 			<Text>When defeating an enemy unit on your [ICON_Capital] Capital's continent, gain [ICON_Culture] Culture equal to 50% that unit's base [ICON_Strength] Combat Strength.[NEWLINE][ICON_Bullet]+5 [ICON_Strength] Combat Strength when fighting on Hills.</Text>
 		</Replace>	
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION" Language="en_US">
 			<Text>+50% [ICON_Production] Production for 10 turns after liberating a city.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="en_US">
-			<Text>[ICON_TechBoosted] Eurekas provide 85% of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MAGNANIMOUS_DESCRIPTION" Language="en_US">
 			<Text>After recruiting or patronizing a [ICON_GreatPerson] Great Person, 20% of its [ICON_GreatPerson] Great Person point cost is refunded. Lumermills do not require Mercantilism to be placed on Rainforests.</Text>
@@ -307,10 +487,6 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="en_US">
 			<Text>Combat units gain +7 [ICON_Strength] Combat Strength near foreign cities that follow this Religion.</Text>
-		</Replace>
-
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="en_US">
-			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards libraries, workshops, universities, and factories. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="en_US">
 			<Text>+2 [ICON_Faith] Faith and +2 [ICON_GOLD] Gold from Mines over Luxury and Bonus resources.</Text>
@@ -850,21 +1026,12 @@
 		<Replace Tag="LOC_FEATURE_DEVILSTOWER_DESCRIPTION" Language="en_US">
 			<Text>One tile impassable natural wonder. Provides +2 [ICON_FAITH] Faith and +1 [ICON_Production] Production to adjacent tiles.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="en_US">
-			<Text>All land combat and religious units receive +1 [ICON_Movement] Movement.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="en_US">
-			<Text>+100% [ICON_PRODUCTION] Production to Theater Square Buildings. Great Works in Eleanor’s cities each cause -1 Loyalty per turn in foreign cities within 9 tiles. A city that leaves another civilization due to a loss of Loyalty and is currently receiving the most Loyalty per turn from Eleanor's civilization skips the Free City step to join this civilization.</Text>
-		</Replace>
 		<Row Tag="LOC_DISTRICT_SEOWON_THEATER_BONUS" Language="en_US">
 			<Text>+{1_num} [ICON_Science] Science from the adjacent Theater Square.</Text>
 		</Row>
 		<Row Tag="LOC_DISTRICT_THEATER_SEOWON_BONUS" Language="en_US">
 			<Text>+{1_num} [ICON_CULTURE] Culture from the adjacent Seowon.</Text>
-		</Row>		
-		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="en_US">
-			<Text>Mapuche unique Medieval Era unit that replaces the Courser. +1 [ICON_Movement] Movement and pillaging only costs 1 [ICON_Movement] Movement.</Text>
-		</Replace>
+		</Row>
 		<Replace Tag="LOC_UNIT_ANTIAIR_GUN_DESCRIPTION" Language="en_US">
 			<Text>Modern era anti-air support unit. Provides cover from air attacks up to 1 hex away from the weapon.</Text>
 		</Replace>
@@ -883,12 +1050,6 @@
 		<Replace Tag="LOC_CIVIC_ENVIRONMENTALISM_DESCRIPTION" Language="en_US">
 			<Text>+50% [ICON_Tourism] Tourism across your empire.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct a Chateau, unique to France.[NEWLINE][NEWLINE]+2 [ICON_Culture] Culture and +1 Appeal. +1 [ICON_Culture] Culture for each adjacent Wonder. +1 [ICON_Gold] Gold and +1 [ICON_Food] Food for each adjacent Luxury resource. Provides +1 [ICON_HOUSING] Housing at Feudalism and [ICON_TOURISM] Tourism after researching Flight. Can only be built adjacent to Rivers.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_CHATEAU_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct a Chateau, unique to France.[NEWLINE][NEWLINE]+2 [ICON_Culture] Culture and +1 Appeal. +1 [ICON_Culture] Culture for each adjacent wonder. +1 [ICON_Gold] Gold and +1 [ICON_Food] Food for each adjacent Luxury resource. Provides +1 [ICON_HOUSING] Housing at Feudalism and [ICON_TOURISM] Tourism after researching Flight. Can only be built adjacent to Rivers.</Text>
-		</Replace>
 		<!--======== GATHERING STORM ========-->
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>30% [ICON_FAITH] Faith discount on Missionaries. Inquisitors can Remove Heresy one extra time and eliminate 100% of the presence of other Religions. Combat units have a bonus of +4 [ICON_Strength] Combat Strength against players following other Religions.</Text>
@@ -902,9 +1063,6 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="en_US">
 			<Text>Units gain the ability to enter Ocean tiles after researching the Shipbuilding technology. Naval melee units heal in neutral territory. Units ignore additional [ICON_Movement] Movement costs from embarking and disembarking.</Text>
 		</Replace>
-		<Row Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="en_US">
-			<Text>+{1_num} [ICON_Gold] Gold from the adjacent Holy Site.</Text>
-		</Row>
 		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="en_US">
 			<Text>Receive boosts upon city conquest: +20% [ICON_PRODUCTION] in all cities for 10 turns, as well as a [ICON_TechBoosted] Eureka for each Encampment or Campus in the conquered city and an [ICON_CivicBoosted] Inspiration for each Holy Site or Theater Square.</Text>
 		</Replace>
@@ -934,14 +1092,8 @@
 		<!--===============   C I V I L I Z A T I O N S   ===============-->
 		<!-- America -->
 		<!-- Arabia -->
-		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="en_US">
-			<Text>The worship building for their Religion can be purchased by any player for just one-tenth of the usual [ICON_Faith] Faith cost. It adds 20% to the [ICON_Science] Science, [ICON_Faith] Faith, and [ICON_Culture] Culture to the city's output.</Text>
-		</Replace>
 		<!-- Australia -->
 		<!-- Aztec -->
-		<Replace Tag="LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="en_US">
-			<Text>A building unique to the Aztecs. Provides an [ICON_Amenities] Amenity, +3 [ICON_CULTURE] Culture, and a [ICON_GreatGeneral] Great General Point.</Text>
-		</Replace>
 		<!-- China -->
 		<Replace Tag="LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION" Language="en_US"> 
 			<Text>Chinese unique unit that replaces the Crossbowman. +7 [ICON_Ranged] Ranged Strength when attacking adjacent enemy units.</Text>
@@ -1006,9 +1158,6 @@
 		</Replace>
 		<!-- Persia -->
 		<!-- Poland -->
-		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="en_US">
-			<Text>The Religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb.[NEWLINE][NEWLINE]Holy Sites gain standard Faith adjacency bonus from adjacent districts.[NEWLINE][NEWLINE]All Relics provide bonus Faith (+2), Culture (+2) and Gold (+4). Recieve a Relic upon founding and completing a Religion.</Text>
-		</Replace>
 		<!-- Russia -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="en_US">
 			<Text>Russian unique Industrial era unit that replaces Cavalry. +5 [ICON_Strength] Combat Strength when fighting in or adjacent to its home territory. Can move after attacking if [ICON_Movement] Movement points remain.</Text>

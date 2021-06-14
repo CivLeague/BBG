@@ -103,27 +103,48 @@ INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 -- ELEANOR
 --==========
 -- great works give +1 science and +1 gold
-/* only do it this way if we want this to only be on eleanor france
-INSERT INTO Types (Type, King) VALUES ('TRAIT_LEADER_ELEANOR_GREAT_WORK_YIELDS_BBG', 'KIND_TRAIT');
-INSERT INTO Traits (TraitType, Name, Description) VALUES
-	('TRAIT_LEADER_ELEANOR_GREAT_WORK_YIELDS_BBG', 'TRAIT_LEADER_ELEANOR_GREAT_WORK_YIELDS_NAME_BBG', 'TRAIT_LEADER_ELEANOR_GREAT_WORK_YIELDS_DESC_BBG');
-INSERT INTO LeaderTraits VALUES ('LEADER_ELEANOR_FRANCE', 'TRAIT_LEADER_ELEANOR_GREAT_WORK_YIELDS_BBG');
-*/
-INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
-	('ATTACH_GREAT_WORK_SCI_MODIFIER_BBG',  'MODIFIER_ALL_CITIES_ATTACH_MODIFIER'), --might have to use MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER
-	('ATTACH_GREAT_WORK_GOLD_MODIFIER_BBG', 'MODIFIER_ALL_CITIES_ATTACH_MODIFIER'),
-	('GREAT_WORK_SCI_MODIFIER_BBG',  'MODIFIER_SINGLE_CITY_GRANT_YIELD_PER_GREAT_WORK'),
-	('GREAT_WORK_GOLD_MODIFIER_BBG', 'MODIFIER_SINGLE_CITY_GRANT_YIELD_PER_GREAT_WORK');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
-	('ATTACH_GREAT_WORK_SCI_MODIFIER_BBG',  'ModifierId', 'GREAT_WORK_SCI_MODIFIER_BBG'),
-	('ATTACH_GREAT_WORK_GOLD_MODIFIER_BBG', 'ModifierId', 'GREAT_WORK_GOLD_MODIFIER_BBG'),
-	('GREAT_WORK_SCI_MODIFIER_BBG',  'YieldType', 'YIELD_SCIENCE'),
-	('GREAT_WORK_GOLD_MODIFIER_BBG', 'YieldType', 'YIELD_GOLD'),
-	('GREAT_WORK_SCI_MODIFIER_BBG',  'Amount', '1'),
-	('GREAT_WORK_GOLD_MODIFIER_BBG', 'Amount', '1');
-INSERT INTO TraitModifiers VALUES
-	('TRAIT_LEADER_ELEANOR_LOYALTY', 'ATTACH_GREAT_WORK_SCI_MODIFIER_BBG'),
-	('TRAIT_LEADER_ELEANOR_LOYALTY', 'ATTACH_GREAT_WORK_GOLD_MODIFIER_BBG');
+INSERT INTO Modifiers (ModifierId, ModifierType)
+	SELECT GreatWorkObjectType || '_ADD_SCI_BBG', 'MODIFIER_PLAYER_CITIES_ADJUST_GREATWORK_YIELD'
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType!='GREATWORKOBJECT_ARTIFACT' OR GreatWorkObjectType!='GREATWORKOBJECT_RELIC';
+INSERT INTO Modifiers (ModifierId, ModifierType)
+	SELECT GreatWorkObjectType || '_ADD_GOLD_BBG', 'MODIFIER_PLAYER_CITIES_ADJUST_GREATWORK_YIELD'
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType!='GREATWORKOBJECT_ARTIFACT' OR GreatWorkObjectType!='GREATWORKOBJECT_RELIC';
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+	SELECT GreatWorkObjectType || '_ADD_SCI_BBG', 'GreatWorkObjectType', GreatWorkObjectType
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType!='GREATWORKOBJECT_ARTIFACT' OR GreatWorkObjectType!='GREATWORKOBJECT_RELIC';
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+	SELECT GreatWorkObjectType || '_ADD_GOLD_BBG', 'GreatWorkObjectType', GreatWorkObjectType
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType!='GREATWORKOBJECT_ARTIFACT' OR GreatWorkObjectType!='GREATWORKOBJECT_RELIC';
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+	SELECT GreatWorkObjectType || '_ADD_SCI_BBG', 'YieldType', 'YIELD_SCIENCE'
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType!='GREATWORKOBJECT_ARTIFACT' OR GreatWorkObjectType!='GREATWORKOBJECT_RELIC';
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+	SELECT GreatWorkObjectType || '_ADD_GOLD_BBG', 'YieldType', 'YIELD_GOLD'
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType!='GREATWORKOBJECT_ARTIFACT' OR GreatWorkObjectType!='GREATWORKOBJECT_RELIC';
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+	SELECT GreatWorkObjectType || '_ADD_SCI_BBG', 'YieldChange', '1'
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType!='GREATWORKOBJECT_ARTIFACT' OR GreatWorkObjectType!='GREATWORKOBJECT_RELIC';
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+	SELECT GreatWorkObjectType || '_ADD_GOLD_BBG', 'YieldChange', '1'
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType!='GREATWORKOBJECT_ARTIFACT' OR GreatWorkObjectType!='GREATWORKOBJECT_RELIC';
+
+INSERT INTO TraitModifiers
+	SELECT 'TRAIT_LEADER_ELEANOR_LOYALTY', GreatWorkObjectType || '_ADD_SCI_BBG'
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType!='GREATWORKOBJECT_ARTIFACT' OR GreatWorkObjectType!='GREATWORKOBJECT_RELIC';
+INSERT INTO TraitModifiers
+	SELECT 'TRAIT_LEADER_ELEANOR_LOYALTY', GreatWorkObjectType || '_ADD_GOLD_BBG'
+	FROM GreatWorkObjectTypes
+	WHERE GreatWorkObjectType!='GREATWORKOBJECT_ARTIFACT' OR GreatWorkObjectType!='GREATWORKOBJECT_RELIC';
+
 -- +100% production for theater squares
 INSERT INTO TraitModifiers (TraitType , ModifierId)
 	VALUES
@@ -218,7 +239,32 @@ UPDATE Units_XP2 SET ResourceCost=10 WHERE UnitType='UNIT_KONGO_SHIELD_BEARER';
 --==========
 -- Mali
 --==========
+DELETE FROM TraitModifiers
+WHERE TraitType = 'TRAIT_CIVILIZATION_MALI_GOLD_DESERT' AND ModifierId = 'TRAIT_LESS_UNIT_PRODUCTION' ;
+DELETE FROM TraitModifiers
+WHERE TraitType = 'TRAIT_CIVILIZATION_MALI_GOLD_DESERT' AND ModifierId = 'TRAIT_LESS_BUILDING_PRODUCTION' ;
 
+INSERT INTO TraitModifiers
+	(TraitType, ModifierId) VALUES
+	('TRAIT_CIVILIZATION_MALI_GOLD_DESERT', 'BBG_TRAIT_MALI_LESS_PRODUCTION'),
+	('TRAIT_CIVILIZATION_MALI_GOLD_DESERT', 'BBG_TRAIT_MALI_NORMAL_WONDER_PRODUCTION'),
+	('TRAIT_CIVILIZATION_MALI_GOLD_DESERT', 'BBG_TRAIT_MALI_NORMAL_DISTRICT_PRODUCTION'),
+	('TRAIT_CIVILIZATION_MALI_GOLD_DESERT', 'BBG_TRAIT_MALI_NORMAL_PROJECT_PRODUCTION');
+
+INSERT INTO Modifiers
+	(ModifierId, ModifierType) VALUES
+	('BBG_TRAIT_MALI_LESS_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER'),
+	('BBG_TRAIT_MALI_NORMAL_WONDER_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_WONDER_PRODUCTION'),
+	('BBG_TRAIT_MALI_NORMAL_DISTRICT_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_ALL_DISTRICTS_PRODUCTION'),
+	('BBG_TRAIT_MALI_NORMAL_PROJECT_PRODUCTION', 'MODIFIER_PLAYER_CITIES_ADJUST_ALL_PROJECTS_PRODUCTION');
+
+INSERT INTO ModifierArguments
+	(ModifierId, Name, Value) VALUES
+	('BBG_TRAIT_MALI_LESS_PRODUCTION', 'YieldType', 'YIELD_PRODUCTION'),
+	('BBG_TRAIT_MALI_LESS_PRODUCTION', 'Amount', '-30'),
+	('BBG_TRAIT_MALI_NORMAL_WONDER_PRODUCTION', 'Amount', '43'),
+	('BBG_TRAIT_MALI_NORMAL_DISTRICT_PRODUCTION', 'Amount', '43'),
+	('BBG_TRAIT_MALI_NORMAL_PROJECT_PRODUCTION', 'Amount', '43');
 
 
 --==================
@@ -391,16 +437,29 @@ INSERT INTO TraitModifiers VALUES
 	('TRAIT_LEADER_KRISTINA_AUTO_THEME', 'ATTACH_EXTRA_MUSICIAN_GPP_ON_GOV_PLAZA_MODIFIER_BBG');
 -- gov plaza gives major adj to districts instead of standard
 INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentDistrict) VALUES
-	('Government_Science_Positive_BBG'		, 'Placeholder', 'YIELD_SCIENCE'	,  2, 1, 'DISTRICT_GOVERNMENT'),
-	('Government_Science_Negative_BBG'		, 'Placeholder', 'YIELD_SCIENCE'	, -2, 1, 'DISTRICT_GOVERNMENT'),
-	('Government_Production_Positive_BBG'	, 'Placeholder', 'YIELD_PRODUCTION'	,  2, 1, 'DISTRICT_GOVERNMENT'),
-	('Government_Production_Negative_BBG'	, 'Placeholder', 'YIELD_PRODUCTION'	, -2, 1, 'DISTRICT_GOVERNMENT'),
-	('Government_Gold_Positive_BBG'			, 'Placeholder', 'YIELD_GOLD'		,  2, 1, 'DISTRICT_GOVERNMENT'),
-	('Government_Gold_Negative_BBG'			, 'Placeholder', 'YIELD_GOLD'		, -2, 1, 'DISTRICT_GOVERNMENT'),
-	('Government_Faith_Positive_BBG'		, 'Placeholder', 'YIELD_FAITH'		,  2, 1, 'DISTRICT_GOVERNMENT'),
-	('Government_Faith_Negative_BBG'		, 'Placeholder', 'YIELD_FAITH'		, -2, 1, 'DISTRICT_GOVERNMENT'),
-	('Government_Culture_Positive_BBG'		, 'Placeholder', 'YIELD_CULTURE'	,  2, 1, 'DISTRICT_GOVERNMENT'),
-	('Government_Culture_Negative_BBG'		, 'Placeholder', 'YIELD_CULTURE'	, -2, 1, 'DISTRICT_GOVERNMENT');
+	('Government_Science_Positive_BBG'		, 'LOC_GOV_PLAZA_POSITIVE_SCIENCE_ADJACENCY_DESCRIPTION'	, 'YIELD_SCIENCE'	,  2, 1, 'DISTRICT_GOVERNMENT'),
+	('Government_Science_Negative_BBG'		, 'LOC_GOV_PLAZA_NEGATIVE_SCIENCE_ADJACENCY_DESCRIPTION'	, 'YIELD_SCIENCE'	, -2, 1, 'DISTRICT_GOVERNMENT'),
+	('Government_Production_Positive_BBG'	, 'LOC_GOV_PLAZA_POSITIVE_PRODUCTION_ADJACENCY_DESCRIPTION'	, 'YIELD_PRODUCTION',  2, 1, 'DISTRICT_GOVERNMENT'),
+	('Government_Production_Negative_BBG'	, 'LOC_GOV_PLAZA_NEGATIVE_PRODUCTION_ADJACENCY_DESCRIPTION'	, 'YIELD_PRODUCTION', -2, 1, 'DISTRICT_GOVERNMENT'),
+	('Government_Gold_Positive_BBG'			, 'LOC_GOV_PLAZA_POSITIVE_GOLD_ADJACENCY_DESCRIPTION'		, 'YIELD_GOLD'		,  2, 1, 'DISTRICT_GOVERNMENT'),
+	('Government_Gold_Negative_BBG'			, 'LOC_GOV_PLAZA_NEGATIVE_GOLD_ADJACENCY_DESCRIPTION'		, 'YIELD_GOLD'		, -2, 1, 'DISTRICT_GOVERNMENT'),
+	('Government_Faith_Positive_BBG'		, 'LOC_GOV_PLAZA_POSITIVE_FAITH_ADJACENCY_DESCRIPTION'		, 'YIELD_FAITH'		,  2, 1, 'DISTRICT_GOVERNMENT'),
+	('Government_Faith_Negative_BBG'		, 'LOC_GOV_PLAZA_NEGATIVE_FAITH_ADJACENCY_DESCRIPTION'		, 'YIELD_FAITH'		, -2, 1, 'DISTRICT_GOVERNMENT'),
+	('Government_Culture_Positive_BBG'		, 'LOC_GOV_PLAZA_POSITIVE_CULTURE_ADJACENCY_DESCRIPTION'	, 'YIELD_CULTURE'	,  2, 1, 'DISTRICT_GOVERNMENT'),
+	('Government_Culture_Negative_BBG'		, 'LOC_GOV_PLAZA_NEGATIVE_CULTURE_ADJACENCY_DESCRIPTION'	, 'YIELD_CULTURE'	, -2, 1, 'DISTRICT_GOVERNMENT');
+INSERT INTO District_Adjacencies (DistrictType , YieldChangeId) VALUES
+    ('DISTRICT_CAMPUS' 			, 'Government_Science_Positive_BBG'),
+    ('DISTRICT_CAMPUS' 			, 'Government_Science_Negative_BBG'),
+    ('DISTRICT_COMMERCIAL_HUB' 	, 'Government_Gold_Positive_BBG'),
+    ('DISTRICT_COMMERCIAL_HUB' 	, 'Government_Gold_Negative_BBG'),
+	('DISTRICT_HARBOR' 			, 'Government_Gold_Positive_BBG'),
+	('DISTRICT_HARBOR' 			, 'Government_Gold_Negative_BBG'),
+	('DISTRICT_HOLY_SITE' 		, 'Government_Faith_Positive_BBG'),
+	('DISTRICT_HOLY_SITE' 		, 'Government_Faith_Negative_BBG'),
+	('DISTRICT_INDUSTRIAL_ZONE'	, 'Government_Production_Positive_BBG'),
+	('DISTRICT_INDUSTRIAL_ZONE'	, 'Government_Production_Negative_BBG'),
+	('DISTRICT_THEATER' 		, 'Government_Culture_Positive_BBG'),
+	('DISTRICT_THEATER' 		, 'Government_Culture_Negative_BBG');
 INSERT INTO ExcludedAdjacencies VALUES
 	('TRAIT_LEADER_BUILDING_QUEENS_BIBLIOTHEQUE', 'Government_Science'),
 	('TRAIT_LEADER_BUILDING_QUEENS_BIBLIOTHEQUE', 'Government_Production'),
@@ -1180,3 +1239,8 @@ INSERT INTO RequirementArguments (RequirementId , Name , Value)
 --ENHANCER
 INSERT INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('REQUIRES_BELIEF_HOLY_WATERS_CPLMOD' , 'BeliefType' , 'BELIEF_HOLY_WATERS');
+
+
+-- nerf droughts
+UPDATE RandomEvents SET Hexes=3 WHERE RandomEventType='RANDOM_EVENT_DROUGHT_MAJOR';
+UPDATE RandomEvents SET Hexes=3 WHERE RandomEventType='RANDOM_EVENT_DROUGHT_EXTREME';

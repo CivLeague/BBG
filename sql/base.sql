@@ -39,10 +39,10 @@ UPDATE Units SET Combat=53 WHERE UnitType='UNIT_ARABIAN_MAMLUK';
 -- standard adj for holy sites and campuses when next to each other
 INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
     VALUES
-    ('District_HS_Faith_Positive_BBG' 	, 'Placeholder' , 'YIELD_FAITH' 	,  1 , 1 , 'DISTRICT_CAMPUS'),
-    ('District_HS_Faith_Negative_BBG' 	, 'Placeholder' , 'YIELD_FAITH' 	, -1 , 1 , 'DISTRICT_CAMPUS'),
-	('District_Campus_Sci_Positive_BBG' , 'Placeholder' , 'YIELD_SCIENCE' 	,  1 , 1 , 'DISTRICT_HOLY_SITE'),
-    ('District_Campus_Sci_Negative_BBG' , 'Placeholder' , 'YIELD_SCIENCE' 	, -1 , 1 , 'DISTRICT_HOLY_SITE');
+    ('District_HS_Faith_Positive_BBG' 	, 'LOC_HOLY_SITE_CAMPUS_POSITIVE_ADJACENCY_DESCRIPTION' , 'YIELD_FAITH' 	,  1 , 1 , 'DISTRICT_CAMPUS'),
+    ('District_HS_Faith_Negative_BBG' 	, 'LOC_HOLY_SITE_CAMPUS_NEGATIVE_ADJACENCY_DESCRIPTION' , 'YIELD_FAITH' 	, -1 , 1 , 'DISTRICT_CAMPUS'),
+	('District_Campus_Sci_Positive_BBG' , 'LOC_CAMPUS_HOLY_SITE_POSITIVE_ADJACENCY_DESCRIPTION' , 'YIELD_SCIENCE' 	,  1 , 1 , 'DISTRICT_HOLY_SITE'),
+    ('District_Campus_Sci_Negative_BBG' , 'LOC_CAMPUS_HOLY_SITE_NEGATIVE_ADJACENCY_DESCRIPTION' , 'YIELD_SCIENCE' 	, -1 , 1 , 'DISTRICT_HOLY_SITE');
 INSERT INTO District_Adjacencies (DistrictType , YieldChangeId)
     VALUES
     ('DISTRICT_HOLY_SITE' , 'District_HS_Faith_Positive_BBG'),
@@ -337,14 +337,19 @@ UPDATE TraitModifiers SET TraitType='TRAIT_CIVILIZATION_WONDER_TOURISM' WHERE Tr
 UPDATE TraitModifiers SET TraitType='TRAIT_CIVILIZATION_WONDER_TOURISM' WHERE TraitType='FLYING_SQUADRON_TRAIT' AND ModifierId='UNIQUE_LEADER_SPIES_START_PROMOTED';
 -- Reduce tourism bonus for wonders
 UPDATE ModifierArguments SET Value='150' WHERE ModifierId='TRAIT_WONDER_DOUBLETOURISM' AND Name='ScalingFactor';
--- Chateau now gives 1 housing at Feudalism, and ajacent luxes now give stacking food in addition to stacking gold 
+-- Chateau now gives 1 housing at Feudalism, and adjacent luxes now give stacking food in addition to stacking gold 
 INSERT INTO Improvement_YieldChanges (ImprovementType , YieldType , YieldChange)
 	VALUES ('IMPROVEMENT_CHATEAU' , 'YIELD_FOOD' , '0');
 INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
-	VALUES ('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Food');
+	VALUES
+	('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Food_BBG'),
+	('IMPROVEMENT_CHATEAU' , 'Chateau_Luxury_Gold_BBG');
+DELETE FROM Improvement_Adjacencies WHERE YieldChangeId='Chateau_River';
 INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentResourceClass)
-	VALUES ('Chateau_Luxury_Food' , 'Placeholder' , 'YIELD_FOOD' , '1' , '1' , 'RESOURCECLASS_LUXURY');
-UPDATE Improvements SET Housing='1' , PreReqCivic='CIVIC_FEUDALISM' WHERE ImprovementType='IMPROVEMENT_CHATEAU';
+	VALUES
+	('Chateau_Luxury_Food_BBG' , 'Placeholder' , 'YIELD_FOOD' , 1 , 1 , 'RESOURCECLASS_LUXURY'),
+	('Chateau_Luxury_Gold_BBG' , 'Placeholder' , 'YIELD_GOLD' , 1 , 1 , 'RESOURCECLASS_LUXURY');
+UPDATE Improvements SET Housing=1, RequiresRiver=1, RequiresAdjacentBonusOrLuxury=0, PreReqCivic='CIVIC_FEUDALISM' WHERE ImprovementType='IMPROVEMENT_CHATEAU';
 
 
 --==================
@@ -485,8 +490,6 @@ INSERT INTO Modifiers (ModifierId, ModifierType)
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
     VALUES ('AMPHITHEATER_AWARD_1_INFLUENCE_TOKEN_MOD' , 'Amount' , '1');
 
--- 50% culture on kill (online speed)
-UPDATE ModifierArguments SET Value=100 WHERE ModifierId='UNIQUE_LEADER_CULTURE_KILLS' AND Name='PercentDefeatedStrength';
 
 
 --==================
@@ -506,41 +509,7 @@ DELETE FROM ImprovementModifiers WHERE ModifierId='STEPWELL_FARMADJACENCY_FOOD';
 --==================
 -- India (Chandragupta)
 --==================
--- shrine gives +1 GG point
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
-	('SHRINE_GREAT_GENERAL_POINT_BBG', 'MODIFIER_PLAYER_CITIES_ADJUST_GREAT_PERSON_POINT_BASE', 'REQUIREMENTS_CITY_HAS_SHRINE');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
-	('SHRINE_GREAT_GENERAL_POINT_BBG', 'GreatPersonClassType', 'GREAT_PERSON_CLASS_GENERAL'),
-	('SHRINE_GREAT_GENERAL_POINT_BBG', 'Amount', '1');
-INSERT INTO TraitModifiers VALUES ('TRAIT_LEADER_ARTHASHASTRA', 'SHRINE_GREAT_GENERAL_POINT_BBG');
--- +1 combat per religious belief
-INSERT INTO Types (Type, Kind) VALUES ('ABILITY_COMBAT_BONUS_FOR_EACH_RELIGIOUS_BELIEF_BBG', 'KIND_ABILITY');
-INSERT INTO UnitAbilities (UnitAbilityType, Name, Description, Inactive) VALUES
-	('ABILITY_COMBAT_BONUS_FOR_EACH_RELIGIOUS_BELIEF_BBG', 'LOC_ABILITY_COMBAT_BONUS_FOR_RELIGION_NAME_BBG', 'LOC_ABILITY_COMBAT_BONUS_FOR_RELIGION_DESC_BBG', 1);
-INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES
-	('ABILITY_COMBAT_BONUS_FOR_EACH_RELIGIOUS_BELIEF_BBG', 'COMBAT_BONUS_MODIFIER_FOR_FOUNDING_RELIGION_BBG'),
-	('ABILITY_COMBAT_BONUS_FOR_EACH_RELIGIOUS_BELIEF_BBG', 'COMBAT_BONUS_MODIFIER_FOR_FOUNDER_BELIEF_BBG'),
-	('ABILITY_COMBAT_BONUS_FOR_EACH_RELIGIOUS_BELIEF_BBG', 'COMBAT_BONUS_MODIFIER_FOR_ENHANCER_BELIEF_BBG'),
-	('ABILITY_COMBAT_BONUS_FOR_EACH_RELIGIOUS_BELIEF_BBG', 'COMBAT_BONUS_MODIFIER_FOR_WORSHIP_BELIEF_BBG');
-INSERT INTO Modifiers (ModifierId, ModifierType, OwnerRequirementSetId) VALUES
-	('ATTACH_COMBAT_BONUS_FOR_EACH_RELIGIOUS_BELIEF_BBG', 'MODIFIER_PLAYER_UNITS_GRANT_ABILITY', NULL),
-	('COMBAT_BONUS_MODIFIER_FOR_FOUNDING_RELIGION_BBG'	, 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLAYER_FOUNDED_RELIGION_REQUIREMENTS'),
-	('COMBAT_BONUS_MODIFIER_FOR_FOUNDER_BELIEF_BBG'		, 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD'),
-	('COMBAT_BONUS_MODIFIER_FOR_ENHANCER_BELIEF_BBG'	, 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD'),
-	('COMBAT_BONUS_MODIFIER_FOR_WORSHIP_BELIEF_BBG'		, 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
-	('ATTACH_COMBAT_BONUS_FOR_EACH_RELIGIOUS_BELIEF_BBG', 'AbilityType', 'ABILITY_COMBAT_BONUS_FOR_EACH_RELIGIOUS_BELIEF_BBG'),
-	('COMBAT_BONUS_MODIFIER_FOR_FOUNDING_RELIGION_BBG'	, 'Amount', '1'),
-	('COMBAT_BONUS_MODIFIER_FOR_FOUNDER_BELIEF_BBG'		, 'Amount', '1'),
-	('COMBAT_BONUS_MODIFIER_FOR_ENHANCER_BELIEF_BBG'	, 'Amount', '1'),
-	('COMBAT_BONUS_MODIFIER_FOR_WORSHIP_BELIEF_BBG'		, 'Amount', '1');
-INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES
-	('COMBAT_BONUS_MODIFIER_FOR_FOUNDING_RELIGION_BBG'	, 'Preview', 'LOC_COMBAT_BONUS_MODIFIER_FOR_FOUNDING_RELIGION_BBG'),
-	('COMBAT_BONUS_MODIFIER_FOR_FOUNDER_BELIEF_BBG'		, 'Preview', 'LOC_COMBAT_BONUS_MODIFIER_FOR_FOUNDER_BELIEF_BBG'),
-	('COMBAT_BONUS_MODIFIER_FOR_ENHANCER_BELIEF_BBG'	, 'Preview', 'LOC_COMBAT_BONUS_MODIFIER_FOR_ENHANCER_BELIEF_BBG'),
-	('COMBAT_BONUS_MODIFIER_FOR_WORSHIP_BELIEF_BBG'		, 'Preview', 'LOC_COMBAT_BONUS_MODIFIER_FOR_WORSHIP_BELIEF_BBG');
-INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES
-	('TRAIT_LEADER_AGGRESSIVE_MILITARY', 'ATTACH_COMBAT_BONUS_FOR_EACH_RELIGIOUS_BELIEF_BBG');
+-- see R&F file
 
 
 --==================
@@ -662,8 +631,8 @@ INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 -- +2 gold harbor adjacency if adjacent to holy sites
 INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
     VALUES
-    ('District_HS_Gold_Positive' , 'Placeholder' , 'YIELD_GOLD' ,  2 , 1 , 'DISTRICT_HOLY_SITE'),
-    ('District_HS_Gold_Negative' , 'Placeholder' , 'YIELD_GOLD' , -2 , 1 , 'DISTRICT_HOLY_SITE');
+    ('District_HS_Gold_Positive' , 'LOC_HOLY_SITE_HARBOR_POSITIVE_ADJACENCY_DESCRIPTION' , 'YIELD_GOLD' ,  2 , 1 , 'DISTRICT_HOLY_SITE'),
+    ('District_HS_Gold_Negative' , 'LOC_HOLY_SITE_HARBOR_NEGATIVE_ADJACENCY_DESCRIPTION' , 'YIELD_GOLD' , -2 , 1 , 'DISTRICT_HOLY_SITE');
 INSERT INTO District_Adjacencies (DistrictType , YieldChangeId)
     VALUES
     ('DISTRICT_HARBOR' , 'District_HS_Gold_Positive'),
@@ -707,16 +676,15 @@ INSERT INTO District_Adjacencies (DistrictType , YieldChangeId)
 --==================
 -- Russia
 --==================
-
 -- +1 faith on tundra tiles now only for city center tiles
 INSERT INTO RequirementSets VALUES
 	('PLOT_HAS_TUNDRA_CITY_CENTER_REQUIREMENTS_BBG', 'REQUIREMENTSET_TEST_ALL'),
 	('PLOT_HAS_TUNDRA_HILLS_CITY_CENTER_REQUIREMENTS_BBG', 'REQUIREMENTSET_TEST_ALL');
 INSERT INTO RequirementSetRequirements VALUES
 	('PLOT_HAS_TUNDRA_CITY_CENTER_REQUIREMENTS_BBG', 'REQUIRES_PLOT_HAS_TUNDRA'),
-	('PLOT_HAS_TUNDRA_CITY_CENTER_REQUIREMENTS_BBG', 'REQUIRES_DISTRICT_IS_CITY_CENTER'),
+	('PLOT_HAS_TUNDRA_CITY_CENTER_REQUIREMENTS_BBG', 'BBG_REQUIRES_PLOT_IS_CITY_CENTER'),
 	('PLOT_HAS_TUNDRA_HILLS_CITY_CENTER_REQUIREMENTS_BBG', 'REQUIRES_PLOT_HAS_TUNDRA_HILLS'),
-	('PLOT_HAS_TUNDRA_HILLS_CITY_CENTER_REQUIREMENTS_BBG', 'REQUIRES_DISTRICT_IS_CITY_CENTER');
+	('PLOT_HAS_TUNDRA_HILLS_CITY_CENTER_REQUIREMENTS_BBG', 'BBG_REQUIRES_PLOT_IS_CITY_CENTER');
 UPDATE Modifiers SET SubjectRequirementSetId='PLOT_HAS_TUNDRA_CITY_CENTER_REQUIREMENTS_BBG' 		WHERE ModifierId='TRAIT_INCREASED_TUNDRA_FAITH';
 UPDATE Modifiers SET SubjectRequirementSetId='PLOT_HAS_TUNDRA_HILLS_CITY_CENTER_REQUIREMENTS_BBG' 	WHERE ModifierId='TRAIT_INCREASED_TUNDRA_HILLS_FAITH';
 -- Lavra only gets 1 Great Prophet Point per turn
@@ -2316,7 +2284,7 @@ INSERT INTO RequirementArguments (RequirementId , Name , Value)
 INSERT INTO RequirementArguments (RequirementId , Name , Value)
 	VALUES ('REQUIRES_BELIEF_RELIGIOUS_COLONIZATION_CPLMOD' , 'BeliefType' , 'BELIEF_RELIGIOUS_COLONIZATION');
 
--- for canada and australia extra food
+-- for russia, canada, and australia city center yields
 INSERT INTO Requirements(RequirementId , RequirementType) VALUES
 	('BBG_REQUIRES_PLOT_IS_CITY_CENTER' , 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES');
 INSERT INTO RequirementArguments(RequirementId , Name, Value) VALUES
