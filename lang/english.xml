@@ -90,7 +90,7 @@
 			<Text>Your planes have proven effective, but is there a better defense against enemy aircraft?</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_FOREIGN_TRADE" Language="en_US">
-			<Text>Discover a second continent.</Text>
+			<Text>Meet 1 City-State.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_FOREIGN_TRADE" Language="en_US">
 			<Text>Having discovered another nearby state, your people realize there is a wide world of trading opportunities.</Text>
