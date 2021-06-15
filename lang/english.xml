@@ -164,6 +164,12 @@
 		<Row Tag="LOC_GOV_PLAZA_NEGATIVE_CULTURE_ADJACENCY_DESCRIPTION" Language="en_US">
 			<Text>{1_num} [ICON_Culture] Culture base adjacency (remove Sweden bonus).</Text>
 		</Row>
+		<Replace Tag="LOC_BUILDING_GRAND_BAZAAR_DESCRIPTION" Language="en_US">
+			<Text>A building unique to the Ottomans that replaces the Market. Accumulate 1 extra Strategic resource for every different type of Strategic resource this city has improved. Receive 1 [ICON_AMENITIES] Amenity for every Luxury resource this city has improved.[NEWLINE][NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity, if this city does not yet have a Lighthouse building.</Text>
+		</Replace>
+		<Row Tag="LOC_BUILDING_MARKET_EXPANSION1_DESCRIPTION">
+			<Text>+1 [ICON_TradeRoute] Trade Route capacity, if this city does not yet have a Lighthouse building.</Text>
+		</Row>
 		<!-- changed in v3.19.1 -->		
 		<Replace Tag="LOC_WORLD_CONGRESS_IMPROVE_TRADE_WTH_PLAYER_DESC" Language="en_US">
 			<Text>The chosen player receives +1 [ICON_TradeRoute] Trade Route capacity and +4 [ICON_GOLD] Gold from incoming international [ICON_TradeRoute] Trade Routes.</Text>
