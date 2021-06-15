@@ -1628,14 +1628,16 @@ INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 	VALUES
 	('GRAPE_SHOT_REQUIREMENTS',	'PLAYER_IS_ATTACKER_REQUIREMENTS'),
 	('SHRAPNEL_REQUIREMENTS',	'PLAYER_IS_ATTACKER_REQUIREMENTS');
--- barbs (less naval ranged and horses must be closer)
+-- barbs
+-- horses must be have resources closer in order to spawn
 UPDATE BarbarianTribes SET ResourceRange=2 WHERE TribeType='TRIBE_CAVALRY';
-UPDATE BarbarianAttackForces SET RangeTag=NULL, NumRangeUnits=0 WHERE AttackForceType='NavalRaid';
-UPDATE BarbarianAttackForces SET NumRangeUnits=1 WHERE AttackForceType='HighDifficultyNavalRaid';
-UPDATE BarbarianAttackForces SET RangeTag=NULL, NumRangeUnits=0, SiegeTag=NULL, NumSiegeUnits=0 WHERE AttackForceType='LowDifficultyNavalAttack';
-UPDATE BarbarianAttackForces SET NumRangeUnits=1, SiegeTag=NULL, NumSiegeUnits=0 WHERE AttackForceType='NavalAttack';
-UPDATE BarbarianAttackForces SET NumRangeUnits=2, NumSiegeUnits=1 WHERE AttackForceType='HighDifficultyNavalAttack';
-
+-- less raider and attack forces
+UPDATE BarbarianAttackForces SET NumMeleeUnits=2, NumRangeUnits=1 WHERE AttackForceType='CavalryAttack';
+UPDATE BarbarianAttackForces SET NumMeleeUnits=1 WHERE AttackForceType='CavalryRaid';
+UPDATE BarbarianAttackForces SET NumMeleeUnits=2, NumRangeUnits=1 WHERE AttackForceType='StandardAttack';
+UPDATE BarbarianAttackForces SET NumMeleeUnits=1 WHERE AttackForceType='StandardRaid';
+UPDATE BarbarianAttackForces SET NumMeleeUnits=2, NumRangeUnits=1, SiegeTag=NULL, NumSiegeUnits=0 WHERE AttackForceType='NavalAttack';
+UPDATE BarbarianAttackForces SET NumMeleeUnits=1, RangeTag=NULL, NumRangeUnits=0 WHERE AttackForceType='NavalRaid';
 
 
 
