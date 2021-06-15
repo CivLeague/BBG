@@ -106,6 +106,12 @@
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_FEUDALISM" Language="en_US">
 			<Text>A system of lords and vassals is forming to manage all the farmlands of your empire.</Text>
+		</Replace>		
+		<Replace Tag="LOC_BOOST_TRIGGER_NATIONALISM" Language="en_US">
+			<Text>Have 8 land combat units in your military.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_NATIONALISM" Language="en_US">
+			<Text>Your people believe in the just nature of this war.  It has become an issue of national pride for us!</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_ARABIAN_MAMLUK_DESCRIPTION" Language="en_US">
 			<Text>Arabian unique Medieval era unit that replaces the Knight. Stronger and heals at the end of every turn, regardless of moving or attacking.</Text>
