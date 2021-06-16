@@ -35,6 +35,9 @@
 		<Replace Tag="LOC_ABILITY_GREAT_TURKISH_BOMBARD_DESCRIPTION" Language="en_US">
 			<Text>+5 [ICON_Strength] Combat Strength vs. district defenses. +1 [ICON_Movement] Movement.</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GREAT_TURKISH_BOMBARD_DESCRIPTION" Language="en_US">
+			<Text>+50% [ICON_Production] Production toward siege units. All siege units gain +1 [ICON_Movement] Movement and +5 [ICON_Strength] Combat Strength against district defenses. Conquered cities do not lose [ICON_Citizen] Population. Cities not founded by the Ottomans gain +1 [ICON_AMENITIES] Amenity and +4 Loyalty per turn.</Text>
+		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SULEIMAN_GOVERNOR_DESCRIPTION" Language="en_US">
 			<Text>Exclusive unique Governor with military and diplomatic abilities. Gain the Janissary unique unit and a [Icon_Governor] Governor Title when the Gunpowder technology is researched. Each Government Plaza building also awards +1 [ICON_Governor] Governor Title. </Text>
 		</Replace>
@@ -173,6 +176,18 @@
 		<Replace Tag="LOC_BUILDING_GRAND_BAZAAR_DESCRIPTION" Language="en_US">
 			<Text>A building unique to the Ottomans that replaces the Market. Accumulate 1 extra Strategic resource for every different type of Strategic resource this city has improved. Receive 1 [ICON_AMENITIES] Amenity for every Luxury resource this city has improved.[NEWLINE][NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity, if this city does not yet have a Lighthouse building.</Text>
 		</Replace>
+		<Row Tag="LOC_COMBAT_BONUS_MODIFIER_FOR_FOLLOWER_BELIEF_BBG" Language="en_US">
+			<Text>+{1_num} for having a Follower Belief</Text>
+		</Row>
+		<Row Tag="LOC_COMBAT_BONUS_MODIFIER_FOR_FOUNDER_BELIEF_BBG" Language="en_US">
+			<Text>+{1_num} for having a Founder Belief</Text>
+		</Row>
+		<Row Tag="LOC_COMBAT_BONUS_MODIFIER_FOR_ENHANCER_BELIEF_BBG" Language="en_US">
+			<Text>+{1_num} for having an Enhancer Belief</Text>
+		</Row>
+		<Row Tag="LOC_COMBAT_BONUS_MODIFIER_FOR_WORSHIP_BELIEF_BBG" Language="en_US">
+			<Text>+{1_num} for having a Worship Belief</Text>
+		</Row>
 		<!-- changed in v3.19.1 -->		
 		<Replace Tag="LOC_WORLD_CONGRESS_IMPROVE_TRADE_WTH_PLAYER_DESC" Language="en_US">
 			<Text>The chosen player receives +1 [ICON_TradeRoute] Trade Route capacity and +4 [ICON_GOLD] Gold from incoming international [ICON_TradeRoute] Trade Routes.</Text>
