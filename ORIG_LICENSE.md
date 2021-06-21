@@ -2,7 +2,7 @@ Better Balanced Game (BBG) - A mod for Civilization 6 by codenaugh
 
    	Copyright 2017-2021 Cody Lanier
 
-  	 Licensed under the Apache License, Version 2.0 (the "License");
+  	Licensed under the Apache License, Version 2.0 (the "License");
    	you may not use this file except in compliance with the License.
   	 You may obtain a copy of the License at
 
@@ -15,10 +15,12 @@ Better Balanced Game (BBG) - A mod for Civilization 6 by codenaugh
    	limitations under the License.
 
 	For any inquiry please reach out via:
-	https://steamcommunity.com/sharedfiles/filedetails/?id=1368312893
+	https://steamcommunity.com/sharedfiles/filedetails/?id=2494151917
 	or
 	https://github.com/CivLeague/Better-Balanced-Game
-	or on Discord: discord.gg/cpl @codenaugh
+	or on Discord (@codenaugh):
+	https://discord.gg/xrNvufBqXy
+	https://discord.gg/cpl
 
 	Any Derivative Works can be performed on this Work. 
 	However in case of that Derivative Works being widely distributed (e.g. through

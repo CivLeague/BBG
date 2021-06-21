@@ -477,7 +477,7 @@ UPDATE Routes_XP2 SET BuildWithUnitChargeCost=0 WHERE RouteType='ROUTE_MODERN_RO
 
 
 --==============================================================
---******			W O N D E R S  (NATURAL)			  ******
+--******				WONDERS  (NATURAL)				  ******
 --==============================================================
 UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_EYE_OF_THE_SAHARA' AND YieldType='YIELD_SCIENCE';
 UPDATE Features Set Description='LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION' WHERE FeatureType='FEATURE_EYE_OF_THE_SAHARA';
@@ -494,7 +494,39 @@ UPDATE Feature_AdjacentYields SET YieldChange='2' WHERE FeatureType='FEATURE_DEV
 
 
 --==============================================================
---******				    O T H E R					  ******
+--******				 WORLD CONGRESS					  ******
+--==============================================================
+-- stead of canceling trade routes, half yields
+DELETE FROM ResolutionEffects WHERE ModifierId='APPLY_INTERNATIONAL_MAJOR_TRADE_ROUTES_DISABLED';
+INSERT INTO Modifiers (ModifierId, ModifierType)
+	SELECT 'ATTACH_' || ModifierId, 'MODIFIER_CONGRESS_ATTACH_MODIFIER_TO_PLAYERTYPE'
+	FROM Modifiers
+	WHERE ModifierType='MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_MODIFIER';
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+	SELECT 'ATTACH_' || ModifierId, 'ModifierId', ModifierId
+	FROM Modifiers
+	WHERE ModifierType='MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_MODIFIER';
+INSERT INTO ResolutionEffects (ResolutionEffectId, ResolutionType, WhichEffect, ModifierId) VALUES
+	(300, 'WC_RES_TRADE_TREATY', 2, 'ATTACH_LETTEROFMARQUE_TRADE_ROUTE_YIELD_DROP_DEST_CULTURE'),
+	(305, 'WC_RES_TRADE_TREATY', 2, 'ATTACH_LETTEROFMARQUE_TRADE_ROUTE_YIELD_DROP_DEST_FAITH'),
+	(310, 'WC_RES_TRADE_TREATY', 2, 'ATTACH_LETTEROFMARQUE_TRADE_ROUTE_YIELD_DROP_DEST_FOOD'),
+	(315, 'WC_RES_TRADE_TREATY', 2, 'ATTACH_LETTEROFMARQUE_TRADE_ROUTE_YIELD_DROP_DEST_GOLD'),
+	(320, 'WC_RES_TRADE_TREATY', 2, 'ATTACH_LETTEROFMARQUE_TRADE_ROUTE_YIELD_DROP_DEST_PRODUCTION'),
+	(325, 'WC_RES_TRADE_TREATY', 2, 'ATTACH_LETTEROFMARQUE_TRADE_ROUTE_YIELD_DROP_DEST_SCIENCE'),
+	(330, 'WC_RES_TRADE_TREATY', 2, 'ATTACH_LETTEROFMARQUE_TRADE_ROUTE_YIELD_DROP_ORIG_CULTURE'),
+	(335, 'WC_RES_TRADE_TREATY', 2, 'ATTACH_LETTEROFMARQUE_TRADE_ROUTE_YIELD_DROP_ORIG_FAITH'),
+	(340, 'WC_RES_TRADE_TREATY', 2, 'ATTACH_LETTEROFMARQUE_TRADE_ROUTE_YIELD_DROP_ORIG_FOOD'),
+	(345, 'WC_RES_TRADE_TREATY', 2, 'ATTACH_LETTEROFMARQUE_TRADE_ROUTE_YIELD_DROP_ORIG_GOLD'),
+	(350, 'WC_RES_TRADE_TREATY', 2, 'ATTACH_LETTEROFMARQUE_TRADE_ROUTE_YIELD_DROP_ORIG_PRODUCTION'),
+	(355, 'WC_RES_TRADE_TREATY', 2, 'ATTACH_LETTEROFMARQUE_TRADE_ROUTE_YIELD_DROP_ORIG_SCIENCE');
+-- lower extremes for unit yield buff/debuff
+UPDATE ModifierArguments SET Value='25'  WHERE ModifierId='WC_RES_UNIT_PRODUCTION_YIELD_BUFF'   AND Name='Amount';
+UPDATE ModifierArguments SET Value='-50' WHERE ModifierId='WC_RES_UNIT_PRODUCTION_YIELD_DEBUFF' AND Name='Amount';
+
+
+
+--==============================================================
+--******				     OTHER						  ******
 --==============================================================
 -- rationalism cards
 UPDATE RequirementArguments SET Value=3 WHERE RequirementId='REQUIRES_CAMPUS_HAS_HIGH_ADJACENCY' AND Name='Amount';
@@ -943,3 +975,30 @@ INSERT INTO GovernorPromotionPrereqs ( GovernorPromotionType, PrereqGovernorProm
 INSERT INTO GovernorPromotionModifiers (GovernorPromotionType, ModifierId) VALUES
 	( 'GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE', 'REINFORCED_INFRASTRUCTURE_FLOODPLAINS_PROD_BBG' ),
 	( 'GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE', 'REINFORCED_INFRASTRUCTURE_VOLCANO_PROD_BBG' );
+
+
+-- -- religion reqs for poland and chandragupta
+-- --RequirementSet For FOUNDER Belief
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_SACRED_PLACES_CPLMOD');
+-- --RequirementSet For ENHANCER Belief
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_HOLY_WATERS_CPLMOD');
+-- --Checks for FOUNDER Belief
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_SACRED_PLACES_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- --Checks for ENHANCER Belief
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_HOLY_WATERS_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- --RequirementArguments
+-- --FOUNDER
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES('REQUIRES_BELIEF_SACRED_PLACES_CPLMOD' , 'BeliefType' , 'BELIEF_SACRED_PLACES');
+-- --ENHANCER
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_HOLY_WATERS_CPLMOD' , 'BeliefType' , 'BELIEF_HOLY_WATERS');
+
+
+-- nerf droughts
+UPDATE RandomEvents SET Hexes=3 WHERE RandomEventType='RANDOM_EVENT_DROUGHT_MAJOR';
+UPDATE RandomEvents SET Hexes=3 WHERE RandomEventType='RANDOM_EVENT_DROUGHT_EXTREME';
