@@ -734,7 +734,25 @@
 
 
 --==============================================================
---******				B U I L D I N G S			  	  ******
+--******					BOOSTS						  ******
+--==============================================================
+UPDATE Boosts SET BoostClass='BOOST_TRIGGER_OWN_X_UNITS_OF_TYPE', NumItems=3, Unit1Type='UNIT_WARRIOR' WHERE TechnologyType='TECH_BRONZE_WORKING';
+UPDATE Boosts SET BoostClass='BOOST_TRIGGER_OWN_X_UNITS_OF_TYPE', NumItems=2, Unit1Type='UNIT_SLINGER' WHERE TechnologyType='TECH_ARCHERY';
+UPDATE Boosts SET Unit1Type=NULL, BoostClass='BOOST_TRIGGER_CONSTRUCT_BUILDING', BuildingType='BUILDING_BARRACKS' WHERE TechnologyType='TECH_MILITARY_TACTICS';
+INSERT INTO Boosts (BoostID, TechnologyType, TriggerDescription, TriggerLongDescription, Boost, BoostClass, BuildingType) VALUES
+	(201, 'TECH_MILITARY_TACTICS', 'LOC_BOOST_TRIGGER_MILITARY_TACTICS', 'LOC_BOOST_TRIGGER_LONGDESC_MILITARY_TACTICS', 40, 'BOOST_TRIGGER_CONSTRUCT_BUILDING', 'BUILDING_STABLE');
+UPDATE Boosts SET Unit1Type=NULL, BoostClass='BOOST_TRIGGER_HAVE_X_BUILDINGS', NumItems=2, BuildingType='BUILDING_LIGHTHOUSE' WHERE TechnologyType='TECH_SQUARE_RIGGING';
+UPDATE Boosts SET ImprovementType=NULL, BoostClass='BOOST_TRIGGER_CONSTRUCT_BUILDING', NumItems=0, BuildingType='BUILDING_CASTLE' WHERE TechnologyType='TECH_BALLISTICS';
+UPDATE Boosts SET NumItems=1 WHERE TechnologyType='TECH_SANITATION';
+UPDATE Boosts SET BoostClass='BOOST_TRIGGER_OWN_X_UNITS_OF_TYPE', NumItems=2 WHERE TechnologyType='TECH_GUIDANCE_SYSTEMS';
+UPDATE Boosts SET BoostClass='BOOST_TRIGGER_MEET_X_CITY_STATES', NumItems=1 WHERE CivicType='CIVIC_FOREIGN_TRADE';
+UPDATE Boosts SET NumItems=4 WHERE CivicType='CIVIC_FEUDALISM';
+UPDATE Boosts SET BoostClass='BOOST_TRIGGER_HAVE_X_LAND_UNITS', NumItems=20 WHERE CivicType='CIVIC_NATIONALISM';
+UPDATE Boosts SET BoostClass='BOOST_TRIGGER_TRAIN_UNIT', Unit1Type='UNIT_GREAT_ADMIRAL' WHERE CivicType='CIVIC_NAVAL_TRADITION';
+
+
+--==============================================================
+--******					BUILDINGS				  	  ******
 --==============================================================
 UPDATE Buildings SET Entertainment=1 WHERE BuildingType='BUILDING_SEWER';
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='BARRACKS_TRAINED_UNIT_XP';
@@ -758,7 +776,7 @@ UPDATE Building_GreatPersonPoints SET PointsPerTurn=3 WHERE BuildingType='BUILDI
 
 
 --==============================================================
---******			  C I T Y - S T A T E S				  ******
+--******			  		CITY-STATES					  ******
 --==============================================================
 -- lisbon (now Mogadishu in portugal pack) sea AND LAND trade routes cannot be plundered
 UPDATE ModifierArguments SET Value='ABILITY_ECONOMIC_GOLDEN_AGE_PLUNDER_IMMUNITY' WHERE ModifierId='MINOR_CIV_LISBON_SEA_TRADE_ROUTE_PLUNDER_IMMUNITY_BONUS' AND Name='AbilityType';
@@ -819,7 +837,7 @@ INSERT INTO RequirementArguments(RequirementId, Name, Value) VALUES
 
 
 --==============================================================
---******		C U L T U R E   V I C T O R I E S		  ******
+--******				CULTURE VICTORIES				  ******
 --==============================================================
 -- moon landing worth 5x science in culture instead of 10x
 UPDATE ModifierArguments SET Value='5' WHERE ModifierId='PROJECT_COMPLETION_GRANT_CULTURE_BASED_ON_SCIENCE_RATE' AND Name='Multiplier';
@@ -977,7 +995,7 @@ UPDATE GreatWork_YieldChanges SET YieldChange='12' WHERE GreatWorkType='GREATWOR
 
 
 --==============================================================
---******			  G O V E R N M E N T S				  ******
+--******			  	   GOVERNMENTS				  	  ******
 --==============================================================
 -- fascism attack bonus works on defense now too
 UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='FASCISM_ATTACK_BUFF';
@@ -986,14 +1004,14 @@ UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='FASCISM_LEGA
 
 
 --==============================================================
---******			 G R E A T    P E O P L E  			  ******
+--******			 	  GREAT PEOPLE  				  ******
 --==============================================================
 
 
 
 
 --==============================================================
---******				P A N T H E O N S				  ******
+--******				   PANTHEONS					  ******
 --==============================================================
 -- religious settlements more border growth since settler removed
 UPDATE ModifierArguments SET Value='50' WHERE ModifierId='RELIGIOUS_SETTLEMENTS_CULTUREBORDER';
@@ -1166,7 +1184,7 @@ INSERT INTO RequirementArguments
     ('REQUIRES_PLOT_HAS_PANTANAL', 'FeatureType', 'FEATURE_PANTANAL');
 
 --==============================================================
---******			P O L I C Y   C A R D S				  ******
+--******				   POLICY CARDS					  ******
 --==============================================================
 -- destroy barbs
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='DISCIPLINE_BARBARIANCOMBAT';
@@ -1270,7 +1288,7 @@ INSERT INTO ModifierArguments
 
 
 --==============================================================
---******				R E L I G I O N					  ******
+--******					RELIGION					  ******
 --==============================================================
 -- reduce debator promotion
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='APOSTLE_DEBATER' AND Name='Amount';
@@ -1298,6 +1316,8 @@ INSERT INTO UnitAbilities (UnitAbilityType) VALUES
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES
 	('WARRIOR_MONK_WALL_BREAKER_BBG', 'ENABLE_WALL_ATTACK_WHOLE_GAME_MONK_BBG'),
 	('WARRIOR_MONK_DOUBLE_XP_BBG', 'ENABLE_WARRIOR_MONK_DOUBLE_XP_BBG');
+-- Monk spain ability bugfix
+INSERT INTO TypeTags (Type , Tag) VALUES ('ABILITY_PHILIP_II_COMBAT_BONUS_OTHER_RELIGION' , 'CLASS_WARRIOR_MONK');
 -- Nerf Inquisitors
 UPDATE Units SET ReligionEvictPercent=25, SpreadCharges=2, CostProgressionParam1=10 WHERE UnitType='UNIT_INQUISITOR';
 -- Religious spread from trade routes increased
@@ -1374,7 +1394,7 @@ INSERT INTO Building_YieldChanges
 
 
 --==============================================================
---******				S  C  O  R  E				  	  ******
+--******					  SCORE					  	  ******
 --==============================================================
 -- more points for techs and civics
 UPDATE ScoringLineItems SET Multiplier=4 WHERE LineItemType='LINE_ITEM_CIVICS';
@@ -1431,28 +1451,31 @@ UPDATE ScoringLineItems SET Multiplier=1 WHERE LineItemType='LINE_ITEM_ERA_CONVE
 --==============================================================
 --******			  U N I T S  (NON-UNIQUE)			  ******
 --==============================================================
-UPDATE Units SET BaseMoves='4' WHERE  UnitType='UNIT_SUBMARINE';
-UPDATE Units SET BaseMoves='6' WHERE  UnitType='UNIT_DESTROYER';
-UPDATE Units SET BaseMoves='5' WHERE  UnitType='UNIT_AIRCRAFT_CARRIER';
+UPDATE Units SET BaseMoves=6, BaseSightRange=4 WHERE UnitType='UNIT_HELICOPTER';
+UPDATE Units SET BaseMoves=4 WHERE UnitType='UNIT_SUBMARINE';
+UPDATE Units SET BaseMoves=6 WHERE UnitType='UNIT_DESTROYER';
+UPDATE Units SET BaseMoves=5 WHERE UnitType='UNIT_AIRCRAFT_CARRIER';
 UPDATE UnitCommands SET VisibleInUI=0 WHERE CommandType='UNITCOMMAND_PRIORITY_TARGET';
 UPDATE Units SET BaseMoves=3 WHERE UnitType='UNIT_MILITARY_ENGINEER';
-UPDATE Units SET Cost=310 WHERE UnitType='UNIT_CAVALRY';
+UPDATE Units SET BaseMoves=6, Cost=310 WHERE UnitType='UNIT_CAVALRY';
 UPDATE Units SET PrereqTech='TECH_MILITARY_TACTICS' WHERE UnitType='UNIT_MAN_AT_ARMS';
 UPDATE Units SET PrereqTech='TECH_COMBUSTION' WHERE UnitType='UNIT_ANTIAIR_GUN';
 UPDATE Units SET BaseMoves=3 WHERE UnitType='UNIT_INFANTRY';
 UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_PRIVATEER';
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 	VALUES
-	('GRAPE_SHOT_REQUIREMENTS',			'PLAYER_IS_ATTACKER_REQUIREMENTS'),
-	('SHRAPNEL_REQUIREMENTS',			'PLAYER_IS_ATTACKER_REQUIREMENTS');
--- barbs (less naval ranged and horses must be closer)
+	('GRAPE_SHOT_REQUIREMENTS',	'PLAYER_IS_ATTACKER_REQUIREMENTS'),
+	('SHRAPNEL_REQUIREMENTS',	'PLAYER_IS_ATTACKER_REQUIREMENTS');
+-- barbs
+-- horses must be have resources closer in order to spawn
 UPDATE BarbarianTribes SET ResourceRange=2 WHERE TribeType='TRIBE_CAVALRY';
-UPDATE BarbarianAttackForces SET RangeTag=NULL, NumRangeUnits=0 WHERE AttackForceType='NavalRaid';
-UPDATE BarbarianAttackForces SET NumRangeUnits=1 WHERE AttackForceType='HighDifficultyNavalRaid';
-UPDATE BarbarianAttackForces SET RangeTag=NULL, NumRangeUnits=0, SiegeTag=NULL, NumSiegeUnits=0 WHERE AttackForceType='LowDifficultyNavalAttack';
-UPDATE BarbarianAttackForces SET NumRangeUnits=1, SiegeTag=NULL, NumSiegeUnits=0 WHERE AttackForceType='NavalAttack';
-UPDATE BarbarianAttackForces SET NumRangeUnits=2, NumSiegeUnits=1 WHERE AttackForceType='HighDifficultyNavalAttack';
-
+-- less raider and attack forces
+UPDATE BarbarianAttackForces SET NumMeleeUnits=2, NumRangeUnits=1 WHERE AttackForceType='CavalryAttack';
+UPDATE BarbarianAttackForces SET NumMeleeUnits=1 WHERE AttackForceType='CavalryRaid';
+UPDATE BarbarianAttackForces SET NumMeleeUnits=2, NumRangeUnits=1 WHERE AttackForceType='StandardAttack';
+UPDATE BarbarianAttackForces SET NumMeleeUnits=1 WHERE AttackForceType='StandardRaid';
+UPDATE BarbarianAttackForces SET NumMeleeUnits=2, NumRangeUnits=1, SiegeTag=NULL, NumSiegeUnits=0 WHERE AttackForceType='NavalAttack';
+UPDATE BarbarianAttackForces SET NumMeleeUnits=1, RangeTag=NULL, NumRangeUnits=0 WHERE AttackForceType='NavalRaid';
 
 
 
@@ -1904,3 +1927,205 @@ INSERT INTO RequirementArguments
 	('PLAYER_HAS_URBANIZATION_CPLMOD', 	 	'CivicType', 		'CIVIC_URBANIZATION'),
 	('PLAYER_HAS_BANKING_CPLMOD'   , 		'TechnologyType', 	'TECH_BANKING'  ),
 	('PLAYER_HAS_ECONOMICS_CPLMOD' , 		'TechnologyType', 	'TECH_ECONOMICS');
+
+--
+-- --for chandra and poland
+-- --Creates Belief Requirement Sets
+-- INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+-- 	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIREMENTSET_TEST_ANY');
+-- INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+-- 	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIREMENTSET_TEST_ANY');
+-- INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
+-- 	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIREMENTSET_TEST_ANY');
+-- --Attaches Requirement Sets
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_CPLMOD' , 'REQUIREMENT_REQUIREMENTSET_IS_MET');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_CPLMOD' , 'REQUIREMENT_REQUIREMENTSET_IS_MET');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_CPLMOD' , 'REQUIREMENT_REQUIREMENTSET_IS_MET');
+-- --RequirementSet For FOUNDER Belief
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_CHURCH_PROPERTY_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_LAY_MINISTRY_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_PAPAL_PRIMACY_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_PILGRIMAGE_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_STEWARDSHIP_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_TITHE_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_WORLD_CHURCH_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_CROSS_CULTURAL_DIALOGUE_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_RELIGIOUS_UNITY_CPLMOD');
+-- --RequirementSet For WORSHIP Belief
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_CATHEDRAL_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_GURDWARA_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_MEETING_HOUSE_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_MOSQUE_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_PAGODA_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_SYNAGOGUE_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_WAT_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_STUPA_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_DAR_E_MEHR_CPLMOD');
+-- --RequirementSet For ENHANCER Belief
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_DEFENDER_OF_FAITH_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_HOLY_ORDER_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_ITINERANT_PREACHERS_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_JUST_WAR_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_MISSIONARY_ZEAL_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_MONASTIC_ISOLATION_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_SCRIPTURE_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_BURIAL_GROUNDS_CPLMOD');
+-- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
+-- 	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD' , 'REQUIRES_BELIEF_RELIGIOUS_COLONIZATION_CPLMOD');
+-- --Checks for FOUNDER Belief
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_CHURCH_PROPERTY_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_LAY_MINISTRY_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_PAPAL_PRIMACY_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_PILGRIMAGE_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_STEWARDSHIP_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_TITHE_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_WORLD_CHURCH_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_CROSS_CULTURAL_DIALOGUE_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_RELIGIOUS_UNITY_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- --Checks for WORSHIP Belief
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_CATHEDRAL_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_GURDWARA_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_MEETING_HOUSE_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_MOSQUE_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_PAGODA_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_SYNAGOGUE_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_WAT_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_STUPA_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_DAR_E_MEHR_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- --Checks for ENHANCER Belief
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_DEFENDER_OF_FAITH_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_HOLY_ORDER_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_ITINERANT_PREACHERS_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_JUST_WAR_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_MISSIONARY_ZEAL_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_MONASTIC_ISOLATION_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_SCRIPTURE_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_BURIAL_GROUNDS_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- INSERT INTO Requirements (RequirementId , RequirementType)
+-- 	VALUES ('REQUIRES_BELIEF_RELIGIOUS_COLONIZATION_CPLMOD' , 'REQUIREMENT_PLAYER_FOUNDED_RELIGION_WITH_BELIEF');
+-- --RequirementArguments
+-- --Checks RequirementSets
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('RELIGION_HAS_FOUNDER_BELIEF_CPLMOD' , 'RequirementSetId' , 'RELIGION_HAS_FOUNDER_BELIEF_REQUIREMENTS_CPLMOD');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('RELIGION_HAS_WORSHIP_BELIEF_CPLMOD' , 'RequirementSetId' , 'RELIGION_HAS_WORSHIP_BELIEF_REQUIREMENTS_CPLMOD');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('RELIGION_HAS_ENHANCER_BELIEF_CPLMOD' , 'RequirementSetId' , 'RELIGION_HAS_ENHANCER_BELIEF_REQUIREMENTS_CPLMOD');
+-- --FOUNDER
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES('REQUIRES_BELIEF_CHURCH_PROPERTY_CPLMOD' , 'BeliefType' , 'BELIEF_CHURCH_PROPERTY');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES('REQUIRES_BELIEF_LAY_MINISTRY_CPLMOD' , 'BeliefType' , 'BELIEF_LAY_MINISTRY');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES('REQUIRES_BELIEF_PAPAL_PRIMACY_CPLMOD' , 'BeliefType' , 'BELIEF_PAPAL_PRIMACY');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES('REQUIRES_BELIEF_PILGRIMAGE_CPLMOD' , 'BeliefType' , 'BELIEF_PILGRIMAGE');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES('REQUIRES_BELIEF_STEWARDSHIP_CPLMOD' , 'BeliefType' , 'BELIEF_STEWARDSHIP');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES('REQUIRES_BELIEF_TITHE_CPLMOD' , 'BeliefType' , 'BELIEF_TITHE');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES('REQUIRES_BELIEF_WORLD_CHURCH_CPLMOD' , 'BeliefType' , 'BELIEF_WORLD_CHURCH');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES('REQUIRES_BELIEF_CROSS_CULTURAL_DIALOGUE_CPLMOD' , 'BeliefType' , 'BELIEF_CROSS_CULTURAL_DIALOGUE');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES('REQUIRES_BELIEF_RELIGIOUS_UNITY_CPLMOD' , 'BeliefType' , 'BELIEF_RELIGIOUS_UNITY');
+-- --WORSHIP
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_CATHEDRAL_CPLMOD' , 'BeliefType' , 'BELIEF_CATHEDRAL');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_GURDWARA_CPLMOD' , 'BeliefType' , 'BELIEF_GURDWARA');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_MEETING_HOUSE_CPLMOD' , 'BeliefType' , 'BELIEF_MEETING_HOUSE');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_MOSQUE_CPLMOD' , 'BeliefType' , 'BELIEF_MOSQUE');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_PAGODA_CPLMOD' , 'BeliefType' , 'BELIEF_PAGODA');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_SYNAGOGUE_CPLMOD' , 'BeliefType' , 'BELIEF_SYNAGOGUE');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_WAT_CPLMOD' , 'BeliefType' , 'BELIEF_WAT');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_STUPA_CPLMOD' , 'BeliefType' , 'BELIEF_STUPA');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_DAR_E_MEHR_CPLMOD' , 'BeliefType' , 'BELIEF_DAR_E_MEHR');
+-- --ENHANCER
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_DEFENDER_OF_FAITH_CPLMOD' , 'BeliefType' , 'BELIEF_DEFENDER_OF_FAITH');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_HOLY_ORDER_CPLMOD' , 'BeliefType' , 'BELIEF_HOLY_ORDER');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_ITINERANT_PREACHERS_CPLMOD' , 'BeliefType' , 'BELIEF_ITINERANT_PREACHERS');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_JUST_WAR_CPLMOD' , 'BeliefType' , 'BELIEF_JUST_WAR');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_MISSIONARY_ZEAL_CPLMOD' , 'BeliefType' , 'BELIEF_MISSIONARY_ZEAL');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_MONASTIC_ISOLATION_CPLMOD' , 'BeliefType' , 'BELIEF_MONASTIC_ISOLATION');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_SCRIPTURE_CPLMOD' , 'BeliefType' , 'BELIEF_SCRIPTURE');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_BURIAL_GROUNDS_CPLMOD' , 'BeliefType' , 'BELIEF_BURIAL_GROUNDS');
+-- INSERT INTO RequirementArguments (RequirementId , Name , Value)
+-- 	VALUES ('REQUIRES_BELIEF_RELIGIOUS_COLONIZATION_CPLMOD' , 'BeliefType' , 'BELIEF_RELIGIOUS_COLONIZATION');
+--
+-- -- for russia, canada, and australia city center yields
+-- INSERT INTO Requirements(RequirementId , RequirementType) VALUES
+-- 	('BBG_REQUIRES_PLOT_IS_CITY_CENTER' , 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES');
+-- INSERT INTO RequirementArguments(RequirementId , Name, Value) VALUES
+-- 	('BBG_REQUIRES_PLOT_IS_CITY_CENTER' , 'DistrictType', 'DISTRICT_CITY_CENTER');
