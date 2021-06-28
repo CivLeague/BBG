@@ -4,7 +4,7 @@ INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
     ('PALGUM_SCIENCE_PER_POPULATION_BBG', 'MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_PER_POPULATION');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
     ('PALGUM_SCIENCE_PER_POPULATION_BBG', 'YieldType'   , 'YIELD_SCIENCE'),
-    ('PALGUM_SCIENCE_PER_POPULATION_BBG', 'Amount'      , '1');
+    ('PALGUM_SCIENCE_PER_POPULATION_BBG', 'Amount'      , '0.5');
 INSERT INTO BuildingModifiers VALUES ('BUILDING_PALGUM', 'PALGUM_SCIENCE_PER_POPULATION_BBG');
 
 -- Babylon - Nalanda infinite technology re-suze fix.
@@ -41,8 +41,8 @@ INSERT INTO GameModifiers
 -- to keep consistent with CV changes to base game great works
 -- Great Artist
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_BEHZAD_1';
-UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_BEHZAD_1';
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_BEHZAD_2';
+UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_BEHZAD_3';
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_TOHAKU_1';
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_TOHAKU_2';
 UPDATE GreatWork_YieldChanges SET YieldChange=4 WHERE GreatWorkType='GREATWORK_TOHAKU_3';

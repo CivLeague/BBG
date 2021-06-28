@@ -82,7 +82,7 @@ INSERT INTO Types (Type, Kind) VALUES
 	('IMPROVEMENT_BRAZIL_LUMBER_MILL_BBG', 'KIND_IMPROVEMENT');
 INSERT INTO Traits (TraitType) VALUES ('TRAIT_CIV_FAUX_LUMBER_MILL_BBG');
 CREATE TEMPORARY TABLE tmp AS SELECT * FROM Improvements WHERE ImprovementType='IMPROVEMENT_LUMBER_MILL';
-UPDATE tmp SET ImprovementType='IMPROVEMENT_BRAZIL_LUMBER_MILL_BBG', TraitType='TRAIT_CIV_FAUX_LUMBER_MILL_BBG';
+UPDATE tmp SET ImprovementType='IMPROVEMENT_BRAZIL_LUMBER_MILL_BBG', TraitType='TRAIT_CIV_FAUX_LUMBER_MILL_BBG', Name='LOC_IMPROVEMENT_BRAZIL_LUMBER_MILL_NAME', Description='LOC_IMPROVEMENT_BRAZIL_LUMBER_MILL_EXPANSION2_DESCRIPTION';
 INSERT INTO Improvements SELECT * from tmp;
 DROP TABLE tmp;
 INSERT INTO Improvement_ValidBuildUnits VALUES ('IMPROVEMENT_BRAZIL_LUMBER_MILL_BBG', 'UNIT_BUILDER', 1, 0);
@@ -93,15 +93,17 @@ INSERT INTO Improvement_YieldChanges (ImprovementType, YieldType, YieldChange) V
 	('IMPROVEMENT_BRAZIL_LUMBER_MILL_BBG', 'YIELD_PRODUCTION', 1);
 INSERT INTO Improvement_BonusYieldChanges (Id, ImprovementType, YieldType, BonusYieldChange, PrereqTech) VALUES
 	(955, 'IMPROVEMENT_BRAZIL_LUMBER_MILL_BBG', 'YIELD_PRODUCTION', 1, 'TECH_STEEL');
-INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentRiver) VALUES
-	('River_Prod_BBG', 'Placeholder', 'YIELD_PRODUCTION', 1, 1, 1);
+INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentRiver, AdjacentImprovement) VALUES
+	('River_Prod_BBG', 'Placeholder', 'YIELD_PRODUCTION', 1, 1, 1, NULL),
+	('BrazilLumberMill_HalfProduction', 'LOC_DISTRICT_BRAZIL_LUMBER_MILL_PRODUCTION', 'YIELD_PRODUCTION', 1, 2, 0, 'IMPROVEMENT_BRAZIL_LUMBER_MILL_BBG');
 INSERT INTO Improvement_Adjacencies VALUES ('IMPROVEMENT_BRAZIL_LUMBER_MILL_BBG', 'River_Prod_BBG');
+INSERT INTO District_Adjacencies VALUES ('DISTRICT_INDUSTRIAL_ZONE', 'BrazilLumberMill_HalfProduction');
 -- boost
 CREATE TEMPORARY TABLE tmp AS SELECT * FROM Boosts WHERE TechnologyType='TECH_MASS_PRODUCTION';
 UPDATE tmp SET BoostID=965, ImprovementType='IMPROVEMENT_BRAZIL_LUMBER_MILL_BBG';
 INSERT INTO Boosts SELECT * FROM tmp;
 DROP TABLE tmp;
--- create modifier and requirements
+-- add jungle mills to pedro
 INSERT INTO RequirementSets(RequirementSetId , RequirementSetType) VALUES
 	('PLAYER_IS_PEDRO_AND_HAS_CONSTRUCTION_BBG', 'REQUIREMENTSET_TEST_ALL');
 INSERT INTO RequirementSetRequirements(RequirementSetId , RequirementId) VALUES
@@ -118,22 +120,25 @@ INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('CAN_BUILD_IMPROVEMENT_BRAZIL_LUMBER_MILL_BBG', 'ImprovementType', 'IMPROVEMENT_BRAZIL_LUMBER_MILL_BBG');
 INSERT INTO TraitModifiers VALUES ('TRAIT_LEADER_MAJOR_CIV', 'CAN_BUILD_IMPROVEMENT_BRAZIL_LUMBER_MILL_BBG');
--- add regular lumbermills to everyone else only
-/*UPDATE Improvements SET TraitType='TRAIT_CIV_FAUX_LUMBER_MILL_BBG' WHERE ImprovementType='IMPROVEMENT_LUMBER_MILL';
+-- add regular mills to everyone else
+/*
+UPDATE Improvements SET TraitType='TRAIT_CIVILIZATION_NO_PLAYER' WHERE ImprovementType='IMPROVEMENT_LUMBER_MILL';
 INSERT INTO RequirementSets(RequirementSetId , RequirementSetType) VALUES
-	('PLAYER_IS_NOT_PEDRO_AND_HAS_CONSTRUCTION_BBG', 'REQUIREMENTSET_TEST_ALL');
+	('PLAYER_IS_NOT_PEDRO_BBG', 'REQUIREMENTSET_TEST_ALL');
 INSERT INTO RequirementSetRequirements(RequirementSetId , RequirementId) VALUES
-	('PLAYER_IS_NOT_PEDRO_AND_HAS_CONSTRUCTION_BBG', 'REQUIREMENT_PLAYER_HAS_CONSTRUCTION_BBG'),
-	('PLAYER_IS_NOT_PEDRO_AND_HAS_CONSTRUCTION_BBG', 'REQUIREMENT_PLAYER_IS_NOT_PEDRO_BBG');
+	('PLAYER_IS_NOT_PEDRO_BBG', 'REQUIREMENT_PLAYER_IS_NOT_PEDRO_BBG');
 INSERT INTO Requirements(RequirementId , RequirementType, Inverse) VALUES
 	('REQUIREMENT_PLAYER_IS_NOT_PEDRO_BBG', 'REQUIREMENT_PLAYER_LEADER_TYPE_MATCHES', 1);
 INSERT INTO RequirementArguments(RequirementId , Name, Value) VALUES
 	('REQUIREMENT_PLAYER_IS_NOT_PEDRO_BBG' , 'LeaderType', 'LEADER_PEDRO');
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
-	('CAN_BUILD_IMPROVEMENT_LUMBER_MILL_BBG', 'MODIFIER_PLAYER_ADJUST_VALID_IMPROVEMENT', 'PLAYER_IS_NOT_PEDRO_AND_HAS_CONSTRUCTION_BBG');
+	('ATTACH_ENABLE_LUMBER_MILLS_BBG'	, 'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER', 'PLAYER_IS_NOT_PEDRO_BBG'),
+	('ENABLE_LUMBER_MILLS_BBG'			, 'MODIFIER_CITY_ADJUST_ALLOWED_IMPROVEMENT', NULL);
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
-	('CAN_BUILD_IMPROVEMENT_LUMBER_MILL_BBG', 'ImprovementType', 'IMPROVEMENT_LUMBER_MILL');
-INSERT INTO TraitModifiers VALUES ('TRAIT_LEADER_MAJOR_CIV', 'CAN_BUILD_IMPROVEMENT_LUMBER_MILL_BBG');*/
+	('ATTACH_ENABLE_LUMBER_MILLS_BBG'	, 'ModifierId'		, 'ENABLE_LUMBER_MILLS_BBG'),
+	('ENABLE_LUMBER_MILLS_BBG'			, 'ImprovementType'	, 'IMPROVEMENT_LUMBER_MILL');
+INSERT INTO TechnologyModifiers VALUES ('TECH_CONSTRUCTION'	, 'ATTACH_ENABLE_LUMBER_MILLS_BBG');
+*/
 
 
 --==================
@@ -331,6 +336,8 @@ UPDATE ModifierArguments SET Value='5' WHERE ModifierId='REDCOAT_FOREIGN_COMBAT'
 --==================
 -- France
 --==================
+-- nerf garde continent combat bonus
+UPDATE ModifierArguments SET Value='5' WHERE ModifierId='GARDE_CONTINENT_COMBAT' AND Name='Amount';
 -- move spies buffs to france and off catherine for eleanor france buff
 UPDATE TraitModifiers SET TraitType='TRAIT_CIVILIZATION_WONDER_TOURISM' WHERE TraitType='FLYING_SQUADRON_TRAIT' AND ModifierId='UNIQUE_LEADER_ADD_SPY_CAPACITY';
 UPDATE TraitModifiers SET TraitType='TRAIT_CIVILIZATION_WONDER_TOURISM' WHERE TraitType='FLYING_SQUADRON_TRAIT' AND ModifierId='UNIQUE_LEADER_ADD_SPY_UNIT';
@@ -790,7 +797,7 @@ INSERT INTO ImprovementModifiers (ImprovementType , ModifierId)
 -- Missions cannot be placed next to each other
 UPDATE Improvements SET SameAdjacentValid=0 WHERE ImprovementType='IMPROVEMENT_MISSION';
 -- Missions moved to Theology
-UPDATE Improvements SET PrereqCivic='CIVIC_THEOLOGY' WHERE ImprovementType='IMPROVEMENT_MISSION';
+UPDATE Improvements SET PrereqTech=NULL, PrereqCivic='CIVIC_THEOLOGY' WHERE ImprovementType='IMPROVEMENT_MISSION';
 -- Missions get bonus science at Enlightenment instead of cultural heritage
 UPDATE Improvement_BonusYieldChanges SET PrereqCivic='CIVIC_THE_ENLIGHTENMENT' WHERE Id='17';
 
@@ -830,9 +837,10 @@ INSERT INTO TraitModifiers ( TraitType , ModifierId )
 --==================
 -- delete extra alliance mili bonus
 DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU' AND ModifierId='TRAIT_ATTACH_ALLIANCE_COMBAT_ADJUSTMENT';
--- fix 5 tile bug
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
-    ('TRAIT_ADJUST_JOINTWAR_PLUNDER', 'Range', '5');
+-- reduce shared pillage rewards to 10%
+UPDATE ModifierArguments SET Value='10' WHERE ModifierId='TRAIT_ADJUST_JOINTWAR_PLUNDER';
+--delete shared xp
+DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_ADVENTURES_ENKIDU' and ModifierId='TRAIT_ADJUST_JOINTWAR_EXPERIENCE';
 -- double pillage rewards
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
 	('TRAIT_ADJUST_PILLAGE_BBG', 'MODIFIER_PLAYER_ADJUST_IMPROVEMENT_PILLAGE');

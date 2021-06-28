@@ -16,6 +16,7 @@ UPDATE Units SET StrategicResource='RESOURCE_HORSES' WHERE UnitType='UNIT_AMERIC
 -- Brazil
 --==================
 -- custom lumbermill should get the GS change
+UPDATE Improvements SET Description='LOC_IMPROVEMENT_BRAZIL_LUMBER_MILL_EXPANSION2_DESCRIPTION' WHERE ImprovementType='IMPROVEMENT_BRAZIL_LUMBER_MILL_BBG';
 UPDATE Improvement_YieldChanges SET YieldChange=2 WHERE ImprovementType='IMPROVEMENT_BRAZIL_LUMBER_MILL_BBG';
 DELETE FROM Improvement_Adjacencies WHERE ImprovementType='IMPROVEMENT_BRAZIL_LUMBER_MILL_BBG' AND YieldChangeId='River_Prod_BBG';
 INSERT INTO Improvement_BonusYieldChanges (Id, ImprovementType, YieldType, BonusYieldChange, PrereqTech) VALUES
