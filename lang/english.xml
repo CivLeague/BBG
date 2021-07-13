@@ -260,14 +260,14 @@
 		</Replace>
 
 		<!-- added in 3.18.0 -->
+		<Replace Tag="LOC_UNIT_AMERICAN_ROUGH_RIDER_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>American unique Industrial era unit that replaces the Cuirassier. [ICON_Culture] Culture is earned from kills on their [ICON_Capital] Capital's continent. +5 [ICON_Strength] Combat Strength when fighting on Hills. Lower maintenance cost.</Text>
+		</Replace>
 		<Replace Tag="LOC_ABILITY_ROUGH_RIDER_DESCRIPTION" Language="en_US">
 			<Text>When defeating an enemy unit on your [ICON_Capital] Capital's continent, gain [ICON_Culture] Culture equal to 50% that unit's base [ICON_Strength] Combat Strength.[NEWLINE][ICON_Bullet]+5 [ICON_Strength] Combat Strength when fighting on Hills.</Text>
 		</Replace>	
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION" Language="en_US">
 			<Text>+50% [ICON_Production] Production for 10 turns after liberating a city.</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_MAGNANIMOUS_DESCRIPTION" Language="en_US">
-			<Text>After recruiting or patronizing a [ICON_GreatPerson] Great Person, 20% of its [ICON_GreatPerson] Great Person point cost is refunded. Lumermills do not require Mercantilism to be placed on Rainforests.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_FIRST_EMPEROR_DESCRIPTION" Language="en_US">
 			<Text>When building Ancient and Classical wonders you may spend Builder charges to complete 15% of the original wonder cost. Builders receive an additional charge.[NEWLINE][NEWLINE]When completing a wonder receive a random [ICON_TechBoosted] Eureka and [ICON_CivicBoosted] Inspiration from the era of the wonder, if available. Constructed Wonders provide their cities with +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production.</Text>
@@ -406,7 +406,7 @@
 			<Text>Units receive +5 [ICON_Strength] Combat Strength when defending on their home continent or attacking on a foreign continent. Envoys sent to City-States you have a [ICON_TradeRoute] Trade-Route to count as two [ICON_Envoy] Envoys. Gain the Rough Rider unique when they research the Ballistics technology.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="en_US">
-			<Text>Units receive a +5 [ICON_Strength] Combat Strength when defending on their home continent or attacking on a foreign continent. +1 Appeal to all tiles in a city with a National Park. Gain the Rough Rider unique unit when they research the Ballistics technology.</Text>
+			<Text>Units receive +5 [ICON_Strength] Combat Strength when defending on their home continent or attacking on a foreign continent. +1 Appeal to all tiles in a city with a National Park. Gain the Rough Rider unique unit when they research the Ballistics technology.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_AMERICAN_ROUGH_RIDER_DESCRIPTION" Language="en_US">
 			<Text>American unique Industrial era unit that replaces the Cuirassier. [ICON_Culture] Culture is earned from kills on their [ICON_Capital] Capital`s continent. +5 [ICON_Strength] Combat Strength when fighting on Hills. Lower maintenance cost.</Text>

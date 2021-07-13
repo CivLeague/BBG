@@ -551,6 +551,7 @@ UPDATE ModifierArguments SET Value=10 WHERE ModifierId='MINOR_CIV_NGAZARGAMU_ARM
 UPDATE ModifierArguments SET Value=10 WHERE ModifierId='MINOR_CIV_NGAZARGAMU_MILITARY_ACADEMY_PURCHASE_BONUS' AND Name='Amount';
 
 
+
 --==============================================================
 --******				  DIPLOMACY						  ******
 --==============================================================
@@ -566,8 +567,16 @@ UPDATE Resolutions SET EarliestEra='ERA_MODERN' WHERE ResolutionType='WC_RES_ARM
 DELETE FROM Resolutions WHERE ResolutionType='WC_RES_PUBLIC_RELATIONS';
 
 
+
 --==============================================================
---******				G O V E R N M E N T				  ******
+--******				  DISASTERS						  ******
+--==============================================================
+UPDATE RandomEvent_Damages Set Percentage=0 WHERE DamageType='UNIT_KILLED_CIVILIAN';
+
+
+
+--==============================================================
+--******				 GOVERNMENT	    				  ******
 --==============================================================
 UPDATE Government_SlotCounts SET NumSlots=3 WHERE GovernmentType='GOVERNMENT_MERCHANT_REPUBLIC' AND GovernmentSlotType='SLOT_ECONOMIC';
 UPDATE Government_SlotCounts SET NumSlots=1 WHERE GovernmentType='GOVERNMENT_MERCHANT_REPUBLIC' AND GovernmentSlotType='SLOT_DIPLOMATIC';
