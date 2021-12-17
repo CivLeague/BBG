@@ -442,7 +442,7 @@
 			<Text>A district unique to Greece for cultural sites. Replaces the Theater Square district and cheaper to build[NEWLINE][NEWLINE]+1 [ICON_Culture] Culture bonus for each adjacent district and an additional +1 [ICON_Culture] Culture bonus for adjacent City Center. +2 [ICON_Culture] Culture bonus for each adjacent wonder. Can only be built on Hills.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="en_US">
-			<Text>Levied units gain an ability giving them +3 [ICON_STRENGTH] Combat Strength and +1 [ICON_Movement] Movement. It cost 75% less [ICON_GOLD] Gold and resources to upgrade Levied units. If you Levy troops from a City-State, receive 1 [ICON_ENVOY] Envoys with that City-State. Gain the Black Army unique unit when the Castles technology is researched.</Text>
+			<Text>Levied units gain an ability giving them +3 [ICON_STRENGTH] Combat Strength and +1 [ICON_Movement] Movement. It cost 75% less [ICON_GOLD] Gold and resources to upgrade Levied units. If you Levy troops from a City-State, receive 1 [ICON_ENVOY] Envoy with that City-State. Gain the Black Army unique unit when the Castles technology is researched.</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION" Language="en_US">
 			<Text>Hungarian unique Industrial era unit that replaces Cavalry. +2 [ICON_Strength] Combat Strength for each City-State that Hungary is Suzerain of.</Text>
