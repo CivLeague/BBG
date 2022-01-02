@@ -1927,6 +1927,9 @@ INSERT INTO RequirementArguments
 	('PLAYER_HAS_URBANIZATION_CPLMOD', 	 	'CivicType', 		'CIVIC_URBANIZATION'),
 	('PLAYER_HAS_BANKING_CPLMOD'   , 		'TechnologyType', 	'TECH_BANKING'  ),
 	('PLAYER_HAS_ECONOMICS_CPLMOD' , 		'TechnologyType', 	'TECH_ECONOMICS');
+insert into RequirementSets (RequirementSetId, RequirementSetType) values ('PLAYER_HAS_URBANIZATION_REQUIREMENTS', 'REQUIREMENTSET_TEST_ALL');
+insert into RequirementSetRequirements (RequirementSetId, RequirementId)
+values ('PLAYER_HAS_URBANIZATION_REQUIREMENTS', 'PLAYER_HAS_URBANIZATION_CPLMOD');
 
 --
 -- --for chandra and poland
@@ -2128,4 +2131,4 @@ INSERT INTO RequirementArguments
 -- INSERT INTO Requirements(RequirementId , RequirementType) VALUES
 -- 	('BBG_REQUIRES_PLOT_IS_CITY_CENTER' , 'REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES');
 -- INSERT INTO RequirementArguments(RequirementId , Name, Value) VALUES
--- 	('BBG_REQUIRES_PLOT_IS_CITY_CENTER' , 'DistrictType', 'DISTRICT_CITY_CENTER');
+-- 	('BBG_REQUIRES_PLOT_IS_CITY_CENTER' , 'DistrictType', 'DISTRICT_CITY_CENTER')
