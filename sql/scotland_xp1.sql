@@ -58,8 +58,7 @@ update Modifiers set SubjectRequirementSetId = 'PLAYER_HAS_CIVIC_PROFESSIONAL_SP
 -- Highlander
 /*
  The Highlander now replaces the Pike and Shot, so Highlanders are now available at Metal Casting.
- The combat strength is raised to 58. Furthermore: Highlanders receive +5 CS against melee units and like the
- Georgian Khevsur they do not suffer movement penalties on hills and gain +5 CS on Hills.
+ The combat strength is raised to 58. Highlanders do not suffer movement penalties on hills and gain +5 CS on Hills.
  */
 update Units
 set BaseMoves             = 2,
@@ -76,25 +75,20 @@ update UnitReplaces set ReplacesUnitType = 'UNIT_PIKE_AND_SHOT' where CivUniqueU
 update UnitUpgrades set UpgradeUnit = 'UNIT_AT_CREW' where Unit = 'UNIT_SCOTTISH_HIGHLANDER';
 -- No movement penalty on hills and +5 CS
 delete from UnitAbilityModifiers where UnitAbilityType = 'ABILITY_SCOTTISH_HIGHLANDER';
-insert into RequirementSetRequirements (RequirementSetId, RequirementId) values ('HIGHLANDER_OPPONENT_IS_MELEE', 'OPPONENT_IS_PROMOTION_CLASS_MELEE');
-insert into RequirementSets (RequirementSetId, RequirementSetType) values ('HIGHLANDER_OPPONENT_IS_MELEE', 'REQUIREMENTSET_TEST_ALL');
 insert or ignore into Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
 values ('HIGHLANDER_HILLS_BUFF', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'KHEVSURETI_HILLS_BUFF_REQUIREMENTS'),
-       ('HIGHLANDER_IGNORE_HILLS', 'MODIFIER_PLAYER_UNIT_ADJUST_IGNORE_TERRAIN_COST', null),
-       ('HIGHLANDER_BUFF_VS_MELEE', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'HIGHLANDER_OPPONENT_IS_MELEE');
+       ('HIGHLANDER_IGNORE_HILLS', 'MODIFIER_PLAYER_UNIT_ADJUST_IGNORE_TERRAIN_COST', null);
 insert or ignore into ModifierArguments (ModifierId, Name, Value)
 values ('HIGHLANDER_HILLS_BUFF', 'Amount', '5'),
        ('HIGHLANDER_IGNORE_HILLS', 'Ignore', '1'),
-       ('HIGHLANDER_IGNORE_HILLS', 'Type', 'HILLS'),
-       ('HIGHLANDER_BUFF_VS_MELEE', 'Amount', '5');
+       ('HIGHLANDER_IGNORE_HILLS', 'Type', 'HILLS');
 insert or ignore into UnitAbilityModifiers (UnitAbilityType, ModifierId)
 values ('ABILITY_SCOTTISH_HIGHLANDER', 'HIGHLANDER_HILLS_BUFF'),
-       ('ABILITY_SCOTTISH_HIGHLANDER', 'HIGHLANDER_IGNORE_HILLS'),
-       ('ABILITY_SCOTTISH_HIGHLANDER', 'HIGHLANDER_BUFF_VS_MELEE');
+       ('ABILITY_SCOTTISH_HIGHLANDER', 'HIGHLANDER_IGNORE_HILLS');
 
 -- Banockburn
 /*
- All units get +2 movement and +3 combat fpr 10 turns after war was declared.
+ All units get +2 movement and +3 combat for 10 turns after war was declared.
  */
 delete from TraitModifiers where ModifierId in ('TRAIT_LIBERATION_WAR_PREREQ_OVERRIDE', 'TRAIT_LIBERATION_WAR_PRODUCTION');
 insert into RequirementSets (RequirementSetId, RequirementSetType) values ('UNIT_IN_OWNER_TERRITORY', 'REQUIREMENTSET_TEST_ALL');
