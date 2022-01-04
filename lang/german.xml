@@ -191,12 +191,6 @@
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>+3 [ICON_Favor] Diplomatische Gunst. Das Ausheben des Militärs von Stadtsstaten kostet halb so viel [ICON_Gold] Gold.[NEWLINE]Stadtstaat-Einheiten erhalten +4 [ICON_Strength] Kampfstärke-Bonus sofern Ihr der Suzerän des Stadtstaates seid (inklusive ausgehobene Einheiten).[NEWLINE]Gewährt +1 [Icon_Governor] Gouverneur-Titel. +2 Gesandte and +2 Einflusspunkte pro Runde Gesandte in Stadtstaaten.</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_AMENITIES] Annehmlichkeiten, +2 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +2 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Kultur wenn er an ein Stadtzentrum angrenzt. +1 [ICON_CULTURE] Kultur wenn er an einen Unterhaltungskomplex angrenzt. Zusätzliche [ICON_CULTURE] Kultur, [ICON_GOLD] Gold, [ICON_TOURISM] Tourismus, und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.</Text>
-		</Replace>
 		<Replace Tag="ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG" Language="de_DE">
 			<Text>Kann besiegte Einheiten von Stadtstaaten und Barbaren gefangennehmen.</Text>
 		</Replace>
@@ -897,6 +891,29 @@
 			<Text>Russische Spezialeinheit des Industriezeitalters, die die Kavallerie ersetzt. Stärker als Kavallerie und erhält +5 [ICON_Strength] Kampfstärke bei Kämpfen auf oder neben eigenem Gebiet. Kann sich nach dem Angriff fortbewegen, wenn noch [ICON_Movement] Fortbewegungspunkte übrig sind.</Text>
 		</Replace>
 		<!-- Scotland -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="de_DE">
+			<Text>Zufriedene Städte erhalten zusätzliche +10%  [ICON_SCIENCE] Wissenschaft und +10%  [ICON_PRODUCTION] Produktion. Glückliche Städte generieren +1  [ICON_GreatScientist] Großer-Wissenschaftler-Punkt pro Campus und +1 [ICON_GreatEngineer] Großer-Ingenieur-Punkt pro Industriegebiet. Begeisterte Städte erhalten +15 [ICON_SCIENCE] Wissenschaft und +15% [ICON_PRODUCTION] Produktion. Sie generieren außerdem +2 [ICON_GreatScientist] Große-Wissenschaftler-Punkte pro Campus und +2 [ICON_GreatEngineer] Große-Ingenieur-Punkte pro Industriegebiet. </Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_BANNOCKBURN_DESCRIPTION" Language="de_DE">
+		<Text>Ist Schottland das Ziel einer Kriegserklärung, erhält es +5 [ICON_Strength] Kampfstärke and +2 Fortbewegung für all Landeinheiten im eigenen Territorium für die nächsten 10 Runden.
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="de_DE">
+		<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +1 [ICON_CULTURE] Kultur und +2 [ICON_GOLD] Gold.[NEWLINE]Weitere +1 [ICON_CULTURE] Kultur ,+1 [ICON_GOLD] Gold, wenn er an ein Stadtzentrum angrenzt und +1 [ICON_CULTURE] Kultur, +1 [ICON_GOLD] Gold, wenn er an einen Unterhaltungskomplex angrenzt. Erhaltet zusätzliches [ICON_GOLD] Gold, [ICON_CULTURE] Kultur, [ICON_AMENITIES] Annehmlichkeit, [ICON_TOURISM] Tourismus und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="de_DE">
+		<Text>Schaltet die Handwerker-Fähigkeit frei, einen Golfplatz, die einzigartige Modernisierung Schottlands, zu bauen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit, +1 [ICON_CULTURE] Kultur und +2 [ICON_GOLD] Gold.[NEWLINE]Weitere +1 [ICON_CULTURE] Kultur ,+1 [ICON_GOLD] Gold, wenn er an ein Stadtzentrum angrenzt und +1 [ICON_CULTURE] Kultur, +1 [ICON_GOLD] Gold, wenn er an einen Unterhaltungskomplex angrenzt. Erhaltet zusätzliches [ICON_GOLD] Gold, [ICON_CULTURE] Kultur, [ICON_AMENITIES] Annehmlichkeit, [ICON_TOURISM] Tourismus und [ICON_HOUSING] Wohnraum für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann nicht auf Geländefeldern mit Wüste oder Wüstenhügeln platziert werden. Einer pro Stadt. Geländefelder mit Golfplätzen können nicht getauscht werden. +1 Anziehungskraft.
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_SCOTTISH_HIGHLANDER_DESCRIPTION" Language="de_DE">
+		<Text>Schottische Spezialeinheit der Renaissance, die den Musketenpikenier ersetzt. Starke Anti-Kavallerie-Einheit. Kein Fortbewegungs-Malus und +5 [ICON_Strength] Kampfstärke auf Hügel-Feldern.
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_SCOTTISH_HIGHLANDER_DESCRIPTION" Language="de_DE">
+			<Text>Kein Fortbewegungs-Malus und +5 [ICON_Strength] Kampfstärke auf Hügel-Feldern.
+		</Text>
+		</Replace>
 		<!-- Scythia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="de_DE">
 			<Text>Kann Leichte und Schwere Kavallerie sowie berittende Bogenschützen mit [ICON_Faith] Glauben kaufen.</Text>

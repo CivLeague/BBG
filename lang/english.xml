@@ -420,9 +420,6 @@
 		<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="en_US">
 			<Text>A district unique to Phoenicia for naval activity in your city. Replaces the Harbor district and cheaper to build. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+25% [ICON_PRODUCTION] Production towards naval units and Settlers in this city.</Text>
 		</Replace>		
-		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenity, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if adjacent to a City Center district. +1 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_CULTURE] Culture, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_HOUSING] Housing as you advance through the Civics and Technology Trees. Cannot be placed on Desert or Desert Hills. One per City. Tiles with Golf Courses cannot be swapped. +1 Appeal.</Text>
-		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>May form Fleets and Armadas earlier than usual (Mercenaries and Mercantilism), and may build them directly in cities with a Shipyard once the proper Civics are unlocked. [ICON_TradeRoute] Trade Routes receive +3 [ICON_Gold] Gold, +2 [ICON_Faith] Faith, and +1 [ICON_Production] Production. [ICON_TradeRoute] Trade Routes between multiple continents receive double these numbers. Cities not on your original Capital’s continent receive +25% [ICON_Production] Production towards districts.</Text>
 		</Replace>
@@ -595,12 +592,6 @@
 
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>+3 [ICON_Favor] Diplomatic Favor. Leveraging City States costs half [ICON_Gold] Gold.[NEWLINE]City State units gain +4 [ICON_Strength] Combat Strength if you are the City State's Suzerain (including Leveraged Units).[NEWLINE]Awards +1 [Icon_Governor] Governor Title. +2 envoys and +2 influence per turn towards envoys.</Text>
-		</Replace>
-		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenity, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if adjacent to a City Center district. +1 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_CULTURE] Culture, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_HOUSING] Housing as you advance through the Civics and Technology Trees. Cannot be placed on Desert or Desert Hills. One per City. Tiles with Golf Courses cannot be swapped. +1 Appeal.</Text>
-		</Replace>		
-		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenity, +2 [ICON_GOLD] Gold, and +1 [ICON_CULTURE] Culture. +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture if adjacent to a City Center district. +1 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_CULTURE] Culture, [ICON_GOLD] Gold, [ICON_TOURISM] Tourism, and [ICON_HOUSING] Housing as you advance through the Civics and Technology Trees. Cannot be placed on Desert or Desert Hills. One per City. Tiles with Golf Courses cannot be swapped. +1 Appeal.</Text>
 		</Replace>
 		<Replace Tag="ABILITY_WAR_CART_CAPTURE_DESCRIPTION_BBG" Language="en_US">
 			<Text>May capture defeated city-state and barbarian units.</Text>
@@ -1187,6 +1178,29 @@
 			<Text>Russian unique Industrial era unit that replaces Cavalry. +5 [ICON_Strength] Combat Strength when fighting in or adjacent to its home territory. Can move after attacking if [ICON_Movement] Movement points remain.</Text>
 		</Replace>
 		<!-- Scotland -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="en_US">
+			<Text>Happy cities receive an additional +10%  [ICON_SCIENCE] Science and +10%  [ICON_PRODUCTION] Production. Happy cities generate +1  [ICON_GreatScientist] Great Scientist point per Campus and +1 [ICON_GreatEngineer] Great Engineer point per Industrial Zone. Ecstatic cities receive +15 [ICON_SCIENCE] Science and +15% [ICON_PRODUCTION] Production. They also generate +2 [ICON_GreatScientist] Great Scientist point per Campus and +2 [ICON_GreatEngineer] Great Engineer point per Industrial Zone. </Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_BANNOCKBURN_DESCRIPTION" Language="en_US">
+		<Text>After receiving a war declaration Scotland obtains a bonus of +5 Combat Strength [Icon_Strength] and +2 movement on all landunits for the next 10 rounds in own territory.
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="en_US">
+		<Text>Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenities, +1 [ICON_CULTURE] Culture and +2 [ICON_GOLD] Gold.[NEWLINE]Additional +1 [ICON_CULTURE] Culture ,+1 [ICON_GOLD] Gold if adjacent to a City Center district and +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold if adjacent to an Entertainment Complex district. Additional [ICON_GOLD] Gold, [ICON_CULTURE] Culture, [ICON_AMENITIES] Amenities, [ICON_TOURISM] Tourism and [ICON_HOUSING] Housing as you advance through the Civics and Technology Tree. Cannot be placed on Desert or Desert Hills. One per city. Tiles with Golf Courses cannot be swapped. +1 Appeal.
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="en_US">
+		<Text>Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Amenities, +1 [ICON_CULTURE] Culture and +2 [ICON_GOLD] Gold.[NEWLINE]Additional +1 [ICON_CULTURE] Culture ,+1 [ICON_GOLD] Gold if adjacent to a City Center district and +1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold if adjacent to an Entertainment Complex district. Additional [ICON_GOLD] Gold, [ICON_CULTURE] Culture, [ICON_AMENITIES] Amenities, [ICON_TOURISM] Tourism and [ICON_HOUSING] Housing as you advance through the Civics and Technology Tree. Cannot be placed on Desert or Desert Hills. One per city. Tiles with Golf Courses cannot be swapped. +1 Appeal.
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_SCOTTISH_HIGHLANDER_DESCRIPTION" Language="en_US">
+		<Text>Scottish unique Renaissance Era unit that replaces and is slightly stronger than the Pike and Shot unit. Strong anti-cavalry unit. No movement penalty and +5 [ICON_Strength] Combat Strength bonus when fighting in Hill terrain.
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_SCOTTISH_HIGHLANDER_DESCRIPTION" Language="en_US">
+			<Text>No movement penalty and +5 [ICON_Strength] Combat Strength bonus in Hill terrain.
+		</Text>
+		</Replace>
 		<!-- Scythia -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="en_US">
 			<Text>May purchase Light, Heavy, and Ranged Cavalry units with [ICON_FAITH] Faith</Text>
