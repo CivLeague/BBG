@@ -3,7 +3,7 @@
 	<LocalizedText>
 		<!-- added in 3.19.1 -->
 		<Replace Tag="LOC_WORLD_CONGRESS_BAN_PRODUCTION_YIELD_DESC" Language="en_US">
-			<Text>50% cost increase when producing or purchasing military units using the. chosen yield, until the next World Congress.</Text>
+			<Text>50% cost increase when producing or purchasing military units using the chosen yield, until the next World Congress.</Text>
 		</Replace>
 		<Replace Tag="LOC_WORLD_CONGRESS_BUFF_PRODUCTION_YIELD_DESC" Language="en_US">
 			<Text>25% cost discount when producing or purchasing military units using the chosen yield, until the next World Congress.</Text>
