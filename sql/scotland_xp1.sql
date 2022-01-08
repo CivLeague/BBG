@@ -4,7 +4,6 @@ values ('CIVILIZATION_SCOTLAND', 'TERRAIN_DESERT_HILLS', '1'),
        ('CIVILIZATION_SCOTLAND', 'TERRAIN_GRASS_HILLS', '1'),
        ('CIVILIZATION_SCOTLAND', 'TERRAIN_PLAINS_HILLS', '1'),
        ('CIVILIZATION_SCOTLAND', 'TERRAIN_TUNDRA_HILLS', '1');
-
 -- Civilization Ability
 /*
   - Happy Cities gain +10% [+5%] Science and +10% [+5%] Procuktion,
@@ -14,7 +13,6 @@ update ModifierArguments set Value='10' where ModifierId = 'TRAIT_SCIENCE_HAPPY'
 update ModifierArguments set Value='15' where ModifierId = 'TRAIT_SCIENCE_ECSTATIC' and Name = 'Amount';
 update ModifierArguments set Value='10' where ModifierId = 'TRAIT_PRODUCTION_HAPPY' and Name = 'Amount';
 update ModifierArguments set Value='15' where ModifierId = 'TRAIT_PRODUCTION_ECSTATIC' and Name = 'Amount';
-
 -- Golf Course
 /*
  (1) Golf courts are now available at Games and Recreation [Reform church].
@@ -54,7 +52,6 @@ insert into RequirementArguments (RequirementId, Name, Value) values ('PLAYER_HA
 insert into RequirementSets (RequirementSetId, RequirementSetType) values ('PLAYER_HAS_CIVIC_PROFESSIONAL_SPORTS', 'REQUIREMENTSET_TEST_ALL');
 insert into RequirementSetRequirements (RequirementSetId, RequirementId) values ('PLAYER_HAS_CIVIC_PROFESSIONAL_SPORTS', 'PLAYER_HAS_CIVIC_PROFESSIONAL_SPORTS_REQUIREMENT');
 update Modifiers set SubjectRequirementSetId = 'PLAYER_HAS_CIVIC_PROFESSIONAL_SPORTS' where ModifierId = 'GOLFCOURSE_AMENITIES';
-
 -- Highlander
 /*
  The Highlander now replaces the Pike and Shot, so Highlanders are now available at Metal Casting.
@@ -91,7 +88,6 @@ insert or ignore into UnitAbilityModifiers (UnitAbilityType, ModifierId)
 values ('ABILITY_SCOTTISH_HIGHLANDER', 'HIGHLANDER_HILLS_BUFF'),
        ('ABILITY_SCOTTISH_HIGHLANDER', 'HIGHLANDER_IGNORE_HILLS'),
        ('ABILITY_SCOTTISH_HIGHLANDER', 'HIGHLANDER_BUFF_VS_MELEE');
-
 -- Banockburn
 /*
  All units get +2 movement and +3 combat fpr 10 turns after war was declared.

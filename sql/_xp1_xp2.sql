@@ -8,17 +8,3 @@ INSERT INTO Modifiers (ModifierId , ModifierType , SubjectRequirementSetId , Own
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
 	VALUES
 	('BUILDING_GOV_CONQUEST_RESOURCE_STOCKPILE' , 'Amount' , '30');
-
-
-
--- --==================
--- -- Cree
--- --==================
--- UPDATE UnitUpgrades SET UpgradeUnit='UNIT_SKIRMISHER' WHERE Unit='UNIT_CREE_OKIHTCITAW';
---
--- --==================
--- -- Mapuche
--- --==================
--- -- chemamull can be placed on volcanic soil
--- INSERT INTO Improvement_ValidFeatures (ImprovementType, FeatureType)
--- 	VALUES ('IMPROVEMENT_CHEMAMULL','FEATURE_VOLCANIC_SOIL');
