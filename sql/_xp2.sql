@@ -346,8 +346,6 @@ UPDATE Improvements SET PrereqTech='TECH_REFINING' WHERE ImprovementType='IMPROV
 --==============================================================
 --******				G O V E R N O R S				  ******
 --==============================================================
--- bugfix ... might actually be fixed after april 2021 update, but they only explicitly mentioned Ayutthaya
-UPDATE ModifierArguments SET Value=24 WHERE ModifierId="CARDINAL_CITADEL_OF_GOD_FAITH_FINISH_BUILDINGS" AND Name="BuildingProductionPercent";
 -- delete moksha's scrapped abilities
 DELETE FROM GovernorPromotions WHERE GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_GRAND_INQUISITOR' OR GovernorPromotionType='GOVERNOR_PROMOTION_CARDINAL_LAYING_ON_OF_HANDS';
 DELETE FROM GovernorPromotionSets WHERE GovernorPromotion='GOVERNOR_PROMOTION_CARDINAL_GRAND_INQUISITOR' OR GovernorPromotion='GOVERNOR_PROMOTION_CARDINAL_LAYING_ON_OF_HANDS';
