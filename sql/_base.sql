@@ -5,19 +5,10 @@
 --==============================================================
 --******					BOOSTS						  ******
 --==============================================================
-UPDATE Boosts SET BoostClass='BOOST_TRIGGER_OWN_X_UNITS_OF_TYPE', NumItems=3, Unit1Type='UNIT_WARRIOR' WHERE TechnologyType='TECH_BRONZE_WORKING';
-UPDATE Boosts SET BoostClass='BOOST_TRIGGER_OWN_X_UNITS_OF_TYPE', NumItems=2, Unit1Type='UNIT_SLINGER' WHERE TechnologyType='TECH_ARCHERY';
 UPDATE Boosts SET Unit1Type=NULL, BoostClass='BOOST_TRIGGER_CONSTRUCT_BUILDING', BuildingType='BUILDING_BARRACKS' WHERE TechnologyType='TECH_MILITARY_TACTICS';
 INSERT INTO Boosts (BoostID, TechnologyType, TriggerDescription, TriggerLongDescription, Boost, BoostClass, BuildingType) VALUES
 	(201, 'TECH_MILITARY_TACTICS', 'LOC_BOOST_TRIGGER_MILITARY_TACTICS', 'LOC_BOOST_TRIGGER_LONGDESC_MILITARY_TACTICS', 40, 'BOOST_TRIGGER_CONSTRUCT_BUILDING', 'BUILDING_STABLE');
 UPDATE Boosts SET Unit1Type=NULL, BoostClass='BOOST_TRIGGER_HAVE_X_BUILDINGS', NumItems=2, BuildingType='BUILDING_LIGHTHOUSE' WHERE TechnologyType='TECH_SQUARE_RIGGING';
-UPDATE Boosts SET ImprovementType=NULL, BoostClass='BOOST_TRIGGER_CONSTRUCT_BUILDING', NumItems=0, BuildingType='BUILDING_CASTLE' WHERE TechnologyType='TECH_BALLISTICS';
-UPDATE Boosts SET NumItems=1 WHERE TechnologyType='TECH_SANITATION';
-UPDATE Boosts SET BoostClass='BOOST_TRIGGER_OWN_X_UNITS_OF_TYPE', NumItems=2 WHERE TechnologyType='TECH_GUIDANCE_SYSTEMS';
-UPDATE Boosts SET BoostClass='BOOST_TRIGGER_MEET_X_CITY_STATES', NumItems=1 WHERE CivicType='CIVIC_FOREIGN_TRADE';
-UPDATE Boosts SET NumItems=4 WHERE CivicType='CIVIC_FEUDALISM';
-UPDATE Boosts SET BoostClass='BOOST_TRIGGER_HAVE_X_LAND_UNITS', NumItems=20 WHERE CivicType='CIVIC_NATIONALISM';
-UPDATE Boosts SET BoostClass='BOOST_TRIGGER_TRAIN_UNIT', Unit1Type='UNIT_GREAT_ADMIRAL' WHERE CivicType='CIVIC_NAVAL_TRADITION';
 
 --==============================================================
 --******					BUILDINGS				  	  ******
