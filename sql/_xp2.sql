@@ -323,9 +323,6 @@ INSERT INTO ResolutionEffects (ResolutionEffectId, ResolutionType, WhichEffect, 
 --******				     OTHER						  ******
 --==============================================================
 -- rationalism cards
-UPDATE RequirementArguments SET Value=3 WHERE RequirementId='REQUIRES_CAMPUS_HAS_HIGH_ADJACENCY' AND Name='Amount';
-UPDATE RequirementArguments SET Value=3 WHERE RequirementId='REQUIRES_HOLY_SITE_HAS_HIGH_ADJACENCY' AND Name='Amount';
-UPDATE RequirementArguments SET Value=3 WHERE RequirementId='REQUIRES_THEATER_SQUARE_HAS_HIGH_ADJACENCY' AND Name='Amount';
 UPDATE RequirementArguments SET Value=12 WHERE RequirementId='REQUIRES_HAS_HIGH_POPULATION' AND Name='Amount';
 -- reduce diplo lost from capturing capitals
 UPDATE GlobalParameters SET Value='-2' WHERE Name='FAVOR_PER_OWNED_ORIGINAL_CAPITAL';
