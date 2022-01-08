@@ -683,6 +683,18 @@ UPDATE BarbarianAttackForces SET NumMeleeUnits=2, NumRangeUnits=1 WHERE AttackFo
 UPDATE BarbarianAttackForces SET NumMeleeUnits=1 WHERE AttackForceType='StandardRaid';
 UPDATE BarbarianAttackForces SET NumMeleeUnits=2, NumRangeUnits=1, SiegeTag=NULL, NumSiegeUnits=0 WHERE AttackForceType='NavalAttack';
 UPDATE BarbarianAttackForces SET NumMeleeUnits=1, RangeTag=NULL, NumRangeUnits=0 WHERE AttackForceType='NavalRaid';
+-- Infantry to 80 (from 75)
+-- AT Crew to 80 (from 75)
+-- Mechanized infantry to 90 (from 85)
+-- Modern AT to 90 (from 85)
+-- GDR Melee to 140 (from 130)
+-- GDR Anti-Air to 120, +20 with future tech (from 100 + 30)
+UPDATE Units SET Combat=80 WHERE UnitType='UNIT_AT_CREW';
+UPDATE Units SET Combat=80 WHERE UnitType='UNIT_INFANTRY';
+UPDATE Units SET Combat=90 WHERE UnitType='UNIT_MODERN_AT';
+UPDATE Units SET Combat=90 WHERE UnitType='UNIT_MECHANIZED_INFANTRY';
+UPDATE Units SET Combat=140, AntiAirCombat=120 WHERE UnitType='UNIT_GIANT_DEATH_ROBOT';
+UPDATE ModifierArguments SET Value='20' WHERE ModifierId='GDR_AA_DEFENSE' AND Name='Amount';
 
 --==============================================================
 --******					W A L L S					  ******

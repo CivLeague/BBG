@@ -43,6 +43,79 @@ UPDATE Building_YieldChanges SET YieldChange=6 WHERE BuildingType='BUILDING_FOSS
 UPDATE Building_YieldChanges SET YieldChange=8 WHERE BuildingType='BUILDING_POWER_PLANT' AND YieldType='YIELD_PRODUCTION';
 UPDATE Building_YieldChanges SET YieldChange=6 WHERE BuildingType='BUILDING_POWER_PLANT' AND YieldType='YIELD_SCIENCE';
 
+-- Commercial Hub:
+--     Banks:
+--         Bank cost is 580g online speed
+--         Base yield : 6 golds (from 5)
+--         Great marchant point : 2 gpp (from 1)
+--         Trade route from cities with bank yield 2 extra golds.
+--         Trade route to cities with bank yield 1 extra gold.
+--     Stock Exchange:
+--         Base yield : 8 golds (from 4)
+--         Powered yield : 12 (from 7)
+--         Great marchant point : 3 gpp (from 1)
+--         Trade route from cities with STX yield 4 extra golds.
+--         Trade route to cities with STX yield 2 extra golds.
+--     Grand Bazar (Ottomans UB)
+--         Revert to base game (Bank replacement)
+--         Get same change as classic bank (+ base yield, gpp and traderoute buff)
+--         Still at reduced cost (110 insead of 145)
+--         Still have his unique ability (extra strategic ressources)
+--         Get 1 extra trader
+--         Get 1 governor title the first a grand bazaar is built.
+-- Commercial hub buildings buff :
+UPDATE Building_GreatPersonPoints SET PointsPerTurn=2 WHERE BuildingType='BUILDING_BANK';
+UPDATE Building_GreatPersonPoints SET PointsPerTurn=3 WHERE BuildingType='BUILDING_STOCK_EXCHANGE';
+UPDATE Building_YieldChanges SET YieldChange=6 WHERE BuildingType='BUILDING_BANK' AND YieldType='YIELD_GOLD';
+UPDATE Building_YieldChanges SET YieldChange=8 WHERE BuildingType='BUILDING_STOCK_EXCHANGE' AND YieldType='YIELD_GOLD';
+UPDATE Building_YieldChangesBonusWithPower SET YieldChange=12 WHERE BuildingType='BUILDING_STOCK_EXCHANGE' AND YieldType='YIELD_GOLD';
+-- Commercial hub building traderoute modifier :
+UPDATE Buildings SET Description='LOC_BBG_BUILDING_BANK_DESCRIPTION' WHERE BuildingType='BUILDING_BANK';
+UPDATE Buildings SET Description='LOC_BBG_BUILDING_STOCK_EXCHANGE_DESCRIPTION' WHERE BuildingType='BUILDING_STOCK_EXCHANGE';
+INSERT INTO Modifiers(ModifierId, ModifierType) VALUES
+    ('BBG_BANK_TRADEROUTE_FROM_DOMESTIC', 'MODIFIER_SINGLE_CITY_ADJUST_TRADE_ROUTE_YIELD_FOR_DOMESTIC'),
+    ('BBG_BANK_TRADEROUTE_TO_DOMESTIC', 'MODIFIER_SINGLE_CITY_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_FROM_DOMESTIC', 'MODIFIER_SINGLE_CITY_ADJUST_TRADE_ROUTE_YIELD_FOR_DOMESTIC'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_TO_DOMESTIC', 'MODIFIER_SINGLE_CITY_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS'),
+    ('BBG_BANK_TRADEROUTE_FROM_INTERNATIONAL', 'MODIFIER_SINGLE_CITY_ADJUST_TRADE_ROUTE_YIELD_FOR_INTERNATIONAL'),
+    ('BBG_BANK_TRADEROUTE_TO_INTERNATIONAL', 'MODIFIER_SINGLE_CITY_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_FROM_INTERNATIONAL', 'MODIFIER_SINGLE_CITY_ADJUST_TRADE_ROUTE_YIELD_FOR_INTERNATIONAL'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_TO_INTERNATIONAL', 'MODIFIER_SINGLE_CITY_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS');
+INSERT INTO ModifierArguments(ModifierId, Name, Value) VALUES
+    ('BBG_BANK_TRADEROUTE_FROM_DOMESTIC', 'YieldType', 'YIELD_GOLD'),
+    ('BBG_BANK_TRADEROUTE_FROM_DOMESTIC', 'Amount', '2'),
+    ('BBG_BANK_TRADEROUTE_FROM_DOMESTIC', 'Domestic', '1'),
+    ('BBG_BANK_TRADEROUTE_TO_DOMESTIC', 'YieldType', 'YIELD_GOLD'),
+    ('BBG_BANK_TRADEROUTE_TO_DOMESTIC', 'Amount', '1'),
+    ('BBG_BANK_TRADEROUTE_TO_DOMESTIC', 'Domestic', '1'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_FROM_DOMESTIC', 'YieldType', 'YIELD_GOLD'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_FROM_DOMESTIC', 'Amount', '4'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_FROM_DOMESTIC', 'Domestic', '1'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_TO_DOMESTIC', 'YieldType', 'YIELD_GOLD'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_TO_DOMESTIC', 'Amount', '2'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_TO_DOMESTIC', 'Domestic', '1'),
+    ('BBG_BANK_TRADEROUTE_FROM_INTERNATIONAL', 'YieldType', 'YIELD_GOLD'),
+    ('BBG_BANK_TRADEROUTE_FROM_INTERNATIONAL', 'Amount', '2'),
+    ('BBG_BANK_TRADEROUTE_FROM_INTERNATIONAL', 'Domestic', '0'),
+    ('BBG_BANK_TRADEROUTE_TO_INTERNATIONAL', 'YieldType', 'YIELD_GOLD'),
+    ('BBG_BANK_TRADEROUTE_TO_INTERNATIONAL', 'Amount', '1'),
+    ('BBG_BANK_TRADEROUTE_TO_INTERNATIONAL', 'Domestic', '0'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_FROM_INTERNATIONAL', 'YieldType', 'YIELD_GOLD'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_FROM_INTERNATIONAL', 'Amount', '4'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_FROM_INTERNATIONAL', 'Domestic', '0'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_TO_INTERNATIONAL', 'YieldType', 'YIELD_GOLD'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_TO_INTERNATIONAL', 'Amount', '2'),
+    ('BBG_STOCK_EXCHANGE_TRADEROUTE_TO_INTERNATIONAL', 'Domestic', '0');
+INSERT INTO BuildingModifiers(BuildingType, ModifierId) VALUES
+    ('BUILDING_BANK', 'BBG_BANK_TRADEROUTE_FROM_DOMESTIC'),
+    ('BUILDING_BANK', 'BBG_BANK_TRADEROUTE_TO_DOMESTIC'),
+    ('BUILDING_STOCK_EXCHANGE', 'BBG_STOCK_EXCHANGE_TRADEROUTE_FROM_DOMESTIC'),
+    ('BUILDING_STOCK_EXCHANGE', 'BBG_STOCK_EXCHANGE_TRADEROUTE_TO_DOMESTIC'),
+    ('BUILDING_BANK', 'BBG_BANK_TRADEROUTE_FROM_INTERNATIONAL'),
+    ('BUILDING_BANK', 'BBG_BANK_TRADEROUTE_TO_INTERNATIONAL'),
+    ('BUILDING_STOCK_EXCHANGE', 'BBG_STOCK_EXCHANGE_TRADEROUTE_FROM_INTERNATIONAL'),
+    ('BUILDING_STOCK_EXCHANGE', 'BBG_STOCK_EXCHANGE_TRADEROUTE_TO_INTERNATIONAL');
+
 --==============================================================
 --******				 CITY_STATES					  ******
 --==============================================================
