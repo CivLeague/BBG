@@ -32,6 +32,10 @@
         <Criteria id="ftb_autralia">
             <ModInUse>2F6E858A-28EF-46B3-BEAC-B985E52E9BC1</ModInUse>
         </Criteria>
+        <Criteria id="ftb_maya_xp2">
+            <ModInUse>4873eb62-8ccc-4574-b784-dda455e74e68</ModInUse>
+            <ModInUse>9DE86512-DE1A-400D-8C0A-AB46EBBF76B9</ModInUse>
+        </Criteria>
         <!-- Victory Settings -->
         <Criteria id="CVSetting_2">
             <ConfigurationValueMatches>
@@ -169,6 +173,13 @@
             <File>sql/aztecs.sql</File>
         </UpdateDatabase>
 
+        <UpdateDatabase id="ftb_maya_xp2" criteria="ftb_maya_xp2">
+            <Properties>
+                <LoadOrder>11641</LoadOrder>
+            </Properties>
+            <File>sql/disasters.sql</File>
+        </UpdateDatabase>
+
         <UpdateDatabase id="ftb_norway" criteria="ftb_norway">
             <Properties>
                 <LoadOrder>11642</LoadOrder>
@@ -299,6 +310,7 @@
         <File>sql/america_xp2.sql</File>
         <File>sql/australia.sql</File>
         <File>sql/aztecs.sql</File>
+        <File>sql/disasters.sql</File>
         <File>sql/egypt.sql</File>
         <File>sql/egypt_xp1.sql</File>
         <File>sql/egypt_xp2.sql</File>
