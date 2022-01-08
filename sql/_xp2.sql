@@ -245,9 +245,6 @@ INSERT INTO ResolutionEffects (ResolutionEffectId, ResolutionType, WhichEffect, 
 	(345, 'WC_RES_TRADE_TREATY', 2, 'ATTACH_LETTEROFMARQUE_TRADE_ROUTE_YIELD_DROP_ORIG_GOLD'),
 	(350, 'WC_RES_TRADE_TREATY', 2, 'ATTACH_LETTEROFMARQUE_TRADE_ROUTE_YIELD_DROP_ORIG_PRODUCTION'),
 	(355, 'WC_RES_TRADE_TREATY', 2, 'ATTACH_LETTEROFMARQUE_TRADE_ROUTE_YIELD_DROP_ORIG_SCIENCE');
--- lower extremes for unit yield buff/debuff
-UPDATE ModifierArguments SET Value='25'  WHERE ModifierId='WC_RES_UNIT_PRODUCTION_YIELD_BUFF'   AND Name='Amount';
-UPDATE ModifierArguments SET Value='-50' WHERE ModifierId='WC_RES_UNIT_PRODUCTION_YIELD_DEBUFF' AND Name='Amount';
 
 --==============================================================
 --******				     OTHER						  ******
