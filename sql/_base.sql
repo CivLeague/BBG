@@ -568,8 +568,6 @@ UPDATE ModifierArguments SET Value='7' WHERE ModifierId='JUST_WAR_COMBAT_BONUS_M
 -- Lay Ministry now +2 Culture and +2 Faith per Theater and Holy Site
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='LAY_MINISTRY_CULTURE_DISTRICTS_MODIFIER' AND Name='Amount';
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='LAY_MINISTRY_FAITH_DISTRICTS_MODIFIER' AND Name='Amount';
--- Itinerant Preachers now causes a Religion to spread 40% father away instead of only 30%
-UPDATE ModifierArguments SET Value='4' WHERE ModifierId='ITINERANT_PREACHERS_SPREAD_DISTANCE';
 -- Cross-Cultural Dialogue is now +1 Science for every 3 foreign followers
 UPDATE ModifierArguments SET Value='3' WHERE ModifierId='CROSS_CULTURAL_DIALOGUE_SCIENCE_FOREIGN_FOLLOWER_MODIFIER' AND Name='PerXItems';
 -- Tithe is now +1 Gold for every 3 followers
