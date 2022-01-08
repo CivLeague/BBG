@@ -253,6 +253,7 @@ UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='FASCISM_LEGA
 --==============================================================
 --******			 	  GREAT PEOPLE  				  ******
 --==============================================================
+UPDATE GreatPersonIndividuals SET ActionCharges=1 WHERE GreatPersonIndividualType='GREAT_PERSON_INDIVIDUAL_IMHOTEP';
 
 --==============================================================
 --******				   PANTHEONS					  ******
