@@ -6,7 +6,7 @@ values ('CIVILIZATION_SCOTLAND', 'TERRAIN_DESERT_HILLS', '1'),
        ('CIVILIZATION_SCOTLAND', 'TERRAIN_TUNDRA_HILLS', '1');
 -- Civilization Ability
 /*
-  - Happy Cities gain +10% [+5%] Science and +10% [+5%] Procuktion,
+  - Happy Cities gain +10% [+5%] Science and +10% [+5%] Production,
   - Ecstatic Cities gain +15% [+10%] Science and +15% [+10%] Production
  */
 update ModifierArguments set Value='10' where ModifierId = 'TRAIT_SCIENCE_HAPPY' and Name = 'Amount';
