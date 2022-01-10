@@ -440,6 +440,8 @@ INSERT INTO RequirementArguments
 --==============================================================
 -- destroy barbs
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='DISCIPLINE_BARBARIANCOMBAT';
+-- Bastillon ""bugfix"" (Value is doubled, so put 2*+3 instead of 2*+5)
+UPDATE ModifierArguments SET Value='3' WHERE ModifierId='BASTIONS_RANGEDSTRIKE' AND Name='Amount';
 -- add 3 siege policy cards
 INSERT INTO Types
 	(Type, Kind)
