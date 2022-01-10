@@ -31,6 +31,8 @@ UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_BASI
 UPDATE Building_GreatPersonPoints SET PointsPerTurn=2 WHERE BuildingType='BUILDING_ARMORY';
 UPDATE Building_GreatPersonPoints SET PointsPerTurn=2 WHERE BuildingType='BUILDING_MILITARY_ACADEMY';
 UPDATE Building_GreatPersonPoints SET PointsPerTurn=3 WHERE BuildingType='BUILDING_SEAPORT';
+-- Green District cost same as other district (from 81)
+UPDATE Districts SET Cost=54 WHERE DistrictType IN ('DISTRICT_CANAL', 'DISTRICT_DAM');
 
 --==============================================================
 --******			  		CITY-STATES					  ******
