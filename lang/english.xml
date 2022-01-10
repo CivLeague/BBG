@@ -515,7 +515,6 @@
 		<Replace Tag="LOC_DISTRICT_TUNDRA_FAITH" Language="en_US">
 			<Text>+{1_num} [ICON_Faith] Faith from the adjacent flat Tundra {1_Num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>
-		</Replace>
 		<Replace Tag="LOC_POLICY_COLLECTIVIZATION_DESCRIPTION_XP2" Language="en_US">
 			<Text>+4 [ICON_Production] Production and +4 [ICON_Food] Food from domestic [ICON_TradeRoute] Trade Routes.</Text>
 		</Replace>
@@ -585,7 +584,6 @@
 		<Row Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="en_US">
 			<Text>+{1_num} [ICON_Faith] Faith from the adjacent Woods {1_Num : plural 1?tile; other?tiles;}.</Text>
 		</Row>
-		</Replace>
 		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="en_US">
 			<Text>Two tile natural wonder. It appears as a Lake and provides +2 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production, +2 [ICON_CULTURE] Culture, +2 [ICON_GOLD] Gold.</Text>
 		</Replace>
@@ -702,6 +700,7 @@
 		</Row>
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="en_US">
 			<Text>+{1_num} [ICON_Faith] Faith from coast.</Text>
+		</Row>
 		<!-- Nubia -->
 		<!-- Persia -->
 		<!-- Poland -->

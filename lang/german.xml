@@ -306,7 +306,6 @@
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_Production] Produktion und +1 [ICON_Faith] Glauben durch Steinbrüche.</Text>
 		</Replace>
-		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="de_DE">
 			<Text>Hic Sunt Dracones Goldenes Zeitalter:[NEWLINE] Erhaltet +3 [ICON_Citizen] Startbevölkerung  für neu gegründete Städte. +2 [ICON_Movement] Fortbewegung für Marine- oder gewasserte Einheiten. +2 Loyalität pro Runde für Städte, die nicht auf dem Kontinent Eurer ursprünglichen [ICON_Capital] Hauptstadt liegen.</Text>
 		</Replace>
