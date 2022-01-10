@@ -1,28 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<!-- added in 3.19.1 -->
-		<Replace Tag="LOC_WORLD_CONGRESS_BAN_PRODUCTION_YIELD_DESC" Language="en_US">
-			<Text>50% cost increase when producing or purchasing military units using the chosen yield, until the next World Congress.</Text>
+		<!-- RELIGION -->
+		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="en_US">
+			<Text>Each Holy Site or Theater Square district in a city following this Religion provides +2 [ICON_Faith] Faith or +2 [ICON_Culture] Culture respectively.</Text>
 		</Replace>
-		<Replace Tag="LOC_WORLD_CONGRESS_BUFF_PRODUCTION_YIELD_DESC" Language="en_US">
-			<Text>25% cost discount when producing or purchasing military units using the chosen yield, until the next World Congress.</Text>
+		<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="en_US">
+			<Text>Religion spreads to cities 40% further away.</Text>
 		</Replace>
-		<Replace Tag="LOC_WORLD_CONGRESS_BAN_TRADE_WITH_PLAYER_DESC" Language="en_US">
-			<Text>All [ICON_TradeRoute] Trade Routes to and from the chosen player have their trade yields cut in half.</Text>
+		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_Amenities] Amenity in cities with a specialty district.</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_ARCHERY" Language="en_US">
-			<Text>Own 2 Slingers</Text>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_COMMUNITY_DESCRIPTION" Language="en_US">
+			<Text>Holy Site Districts, Shrines, and Temples each provide +1 [ICON_Housing] Housing.</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_ARCHERY" Language="en_US">
-			<Text>After training with your Slingers, you long for a stronger ranged weapon.</Text>
+		<Replace Tag="LOC_BELIEF_PILGRIMAGE_DESCRIPTION" Language="en_US">
+			<Text>+3 [ICON_Faith] Faith for every foreign city following this Religion.</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_BRONZE_WORKING" Language="en_US">
-			<Text>Own 3 warriors.</Text>
+
+
+		<!-- PANTHEONS -->
+		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="en_US">
+			<Text>+15% [ICON_Production] Production towards wonders.</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_BRONZE_WORKING" Language="en_US">
-			<Text>Your recent fights highlight the need for stronger weaponry.</Text>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="en_US">
+			<Text> +3 [ICON_Faith] Faith and +3 [ICON_GOLD] Gold from Mines over Luxury and Bonus resources.</Text>
 		</Replace>
+		<Replace Tag="LOC_BELIEF_DIVINE_SPARK_EXPANSION2_DESCRIPTION" Language="en_US">
+      		<Text>[ICON_GreatPerson] Great people points +1 for Holy Site (prophet), libraries (scientist) amphiteaters (writer) and workshop (engineer).</Text>
+    	</Replace>
+    	<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="en_US">
+			<Text>Receive 40% of a military land unit's production value in [ICON_FAITH] Faith when produced.[NEWLINE]Your capital receive 2 warriors.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>Receive 40% of a military land unit's production value in [ICON_FAITH] Faith when produced.[NEWLINE]Your capital receive 2 warriors.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="en_US">
+			<Text>[ICON_PRODUCTION] Production +25% towards Settlers.[NEWLINE]Border expansion rate is 50% faster and new cities get 2 free tiles on foundation.</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>[ICON_PRODUCTION] Production +25% towards Settlers.[NEWLINE]Border expansion rate is 50% faster and new cities get 2 free tiles on foundation.</Text>
+		</Replace>
+
+		<!-- POLICIES -->
+		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="en_US">
+			<Text>Extra [ICON_Science] Science from buildings in Campuses: +50% if city [ICON_CITIZEN] population is 12 or higher, +50% if district has at least +4 adjacency bonus.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_GRAND_OPERA_DESCRIPTION" Language="en_US">
+			<Text>Extra [ICON_Culture] Culture from buildings in Theater Squares: +50% if city [ICON_CITIZEN] population is 12 or higher, +50% if district has at least +4 adjacency bonus.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIMULTANEUM_DESCRIPTION" Language="en_US">
+			<Text>Extra [ICON_Faith] Faith from buildings in Holy Sites: +50% if city [ICON_CITIZEN] population is 12 or higher, +50% if district has at least +4 adjacency bonus.</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_FREE_MARKET_DESCRIPTION" Language="en_US">
+			<Text>Extra [ICON_Gold] Gold from buildings in Commercial Hubs: +50% if city [ICON_CITIZEN] population is 12 or higher, +50% if district has at least +4 adjacency bonus.</Text>
+		</Replace>
+
+		<!-- INSPIRATIONS & HEUREKAS -->
 		<Replace Tag="LOC_BOOST_TRIGGER_MILITARY_TACTICS" Language="en_US">
 			<Text>Build a Barracks or Stable.</Text>
 		</Replace>
@@ -35,48 +69,133 @@
 		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_SQUARE_RIGGING" Language="en_US">
 			<Text>What if we upgrade to gunpowder weaponry at sea?</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_BALLISTICS" Language="en_US">
-			<Text>Build Medieval Walls.</Text>
+
+
+		<!-- GOVERNORS -->
+		<Replace Tag="LOC_GOVERNOR_THE_CARDINAL_DESCRIPTION" Language="en_US">
+			<Text>{LOC_GOVERNOR_THE_CARDINAL_NAME} is a Spiritual and Religious leader that can increase the [ICON_CULTURE] Cultural Significance and [ICON_Religion] Religious Fortitude of a city.</Text>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="en_US">
+			<Text>15% increase in [ICON_Culture] Culture generated by the city and religious pressure to adjacent cities is 100% stronger from the city.</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_BALLISTICS" Language="en_US">
-			<Text>Your cities have been protected by multiple fortifications, what if they could be defended by cannons?</Text>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="en_US">
+			<Text>Deal Maker</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_LAND_ACQUISITION_DESCRIPTION" Language="en_US">
+			<Text>Acquire new tiles in city faster. +4 [ICON_Gold] Gold per turn from each foreign [ICON_TradeRoute] Trade Route passing through the city.</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_SANITATION" Language="en_US">
-			<Text>Build 1 Neighborhood.</Text>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_FORESTRY_MANAGEMENT_DESCRIPTION" Language="en_US">
+			<Text>This city receives +2 [ICON_Gold] Gold from each unimproved feature and each breathtaking tile. Tiles adjacent to unimproved features receive +1 Appeal in this city.</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_SANITATION" Language="en_US">
-			<Text>With the introduction of neighborhoods, our cities are growing larger than ever before.  Developing a sanitation plan is crucial.</Text>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="en_US">
+			<Text>+2 [ICON_Gold] Gold per turn for each [ICON_Citizen] Citizen in the city and +1 Trade Route capacity while established in any city.</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_GUIDANCE_SYSTEMS" Language="en_US">
-			<Text>Own 2 Fighters.</Text>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="en_US">
+			<Text>50% [ICON_GOLD] Gold discount on purchasing buildings and districts (if able) in the city.</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="en_US">
+			<Text>Agriculture</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION' Language="en_US">
+			<Text>+1 [ICON_FOOD] Food on the city's revealed resources.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_NAME" Language="en_US">
+			<Text>Housing Boom</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_GUIDANCE_SYSTEMS" Language="en_US">
-			<Text>Your planes have proven effective, but is there a better defense against enemy aircraft?</Text>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="en_US">
+			<Text>Can construct the City Park improvement on flat land in the city once Games and Recreation is unlocked. One per city. +3 [ICON_SCIENCE] Science, +3 [ICON_Culture] Culture, +3 [ICON_GOLD] Gold, +1 [ICON_HOUSING] Housing, +1 [ICON_Amenities] Amenity, and +2 Appeal.</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_FOREIGN_TRADE" Language="en_US">
-			<Text>Meet 1 City-State.</Text>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_Production] Production on the city's revealed resources.</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_FOREIGN_TRADE" Language="en_US">
-			<Text>Having discovered another nearby state, your people realize there is a wide world of trading opportunities.</Text>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_HOUSING] Housing for every district and wonder in the city.</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_NAVAL_TRADITION" Language="en_US">
-			<Text>Recruit a Great Admiral.</Text>
+		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="en_US">
+			<Text>Domestic [ICON_TradeRoute] Trade Routes to Pingala's city provide +3 [ICON_SCIENCE] Science.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_THE_EDUCATOR_DESCRIPTION" Language="en_US">
+			<Text>{LOC_GOVERNOR_THE_EDUCATOR_NAME} is focused on the cultivation of [ICON_SCIENCE] Scientific endeavors in the city. He is also quite skilled in the attraction of [ICON_GreatPerson] Great People to his city.</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_NAVAL_TRADITION" Language="en_US">
-			<Text>Your strong leadership at sea inspires your people to strive to become a naval power.</Text>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN_DESCRIPTION" Language="en_US">
+			<Text>15% increase in [ICON_Science] Science generated by the city.</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_FEUDALISM" Language="en_US">
-			<Text>Build 4 Farms.</Text>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME' Language="en_US">
+			<Text>Shared Knowledge</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME' Language="en_US">
+			<Text>Eureka</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="en_US">
+			<Text>Doubles the adjacency bonus of the city's Campus district.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE_DESCRIPTION" Language="en_US">
+			<Text>Provides an additional Strategic Resource per turn of each one you have revealed.</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_FEUDALISM" Language="en_US">
-			<Text>A system of lords and vassals is forming to manage all the farmlands of your empire.</Text>
-		</Replace>		
-		<Replace Tag="LOC_BOOST_TRIGGER_NATIONALISM" Language="en_US">
-			<Text>Have 8 land combat units in your military.</Text>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="en_US">
+			<Text>Negotiator</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="en_US">
+			<Text>City cannot be put under Siege and gains +5 City Defense Strength.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_EMISSARY_DESCRIPTION" Language="en_US">
+			<Text>All cities within 9 tiles gain +4 Loyalty per turn towards your civilization.</Text>
 		</Replace>
-		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_NATIONALISM" Language="en_US">
-			<Text>Your people believe in the just nature of this war.  It has become an issue of national pride for us!</Text>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS_DESCRIPTION" Language="en_US">
+			<Text>+20% [ICON_Food] Growth in the city. Your [ICON_TradeRoute] Trade Routes to Magnus' city provide +2 [ICON_Food] Food and +2 [ICON_PRODUCTION] Production to their starting city.</Text>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="en_US">
+			<Text>Strategic resources are not required in the city in order to build resource dependent units.</Text>
 		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST_DESCRIPTION" Language="en_US">
+			<Text>+4 [ICON_Production] Production and +4 [ICON_POWER] Power provided by the city's Coal, Oil, or Nuclear Power Plant.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_GARRISON_COMMANDER_DESCRIPTION" Language="en_US">
+			<Text>Units within the city's territory get +3 [ICON_Strength] Combat Strength. Your other cities within 9 tiles gain +4 Loyalty per turn towards your civilization.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_GARRISON_COMMANDER_DESCRIPTION" Language="de_DE">
+			<Text>Verteidigende Einheiten im Gebiet der Stadt erhalten +3 [ICON_Strength] Kampfstärke. Eure anderen Städte in einem Umkreis von 9 Geländefeldern erhalten +4 Loyalität pro Runde für Eure Zivilisation.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS_DESCRIPTION" Language="de_DE">
+			<Text>+20% [ICON_Food] in der Stadt. Eure Handelswege, die hier enden, gewähren ihrer Ausgangsstadt +2 [ICON_Food] Nahrung und +2 [ICON_Production] Produktion.</Text>
+		</Replace>
+
+		<!-- GOVERNMENTS -->
+		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="en_US">
+			<Text>+1 [ICON_HOUSING] Housing per level of Walls. +2 [ICON_CULTURE] Culture for every Renaissance Walls.</Text>
+		</Replace> 
+
+		<!-- WORLD CONGRESS -->
+		<Replace Tag="LOC_WORLD_CONGRESS_BAN_TRADE_WITH_PLAYER_DESC" Language="en_US">
+			<Text>All [ICON_TradeRoute] Trade Routes to and from the chosen player have their trade yields cut in half.</Text>
+		</Replace>
+
+		<!-- BUILDINGS -->
+		<Replace Tag="LOC_BBG_BUILDING_BANK_DESCRIPTION" Language="en_US">
+			<Text>+2 [ICON_GOLD] Gold for each [ICON_TRADEROUTE] trade routes from this city.[NEWLINE]+1 [ICON_GOLD] Gold for each [ICON_TRADEROUTE] trade routes to this city.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GRAND_BAZAAR_DESCRIPTION" Language="en_US">
+			<Text>A building unique to the Ottomans. Accumulate 1 extra Strategic resource for every different type of Strategic resource this city has improved. Receive 1 [ICON_AMENITIES] Amenity for every Luxury resource this city has improved.[NEWLINE]+2 [ICON_GOLD] Gold for each [ICON_TRADEROUTE] trade routes from this city.[NEWLINE]+1 [ICON_GOLD] Gold for each [ICON_TRADEROUTE] trade routes to this city.[NEWLINE]+1 [ICON_TRADEROUTE] Trade route capacity.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBG_BUILDING_STOCK_EXCHANGE_DESCRIPTION" Language="en_US">
+			<Text>+4 [ICON_GOLD] Gold for each [ICON_TRADEROUTE] trade routes from this city.[NEWLINE]+2 [ICON_GOLD] Gold for each [ICON_TRADEROUTE] trade routes to this city.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="en_US">
+			<Text>+50% combat experience for air units trained in this city. +2 air unit slots in Aerodrome district. Allows the ability to airlift land units between Aerodrome districts with Airports after the Rapid Deployment civic is unlocked. +2 [ICON_RESOURCE_ALUMINUM] Aluminum per turn.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="en_US">
+			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]+1 [ICON_RESOURCE_NITER] Niter per turn once built.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed).[NEWLINE]Allows Corps and Armies to be trained directly. Corps and Army training costs reduced 25%. +2 [ICON_RESOURCE_OIL] Oil per turn.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed). +1 [ICON_RESOURCE_NITER] Niter per turn.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="en_US">
+			<Text>+25% combat experience for all naval units trained in this city. Allows Fleets and Armadas to be trained directly. Fleet and Armada training costs reduced 25%. +2 [ICON_GOLD] Gold on all Coast tiles for this city. +1 [ICON_RESOURCE_COAL] Coal per turn.</Text>
+		</Replace>
+				
+		<!-- added in 3.19.1 -->
+		
 		<Row Tag="LOC_HOLY_SITE_HARBOR_POSITIVE_ADJACENCY_DESCRIPTION" Language="en_US">
 			<Text>+{1_num} [ICON_Gold] Gold from the adjacent Holy Site (Norway bonus).</Text>
 		</Row>
@@ -150,13 +269,7 @@
 		<Replace Tag="LOC_WORLD_CONGRESS_IMPROVE_TRADE_WTH_PLAYER_DESC" Language="en_US">
 			<Text>The chosen player receives +1 [ICON_TradeRoute] Trade Route capacity and +4 [ICON_GOLD] Gold from incoming international [ICON_TradeRoute] Trade Routes.</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="en_US">
-			<Text>The worship building for their Religion can be purchased by any player for just one-tenth of the usual [ICON_Faith] Faith cost. It adds 20% to the [ICON_Science] Science, [ICON_Faith] Faith, and [ICON_Culture] Culture to the city's output.[NEWLINE][NEWLINE]Arabian Holy Site and Campus districts receive an additional standard adjacency bonus whe adjacent to each other.</Text>
-		</Replace>		
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="en_US">
-			<Text>Sweden gains 50 [ICON_Favor] Diplomatic Favor when earning a Great Person. Sweden receives +1 [ICON_GreatEngineer] Great Engineer point from Factories and +1 [ICON_GreatScientist] Great Scientist point from Universities as well as +50% [ICON_PRODUCTION] Production towards Libraries, Workshops, Universities, and Factories. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.</Text>
-		</Replace>
-		
+				
 		<!-- added in 3.18.0 -->
 		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="en_US">
 			<Text>Your Trader units are immune to being plundered.</Text>
@@ -215,18 +328,6 @@
 		<Replace Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_TRENCH_WARFARE_CHAPTER_HISTORY_PARA_1" Language="en_US">
 			<Text>Trench warfare is a type of land warfare using occupied fighting lines largely comprising military trenches, in which troops are well-protected from the enemy's small arms fire and are substantially sheltered from artillery. Trench warfare became archetypically associated with the World War I (1914–1918), when the Race to the Sea rapidly expanded trench use on the Western Front starting in September 1914.[NEWLINE]Trench warfare proliferated when a revolution in firepower was not matched by similar advances in mobility, resulting in a gruelling form of warfare in which the defender held the advantage. On the Western Front in 1914–1918, both sides constructed elaborate trench, underground, and dugout systems opposing each other along a front, protected from assault by barbed wire. The area between opposing trench lines (known as "no man's land") was fully exposed to artillery fire from both sides. Attacks, even if successful, often sustained severe casualties. </Text>
 		</Replace>
-		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="en_US">
-			<Text>Extra [ICON_Science] Science from buildings in Campuses: +50% if city [ICON_CITIZEN] population is 12 or higher, +50% if district has at least +3 adjacency bonus.</Text>
-		</Replace>
-		<Replace Tag="LOC_POLICY_GRAND_OPERA_DESCRIPTION" Language="en_US">
-			<Text>Extra [ICON_Culture] Culture from buildings in Theater Squares: +50% if city [ICON_CITIZEN] population is 12 or higher, +50% if district has at least +3 adjacency bonus.</Text>
-		</Replace>
-		<Replace Tag="LOC_POLICY_SIMULTANEUM_DESCRIPTION" Language="en_US">
-			<Text>Extra [ICON_Faith] Faith from buildings in Holy Sites: +50% if city [ICON_CITIZEN] population is 12 or higher, +50% if district has at least +3 adjacency bonus.</Text>
-		</Replace>
-		<Replace Tag="LOC_POLICY_FREE_MARKET_DESCRIPTION" Language="en_US">
-			<Text>Extra [ICON_Gold] Gold from buildings in Commercial Hubs: +50% if city [ICON_CITIZEN] population is 12 or higher, +50% if district has at least +4 adjacency bonus.</Text>
-		</Replace>
 		<Replace Tag="LOC_UNIT_WARRIOR_MONK_DESCRIPTION" Language="en_US">
 			<Text>Fast-moving land combat unit with a unique promotion tree that gains double experience from combat.</Text>
 		</Replace>
@@ -265,21 +366,7 @@
 
 
 		<!--prev ver-->
-		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="en_US">
-			<Text>+50% combat experience for air units trained in this city. +2 air unit slots in Aerodrome district. Allows the ability to airlift land units between Aerodrome districts with Airports after the Rapid Deployment civic is unlocked. +2 [ICON_RESOURCE_ALUMINUM] Aluminum per turn.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="en_US">
-			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]+1 [ICON_RESOURCE_NITER] Niter per turn once built.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed).[NEWLINE]Allows Corps and Armies to be trained directly. Corps and Army training costs reduced 25%. +2 [ICON_RESOURCE_OIL] Oil per turn.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed). +1 [ICON_RESOURCE_NITER] Niter per turn.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="en_US">
-			<Text>+25% combat experience for all naval units trained in this city. Allows Fleets and Armadas to be trained directly. Fleet and Armada training costs reduced 25%. +2 [ICON_GOLD] Gold on all Coast tiles for this city. +1 [ICON_RESOURCE_COAL] Coal per turn.</Text>
-		</Replace>
+		
 
 		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="en_US">
 			<Text>+10 [ICON_Strength] Unit Combat Strength when fighting Barbarians.</Text>
@@ -306,24 +393,9 @@
 		<Replace Tag="LOC_BELIEF_JUST_WAR_DESCRIPTION" Language="en_US">
 			<Text>Combat units gain +7 [ICON_Strength] Combat Strength near foreign cities that follow this Religion.</Text>
 		</Replace>
-		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="en_US">
-			<Text>+2 [ICON_Faith] Faith and +2 [ICON_GOLD] Gold from Mines over Luxury and Bonus resources.</Text>
-		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION' Language="en_US">
-			<Text>50% [ICON_GOLD] Gold discount on purchasing buildings and districts (if able) in the city.</Text>
-		</Row>
 		<!---->
 		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>Shrines and Temple provide +3 [ICON_FOOD] Food and +1 [ICON_HOUSING] Housing each.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_LAND_ACQUISITION_DESCRIPTION" Language="en_US">
-			<Text>Acquire new tiles in city faster. +4 [ICON_Gold] Gold per turn from each foreign [ICON_TradeRoute] Trade Route passing through the city.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_FORESTRY_MANAGEMENT_DESCRIPTION" Language="en_US">
-			<Text>This city receives +2 [ICON_Gold] Gold from each unimproved feature and each breathtaking tile. Tiles adjacent to unimproved features receive +1 Appeal in this city.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="en_US">
-			<Text>+2 [ICON_Gold] Gold per turn for each [ICON_Citizen] Citizen in the city and +1 Trade Route capacity while established in any city.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="en_US">
 			<Text>+3 Influence Points per turn. When this civilization captures or kills an enemy Spy, receive 200 [ICON_Science] Science (on Standard Speed) for every level of the enemy Spy.</Text>
@@ -336,12 +408,6 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_FERTILITY_RITES_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>When chosen receive a Builder in your capital. +1 [ICON_FOOD] Food for [ICON_RESOURCE_CATTLE], [ICON_RESOURCE_RICE], [ICON_RESOURCE_WHEAT], and [ICON_RESOURCE_MAIZE] tiles.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="en_US">
-			<Text>Border expansion rate is 50% faster.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>Border expansion rate is 50% faster.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_GOV_CITYSTATES_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>+3 [ICON_Favor] Diplomatic Favor. Leveraging City States costs half [ICON_Gold] Gold.[NEWLINE]City State units gain +4 [ICON_Strength] Combat Strength if you are the City State's Suzerain (including Leveraged Units).[NEWLINE]Awards +1 [Icon_Governor] Governor Title. +2 envoys and +2 influence per turn towards envoys.</Text>
@@ -361,12 +427,6 @@
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="en_US">
 			<Text>Land combat or Support units are 10% cheaper to purchase with [ICON_GOLD] Gold or [ICON_FAITH] Faith for each Encampment district building in that city.</Text>
 		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_Production] Production on the city's revealed resources.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_HOUSING] Housing for every district and wonder in the city.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>Allows construction of Dar-e Mehrs (+3 [ICON_Faith] Faith, +2 [ICON_CULTURE] Culture. Cannot be pillaged by natural disasters).</Text>
 		</Replace>
@@ -379,8 +439,6 @@
 		<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="en_US">
 			<Text>Three tile impassable natural wonder. Provides +1 [ICON_Gold] Gold and +1 [ICON_Culture] Culture to adjacent tiles. Major adjacency bonus to Theater Square and Commercial Hub districts.</Text>
 		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_PRODUCTION] Production for Floodplain and Volcanic Soil tiles in the city. The city’s improvements, buildings, and districts cannot be damaged by Environmental Effects.</Text>
 		</Replace>
 		<Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="en_US">
 			<Text>Bonus [ICON_Culture] Culture for the Great Wall improvement for adjacency. Gain a free Spy if playing as France.</Text>
@@ -412,15 +470,10 @@
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5" Language="en_US">
 			<Text>Monumentality: Gain +1 Era Score each time you construct a new specialty District. If chosen at the start of a Golden Age, +2 [ICON_Movement] Movement for all Builders. May purchase civilian units with [ICON_Faith] Faith. Classical through Renaissance Era. Builders and Settlers are 10% cheaper to purchase with [ICON_FAITH] Faith and [ICON_GOLD] Gold.</Text>
 		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="en_US">
-			<Text>15% increase in [ICON_Culture] Culture generated by the city and religious pressure to adjacent cities is 50% stronger from the city.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_Production] Production and +1 [ICON_Faith] Faith from Quarries.</Text>
 		</Replace>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="en_US">
-			<Text>Domestic [ICON_TradeRoute] Trade Routes to Pingala's city provide +3 [ICON_SCIENCE] Science.</Text>
-		</Row>
+		
 		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="en_US">
 			<Text>Hic Sunt Dracones Golden Age:[NEWLINE]+3 starting [ICON_Citizen] Population for newly settled cities. +2 [ICON_Movement] Movement for naval and embarked units. +2 Loyalty per turn for cities not on your original [ICON_Capital] Capital's continent.</Text>
 		</Replace>
@@ -436,57 +489,8 @@
 		<Replace Tag="LOC_BUILDING_AMUNDSEN_SCOTT_RESEARCH_STATION_DESCRIPTION" Language="en_US">
 			<Text>+20% [ICON_SCIENCE] Science and 10% [ICON_PRODUCTION] Production in all cities. If there are 5 Tundra or Tundra Hills tiles within 3 tiles of a city and owned by this player these yields are doubled. Must be built next to a Campus with a Research Lab on a Tundra or Snow tile.</Text>
 		</Replace>
-		<Replace Tag="LOC_GOVERNOR_THE_CARDINAL_DESCRIPTION" Language="en_US">
-			<Text>{LOC_GOVERNOR_THE_CARDINAL_NAME} is a Spiritual and Religious leader that can increase the [ICON_CULTURE] Cultural Significance and [ICON_Religion] Religious Fortitude of a city.</Text>
 		</Replace>
-		<Replace Tag="LOC_GOVERNOR_THE_EDUCATOR_DESCRIPTION" Language="en_US">
-			<Text>{LOC_GOVERNOR_THE_EDUCATOR_NAME} is focused on the cultivation of [ICON_SCIENCE] Scientific endeavors in the city. He is also quite skilled in the attraction of [ICON_GreatPerson] Great People to his city.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN_DESCRIPTION" Language="en_US">
-			<Text>15% increase in [ICON_Science] Science generated by the city.</Text>
-		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME' Language="en_US">
-			<Text>Shared Knowledge</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME' Language="en_US">
-			<Text>Eureka</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="en_US">
-			<Text>Doubles the adjacency bonus of the city's Campus district.</Text>
-		</Row>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE_DESCRIPTION" Language="en_US">
-			<Text>Provides an additional Strategic Resource per turn of each one you have revealed.</Text>
-		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="en_US">
-			<Text>Negotiator</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="en_US">
-			<Text>City cannot be put under Siege and gains +5 City Defense Strength.</Text>
-		</Row>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_EMISSARY_DESCRIPTION" Language="en_US">
-			<Text>All cities within 9 tiles gain +4 Loyalty per turn towards your civilization.</Text>
-		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="en_US">
-			<Text>Deal Maker</Text>
-		</Row>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="en_US">
-			<Text>Strategic resources are not required in the city in order to build resource dependent units.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST_DESCRIPTION" Language="en_US">
-			<Text>+4 [ICON_Production] Production and +4 [ICON_POWER] Power provided by the city's Coal, Oil, or Nuclear Power Plant.</Text>
-		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="en_US">
-			<Text>Agriculture</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION' Language="en_US">
-			<Text>+1 [ICON_FOOD] Food on the city's revealed resources.</Text>
-		</Row>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_NAME" Language="en_US">
-			<Text>Housing Boom</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="en_US">
-			<Text>Can construct the City Park improvement on flat land in the city once Games and Recreation is unlocked. One per city. +3 [ICON_SCIENCE] Science, +3 [ICON_Culture] Culture, +3 [ICON_GOLD] Gold, +1 [ICON_HOUSING] Housing, +1 [ICON_Amenities] Amenity, and +2 Appeal.</Text>
-		</Replace>
+		
 		<Replace Tag="LOC_IMPROVEMENT_FISHERY_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct Fisheries.[NEWLINE][NEWLINE]+1 [ICON_Food] Food, +1 additional [ICON_Food] Food if adjacent to a sea resource. Must be built on a coastal plot.</Text>
 		</Replace>
@@ -508,11 +512,6 @@
 		<Replace Tag="LOC_DISTRICT_TUNDRA_FAITH" Language="en_US">
 			<Text>+{1_num} [ICON_Faith] Faith from the adjacent flat Tundra {1_Num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_GARRISON_COMMANDER_DESCRIPTION" Language="en_US">
-			<Text>Units within the city's territory get +3 [ICON_Strength] Combat Strength. Your other cities within 9 tiles gain +4 Loyalty per turn towards your civilization.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS_DESCRIPTION" Language="en_US">
-			<Text>+20% [ICON_Food] Growth in the city. Your [ICON_TradeRoute] Trade Routes to Magnus' city provide +2 [ICON_Food] Food and +2 [ICON_PRODUCTION] Production to their starting city.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_COLLECTIVIZATION_DESCRIPTION_XP2" Language="en_US">
 			<Text>+4 [ICON_Production] Production and +4 [ICON_Food] Food from domestic [ICON_TradeRoute] Trade Routes.</Text>
@@ -549,12 +548,6 @@
 		</Replace>
 		<Replace Tag="LOC_TECH_STEEL_DESCRIPTION" Language="en_US">
 			<Text>+1 [ICON_Production] Production from the Lumber Mill improvement. Unlocks Urban Defenses, giving all of your cities an automatic 300 Fortification Strength and the ability to perform a ranged attack. All previous wall improvements become obsolete and siege support units are no longer effective.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="en_US">
-			<Text>Receive 25% of a military land unit's production value in [ICON_FAITH] Faith when produced.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>Receive 25% of a military land unit's production value in [ICON_FAITH] Faith when produced.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="en_US">
 			<Text>You successfully land a person on the moon! Grants a [ICON_Culture] Culture bonus equal to 5 times your [ICON_Science] Science per turn, and marks the second step towards the Science Victory.</Text>
@@ -774,24 +767,6 @@
 		<!---->
 		<!--===============   R E L I G I O N S   ===============-->
 		<!-- Crusader Religion -->
-		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="en_US">
-			<Text>Each Holy Site or Theater Square district in a city following this Religion provides +2 [ICON_Faith] Faith or +2 [ICON_Culture] Culture respectively.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="en_US">
-			<Text>Religion spreads to cities 40% further away.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_Amenities] Amenity in cities with a specialty district.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_RELIGIOUS_COMMUNITY_DESCRIPTION" Language="en_US">
-			<Text>Holy Site Districts, Shrines, and Temples each provide +1 [ICON_Housing] Housing.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="en_US">
-			<Text>+15% [ICON_Production] Production towards wonders.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_PILGRIMAGE_DESCRIPTION" Language="en_US">
-			<Text>+3 [ICON_Faith] Faith for every foreign city following this Religion.</Text>
-		</Replace>
 		<!---->
 		<!---->
 		<!--===============   W O N D E R S  (MAN-MADE)   ===============-->

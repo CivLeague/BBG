@@ -1,63 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<Replace Tag="LOC_BUILDING_BARRACKS_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Nahkampf- und Fernkampfeinheiten an Land, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Kann nicht in einem Lagerbezirk gebaut werden, in dem bereits Stallungen sind.</Text>
+		<!-- RELIGION -->
+		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_Faith] Glauben bzw. +1 [ICON_Culture] Kultur durch jeden Heilige-Stätte- und Theaterplatz-Bezirk in einer Stadt mit dieser Religion.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_STABLE_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Einheiten der Kavallerie-Klasse, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Kann nicht in einem Lagerbezirk gebaut werden, in dem schon eine Kaserne ist.</Text>
+		<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="de_DE">
+			<Text>Religion breitet sich in Städte aus, die 40 % weiter entfernt sind.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Ermöglicht die unmittelbare Ausbildung von Korps und Armeen. Die Ausbildungskosten von Korps und Armeen sinken um 25%.</Text>
+		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_Amenities] Annehmlichkeiten in Städten mit einem Spezialbeszirk.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_BARRACKS_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Nahkampf- und Fernkampfeinheiten an Land, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Kann nicht in einem Lagerbezirk gebaut werden, in dem bereits Stallungen sind.</Text>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_COMMUNITY_DESCRIPTION" Language="de_DE">
+			<Text>Heilige Stätten, Schreine und Tempel bringen je +1 [ICON_Housing] Wohnraum.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_STABLE_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle Einheiten der Kavallerie-Klasse, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Kann nicht in einem Lagerbezirk gebaut werden, in dem schon eine Kaserne ist.</Text>
+		<Replace Tag="LOC_BELIEF_PILGRIMAGE_DESCRIPTION" Language="de_DE">
+			<Text>+3 [ICON_Faith] Glauben für jede Stadt mit dieser Religion.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_HANGAR_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für Lufteinheiten aus dieser Stadt. +1 Lufteinheit-Platz im Flugplatz-Bezirk. </Text>
+
+		<!-- PANTHEONS -->
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="de_DE">
+			<Text> +3 [ICON_Faith] Glauben +3 [ICON_GOLD] Gold von Minen bei Luxus- und Bonus-Ressourcen.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_LIGHTHOUSE_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle in dieser Stadt ausgebildeten Marineeinheiten. +1 [ICON_Food] Nahrung auf allen Küsten-Geländefeldern dieser Stadt. </Text>
+		<Replace Tag="LOC_BELIEF_DIVINE_SPARK_EXPANSION2_DESCRIPTION" Language="de_DE">
+      		<Text>+1 [ICON_GreatPerson] Große Persönlichkeit-Punkte durch Heilige Stätten (Prophet), Campus-Gebäude mit Bibliotheken (Wissenschaftler), Theaterplätze mit einem Amphitheater (Schriftsteller) und Industriebezirke mit einer Werkstatt.</Text>
+    	</Replace>
+    	<Replace Tag="LOC_BELIEF_INITIATION_RITES_DESCRIPTION" Language="de_DE">
+			<Text>Gewährt bei Produktion einer militärischen Landeinheit 40% des Produktionswertes als [ICON_FAITH] [NEWLINE] Erhaltet in Eurer Hauptstadt 2 Krieger.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_SHIPYARD_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle in dieser Stadt ausgebildeten Marineeinheiten. [ICON_Production] Produktionsbonus in Höhe des Nachbarschaftsbonus des Hafenbezirks.</Text>
+		<Replace Tag="LOC_BELIEF_INITIATION_RITES_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>ewährt bei Produktion einer militärischen Landeinheit 40% des Produktionswertes als [ICON_FAITH] [NEWLINE] Erhaltet in Eurer Hauptstadt 2 Krieger..</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_LIGHTHOUSE_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle in dieser Stadt ausgebildeten Marineeinheiten. +1 [ICON_Food] Nahrung auf allen Küsten-Geländefeldern dieser Stadt. +2 [ICON_Housing] Wohnraum, wenn diese Stadt an die Küste angrenzt. +1 [ICON_Handelsweg] Handelsweg-Kapazität, wenn diese Stadt noch nicht über ein Marktgebäude verfügt.</Text>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION" Language="de_DE">
+			<Text>+ 25% [ICON_PRODUCTION] Produktion für Siedler [NEWLINE]Die Grenzerweiterung geschieht 50% schneller und Ihr erhaltet in neuen Städten zwei kostenlose Geländefelder bei ihrer Gründung.</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_SHIPYARD_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+50 % Kampferfahrung für alle in dieser Stadt ausgebildeten Marineeinheiten. [ICON_Production] Produktionsbonus in Höhe des Nachbarschaftsbonus des Hafenbezirks. +1 Produktion [ICON_Proudction] für alle nicht modernisierten Küsten- und See-Geländefelder dieser Stadt. </Text>
+		<Replace Tag="LOC_BELIEF_RELIGIOUS_SETTLEMENTS_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>+ 25% [ICON_PRODUCTION] Produktion für Siedler [NEWLINE]Die Grenzerweiterung geschieht 50% schneller und Ihr erhaltet in neuen Städten zwei kostenlose Geländefelder bei ihrer Gründung.</Text>
 		</Replace>
-		<Replace Tag="LOC_ABILITY_BARRACKS_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Kaserne</Text>
+		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="de_DE">
+			<Text>+15% [ICON_Production] Produktion für Wunder.</Text>
 		</Replace>
-		<Replace Tag="LOC_ABILITY_STABLE_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Stallungen</Text>
+
+		<!-- POLICIES -->
+		<Replace Tag="LOC_POLICY_RATIONALISM_DESCRIPTION" Language="de_DE">
+			<Text>Mehr [ICON_Science] Wissenschaft von Campus-Gebäuden: +50%, bei 12 [ICON_CITIZEN] Stadtbevölkerung und mehr, +50% bei +4 Nachbarschaftsbonus und mehr.</Text>
 		</Replace>
-		<Replace Tag="LOC_ABILITY_ARMORY_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Waffenkammer</Text>
+		<Replace Tag="LOC_POLICY_GRAND_OPERA_DESCRIPTION" Language="de_DE">
+			<Text>Mehr [ICON_Culture] Kultur von Gebäuden im Theaterplatz: +50% bei 12 [ICON_CITIZEN] Stadtbevölkerung und mehr, +50% bei +4 Nachbarschaftsbonus und mehr.</Text>
 		</Replace>
-		<Replace Tag="LOC_ABILITY_MILITARY_ACADEMY_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Militärakademie</Text>
+		<Replace Tag="LOC_POLICY_SIMULTANEUM_DESCRIPTION" Language="de_DE">
+			<Text>Mehr [ICON_Faith] Glauben von Heilige-Stätte-Gebäuden: +50% bei 12 [ICON_CITIZEN] Stadtbevölkerung und mehr, +50% bei +4 Nachbarschaftsbonus und mehr.</Text>
 		</Replace>
-		<Replace Tag="LOC_ABILITY_LIGHTHOUSE_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Leuchtturm</Text>
+		<Replace Tag="LOC_POLICY_FREE_MARKET_DESCRIPTION" Language="de_DE">
+			<Text>Mehr [ICON_Gold] Gold durch Gebäude in Handelszentren: +50% bei 12 [ICON_CITIZEN] Stadtbevölkerung und mehr, +50% bei +4 Nachbarschaftsbonus und mehr.</Text>
 		</Replace>
-		<Replace Tag="LOC_ABILITY_SHIPYARD_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Schiffswerft</Text>
+
+		<!-- INSPIRATIONS & HEUREKAS -->
+		<Replace Tag="LOC_BOOST_TRIGGER_MILITARY_TACTICS" Language="de_DE">
+			<Text>Baut eine Kaserne oder eine Stallung.</Text>
 		</Replace>
-		<Replace Tag="LOC_ABILITY_SEAPORT_TRAINED_UNIT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Seehafen</Text>
+		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_MILITARY_TACTICS" Language="de_DE">
+			<Text>Euer Training wird gewiss zu disziplinierteren Einheiten führen.</Text>
 		</Replace>
-		<Replace Tag="LOC_ABILITY_HANGAR_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+50% Kampferfahrung durch Hangar</Text>
+		<Replace Tag="LOC_BOOST_TRIGGER_SQUARE_RIGGING" Language="de_DE">
+			<Text>Errichtet 2 Leuchttürme.</Text>
 		</Replace>
-		<Replace Tag="LOC_ABILITY_AIRPORT_TRAINED_AIRCRAFT_XP_DESCRIPTION" Language="de_DE">
-			<Text>+75% Kampferfahrung durch Flugplatz</Text>
+		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_SQUARE_RIGGING" Language="de_DE">
+			<Text>Was, wenn wir unsere Schiffe mit Kanonen ausstatten?</Text>
 		</Replace>
+
+		<!-- GOVERNORS -->
+		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="de_DE">
+			<Text>Investorin</Text>
+		</Row>
+		<Row Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION" Language="de_DE">
+			<Text>50% [ICON_Gold] geringere Goldkosten beim Kauf von Gebäuden und Distrikten (sofern möglich) in der Stadt.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_LAND_ACQUISITION_DESCRIPTION" Language="de_DE">
+			<Text>Die Stadt erwirbt schneller neue Geländefelder. +4 [ICON_Gold] Gold pro Runde für jeden fremden [ICON_TradeRoute] Handelsweg, der die Stadt durchquert.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_FORESTRY_MANAGEMENT_DESCRIPTION" Language="de_DE">
+			<Text>TDie Stadt erhält +2 [ICON_Gold] Gold von jeder nicht modernisierten Geländeart und Feldern mit der Anziehunkraft "Atemberaubend". An nicht modernisierte Geländearten angrenzende Felder erhalten in der Stadt +1 Anziehungskraft.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="de_DE">
+			<Text>+2 [ICON_Gold] Gold pro Zug für jeden [ICON_Citizen] Bürger in der Stadt und +1 Handelsrouten-Kapazität solange Reyna in der Stadt stationiert ist.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="de_DE">
+			<Text>Landwirtschaft</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION' Language="de_DE">
+			<Text>+1 [ICON_FOOD] Nahrung auf den bereits enthüllten Ressourcen dieser Stadt.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_NAME" Language="de_DE">
+			<Text>Neuer Wohnraum</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="de_DE">
+			<Text>Kann pro Stadt einmal die Stadtpark-Modernisierung bauen sobald die Ausrichtung 'Brot und Spiele' erlangt wurde. +3 [ICON_SCIENCE] Wissenschaft, +3 [ICON_Culture] Kultur, +3 [ICON_GOLD] Gold, +1 [ICON_HOUSING] Wohnraum, +1 [ICON_Amenities] Annehmlichkeit, and +2 Anziehungskraft.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_Production] Produktion auf die aufgedeckten Ressourcen der Stadt.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_HOUSING] Wohnraum für jeden Distrikt und jedes Wunder in der Stadt.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_PRODUCTION] Produktion für Schwemmland- und Vulkanerde-Felder in der Stadt. Die Modernisierungen, Gebäude und Bezirke dieser Stadt können nicht durch Umweltfolgen beschädigt werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_THE_CARDINAL_DESCRIPTION" Language="de_DE">
+			<Text>Als spiritueller und religiöser Führer kann {LOC_GOVERNOR_THE_CARDINAL_NAME} die [ICON_CULTURE] kulturelle Bedeutung und die [ICON_Religion] religiöse Stärke einer Stadt erhöhen.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="de_DE">
+			<Text> Erhöht die Generierung von [ICON_Culture] Kultur um 15 % in dieser Stadt. Religiöser Druck auf angrenzende Städte ist von dieser Stadt aus 100% stärker.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_THE_EDUCATOR_DESCRIPTION" Language="de_DE">
+			<Text>{LOC_GOVERNOR_THE_EDUCATOR_NAME} ist auf die Förderung von [ICON_SCIENCE] wissenschaftlichen und kulturellen [ICON_CULTURE] Bestrebungen in der Stadt bedacht. Er ist außerdem recht geschickt darin, seine Stadt für [ICON_GreatPerson] Große Persönlichkeiten interessant zu machen.</Text>
+		</Replace>
+		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="de_DE">
+			<Text>Inländische [ICON_TradeRoute] Handelswege gewähren Pingalas Stadt +3 [ICON_SCIENCE] Wissenschaft.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN_DESCRIPTION" Language="de_DE">
+			<Text>15% Steigerung der von dieser Stadt generierten [ICON_Science] Wissenschaft.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME' Language="de_DE">
+			<Text>Geteiltes Wissen</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME' Language="de_DE">
+			<Text>Heureka</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="de_DE">
+			<Text>Verdoppelt den Nachbarschaftsbonus des Campus-Bezirkes dieser Stadt.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE_DESCRIPTION" Language="de_DE">
+			<Text>Gewährt Euch pro Runde eine zusätzliche strategische Ressource jeden Typs, welchen ihr bereits in eurem Reich habt.</Text>
+		</Replace>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="de_DE">
+			<Text>Unterhändlerin</Text>
+		</Row>
+		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="de_DE">
+			<Text>Stadt kann nicht belagert werden und die Stadtverteidigung erhält +Kampfstärke.</Text>
+		</Row>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_EMISSARY_DESCRIPTION" Language="de_DE">
+			<Text>Alle Städte innerhalb von 9 Geländefeldern erhalten +4 Loyalität pro Runde für Eure Zivilisation.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="de_DE">
+			<Text>Strategische Ressourcen werden in dieser Stadt nicht benötigt, um Einheiten ausheben zu können.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST_DESCRIPTION" Language="de_DE">
+			<Text>+4 [ICON_Production] Produktion und +4 [ICON_POWER] Energie die pro Ressource des Kohle-, Öl- und Atomkraftwerks erzeugt wird.</Text>
+		</Replace>
+		
+		<!-- WORLD CONGRESS -->
+		<Replace Tag="LOC_WORLD_CONGRESS_BAN_TRADE_WITH_PLAYER_DESC" Language="de_DE">
+			<Text>Alle Erträge von [ICON_TradeRoute] Handelsrouten zu und von dem gewählten Spieler werden halbiert.</Text>
+		</Replace>
+
+		<!-- GOVERNMENTS -->
+		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="de_DE">
+			<Text>+1 [ICON_HOUSING] pro Stadtmauer-Stufe. +2 [ICON_CULTURE] Kultur pro Renaissance-Mauer.</Text>
+		</Replace>
+
+		<!-- BUILDINGS -->
+		<Replace Tag="LOC_BBG_BUILDING_BANK_DESCRIPTION" Language="de_DE">
+			<Text>+2 [ICON_GOLD] Gold für jede [ICON_TRADEROUTE] Handelsroute ausgehend von dieser Stadt.[NEWLINE]+1 [ICON_GOLD] Gold für jede [ICON_TRADEROUTE] Handelsroute zu dieser Stadt.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_GRAND_BAZAAR_DESCRIPTION" Language="de_DE">
+			<Text>Einzigartiges Gebäude der Osmanen. Sammelt 1 zusätzliche strategische Ressource für jede unterschiedliche Art von strategischen Ressourcen, die diese Stadt modernisiert hat. Erhaltet +1 [ICON_AMENITIES] für jedes Luxusgut, das diese Stadt modernisiert hat.[NEWLINE]+2 [ICON_GOLD] Gold für jede [ICON_TRADEROUTE] Handelsroute ausgehend von dieser Stadt.[NEWLINE]+1 [ICON_GOLD] Gold für jede [ICON_TRADEROUTE] Handelsroute zu dieser Stadt.[NEWLINE]+1 [ICON_TRADEROUTE] Handelsweg-Kapazität.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBG_BUILDING_STOCK_EXCHANGE_DESCRIPTION" Language="de_DE">
+			<Text>+4 [ICON_GOLD] Gold für jede [ICON_TRADEROUTE] Handelsroute ausgehend von dieser Stadt.[NEWLINE]+2 [ICON_GOLD] Gold für jede [ICON_TRADEROUTE] Handelsroute zu dieser Stadt.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>+25 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE][NEWLINE]Ermöglicht die unmittelbare Ausbildung von Korps und Armeen. Die Ausbildungskosten von Korps und Armeen sinken um 25%. +2 [ICON_RESSOURCE_OIL] Öl pro Zug</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="de_DE">
+			<Text>+25% Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]+1 [ICON_RESOURCE_NITER] Salpeter pro Zug.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="de_DE">
+			<Text>+25% Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]Strategisches Ressourcen-Vorratslager +10 (auf Standardgeschwindigkeit).. +1 [ICON_RESOURCE_NITER] Salpeter pro Zug.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="de_DE">
+			<Text>+25% Kampferfahrung für alle Marineeinheiten, die in dieser Stadt ausgebildet werden. Ermöglicht die unmittelbare Ausbildung von Flotten und Armadas. Die Ausbildungskosten von Flotten und Armadas sinken um 25 %. +2 [ICON_GOLD] auf allen Küsten-Geländefeldern für diese Stadt. +1 [ICON_RESOURCE_COAL] Kohle pro Zug.</Text>
+		</Replace>
+		
+
+		
 		<Replace Tag="LOC_POLICY_DISCIPLINE_DESCRIPTION" Language="de_DE">
 			<Text>+10 [ICON_Strength] Kampfstärke gegen Barbaren.</Text>
 		</Replace>
@@ -82,21 +208,10 @@
 		<Replace Tag="LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION" Language="de_DE">
 			<Text>+2 [ICON_Faith] Glauben und +2 [ICON_Gold] Gold durch Minen bei Luxusgütern und Bonusressourcen.</Text>
 		</Replace>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_DESCRIPTION" Language="de_DE">
-			<Text>50% [ICON_Gold] geringere Goldkosten beim Kauf von Gebäuden und Distrikten (sofern möglich) in der Stadt.</Text>
-		</Row>
+		
 		<!---->
 		<Replace Tag="LOC_BELIEF_FEED_THE_WORLD_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Schreine und Tempel bringen je +3 [ICON_Food] Nahrung und +1 [ICON_Housing] Wohnraum.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_LAND_ACQUISITION_DESCRIPTION" Language="de_DE">
-			<Text>Die Stadt erwirbt schneller neue Geländefelder. +4 [ICON_Gold] Gold pro Runde für jeden fremden [ICON_TradeRoute] Handelsweg, der die Stadt durchquert.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_FORESTRY_MANAGEMENT_DESCRIPTION" Language="de_DE">
-			<Text>TDie Stadt erhält +2 [ICON_Gold] Gold von jeder nicht modernisierten Geländeart und Feldern mit der Anziehunkraft "Atemberaubend". An nicht modernisierte Geländearten angrenzende Felder erhalten in der Stadt +1 Anziehungskraft.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION" Language="de_DE">
-			<Text>+2 [ICON_Gold] Gold pro Zug für jeden [ICON_Citizen] Bürger in der Stadt und +1 Handelsrouten-Kapazität solange Reyna in der Stadt stationiert ist.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="de_DE">
 			<Text>+3 Einflusspunkte pro Runde. Wenn diese Zivilisation einen feindlichen Spion gefangen nimmt oder tötet, erhält sie 200 [ICON_Science] Wissenschaft (auf Standard-Geschwindigkeit) pro Stufe des feindlichen Spions. .</Text>
@@ -137,12 +252,6 @@
 		<Replace Tag="LOC_LEADER_TRAIT_NGAZARGAMU_DESCRIPTION" Language="de_DE">
 			<Text>Land-Kampf- oder Unterstützungseinheiten kosten 20 % weniger mit [ICON_GOLD] Gold oder [ICON_FAITH] Glauben für jedes Lagerbezirksgebäude in der Stadt.</Text>
 		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_ZONING_COMMISSIONER_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_Production] Produktion auf die aufgedeckten Ressourcen der Stadt.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_HOUSING] Wohnraum für jeden Distrikt und jedes Wunder in der Stadt.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_DAR_E_MEHR_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Ermöglicht den Bau von Dar-e Mehrs (+3 [ICON_Faith] Glauben, +2 [ICON_CULTURE] Kultur. Kann nicht durch Naturkatastrophen geplündert werden.</Text>
 		</Replace>
@@ -154,9 +263,6 @@
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="de_DE">
 			<Text>Unpassierbares Naturwunder über drei Geländefelder. Gewährt +1 [ICON_Gold] Gold und +1 [ICON_Culture] Kultur für angrenzende Felder. Großer Nachbarschaftsbonus für Theaterplatz- und Handelszentrum-Bezirke.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_PRODUCTION] Produktion für Schwemmland- und Vulkanerde-Felder in der Stadt. Die Modernisierungen, Gebäude und Bezirke dieser Stadt können nicht durch Umweltfolgen beschädigt werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_DESCRIPTION" Language="de_DE">
 			<Text>+50 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]+1 [ICON_RESOURCE_NITER] Salpeter pro Runde nach Erforschung der Technologie 'Militärtechnik".</Text>
@@ -194,16 +300,10 @@
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5" Language="de_DE">
 			<Text>Monumentalität: Gewährt +1 Zeitalterpunkt jedes Mal, wenn Ihr einen neuen Spezialbezirk baut. Wählt Ihr diese Widmung zu Beginn eines Goldenen Zeitalters, +2 [ICON_Movement] Fortbewegung für alle Handwerker. Ermöglicht den Kauf ziviler Einheiten mit [ICON_Faith] Glauben. Klassik bis einschließlich Renaissance. Der Erwerb von Handwerkern und Siedlern ist mit [ICON_FAITH] Glauben und [ICON_GOLD] Gold 10 % günstiger.</Text>
 		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="de_DE">
-			<Text> Erhöht die Generierung von [ICON_Culture] Kultur um 15 % in dieser Stadt. Religiöser Druck auf angrenzende Städte ist von dieser Stadt aus 50 % stärker.</Text>
-		</Replace>
 		<Replace Tag="LOC_BELIEF_STONE_CIRCLES_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_Production] Produktion und +1 [ICON_Faith] Glauben durch Steinbrüche.</Text>
 		</Replace>
 		</Replace>
-		<Row Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_DESCRIPTION" Language="de_DE">
-			<Text>Inländische [ICON_TradeRoute] Handelswege gewähren Pingalas Stadt +3 [ICON_SCIENCE] Wissenschaft.</Text>
-		</Row>
 		<Replace Tag="LOC_MOMENT_CATEGORY_EXPLORATION_BONUS_GOLDEN_AGE" Language="de_DE">
 			<Text>Hic Sunt Dracones Goldenes Zeitalter:[NEWLINE] Erhaltet +3 [ICON_Citizen] Startbevölkerung  für neu gegründete Städte. +2 [ICON_Movement] Fortbewegung für Marine- oder gewasserte Einheiten. +2 Loyalität pro Runde für Städte, die nicht auf dem Kontinent Eurer ursprünglichen [ICON_Capital] Hauptstadt liegen.</Text>
 		</Replace>
@@ -225,57 +325,7 @@
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>+25 % Kampferfahrung für alle Landeinheiten, die in dieser Stadt ausgebildet werden.[NEWLINE]Strategisches Ressourcen-Vorratslager +10 (auf Standardgeschwindigkeit).[NEWLINE]Ermöglicht die unmittelbare Ausbildung von Korps und Armeen. Die Ausbildungskosten von Korps und Armeen sinken um 25%. +2 [ICON_RESOURCE_OIL] Öl pro Runde nach Erforschung von 'Raffinerie'.</Text>
 		</Replace>
-		<Replace Tag="LOC_GOVERNOR_THE_CARDINAL_DESCRIPTION" Language="de_DE">
-			<Text>Als spiritueller und religiöser Führer kann {LOC_GOVERNOR_THE_CARDINAL_NAME} die [ICON_CULTURE] kulturelle Bedeutung und die [ICON_Religion] religiöse Stärke einer Stadt erhöhen.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_THE_EDUCATOR_DESCRIPTION" Language="de_DE">
-			<Text>{LOC_GOVERNOR_THE_EDUCATOR_NAME} ist auf die Förderung von [ICON_SCIENCE] wissenschaftlichen und kulturellen [ICON_CULTURE] Bestrebungen in der Stadt bedacht. Er ist außerdem recht geschickt darin, seine Stadt für [ICON_GreatPerson] Große Persönlichkeiten interessant zu machen.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_EDUCATOR_LIBRARIAN_DESCRIPTION" Language="de_DE">
-			<Text>15% Steigerung der von dieser Stadt generierten [ICON_Science] Wissenschaft.</Text>
-		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_KNOWLEDGE_NAME' Language="de_DE">
-			<Text>Geteiltes Wissen</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_NAME' Language="de_DE">
-			<Text>Heureka</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_EDUCATOR_EUREKA_DESCRIPTION' Language="de_DE">
-			<Text>Verdoppelt den Nachbarschaftsbonus des Campus-Bezirkes dieser Stadt.</Text>
-		</Row>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_AFFLUENCE_DESCRIPTION" Language="de_DE">
-			<Text>Gewährt Euch pro Runde eine zusätzliche strategische Ressource jeden Typs, welchen ihr bereits in eurem Reich habt.</Text>
-		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_NAME' Language="de_DE">
-			<Text>Unterhändlerin</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION' Language="de_DE">
-			<Text>Stadt kann nicht belagert werden und die Stadtverteidigung erhält +Kampfstärke.</Text>
-		</Row>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_EMISSARY_DESCRIPTION" Language="de_DE">
-			<Text>Alle Städte innerhalb von 9 Geländefeldern erhalten +4 Loyalität pro Runde für Eure Zivilisation.</Text>
-		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="de_DE">
-			<Text>Investorin</Text>
-		</Row>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER_DESCRIPTION" Language="de_DE">
-			<Text>Strategische Ressourcen werden in dieser Stadt nicht benötigt, um Einheiten ausheben zu können.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST_DESCRIPTION" Language="de_DE">
-			<Text>+4 [ICON_Production] Produktion und +4 [ICON_POWER] Energie die pro Ressource des Kohle-, Öl- und Atomkraftwerks erzeugt wird.</Text>
-		</Replace>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_NAME' Language="de_DE">
-			<Text>Landwirtschaft</Text>
-		</Row>
-		<Row Tag='LOC_GOVERNOR_PROMOTION_AGRICULTURE_DESCRIPTION' Language="de_DE">
-			<Text>+1 [ICON_FOOD] Nahrung auf den bereits enthüllten Ressourcen dieser Stadt.</Text>
-		</Row>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_WATER_WORKS_NAME" Language="de_DE">
-			<Text>Neuer Wohnraum</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="de_DE">
-			<Text>Kann pro Stadt einmal die Stadtpark-Modernisierung bauen sobald die Ausrichtung 'Brot und Spiele' erlangt wurde. +3 [ICON_SCIENCE] Wissenschaft, +3 [ICON_Culture] Kultur, +3 [ICON_GOLD] Gold, +1 [ICON_HOUSING] Wohnraum, +1 [ICON_Amenities] Annehmlichkeit, and +2 Anziehungskraft.</Text>
-		</Replace>
+		
 		<Replace Tag="LOC_IMPROVEMENT_FISHERY_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerkerfähigkeit 'Fischzucht' frei.[NEWLINE][NEWLINE]+1 [ICON_Food] Nahrung, +1 zusätzliche [ICON_Food] Nahrung wenn sie an eine Meeresressource angrenzt. Muss auf einem Küsten-Gelandefeld gebaut werden.</Text>
 		</Replace>
@@ -303,12 +353,6 @@
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_TUNDRA_FAITH" Language="de_DE">
 			<Text>+{1_num} [ICON_Faith] Glaube von angrenzenden Tundra-Geländefeldern.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_GARRISON_COMMANDER_DESCRIPTION" Language="de_DE">
-			<Text>Verteidigende Einheiten im Gebiet der Stadt erhalten +3 [ICON_Strength] Kampfstärke. Eure anderen Städte in einem Umkreis von 9 Geländefeldern erhalten +4 Loyalität pro Runde für Eure Zivilisation.</Text>
-		</Replace>
-		<Replace Tag="LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS_DESCRIPTION" Language="de_DE">
-			<Text>+20% [ICON_Food] in der Stadt. Eure Handelswege, die hier enden, gewähren ihrer Ausgangsstadt +2 [ICON_Food] Nahrung und +2 [ICON_Production] Produktion.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_COLLECTIVIZATION_DESCRIPTION_XP2" Language="de_DE">
 			<Text>+4 [ICON_Production] Produktion und +4 [ICON_Food] Nahrung von inlänischen [ICON_TradeRoute] Handelswegen.</Text>
@@ -619,24 +663,6 @@
 		<!---->
 		<!--===============   R E L I G I O N S   ===============-->
 		<!-- Crusader Religion -->
-		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_Faith] Glauben bzw. +1 [ICON_Culture] Kultur durch jeden Heilige-Stätte- und Theaterplatz-Bezirk in einer Stadt mit dieser Religion.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="de_DE">
-			<Text>Religion breitet sich in Städte aus, die 40 % weiter entfernt sind.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_Amenities] Annehmlichkeiten in Städten mit einem Spezialbeszirk.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_RELIGIOUS_COMMUNITY_DESCRIPTION" Language="de_DE">
-			<Text>Heilige Stätten, Schreine und Tempel bringen je +1 [ICON_Housing] Wohnraum.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION" Language="de_DE">
-			<Text>+15% [ICON_Production] Produktion für Wunder.</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_PILGRIMAGE_DESCRIPTION" Language="de_DE">
-			<Text>+3 [ICON_Faith] Glauben für jede Stadt mit dieser Religion.</Text>
-		</Replace>
 		<!---->
 		<!---->
 		<!--===============   W O N D E R S  (MAN-MADE)   ===============-->
