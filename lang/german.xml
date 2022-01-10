@@ -54,6 +54,9 @@
 		<Replace Tag="LOC_POLICY_FREE_MARKET_DESCRIPTION" Language="de_DE">
 			<Text>Mehr [ICON_Gold] Gold durch Gebäude in Handelszentren: +50% bei 12 [ICON_CITIZEN] Stadtbevölkerung und mehr, +50% bei +4 Nachbarschaftsbonus und mehr.</Text>
 		</Replace>
+		<Replace Tag="LOC_POLICY_BASTIONS_DESCRIPTION" Language="de_DE">
+			<Text>+6 City [ICON_Strength] Stadtverteidigungs-Stärke. +6 City [ICON_Ranged] Stadt-Fernkampfstärke.</Text>
+		</Replace>
 
 		<!-- INSPIRATIONS & HEUREKAS -->
 		<Replace Tag="LOC_BOOST_TRIGGER_MILITARY_TACTICS" Language="de_DE">

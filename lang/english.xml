@@ -55,6 +55,9 @@
 		<Replace Tag="LOC_POLICY_FREE_MARKET_DESCRIPTION" Language="en_US">
 			<Text>Extra [ICON_Gold] Gold from buildings in Commercial Hubs: +50% if city [ICON_CITIZEN] population is 12 or higher, +50% if district has at least +4 adjacency bonus.</Text>
 		</Replace>
+		<Replace Tag="LOC_POLICY_BASTIONS_DESCRIPTION" Language="en_US">
+			<Text>+6 City [ICON_Strength] Defense Strength. +6 City [ICON_Ranged] Ranged Strength.</Text>
+		</Replace>
 
 		<!-- INSPIRATIONS & HEUREKAS -->
 		<Replace Tag="LOC_BOOST_TRIGGER_MILITARY_TACTICS" Language="en_US">
