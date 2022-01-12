@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
-		<!-- RELIGION -->
+		<!--=============== T A B L E  O F  C O N T E N T S ===============-->
+		<!--===============   R E L I G I O N S   ===============-->
+		<!--===============   P A N T H E O N S   ===============-->
+		<!--===============   P O L I C I E S   ===============-->
+		<!--===============   H E U R E K A S  &  I N S P I R A T I O N S   ===============-->
+		<!--===============   T E C H N O L O G I E S   ===============-->
+		<!--===============   C I V I C S   ===============-->
+		<!--===============   G O V E R N O R S   ===============-->
+		<!--===============   W O R L D   C O N G R E S S   ===============-->
+		<!--===============   G O V E R N M E N T S   ===============-->
+		<!--===============   I M P R O V E M E N T S   ===============-->
+		<!--===============   B U I L D I N G S   ===============-->
+		<!--===============   D I S T R I C T S   ===============-->
+		<!--===============   U N I T S   ===============-->
+		<!--===============   C I T Y - S T A T E S   ===============-->
+		<!--===============   P R O J E C T S   ===============-->
+		<!--===============   N A T U R A L   W O N D E R S   ===============-->
+		<!--===============   W O N D E R S   ===============-->
+		<!--===============   D E D I C A T I O N S   ===============-->
+		<!--===============   C I V I L I Z A T I O N S   ===============-->
+		<!--===============   V I C T O R I E S   ===============-->
+		
+
+		<!--===============   R E L I G I O N S   ===============-->
 		<Replace Tag="LOC_BELIEF_DIVINE_INSPIRATION_DESCRIPTION" Language="de_DE">
 			<Text>Alle Wunder gewähren +6 [ICON_Faith] Glauben.</Text>
 		</Replace>
@@ -74,7 +97,13 @@
 
 				
 
-		<!-- PANTHEONS -->
+		<!--===============   P A N T H E O N S   ===============-->
+		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_NAME" Language="de_DE">
+			<Text>God of War and Plunder</Text>
+		</Replace>
+		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_GreatPerson] Punkt für Große Persönlichkeiten von Lager (General), Hafen (Admiral), and Handelsbezirk (Händler).</Text>
+		</Replace>
 		<Replace Tag="LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_Production] Produktion durch Sumpf-, Oasen- und Schwemmland.</Text>
 		</Replace>
@@ -121,8 +150,9 @@
 			<Text>+15% [ICON_Production] Produktion für Wunder.</Text>
 		</Replace>
 
-		<!-- POLICIES -->
-		
+
+
+		<!--===============   P O L I C I E S   ===============-->
 		<Replace Tag="LOC_POLICY_LIMES_DESCRIPTION" Language="de_DE">
 			<Text>+100% [ICON_Production] Produktion für Belagerungseinheiten und Mauern.</Text>
 		</Replace>
@@ -181,7 +211,9 @@
 			<Text>Als "Grabenkrieg" bezeichnet man eine Art des Stellungskrieges, bei der zwei sich gegenüber liegende Frontbefestigungen jeweils aus einem System von Schützen- und Laufgräben bestehen. Ursachen dieser Frontverfestigungen waren in entgegengesetzter Stoßrichtung aufeinander treffende, annähernd gleich starke gegnerische Truppen, die gleichermaßen über eine technisch fortgeschrittene Artillerie mit wirkungsvollen Granaten und hoher Geschützreichweite sowie über die damals neu aufgekommenen Maschinengewehre verfügten. Dabei blieb jedoch die Mobilität gerade auch der neuen schweren Waffen in dem meist unwegsamen Gelände gering, zumal die für den Vorspann benötigten Zugtiere der gesteigerten Waffenwirkung ebenso ausgesetzt waren, wie die Menschen.[NEWLINE][NEWLINE]Als ein archetypisches Phänomen wurde der Grabenkrieg rasch mit dem 1. Weltkrieg (1914-1918) assoziiert, nachdem im Verlauf des Septembers 1914 die Offensive des deutschen Heeres in Frankreich in der Marne-Schlacht zu einem Stillstand gebracht wurde und sich rasch von der Nordseeküste bis hin zur Schweizer Grenze ein gegenüberliegendes System von stark befestigten Gräben entwickelte. Auch unter massivstem Einsatz von Menschen und Material konnten nur geringe Geländegewinne erzielt werden. Allein in der Schlacht von Verdun wurden von Februar bis Dezember 1916 über 700.000 Soldaten getötet oder verletzt. Dabei konnten die Kämpfe den Frontverlauf nicht wesentlich verändern.[NEWLINE][NEWLINE] Erst die Taktik der beweglichen Gefechtsführung mit Panzerfahrzeugen vermochten diese Statik aufzubrechen, sodass der 2. Weltkrieg (1939-1945) eine deutlich größere Dynamik in der raschen Verschiebung von Frontverläufen entfaltete.</Text>
 		</Replace>
 
-		<!-- INSPIRATIONS & HEUREKAS -->
+
+
+		<!--===============   H E U R E K A S  &  I N S P I R A T I O N S   ===============-->
 		<Replace Tag="LOC_BOOST_TRIGGER_MILITARY_TACTICS" Language="de_DE">
 			<Text>Baut eine Kaserne oder eine Stallung.</Text>
 		</Replace>
@@ -195,7 +227,9 @@
 			<Text>Was, wenn wir unsere Schiffe mit Kanonen ausstatten?</Text>
 		</Replace>
 
-		<!-- TECHNOLOGIES -->
+
+
+		<!--===============   T E C H N O L O G I E S   ===============-->
 		<Replace Tag="LOC_TECH_COMPUTERS_DESCRIPTION" Language="de_DE">
 			<Text>Gewährt die Fähigkeit, einen zusätzlichen Spion auszubilden. +50 % Tourismus in Eurem Reich.</Text>
 		</Replace>
@@ -206,7 +240,16 @@
 			<Text>+1 [ICON_Production] Produktion durch die Sägewerk-Modernisierung. Schaltet Urbane Verteidigung frei und gewährt all Euren Städten automatisch 300 Befestigungsstärke und die Fernkampffähigkeit. Alle bisherigen Mauer-Modernisierungen werden veraltet und Belagerungs-Unterstützungseinheiten sind nicht mehr effektiv.</Text>
 		</Replace>
 
-		<!-- GOVERNORS -->
+
+
+		<!--===============   C I V I C S   ===============-->
+		<Replace Tag="LOC_CIVIC_ENVIRONMENTALISM_DESCRIPTION" Language="de_DE">
+			<Text>+50% [ICON_Tourism] Tourismus in eurem Reich.</Text>
+		</Replace>
+
+
+
+		<!--===============   G O V E R N O R S   ===============-->
 		<Row Tag='LOC_GOVERNOR_PROMOTION_MERCHANT_INVESTOR_NAME' Language="de_DE">
 			<Text>Investorin</Text>
 		</Row>
@@ -286,7 +329,9 @@
 			<Text>+4 [ICON_Production] Produktion und +4 [ICON_POWER] Energie die pro Ressource des Kohle-, Öl- und Atomkraftwerks erzeugt wird.</Text>
 		</Replace>
 		
-		<!-- WORLD CONGRESS -->
+
+
+		<!--===============   W O R L D   C O N G R E S S   ===============-->
 		<Replace Tag="LOC_WORLD_CONGRESS_BAN_TRADE_WITH_PLAYER_DESC" Language="de_DE">
 			<Text>Alle Erträge von [ICON_TradeRoute] Handelsrouten zu und von dem gewählten Spieler werden halbiert.</Text>
 		</Replace>
@@ -294,18 +339,26 @@
 			<Text>Der ausgewählte Spieler erhält +1 [ICON_TradeRoute] Handelsrouten-Kapazität und +4 [ICON_GOLD] Gold von eingehenden internationalen [ICON_TradeRoute] Handelswegen.</Text>
 		</Replace>
 
-		<!-- GOVERNMENTS -->
+
+
+		<!--===============   G O V E R N M E N T S   ===============-->
 		<Replace Tag="LOC_GOVT_INHERENT_BONUS_MONARCHY_XP1" Language="de_DE">
 			<Text>+1 [ICON_HOUSING] pro Stadtmauer-Stufe. +2 [ICON_CULTURE] Kultur pro Renaissance-Mauer.</Text>
 		</Replace>
 
-		<!-- MODERNISATIONS -->
+
+
+		<!--===============   I M P R O V E M E N T S   ===============-->
 		<Replace Tag="LOC_IMPROVEMENT_FISHERY_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerkerfähigkeit 'Fischzucht' frei.[NEWLINE][NEWLINE]+1 [ICON_Food] Nahrung, +1 zusätzliche [ICON_Food] Nahrung wenn sie an eine Meeresressource angrenzt. Muss auf einem Küsten-Gelandefeld gebaut werden.</Text>
 		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="de_DE">
+			<Text>Schaltet die Handwerker-Fähigkeit frei, Fischerboote zu bauen.[NEWLINE][NEWLINE]+1 [ICON_Food] Nahrung und +1 [ICON_Production] Produktion. Kann nur auf gültigen Ressourcen gebaut werden.[NEWLINE][NEWLINE]Wenn sie auf Luxusgütern gebaut werden, kann die Stadt diese Ressourcen benutzen.</Text>
+		</Replace>
 
 
-		<!-- BUILDINGS -->
+
+		<!--===============   B U I L D I N G S   ===============-->
 		<Replace Tag="LOC_BUILDING_DAR_E_MEHR_DESCRIPTION" Language="de_DE">
 			<Text>+2 [ICON_Culture] Kultur.</Text>
 		</Replace>
@@ -355,7 +408,9 @@
 			<Text>+25 % Kampferfahrung für Lufteinheiten aus dieser Stadt. +2 Lufteinheit-Platz im Flugplatz-Bezirk. Ermöglicht den Lufttransport von Landeinheiten zwischen Flugplatz-Bezirken mit Flughäfen, wenn die Ausrichtung 'Schnelle Entwicklung' freigeschaltet wurde. +2 [ICON_RESOURCE_ALUMINUM] Aluminum pro Runde nach Erforschung von 'Funkwesen'.</Text>
 		</Replace>
 
-		<!-- DISTRICTS -->
+
+
+		<!--===============   D I S T R I C T S   ===============-->
 		<Row Tag="LOC_DISTRICT_SACREDPATH_WOODS_FAITH" Language="de_DE">
 			<Text>+{1_num} [ICON_Faith] Glaube von angrenzenden Wald-Geländefeldern.</Text>
 		</Row>
@@ -370,7 +425,11 @@
 		</Row>
 		
 
-		<!-- UNITS -->
+
+		<!--===============   U N I T S   ===============-->
+		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="de_DE">
+			<Text>+10 [ICON_STRENGTH] gegen befestigte Distrikte.</Text>
+		</Row>
 		<Replace Tag="LOC_UNIT_ANTIAIR_GUN_DESCRIPTION" Language="de_DE">
 			<Text>Luftabwehr-Unterstützungseinheit aus der Moderne. Bietet aus einer Entfernung von bis zu 1 Geländefeld von der Waffe Deckung vor Luftangriffen.</Text>
 		</Replace>
@@ -399,7 +458,9 @@
 			<Text>+7 [ICON_Strength] Kampfstärke beim Angriff auf Nah- und Fernkampfeinheiten.</Text>
 		</Replace>
 
-		<!-- CITY-STATES -->
+
+
+		<!--===============   C I T Y - S T A T E S   ===============-->
 		<Replace Tag="LOC_CIVILIZATION_LISBON_BONUS" Language="de_DE">
 			<Text>Eure Händlereinheiten sind immun gegen Plünderungen.</Text>
 		</Replace>		
@@ -431,7 +492,9 @@
 			<Text>Land-Kampf- oder Unterstützungseinheiten kosten 20 % weniger mit [ICON_GOLD] Gold oder [ICON_FAITH] Glauben für jedes Lagerbezirksgebäude in der Stadt.</Text>
 		</Replace>
 
-		<!-- PROJECTS -->
+
+
+		<!--===============   P R O J E C T S   ===============-->
 		<Replace Tag="LOC_PROJECT_LAUNCH_MOON_LANDING_POPUP" Language="de_DE">
 			<Text>Euer Missionsteam ist erfolgreich auf dem Mond gelandet.</Text>
 		</Replace>
@@ -439,7 +502,9 @@
 			<Text>Projekt für Weltraumrennen, das eine große Rakete startet, um einen Menschen auf den Mond zu befördern. Gewährt einen einmaligen Kulturbonus, der dem Fünffachen Eurer Wissenschaft pro Runde entspricht, und markiert den zweiten Schritt in Richtung Wissenschaftssieg.</Text>
 		</Replace>
 
-        <!-- NATURAL WONDERS -->
+
+
+       <!--===============   N A T U R A L   W O N D E R S   ===============-->
         <Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="de_DE">
 			<Text>Naturwunder über zwei Geländefelder, das in Küstengebieten gefunden werden kann und +3 [ICON_Food] Nahrung und +2 [ICON_Science] Wissenschaft bietet. Gewährt einen großen Nachbarschaftbonus für angrenzende Campus-Bezirke.	</Text>
 		</Replace>
@@ -467,8 +532,37 @@
 		<Replace Tag="LOC_FEATURE_DEVILSTOWER_DESCRIPTION" Language="de_DE">
 			<Text>Unpassierbares Naturwunder über ein Geländefeld. Bietet +2 [ICON_Faith] Glauben und +1 [ICON_Production] Produktion für angrenzende Geländefelder.</Text>
 		</Replace>
+		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="de_DE">
+			<Text>Naturwunder über vier Geländefelder. Es erscheint als Sumpf und bietet +2 [ICON_Food] Nahrung, +2 [ICON_Culture] Kultur und +2 [ICON_Science] Wissenschaft.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="de_DE">
+			<Text>Naturwunder über drei Geländefelder. Biete +2 [ICON_Food] Nahrung, +2 [ICON_Production] Produktion und +2 [ICON_Science] Wissenschaft.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_CLIFFS_DOVER_DESCRIPTION" Language="de_DE">
+			<Text>Naturwunder über zwei Geländefelder. Es erscheint mit an Wasser angrenzenden Klippen und bietet +2 [ICON_Food] Nahrung, +3 [ICON_Culture] Kultur und +2 [ICON_Gold] Gold.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_CRATER_LAKE_DESCRIPTION" Language="de_DE">
+			<Text>Naturwunder über ein Geländefeld. Es erscheint als ein See und bietet +2 [ICON_Food] Nahrung, +2 [ICON_Science] Wissenschaft und +4 [ICON_Faith] Glauben.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_UBSUNUR_HOLLOW_DESCRIPTION" Language="de_DE">
+			<Text>Naturwunder über vier Geländefelder. Es erscheint als Sumpf und bietet +2 [ICON_Faith] Glauben, +2 [ICON_Food] Nahrung und +2 [ICON_Production] Produktion.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GALAPAGOS_DESCRIPTION" Language="de_DE">
+			<Text>Unpassierbares Naturwunder über zwei Geländefelder. Es erscheint in Küstenregionen und bietet +2 [ICON_Science] Wissenschaft und +1 [ICON_Food] Nahrung für angrenzende Geländefelder.</Text>
+		</Replace>
 
-		<!-- WONDERS -->
+
+
+		<!--===============   W O N D E R S   ===============-->
+		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_ENVOY] Gesandte beim Bau eines Wunders, einschließlich dem Apadana, in dieser Stadt.[NEWLINE][NEWLINE]Muss angrenzend an Eure [ICON_Capital] Hauptstadt gebaut werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="de_DE">
+			<Text>+100% [ICON_Production] Produktion für Marineeinheiten in allen Städten. Muss an der Küste und neben einem Industriegebiet-Bezirk gebaut werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HANGING_GARDENS_DESCRIPTION" Language="de_DE">
+			<Text>Erhöht das Wachstum in allen Städten um 15 %. +2 [ICON_Housing] Wohnraum in der Stadt, in welches das Wunder gebaut wurde und +1 [ICON_Housing] Wohnraum in allen Städten in Umkreis von 6 Geländefeldern. Muss an einem Fluss gebaut werden.</Text>
+		</Replace>
 		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="de_DE">
 			<Text>+1 Annehmlichkeit durch Unterhaltung für jedes See-Geländefeld im Umkreis von einem Geländefeld von Huey Teocalli. +1 [ICON_Food] Nahrung, +2 [ICON_Culture] Kultur und +1 [ICON_Production] Produktion für jedes See-Geländefeld im eigenen Reich. Muss an einem See-Geländefeld neben Land gebaut sein.</Text>
 		</Replace>
@@ -482,7 +576,9 @@
 			<Text>+20% [ICON_SCIENCE] Wissenschaft und 10% [ICON_PRODUCTION] Produktion in allen Städten. Wenn dieser Spieler 5 Tundra- oder Tundrahügel-Geländefelder innerhalb von 3 Geländefeldern einer Stadt besitzt, werden ihre Erträge verdoppelt. Muss neben einem Campus mit einem Forschungslabor auf einem Schnee- oder Schneehügel-Geländefeld gebaut werden.</Text>
 		</Replace>
 
-		<!-- DEDICATIONS -->
+
+
+		<!--===============   D E D I C A T I O N S   ===============-->
 		<Replace Tag="LOC_MOMENT_CATEGORY_MILITARY_BONUS_GOLDEN_AGE" Language="de_DE">
 			<Text>Zu den Waffen! Goldenes Zeitalter:[NEWLINE]Schaltet einen speziellen Casus Belli frei, der Euch nach der Denunzierung des Ziels Kriegstreiber-Malusse um 75 % im Vergleich zu einem formellen Krieg reduziert und direkt nach der Denunzierung des Ziels eingesetzt werden kann. +15% [ICON_Production] Produktion für Militäreinheiten und Militäreinheiten erhalten +10 [ICON_Strength] Kampfstärke-Bonus gegen Städte.</Text>
 		</Replace>
@@ -509,71 +605,15 @@
 		</Replace>
 		
 		
-		<!---->
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="de_DE">
-			<Text>+10 [ICON_STRENGTH] gegen befestigte Distrikte.</Text>
-		</Row>
-		
-		
-		
-		
-		
-		
-		
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<!--======== GATHERING STORM ========-->
-		
-		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_NAME" Language="de_DE">
-			<Text>God of War and Plunder</Text>
-		</Replace>
-		<Replace Tag="LOC_BELIEF_GOD_OF_WAR_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_GreatPerson] Punkt für Große Persönlichkeiten von Lager (General), Hafen (Admiral), and Handelsbezirk (Händler).</Text>
-		</Replace>
-		<!---->
-		<!---->
-		<!--======  PREVIOUS VERSIONS  ======-->
-		<!---->
-		<!---->
 		<!--===============   C I V I L I Z A T I O N S   ===============-->
+		
 		<!-- America -->
+		
 		<!-- Arabia -->
+		
 		<!-- Australia -->
+		
 		<!-- Aztec -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="de_DE">
 			<Text>Verwendet Handwerker-Ladungen, um 20% der benötigten Produktion für einen Bezirk zu vervollständigen. +50% [ICON_PRODUCTION] Produktion auf Land-Nahkampf-Einheiten.</Text>
@@ -590,7 +630,9 @@
 		<Row Tag="LOC_ABILITY_EAGLE_WARRIOR_DESCRIPTION" Language="de_DE">
 			<Text>Erleidet auf Dschungel- oder Waldfeldern weder einen Malus auf [ICON_Movement] Fortbewegung noch eine eingeschränkte Sicht.</Text>
 		</Row>
+		
 		<!-- China -->
+		
 		<!-- Egypt -->
 		<Replace Tag="LOC_IMPROVEMENT_SPHINX_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Schaltet die Handwerker-Fähigkeit frei, eine Sphinx, die einzigartige Modernisierung Ägyptens, zu bauen.[NEWLINE][NEWLINE]+2 [ICON_Faith] Glauben und +1 [ICON_Culture] Kultur. +2 Anziehungskraft. +1  [ICON_Faith] Glauben und +1 [ICON_Culture] Kultur für jedes angrenzende Wunder. +1 [ICON_Culture] Nahrung und +1 [ICON_Production] Produktion beim Bau auf Wüstenfelder. +1 [ICON_Culture] Kultur beim Bau auf Schwemmland.[NEWLINE][NEWLINE]Gewährt weitere +1 Kultur jeweils nach der Entdeckung von "Dipomatischer Dienst" und "Naturgeschichte". Generiert Tourismus in Höhe des Kulturertrags nach der Erforschung von "Luftfahrt". Kann nicht auf Schnee oder Schneehügeln gebaut werden.</Text>
@@ -604,18 +646,31 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>+25% [ICON_Production] Produktion für Bezirke und Wunder, wenn sie neben einem Fluss platziert werden. Erleidet keinen Schaden durch Überschwemmungen.</Text>
 		</Replace>
+		
 		<!-- France -->
+		
 		<!-- Georgia -->
+		
 		<!-- Germany -->
+		
 		<!-- Greece -->
+		
 		<!-- Greece (Gorgo) -->
+		
 		<!-- India -->
+		
 		<!-- India (Chandra) -->
+		
 		<!-- India (Gandhi) -->
+		
 		<!-- Japan -->
+		
 		<!-- Khmer -->
+		
 		<!-- Korea -->
+		
 		<!-- Mapuche -->
+		
 		<!-- Norway -->
 		<Replace Tag="LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION" Language="de_DE">
 			<Text>Gewährt Küstenraubzüge und +50 % [ICON_PRODUCTION] Produktion für alle Nahkampf-Marineeinheiten.[NEWLINE][NEWLINE]Heilige Stätten und deren Gebäude erhalten einen Bonus von +50% [ICON_PRODUCTION] Produktion. Heilige Stätten erhalten außerdem einen Standard-Nachbarschaftsbonus durch Küstenfelder.[NEWLINE][NEWLINE]Hafen-Bezirke neben einem Heilige-Stätte-Bezirk erhalten zusätzlich einen Nachbarschaftsbonus von +2 [ICON_GOLD] Gold.</Text>
@@ -638,14 +693,20 @@
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="de_DE">
 			<Text>+{1_num} [ICON_Faith] Glauben von Küste.</Text>
 		</Row>
+		
 		<!-- Nubia -->
+		
 		<!-- Ottomans -->
 		<Replace Tag="LOC_BUILDING_GRAND_BAZAAR_DESCRIPTION" Language="de_DE">
 			<Text>Einzigartiges Gebäude der Osmanen. Sammelt 1 zusätzliche strategische Ressource für jede unterschiedliche Art von strategischen Ressourcen, die diese Stadt modernisiert hat. Erhaltet +1 [ICON_AMENITIES] für jedes Luxusgut, das diese Stadt modernisiert hat.[NEWLINE]+2 [ICON_GOLD] Gold für jede [ICON_TRADEROUTE] Handelsroute ausgehend von dieser Stadt.[NEWLINE]+1 [ICON_GOLD] Gold für jede [ICON_TRADEROUTE] Handelsroute zu dieser Stadt.[NEWLINE]+1 [ICON_TRADEROUTE] Handelsweg-Kapazität. </Text>
 		</Replace>
+		
 		<!-- Persia -->
+		
 		<!-- Poland -->
+		
 		<!-- Russia -->
+		
 		<!-- Scotland -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="de_DE">
 			<Text>Zufriedene Städte erhalten zusätzliche +10%  [ICON_SCIENCE] Wissenschaft und +10%  [ICON_PRODUCTION] Produktion. Glückliche Städte generieren +1  [ICON_GreatScientist] Großer-Wissenschaftler-Punkt pro Campus und +1 [ICON_GreatEngineer] Großer-Ingenieur-Punkt pro Industriegebiet. Begeisterte Städte erhalten +15 [ICON_SCIENCE] Wissenschaft und +15% [ICON_PRODUCTION] Produktion. Sie generieren außerdem +2 [ICON_GreatScientist] Große-Wissenschaftler-Punkte pro Campus und +2 [ICON_GreatEngineer] Große-Ingenieur-Punkte pro Industriegebiet. </Text>
@@ -670,8 +731,11 @@
 			<Text>Kein Fortbewegungs-Malus und +5 [ICON_Strength] Kampfstärke auf Hügel-Feldern.
 		</Text>
 		</Replace>
+		
 		<!-- Scythia -->
+		
 		<!-- Spain -->
+		
 		<!-- Sumer -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_NAME" Language="de_DE">
 			<Text>Wiege der Zivilisation</Text>
@@ -707,65 +771,9 @@
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="de_DE">
 			<Text>Städte mit Garnisons-Einheit erhalten +3 Loyalität pro Runde oder +5, wenn es sich um ein Korps oder eine Armee handelt. Korps gewähren zusätzlich +1 [ICON_amenities] Annehmlichkeit, Armeen sogar +2. Eine Einheit, die eine Stadt einnimmt, wird zu einem Korps oder einer Armee verbessert, wenn Ihr die richtigen Ausrichtungen freigeschaltet habt.</Text>
 		</Replace>
-		<!---->
-		<!---->
-		<!--===============   D E D I C A T I O N S   ===============-->
-		<!-- Pen, Brush and Voice -->
-		<!---->
-		<!---->
-		<!--===============   G O V E R N M E N T   ===============-->
-		<!---->
-		<!---->
-		<!--===============   P A N T H E O N S   ===============-->
-		<!---->
-		<!---->
-		<!--===============   P O L I C Y   C A R D S   ===============-->
-		<!---->
 		
-		<!---->
-		<!--===============   R E L I G I O N S   ===============-->
-		<!-- Crusader Religion -->
-		<!---->
-		<!---->
-		<!--===============   W O N D E R S  (MAN-MADE)   ===============-->
-		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_ENVOY] Gesandte beim Bau eines Wunders, einschließlich dem Apadana, in dieser Stadt.[NEWLINE][NEWLINE]Muss angrenzend an Eure [ICON_Capital] Hauptstadt gebaut werden.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_VENETIAN_ARSENAL_DESCRIPTION" Language="de_DE">
-			<Text>+100% [ICON_Production] Produktion für Marineeinheiten in allen Städten. Muss an der Küste und neben einem Industriegebiet-Bezirk gebaut werden.</Text>
-		</Replace>
-		<Replace Tag="LOC_BUILDING_HANGING_GARDENS_DESCRIPTION" Language="de_DE">
-			<Text>Erhöht das Wachstum in allen Städten um 15 %. +2 [ICON_Housing] Wohnraum in der Stadt, in welches das Wunder gebaut wurde und +1 [ICON_Housing] Wohnraum in allen Städten in Umkreis von 6 Geländefeldern. Muss an einem Fluss gebaut werden.</Text>
-		</Replace>
-		<!---->
-		<!---->
-		<!--===============   W O N D E R S  (NATURAL)   ===============-->
-		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="de_DE">
-			<Text>Naturwunder über vier Geländefelder. Es erscheint als Sumpf und bietet +2 [ICON_Food] Nahrung, +2 [ICON_Culture] Kultur und +2 [ICON_Science] Wissenschaft.</Text>
-		</Replace>
-		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="de_DE">
-			<Text>Naturwunder über drei Geländefelder. Biete +2 [ICON_Food] Nahrung, +2 [ICON_Production] Produktion und +2 [ICON_Science] Wissenschaft.</Text>
-		</Replace>
-		<Replace Tag="LOC_FEATURE_CLIFFS_DOVER_DESCRIPTION" Language="de_DE">
-			<Text>Naturwunder über zwei Geländefelder. Es erscheint mit an Wasser angrenzenden Klippen und bietet +2 [ICON_Food] Nahrung, +3 [ICON_Culture] Kultur und +2 [ICON_Gold] Gold.</Text>
-		</Replace>
-		<Replace Tag="LOC_FEATURE_CRATER_LAKE_DESCRIPTION" Language="de_DE">
-			<Text>Naturwunder über ein Geländefeld. Es erscheint als ein See und bietet +2 [ICON_Food] Nahrung, +2 [ICON_Science] Wissenschaft und +4 [ICON_Faith] Glauben.</Text>
-		</Replace>
-		<Replace Tag="LOC_FEATURE_UBSUNUR_HOLLOW_DESCRIPTION" Language="de_DE">
-			<Text>Naturwunder über vier Geländefelder. Es erscheint als Sumpf und bietet +2 [ICON_Faith] Glauben, +2 [ICON_Food] Nahrung und +2 [ICON_Production] Produktion.</Text>
-		</Replace>
-		<Replace Tag="LOC_FEATURE_GALAPAGOS_DESCRIPTION" Language="de_DE">
-			<Text>Unpassierbares Naturwunder über zwei Geländefelder. Es erscheint in Küstenregionen und bietet +2 [ICON_Science] Wissenschaft und +1 [ICON_Food] Nahrung für angrenzende Geländefelder.</Text>
-		</Replace>
-		<!---->
-		<!---->
-		<!--===============   O T H E R   ===============-->
-		<!-- coastal tiles -->
-		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="de_DE">
-			<Text>Schaltet die Handwerker-Fähigkeit frei, Fischerboote zu bauen.[NEWLINE][NEWLINE]+1 [ICON_Food] Nahrung und +1 [ICON_Production] Produktion. Kann nur auf gültigen Ressourcen gebaut werden.[NEWLINE][NEWLINE]Wenn sie auf Luxusgütern gebaut werden, kann die Stadt diese Ressourcen benutzen.</Text>
-		</Replace>
 
+		
 		<!--===============   V I C T O R I E S   ===============-->
 		<Replace Tag="BBG_FRONT_VICTORY_SPEED_SLIDER_NAME" Language="de_DE">
 			<Text>Voraussetzungen</Text>
@@ -887,7 +895,6 @@
 		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_NAME" Language="de_DE">
 			<Text>Deaktiviert</Text>
 		</Replace>
-
 		<Replace Tag="BBG_FRONT_VICTORY_CULTURAL_SETTING_0_DESC" Language="de_DE">
 			<Text>Standard Firaxis Einstellungen</Text>
 		</Replace>
@@ -966,7 +973,6 @@
 		<Replace Tag="BBG_FRONT_VICTORY_CONQUEST_SETTING_3_DESC" Language="de_DE">
 			<Text>Kein Herrschaftssieg</Text>
 		</Replace>
-
 		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TT" Language="de_DE">
 			<Text>Nutzt Euer Militär und Euer wachsendes Reich um die Länder dieser Welt zu dominieren!</Text>
 		</Replace>
@@ -1006,9 +1012,6 @@
 		<Replace Tag="LOC_VICTORY_TRADITIONAL_DOMINATION_TEXT" Language="de_DE">
 			<Text>Die Welt erkennt eure absolute Herrschaft an, für welche Ihr ein Imperium errichtet hat, in dem die Sonne nie untergeht.</Text>
 		</Replace>
-
-
-		<!-- Conquest legacy text -->
 		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_TAB" Language="de_DE">
 			<Text>Herrschaftssieg</Text>
 		</Replace>
