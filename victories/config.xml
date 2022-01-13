@@ -35,16 +35,7 @@
    		<Row ParameterId="VICTORY_SCORE" 					ConfigurationGroup="Game" ConfigurationId="BBGVictorySpeedSlider" Operator="NotEquals" ConfigurationValue="-1" />
    		<Row ParameterId="VICTORY_TECHNOLOGY" 				ConfigurationGroup="Game" ConfigurationId="BBGVictorySpeedSlider" Operator="NotEquals" ConfigurationValue="-1" />		
    		<Row ParameterId="VICTORY_DIPLOMATIC" 				ConfigurationGroup="Game" ConfigurationId="BBGVictorySpeedSlider" Operator="NotEquals" ConfigurationValue="-1" />
-   		<Row ParameterId="VICTORY_TRADITIONAL_DOMINATION" 	ConfigurationGroup="Game" ConfigurationId="BBGVictorySpeedSlider" Operator="NotEquals" ConfigurationValue="-1" />	
-		<!--
-   		<Row ParameterId="VICTORY_CULTURE" 					ConfigurationGroup="Game" ConfigurationId="BBGVictorySpeedSlider" Operator="Equals" ConfigurationValue="0" />
-   		<Row ParameterId="VICTORY_CONQUEST" 				ConfigurationGroup="Game" ConfigurationId="BBGVictorySpeedSlider" Operator="Equals" ConfigurationValue="0" />			
-   		<Row ParameterId="VICTORY_RELIGIOUS" 				ConfigurationGroup="Game" ConfigurationId="BBGVictorySpeedSlider" Operator="Equals" ConfigurationValue="0" />		
-   		<Row ParameterId="VICTORY_SCORE" 					ConfigurationGroup="Game" ConfigurationId="BBGVictorySpeedSlider" Operator="Equals" ConfigurationValue="0" />
-   		<Row ParameterId="VICTORY_TECHNOLOGY" 				ConfigurationGroup="Game" ConfigurationId="BBGVictorySpeedSlider" Operator="Equals" ConfigurationValue="0" />		
-   		<Row ParameterId="VICTORY_DIPLOMATIC" 				ConfigurationGroup="Game" ConfigurationId="BBGVictorySpeedSlider" Operator="Equals" ConfigurationValue="0" />
-   		<Row ParameterId="VICTORY_TRADITIONAL_DOMINATION" 	ConfigurationGroup="Game" ConfigurationId="BBGVictorySpeedSlider" Operator="Equals" ConfigurationValue="0" />	
-		-->
+   		<Row ParameterId="VICTORY_TRADITIONAL_DOMINATION" 	ConfigurationGroup="Game" ConfigurationId="BBGVictorySpeedSlider" Operator="NotEquals" ConfigurationValue="-1" />
 		<Row ParameterId="TurnLimit" 						ConfigurationGroup="Game" ConfigurationId="BBGVictoryScoreSettingDomain" Operator="NotEquals" ConfigurationValue="3" />	
 		
 		<Row ParameterId="MaxTurns" 						ConfigurationGroup="Game" ConfigurationId="BBGVictoryScoreSettingDomain" Operator="NotEquals" ConfigurationValue="0" />	
@@ -84,15 +75,6 @@
 		<Row ParameterId="TurnLimit" 						ConfigurationGroup="Game" ConfigurationId="BBGVictoryScoreSettingDomain" Operator="NotEquals" ConfigurationValue="2" />	
 	</ParameterDependencies>
 
-	<!--
-	<Queries>
-		<Row QueryId="BBGVictorySpeedSliderRange" SQL="SELECT 'BBGVictorySpeedSliderRange' AS Domain, -1 AS MinimumValue, 2 AS MaximumValue LIMIT 1" />
-	</Queries>
-
-	<DomainRangeQueries>
-		<Row QueryId="BBGVictorySpeedSliderRange" />
-	</DomainRangeQueries>
-	 -->
 	<DomainValues>
 		<Row Domain="BBGVictorySpeedSliderRange" Value="0" Name="BBG_FRONT_MASTER_SETTING_0_NAME" Description="BBG_FRONT_MASTER_SETTING_0_DESC" SortIndex="10"/>
 		<Row Domain="BBGVictorySpeedSliderRange" Value="1" Name="BBG_FRONT_MASTER_SETTING_1_NAME" Description="BBG_FRONT_MASTER_SETTING_1_DESC" SortIndex="20"/>

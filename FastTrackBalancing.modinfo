@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="b2adc326-974b-442e-a879-d9f526cf861d" version="2">
+<Mod id="b2adc326-974b-442e-a879-d9f526cf861d" version="3">
     <Properties>
         <Name>Fast Track Balancing</Name>
         <Description>Mod to balance Civilzation VI for a more enjoyable and competitive Multiplayer</Description>
@@ -7,7 +7,7 @@
         <Teaser>Mod to balance Civilzation VI for a more enjoyable and competitive Multiplayer</Teaser>
         <Authors>masseelch,malkay,flocke159</Authors>
         <SpecialThanks>codenaugh (original author)</SpecialThanks>
-        <CompatibleVersions>1.2,2.0</CompatibleVersions>
+        <CompatibleVersions>2.0</CompatibleVersions>
     </Properties>
     <Dependencies>
         <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
@@ -124,13 +124,6 @@
         <AddGameplayScripts id="ftb_core_script">
             <File>lua/ftb_core.lua</File>
         </AddGameplayScripts>
-
-        <UpdateArt id="ftb_art">
-            <Properties>
-                <LoadOrder>151</LoadOrder>
-            </Properties>
-            <File>Legacy BBG.dep</File>
-        </UpdateArt>
 
         <UpdateText id="ftb_text_updates">
             <Properties>
@@ -294,8 +287,6 @@
     <!-- defines file dependencies -->
     <Files>
         <!-- Misc -->
-        <File>Legacy BBG.dep</File>
-        <File>Improvements.artdef</File>
         <File>lang/english.xml</File>
         <File>lang/german.xml</File>
         <File>lua/bbg_stateutils.lua</File>
@@ -324,11 +315,11 @@
         <File>sql/zulu.sql</File>
 
         <!-- Victories -->
-        <File>victories/replacements/endgamemenu.xml</File>
-        <File>victories/replacements/worldrankings.lua</File>
-        <File>victories/replacements/endgamemenu.lua</File>
         <File>victories/config.xml</File>
         <File>victories/icons.xml</File>
+        <File>victories/replacements/endgamemenu.lua</File>
+        <File>victories/replacements/endgamemenu.xml</File>
+        <File>victories/replacements/worldrankings.lua</File>
         <File>victories/sql/cultural_1.sql</File>
         <File>victories/sql/cultural_2.sql</File>
         <File>victories/sql/diplomatic_1.sql</File>
