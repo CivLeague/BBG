@@ -1,5 +1,4 @@
 UPDATE StartBiasTerrains SET Tier=1 WHERE CivilizationType='CIVILIZATION_NORWAY' AND TerrainType='TERRAIN_COAST';
-
 -- Berserker
 UPDATE Units SET Combat=40 WHERE UnitType='UNIT_NORWEGIAN_BERSERKER';
 UPDATE ModifierArguments SET Value='10' WHERE ModifierId='UNIT_STRONG_WHEN_ATTACKING';
@@ -32,7 +31,6 @@ INSERT OR IGNORE INTO RequirementSets (RequirementSetId , RequirementSetType)
 INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId , RequirementId)
 	VALUES ('STAVE_CHURCH_RESOURCE_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_VISIBLE_RESOURCE');
 UPDATE ModifierArguments SET Value='0' WHERE ModifierId='STAVE_CHURCH_FAITHWOODSADJACENCY' AND Name='Amount';
-
 -- +2 gold harbor adjacency if adjacent to holy sites
 INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
     VALUES
@@ -45,18 +43,6 @@ INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
 INSERT OR IGNORE INTO ExcludedAdjacencies (YieldChangeId , TraitType)
     VALUES
     ('District_HS_Gold_Negative' , 'TRAIT_LEADER_MELEE_COASTAL_RAIDS');
-
--- INSERT OR IGNORE INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
---     VALUES
---     ('District_HS_Gold_Positive' , 'LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION' , 'YIELD_GOLD' , '2'  , '1' , 'DISTRICT_HOLY_SITE');
--- INSERT OR IGNORE INTO District_Adjacencies (DistrictType , YieldChangeId)
---     VALUES
---     ('DISTRICT_HARBOR' , 'District_HS_Gold_Positive');
--- INSERT OR IGNORE INTO ExcludedAdjacencies
--- 	SELECT DISTINCT TraitType, 'District_HS_Gold_Positive'
--- 	FROM (SELECT * FROM LeaderTraits WHERE TraitType LIKE 'TRAIT_LEADER_%' GROUP BY LeaderType)
--- 	WHERE LeaderType!='LEADER_HARDRADA' AND TraitType!='TRAIT_LEADER_MAJOR_CIV';
-
 -- Holy Sites coastal adjacency
 INSERT OR IGNORE INTO Modifiers (ModifierId , ModifierType)
 	VALUES
@@ -87,6 +73,5 @@ INSERT OR IGNORE INTO ModifierArguments (ModifierId , Name , Value , Extra , Sec
 	('THUNDERBOLT_HOLY_SITE_DISTRICT_BOOST'               , 'Amount'       , '50'                 , null , null);
 --	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'DistrictType' , 'DISTRICT_HOLY_SITE' , null , null),
 --	('THUNDERBOLT_HOLY_SITE_BUILDING_BOOST'               , 'Amount'       , '50'                 , null , null);
-
 -- Armagh
 UPDATE Improvement_YieldChanges SET YieldChange=3 WHERE ImprovementType='IMPROVEMENT_MONASTERY' AND YieldType='YIELD_FAITH';

@@ -1,176 +1,12 @@
 -- --==============================================================
 -- --******			C I V I L I Z A T I O N S			  ******
 -- --==============================================================
--- --==================
--- -- Cree
--- --==================
--- INSERT INTO Requirements (RequirementId, RequirementType)
--- 	VALUES ('REQUIRES_PLAYER_HAS_CURRENCY_BBG', 'REQUIREMENT_PLAYER_HAS_TECHNOLOGY');
--- INSERT INTO RequirementArguments (RequirementId, Name, Value)
--- 	VALUES ('REQUIRES_PLAYER_HAS_CURRENCY_BBG', 'TechnologyType', 'TECH_CURRENCY');
--- INSERT INTO RequirementSets VALUES ('PLAYER_HAS_CURRENCY_BBG', 'REQUIREMENTSET_TEST_ALL');
--- INSERT INTO RequirementSetRequirements VALUES ('PLAYER_HAS_CURRENCY_BBG', 'REQUIRES_PLAYER_HAS_CURRENCY_BBG');
--- UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_CURRENCY_BBG' WHERE ModifierId='TRAIT_POTTERY_TRADE_ROUTE';
--- UPDATE Modifiers SET OwnerRequirementSetId='PLAYER_HAS_CURRENCY_BBG' WHERE ModifierId='TRAIT_POTTERY_ADD_TRADER';
---
--- --==================
--- -- Georgia
--- --==================
--- -- Georgian Khevsur unit becomes sword replacement
--- UPDATE ModifierArguments SET Value='5' WHERE ModifierId='KHEVSURETI_HILLS_BUFF' AND Name='Amount';
--- -- Georgia Tsikhe changed to a stronger Ancient Wall replacement instead of a Renaissance Wall replacement
--- DELETE FROM BuildingPrereqs WHERE Building='BUILDING_TSIKHE';
--- DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_TSIKHE' AND ModifierId='TSIKHE_PREVENT_MELEE_ATTACK_OUTER_DEFENSES';
--- DELETE FROM BuildingModifiers WHERE BuildingType='BUILDING_TSIKHE' AND ModifierId='TSIKHE_PREVENT_BYPASS_OUTER_DEFENSE';
--- UPDATE BuildingReplaces SET ReplacesBuildingType='BUILDING_WALLS' WHERE CivUniqueBuildingType='BUILDING_TSIKHE';
--- UPDATE Buildings SET Cost=100, PrereqTech='TECH_MASONRY' , OuterDefenseHitPoints=100 WHERE BuildingType='BUILDING_TSIKHE';
--- -- Georgia gets 50% faith kills instead of Protectorate War Bonus
--- UPDATE ModifierArguments SET Value='100' WHERE ModifierId='TRAIT_LEADER_FAITH_KILLS' AND Name='PercentDefeatedStrength';
---
---
--- --==================
--- -- India (Chandra)
--- --==================
--- -- replace Territorial Expansion Declaration Bonus with +1 movement
--- DELETE FROM TraitModifiers WHERE TraitType='TRAIT_LEADER_ARTHASHASTRA';
---
--- INSERT INTO TraitModifiers (TraitType , ModifierId)
--- 	VALUES ('TRAIT_LEADER_ARTHASHASTRA' , 'TRAIT_EXPANSION_MOVEMENT_BONUS_CPLMOD');
--- INSERT INTO Modifiers (ModifierId , ModifierType)
--- 	VALUES ('TRAIT_EXPANSION_MOVEMENT_BONUS_CPLMOD' , 'MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER');
--- INSERT INTO ModifierArguments (ModifierId , Name , Value)
--- 	VALUES ('TRAIT_EXPANSION_MOVEMENT_BONUS_CPLMOD' , 'ModifierId', 'EXPANSION_MOVEMENT_BONUS_MODIFIER_CPLMOD');
---
--- INSERT INTO Modifiers (ModifierId , ModifierType , OwnerRequirementSetId)
--- 	VALUES ('EXPANSION_MOVEMENT_BONUS_MODIFIER_CPLMOD' , 'MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT' , 'REQUIREMENTSET_LAND_MILITARY_CPLMOD');
--- INSERT INTO ModifierArguments (ModifierId , Name , Value)
--- 	VALUES ('EXPANSION_MOVEMENT_BONUS_MODIFIER_CPLMOD' , 'Amount' , '1');
---
--- INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
--- 	VALUES ('REQUIREMENTSET_LAND_MILITARY_CPLMOD' , 'REQUIREMENTSET_TEST_ANY');
--- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
--- 	VALUES ('REQUIREMENTSET_LAND_MILITARY_CPLMOD' , 'REQUIREMENTS_LAND_MILITARY_CPLMOD');
--- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
--- 	VALUES ('REQUIREMENTSET_LAND_MILITARY_CPLMOD' , 'REQUIRES_UNIT_IS_RELIGIOUS_ALL');
--- INSERT INTO Requirements (RequirementId , RequirementType)
--- 	VALUES ('REQUIREMENTS_LAND_MILITARY_CPLMOD', 'REQUIREMENT_UNIT_FORMATION_CLASS_MATCHES');
--- INSERT INTO RequirementArguments (RequirementId , Name , Value)
--- 	VALUES ('REQUIREMENTS_LAND_MILITARY_CPLMOD' , 'UnitFormationClass' , 'FORMATION_CLASS_LAND_COMBAT');
---
---
--- --==================
--- -- Korea
--- --==================
--- -- Seowon gets +2 science base yield instead of 4, +1 for every 2 mines adjacent instead of 1 to 1
--- UPDATE Adjacency_YieldChanges SET YieldChange=2 WHERE ID='BaseDistrict_Science';
--- INSERT INTO Adjacency_YieldChanges
--- 	(ID, Description, YieldType, YieldChange, TilesRequired, AdjacentImprovement)
--- 	VALUES ('Mine_Science', 'LOC_DISTRICT_MINE_SCIENCE', 'YIELD_SCIENCE', 1, 2, 'IMPROVEMENT_MINE');
--- INSERT INTO District_Adjacencies
--- 	(DistrictType , YieldChangeId)
--- 	VALUES ('DISTRICT_SEOWON', 'Mine_Science');
--- -- seowon gets +1 adjacency from theater squares instead of -1
--- INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
--- 	VALUES
--- 	('Theater_Science', 'LOC_DISTRICT_SEOWON_THEATER_BONUS', 'YIELD_SCIENCE', 1, 1, 'DISTRICT_THEATER'),
--- 	('Seowon_Culture' , 'LOC_DISTRICT_THEATER_SEOWON_BONUS', 'YIELD_CULTURE', 1, 1, 'DISTRICT_SEOWON' );
--- INSERT INTO District_Adjacencies (DistrictType , YieldChangeId)
--- 	VALUES
--- 	('DISTRICT_SEOWON'  , 'Theater_Science'),
--- 	('DISTRICT_THEATER' , 'Seowon_Culture' );
--- -- Seowon bombs
--- INSERT INTO TraitModifiers (TraitType, ModifierId)
--- 	VALUES ('TRAIT_CIVILIZATION_THREE_KINGDOMS' , 'TRAIT_SEOWON_BOMB');
--- INSERT INTO Modifiers (ModifierId, ModifierType)
--- 	VALUES ('TRAIT_SEOWON_BOMB', 'MODIFIER_PLAYER_ADD_CULTURE_BOMB_TRIGGER');
--- INSERT INTO ModifierArguments (ModifierId, Name, Value)
--- 	VALUES ('TRAIT_SEOWON_BOMB', 'DistrictType', 'DISTRICT_SEOWON');
---
---
--- --==================
--- -- Mapuche
--- --==================
--- -- Combat bonus against Golden Age Civs set to 5 instead of 10
--- UPDATE ModifierArguments SET Value='5' WHERE ModifierId='TRAIT_TOQUI_COMBAT_BONUS_VS_GOLDEN_AGE_CIV';
--- DELETE FROM UnitAbilityModifiers WHERE ModifierId='MALON_RAIDER_TERRITORY_COMBAT_BONUS';
--- -- Chemamull Unique Improvement gets +1 Production at Civil Service Civic
--- INSERT INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqCivic)
--- 	VALUES ('203' , 'IMPROVEMENT_CHEMAMULL' , 'YIELD_PRODUCTION' , '1' , 'CIVIC_CIVIL_SERVICE');
---
---
--- --=========
--- --Mongolia
--- --=========
--- -- revert keshigs
--- UPDATE Units SET Combat=30, RangedCombat=40, Cost=180 WHERE UnitType='UNIT_MONGOLIAN_KESHIG';
--- -- No longer receives +1 diplo visibility for trading post
--- DELETE FROM TraitModifiers WHERE ModifierId='TRAIT_TRADING_POST_DIPLO_VISIBILITY';
--- DELETE FROM DiplomaticVisibilitySources WHERE VisibilitySourceType='SOURCE_TRADING_POST_TRAIT';
--- DELETE FROM DiplomaticVisibilitySources_XP1 WHERE VisibilitySourceType='SOURCE_TRADING_POST_TRAIT';
--- DELETE FROM ModifierArguments WHERE ModifierId='TRAIT_TRADING_POST_DIPLO_VISIBILITY';
--- DELETE FROM Modifiers WHERE ModifierId='TRAIT_TRADING_POST_DIPLO_VISIBILITY';
--- -- half cost Ordu
--- UPDATE Buildings SET Cost=60 WHERE BuildingType='BUILDING_ORDU';
---
---
--- --==================
--- -- Netherlands
--- --==================
--- UPDATE Improvements SET ValidAdjacentTerrainAmount=2 WHERE ImprovementType='IMPROVEMENT_POLDER';
--- UPDATE Units SET StrategicResource='RESOURCE_NITER' WHERE UnitType='UNIT_DE_ZEVEN_PROVINCIEN';
---
---
--- --==================
--- -- Scotland
--- --==================
--- -- Highlander gets +10 combat strength (defense)
--- UPDATE Units SET Combat=60 WHERE UnitType='UNIT_SCOTTISH_HIGHLANDER';
--- -- happy and ecstatic percentages increased
--- UPDATE ModifierArguments SET Value='10'  WHERE ModifierId='TRAIT_SCIENCE_HAPPY' AND Name='Amount';
--- UPDATE ModifierArguments SET Value='15' WHERE ModifierId='TRAIT_SCIENCE_ECSTATIC' AND Name='Amount';
--- UPDATE ModifierArguments SET Value='10'  WHERE ModifierId='TRAIT_PRODUCTION_HAPPY' AND Name='Amount';
--- UPDATE ModifierArguments SET Value='15' WHERE ModifierId='TRAIT_PRODUCTION_ECSTATIC' AND Name='Amount';
--- -- Golf Course moved to Games and Recreation
--- UPDATE Improvements SET PrereqCivic='CIVIC_GAMES_RECREATION' WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE';
--- -- Golf Course base yields are 1 Culture and 2 Gold... +1 to each if next to City Center
--- UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_GOLF_COURSE' AND YieldType='YIELD_CULTURE';
--- -- Golf Course extra housing moved to Urbanization (could be possible bug in future... make own req)
--- UPDATE RequirementArguments SET Value='CIVIC_URBANIZATION' WHERE RequirementId='REQUIRES_PLAYER_HAS_GLOBALIZATION' AND Name='CivicType';
--- INSERT INTO Adjacency_YieldChanges (ID , Description , YieldType , YieldChange , TilesRequired , AdjacentDistrict)
--- 	VALUES ('GOLFCOURSE_CITYCENTERADJACENCY_GOLD' , 'Placeholder' , 'YIELD_GOLD' , 1 , 1 , 'DISTRICT_CITY_CENTER');
--- INSERT INTO Improvement_Adjacencies (ImprovementType , YieldChangeId)
--- 	VALUES ('IMPROVEMENT_GOLF_COURSE' , 'GOLFCOURSE_CITYCENTERADJACENCY_GOLD');
--- -- Golf Course gets extra yields a bit earlier
--- INSERT INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqCivic)
--- 	VALUES ('204' , 'IMPROVEMENT_GOLF_COURSE' , 'YIELD_GOLD' , '1' , 'CIVIC_THE_ENLIGHTENMENT');
--- INSERT INTO Improvement_BonusYieldChanges (Id , ImprovementType , YieldType , BonusYieldChange , PrereqCivic)
--- 	VALUES ('205' , 'IMPROVEMENT_GOLF_COURSE' , 'YIELD_CULTURE' , '1' , 'CIVIC_THE_ENLIGHTENMENT');
---
---
--- --==================
--- -- Zulu
--- --==================
--- -- Zulu get corps/armies bonus at scorched earth
--- INSERT INTO RequirementSets (RequirementSetId , RequirementSetType)
---     VALUES ('PLAYER_HAS_SCORCHED_EARTH_REQUIREMENTS' , 'REQUIREMENTSET_TEST_ALL');
--- INSERT INTO Requirements (RequirementId, RequirementType)
---     VALUES ('REQUIRES_PLAYER_HAS_SCORCHED_EARTH' , 'REQUIREMENT_PLAYER_HAS_CIVIC');
--- INSERT INTO RequirementArguments (RequirementId , Name , Value)
---     VALUES ('REQUIRES_PLAYER_HAS_SCORCHED_EARTH' , 'CivicType' , 'CIVIC_SCORCHED_EARTH');
--- INSERT INTO RequirementSetRequirements (RequirementSetId , RequirementId)
---     VALUES ('PLAYER_HAS_SCORCHED_EARTH_REQUIREMENTS' , 'REQUIRES_PLAYER_HAS_SCORCHED_EARTH');
--- UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_SCORCHED_EARTH_REQUIREMENTS' WHERE ModifierId='TRAIT_LAND_CORPS_COMBAT_STRENGTH';
--- UPDATE Modifiers SET SubjectRequirementSetId='PLAYER_HAS_SCORCHED_EARTH_REQUIREMENTS' WHERE ModifierId='TRAIT_LAND_ARMIES_COMBAT_STRENGTH';
-
-
 
 --==============================================================
 --******			  	B U I L D I N G S	 		  	  ******
 --==============================================================
 UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_ORDU';
 UPDATE ModifierArguments SET Value='6' WHERE ModifierId='SHOPPING_MALL_TOURISM';
-
-
 
 --==============================================================
 --******			 	  CITY-STATES		 		  	  ******
@@ -181,9 +17,6 @@ DELETE FROM Modifiers WHERE ModifierId='MINOR_CIV_PRESLAV_UNIQUE_INFLUENCE_MILIT
 DELETE FROM Modifiers WHERE ModifierId='MINOR_CIV_PRESLAV_MILITARY_ACADEMY_IDENTITY_BONUS';
 UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId='MINOR_CIV_PRESLAV_BARRACKS_STABLE_IDENTITY_BONUS';
 UPDATE ModifierArguments SET Value='40' WHERE ModifierId='MINOR_CIV_PRESLAV_BARRACKS_STABLE_IDENTITY_BONUS' AND Name='Amount';
-
-
-
 
 --==============================================================
 --******			  D E D I C A T I O N S				  ******
@@ -242,9 +75,6 @@ INSERT INTO CommemorationModifiers (CommemorationType, ModifierId)
 	VALUES ('COMMEMORATION_CULTURAL', 'COMMEMORATION_CULTURAL_DISTRICTGOLD');
 UPDATE ModifierArguments SET Value='2' WHERE ModifierId='COMMEMORATION_CULTURAL_DISTRICTCULTURE' and Name='Amount';
 
-
-
-
 --==============================================================
 --******				G O V E R N M E N T				  ******
 --==============================================================
@@ -263,37 +93,35 @@ DELETE FROM BuildingModifiers WHERE ModifierId='GOV_PRODUCTION_BOOST_FROM_CAPTUR
 DELETE FROM ModifierArguments WHERE ModifierId='GOV_PRODUCTION_BOOST_FROM_CAPTURE';
 DELETE FROM Modifiers WHERE ModifierId='GOV_PRODUCTION_BOOST_FROM_CAPTURE';
 INSERT INTO BuildingModifiers (BuildingType , ModifierId)
-	VALUES 
+	VALUES
 	('BUILDING_GOV_CONQUEST' , 'GOV_CONQUEST_PRODUCTION_BONUS'),
 	('BUILDING_GOV_CONQUEST' , 'GOV_CONQUEST_REDUCED_MAINTENANCE');
 INSERT INTO Modifiers (ModifierId , ModifierType)
-	VALUES 
+	VALUES
 	('GOV_CONQUEST_PRODUCTION_BONUS'    , 'MODIFIER_PLAYER_CITIES_ADJUST_MILITARY_UNITS_PRODUCTION'),
 	('GOV_CONQUEST_REDUCED_MAINTENANCE' , 'MODIFIER_PLAYER_ADJUST_UNIT_MAINTENANCE_DISCOUNT'       );
 INSERT INTO ModifierArguments (ModifierId , Name , Value)
-	VALUES 
+	VALUES
 	('GOV_CONQUEST_PRODUCTION_BONUS'    , 'Amount'   , '25'             ),
 	('GOV_CONQUEST_PRODUCTION_BONUS'    , 'StartEra' , 'ERA_ANCIENT'    ),
 	('GOV_CONQUEST_PRODUCTION_BONUS'    , 'EndEra'   , 'ERA_INFORMATION'),
 	('GOV_CONQUEST_REDUCED_MAINTENANCE' , 'Amount'   , '1'              );
 -- Foreign Ministry gets +2 influence per turn and 2 envoys
-INSERT INTO BuildingModifiers 
+INSERT INTO BuildingModifiers
     (BuildingType            , ModifierId)
-    VALUES 
+    VALUES
     ('BUILDING_GOV_CITYSTATES' , 'GOV_BUILDING_CS_BONUS_INFLUENCE_CPLMOD'),
 	('BUILDING_GOV_CITYSTATES' , 'FOREIGN_MINISTRY_ENVOYS');
-INSERT INTO Modifiers 
+INSERT INTO Modifiers
     (ModifierId                                 , ModifierType)
-    VALUES 
+    VALUES
     ('GOV_BUILDING_CS_BONUS_INFLUENCE_CPLMOD'   , 'MODIFIER_PLAYER_ADJUST_INFLUENCE_POINTS_PER_TURN'),
 	('FOREIGN_MINISTRY_ENVOYS'					, 'MODIFIER_PLAYER_GRANT_INFLUENCE_TOKEN');
-INSERT INTO ModifierArguments 
+INSERT INTO ModifierArguments
     (ModifierId                                 , Name                      , Value)
-    VALUES 
+    VALUES
     ('GOV_BUILDING_CS_BONUS_INFLUENCE_CPLMOD'   , 'Amount'                  , '2'),
 	('FOREIGN_MINISTRY_ENVOYS'					, 'Amount'					, '2');
-
-
 
 --==============================================================
 --******				G O V E R N O R S				  ******
@@ -321,28 +149,22 @@ UPDATE GovernorPromotions SET Column=0 WHERE GovernorPromotionType='GOVERNOR_PRO
 UPDATE GovernorPromotionPrereqs SET PrereqGovernorPromotion='GOVERNOR_PROMOTION_RESOURCE_MANAGER_SURPLUS_LOGISTICS' WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_BLACK_MARKETEER';
 UPDATE GovernorPromotionPrereqs SET PrereqGovernorPromotion='GOVERNOR_PROMOTION_RESOURCE_MANAGER_EXPEDITION' WHERE GovernorPromotionType='GOVERNOR_PROMOTION_RESOURCE_MANAGER_INDUSTRIALIST';
 
-
-
-
 --==============================================================
 --******				PANTHEONS					  ******
 --==============================================================
 -- Lady of the Reeds and Marshes now applies ubsunur
-INSERT INTO RequirementSetRequirements 
+INSERT INTO RequirementSetRequirements
     (RequirementSetId              , RequirementId)
-    VALUES 
+    VALUES
     ('PLOT_HAS_REEDS_REQUIREMENTS' , 'REQUIRES_PLOT_HAS_UBSUNUR_HOLLOW'    );
-INSERT INTO Requirements 
+INSERT INTO Requirements
     (RequirementId                          , RequirementType)
-    VALUES 
+    VALUES
     ('REQUIRES_PLOT_HAS_UBSUNUR_HOLLOW'     , 'REQUIREMENT_PLOT_FEATURE_TYPE_MATCHES');
-INSERT INTO RequirementArguments 
+INSERT INTO RequirementArguments
     (RequirementId                          , Name          , Value)
-    VALUES 
+    VALUES
     ('REQUIRES_PLOT_HAS_UBSUNUR_HOLLOW'     , 'FeatureType' , 'FEATURE_UBSUNUR_HOLLOW'       );
-
-
-
 
 	--==============================================================
 --******				S  C  O  R  E				  	  ******
@@ -350,28 +172,9 @@ INSERT INTO RequirementArguments
 -- no double counting for era points
 UPDATE ScoringLineItems SET Multiplier=0 WHERE LineItemType='LINE_ITEM_ERA_SCORE';
 
-
-
 --==============================================================
 --******				START BIASES					  ******
 --==============================================================
--- UPDATE StartBiasTerrains SET Tier=2 WHERE CivilizationType='CIVILIZATION_NETHERLANDS' AND TerrainType='TERRAIN_COAST';
--- UPDATE StartBiasResources SET Tier=3 WHERE CivilizationType='CIVILIZATION_MONGOLIA' AND ResourceType='RESOURCE_HORSES';
--- UPDATE StartBiasRivers SET Tier=3 WHERE CivilizationType='CIVILIZATION_NETHERLANDS';
--- INSERT INTO StartBiasTerrains (CivilizationType , TerrainType , Tier)
--- 	VALUES
--- 	('CIVILIZATION_GEORGIA' , 'TERRAIN_PLAINS_HILLS' , 4),
--- 	('CIVILIZATION_GEORGIA' , 'TERRAIN_GRASS_HILLS' , 4);
--- UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_GRASS_HILLS';
--- UPDATE StartBiasTerrains SET Tier=4 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_PLAINS_HILLS';
--- UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_TUNDRA_HILLS';
--- UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_KOREA' AND TerrainType='TERRAIN_DESERT_HILLS';
--- UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_PLAINS_MOUNTAIN';
--- UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_GRASS_MOUNTAIN';
--- UPDATE StartBiasTerrains SET Tier=5 WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_DESERT_MOUNTAIN';
--- DELETE FROM StartBiasTerrains WHERE CivilizationType='CIVILIZATION_MAPUCHE' AND TerrainType='TERRAIN_TUNDRA_MOUNTAIN';
-
-
 
 --==============================================================
 --******			W O N D E R S  (NATURAL)			  ******
@@ -384,8 +187,6 @@ UPDATE RequirementArguments SET Value='TERRAIN_TUNDRA' WHERE RequirementId='REQU
 -- St. Basil gives 1 relic
 INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
 	('BUILDING_ST_BASILS_CATHEDRAL', 'WONDER_GRANT_RELIC_BBG');
-
-
 
 --==============================================================
 --******			W O N D E R S  (NATURAL)			  ******
@@ -403,24 +204,16 @@ UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_EYE_OF_
 -- lake retba
 INSERT INTO Feature_YieldChanges (FeatureType, YieldType, YieldChange)
 	VALUES ('FEATURE_LAKE_RETBA', 'YIELD_FOOD', 2);
-
 UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_UBSUNUR_HOLLOW' AND YieldType='YIELD_PRODUCTION';
 UPDATE Feature_YieldChanges SET YieldChange=2 WHERE FeatureType='FEATURE_UBSUNUR_HOLLOW' AND YieldType='YIELD_FOOD';
-
-
 
 --==============================================================
 --******				    O T H E R					  ******
 --==============================================================
 -- Amani Abuse Fix... can immediately re-declare war when an enemy suzerian removes Amani
 UPDATE GlobalParameters SET Value='1' WHERE Name='DIPLOMACY_PEACE_MIN_TURNS';
-
 -- citizen yields
 UPDATE District_CitizenYieldChanges SET YieldChange=2 WHERE YieldType='YIELD_PRODUCTION' 	AND DistrictType="DISTRICT_IKANDA";
 UPDATE District_CitizenYieldChanges SET YieldChange=3 WHERE YieldType='YIELD_SCIENCE' 		AND DistrictType="DISTRICT_SEOWON";
-
 -- Offshore Oil can be improved at Plastics
 UPDATE Improvements SET PrereqTech='TECH_PLASTICS' WHERE ImprovementType='IMPROVEMENT_OFFSHORE_OIL_RIG';
-
-
-
