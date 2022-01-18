@@ -703,10 +703,10 @@
 		
 		<!-- Scotland -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="de_DE">
-			<Text>Zufriedene Städte erhalten zusätzliche +10%  [ICON_SCIENCE] Wissenschaft und +10%  [ICON_PRODUCTION] Produktion. Glückliche Städte generieren +1  [ICON_GREATSCIENTIST] Großer-Wissenschaftler-Punkt pro Campus und +1 [ICON_GREATENGINEER] Großer-Ingenieur-Punkt pro Industriegebiet. Begeisterte Städte erhalten +15 [ICON_SCIENCE] Wissenschaft und +15% [ICON_PRODUCTION] Produktion. Sie generieren außerdem +2 [ICON_GREATSCIENTIST] Große-Wissenschaftler-Punkte pro Campus und +2 [ICON_GREATENGINEER] Große-Ingenieur-Punkte pro Industriegebiet. </Text>
+			<Text>Glückliche Städte erhalten zusätzliche +10%  [ICON_SCIENCE] Wissenschaft und +10%  [ICON_PRODUCTION] Produktion. Glückliche Städte generieren +1  [ICON_GREATSCIENTIST] Großer-Wissenschaftler-Punkt pro Campus und +1 [ICON_GREATENGINEER] Großer-Ingenieur-Punkt pro Industriegebiet. Begeisterte Städte erhalten +15 [ICON_SCIENCE] Wissenschaft und +15% [ICON_PRODUCTION] Produktion. Sie generieren außerdem +2 [ICON_GREATSCIENTIST] Große-Wissenschaftler-Punkte pro Campus und +2 [ICON_GREATENGINEER] Große-Ingenieur-Punkte pro Industriegebiet. </Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_BANNOCKBURN_DESCRIPTION" Language="de_DE">
-		<Text>Ist Schottland das Ziel einer Kriegserklärung, erhält es +5 [ICON_STRENGTH] Kampfstärke and +2 Fortbewegung für all Landeinheiten im eigenen Territorium für die nächsten 10 Runden.
+		<Text>Ist Schottland das Ziel einer Kriegserklärung, erhält es +5 [ICON_STRENGTH] Kampfstärke and +2 Fortbewegung für alle Landeinheiten im eigenen Territorium für die nächsten 10 Runden.
 			</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION" Language="de_DE">
