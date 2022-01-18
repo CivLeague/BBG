@@ -159,6 +159,18 @@
                 <Value>7</Value>
             </ConfigurationValueMatches>
         </Criteria>
+        <!--////////////////////////////////////
+            Hide Stats Evolved
+        /////////////////////////////////////-->
+        <Criteria id="HSE_Expansion1">
+            <RuleSetInUse>RULESET_EXPANSION_1</RuleSetInUse>
+        </Criteria>
+        <Criteria id="HSE_Expansion2">
+            <RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse>
+        </Criteria>
+        <Criteria id="HSE_Expansion1+">
+            <RuleSetInUse>RULESET_EXPANSION_1,RULESET_EXPANSION_2</RuleSetInUse>
+        </Criteria>
     </ActionCriteria>
 
     <!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
@@ -498,6 +510,120 @@
             <Criteria>Max_Religions_7</Criteria>
             <File>sql/religion_count/7.sql</File>
         </UpdateDatabase>
+        <ImportFiles id="HSE_Support">
+            <Properties>
+                <LoadOrder>15000</LoadOrder>
+            </Properties>
+            <File>Support/HSE_config.lua</File>
+            <File>Support/HSE_utils.lua</File>
+        </ImportFiles>
+        <!--////////////////////////////////////
+            Hide Stats Evolved
+        /////////////////////////////////////-->
+        <ImportFiles id="HSE_Base">
+            <Properties>
+                <LoadOrder>15000</LoadOrder>
+            </Properties>
+            <File>hse/Replacers/Base/DiplomacyRibbon.lua</File>
+            <File>hse/Replacers/Base/GlobalResourcePopup_HSE.lua</File>
+            <File>hse/Replacers/Base/ReligionScreen.lua</File>
+            <File>hse/Replacers/Base/WorldRankings.lua</File>
+            <File>hse/Replacers/Base/WorldRankings.xml</File>
+            <!-- For DiplomacyActionView_HSE, store minimal changes -->
+            <File>hse/Replacers/Multi/DiplomacyActionView_HSE.lua</File>
+            <!-- Always import these files CUI files as they give routines to update leader icons -->
+            <File>hse/Compatibility/Mods/CUI/cui_leader_icon_tt.lua</File>
+            <File>hse/Compatibility/Mods/CUI/cui_utils.lua</File>
+        </ImportFiles>
+        <ReplaceUIScript id="HSE_DiplomacyActionView">
+            <Properties>
+                <!-- Much higher LoadOrder due to Quick Deals -->
+                <LoadOrder>150100</LoadOrder>
+                <LuaContext>DiplomacyActionView</LuaContext>
+                <LuaReplace>hse/Replacers/Base/DiplomacyActionView_Wrapper.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+        <ReplaceUIScript id="HSE_DiplomacyRibbon">
+            <Properties>
+                <LoadOrder>15010</LoadOrder>
+                <LuaContext>DiplomacyRibbon</LuaContext>
+                <LuaReplace>hse/Replacers/Base/DiplomacyRibbon.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+        <ReplaceUIScript id="HSE_GlobalResourcePopup">
+            <Properties>
+                <LoadOrder>15010</LoadOrder>
+                <LuaContext>GlobalResourcePopup</LuaContext>
+                <LuaReplace>hse/Replacers/Base/GlobalResourcePopup_HSE.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+        <ReplaceUIScript id="HSE_WorldRankings">
+            <Properties>
+                <LoadOrder>15010</LoadOrder>
+                <LuaContext>WorldRankings</LuaContext>
+                <LuaReplace>hse/Replacers/Base/WorldRankings.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+        <ImportFiles id="HSE_XP1" criteria="Expansion1+">
+            <Properties>
+                <LoadOrder>15100</LoadOrder>
+            </Properties>
+            <File>hse/Replacers/XP1/DiplomacyRibbon_Expansion1.lua</File>
+        </ImportFiles>
+        <!-- Replacers -->
+        <ReplaceUIScript id="HSE_DiplomacyActionView_Expansion1" criteria="HSE_Expansion1+">
+            <Properties>
+                <!-- Much higher LoadOrder due to Quick Deals -->
+                <LoadOrder>151100</LoadOrder>
+                <LuaContext>DiplomacyActionView</LuaContext>
+                <LuaReplace>hse/Replacers/XP1/DiplomacyActionView_Expansion1_Wrapper.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+        <ReplaceUIScript id="HSE_DiplomacyRibbon_Expansion1" criteria="HSE_Expansion1+">
+            <Properties>
+                <LoadOrder>15110</LoadOrder>
+                <LuaContext>DiplomacyRibbon</LuaContext>
+                <LuaReplace>hse/Replacers/XP1/DiplomacyRibbon_Expansion1.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+        <ImportFiles id="HSE_XP2" criteria="HSE_Expansion2">
+            <Properties>
+                <LoadOrder>10200</LoadOrder>
+            </Properties>
+            <File>hse/Replacers/XP2/DiplomacyRibbon_Expansion2.lua</File>
+            <File>hse/Replacers/XP2/WorldCongressPopup.lua</File>
+            <File>hse/Replacers/XP2/WorldRankings_Expansion2.lua</File>
+            <File>hse/Replacers/XP2/WorldRankings.xml</File>
+        </ImportFiles>
+        <ReplaceUIScript id="HSE_DiplomacyActionView_Expansion2" criteria="HSE_Expansion2">
+            <Properties>
+                <!-- Much higher LoadOrder due to Quick Deals -->
+                <LoadOrder>152100</LoadOrder>
+                <LuaContext>DiplomacyActionView</LuaContext>
+                <LuaReplace>hse/Replacers/XP2/DiplomacyActionView_Expansion2_Wrapper.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+        <ReplaceUIScript id="HSE_DiplomacyRibbon_Expansion2" criteria="HSE_Expansion2">
+            <Properties>
+                <LoadOrder>15210</LoadOrder>
+                <LuaContext>DiplomacyRibbon</LuaContext>
+                <LuaReplace>hse/Replacers/XP2/DiplomacyRibbon_Expansion2.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+        <ReplaceUIScript id="HSE_WorldRankings_Expansion2" criteria="HSE_Expansion2">
+            <Properties>
+                <LoadOrder>15210</LoadOrder>
+                <LuaContext>WorldRankings</LuaContext>
+                <LuaReplace>hse/Replacers/XP2/WorldRankings_Expansion2.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+        <ReplaceUIScript id="HSE_WorldCongressPopup" criteria="HSE_Expansion2">
+            <Properties>
+                <LoadOrder>15210</LoadOrder>
+                <LuaContext>WorldCongressPopup</LuaContext>
+                <LuaReplace>hse/Replacers/XP2/WorldCongressPopup.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
     </InGameActions>
 
     <!-- defines file dependencies -->
@@ -585,5 +711,26 @@
         <File>sql/religion_count/5.sql</File>
         <File>sql/religion_count/6.sql</File>
         <File>sql/religion_count/7.sql</File>
+        <!--////////////////////////////////////
+            Hide Stats Evolved
+        /////////////////////////////////////-->
+        <!-- Replacers are whole file that replace game files -->
+        <File>Replacers/Base/DiplomacyActionView_Wrapper.lua</File>
+        <File>Replacers/Base/DiplomacyRibbon.lua</File>
+        <File>Replacers/Base/GlobalResourcePopup_HSE.lua</File>
+        <File>Replacers/Base/LeaderIcon.lua</File>
+        <File>Replacers/Base/ReligionScreen.lua</File>
+        <File>Replacers/Base/WorldRankings.lua</File>
+        <File>Replacers/Base/WorldRankings.xml</File>
+        <File>Replacers/XP1/DiplomacyActionView_Expansion1_Wrapper.lua</File>
+        <File>Replacers/XP1/DiplomacyRibbon_Expansion1.lua</File>
+        <File>Replacers/XP2/DiplomacyActionView_Expansion2_Wrapper.lua</File>
+        <File>Replacers/XP2/DiplomacyRibbon_Expansion2.lua</File>
+        <File>Replacers/XP2/WorldRankings_Expansion2.lua</File>
+        <File>Replacers/XP2/WorldCongressPopup.lua</File>
+        <File>Replacers/XP2/WorldRankings.xml</File>
+        <File>Replacers/Multi/DiplomacyActionView_HSE.lua</File>
+        <File>Support/HSE_config.lua</File>
+        <File>Support/HSE_utils.lua</File>
     </Files>
 </Mod>
