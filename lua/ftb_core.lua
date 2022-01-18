@@ -1043,6 +1043,8 @@ function Initialize()
 	if currentTurn == startTurn then
 		ApplyGilgameshTrait()
 	end
+
+	Players
 	
 	-- turn checked effects:
 	GameEvents.OnGameTurnStarted.Add(OnGameTurnStarted);

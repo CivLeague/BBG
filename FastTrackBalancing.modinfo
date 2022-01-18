@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="b2adc326-974b-442e-a879-d9f526cf861d" version="3">
+<Mod id="b2adc326-974b-442e-a879-d9f526cf861e" version="3">
     <Properties>
-        <Name>Fast Track Balancing</Name>
+        <Name>Fast Track Balancing Dev</Name>
         <Description>
             Mod to balance Civilzation VI for a more enjoyable and competitive Multiplayer. Incorporates
             several other Mods to adjust UI for an opinionated best way to play Civilization VI.
@@ -114,6 +114,51 @@
         <Criteria id="Expansion2">
             <GameCoreInUse>Expansion2</GameCoreInUse>
         </Criteria>
+        <!--////////////////////////////////////
+            Religion Amount Configuration
+        /////////////////////////////////////-->
+        <Criteria id="Max_Religions_2">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>P0K_RELIGIONS</ConfigurationId>
+                <Value>2</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="Max_Religions_3">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>P0K_RELIGIONS</ConfigurationId>
+                <Value>3</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="Max_Religions_4">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>P0K_RELIGIONS</ConfigurationId>
+                <Value>4</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="Max_Religions_5">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>P0K_RELIGIONS</ConfigurationId>
+                <Value>5</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="Max_Religions_6">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>P0K_RELIGIONS</ConfigurationId>
+                <Value>6</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="Max_Religions_7">
+            <ConfigurationValueMatches>
+                <Group>Game</Group>
+                <ConfigurationId>P0K_RELIGIONS</ConfigurationId>
+                <Value>7</Value>
+            </ConfigurationValueMatches>
+        </Criteria>
     </ActionCriteria>
 
     <!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
@@ -142,6 +187,15 @@
         </UpdateDatabase>
         <UpdateText id="BRS_FrontEnd_Text">
             <File>brs/Config/BRS_Config_Text.xml</File>
+        </UpdateText>
+        <!--////////////////////////////////////
+            Religion Amount Configuration
+        /////////////////////////////////////-->
+        <UpdateDatabase id="Config">
+            <File>sql/religion_count/config.sql</File>
+        </UpdateDatabase>
+        <UpdateText>
+            <File>sql/religion_count/loc.sql</File>
         </UpdateText>
     </FrontEndActions>
 
@@ -399,6 +453,51 @@
                 <File>epc/governmentscreen.xml</File>
             </Items>
         </ImportFiles>
+        <!--////////////////////////////////////
+            Religion Amount Configuration
+        /////////////////////////////////////-->
+        <UpdateDatabase id="Max_Religions_2">
+            <Properties>
+                <LoadOrder>1001</LoadOrder>
+            </Properties>
+            <Criteria>Max_Religions_2</Criteria>
+            <File>sql/religion_count/2.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="Max_Religions_3">
+            <Properties>
+                <LoadOrder>1001</LoadOrder>
+            </Properties>
+            <Criteria>Max_Religions_3</Criteria>
+            <File>sql/religion_count/3.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="Max_Religions_4">
+            <Properties>
+                <LoadOrder>1001</LoadOrder>
+            </Properties>
+            <Criteria>Max_Religions_4</Criteria>
+            <File>sql/religion_count/4.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="Max_Religions_5">
+            <Properties>
+                <LoadOrder>1001</LoadOrder>
+            </Properties>
+            <Criteria>Max_Religions_5</Criteria>
+            <File>sql/religion_count/5.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="Max_Religions_6">
+            <Properties>
+                <LoadOrder>1001</LoadOrder>
+            </Properties>
+            <Criteria>Max_Religions_6</Criteria>
+            <File>sql/religion_count/6.sql</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="Max_Religions_7">
+            <Properties>
+                <LoadOrder>1001</LoadOrder>
+            </Properties>
+            <Criteria>Max_Religions_7</Criteria>
+            <File>sql/religion_count/7.sql</File>
+        </UpdateDatabase>
     </InGameActions>
 
     <!-- defines file dependencies -->
@@ -475,5 +574,16 @@
         /////////////////////////////////////-->
         <File>epc/governmentscreen.lua</File>
         <File>epc/governmentscreen.xml</File>
+        <!--////////////////////////////////////
+            Religion Amount Configuration
+        /////////////////////////////////////-->
+        <File>sql/religion_count/config.sql</File>
+        <File>sql/religion_count/loc.sql</File>
+        <File>sql/religion_count/2.sql</File>
+        <File>sql/religion_count/3.sql</File>
+        <File>sql/religion_count/4.sql</File>
+        <File>sql/religion_count/5.sql</File>
+        <File>sql/religion_count/6.sql</File>
+        <File>sql/religion_count/7.sql</File>
     </Files>
 </Mod>
