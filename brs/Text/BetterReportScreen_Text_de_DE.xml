@@ -27,10 +27,10 @@
 	</Replace>
 	<!-- Column headers -->
 	<Replace Tag="LOC_BRS_HEADER_BUILDINGNAME" Language="de_DE">
-		<Text>Gebäudename/Bezirkname</Text>
+		<Text>Gebäudename/Bezirksname</Text>
 	</Replace>
 	<Replace Tag="LOC_BRS_HEADER_BUILDINGCOUNT" Language="de_DE">
-		<Text>Gebäudezahl/Bezirkzahl</Text>
+		<Text>Gebäudezahl/Bezirkszahl</Text>
 	</Replace>
 	<Replace Tag="LOC_BRS_HEADER_GROWTH" Language="de_DE">
 		<Text>Wachstum</Text>
@@ -54,13 +54,13 @@
 	<!-- UNITS -->
 	<!-- Unit groups -->
 	<Replace Tag="LOC_BRS_UNITS_GROUP_AIR" Language="de_DE">
-		<Text>Militärische - Luft</Text>
+		<Text>Luftwaffe</Text>
 	</Replace>
 	<Replace Tag="LOC_BRS_UNITS_GROUP_NAVAL" Language="de_DE">
-		<Text>Militärische - Marine</Text>
+		<Text>Marine</Text>
 	</Replace>
 	<Replace Tag="LOC_BRS_UNITS_GROUP_LAND_COMBAT" Language="de_DE">
-		<Text>Militärische - Boden</Text>
+		<Text>Land</Text>
 	</Replace>
 	<Replace Tag="LOC_BRS_UNITS_GROUP_CIVILIAN" Language="de_DE">
 		<Text>Zivilist</Text>
@@ -129,14 +129,14 @@
 		<Text>Große-Persönlichkeiten</Text>
 	</Replace>
 	<Replace Tag="LOC_BRS_POLICY_GROUP_SLOT_LEGACY" Language="de_DE">
-		<Text>Vermächtnisses</Text>
+		<Text>Vermächtnisse</Text>
 	</Replace>
 	<Replace Tag="LOC_BRS_POLICY_GROUP_SLOT_DARKAGE" Language="de_DE">
 		<Text>Dunkles Zeitalter</Text>
 	</Replace>
 	<!-- Checkboxes -->
 	<Replace Tag="LOC_BRS_CHECKBOX_HIDE_INACTIVE_POLICIES" Language="de_DE">
-		<Text>Verstecke inaktiven Politiken</Text>
+		<Text>Verstecke inaktive Politiken</Text>
 	</Replace>
 	<Replace Tag="LOC_BRS_CHECKBOX_HIDE_NO_IMPACT_POLICIES" Language="de_DE">
 		<Text>Verstecke Politiken mit keinen Effekten</Text>
@@ -182,7 +182,7 @@
 		<Text>CO2</Text>
     </Replace>
     <Replace Tag="LOC_BRS_BARRIER" Language="de_DE">
-		<Text>Sperre</Text>
+		<Text>Hochwassersperre</Text>
     </Replace>
     <Replace Tag="LOC_BRS_BARRIER_MAINTENANCE" Language="de_DE">
 		<Text>Hochwassersperre Wartungskosten</Text>

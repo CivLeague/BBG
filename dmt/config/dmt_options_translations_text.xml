@@ -3,13 +3,16 @@
     <LocalizedText>
         <!-- de_DE -->
         <Replace Tag="LOC_DMT_OPTIONS_HOTKEY_ADD_MAP_TACK" Language="de_DE">
-            <Text>添加地图钉</Text>
+            <Text>Detaillierte Karten-Nadeln</Text>
         </Replace>
         <Replace Tag="LOC_DMT_OPTIONS_HOTKEY_DELETE_MAP_TACK" Language="de_DE">
-            <Text>删除地图钉</Text>
+            <Text>Karten-Nadel hinzufügen</Text>
         </Replace>
         <Replace Tag="LOC_DMT_OPTIONS_HOTKEY_TOGGLE_MAP_TACK_VISIBILITY" Language="de_DE">
-            <Text>显示/隐藏所有地图钉</Text>
+            <Text>Karten-Nadel entfernen</Text>
         </Replace>
+         <Replace Tag="LOC_DMT_OPTIONS_HOTKEY_TOGGLE_MAP_TACK_VISIBILITY" Language="de_De">
+            <Text>Sichtbarkeit der Karten-Nadeln an- und ausschalten</Text>
+        </Replace> 
     </LocalizedText>
 </GameData>

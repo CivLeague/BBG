@@ -18,6 +18,14 @@
 
 <LocalizedText>
 
+	<!-- German -->
+	<Row Tag="LOC_OPTIONS_HOTKEY_UI_REPORTS" Language="de_DE">
+		<Text>Öffnet das "Berichte"-Fenster</Text>
+	</Row>
+	<Row Tag="LOC_OPTIONS_HOTKEY_UI_REPORTS_HELP" Language="de_DE">
+		<Text>Schaltet die Sichtbarkeit des "Berichte"-Fenster an und aus</Text>
+	</Row>
+
 	<!-- Polish -->
 	<Replace Tag="LOC_OPTIONS_HOTKEY_UI_REPORTS" Language="pl_PL">
 		<Text>Ekran raportów</Text>
