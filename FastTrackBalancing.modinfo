@@ -2,17 +2,23 @@
 <Mod id="b2adc326-974b-442e-a879-d9f526cf861d" version="3">
     <Properties>
         <Name>Fast Track Balancing</Name>
-        <Description>Mod to balance Civilzation VI for a more enjoyable and competitive Multiplayer</Description>
+        <Description>
+            Mod to balance Civilzation VI for a more enjoyable and competitive Multiplayer. Incorporates
+            several other Mods to adjust UI for an opinionated best way to play Civilization VI.
+        </Description>
         <Created>1620039289</Created>
         <Teaser>Mod to balance Civilzation VI for a more enjoyable and competitive Multiplayer</Teaser>
         <Authors>masseelch,malkay,flocke159</Authors>
-        <SpecialThanks>codenaugh (original author)</SpecialThanks>
+        <SpecialThanks>codenaugh (original author BBG),Infixo (original author BRS)</SpecialThanks>
         <CompatibleVersions>2.0</CompatibleVersions>
     </Properties>
     <Dependencies>
         <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
     </Dependencies>
     <ActionCriteria>
+        <!--////////////////////////////////////
+            Balancing
+        /////////////////////////////////////-->
         <Criteria id="ftb_xp1">
             <ModInUse>1B28771A-C749-434B-9053-D1380C553DE9</ModInUse>
         </Criteria>
@@ -36,7 +42,6 @@
             <ModInUse>4873eb62-8ccc-4574-b784-dda455e74e68</ModInUse>
             <ModInUse>9DE86512-DE1A-400D-8C0A-AB46EBBF76B9</ModInUse>
         </Criteria>
-        <!-- Victory Settings -->
         <Criteria id="CVSetting_2">
             <ConfigurationValueMatches>
                 <ConfigurationId>VictoryCulturalSetting</ConfigurationId>
@@ -100,10 +105,22 @@
                 <Value>1</Value>
             </ConfigurationValueMatches>
         </Criteria>
+        <!--////////////////////////////////////
+            Better Report Screen
+        /////////////////////////////////////-->
+        <Criteria id="Expansion1">
+            <GameCoreInUse>Expansion1</GameCoreInUse>
+        </Criteria>
+        <Criteria id="Expansion2">
+            <GameCoreInUse>Expansion2</GameCoreInUse>
+        </Criteria>
     </ActionCriteria>
 
     <!-- defines pre-game mods (e.g. menus, visual, text, etc..) -->
     <FrontEndActions>
+        <!--////////////////////////////////////
+            Balancing
+        /////////////////////////////////////-->
         <UpdateText id="ftb_pregame_text_updates">
             <Properties>
                 <LoadOrder>150</LoadOrder>
@@ -117,14 +134,25 @@
             </Properties>
             <File>victories/config.xml</File>
         </UpdateDatabase>
+        <!--////////////////////////////////////
+            Better Report Screen
+        /////////////////////////////////////-->
+        <UpdateDatabase id="BRS_FrontEnd_Database">
+            <File>brs/Config/BRS_Config.xml</File>
+        </UpdateDatabase>
+        <UpdateText id="BRS_FrontEnd_Text">
+            <File>brs/Config/BRS_Config_Text.xml</File>
+        </UpdateText>
     </FrontEndActions>
 
     <!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
     <InGameActions>
+        <!--////////////////////////////////////
+            Balancing
+        /////////////////////////////////////-->
         <AddGameplayScripts id="ftb_core_script">
             <File>lua/ftb_core.lua</File>
         </AddGameplayScripts>
-
         <UpdateText id="ftb_text_updates">
             <Properties>
                 <LoadOrder>152</LoadOrder>
@@ -132,7 +160,6 @@
             <File>lang/english.xml</File>
             <File>lang/german.xml</File>
         </UpdateText>
-
         <ReplaceUIScript id="ftb_worldranking">
             <Properties>
                 <LoadOrder>19999</LoadOrder>
@@ -140,46 +167,41 @@
                 <LuaReplace>victories/replacements/worldrankings.lua</LuaReplace>
             </Properties>
         </ReplaceUIScript>
-
         <UpdateDatabase id="ftb_base">
             <Properties>
                 <LoadOrder>11612</LoadOrder>
             </Properties>
             <File>sql/_base.sql</File>
+            <File>sql/_harvest_res.sql</File>
             <File>sql/egypt.sql</File>
             <File>sql/sumer.sql</File>
             <File>sql/zulu.sql</File>
             <File>victories/sql/domination.sql</File>
         </UpdateDatabase>
-
         <UpdateDatabase id="ftb_australia" criteria="ftb_australia">
             <Properties>
                 <LoadOrder>11613</LoadOrder>
             </Properties>
             <File>sql/australia.sql</File>
         </UpdateDatabase>
-
         <UpdateDatabase id="ftb_aztecs" criteria="ftb_aztecs">
             <Properties>
                 <LoadOrder>11614</LoadOrder>
             </Properties>
             <File>sql/aztecs.sql</File>
         </UpdateDatabase>
-
         <UpdateDatabase id="ftb_maya_xp2" criteria="ftb_maya_xp2">
             <Properties>
                 <LoadOrder>11641</LoadOrder>
             </Properties>
             <File>sql/disasters.sql</File>
         </UpdateDatabase>
-
         <UpdateDatabase id="ftb_norway" criteria="ftb_norway">
             <Properties>
                 <LoadOrder>11642</LoadOrder>
             </Properties>
             <File>sql/norway.sql</File>
         </UpdateDatabase>
-
         <UpdateDatabase id="ftb_xp1" criteria="ftb_xp1">
             <Properties>
                 <LoadOrder>11620</LoadOrder>
@@ -189,7 +211,6 @@
             <File>sql/scotland_xp1.sql</File>
             <File>sql/sumer_xp1.sql</File>
         </UpdateDatabase>
-
         <UpdateDatabase id="ftb_xp2" criteria="ftb_xp2">
             <Properties>
                 <LoadOrder>11621</LoadOrder>
@@ -199,14 +220,12 @@
             <File>sql/ottoman_xp2.sql</File>
             <File>sql/sumer_xp2.sql</File>
         </UpdateDatabase>
-
         <UpdateDatabase id="ftb_xp1_xp2" criteria="ftb_xp1_xp2">
             <Properties>
                 <LoadOrder>11622</LoadOrder>
             </Properties>
             <File>sql/_xp1_xp2.sql</File>
         </UpdateDatabase>
-
         <UpdateDatabase id="VictoryCulturalSetting_2">
             <Properties>
                 <LoadOrder>20000</LoadOrder>
@@ -282,22 +301,122 @@
             <File>victories/replacements/endgamemenu.lua</File>
             <File>victories/replacements/endgamemenu.xml</File>
         </ImportFiles>
+        <!--////////////////////////////////////
+            Better Report Screen
+        /////////////////////////////////////-->
+        <UpdateDatabase id="BRS_UpdateDatabase">
+            <Properties>
+                <LoadOrder>1</LoadOrder>
+            </Properties>
+            <File>brs/BetterReportScreen_Database.sql</File>
+        </UpdateDatabase>
+        <AddUserInterfaces id="RMA_Main">
+            <Properties>
+                <Context>InGame</Context>
+            </Properties>
+            <File>brs/RealModifierAnalysis.xml</File>
+        </AddUserInterfaces>
+        <!-- Vanilla actions - simply import lua and xml -->
+        <ImportFiles id="BRS_ImportFiles">
+            <Properties>
+                <LoadOrder>1000</LoadOrder>
+            </Properties>
+            <Items>
+                <File>brs/reportscreen.lua</File>
+                <File>brs/reportscreen.xml</File>
+            </Items>
+        </ImportFiles>
+        <UpdateText id="BRS_UpdateText">
+            <File>brs/Config/BRS_Config_Text.xml</File>
+            <File>brs/Text/BetterReportScreen_Text.xml</File>
+            <File>brs/Text/BetterReportScreen_Text_de_DE.xml</File>
+        </UpdateText>
+        <!-- Rise&Fall actions - replace lua and import xml (there's no 'replace' for xml) -->
+        <ImportFiles id="BRS_ImportFiles_XP1" criteria="Expansion1">
+            <Properties>
+                <LoadOrder>1010</LoadOrder>
+            </Properties>
+            <Items>
+                <File>brs/RiseFall/reportscreen.xml</File>
+            </Items>
+        </ImportFiles>
+        <ReplaceUIScript id="BRS_ReplaceUI_ReportScreen_XP1" criteria="Expansion1">
+            <Properties>
+                <LoadOrder>1010</LoadOrder>
+                <LuaContext>reportscreen</LuaContext>
+                <LuaReplace>brs/reportscreen.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+        <!-- Gathering Storm actions - replace lua and import xml (there's no 'replace' for xml) -->
+        <ImportFiles id="BRS_ImportFiles_XP2" criteria="Expansion2">
+            <Properties>
+                <LoadOrder>1020</LoadOrder>
+            </Properties>
+            <Items>
+                <File>brs/RiseFall/reportscreen.xml</File> <!-- no layout changes in GS -->
+            </Items>
+        </ImportFiles>
+        <ReplaceUIScript id="BRS_ReplaceUI_ReportScreen_XP2" criteria="Expansion2">
+            <Properties>
+                <LoadOrder>1020</LoadOrder>
+                <LuaContext>reportscreen</LuaContext>
+                <LuaReplace>brs/reportscreen.lua</LuaReplace> <!-- we'll try to use the same file -->
+            </Properties>
+        </ReplaceUIScript>
+        <!-- new font icons -->
+        <ImportFiles id="RMI_Imports">
+            <File>brs/Icons/FontIconsRMI.dds</File>
+        </ImportFiles>
+        <UpdateIcons id="RMI_Icons">
+            <Properties>
+                <LoadOrder>1</LoadOrder>
+            </Properties>
+            <File>brs/Icons/FontIconsRMI.xml</File>
+        </UpdateIcons>
+        <!-- reports list loader -->
+        <UpdateDatabase id="RLL_Database">
+            <File>brs/RLL/ReportsListLoader.sql</File>
+        </UpdateDatabase>
+        <ImportFiles id="RLL_Imports">
+            <File>brs/RLL/ReportsListLoader.lua</File>
+        </ImportFiles>
+        <ReplaceUIScript id="RLL_ReplaceUI_ReportsList">
+            <Properties>
+                <LoadOrder>99999</LoadOrder>
+                <LuaContext>ReportsList</LuaContext>
+                <LuaReplace>brs/RLL/ReportsListLoader.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+        <!--////////////////////////////////////
+            Extended Policy Cards
+        /////////////////////////////////////-->
+        <ImportFiles id="EPC_IMPORT_FILES">
+            <Properties>
+                <LoadOrder>12000</LoadOrder>
+            </Properties>
+            <Items>
+                <File>epc/governmentscreen.lua</File>
+                <File>epc/governmentscreen.xml</File>
+            </Items>
+        </ImportFiles>
     </InGameActions>
 
     <!-- defines file dependencies -->
     <Files>
+        <!--////////////////////////////////////
+            Balancing
+        /////////////////////////////////////-->
         <!-- Misc -->
         <File>lang/english.xml</File>
         <File>lang/german.xml</File>
         <File>lua/bbg_stateutils.lua</File>
         <File>lua/ftb_core.lua</File>
-
         <!-- DB Base -->
         <File>sql/_base.sql</File>
+        <File>sql/_harvest_res.sql</File>
         <File>sql/_xp1.sql</File>
         <File>sql/_xp1_xp2.sql</File>
         <File>sql/_xp2.sql</File>
-
         <!-- DB Civilizations -->
         <File>sql/america_xp2.sql</File>
         <File>sql/australia.sql</File>
@@ -313,13 +432,12 @@
         <File>sql/sumer_xp1.sql</File>
         <File>sql/sumer_xp2.sql</File>
         <File>sql/zulu.sql</File>
-
         <!-- Victories -->
-        <File>victories/config.xml</File>
-        <File>victories/icons.xml</File>
+        <File>victories/replacements/worldrankings.lua</File>
         <File>victories/replacements/endgamemenu.lua</File>
         <File>victories/replacements/endgamemenu.xml</File>
-        <File>victories/replacements/worldrankings.lua</File>
+        <File>victories/icons.xml</File>
+        <File>victories/config.xml</File>
         <File>victories/sql/cultural_1.sql</File>
         <File>victories/sql/cultural_2.sql</File>
         <File>victories/sql/diplomatic_1.sql</File>
@@ -329,5 +447,33 @@
         <File>victories/sql/religious_2.sql</File>
         <File>victories/sql/scientific_1.sql</File>
         <File>victories/sql/scientific_2.sql</File>
+        <!--////////////////////////////////////
+            Better Report Screen
+        /////////////////////////////////////-->
+        <!-- Config files -->
+        <File>brs/Config/BRS_Config.xml</File>
+        <File>brs/Config/BRS_Config_Text.xml</File>
+        <!-- Shared files -->
+        <File>brs/BetterReportScreen_Database.sql</File>
+        <File>brs/reportscreen.lua</File>
+        <File>brs/RealModifierAnalysis.lua</File>
+        <File>brs/RealModifierAnalysis.xml</File>
+        <File>brs/Text/BetterReportScreen_Text.xml</File>
+        <File>brs/Text/BetterReportScreen_Text_de_DE.xml</File>
+        <!-- Vanilla files -->
+        <File>brs/reportscreen.xml</File>
+        <!-- Rise & Fall files -->
+        <File>brs/RiseFall/reportscreen.xml</File>
+        <!-- new font icons -->
+        <File>brs/Icons/FontIconsRMI.dds</File>
+        <File>brs/Icons/FontIconsRMI.xml</File>
+        <!-- reports list loader -->
+        <File>brs/RLL/ReportsListLoader.sql</File>
+        <File>brs/RLL/ReportsListLoader.lua</File>
+        <!--////////////////////////////////////
+            Extended Policy Cards
+        /////////////////////////////////////-->
+        <File>epc/governmentscreen.lua</File>
+        <File>epc/governmentscreen.xml</File>
     </Files>
 </Mod>

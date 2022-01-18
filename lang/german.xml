@@ -417,12 +417,6 @@
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="de_DE">
 			<Text>+{1_num} [ICON_FAITH] Glaube von Flüssen.</Text>
 		</Row>
-		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="de_DE">
-			<Text>+{1_num} [ICON_FAITH] Glauben von Küste.</Text>
-		</Row>
-		<Row Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="de_DE">
-			<Text>+{1_num} [ICON_GOLD] Gold für eine benachbarte Heilige Stätte.</Text>
-		</Row>
 		
 
 
@@ -687,11 +681,11 @@
 		<Replace Tag="LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION" Language="de_DE">
 			<Text>+15 [ICON_STRENGTH] Kampfstärke beim Angriff.</Text>
 		</Replace>
-		<Row Tag="LOC_DISTRICT_HOLY_SITE_RIVER_FAITH" Language="de_DE">
-			<Text>+{1_num} [ICON_FAITH] Glaube von Flüssen.</Text>
-		</Row>
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="de_DE">
 			<Text>+{1_num} [ICON_FAITH] Glauben von Küste.</Text>
+		</Row>
+		<Row Tag="LOC_HOLY_SITE_HARBOR_ADJACENCY_DESCRIPTION" Language="de_DE">
+			<Text>+{1_num} [ICON_GOLD] Gold für eine benachbarte Heilige Stätte.</Text>
 		</Row>
 		
 		<!-- Nubia -->
