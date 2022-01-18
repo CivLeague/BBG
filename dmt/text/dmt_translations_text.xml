@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <LocalizedText>
+        <!-- de_DE -->
+        <Replace Tag="LOC_DMT_YIELD_FROM_MODIFIER_DEFAULT" Language="de_DE">
+            <Text>{1_Value : number +#.#;-#.#} {2_YieldType} durch Modifikatoren</Text>
+        </Replace>
+        <Replace Tag="LOC_DMT_YIELD_FROM_MODIFIER_NAME" Language="de_DE">
+            <Text>{1_Value : number +#.#;-#.#} {2_YieldType} durch {3_Name}</Text>
+        </Replace>
+        <Replace Tag="LOC_DMT_CANNOT_PLACE_ON_REASON" Language="de_DE">
+            <Text>Kann nicht auf Geländefeldern mit {1_Name} werden.</Text>
+        </Replace>
+        <Replace Tag="LOC_DMT_MUST_PLACE_ADJACENT_TO_CAPITAL_REASON" Language="de_DE">
+            <Text>Muss angrenzend an Eure [ICON_CAPITAL] Hauptstadt gebaut werden.</Text>
+        </Replace>
+        <Replace Tag="LOC_DMT_INVALID_DAM_PLACEMENT_REASON" Language="de_DE">
+            <Text>Es kann nur einer auf dem Schwemmland jeden Flusses gebaut werden (von dem Spieler, der ihn zuerst fertigstellt) und der Fluss muss an mindestens zwei Seiten des Damm-Felds verlaufen.</Text>
+        </Replace>
+        <Replace Tag="LOC_DMT_GOLDEN_GATE_BRIDGE_REASON" Language="de_DE">
+            <Text>Die Brücke muss über das Geländefeld zwischen zwei direkt gegenüberliegenden Land-Geländefeldern führen. Links und rechts der Brücke muss jeweils mindestens ein Wasser-Geländefeld liegen.</Text>
+        </Replace>
+        <Replace Tag="LOC_DMT_AUTO_DELETE_MAP_TACK_HINT" Language="de_DE">
+            <Text>Kartennägel automatisch löschen?</Text>
+        </Replace>
+    </LocalizedText>
+</GameData>

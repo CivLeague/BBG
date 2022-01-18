@@ -209,6 +209,16 @@
         <UpdateText>
             <File>sql/religion_count/loc.sql</File>
         </UpdateText>
+        <!--////////////////////////////////////
+            Detailed Map Tacks
+        /////////////////////////////////////-->
+        <UpdateDatabase id="dmt_settings">
+            <File>dmt/config/dmt_config.xml</File>
+        </UpdateDatabase>
+        <UpdateText id="dmt_settings_text">
+            <File Priority="1">dmt/config/en_us/dmt_options_text.xml</File>
+            <File>dmt/config/dmt_options_translations_text.xml</File>
+        </UpdateText>
     </FrontEndActions>
 
     <!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
@@ -624,6 +634,50 @@
                 <LuaReplace>hse/Replacers/XP2/WorldCongressPopup.lua</LuaReplace>
             </Properties>
         </ReplaceUIScript>
+        <!--////////////////////////////////////
+            Detailed Map Tacks
+        /////////////////////////////////////-->
+        <AddUserInterfaces id="dmt_yieldcalculator">
+            <Properties>
+                <Context>InGame</Context>
+            </Properties>
+            <File>dmt/ui/dmt_yieldcalculator.xml</File>
+        </AddUserInterfaces>
+        <AddGameplayScripts id="mappinsubjectmanager">
+            <Properties><LoadOrder>12345</LoadOrder></Properties> <!-- Higher than Map Tacks mod's 12000. -->
+            <File>dmt/gameplay/mappinsubjectmanager.lua</File>
+        </AddGameplayScripts>
+        <ReplaceUIScript id="mappinmanager">
+            <Properties>
+                <LoadOrder>12345</LoadOrder> <!-- Higher than Map Tacks mod's 12000. -->
+                <LuaContext>MapPinManager</LuaContext>
+                <LuaReplace>dmt/ui/mappinmanager_dmt.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+        <ReplaceUIScript id="mappinpopup">
+            <Properties>
+                <LoadOrder>12345</LoadOrder> <!-- Higher than Map Tacks mod's 12000. -->
+                <LuaContext>MapPinPopup</LuaContext>
+                <LuaReplace>dmt/ui/mappinpopup_dmt.lua</LuaReplace>
+            </Properties>
+        </ReplaceUIScript>
+        <UpdateText id="dmt_text">
+            <File Priority="1">dmt/config/en_us/dmt_options_text.xml</File>
+            <File>dmt/config/dmt_options_translations_text.xml</File>
+            <File Priority="1">dmt/text/en_us/dmt_text.xml</File>
+            <File>dmt/text/dmt_translations_text.xml</File>
+        </UpdateText>
+        <!-- Importing our files so that other mods can include it and apply additional logic. -->
+        <ImportFiles id="dmt_files">
+            <Properties><LoadOrder>12345</LoadOrder></Properties> <!-- Higher than Map Tacks mod's 12000. -->
+            <File>dmt/ui/dmt_modifiercalculator.lua</File>
+            <File>dmt/ui/dmt_modifierrequirementchecker.lua</File>
+            <File>dmt/ui/dmt_yieldcalculator.lua</File>
+            <File>dmt/ui/dmt_yieldcalculator.xml</File>
+            <File>dmt/ui/mappinmanager_dmt.lua</File>
+            <File>dmt/ui/mappinmanager.xml</File>
+            <File>dmt/ui/mappinpopup_dmt.lua</File>
+        </ImportFiles>
     </InGameActions>
 
     <!-- defines file dependencies -->
@@ -732,5 +786,23 @@
         <File>Replacers/Multi/DiplomacyActionView_HSE.lua</File>
         <File>Support/HSE_config.lua</File>
         <File>Support/HSE_utils.lua</File>
+        <!--////////////////////////////////////
+            Detailed Map Tacks
+        /////////////////////////////////////-->
+        <!-- Texts -->
+        <File>dmt/config/en_us/dmt_options_text.xml</File>
+        <File>dmt/config/dmt_options_translations_text.xml</File>
+        <File>dmt/text/en_us/dmt_text.xml</File>
+        <File>dmt/text/dmt_translations_text.xml</File>
+        <!-- Game files -->
+        <File>dmt/config/dmt_config.xml</File>
+        <File>dmt/gameplay/mappinsubjectmanager.lua</File>
+        <File>dmt/ui/dmt_modifiercalculator.lua</File>
+        <File>dmt/ui/dmt_modifierrequirementchecker.lua</File>
+        <File>dmt/ui/dmt_yieldcalculator.lua</File>
+        <File>dmt/ui/dmt_yieldcalculator.xml</File>
+        <File>dmt/ui/mappinmanager_dmt.lua</File>
+        <File>dmt/ui/mappinmanager.xml</File>
+        <File>dmt/ui/mappinpopup_dmt.lua</File>
     </Files>
 </Mod>

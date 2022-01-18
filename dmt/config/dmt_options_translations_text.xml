@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <LocalizedText>
+        <!-- de_DE -->
+        <Replace Tag="LOC_DMT_OPTIONS_HOTKEY_ADD_MAP_TACK" Language="de_DE">
+            <Text>添加地图钉</Text>
+        </Replace>
+        <Replace Tag="LOC_DMT_OPTIONS_HOTKEY_DELETE_MAP_TACK" Language="de_DE">
+            <Text>删除地图钉</Text>
+        </Replace>
+        <Replace Tag="LOC_DMT_OPTIONS_HOTKEY_TOGGLE_MAP_TACK_VISIBILITY" Language="de_DE">
+            <Text>显示/隐藏所有地图钉</Text>
+        </Replace>
+    </LocalizedText>
+</GameData>
